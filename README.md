@@ -1,4 +1,9 @@
-# Arm SystemReady IR
+# Arm SystemReady IoT
+
+### Arm SystemReady IR (IoT Ready)
+
+2.x
+3.0 --> Base-D
 
 ### Related Links
 * https://www.arm.com/architecture/system-architectures/systemready-certification-program/ir
@@ -21,4 +26,7 @@
 * https://gitlab.arm.com/systemready/systemready-ir-template
 * https://gitlab.arm.com/systemready/systemready-scripts
 * https://gitlab.arm.com/linux-arm/linux-acs
+* https://gitlab.arm.com/systemready/edk2-test-parser
+* https://gitlab.arm.com/systemready/systemready-ir-template
+* https://gitlab.arm.com/systemready/systemready-scripts
 
