@@ -2,7 +2,7 @@
 
 ### Arm SystemReady IR (IoT Ready)
 
-2.x
+2.x <br>
 3.0 --> Base-D
 
 ### Related Links

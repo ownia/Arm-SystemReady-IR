@@ -1,0 +1,39 @@
+09000000-09000fff : pl011@9000000
+  09000000-09000fff : 9000000.pl011 pl011@9000000
+09030000-09030fff : pl061@9030000
+  09030000-09030fff : 9030000.pl061 pl061@9030000
+0c000000-0c004fff : c000000.tpm_tis tpm_tis@0
+10000000-3efeffff : pcie@10000000
+  10000000-10000fff : 0000:00:01.0
+  10001000-10001fff : 0000:00:02.0
+  10002000-10002fff : 0000:00:03.0
+40000000-bc4effff : System RAM
+  984c0000-99d6ffff : Kernel code
+  99d70000-9a46ffff : reserved
+  9a470000-9a88ffff : Kernel data
+  9c9c0000-9c9c1fff : reserved
+  9cd7e000-9cd7efff : reserved
+  ba400000-bc3fffff : reserved
+  bc40c000-bc40cfff : reserved
+  bc40f000-bc412fff : reserved
+bc4f0000-bc72ffff : reserved
+bc730000-bfbfffff : System RAM
+  bd400000-bf5fffff : reserved
+  bf6d1000-bf7d1fff : reserved
+  bf7d2000-bf7f9fff : reserved
+  bf7fc000-bf7fdfff : reserved
+  bf7fe000-bf7fefff : reserved
+  bf7ff000-bf812fff : reserved
+  bf813000-bf81cfff : reserved
+  bf81d000-bfbfffff : reserved
+bfc00000-bffdffff : reserved
+bffe0000-bfffffff : System RAM
+  bffe0000-bfffffff : reserved
+4010000000-401fffffff : PCI ECAM
+8000000000-ffffffffff : pcie@10000000
+  8000000000-8000003fff : 0000:00:01.0
+    8000000000-8000003fff : virtio-pci-modern
+  8000004000-8000007fff : 0000:00:02.0
+    8000004000-8000007fff : virtio-pci-modern
+  8000008000-800000bfff : 0000:00:03.0
+    8000008000-800000bfff : virtio-pci-modern

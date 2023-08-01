@@ -1,0 +1,1384 @@
+DEBUG git_commit: CompletedProcess(args="git -C '/home/weiouy01/code/systemready-scripts' describe --always --abbrev=12 --dirty", returncode=0, stdout=b'v2023.04-25-g14241ce5aeae-dirty\n', stderr=b'')
+DEBUG init_meta: meta-data: {'command-line': 'systemready-scripts/check-sr-results.py --dir test --debug', 'date': 'Tue Aug  1 09:44:55 2023 UTC', 'python-version': '3.8.10 (default, May 26 2023, 14:05:08)  [GCC 9.4.0]', 'git-commit': 'v2023.04-25-g14241ce5aeae-dirty'}
+DEBUG check_prerequisites: Checking prerequisites
+DEBUG run: Running ('tar --version',)
+DEBUG run: CompletedProcess(args='tar --version', returncode=0, stdout=b'tar (GNU tar) 1.30\nCopyright (C) 2017 Free Software Foundation, Inc.\nLicense GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.\nThis is free software: you are free to change and redistribute it.\nThere is NO WARRANTY, to the extent permitted by law.\n\nWritten by John Gilmore and Jay Fenlason.\n', stderr=b'')
+DEBUG run: Running ('/home/weiouy01/code/systemready-scripts/guid-tool.py --debug -h',)
+DEBUG run: CompletedProcess(args='/home/weiouy01/code/systemready-scripts/guid-tool.py --debug -h', returncode=0, stdout=b'usage: guid-tool.py [-h] [--debug] [--details] [--guids-db GUIDS_DB] guid\n\nCheck UEFI GUIDs.\n\npositional arguments:\n  guid                 Input GUID\n\noptional arguments:\n  -h, --help           show this help message and exit\n  --debug              Turn on debug messages (default: False)\n  --details            Dump GUID details and exit (default: False)\n  --guids-db GUIDS_DB  GUIDs database YAML file (default:\n                       /home/weiouy01/code/systemready-scripts/guid-tool.yaml)\n', stderr=b'')
+DEBUG run: Running ('/home/weiouy01/code/systemready-scripts/capsule-tool.py --debug -h',)
+DEBUG run: CompletedProcess(args='/home/weiouy01/code/systemready-scripts/capsule-tool.py --debug -h', returncode=0, stdout=b'usage: capsule-tool.py [-h] [--debug] [--dump] [--de-authenticate]\n                       [--expected-guid EXPECTED_GUID] [--extract EXTRACT]\n                       [--force] [--guid-tool GUID_TOOL] [--output OUTPUT]\n                       [--print-guid] [--tamper]\n                       capsule\n\nManipulate UEFI Capsules.\n\npositional arguments:\n  capsule               Input capsule filename\n\noptional arguments:\n  -h, --help            show this help message and exit\n  --debug               Turn on debug messages (default: False)\n  --dump                Dump parsed capsule to standard output (default:\n                        False)\n  --de-authenticate     Remove capsule authentication (default: False)\n  --expected-guid EXPECTED_GUID\n                        Specify expected update image type id GUID (default:\n                        None)\n  --extract EXTRACT     Extract image to file (default: None)\n  --force               Force processing (default: False)\n  --guid-tool GUID_TOOL\n                        Specify guid-tool.py path (default:\n                        /home/weiouy01/code/systemready-scripts/guid-tool.py)\n  --output OUTPUT       Capsule output file (default: None)\n  --print-guid          Print the capsule image type id GUID during check\n                        (default: False)\n  --tamper              Tamper with capsule firmware image (default: False)\n\nWe expect authenticated UEFI Capsules in FMP format as input. When not forcing\nprocessing we exit at the first error.\n', stderr=b'')
+DEBUG run: Running ('dtc --version',)
+DEBUG run: CompletedProcess(args='dtc --version', returncode=0, stdout=b'Version: DTC 1.5.0\n', stderr=b'')
+DEBUG check_dt_validate: Checking dt-validate
+DEBUG which: Which `dt-validate'
+DEBUG which: `/home/weiouy01/.local/bin/dt-validate'
+DEBUG check_dt_validate: Have dt-validate (`/home/weiouy01/.local/bin/dt-validate')
+DEBUG run: Running ('dt-validate --version',)
+DEBUG run: CompletedProcess(args='dt-validate --version', returncode=0, stdout=b'2023.6.1\n', stderr=b'')
+DEBUG run: Running ('/home/weiouy01/code/systemready-scripts/dt-parser.py --debug -h',)
+DEBUG run: CompletedProcess(args='/home/weiouy01/code/systemready-scripts/dt-parser.py --debug -h', returncode=0, stdout=b'usage: dt-parser.py [-h] [--config CONFIG] [--compatibles COMPATIBLES]\n                    [--debug] [--dump] [--filter FILTER] [--json JSON]\n                    [--max-message-len MAX_MESSAGE_LEN] [--no-dedupe]\n                    [--print] [--yaml YAML]\n                    log\n\nParse Devicetree tools logs.\n\npositional arguments:\n  log                   Input log filename\n\noptional arguments:\n  -h, --help            show this help message and exit\n  --config CONFIG       Configuration filename (default:\n                        /home/weiouy01/code/systemready-scripts/dt-\n                        parser.yaml)\n  --compatibles COMPATIBLES\n                        Specify compatibles list (default: None)\n  --debug               Turn on debug messages (default: False)\n  --dump                Dump parsed information to standard output (default:\n                        False)\n  --filter FILTER       Python expression to filter entries (default: None)\n  --json JSON           JSON output filename (default: None)\n  --max-message-len MAX_MESSAGE_LEN\n                        Maximum message width to print (default: 128)\n  --no-dedupe           Turn off de-duplication (default: False)\n  --print               Print non-ignored entries (default: False)\n  --yaml YAML           YAML output filename (default: None)\n\nEntries with type `ignored\' (after rule processing) are not printed by option\n`--print\'. To keep only errors filter with --filter "\'error\' in x[\'type\']".\n', stderr=b'')
+DEBUG run: Running ('/home/weiouy01/code/systemready-scripts/compatibles -h',)
+DEBUG run: CompletedProcess(args='/home/weiouy01/code/systemready-scripts/compatibles -h', returncode=0, stdout=b'Usage: /home/weiouy01/code/systemready-scripts/compatibles <Linux bindings folder>\n\nExtract the list of (potential) compatibles strings mentioned in Linux\nbindings to stdout.\n', stderr=b'')
+DEBUG run_identify: Identify test
+DEBUG run: Running ("/home/weiouy01/code/systemready-scripts/identify.py --debug --dir 'test' --known-files",)
+DEBUG run: CompletedProcess(args="/home/weiouy01/code/systemready-scripts/identify.py --debug --dir 'test' --known-files", returncode=0, stdout=b'test/acs_results/sct_results/Sequence/EBBR.seq: EBBR.seq from ACS-IR v22.10_2.0.0_BETA-1 .. v23.03_2.0.0\ntest/acs_results/sct_results/Sequence/BBSR.seq: BBSR.seq from SIE ACS v21.10_SIE_REL1.0 / ACS-IR v22.10_2.0.0_BETA-1 .. v23.03_2.0.0\ntest/acs_results/SIE/sct_results/Sequence/EBBR.seq: EBBR.seq from ACS-IR v22.10_2.0.0_BETA-1 .. v23.03_2.0.0 with SIE\ntest/acs_results/SIE/sct_results/Sequence/BBSR.seq: BBSR.seq from ACS-IR v22.10_2.0.0_BETA-1 .. v23.03_2.0.0 with SIE\ntest/acs_results/fwts/FWTSResults.log: FWTSResults.log from ACS-IR v23.03_2.0.0\ntest/acs_results/SIE/fwts/FWTSResults.log: FWTSResults.log from ACS-IR v23.03_2.0.0 with SIE\ntest/acs_results/linux_acs/bsa_acs_app/BSALinuxResults.log: BSALinuxResults.log from ACS-IR v23.03_2.0.0\nSystemReady IR v2.0 with SIE\n', stderr=b'DEBUG load_identify_db: Load `/home/weiouy01/code/systemready-scripts/identify.yaml\'\nDEBUG validate_identify_db: Validate identify db\nDEBUG load_identify_db: 21 known-files, 12 versions\nDEBUG identify_files: Identify files in `test/\'\nDEBUG hash_file_cached: Hash/cache `test/acs_results/sct_results/Sequence/EBBR.seq\'\nDEBUG hash_file_cached: Cache miss\nDEBUG hash_file: Hash `test/acs_results/sct_results/Sequence/EBBR.seq\'\nDEBUG hash_file: sha256 a1682187e16336c71f82b73c7e4e475e56561e44b2b3fd4c9b4ca653c76d29b7 test/acs_results/sct_results/Sequence/EBBR.seq\nDEBUG hash_file_cached: Hash/cache `test/acs_results/sct_results/Sequence/EBBR.seq\'\nDEBUG hash_file_cached: Cache hit\nDEBUG hash_file_cached: Hash/cache `test/acs_results/sct_results/Sequence/EBBR.seq\'\nDEBUG hash_file_cached: Cache hit\nDEBUG hash_file_cached: Hash/cache `test/acs_results/sct_results/Sequence/EBBR.seq\'\nDEBUG hash_file_cached: Cache hit\nDEBUG identify_files: Identified `test/acs_results/sct_results/Sequence/EBBR.seq\' as "EBBR.seq from ACS-IR v22.10_2.0.0_BETA-1 .. v23.03_2.0.0".\nDEBUG hash_file_cached: Hash/cache `test/acs_results/sct_results/Sequence/EBBR.seq\'\nDEBUG hash_file_cached: Cache hit\nDEBUG hash_file_cached: Hash/cache `test/acs_results/sct_results/Sequence/BBSR.seq\'\nDEBUG hash_file_cached: Cache miss\nDEBUG hash_file: Hash `test/acs_results/sct_results/Sequence/BBSR.seq\'\nDEBUG hash_file: sha256 7cb231d17fa9f580e75fee01c0295c9bd800fa6ba27501c7a1b941cbbdeaebfb test/acs_results/sct_results/Sequence/BBSR.seq\nDEBUG identify_files: Identified `test/acs_results/sct_results/Sequence/BBSR.seq\' as "BBSR.seq from SIE ACS v21.10_SIE_REL1.0 / ACS-IR v22.10_2.0.0_BETA-1 .. v23.03_2.0.0".\nDEBUG hash_file_cached: Hash/cache `test/acs_results/SIE/sct_results/Sequence/EBBR.seq\'\nDEBUG hash_file_cached: Cache miss\nDEBUG hash_file: Hash `test/acs_results/SIE/sct_results/Sequence/EBBR.seq\'\nDEBUG hash_file: sha256 a1682187e16336c71f82b73c7e4e475e56561e44b2b3fd4c9b4ca653c76d29b7 test/acs_results/SIE/sct_results/Sequence/EBBR.seq\nDEBUG identify_files: Identified `test/acs_results/SIE/sct_results/Sequence/EBBR.seq\' as "EBBR.seq from ACS-IR v22.10_2.0.0_BETA-1 .. v23.03_2.0.0 with SIE".\nDEBUG hash_file_cached: Hash/cache `test/acs_results/SIE/sct_results/Sequence/BBSR.seq\'\nDEBUG hash_file_cached: Cache miss\nDEBUG hash_file: Hash `test/acs_results/SIE/sct_results/Sequence/BBSR.seq\'\nDEBUG hash_file: sha256 7cb231d17fa9f580e75fee01c0295c9bd800fa6ba27501c7a1b941cbbdeaebfb test/acs_results/SIE/sct_results/Sequence/BBSR.seq\nDEBUG identify_files: Identified `test/acs_results/SIE/sct_results/Sequence/BBSR.seq\' as "BBSR.seq from ACS-IR v22.10_2.0.0_BETA-1 .. v23.03_2.0.0 with SIE".\nDEBUG search_file: Search for [\'Arm ACS Version: BBRv0.8_BETA-0\', \'Results generated by fwts: Version V21.03.00\', \'5.10.0-00001-gd1b493e4ee16\'] in `test/acs_results/fwts/FWTSResults.log\'\nDEBUG search_file: Did not find [\'Arm ACS Version: BBRv0.8_BETA-0\', \'Results generated by fwts: Version V21.03.00\', \'5.10.0-00001-gd1b493e4ee16\']\nDEBUG search_file: Search for [\'Arm ACS Version: v0.9_BETA\', \'Results generated by fwts: Version V21.06.00\', \'5.11.0-00001-gaeea746c28e5\'] in `test/acs_results/fwts/FWTSResults.log\'\nDEBUG search_file: Did not find [\'Arm ACS Version: v0.9_BETA\', \'Results generated by fwts: Version V21.06.00\', \'5.11.0-00001-gaeea746c28e5\']\nDEBUG search_file: Search for [\'Arm ACS Version: v0.9_BETA\', \'Results generated by fwts: Version V21.07.00\', \'5.13.0-00001-gc58e282e8f88\'] in `test/acs_results/fwts/FWTSResults.log\'\nDEBUG search_file: Did not find [\'Arm ACS Version: v0.9_BETA\', \'Results generated by fwts: Version V21.07.00\', \'5.13.0-00001-gc58e282e8f88\']\nDEBUG search_file: Search for [\'Arm ACS Version: v1.0\', \'Results generated by fwts: Version V21.08.00\', \'5.13.0-00001-g2dbc6aab0003\'] in `test/acs_results/fwts/FWTSResults.log\'\nDEBUG search_file: Did not find [\'Arm ACS Version: v1.0\', \'Results generated by fwts: Version V21.08.00\', \'5.13.0-00001-g2dbc6aab0003\']\nDEBUG search_file: Search for [\'Arm ACS Version: v1.0\', \'Results generated by fwts: Version V21.08.00\', \'5.15.0-00001-gb7efc1012d92\'] in `test/acs_results/fwts/FWTSResults.log\'\nDEBUG search_file: Did not find [\'Arm ACS Version: v1.0\', \'Results generated by fwts: Version V21.08.00\', \'5.15.0-00001-gb7efc1012d92\']\nDEBUG search_file: Search for [\'SystemReady IR ACS v2.0.0 Beta 0\', \'FWTS v22.05.00\', \'Results generated by fwts: Version V22.05.00\'] in `test/acs_results/fwts/FWTSResults.log\'\nDEBUG search_file: Did not find [\'SystemReady IR ACS v2.0.0 Beta 0\', \'FWTS v22.05.00\', \'Results generated by fwts: Version V22.05.00\']\nDEBUG search_file: Search for [\'SystemReady IR ACS v2.0.0 Beta-1\', \'FWTS v22.07.00\', \'Results generated by fwts: Version V22.07.00\'] in `test/acs_results/fwts/FWTSResults.log\'\nDEBUG search_file: Did not find [\'SystemReady IR ACS v2.0.0 Beta-1\', \'FWTS v22.07.00\', \'Results generated by fwts: Version V22.07.00\']\nDEBUG search_file: Search for [\'SystemReady IR ACS v2.0.0\', \'FWTS v23.01.00\', \'Results generated by fwts: Version V23.01.00\'] in `test/acs_results/fwts/FWTSResults.log\'\nDEBUG search_file: Found "SystemReady IR ACS v2.0.0" at line 1: `SystemReady IR ACS v2.0.0\'\nDEBUG search_file: Found "FWTS v23.01.00" at line 2: `FWTS v23.01.00\'\nDEBUG search_file: Found "Results generated by fwts: Version V23.01.00" at line 3: `Results generated by fwts: Version V23.01.00 (2023-01-16 04:09:35).\'\nDEBUG identify_files: Identified `test/acs_results/fwts/FWTSResults.log\' as "FWTSResults.log from ACS-IR v23.03_2.0.0".\nDEBUG search_file: Search for [\'Results generated by fwts: Version V22.07.00\'] in `test/acs_results/SIE/fwts/FWTSResults.log\'\nDEBUG search_file: Did not find [\'Results generated by fwts: Version V22.07.00\']\nDEBUG search_file: Search for [\'Results generated by fwts: Version V23.01.00\'] in `test/acs_results/SIE/fwts/FWTSResults.log\'\nDEBUG search_file: Found "Results generated by fwts: Version V23.01.00" at line 1: `Results generated by fwts: Version V23.01.00 (2023-01-16 04:09:35).\'\nDEBUG identify_files: Identified `test/acs_results/SIE/fwts/FWTSResults.log\' as "FWTSResults.log from ACS-IR v23.03_2.0.0 with SIE".\nDEBUG search_file: Search for [\'SystemReady IR ACS v2.0.0 Beta 0\', \'BSA v1.0.1\', \'Version 1.0.1\'] in `test/acs_results/linux_acs/bsa_acs_app/BSALinuxResults.log\'\nDEBUG search_file: Did not find [\'SystemReady IR ACS v2.0.0 Beta 0\', \'BSA v1.0.1\', \'Version 1.0.1\']\nDEBUG search_file: Search for [\'SystemReady IR ACS v2.0.0 Beta-1\', \'BSA v1.0.2\', \'Version 1.0.1\'] in `test/acs_results/linux_acs/bsa_acs_app/BSALinuxResults.log\'\nDEBUG search_file: Did not find [\'SystemReady IR ACS v2.0.0 Beta-1\', \'BSA v1.0.2\', \'Version 1.0.1\']\nDEBUG search_file: Search for [\'SystemReady IR ACS v2.0.0\', \'BSA v1.0.4\', \'Version 1.0.4\'] in `test/acs_results/linux_acs/bsa_acs_app/BSALinuxResults.log\'\nDEBUG search_file: Found "SystemReady IR ACS v2.0.0" at line 1: `SystemReady IR ACS v2.0.0\'\nDEBUG search_file: Found "BSA v1.0.4" at line 2: `BSA v1.0.4\'\nDEBUG search_file: Found "Version 1.0.4" at line 5: `                        Version 1.0.4\'\nDEBUG identify_files: Identified `test/acs_results/linux_acs/bsa_acs_app/BSALinuxResults.log\' as "BSALinuxResults.log from ACS-IR v23.03_2.0.0".\nDEBUG identify_ver: Identify ver from [{\'path\': \'test/acs_results/sct_results/Sequence/EBBR.seq\', \'name\': \'EBBR.seq from ACS-IR v22.10_2.0.0_BETA-1 .. v23.03_2.0.0\'}, {\'path\': \'test/acs_results/sct_results/Sequence/BBSR.seq\', \'name\': \'BBSR.seq from SIE ACS v21.10_SIE_REL1.0 / ACS-IR v22.10_2.0.0_BETA-1 .. v23.03_2.0.0\'}, {\'path\': \'test/acs_results/SIE/sct_results/Sequence/EBBR.seq\', \'name\': \'EBBR.seq from ACS-IR v22.10_2.0.0_BETA-1 .. v23.03_2.0.0 with SIE\'}, {\'path\': \'test/acs_results/SIE/sct_results/Sequence/BBSR.seq\', \'name\': \'BBSR.seq from ACS-IR v22.10_2.0.0_BETA-1 .. v23.03_2.0.0 with SIE\'}, {\'path\': \'test/acs_results/fwts/FWTSResults.log\', \'name\': \'FWTSResults.log from ACS-IR v23.03_2.0.0\'}, {\'path\': \'test/acs_results/SIE/fwts/FWTSResults.log\', \'name\': \'FWTSResults.log from ACS-IR v23.03_2.0.0 with SIE\'}, {\'path\': \'test/acs_results/linux_acs/bsa_acs_app/BSALinuxResults.log\', \'name\': \'BSALinuxResults.log from ACS-IR v23.03_2.0.0\'}]\nDEBUG find_substr: Search for `BBSR.seq from ACS-IR v22.10_2.0.0_BETA-1 .. v23.03_2.0.0 with SIE\' in [\'EBBR.seq from ACS-IR v22.10_2.0.0_BETA-1 .. v23.03_2.0.0\', \'BBSR.seq from SIE ACS v21.10_SIE_REL1.0 / ACS-IR v22.10_2.0.0_BETA-1 .. v23.03_2.0.0\', \'EBBR.seq from ACS-IR v22.10_2.0.0_BETA-1 .. v23.03_2.0.0 with SIE\', \'BBSR.seq from ACS-IR v22.10_2.0.0_BETA-1 .. v23.03_2.0.0 with SIE\', \'FWTSResults.log from ACS-IR v23.03_2.0.0\', \'FWTSResults.log from ACS-IR v23.03_2.0.0 with SIE\', \'BSALinuxResults.log from ACS-IR v23.03_2.0.0\']\nDEBUG find_substr: Found in `BBSR.seq from ACS-IR v22.10_2.0.0_BETA-1 .. v23.03_2.0.0 with SIE\'\nDEBUG find_substr: Search for `BBSR.seq from SIE ACS v21.10_SIE_REL1.0 / ACS-IR v22.10_2.0.0_BETA-1 .. v23.03_2.0.0\' in [\'EBBR.seq from ACS-IR v22.10_2.0.0_BETA-1 .. v23.03_2.0.0\', \'BBSR.seq from SIE ACS v21.10_SIE_REL1.0 / ACS-IR v22.10_2.0.0_BETA-1 .. v23.03_2.0.0\', \'EBBR.seq from ACS-IR v22.10_2.0.0_BETA-1 .. v23.03_2.0.0 with SIE\', \'BBSR.seq from ACS-IR v22.10_2.0.0_BETA-1 .. v23.03_2.0.0 with SIE\', \'FWTSResults.log from ACS-IR v23.03_2.0.0\', \'FWTSResults.log from ACS-IR v23.03_2.0.0 with SIE\', \'BSALinuxResults.log from ACS-IR v23.03_2.0.0\']\nDEBUG find_substr: Found in `BBSR.seq from SIE ACS v21.10_SIE_REL1.0 / ACS-IR v22.10_2.0.0_BETA-1 .. v23.03_2.0.0\'\nDEBUG find_substr: Search for `BSALinuxResults.log from ACS-IR v22.10_2.0.0_BETA-1\' in [\'EBBR.seq from ACS-IR v22.10_2.0.0_BETA-1 .. v23.03_2.0.0\', \'BBSR.seq from SIE ACS v21.10_SIE_REL1.0 / ACS-IR v22.10_2.0.0_BETA-1 .. v23.03_2.0.0\', \'EBBR.seq from ACS-IR v22.10_2.0.0_BETA-1 .. v23.03_2.0.0 with SIE\', \'BBSR.seq from ACS-IR v22.10_2.0.0_BETA-1 .. v23.03_2.0.0 with SIE\', \'FWTSResults.log from ACS-IR v23.03_2.0.0\', \'FWTSResults.log from ACS-IR v23.03_2.0.0 with SIE\', \'BSALinuxResults.log from ACS-IR v23.03_2.0.0\']\nDEBUG find_substr: Not found...\nDEBUG find_substr: Search for `BBSR.seq from ACS-IR v22.10_2.0.0_BETA-1 .. v23.03_2.0.0 with SIE\' in [\'EBBR.seq from ACS-IR v22.10_2.0.0_BETA-1 .. v23.03_2.0.0\', \'BBSR.seq from SIE ACS v21.10_SIE_REL1.0 / ACS-IR v22.10_2.0.0_BETA-1 .. v23.03_2.0.0\', \'EBBR.seq from ACS-IR v22.10_2.0.0_BETA-1 .. v23.03_2.0.0 with SIE\', \'BBSR.seq from ACS-IR v22.10_2.0.0_BETA-1 .. v23.03_2.0.0 with SIE\', \'FWTSResults.log from ACS-IR v23.03_2.0.0\', \'FWTSResults.log from ACS-IR v23.03_2.0.0 with SIE\', \'BSALinuxResults.log from ACS-IR v23.03_2.0.0\']\nDEBUG find_substr: Found in `BBSR.seq from ACS-IR v22.10_2.0.0_BETA-1 .. v23.03_2.0.0 with SIE\'\nDEBUG find_substr: Search for `BBSR.seq from SIE ACS v21.10_SIE_REL1.0 / ACS-IR v22.10_2.0.0_BETA-1 .. v23.03_2.0.0\' in [\'EBBR.seq from ACS-IR v22.10_2.0.0_BETA-1 .. v23.03_2.0.0\', \'BBSR.seq from SIE ACS v21.10_SIE_REL1.0 / ACS-IR v22.10_2.0.0_BETA-1 .. v23.03_2.0.0\', \'EBBR.seq from ACS-IR v22.10_2.0.0_BETA-1 .. v23.03_2.0.0 with SIE\', \'BBSR.seq from ACS-IR v22.10_2.0.0_BETA-1 .. v23.03_2.0.0 with SIE\', \'FWTSResults.log from ACS-IR v23.03_2.0.0\', \'FWTSResults.log from ACS-IR v23.03_2.0.0 with SIE\', \'BSALinuxResults.log from ACS-IR v23.03_2.0.0\']\nDEBUG find_substr: Found in `BBSR.seq from SIE ACS v21.10_SIE_REL1.0 / ACS-IR v22.10_2.0.0_BETA-1 .. v23.03_2.0.0\'\nDEBUG find_substr: Search for `BSALinuxResults.log from ACS-IR v23.03_2.0.0\' in [\'EBBR.seq from ACS-IR v22.10_2.0.0_BETA-1 .. v23.03_2.0.0\', \'BBSR.seq from SIE ACS v21.10_SIE_REL1.0 / ACS-IR v22.10_2.0.0_BETA-1 .. v23.03_2.0.0\', \'EBBR.seq from ACS-IR v22.10_2.0.0_BETA-1 .. v23.03_2.0.0 with SIE\', \'BBSR.seq from ACS-IR v22.10_2.0.0_BETA-1 .. v23.03_2.0.0 with SIE\', \'FWTSResults.log from ACS-IR v23.03_2.0.0\', \'FWTSResults.log from ACS-IR v23.03_2.0.0 with SIE\', \'BSALinuxResults.log from ACS-IR v23.03_2.0.0\']\nDEBUG find_substr: Found in `BSALinuxResults.log from ACS-IR v23.03_2.0.0\'\nDEBUG find_substr: Search for `EBBR.seq from ACS-IR v22.10_2.0.0_BETA-1 .. v23.03_2.0.0\' in [\'EBBR.seq from ACS-IR v22.10_2.0.0_BETA-1 .. v23.03_2.0.0\', \'BBSR.seq from SIE ACS v21.10_SIE_REL1.0 / ACS-IR v22.10_2.0.0_BETA-1 .. v23.03_2.0.0\', \'EBBR.seq from ACS-IR v22.10_2.0.0_BETA-1 .. v23.03_2.0.0 with SIE\', \'BBSR.seq from ACS-IR v22.10_2.0.0_BETA-1 .. v23.03_2.0.0 with SIE\', \'FWTSResults.log from ACS-IR v23.03_2.0.0\', \'FWTSResults.log from ACS-IR v23.03_2.0.0 with SIE\', \'BSALinuxResults.log from ACS-IR v23.03_2.0.0\']\nDEBUG find_substr: Found in `EBBR.seq from ACS-IR v22.10_2.0.0_BETA-1 .. v23.03_2.0.0\'\nDEBUG find_substr: Search for `EBBR.seq from ACS-IR v22.10_2.0.0_BETA-1 .. v23.03_2.0.0 with SIE\' in [\'EBBR.seq from ACS-IR v22.10_2.0.0_BETA-1 .. v23.03_2.0.0\', \'BBSR.seq from SIE ACS v21.10_SIE_REL1.0 / ACS-IR v22.10_2.0.0_BETA-1 .. v23.03_2.0.0\', \'EBBR.seq from ACS-IR v22.10_2.0.0_BETA-1 .. v23.03_2.0.0 with SIE\', \'BBSR.seq from ACS-IR v22.10_2.0.0_BETA-1 .. v23.03_2.0.0 with SIE\', \'FWTSResults.log from ACS-IR v23.03_2.0.0\', \'FWTSResults.log from ACS-IR v23.03_2.0.0 with SIE\', \'BSALinuxResults.log from ACS-IR v23.03_2.0.0\']\nDEBUG find_substr: Found in `EBBR.seq from ACS-IR v22.10_2.0.0_BETA-1 .. v23.03_2.0.0 with SIE\'\nDEBUG find_substr: Search for `FWTSResults.log from ACS-IR v23.03_2.0.0\' in [\'EBBR.seq from ACS-IR v22.10_2.0.0_BETA-1 .. v23.03_2.0.0\', \'BBSR.seq from SIE ACS v21.10_SIE_REL1.0 / ACS-IR v22.10_2.0.0_BETA-1 .. v23.03_2.0.0\', \'EBBR.seq from ACS-IR v22.10_2.0.0_BETA-1 .. v23.03_2.0.0 with SIE\', \'BBSR.seq from ACS-IR v22.10_2.0.0_BETA-1 .. v23.03_2.0.0 with SIE\', \'FWTSResults.log from ACS-IR v23.03_2.0.0\', \'FWTSResults.log from ACS-IR v23.03_2.0.0 with SIE\', \'BSALinuxResults.log from ACS-IR v23.03_2.0.0\']\nDEBUG find_substr: Found in `FWTSResults.log from ACS-IR v23.03_2.0.0\'\nDEBUG find_substr: Search for `FWTSResults.log from ACS-IR v23.03_2.0.0 with SIE\' in [\'EBBR.seq from ACS-IR v22.10_2.0.0_BETA-1 .. v23.03_2.0.0\', \'BBSR.seq from SIE ACS v21.10_SIE_REL1.0 / ACS-IR v22.10_2.0.0_BETA-1 .. v23.03_2.0.0\', \'EBBR.seq from ACS-IR v22.10_2.0.0_BETA-1 .. v23.03_2.0.0 with SIE\', \'BBSR.seq from ACS-IR v22.10_2.0.0_BETA-1 .. v23.03_2.0.0 with SIE\', \'FWTSResults.log from ACS-IR v23.03_2.0.0\', \'FWTSResults.log from ACS-IR v23.03_2.0.0 with SIE\', \'BSALinuxResults.log from ACS-IR v23.03_2.0.0\']\nDEBUG find_substr: Found in `FWTSResults.log from ACS-IR v23.03_2.0.0 with SIE\'\nDEBUG identify_ver: Identified as "IR v2.0 with SIE".\n')
+DEBUG run_identify: ['test/acs_results/sct_results/Sequence/EBBR.seq: EBBR.seq from ACS-IR v22.10_2.0.0_BETA-1 .. v23.03_2.0.0', 'test/acs_results/sct_results/Sequence/BBSR.seq: BBSR.seq from SIE ACS v21.10_SIE_REL1.0 / ACS-IR v22.10_2.0.0_BETA-1 .. v23.03_2.0.0', 'test/acs_results/SIE/sct_results/Sequence/EBBR.seq: EBBR.seq from ACS-IR v22.10_2.0.0_BETA-1 .. v23.03_2.0.0 with SIE', 'test/acs_results/SIE/sct_results/Sequence/BBSR.seq: BBSR.seq from ACS-IR v22.10_2.0.0_BETA-1 .. v23.03_2.0.0 with SIE', 'test/acs_results/fwts/FWTSResults.log: FWTSResults.log from ACS-IR v23.03_2.0.0', 'test/acs_results/SIE/fwts/FWTSResults.log: FWTSResults.log from ACS-IR v23.03_2.0.0 with SIE', 'test/acs_results/linux_acs/bsa_acs_app/BSALinuxResults.log: BSALinuxResults.log from ACS-IR v23.03_2.0.0', 'SystemReady IR v2.0 with SIE']
+DEBUG run_identify: Identified test/acs_results/sct_results/Sequence/EBBR.seq: EBBR.seq from ACS-IR v22.10_2.0.0_BETA-1 .. v23.03_2.0.0.
+DEBUG run_identify: Identified test/acs_results/sct_results/Sequence/BBSR.seq: BBSR.seq from SIE ACS v21.10_SIE_REL1.0 / ACS-IR v22.10_2.0.0_BETA-1 .. v23.03_2.0.0.
+DEBUG run_identify: Identified test/acs_results/SIE/sct_results/Sequence/EBBR.seq: EBBR.seq from ACS-IR v22.10_2.0.0_BETA-1 .. v23.03_2.0.0 with SIE.
+DEBUG run_identify: Identified test/acs_results/SIE/sct_results/Sequence/BBSR.seq: BBSR.seq from ACS-IR v22.10_2.0.0_BETA-1 .. v23.03_2.0.0 with SIE.
+DEBUG run_identify: Identified test/acs_results/fwts/FWTSResults.log: FWTSResults.log from ACS-IR v23.03_2.0.0.
+DEBUG run_identify: Identified test/acs_results/SIE/fwts/FWTSResults.log: FWTSResults.log from ACS-IR v23.03_2.0.0 with SIE.
+DEBUG run_identify: Identified test/acs_results/linux_acs/bsa_acs_app/BSALinuxResults.log: BSALinuxResults.log from ACS-IR v23.03_2.0.0.
+INFO run_identify: Identified as SystemReady IR v2.0 with SIE.
+DEBUG load_config: Load /home/weiouy01/code/systemready-scripts/check-sr-results.yaml
+DEBUG evaluate_when_condition: Evaluate ['IR v2.0 with SIE'], any_not_all: True
+DEBUG evaluate_when_condition: `IR v2.0 with SIE' found in `SystemReady IR v2.0 with SIE'
+DEBUG apply_overlays: Applying overlay 0
+DEBUG overlay_tree: Adding file sie-console.log
+DEBUG overlay_dir: Overlay dir acs_results
+DEBUG overlay_property: dir <- acs_results
+DEBUG overlay_property: min-entries <- 9
+DEBUG overlay_property: max-entries <- 11
+DEBUG overlay_tree: Adding dir SIE
+DEBUG evaluate_when_condition: Evaluate ['IR v1.'], any_not_all: True
+DEBUG evaluate_when_condition: Did not find `IR v1.'
+DEBUG evaluate_when_condition: Evaluate ['SIE v1'], any_not_all: True
+DEBUG evaluate_when_condition: Did not find `SIE v1'
+DEBUG check_tree: Check `test/'
+DEBUG check_file: Check `test/acs-console.log'
+DEBUG check_file: `test/acs-console.log' exists
+DEBUG check_file: `test/acs-console.log' not empty
+DEBUG check_file_contains: Check that file `test/acs-console.log' contains ["Booting `bbr/bsa'", 'Press any key to stop the EFI SCT running', 'Test preparing...', 'Done!', 'Starting UEFI Debug dump', 'BSA Architecture Compliance Suite', 'Starting tests', 'Total Tests run', 'BSA tests complete. Reset the system.', 'EFI stub: Booting Linux Kernel...', 'EFI stub: Using DTB from configuration table', 'Linux version', 'efi: ESRT=0x', 'esrt: Reserving ESRT space from 0x', 'systemd', 'Executing FWTS for EBBR', 'Test: UEFI', 'Loading BSA ACS Linux Driver', 'Executing BSA ACS Application', 'copying fdt', 'Running dt-validate tool', 'ACS run is completed', 'Please press <Enter> to continue ...']
+DEBUG check_file_contains: Looking for `Booting `bbr/bsa''
+DEBUG __init__: LogReader `test/acs-console.log'
+DEBUG logreader_detect_file_encoding: Detect encoding of `test/acs-console.log'
+DEBUG logreader_detect_file_encoding: Giving up
+DEBUG logreader_detect_file_encoding: Encoding None
+DEBUG check_file_contains: `Booting `bbr/bsa'' found at line 32522: `   The highlighted entry will be executed automatically in 10s.                   The highlighted entry will be executed automatically in 9s.                    The highlighted entry will be executed automatically in 8s.                    The highlighted entry will be executed automatically in 7s.                    The highlighted entry will be executed automatically in 6s.                    The highlighted entry will be executed automatically in 5s.                    The highlighted entry will be executed automatically in 4s.                    The highlighted entry will be executed automatically in 3s.                    The highlighted entry will be executed automatically in 2s.                    The highlighted entry will be executed automatically in 1s.                    The highlighted entry will be executed automatically in 0s.                   Booting `bbr/bsa''
+DEBUG check_file_contains: Looking for `Press any key to stop the EFI SCT running'
+DEBUG check_file_contains: `Press any key to stop the EFI SCT running' found at line 32546: `Press any key to stop the EFI SCT running'
+DEBUG check_file_contains: Looking for `Test preparing...'
+ERROR check_file_contains: Could not find `Test preparing...' in `test/acs-console.log'
+DEBUG if_contains: Warn if file `test/acs-console.log' contains ['-dirty', 'EFI stub: ERROR:', 'FIRMWARE BUG:', 'OVERLAP DETECTED']
+DEBUG __init__: LogReader `test/acs-console.log'
+DEBUG logreader_detect_file_encoding: Detect encoding of `test/acs-console.log'
+DEBUG logreader_detect_file_encoding: Giving up
+DEBUG logreader_detect_file_encoding: Encoding None
+DEBUG if_contains: No pattern in `test/acs-console.log'
+DEBUG if_contains: Error if file `test/acs-console.log' contains ['No EFI system partition', 'Failed to persist EFI variables']
+DEBUG __init__: LogReader `test/acs-console.log'
+DEBUG logreader_detect_file_encoding: Detect encoding of `test/acs-console.log'
+DEBUG logreader_detect_file_encoding: Giving up
+DEBUG logreader_detect_file_encoding: Encoding None
+DEBUG if_contains: No pattern in `test/acs-console.log'
+DEBUG check_must_have_esp: Check must have ESP `test/acs-console.log'
+DEBUG __init__: LogReader `test/acs-console.log'
+DEBUG logreader_detect_file_encoding: Detect encoding of `test/acs-console.log'
+DEBUG logreader_detect_file_encoding: Giving up
+DEBUG logreader_detect_file_encoding: Encoding None
+DEBUG check_must_have_esp: Matched shell line 17, `UEFI Interactive Shell v2.2'
+DEBUG check_must_have_esp: Matched edk2 line 18, `EDK II'
+DEBUG check_must_have_esp: Matched uefi line 19, `UEFI v2.70 (EDK II, 0x00010000)'
+DEBUG check_must_have_esp: Matched map line 20, `Mapping table'
+DEBUG check_must_have_esp: Matched alias line 21, `      FS0: Alias(s):HD0b:;BLK1:'
+DEBUG check_must_have_esp: Matched path line 22, `          PciRoot(0x0)/Pci(0x2,0x0)/HD(1,GPT,39BD33CE-612C-4B6E-A2CB-227C1A0FE56'
+DEBUG check_must_have_esp: No alias line 23 -> done
+DEBUG check_must_have_esp: Matched shell line 32527, `UEFI Interactive Shell v2.2'
+DEBUG check_must_have_esp: Matched edk2 line 32528, `EDK II'
+DEBUG check_must_have_esp: Matched uefi line 32529, `UEFI v2.70 (EDK II, 0x00010000)'
+DEBUG check_must_have_esp: Matched map line 32530, `Mapping table'
+DEBUG check_must_have_esp: Matched alias line 32531, `      FS0: Alias(s):HD0b:;BLK1:'
+DEBUG check_must_have_esp: Matched path line 32532, `          PciRoot(0x0)/Pci(0x2,0x0)/HD(1,GPT,39BD33CE-612C-4B6E-A2CB-227C1A0FE56'
+DEBUG check_must_have_esp: No alias line 32533 -> done
+DEBUG check_must_have_esp: Matched shell line 33411, `UEFI Interactive Shell v2.2'
+DEBUG check_must_have_esp: Matched edk2 line 33412, `EDK II'
+DEBUG check_must_have_esp: Matched uefi line 33413, `UEFI v2.70 (EDK II, 0x00010000)'
+DEBUG check_must_have_esp: Matched map line 33414, `Mapping table'
+DEBUG check_must_have_esp: Matched alias line 33415, `      FS0: Alias(s):HD0b:;BLK1:'
+DEBUG check_must_have_esp: Matched path line 33416, `          PciRoot(0x0)/Pci(0x2,0x0)/HD(1,GPT,39BD33CE-612C-4B6E-A2CB-227C1A0FE56'
+DEBUG check_must_have_esp: No alias line 33417 -> done
+DEBUG check_must_have_esp: Matched shell line 34479, `UEFI Interactive Shell v2.2'
+DEBUG check_must_have_esp: Matched edk2 line 34480, `EDK II'
+DEBUG check_must_have_esp: Matched uefi line 34481, `UEFI v2.70 (EDK II, 0x00010000)'
+DEBUG check_must_have_esp: Matched map line 34482, `Mapping table'
+DEBUG check_must_have_esp: Matched alias line 34483, `      FS0: Alias(s):HD0b:;BLK1:'
+DEBUG check_must_have_esp: Matched path line 34484, `          PciRoot(0x0)/Pci(0x2,0x0)/HD(1,GPT,39BD33CE-612C-4B6E-A2CB-227C1A0FE56'
+DEBUG check_must_have_esp: No alias line 34485 -> done
+DEBUG check_must_have_esp: Matched shell line 34569, `UEFI Interactive Shell v2.2'
+DEBUG check_must_have_esp: Matched edk2 line 34570, `EDK II'
+DEBUG check_must_have_esp: Matched uefi line 34571, `UEFI v2.70 (EDK II, 0x00010000)'
+DEBUG check_must_have_esp: Matched map line 34572, `Mapping table'
+DEBUG check_must_have_esp: Matched alias line 34573, `      FS0: Alias(s):HD0b:;BLK1:'
+DEBUG check_must_have_esp: Matched path line 34574, `          PciRoot(0x0)/Pci(0x2,0x0)/HD(1,GPT,39BD33CE-612C-4B6E-A2CB-227C1A0FE56'
+DEBUG check_must_have_esp: No alias line 34575 -> done
+DEBUG check_must_have_esp: Matched shell line 34659, `UEFI Interactive Shell v2.2'
+DEBUG check_must_have_esp: Matched edk2 line 34660, `EDK II'
+DEBUG check_must_have_esp: Matched uefi line 34661, `UEFI v2.70 (EDK II, 0x00010000)'
+DEBUG check_must_have_esp: Matched map line 34662, `Mapping table'
+DEBUG check_must_have_esp: Matched alias line 34663, `      FS0: Alias(s):HD0b:;BLK1:'
+DEBUG check_must_have_esp: Matched path line 34664, `          PciRoot(0x0)/Pci(0x2,0x0)/HD(1,GPT,39BD33CE-612C-4B6E-A2CB-227C1A0FE56'
+DEBUG check_must_have_esp: No alias line 34665 -> done
+DEBUG check_must_have_esp: Matched shell line 35239, `UEFI Interactive Shell v2.2'
+DEBUG check_must_have_esp: Matched edk2 line 35240, `EDK II'
+DEBUG check_must_have_esp: Matched uefi line 35241, `UEFI v2.70 (EDK II, 0x00010000)'
+DEBUG check_must_have_esp: Matched map line 35242, `Mapping table'
+DEBUG check_must_have_esp: Matched alias line 35243, `      FS0: Alias(s):HD0b:;BLK1:'
+DEBUG check_must_have_esp: Matched path line 35244, `          PciRoot(0x0)/Pci(0x2,0x0)/HD(1,GPT,39BD33CE-612C-4B6E-A2CB-227C1A0FE56'
+DEBUG check_must_have_esp: No alias line 35245 -> done
+DEBUG check_must_have_esp: Matched shell line 35320, `UEFI Interactive Shell v2.2'
+DEBUG check_must_have_esp: Matched edk2 line 35321, `EDK II'
+DEBUG check_must_have_esp: Matched uefi line 35322, `UEFI v2.70 (EDK II, 0x00010000)'
+DEBUG check_must_have_esp: Matched map line 35323, `Mapping table'
+DEBUG check_must_have_esp: Matched alias line 35324, `      FS0: Alias(s):HD0b:;BLK1:'
+DEBUG check_must_have_esp: Matched path line 35325, `          PciRoot(0x0)/Pci(0x2,0x0)/HD(1,GPT,39BD33CE-612C-4B6E-A2CB-227C1A0FE56'
+DEBUG check_must_have_esp: No alias line 35326 -> done
+DEBUG check_must_have_esp: Matched shell line 35421, `UEFI Interactive Shell v2.2'
+DEBUG check_must_have_esp: Matched edk2 line 35422, `EDK II'
+DEBUG check_must_have_esp: Matched uefi line 35423, `UEFI v2.70 (EDK II, 0x00010000)'
+DEBUG check_must_have_esp: Matched map line 35424, `Mapping table'
+DEBUG check_must_have_esp: Matched alias line 35425, `      FS0: Alias(s):HD0b:;BLK1:'
+DEBUG check_must_have_esp: Matched path line 35426, `          PciRoot(0x0)/Pci(0x2,0x0)/HD(1,GPT,39BD33CE-612C-4B6E-A2CB-227C1A0FE56'
+DEBUG check_must_have_esp: No alias line 35427 -> done
+DEBUG check_must_have_esp: Matched shell line 35502, `UEFI Interactive Shell v2.2'
+DEBUG check_must_have_esp: Matched edk2 line 35503, `EDK II'
+DEBUG check_must_have_esp: Matched uefi line 35504, `UEFI v2.70 (EDK II, 0x00010000)'
+DEBUG check_must_have_esp: Matched map line 35505, `Mapping table'
+DEBUG check_must_have_esp: Matched alias line 35506, `      FS0: Alias(s):HD0b:;BLK1:'
+DEBUG check_must_have_esp: Matched path line 35507, `          PciRoot(0x0)/Pci(0x2,0x0)/HD(1,GPT,39BD33CE-612C-4B6E-A2CB-227C1A0FE56'
+DEBUG check_must_have_esp: No alias line 35508 -> done
+DEBUG check_must_have_esp: Matched shell line 35603, `UEFI Interactive Shell v2.2'
+DEBUG check_must_have_esp: Matched edk2 line 35604, `EDK II'
+DEBUG check_must_have_esp: Matched uefi line 35605, `UEFI v2.70 (EDK II, 0x00010000)'
+DEBUG check_must_have_esp: Matched map line 35606, `Mapping table'
+DEBUG check_must_have_esp: Matched alias line 35607, `      FS0: Alias(s):HD0b:;BLK1:'
+DEBUG check_must_have_esp: Matched path line 35608, `          PciRoot(0x0)/Pci(0x2,0x0)/HD(1,GPT,39BD33CE-612C-4B6E-A2CB-227C1A0FE56'
+DEBUG check_must_have_esp: No alias line 35609 -> done
+DEBUG check_must_have_esp: Matched shell line 35684, `UEFI Interactive Shell v2.2'
+DEBUG check_must_have_esp: Matched edk2 line 35685, `EDK II'
+DEBUG check_must_have_esp: Matched uefi line 35686, `UEFI v2.70 (EDK II, 0x00010000)'
+DEBUG check_must_have_esp: Matched map line 35687, `Mapping table'
+DEBUG check_must_have_esp: Matched alias line 35688, `      FS0: Alias(s):HD0b:;BLK1:'
+DEBUG check_must_have_esp: Matched path line 35689, `          PciRoot(0x0)/Pci(0x2,0x0)/HD(1,GPT,39BD33CE-612C-4B6E-A2CB-227C1A0FE56'
+DEBUG check_must_have_esp: No alias line 35690 -> done
+DEBUG check_must_have_esp: Matched shell line 37684, `UEFI Interactive Shell v2.2'
+DEBUG check_must_have_esp: Matched edk2 line 37685, `EDK II'
+DEBUG check_must_have_esp: Matched uefi line 37686, `UEFI v2.70 (EDK II, 0x00010000)'
+DEBUG check_must_have_esp: Matched map line 37687, `Mapping table'
+DEBUG check_must_have_esp: Matched alias line 37688, `      FS0: Alias(s):HD0b:;BLK1:'
+DEBUG check_must_have_esp: Matched path line 37689, `          PciRoot(0x0)/Pci(0x2,0x0)/HD(1,GPT,39BD33CE-612C-4B6E-A2CB-227C1A0FE56'
+DEBUG check_must_have_esp: No alias line 37690 -> done
+DEBUG check_must_have_esp: Matched shell line 37776, `UEFI Interactive Shell v2.2'
+DEBUG check_must_have_esp: Matched edk2 line 37777, `EDK II'
+DEBUG check_must_have_esp: Matched uefi line 37778, `UEFI v2.70 (EDK II, 0x00010000)'
+DEBUG check_must_have_esp: Matched map line 37779, `Mapping table'
+DEBUG check_must_have_esp: Matched alias line 37780, `      FS0: Alias(s):HD0b:;BLK1:'
+DEBUG check_must_have_esp: Matched path line 37781, `          PciRoot(0x0)/Pci(0x2,0x0)/HD(1,GPT,39BD33CE-612C-4B6E-A2CB-227C1A0FE56'
+DEBUG check_must_have_esp: No alias line 37782 -> done
+DEBUG check_must_have_esp: Matched shell line 38322, `UEFI Interactive Shell v2.2'
+DEBUG check_must_have_esp: Matched edk2 line 38323, `EDK II'
+DEBUG check_must_have_esp: Matched uefi line 38324, `UEFI v2.70 (EDK II, 0x00010000)'
+DEBUG check_must_have_esp: Matched map line 38325, `Mapping table'
+DEBUG check_must_have_esp: Matched alias line 38326, `      FS0: Alias(s):HD0b:;BLK1:'
+DEBUG check_must_have_esp: Matched path line 38327, `          PciRoot(0x0)/Pci(0x2,0x0)/HD(1,GPT,39BD33CE-612C-4B6E-A2CB-227C1A0FE56'
+DEBUG check_must_have_esp: No alias line 38328 -> done
+DEBUG check_must_have_esp: Matched shell line 38382, `UEFI Interactive Shell v2.2'
+DEBUG check_must_have_esp: Matched edk2 line 38383, `EDK II'
+DEBUG check_must_have_esp: Matched uefi line 38384, `UEFI v2.70 (EDK II, 0x00010000)'
+DEBUG check_must_have_esp: Matched map line 38385, `Mapping table'
+DEBUG check_must_have_esp: Matched alias line 38386, `      FS0: Alias(s):HD0b:;BLK1:'
+DEBUG check_must_have_esp: Matched path line 38387, `          PciRoot(0x0)/Pci(0x2,0x0)/HD(1,GPT,39BD33CE-612C-4B6E-A2CB-227C1A0FE56'
+DEBUG check_must_have_esp: No alias line 38388 -> done
+DEBUG check_must_have_esp: Matched shell line 38442, `UEFI Interactive Shell v2.2'
+DEBUG check_must_have_esp: Matched edk2 line 38443, `EDK II'
+DEBUG check_must_have_esp: Matched uefi line 38444, `UEFI v2.70 (EDK II, 0x00010000)'
+DEBUG check_must_have_esp: Matched map line 38445, `Mapping table'
+DEBUG check_must_have_esp: Matched alias line 38446, `      FS0: Alias(s):HD0b:;BLK1:'
+DEBUG check_must_have_esp: Matched path line 38447, `          PciRoot(0x0)/Pci(0x2,0x0)/HD(1,GPT,39BD33CE-612C-4B6E-A2CB-227C1A0FE56'
+DEBUG check_must_have_esp: No alias line 38448 -> done
+DEBUG check_must_have_esp: Matched shell line 38502, `UEFI Interactive Shell v2.2'
+DEBUG check_must_have_esp: Matched edk2 line 38503, `EDK II'
+DEBUG check_must_have_esp: Matched uefi line 38504, `UEFI v2.70 (EDK II, 0x00010000)'
+DEBUG check_must_have_esp: Matched map line 38505, `Mapping table'
+DEBUG check_must_have_esp: Matched alias line 38506, `      FS0: Alias(s):HD0b:;BLK1:'
+DEBUG check_must_have_esp: Matched path line 38507, `          PciRoot(0x0)/Pci(0x2,0x0)/HD(1,GPT,39BD33CE-612C-4B6E-A2CB-227C1A0FE56'
+DEBUG check_must_have_esp: No alias line 38508 -> done
+DEBUG check_must_have_esp: Matched shell line 38563, `UEFI Interactive Shell v2.2'
+DEBUG check_must_have_esp: Matched edk2 line 38564, `EDK II'
+DEBUG check_must_have_esp: Matched uefi line 38565, `UEFI v2.70 (EDK II, 0x00010000)'
+DEBUG check_must_have_esp: Matched map line 38566, `Mapping table'
+DEBUG check_must_have_esp: Matched alias line 38567, `      FS0: Alias(s):HD0b:;BLK1:'
+DEBUG check_must_have_esp: Matched path line 38568, `          PciRoot(0x0)/Pci(0x2,0x0)/HD(1,GPT,39BD33CE-612C-4B6E-A2CB-227C1A0FE56'
+DEBUG check_must_have_esp: No alias line 38569 -> done
+DEBUG check_must_have_esp: Matched shell line 38623, `UEFI Interactive Shell v2.2'
+DEBUG check_must_have_esp: Matched edk2 line 38624, `EDK II'
+DEBUG check_must_have_esp: Matched uefi line 38625, `UEFI v2.70 (EDK II, 0x00010000)'
+DEBUG check_must_have_esp: Matched map line 38626, `Mapping table'
+DEBUG check_must_have_esp: Matched alias line 38627, `      FS0: Alias(s):HD0b:;BLK1:'
+DEBUG check_must_have_esp: Matched path line 38628, `          PciRoot(0x0)/Pci(0x2,0x0)/HD(1,GPT,39BD33CE-612C-4B6E-A2CB-227C1A0FE56'
+DEBUG check_must_have_esp: No alias line 38629 -> done
+DEBUG check_must_have_esp: Matched shell line 38683, `UEFI Interactive Shell v2.2'
+DEBUG check_must_have_esp: Matched edk2 line 38684, `EDK II'
+DEBUG check_must_have_esp: Matched uefi line 38685, `UEFI v2.70 (EDK II, 0x00010000)'
+DEBUG check_must_have_esp: Matched map line 38686, `Mapping table'
+DEBUG check_must_have_esp: Matched alias line 38687, `      FS0: Alias(s):HD0b:;BLK1:'
+DEBUG check_must_have_esp: Matched path line 38688, `          PciRoot(0x0)/Pci(0x2,0x0)/HD(1,GPT,39BD33CE-612C-4B6E-A2CB-227C1A0FE56'
+DEBUG check_must_have_esp: No alias line 38689 -> done
+DEBUG check_must_have_esp: Matched shell line 38743, `UEFI Interactive Shell v2.2'
+DEBUG check_must_have_esp: Matched edk2 line 38744, `EDK II'
+DEBUG check_must_have_esp: Matched uefi line 38745, `UEFI v2.70 (EDK II, 0x00010000)'
+DEBUG check_must_have_esp: Matched map line 38746, `Mapping table'
+DEBUG check_must_have_esp: Matched alias line 38747, `      FS0: Alias(s):HD0b:;BLK1:'
+DEBUG check_must_have_esp: Matched path line 38748, `          PciRoot(0x0)/Pci(0x2,0x0)/HD(1,GPT,39BD33CE-612C-4B6E-A2CB-227C1A0FE56'
+DEBUG check_must_have_esp: No alias line 38749 -> done
+DEBUG check_must_have_esp: Matched shell line 134254, `UEFI Interactive Shell v2.2'
+DEBUG check_must_have_esp: Matched edk2 line 134255, `EDK II'
+DEBUG check_must_have_esp: Matched uefi line 134256, `UEFI v2.70 (EDK II, 0x00010000)'
+DEBUG check_must_have_esp: Matched map line 134257, `Mapping table'
+DEBUG check_must_have_esp: Matched alias line 134258, `      FS0: Alias(s):HD0b:;BLK1:'
+DEBUG check_must_have_esp: Matched path line 134259, `          PciRoot(0x0)/Pci(0x2,0x0)/HD(1,GPT,39BD33CE-612C-4B6E-A2CB-227C1A0FE56'
+DEBUG check_must_have_esp: No alias line 134260 -> done
+DEBUG check_must_have_esp: Matched shell line 135964, `UEFI Interactive Shell v2.2'
+DEBUG check_must_have_esp: Matched edk2 line 135965, `EDK II'
+DEBUG check_must_have_esp: Matched uefi line 135966, `UEFI v2.70 (EDK II, 0x00010000)'
+DEBUG check_must_have_esp: Matched map line 135967, `Mapping table'
+DEBUG check_must_have_esp: Matched alias line 135968, `      FS0: Alias(s):HD0b:;BLK1:'
+DEBUG check_must_have_esp: Matched path line 135969, `          PciRoot(0x0)/Pci(0x2,0x0)/HD(1,GPT,39BD33CE-612C-4B6E-A2CB-227C1A0FE56'
+DEBUG check_must_have_esp: No alias line 135970 -> done
+DEBUG check_must_have_esp: Found device path(s): `dict_keys(['PciRoot(0x0)/Pci(0x2,0x0)/HD(1,GPT,39BD33CE-612C-4B6E-A2CB-227C1A0FE56'])'
+DEBUG check_dir: Check `test/acs_results/'
+DEBUG check_dir: `test/acs_results/' exists
+DEBUG check_dir: `test/acs_results/' has 11 entrie(s)
+DEBUG check_dir: `test/acs_results/' has enough entrie(s): 11 >= 9
+DEBUG check_dir: `test/acs_results/' does not have too many entrie(s): 11 <= 11
+DEBUG check_tree: Check `test/acs_results/'
+DEBUG check_file: Check `test/acs_results/result.md'
+DEBUG sct_parser: SCT parser `test/acs_results/result.md'
+DEBUG which: Which `parser.py --debug'
+DEBUG which: `None'
+DEBUG sct_parser: No parser
+DEBUG check_file: `test/acs_results/result.md' exists
+DEBUG check_file: `test/acs_results/result.md' not empty
+DEBUG check_file_contains: Check that file `test/acs_results/result.md' contains ['SCT Summary', 'Dropped:|0|', 'Failure:|0|', 'Warning:|0|', 'Dropped by group', 'Failure by group', 'Ignored by group', 'Warning by group']
+DEBUG check_file_contains: Looking for `SCT Summary'
+DEBUG __init__: LogReader `test/acs_results/result.md'
+DEBUG logreader_detect_file_encoding: Detect encoding of `test/acs_results/result.md'
+DEBUG logreader_detect_file_encoding: Encoding None
+DEBUG check_file_contains: `SCT Summary' found at line 1: `# SCT Summary'
+DEBUG check_file_contains: Looking for `Dropped:|0|'
+DEBUG check_file_contains: `Dropped:|0|' found at line 5: `|Dropped:|0|'
+DEBUG check_file_contains: Looking for `Failure:|0|'
+DEBUG check_file_contains: `Failure:|0|' found at line 6: `|Failure:|0|'
+DEBUG check_file_contains: Looking for `Warning:|0|'
+DEBUG check_file_contains: `Warning:|0|' found at line 10: `|Warning:|0|'
+DEBUG check_file_contains: Looking for `Dropped by group'
+DEBUG check_file_contains: `Dropped by group' found at line 13: `## 1. Dropped by group'
+DEBUG check_file_contains: Looking for `Failure by group'
+DEBUG check_file_contains: `Failure by group' found at line 15: `## 2. Failure by group'
+DEBUG check_file_contains: Looking for `Ignored by group'
+DEBUG check_file_contains: `Ignored by group' found at line 17: `## 3. Ignored by group'
+DEBUG check_file_contains: Looking for `Warning by group'
+DEBUG check_file_contains: `Warning by group' found at line 98: `## 5. Warning by group'
+DEBUG check_dir: Check `test/acs_results/app_output/'
+DEBUG check_dir: `test/acs_results/app_output/' exists
+DEBUG check_dir: `test/acs_results/app_output/' has 2 entrie(s)
+DEBUG check_dir: `test/acs_results/app_output/' has enough entrie(s): 2 >= 2
+DEBUG check_dir: `test/acs_results/app_output/' does not have too many entrie(s): 2 <= 2
+DEBUG check_tree: Check `test/acs_results/app_output/'
+DEBUG check_file: Check `test/acs_results/app_output/CapsuleApp_ESRT_table_info.log'
+DEBUG check_file: `test/acs_results/app_output/CapsuleApp_ESRT_table_info.log' exists
+DEBUG check_file: `test/acs_results/app_output/CapsuleApp_ESRT_table_info.log' not empty
+DEBUG check_file_contains: Check that file `test/acs_results/app_output/CapsuleApp_ESRT_table_info.log' contains ['ESRT TABLE', 'EFI_SYSTEM_RESOURCE_TABLE:', 'EFI_SYSTEM_RESOURCE_ENTRY', 'FwClass']
+DEBUG check_file_contains: Looking for `ESRT TABLE'
+DEBUG __init__: LogReader `test/acs_results/app_output/CapsuleApp_ESRT_table_info.log'
+DEBUG logreader_detect_file_encoding: Detect encoding of `test/acs_results/app_output/CapsuleApp_ESRT_table_info.log'
+DEBUG logreader_detect_file_encoding: Encoding UTF-16
+DEBUG check_file_contains: `ESRT TABLE' found at line 2: `# ESRT TABLE #'
+DEBUG check_file_contains: Looking for `EFI_SYSTEM_RESOURCE_TABLE:'
+ERROR check_file_contains: Could not find `EFI_SYSTEM_RESOURCE_TABLE:' in `test/acs_results/app_output/CapsuleApp_ESRT_table_info.log'
+DEBUG if_contains: Error if file `test/acs_results/app_output/CapsuleApp_ESRT_table_info.log' contains ['FwResourceCount    - 0x0', 'FwResourceCountMax - 0x0', 'ESRT - Not Found']
+DEBUG __init__: LogReader `test/acs_results/app_output/CapsuleApp_ESRT_table_info.log'
+DEBUG logreader_detect_file_encoding: Detect encoding of `test/acs_results/app_output/CapsuleApp_ESRT_table_info.log'
+DEBUG logreader_detect_file_encoding: Encoding UTF-16
+ERROR if_contains: `ESRT - Not Found' found in `test/acs_results/app_output/CapsuleApp_ESRT_table_info.log' at line 4: `ESRT - Not Found'
+DEBUG check_capsuleapp_esrt: Check CapsuleApp ESRT `test/acs_results/app_output/CapsuleApp_ESRT_table_info.log'
+ERROR check_capsuleapp_esrt: No GUID found in `test/acs_results/app_output/CapsuleApp_ESRT_table_info.log'
+DEBUG check_file: Check `test/acs_results/app_output/CapsuleApp_FMP_protocol_info.log'
+DEBUG check_file: `test/acs_results/app_output/CapsuleApp_FMP_protocol_info.log' exists
+DEBUG check_file: `test/acs_results/app_output/CapsuleApp_FMP_protocol_info.log' not empty
+DEBUG check_file_contains: Check that file `test/acs_results/app_output/CapsuleApp_FMP_protocol_info.log' contains ['FMP DATA']
+DEBUG check_file_contains: Looking for `FMP DATA'
+DEBUG __init__: LogReader `test/acs_results/app_output/CapsuleApp_FMP_protocol_info.log'
+DEBUG logreader_detect_file_encoding: Detect encoding of `test/acs_results/app_output/CapsuleApp_FMP_protocol_info.log'
+DEBUG logreader_detect_file_encoding: Encoding UTF-16
+DEBUG check_file_contains: `FMP DATA' found at line 2: `# FMP DATA #'
+DEBUG check_dir: Check `test/acs_results/fwts/'
+DEBUG check_dir: `test/acs_results/fwts/' exists
+DEBUG check_dir: `test/acs_results/fwts/' has 1 entrie(s)
+DEBUG check_dir: `test/acs_results/fwts/' has enough entrie(s): 1 >= 1
+DEBUG check_dir: `test/acs_results/fwts/' does not have too many entrie(s): 1 <= 1
+DEBUG check_tree: Check `test/acs_results/fwts/'
+DEBUG check_file: Check `test/acs_results/fwts/FWTSResults.log'
+DEBUG check_file: `test/acs_results/fwts/FWTSResults.log' exists
+DEBUG check_file: `test/acs_results/fwts/FWTSResults.log' not empty
+DEBUG check_file_contains: Check that file `test/acs_results/fwts/FWTSResults.log' contains ['SystemReady IR ACS v2.0.0', 'FWTS v2', 'Results generated by fwts: Version V2', 'Running tests: uefivarinfo esrt uefibootpath dt_base uefirtmisc uefirtvariable', 'esrt: Sanity check UEFI ESRT Table.', 'Test Failure Summary', 'Critical failures: NONE', 'High failures: NONE', 'Medium failures: NONE', 'Low failures: NONE', 'Other failures: NONE', 'Total:']
+DEBUG check_file_contains: Looking for `SystemReady IR ACS v2.0.0'
+DEBUG __init__: LogReader `test/acs_results/fwts/FWTSResults.log'
+DEBUG logreader_detect_file_encoding: Detect encoding of `test/acs_results/fwts/FWTSResults.log'
+DEBUG logreader_detect_file_encoding: Encoding None
+DEBUG check_file_contains: `SystemReady IR ACS v2.0.0' found at line 1: `SystemReady IR ACS v2.0.0'
+DEBUG check_file_contains: Looking for `FWTS v2'
+DEBUG check_file_contains: `FWTS v2' found at line 2: `FWTS v23.01.00'
+DEBUG check_file_contains: Looking for `Results generated by fwts: Version V2'
+DEBUG check_file_contains: `Results generated by fwts: Version V2' found at line 3: `Results generated by fwts: Version V23.01.00 (2023-01-16 04:09:35).'
+DEBUG check_file_contains: Looking for `Running tests: uefivarinfo esrt uefibootpath dt_base uefirtmisc uefirtvariable'
+DEBUG check_file_contains: `Running tests: uefivarinfo esrt uefibootpath dt_base uefirtmisc uefirtvariable' found at line 15: `Running tests: uefivarinfo esrt uefibootpath dt_base uefirtmisc uefirtvariable'
+DEBUG check_file_contains: Looking for `esrt: Sanity check UEFI ESRT Table.'
+DEBUG check_file_contains: `esrt: Sanity check UEFI ESRT Table.' found at line 28: `esrt: Sanity check UEFI ESRT Table.'
+DEBUG check_file_contains: Looking for `Test Failure Summary'
+ERROR check_file_contains: Could not find `Test Failure Summary' in `test/acs_results/fwts/FWTSResults.log'
+DEBUG if_contains: Warn if file `test/acs_results/fwts/FWTSResults.log' contains ['Aborted test']
+DEBUG __init__: LogReader `test/acs_results/fwts/FWTSResults.log'
+DEBUG logreader_detect_file_encoding: Detect encoding of `test/acs_results/fwts/FWTSResults.log'
+DEBUG logreader_detect_file_encoding: Encoding None
+WARNING if_contains: `Aborted test' found in `test/acs_results/fwts/FWTSResults.log' at line 31: `Aborted test, initialisation failed.'
+DEBUG if_contains: Error if file `test/acs_results/fwts/FWTSResults.log' contains ['FAILED', 'This is an invalid entry.', 'esrt: Cannot find any entries on directory /sys/firmware/efi/esrt/entries', 'esrt: The FwResourceCount value should not be 0.', 'esrt: The FwResourceCountMax value should not be 0.', 'uefirtmisc: Failed to get high monotonic count with UEFI runtime service.', 'uefirttime: Failed to set time with UEFI runtime service.']
+DEBUG __init__: LogReader `test/acs_results/fwts/FWTSResults.log'
+DEBUG logreader_detect_file_encoding: Detect encoding of `test/acs_results/fwts/FWTSResults.log'
+DEBUG logreader_detect_file_encoding: Encoding None
+DEBUG if_contains: No pattern in `test/acs_results/fwts/FWTSResults.log'
+DEBUG check_dir: Check `test/acs_results/linux_acs/'
+DEBUG check_dir: `test/acs_results/linux_acs/' exists
+DEBUG check_dir: `test/acs_results/linux_acs/' has 1 entrie(s)
+DEBUG check_dir: `test/acs_results/linux_acs/' has enough entrie(s): 1 >= 1
+DEBUG check_dir: `test/acs_results/linux_acs/' does not have too many entrie(s): 1 <= 1
+DEBUG check_tree: Check `test/acs_results/linux_acs/'
+DEBUG check_dir: Check `test/acs_results/linux_acs/bsa_acs_app/'
+DEBUG check_dir: `test/acs_results/linux_acs/bsa_acs_app/' exists
+DEBUG check_dir: `test/acs_results/linux_acs/bsa_acs_app/' has 2 entrie(s)
+DEBUG check_dir: `test/acs_results/linux_acs/bsa_acs_app/' has enough entrie(s): 2 >= 2
+DEBUG check_dir: `test/acs_results/linux_acs/bsa_acs_app/' does not have too many entrie(s): 2 <= 2
+DEBUG check_tree: Check `test/acs_results/linux_acs/bsa_acs_app/'
+DEBUG check_file: Check `test/acs_results/linux_acs/bsa_acs_app/BSALinuxResults.log'
+DEBUG check_file: `test/acs_results/linux_acs/bsa_acs_app/BSALinuxResults.log' exists
+DEBUG check_file: `test/acs_results/linux_acs/bsa_acs_app/BSALinuxResults.log' not empty
+DEBUG check_file_contains: Check that file `test/acs_results/linux_acs/bsa_acs_app/BSALinuxResults.log' contains ['SystemReady IR ACS v2.0.0', 'BSA v1.0.', 'BSA Architecture Compliance Suite', 'Version 1.0.', 'Starting tests', 'BSA tests complete']
+DEBUG check_file_contains: Looking for `SystemReady IR ACS v2.0.0'
+DEBUG __init__: LogReader `test/acs_results/linux_acs/bsa_acs_app/BSALinuxResults.log'
+DEBUG logreader_detect_file_encoding: Detect encoding of `test/acs_results/linux_acs/bsa_acs_app/BSALinuxResults.log'
+DEBUG logreader_detect_file_encoding: Encoding None
+DEBUG check_file_contains: `SystemReady IR ACS v2.0.0' found at line 1: `SystemReady IR ACS v2.0.0'
+DEBUG check_file_contains: Looking for `BSA v1.0.'
+DEBUG check_file_contains: `BSA v1.0.' found at line 2: `BSA v1.0.4'
+DEBUG check_file_contains: Looking for `BSA Architecture Compliance Suite'
+DEBUG check_file_contains: `BSA Architecture Compliance Suite' found at line 4: ` ************ BSA Architecture Compliance Suite *********'
+DEBUG check_file_contains: Looking for `Version 1.0.'
+DEBUG check_file_contains: `Version 1.0.' found at line 5: `                        Version 1.0.4'
+DEBUG check_file_contains: Looking for `Starting tests'
+DEBUG check_file_contains: `Starting tests' found at line 7: ` Starting tests (Print level is  3)'
+DEBUG check_file_contains: Looking for `BSA tests complete'
+DEBUG check_file_contains: `BSA tests complete' found at line 17: `                    *** BSA tests complete ***'
+DEBUG check_file: Check `test/acs_results/linux_acs/bsa_acs_app/BsaResultsKernel.log'
+DEBUG check_file: `test/acs_results/linux_acs/bsa_acs_app/BsaResultsKernel.log' exists
+DEBUG check_file: `test/acs_results/linux_acs/bsa_acs_app/BsaResultsKernel.log' not empty
+DEBUG check_file_contains: Check that file `test/acs_results/linux_acs/bsa_acs_app/BsaResultsKernel.log' contains ['Number of PE detected', 'Tests Failed =  0']
+DEBUG check_file_contains: Looking for `Number of PE detected'
+DEBUG __init__: LogReader `test/acs_results/linux_acs/bsa_acs_app/BsaResultsKernel.log'
+DEBUG logreader_detect_file_encoding: Detect encoding of `test/acs_results/linux_acs/bsa_acs_app/BsaResultsKernel.log'
+DEBUG logreader_detect_file_encoding: Encoding None
+DEBUG check_file_contains: `Number of PE detected' found at line 1: `[   67.312052]  PE_INFO: Number of PE detected       :    2'
+DEBUG check_file_contains: Looking for `Tests Failed =  0'
+DEBUG check_file_contains: `Tests Failed =  0' found at line 29: `[   69.592295]       Total Tests Run =  3, Tests Passed =  2, Tests Failed =  0'
+DEBUG check_dir: Check `test/acs_results/linux_dump/'
+DEBUG check_dir: `test/acs_results/linux_dump/' exists
+DEBUG check_dir: `test/acs_results/linux_dump/' has 10 entrie(s)
+DEBUG check_dir: `test/acs_results/linux_dump/' has enough entrie(s): 10 >= 10
+DEBUG check_dir: `test/acs_results/linux_dump/' does not have too many entrie(s): 10 <= 11
+DEBUG check_tree: Check `test/acs_results/linux_dump/'
+DEBUG check_file: Check `test/acs_results/linux_dump/cpuinfo.log'
+DEBUG check_file: `test/acs_results/linux_dump/cpuinfo.log' exists
+DEBUG check_file: `test/acs_results/linux_dump/cpuinfo.log' not empty
+DEBUG check_file_contains: Check that file `test/acs_results/linux_dump/cpuinfo.log' contains ['processor', 'BogoMIPS', 'Features', 'CPU implementer', 'CPU architecture: 8', 'CPU variant', 'CPU part', 'CPU revision']
+DEBUG check_file_contains: Looking for `processor'
+DEBUG __init__: LogReader `test/acs_results/linux_dump/cpuinfo.log'
+DEBUG logreader_detect_file_encoding: Detect encoding of `test/acs_results/linux_dump/cpuinfo.log'
+DEBUG logreader_detect_file_encoding: Encoding None
+DEBUG check_file_contains: `processor' found at line 1: `processor	: 0'
+DEBUG check_file_contains: Looking for `BogoMIPS'
+DEBUG check_file_contains: `BogoMIPS' found at line 2: `BogoMIPS	: 125.00'
+DEBUG check_file_contains: Looking for `Features'
+DEBUG check_file_contains: `Features' found at line 3: `Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid'
+DEBUG check_file_contains: Looking for `CPU implementer'
+DEBUG check_file_contains: `CPU implementer' found at line 4: `CPU implementer	: 0x41'
+DEBUG check_file_contains: Looking for `CPU architecture: 8'
+DEBUG check_file_contains: `CPU architecture: 8' found at line 5: `CPU architecture: 8'
+DEBUG check_file_contains: Looking for `CPU variant'
+DEBUG check_file_contains: `CPU variant' found at line 6: `CPU variant	: 0x1'
+DEBUG check_file_contains: Looking for `CPU part'
+DEBUG check_file_contains: `CPU part' found at line 7: `CPU part	: 0xd07'
+DEBUG check_file_contains: Looking for `CPU revision'
+DEBUG check_file_contains: `CPU revision' found at line 8: `CPU revision	: 0'
+DEBUG check_file: Check `test/acs_results/linux_dump/dmidecode.log'
+DEBUG check_file: `test/acs_results/linux_dump/dmidecode.log' exists
+DEBUG check_file: `test/acs_results/linux_dump/dmidecode.log' not empty
+DEBUG check_file_contains: Check that file `test/acs_results/linux_dump/dmidecode.log' contains ['# dmidecode 3.4']
+DEBUG check_file_contains: Looking for `# dmidecode 3.4'
+DEBUG __init__: LogReader `test/acs_results/linux_dump/dmidecode.log'
+DEBUG logreader_detect_file_encoding: Detect encoding of `test/acs_results/linux_dump/dmidecode.log'
+DEBUG logreader_detect_file_encoding: Encoding None
+DEBUG check_file_contains: `# dmidecode 3.4' found at line 1: `# dmidecode 3.4'
+DEBUG check_file: Check `test/acs_results/linux_dump/efibootmgr.log'
+DEBUG check_file: `test/acs_results/linux_dump/efibootmgr.log' exists
+DEBUG check_file: `test/acs_results/linux_dump/efibootmgr.log' not empty
+DEBUG check_dir: Check `test/acs_results/linux_dump/firmware/'
+DEBUG check_dir: `test/acs_results/linux_dump/firmware/' exists
+DEBUG check_dir: `test/acs_results/linux_dump/firmware/' has 4 entrie(s)
+DEBUG check_dir: `test/acs_results/linux_dump/firmware/' has enough entrie(s): 4 >= 4
+DEBUG check_dir: `test/acs_results/linux_dump/firmware/' does not have too many entrie(s): 4 <= 4
+DEBUG check_tree: Check `test/acs_results/linux_dump/firmware/'
+DEBUG check_dir: Check `test/acs_results/linux_dump/firmware/devicetree/'
+DEBUG check_dir: `test/acs_results/linux_dump/firmware/devicetree/' exists
+DEBUG check_dir: `test/acs_results/linux_dump/firmware/devicetree/' has 1 entrie(s)
+DEBUG check_dir: `test/acs_results/linux_dump/firmware/devicetree/' has enough entrie(s): 1 >= 1
+DEBUG check_dir: `test/acs_results/linux_dump/firmware/devicetree/' does not have too many entrie(s): 1 <= 1
+DEBUG check_tree: Check `test/acs_results/linux_dump/firmware/devicetree/'
+DEBUG check_dir: Check `test/acs_results/linux_dump/firmware/devicetree/base/'
+DEBUG check_dir: `test/acs_results/linux_dump/firmware/devicetree/base/' exists
+DEBUG check_dir: `test/acs_results/linux_dump/firmware/devicetree/base/' has 62 entrie(s)
+DEBUG check_dir: `test/acs_results/linux_dump/firmware/devicetree/base/' has enough entrie(s): 62 >= 1
+DEBUG check_tree: Check `test/acs_results/linux_dump/firmware/devicetree/base/'
+DEBUG check_dir: Check `test/acs_results/linux_dump/firmware/devicetree/base/chosen/'
+DEBUG check_dir: `test/acs_results/linux_dump/firmware/devicetree/base/chosen/' exists
+DEBUG check_dir: `test/acs_results/linux_dump/firmware/devicetree/base/chosen/' has 10 entrie(s)
+DEBUG check_dir: `test/acs_results/linux_dump/firmware/devicetree/base/chosen/' has enough entrie(s): 10 >= 7
+DEBUG check_tree: Check `test/acs_results/linux_dump/firmware/devicetree/base/chosen/'
+DEBUG check_file: Check `test/acs_results/linux_dump/firmware/devicetree/base/chosen/stdout-path'
+DEBUG check_file: `test/acs_results/linux_dump/firmware/devicetree/base/chosen/stdout-path' exists
+DEBUG check_file: `test/acs_results/linux_dump/firmware/devicetree/base/chosen/stdout-path' not empty
+DEBUG check_dir: Check `test/acs_results/linux_dump/firmware/devicetree/base/psci/'
+DEBUG check_dir: `test/acs_results/linux_dump/firmware/devicetree/base/psci/' exists
+DEBUG check_dir: `test/acs_results/linux_dump/firmware/devicetree/base/psci/' has 7 entrie(s)
+DEBUG check_dir: `test/acs_results/linux_dump/firmware/devicetree/base/psci/' has enough entrie(s): 7 >= 3
+DEBUG check_tree: Check `test/acs_results/linux_dump/firmware/devicetree/base/psci/'
+DEBUG check_file: Check `test/acs_results/linux_dump/firmware/devicetree/base/psci/compatible'
+DEBUG check_file: `test/acs_results/linux_dump/firmware/devicetree/base/psci/compatible' exists
+DEBUG check_file: `test/acs_results/linux_dump/firmware/devicetree/base/psci/compatible' not empty
+DEBUG check_file_contains: Check that file `test/acs_results/linux_dump/firmware/devicetree/base/psci/compatible' contains ['arm,psci-']
+DEBUG check_file_contains: Looking for `arm,psci-'
+DEBUG __init__: LogReader `test/acs_results/linux_dump/firmware/devicetree/base/psci/compatible'
+DEBUG logreader_detect_file_encoding: Detect encoding of `test/acs_results/linux_dump/firmware/devicetree/base/psci/compatible'
+DEBUG logreader_detect_file_encoding: Encoding None
+DEBUG check_file_contains: `arm,psci-' found at line 1: `arm,psci-1.0 arm,psci-0.2 arm,psci '
+DEBUG check_file: Check `test/acs_results/linux_dump/firmware/devicetree/base/psci/method'
+DEBUG check_file: `test/acs_results/linux_dump/firmware/devicetree/base/psci/method' exists
+DEBUG check_file: `test/acs_results/linux_dump/firmware/devicetree/base/psci/method' not empty
+DEBUG if_contains: Warn if file `test/acs_results/linux_dump/firmware/devicetree/base/psci/method' contains ['hvc']
+DEBUG __init__: LogReader `test/acs_results/linux_dump/firmware/devicetree/base/psci/method'
+DEBUG logreader_detect_file_encoding: Detect encoding of `test/acs_results/linux_dump/firmware/devicetree/base/psci/method'
+DEBUG logreader_detect_file_encoding: Encoding None
+WARNING if_contains: `hvc' found in `test/acs_results/linux_dump/firmware/devicetree/base/psci/method' at line 1: `hvc '
+DEBUG check_file: Check `test/acs_results/linux_dump/firmware/devicetree/base/psci/name'
+DEBUG check_file: `test/acs_results/linux_dump/firmware/devicetree/base/psci/name' exists
+DEBUG check_file: `test/acs_results/linux_dump/firmware/devicetree/base/psci/name' not empty
+DEBUG check_file_contains: Check that file `test/acs_results/linux_dump/firmware/devicetree/base/psci/name' contains ['psci']
+DEBUG check_file_contains: Looking for `psci'
+DEBUG __init__: LogReader `test/acs_results/linux_dump/firmware/devicetree/base/psci/name'
+DEBUG logreader_detect_file_encoding: Detect encoding of `test/acs_results/linux_dump/firmware/devicetree/base/psci/name'
+DEBUG logreader_detect_file_encoding: Encoding None
+DEBUG check_file_contains: `psci' found at line 1: `psci '
+DEBUG check_dir: Check `test/acs_results/linux_dump/firmware/dmi/'
+DEBUG check_dir: `test/acs_results/linux_dump/firmware/dmi/' exists
+DEBUG check_dir: `test/acs_results/linux_dump/firmware/dmi/' has 2 entrie(s)
+DEBUG check_dir: `test/acs_results/linux_dump/firmware/dmi/' has enough entrie(s): 2 >= 1
+DEBUG check_dir: Check `test/acs_results/linux_dump/firmware/efi/'
+DEBUG check_dir: `test/acs_results/linux_dump/firmware/efi/' exists
+DEBUG check_dir: `test/acs_results/linux_dump/firmware/efi/' has 3 entrie(s)
+DEBUG check_dir: `test/acs_results/linux_dump/firmware/efi/' has enough entrie(s): 3 >= 1
+DEBUG check_tree: Check `test/acs_results/linux_dump/firmware/efi/'
+DEBUG check_dir: Check `test/acs_results/linux_dump/firmware/efi/efivars/'
+DEBUG check_dir: `test/acs_results/linux_dump/firmware/efi/efivars/' exists
+DEBUG check_dir: `test/acs_results/linux_dump/firmware/efi/efivars/' has 39 entrie(s)
+DEBUG check_dir: `test/acs_results/linux_dump/firmware/efi/efivars/' has enough entrie(s): 39 >= 1
+DEBUG check_tree: Check `test/acs_results/linux_dump/firmware/efi/efivars/'
+DEBUG check_tree: test/acs_results/linux_dump/firmware/efi/efivars/OsIndicationsSupported-* -> ['test/acs_results/linux_dump/firmware/efi/efivars/OsIndicationsSupported-8be4df61-93ca-11d2-aa0d-00e098032b8c']
+DEBUG check_file: Check `test/acs_results/linux_dump/firmware/efi/efivars/OsIndicationsSupported-8be4df61-93ca-11d2-aa0d-00e098032b8c'
+DEBUG check_file: `test/acs_results/linux_dump/firmware/efi/efivars/OsIndicationsSupported-8be4df61-93ca-11d2-aa0d-00e098032b8c' exists
+DEBUG check_file: `test/acs_results/linux_dump/firmware/efi/efivars/OsIndicationsSupported-8be4df61-93ca-11d2-aa0d-00e098032b8c' not empty
+DEBUG check_dir: Check `test/acs_results/linux_dump/firmware/efi/esrt/'
+ERROR check_dir: `test/acs_results/linux_dump/firmware/efi/esrt/' missing
+DEBUG check_file: Check `test/acs_results/linux_dump/firmware/fdt'
+DEBUG check_file: `test/acs_results/linux_dump/firmware/fdt' exists
+DEBUG check_file: `test/acs_results/linux_dump/firmware/fdt' not empty
+DEBUG check_file: Check `test/acs_results/linux_dump/firmware.log'
+DEBUG check_file: `test/acs_results/linux_dump/firmware.log' exists
+DEBUG check_file: `test/acs_results/linux_dump/firmware.log' not empty
+DEBUG check_file_contains: Check that file `test/acs_results/linux_dump/firmware.log' contains ['/sys/firmware:', 'fdt']
+DEBUG check_file_contains: Looking for `/sys/firmware:'
+DEBUG __init__: LogReader `test/acs_results/linux_dump/firmware.log'
+DEBUG logreader_detect_file_encoding: Detect encoding of `test/acs_results/linux_dump/firmware.log'
+DEBUG logreader_detect_file_encoding: Encoding None
+DEBUG check_file_contains: `/sys/firmware:' found at line 1: `/sys/firmware:'
+DEBUG check_file_contains: Looking for `fdt'
+DEBUG check_file_contains: `fdt' found at line 5: `-r--------    1 root     root          8111 Aug  1 09:15 fdt'
+DEBUG check_file: Check `test/acs_results/linux_dump/interrupts.log'
+DEBUG check_file: `test/acs_results/linux_dump/interrupts.log' exists
+DEBUG check_file: `test/acs_results/linux_dump/interrupts.log' not empty
+DEBUG check_file_contains: Check that file `test/acs_results/linux_dump/interrupts.log' contains ['CPU0', 'Rescheduling interrupts', 'Function call interrupts', 'CPU stop interrupts', 'CPU stop (for crash dump) interrupts', 'Timer broadcast interrupts', 'IRQ work interrupts', 'CPU wake-up interrupts']
+DEBUG check_file_contains: Looking for `CPU0'
+DEBUG __init__: LogReader `test/acs_results/linux_dump/interrupts.log'
+DEBUG logreader_detect_file_encoding: Detect encoding of `test/acs_results/linux_dump/interrupts.log'
+DEBUG logreader_detect_file_encoding: Encoding None
+DEBUG check_file_contains: `CPU0' found at line 1: `           CPU0       CPU1'
+DEBUG check_file_contains: Looking for `Rescheduling interrupts'
+DEBUG check_file_contains: `Rescheduling interrupts' found at line 15: `IPI0:       636        540       Rescheduling interrupts'
+DEBUG check_file_contains: Looking for `Function call interrupts'
+DEBUG check_file_contains: `Function call interrupts' found at line 16: `IPI1:       582        518       Function call interrupts'
+DEBUG check_file_contains: Looking for `CPU stop interrupts'
+DEBUG check_file_contains: `CPU stop interrupts' found at line 17: `IPI2:         0          0       CPU stop interrupts'
+DEBUG check_file_contains: Looking for `CPU stop (for crash dump) interrupts'
+DEBUG check_file_contains: `CPU stop (for crash dump) interrupts' found at line 18: `IPI3:         0          0       CPU stop (for crash dump) interrupts'
+DEBUG check_file_contains: Looking for `Timer broadcast interrupts'
+DEBUG check_file_contains: `Timer broadcast interrupts' found at line 19: `IPI4:         0          0       Timer broadcast interrupts'
+DEBUG check_file_contains: Looking for `IRQ work interrupts'
+DEBUG check_file_contains: `IRQ work interrupts' found at line 20: `IPI5:         0          0       IRQ work interrupts'
+DEBUG check_file_contains: Looking for `CPU wake-up interrupts'
+DEBUG check_file_contains: `CPU wake-up interrupts' found at line 21: `IPI6:         0          0       CPU wake-up interrupts'
+DEBUG check_file: Check `test/acs_results/linux_dump/iomem.log'
+DEBUG check_file: `test/acs_results/linux_dump/iomem.log' exists
+DEBUG check_file: `test/acs_results/linux_dump/iomem.log' not empty
+DEBUG check_file_contains: Check that file `test/acs_results/linux_dump/iomem.log' contains ['System RAM']
+DEBUG check_file_contains: Looking for `System RAM'
+DEBUG __init__: LogReader `test/acs_results/linux_dump/iomem.log'
+DEBUG logreader_detect_file_encoding: Detect encoding of `test/acs_results/linux_dump/iomem.log'
+DEBUG logreader_detect_file_encoding: Encoding None
+DEBUG check_file_contains: `System RAM' found at line 10: `40000000-bc4effff : System RAM'
+DEBUG check_file: Check `test/acs_results/linux_dump/lspci.log'
+DEBUG check_file: `test/acs_results/linux_dump/lspci.log' exists
+DEBUG check_file: `test/acs_results/linux_dump/lspci.log' not empty
+DEBUG check_file: Check `test/acs_results/linux_dump/lsusb.log'
+DEBUG check_file: `test/acs_results/linux_dump/lsusb.log' missing (optional)
+DEBUG check_file: Check `test/acs_results/linux_dump/meminfo.log'
+DEBUG check_file: `test/acs_results/linux_dump/meminfo.log' exists
+DEBUG check_file: `test/acs_results/linux_dump/meminfo.log' not empty
+DEBUG check_file_contains: Check that file `test/acs_results/linux_dump/meminfo.log' contains ['MemTotal', 'MemFree', 'MemAvailable']
+DEBUG check_file_contains: Looking for `MemTotal'
+DEBUG __init__: LogReader `test/acs_results/linux_dump/meminfo.log'
+DEBUG logreader_detect_file_encoding: Detect encoding of `test/acs_results/linux_dump/meminfo.log'
+DEBUG logreader_detect_file_encoding: Encoding None
+DEBUG check_file_contains: `MemTotal' found at line 1: `MemTotal:        2021120 kB'
+DEBUG check_file_contains: Looking for `MemFree'
+DEBUG check_file_contains: `MemFree' found at line 2: `MemFree:         1937764 kB'
+DEBUG check_file_contains: Looking for `MemAvailable'
+DEBUG check_file_contains: `MemAvailable' found at line 3: `MemAvailable:    1921220 kB'
+DEBUG check_file: Check `test/acs_results/linux_dump/uname.log'
+DEBUG check_file: `test/acs_results/linux_dump/uname.log' exists
+DEBUG check_file: `test/acs_results/linux_dump/uname.log' not empty
+DEBUG check_file_contains: Check that file `test/acs_results/linux_dump/uname.log' contains ['Linux generic-arm64 6.0.0-yocto-standard #1 SMP PREEMPT Sun Oct 2 21:09:07 UTC 2022 aarch64 GNU/Linux']
+DEBUG check_file_contains: Looking for `Linux generic-arm64 6.0.0-yocto-standard #1 SMP PREEMPT Sun Oct 2 21:09:07 UTC 2022 aarch64 GNU/Linux'
+DEBUG __init__: LogReader `test/acs_results/linux_dump/uname.log'
+DEBUG logreader_detect_file_encoding: Detect encoding of `test/acs_results/linux_dump/uname.log'
+DEBUG logreader_detect_file_encoding: Encoding None
+DEBUG check_file_contains: `Linux generic-arm64 6.0.0-yocto-standard #1 SMP PREEMPT Sun Oct 2 21:09:07 UTC 2022 aarch64 GNU/Linux' found at line 1: `Linux generic-arm64 6.0.0-yocto-standard #1 SMP PREEMPT Sun Oct 2 21:09:07 UTC 2022 aarch64 GNU/Linux'
+DEBUG check_dir: Check `test/acs_results/linux_tools/'
+DEBUG check_dir: `test/acs_results/linux_tools/' exists
+DEBUG check_dir: `test/acs_results/linux_tools/' has 2 entrie(s)
+DEBUG check_dir: `test/acs_results/linux_tools/' has enough entrie(s): 2 >= 1
+DEBUG check_dir: `test/acs_results/linux_tools/' does not have too many entrie(s): 2 <= 2
+DEBUG check_tree: Check `test/acs_results/linux_tools/'
+DEBUG check_tree: test/acs_results/linux_tools/dt-validate.log* -> ['test/acs_results/linux_tools/dt-validate.log.old', 'test/acs_results/linux_tools/dt-validate.log']
+DEBUG check_file: Check `test/acs_results/linux_tools/dt-validate.log.old'
+DEBUG check_file: `test/acs_results/linux_tools/dt-validate.log.old' exists
+DEBUG check_file: `test/acs_results/linux_tools/dt-validate.log.old' not empty
+DEBUG check_file_contains: Check that file `test/acs_results/linux_tools/dt-validate.log.old' contains ['DeviceTree bindings of Linux kernel version: ', 'dtschema version: 2022.9']
+DEBUG check_file_contains: Looking for `DeviceTree bindings of Linux kernel version: '
+DEBUG __init__: LogReader `test/acs_results/linux_tools/dt-validate.log.old'
+DEBUG logreader_detect_file_encoding: Detect encoding of `test/acs_results/linux_tools/dt-validate.log.old'
+DEBUG logreader_detect_file_encoding: Encoding None
+DEBUG check_file_contains: `DeviceTree bindings of Linux kernel version: ' found at line 1: `DeviceTree bindings of Linux kernel version: 6.1.2'
+DEBUG check_file_contains: Looking for `dtschema version: 2022.9'
+DEBUG check_file_contains: `dtschema version: 2022.9' found at line 2: `dtschema version: 2022.9'
+DEBUG check_file: Check `test/acs_results/linux_tools/dt-validate.log'
+DEBUG check_file: `test/acs_results/linux_tools/dt-validate.log' exists
+ERROR check_file: `test/acs_results/linux_tools/dt-validate.log' empty
+DEBUG check_dir: Check `test/acs_results/sct_results/'
+DEBUG check_dir: `test/acs_results/sct_results/' exists
+DEBUG check_dir: `test/acs_results/sct_results/' has 3 entrie(s)
+DEBUG check_dir: `test/acs_results/sct_results/' has enough entrie(s): 3 >= 3
+DEBUG check_dir: `test/acs_results/sct_results/' does not have too many entrie(s): 3 <= 3
+DEBUG check_tree: Check `test/acs_results/sct_results/'
+DEBUG check_dir: Check `test/acs_results/sct_results/EfiCompliantBBTest/'
+DEBUG check_dir: `test/acs_results/sct_results/EfiCompliantBBTest/' exists
+DEBUG check_dir: `test/acs_results/sct_results/EfiCompliantBBTest/' has 1 entrie(s)
+DEBUG check_dir: `test/acs_results/sct_results/EfiCompliantBBTest/' has enough entrie(s): 1 >= 1
+DEBUG check_dir: `test/acs_results/sct_results/EfiCompliantBBTest/' does not have too many entrie(s): 1 <= 1
+DEBUG check_tree: Check `test/acs_results/sct_results/EfiCompliantBBTest/'
+DEBUG check_file: Check `test/acs_results/sct_results/EfiCompliantBBTest/EfiCompliant.ini'
+DEBUG check_file: `test/acs_results/sct_results/EfiCompliantBBTest/EfiCompliant.ini' exists
+DEBUG check_file: `test/acs_results/sct_results/EfiCompliantBBTest/EfiCompliant.ini' not empty
+DEBUG check_file_contains: Check that file `test/acs_results/sct_results/EfiCompliantBBTest/EfiCompliant.ini' contains ['Test Configuration Specific', 'Platform Specific']
+DEBUG check_file_contains: Looking for `Test Configuration Specific'
+DEBUG __init__: LogReader `test/acs_results/sct_results/EfiCompliantBBTest/EfiCompliant.ini'
+DEBUG logreader_detect_file_encoding: Detect encoding of `test/acs_results/sct_results/EfiCompliantBBTest/EfiCompliant.ini'
+DEBUG logreader_detect_file_encoding: Encoding None
+DEBUG check_file_contains: `Test Configuration Specific' found at line 27: `###  [Test Configuration Specific]'
+DEBUG check_file_contains: Looking for `Platform Specific'
+DEBUG check_file_contains: `Platform Specific' found at line 33: `###  [Platform Specific]'
+DEBUG check_dir: Check `test/acs_results/sct_results/Overall/'
+DEBUG check_dir: `test/acs_results/sct_results/Overall/' exists
+DEBUG check_dir: `test/acs_results/sct_results/Overall/' has 2 entrie(s)
+DEBUG check_dir: `test/acs_results/sct_results/Overall/' has enough entrie(s): 2 >= 2
+DEBUG check_dir: `test/acs_results/sct_results/Overall/' does not have too many entrie(s): 2 <= 2
+DEBUG check_tree: Check `test/acs_results/sct_results/Overall/'
+DEBUG check_file: Check `test/acs_results/sct_results/Overall/Summary.ekl'
+DEBUG check_file: `test/acs_results/sct_results/Overall/Summary.ekl' exists
+DEBUG check_file: `test/acs_results/sct_results/Overall/Summary.ekl' not empty
+DEBUG check_file_contains: Check that file `test/acs_results/sct_results/Overall/Summary.ekl' contains ['|HEAD|', '|TERM|']
+DEBUG check_file_contains: Looking for `|HEAD|'
+DEBUG __init__: LogReader `test/acs_results/sct_results/Overall/Summary.ekl'
+DEBUG logreader_detect_file_encoding: Detect encoding of `test/acs_results/sct_results/Overall/Summary.ekl'
+DEBUG logreader_detect_file_encoding: Encoding UTF-16
+DEBUG check_file_contains: `|HEAD|' found at line 1: `|HEAD|||0||01-08-2023|08:22:22|A0A8BED3-3D6F-4AD8-907A-84D52EE1543B|0x00010001|PlatformSpecificElements|UEFI Compliant Test|GenericTest\EFICompliantTest|No device path'
+DEBUG check_file_contains: Looking for `|TERM|'
+DEBUG check_file_contains: `|TERM|' found at line 64: `|TERM|0000|01-08-2023|08:22:23|0 00:00:01'
+DEBUG check_file: Check `test/acs_results/sct_results/Overall/Summary.log'
+DEBUG check_file: `test/acs_results/sct_results/Overall/Summary.log' exists
+DEBUG check_file: `test/acs_results/sct_results/Overall/Summary.log' not empty
+DEBUG check_file_contains: Check that file `test/acs_results/sct_results/Overall/Summary.log' contains ['Arm ACS Version: SystemReady IR ACS v2.0.0', 'BBR ACS 1.0.', 'Test Finished:']
+DEBUG check_file_contains: Looking for `Arm ACS Version: SystemReady IR ACS v2.0.0'
+DEBUG __init__: LogReader `test/acs_results/sct_results/Overall/Summary.log'
+DEBUG logreader_detect_file_encoding: Detect encoding of `test/acs_results/sct_results/Overall/Summary.log'
+DEBUG logreader_detect_file_encoding: Encoding UTF-16
+DEBUG check_file_contains: `Arm ACS Version: SystemReady IR ACS v2.0.0' found at line 2: `Arm ACS Version: SystemReady IR ACS v2.0.0'
+DEBUG check_file_contains: Looking for `BBR ACS 1.0.'
+DEBUG check_file_contains: `BBR ACS 1.0.' found at line 3: `BBR ACS 1.0.4 (EBBR)'
+DEBUG check_file_contains: Looking for `Test Finished:'
+DEBUG check_file_contains: `Test Finished:' found at line 156: `Test Finished: 08/01/23  08:22a'
+DEBUG check_dir: Check `test/acs_results/sct_results/Sequence/'
+DEBUG check_dir: `test/acs_results/sct_results/Sequence/' exists
+DEBUG check_dir: `test/acs_results/sct_results/Sequence/' has 3 entrie(s)
+DEBUG check_dir: `test/acs_results/sct_results/Sequence/' has enough entrie(s): 3 >= 3
+DEBUG check_dir: `test/acs_results/sct_results/Sequence/' does not have too many entrie(s): 3 <= 3
+DEBUG check_tree: Check `test/acs_results/sct_results/Sequence/'
+DEBUG check_file: Check `test/acs_results/sct_results/Sequence/EBBR_manual.seq'
+DEBUG check_file: `test/acs_results/sct_results/Sequence/EBBR_manual.seq' exists
+DEBUG check_file: `test/acs_results/sct_results/Sequence/EBBR_manual.seq' not empty
+DEBUG check_file_contains: Check that file `test/acs_results/sct_results/Sequence/EBBR_manual.seq' contains ['[Test Case]', 'Revision=', 'Guid=', 'Name=', 'Order=', 'Iterations=']
+DEBUG check_file_contains: Looking for `[Test Case]'
+DEBUG __init__: LogReader `test/acs_results/sct_results/Sequence/EBBR_manual.seq'
+DEBUG logreader_detect_file_encoding: Detect encoding of `test/acs_results/sct_results/Sequence/EBBR_manual.seq'
+DEBUG logreader_detect_file_encoding: Encoding UTF-16
+DEBUG check_file_contains: `[Test Case]' found at line 1: `[Test Case]'
+DEBUG check_file_contains: Looking for `Revision='
+DEBUG check_file_contains: `Revision=' found at line 2: `Revision=0x10000'
+DEBUG check_file_contains: Looking for `Guid='
+DEBUG check_file_contains: `Guid=' found at line 3: `Guid=7A825F36-6042-423E-A466-62D1F910E459'
+DEBUG check_file_contains: Looking for `Name='
+DEBUG check_file_contains: `Name=' found at line 4: `Name=RegisterRamDiskFunction'
+DEBUG check_file_contains: Looking for `Order='
+DEBUG check_file_contains: `Order=' found at line 5: `Order=0xFFFFFFFF'
+DEBUG check_file_contains: Looking for `Iterations='
+DEBUG check_file_contains: `Iterations=' found at line 6: `Iterations=0xFFFFFFFF'
+DEBUG check_file: Check `test/acs_results/sct_results/Sequence/EBBR.seq'
+DEBUG check_file: `test/acs_results/sct_results/Sequence/EBBR.seq' exists
+DEBUG check_file: `test/acs_results/sct_results/Sequence/EBBR.seq' not empty
+DEBUG check_file_contains: Check that file `test/acs_results/sct_results/Sequence/EBBR.seq' contains ['[Test Case]', 'Revision=', 'Guid=', 'Name=', 'Order=', 'Iterations=']
+DEBUG check_file_contains: Looking for `[Test Case]'
+DEBUG __init__: LogReader `test/acs_results/sct_results/Sequence/EBBR.seq'
+DEBUG logreader_detect_file_encoding: Detect encoding of `test/acs_results/sct_results/Sequence/EBBR.seq'
+DEBUG logreader_detect_file_encoding: Encoding UTF-16
+DEBUG check_file_contains: `[Test Case]' found at line 1: `[Test Case]'
+DEBUG check_file_contains: Looking for `Revision='
+DEBUG check_file_contains: `Revision=' found at line 2: `Revision=0x10000'
+DEBUG check_file_contains: Looking for `Guid='
+DEBUG check_file_contains: `Guid=' found at line 3: `Guid=6AC7F144-0B20-4354-AFC1-A1BACC03365F'
+DEBUG check_file_contains: Looking for `Name='
+DEBUG check_file_contains: `Name=' found at line 4: `Name=GetDriver_Func'
+DEBUG check_file_contains: Looking for `Order='
+DEBUG check_file_contains: `Order=' found at line 5: `Order=0xFFFFFFFF'
+DEBUG check_file_contains: Looking for `Iterations='
+DEBUG check_file_contains: `Iterations=' found at line 6: `Iterations=0xFFFFFFFF'
+DEBUG check_file: Check `test/acs_results/sct_results/Sequence/BBSR.seq'
+DEBUG check_file: `test/acs_results/sct_results/Sequence/BBSR.seq' exists
+DEBUG check_file: `test/acs_results/sct_results/Sequence/BBSR.seq' not empty
+DEBUG check_file_contains: Check that file `test/acs_results/sct_results/Sequence/BBSR.seq' contains ['[Test Case]', 'Revision=', 'Guid=', 'Name=', 'Order=', 'Iterations=']
+DEBUG check_file_contains: Looking for `[Test Case]'
+DEBUG __init__: LogReader `test/acs_results/sct_results/Sequence/BBSR.seq'
+DEBUG logreader_detect_file_encoding: Detect encoding of `test/acs_results/sct_results/Sequence/BBSR.seq'
+DEBUG logreader_detect_file_encoding: Encoding UTF-16
+DEBUG check_file_contains: `[Test Case]' found at line 1: `[Test Case]'
+DEBUG check_file_contains: Looking for `Revision='
+DEBUG check_file_contains: `Revision=' found at line 2: `Revision=0x10000'
+DEBUG check_file_contains: Looking for `Guid='
+DEBUG check_file_contains: `Guid=' found at line 3: `Guid=39FF9C71-4B41-4E5B-AED7-87C794187D66'
+DEBUG check_file_contains: Looking for `Name='
+DEBUG check_file_contains: `Name=' found at line 4: `Name=GetInfo_Func'
+DEBUG check_file_contains: Looking for `Order='
+DEBUG check_file_contains: `Order=' found at line 5: `Order=0xFFFFFFFF'
+DEBUG check_file_contains: Looking for `Iterations='
+DEBUG check_file_contains: `Iterations=' found at line 6: `Iterations=0xFFFFFFFF'
+DEBUG check_dir: Check `test/acs_results/uefi/'
+DEBUG check_dir: `test/acs_results/uefi/' exists
+DEBUG check_dir: `test/acs_results/uefi/' has 4 entrie(s)
+DEBUG check_dir: `test/acs_results/uefi/' has enough entrie(s): 4 >= 2
+DEBUG check_dir: `test/acs_results/uefi/' does not have too many entrie(s): 4 <= 4
+DEBUG check_tree: Check `test/acs_results/uefi/'
+DEBUG check_file: Check `test/acs_results/uefi/BsaDevTree.dtb'
+DEBUG check_file: `test/acs_results/uefi/BsaDevTree.dtb' exists
+DEBUG check_file: `test/acs_results/uefi/BsaDevTree.dtb' not empty
+DEBUG check_devicetree: Check Devicetree `test/acs_results/uefi/BsaDevTree.dtb'
+DEBUG need_regen: Need regen `/home/weiouy01/.check-sr-results/linux-6.3.7/.stamp' <- ['/home/weiouy01/code/systemready-scripts/check-sr-results.py'] (margin: 3600)
+DEBUG need_regen: No need to re-generate `/home/weiouy01/.check-sr-results/linux-6.3.7/.stamp'
+DEBUG get_linux_cache: Cache hit for `/home/weiouy01/.check-sr-results/linux-6.3.7' (according to `/home/weiouy01/.check-sr-results/linux-6.3.7/.stamp')
+DEBUG which: Which `dtc'
+DEBUG which: `/usr/bin/dtc'
+DEBUG which: Which `dt-validate'
+DEBUG which: `/home/weiouy01/.local/bin/dt-validate'
+DEBUG need_regen: Need regen `test/acs_results/uefi/BsaDevTree.dtb.log' <- ['test/acs_results/uefi/BsaDevTree.dtb', '/home/weiouy01/.check-sr-results/linux-6.3.7/bindings', '/usr/bin/dtc', '/home/weiouy01/.local/bin/dt-validate'] (margin: 0)
+DEBUG need_regen: No need to re-generate `test/acs_results/uefi/BsaDevTree.dtb.log'
+DEBUG need_regen: Need regen `/home/weiouy01/.check-sr-results/linux-6.3.7/.stamp' <- ['/home/weiouy01/code/systemready-scripts/check-sr-results.py'] (margin: 3600)
+DEBUG need_regen: No need to re-generate `/home/weiouy01/.check-sr-results/linux-6.3.7/.stamp'
+DEBUG get_linux_cache: Cache hit for `/home/weiouy01/.check-sr-results/linux-6.3.7' (according to `/home/weiouy01/.check-sr-results/linux-6.3.7/.stamp')
+DEBUG run: Running ("/home/weiouy01/code/systemready-scripts/dt-parser.py --debug --compatibles '/home/weiouy01/.check-sr-results/linux-6.3.7/compatible-strings.txt' 'test/acs_results/uefi/BsaDevTree.dtb.log'",)
+DEBUG run: CompletedProcess(args="/home/weiouy01/code/systemready-scripts/dt-parser.py --debug --compatibles '/home/weiouy01/.check-sr-results/linux-6.3.7/compatible-strings.txt' 'test/acs_results/uefi/BsaDevTree.dtb.log'", returncode=0, stdout=b'\nSummary\n-------\n1  dt-validate warning missing property\n6  dt-validate warning naming\n1  ignored\n', stderr=b"DEBUG load_config: Load `/home/weiouy01/code/systemready-scripts/dt-parser.yaml'\nDEBUG load_config: 26 rules\nDEBUG load_compatibles: Load `/home/weiouy01/.check-sr-results/linux-6.3.7/compatible-strings.txt'\nDEBUG load_compatibles: 22928 unique compatibles\nDEBUG parse: Parse `test/acs_results/uefi/BsaDevTree.dtb.log'\nDEBUG parse: line 0: shell trace (`+ DTC')\nDEBUG parse: line 1: shell trace (`+ DT-VALIDATE')\nDEBUG parse: line 2: multi-lines dt-validate warning start (`/home/weiouy01/code/test/acs_results/uefi/BsaDevTree.dtb: pl061@90b0000: $nodename:0: 'pl061@90b0000' does not match '^gpio@[0-9a-f]+$'')\nDEBUG parse: line 3: multi-lines dt-validate continuation (`\tfrom schema $id: http://devicetree.org/schemas/gpio/pl061-gpio.yaml#')\nDEBUG parse: line 4: multi-lines dt-validate warning start (`/home/weiouy01/code/test/acs_results/uefi/BsaDevTree.dtb: gpio-keys: 'poweroff' does not match any of the regexes: '^(button|event|key|switch|(button|event|key|switch)-[a-z0-9-]+|[a-z0-9-]+-(button|event|key|switch))$', 'pinctrl-[0-9]+'')\nDEBUG parse: line 5: multi-lines dt-validate continuation (`\tfrom schema $id: http://devicetree.org/schemas/input/gpio-keys.yaml#')\nDEBUG parse: line 6: multi-lines dt-validate warning start (`/home/weiouy01/code/test/acs_results/uefi/BsaDevTree.dtb: pl061@9030000: $nodename:0: 'pl061@9030000' does not match '^gpio@[0-9a-f]+$'')\nDEBUG parse: line 7: multi-lines dt-validate continuation (`\tfrom schema $id: http://devicetree.org/schemas/gpio/pl061-gpio.yaml#')\nDEBUG parse: line 8: multi-lines dt-validate warning start (`/home/weiouy01/code/test/acs_results/uefi/BsaDevTree.dtb: pl061@9030000: 'interrupt-controller' is a required property')\nDEBUG parse: line 9: multi-lines dt-validate continuation (`\tfrom schema $id: http://devicetree.org/schemas/gpio/pl061-gpio.yaml#')\nDEBUG parse: line 10: multi-lines dt-validate warning start (`/home/weiouy01/code/test/acs_results/uefi/BsaDevTree.dtb: pl061@9030000: '#interrupt-cells' is a required property')\nDEBUG parse: line 11: multi-lines dt-validate continuation (`\tfrom schema $id: http://devicetree.org/schemas/gpio/pl061-gpio.yaml#')\nDEBUG parse: line 12: multi-lines dt-validate warning start (`/home/weiouy01/code/test/acs_results/uefi/BsaDevTree.dtb: pl031@9010000: $nodename:0: 'pl031@9010000' does not match '^rtc(@.*|-[0-9a-f])*$'')\nDEBUG parse: line 13: multi-lines dt-validate continuation (`\tfrom schema $id: http://devicetree.org/schemas/rtc/arm,pl031.yaml#')\nDEBUG parse: line 14: multi-lines dt-validate warning start (`/home/weiouy01/code/test/acs_results/uefi/BsaDevTree.dtb: pl011@9040000: $nodename:0: 'pl011@9040000' does not match '^serial(@.*)?$'')\nDEBUG parse: line 15: multi-lines dt-validate continuation (`\tfrom schema $id: http://devicetree.org/schemas/serial/pl011.yaml#')\nDEBUG parse: line 16: multi-lines dt-validate warning start (`/home/weiouy01/code/test/acs_results/uefi/BsaDevTree.dtb: pl011@9000000: $nodename:0: 'pl011@9000000' does not match '^serial(@.*)?$'')\nDEBUG parse: line 17: multi-lines dt-validate continuation (`\tfrom schema $id: http://devicetree.org/schemas/serial/pl011.yaml#')\nDEBUG parse: line 18: multi-lines dt-validate warning start (`/home/weiouy01/code/test/acs_results/uefi/BsaDevTree.dtb: intc@8000000: $nodename:0: 'intc@8000000' does not match '^interrupt-controller(@[0-9a-f,]+)*$'')\nDEBUG parse: line 19: multi-lines dt-validate continuation (`\tfrom schema $id: http://devicetree.org/schemas/interrupt-controller/arm,gic.yaml#')\nDEBUG parse: line 20: multi-lines dt-validate warning start (`/home/weiouy01/code/test/acs_results/uefi/BsaDevTree.dtb: secflash@0: $nodename:0: 'secflash@0' does not match '^(flash|.*sram)(@.*)?$'')\nDEBUG parse: line 21: multi-lines dt-validate continuation (`\tfrom schema $id: http://devicetree.org/schemas/mtd/mtd-physmap.yaml#')\nDEBUG parse: line 22: shell trace (`+ END')\nDEBUG parse: line 23: shell trace (`+ meta-data')\nDEBUG parse: line 24: shell trace (`+ ---------')\nDEBUG parse: line 25: shell trace (`+ command-line: check-sr-results.py --dir ../test')\nDEBUG parse: line 26: shell trace (`+ date: Tue Aug  1 09:33:55 2023 UTC')\nDEBUG parse: line 27: shell trace (`+ dt-validate-version: 2023.6.1')\nDEBUG parse: line 28: shell trace (`+ dtc-version: DTC 1.5.0')\nDEBUG parse: line 29: shell trace (`+ git-commit: v2023.04-25-g14241ce5aeae-dirty')\nDEBUG parse: line 30: shell trace (`+ linux-version: linux-6.3.7')\nDEBUG parse: line 31: shell trace (`+ python-version: 3.8.10 (default, May 26 2023, 14:05:08)  [GCC 9.4.0]')\nDEBUG parse: line 32: shell trace (`+ tar-version: tar (GNU tar) 1.30')\nINFO parse: 10 entries\nDEBUG add_compatibles: Add compatibles\nDEBUG cleanup_entries: Cleanup\nDEBUG cleanup_entries: Cleaned up 3 field(s) of entry 0, `pl061@x'\nDEBUG cleanup_entries: Cleaned up 3 field(s) of entry 2, `pl061@x'\nDEBUG cleanup_entries: Cleaned up 2 field(s) of entry 3, `pl061@x'\nDEBUG cleanup_entries: Cleaned up 2 field(s) of entry 4, `pl061@x'\nDEBUG cleanup_entries: Cleaned up 3 field(s) of entry 5, `pl031@x'\nDEBUG cleanup_entries: Cleaned up 3 field(s) of entry 6, `pl011@x'\nDEBUG cleanup_entries: Cleaned up 3 field(s) of entry 7, `pl011@x'\nDEBUG cleanup_entries: Cleaned up 3 field(s) of entry 8, `intc@x'\nDEBUG cleanup_entries: Cleaned up 3 field(s) of entry 9, `secflash@x'\nDEBUG cleanup_entries: Cleaned up 25 entries\nDEBUG dedupe_entries: De-dupe\nDEBUG dedupe_entries: De-duplicated entry 2, `pl061@x'\nDEBUG dedupe_entries: De-duplicated entry 7, `pl011@x'\nINFO dedupe_entries: De-duplicated 2 entries\nDEBUG apply_rules: Apply rules\nDEBUG apply_rules: Applying rule 22 `Categorize all dt-validate warnings about non-matching names (2) as `naming' for easier analysis. This is only to ease analysis; those issues still need to be dealt with.' to entry 0 `pl061@x'\nDEBUG apply_rules: Applying rule 21 `Categorize all dt-validate warnings about non-matching names as `naming' for easier analysis. This is only to ease analysis; those issues still need to be dealt with.' to entry 1 `gpio-keys'\nDEBUG apply_rules: Applying rule 23 `Categorize all dt-validate warnings about required properties as `missing property' for easier analysis. This is only to ease analysis; those issues still need to be dealt with.' to entry 2 `pl061@x'\nDEBUG apply_rules: Applying rule 18 `Ignore all dt-validate warnings about missing interrupt cells. This is similar to Linux kernel default DTC_FLAGS -Wno-interrupt_provider.' to entry 3 `pl061@x'\nDEBUG apply_rules: Applying rule 22 `Categorize all dt-validate warnings about non-matching names (2) as `naming' for easier analysis. This is only to ease analysis; those issues still need to be dealt with.' to entry 4 `pl031@x'\nDEBUG apply_rules: Applying rule 22 `Categorize all dt-validate warnings about non-matching names (2) as `naming' for easier analysis. This is only to ease analysis; those issues still need to be dealt with.' to entry 5 `pl011@x'\nDEBUG apply_rules: Applying rule 22 `Categorize all dt-validate warnings about non-matching names (2) as `naming' for easier analysis. This is only to ease analysis; those issues still need to be dealt with.' to entry 6 `intc@x'\nDEBUG apply_rules: Applying rule 22 `Categorize all dt-validate warnings about non-matching names (2) as `naming' for easier analysis. This is only to ease analysis; those issues still need to be dealt with.' to entry 7 `secflash@x'\nINFO apply_rules: Updated 8 entries with rules\nDEBUG print_summary: Summary\n")
+DEBUG check_devicetree: ['', 'Summary', '-------', '1  dt-validate warning missing property', '6  dt-validate warning naming', '1  ignored']
+DEBUG check_devicetree: 1  dt-validate warning missing property
+DEBUG check_devicetree: 1 dt-parser dt-validate warning missing property with `test/acs_results/uefi/BsaDevTree.dtb.log'!
+DEBUG check_devicetree: 6  dt-validate warning naming
+DEBUG check_devicetree: 6 dt-parser dt-validate warning naming with `test/acs_results/uefi/BsaDevTree.dtb.log'!
+DEBUG check_devicetree: 1  ignored
+DEBUG check_devicetree: 1 dt-parser ignored with `test/acs_results/uefi/BsaDevTree.dtb.log'
+DEBUG check_file: Check `test/acs_results/uefi/BsaDevTree.dtb.log'
+DEBUG check_file: `test/acs_results/uefi/BsaDevTree.dtb.log' exists
+DEBUG check_file: `test/acs_results/uefi/BsaDevTree.dtb.log' not empty
+DEBUG check_file_contains: Check that file `test/acs_results/uefi/BsaDevTree.dtb.log' contains ['+ DTC', '+ DT-VALIDATE', '+ END']
+DEBUG check_file_contains: Looking for `+ DTC'
+DEBUG __init__: LogReader `test/acs_results/uefi/BsaDevTree.dtb.log'
+DEBUG logreader_detect_file_encoding: Detect encoding of `test/acs_results/uefi/BsaDevTree.dtb.log'
+DEBUG logreader_detect_file_encoding: Encoding None
+DEBUG check_file_contains: `+ DTC' found at line 1: `+ DTC'
+DEBUG check_file_contains: Looking for `+ DT-VALIDATE'
+DEBUG check_file_contains: `+ DT-VALIDATE' found at line 2: `+ DT-VALIDATE'
+DEBUG check_file_contains: Looking for `+ END'
+DEBUG check_file_contains: `+ END' found at line 23: `+ END'
+DEBUG check_file: Check `test/acs_results/uefi/BsaResults.log'
+DEBUG check_file: `test/acs_results/uefi/BsaResults.log' exists
+DEBUG check_file: `test/acs_results/uefi/BsaResults.log' not empty
+DEBUG check_file_contains: Check that file `test/acs_results/uefi/BsaResults.log' contains ['BSA Architecture Compliance Suite', 'Version 1.0.', 'Starting tests', 'PE_INFO: Number of PE detected', 'Operating System', 'Total Tests run', 'BSA tests complete. Reset the system.']
+DEBUG check_file_contains: Looking for `BSA Architecture Compliance Suite'
+DEBUG __init__: LogReader `test/acs_results/uefi/BsaResults.log'
+DEBUG logreader_detect_file_encoding: Detect encoding of `test/acs_results/uefi/BsaResults.log'
+DEBUG logreader_detect_file_encoding: Encoding None
+DEBUG check_file_contains: `BSA Architecture Compliance Suite' found at line 3: ` BSA Architecture Compliance Suite'
+DEBUG check_file_contains: Looking for `Version 1.0.'
+DEBUG check_file_contains: `Version 1.0.' found at line 4: `          Version 1.0.4'
+DEBUG check_file_contains: Looking for `Starting tests'
+DEBUG check_file_contains: `Starting tests' found at line 6: ` Starting tests with print level :  3'
+DEBUG check_file_contains: Looking for `PE_INFO: Number of PE detected'
+DEBUG check_file_contains: `PE_INFO: Number of PE detected' found at line 10: ` PE_INFO: Number of PE detected       :    2'
+DEBUG check_file_contains: Looking for `Operating System'
+DEBUG check_file_contains: `Operating System' found at line 27: `Operating System View:'
+DEBUG check_file_contains: Looking for `Total Tests run'
+DEBUG check_file_contains: `Total Tests run' found at line 132: `     Total Tests run  =   39  Tests Passed  =   27  Tests Failed =    3'
+DEBUG check_file_contains: Looking for `BSA tests complete. Reset the system.'
+DEBUG check_file_contains: `BSA tests complete. Reset the system.' found at line 135: `      *** BSA tests complete. Reset the system. ***'
+DEBUG check_dir: Check `test/acs_results/uefi/temp/'
+DEBUG check_dir: `test/acs_results/uefi/temp/' exists
+DEBUG check_dir: `test/acs_results/uefi/temp/' has 0 entrie(s)
+DEBUG check_dir: `test/acs_results/uefi/temp/' has enough entrie(s): 0 >= 0
+DEBUG check_dir: Check `test/acs_results/uefi_dump/'
+DEBUG check_dir: `test/acs_results/uefi_dump/' exists
+DEBUG check_dir: `test/acs_results/uefi_dump/' has 11 entrie(s)
+ERROR check_dir: `test/acs_results/uefi_dump/' has too few entrie(s): 11 < 13
+DEBUG check_dir: `test/acs_results/uefi_dump/' does not have too many entrie(s): 11 <= 13
+DEBUG check_tree: Check `test/acs_results/uefi_dump/'
+DEBUG check_file: Check `test/acs_results/uefi_dump/bcfg.log'
+DEBUG check_file: `test/acs_results/uefi_dump/bcfg.log' exists
+DEBUG check_file: `test/acs_results/uefi_dump/bcfg.log' not empty
+DEBUG check_file: Check `test/acs_results/uefi_dump/devices.log'
+DEBUG check_file: `test/acs_results/uefi_dump/devices.log' exists
+DEBUG check_file: `test/acs_results/uefi_dump/devices.log' not empty
+DEBUG check_file_contains: Check that file `test/acs_results/uefi_dump/devices.log' contains ['Device Name']
+DEBUG check_file_contains: Looking for `Device Name'
+DEBUG __init__: LogReader `test/acs_results/uefi_dump/devices.log'
+DEBUG logreader_detect_file_encoding: Detect encoding of `test/acs_results/uefi_dump/devices.log'
+DEBUG logreader_detect_file_encoding: Encoding UTF-16
+DEBUG check_file_contains: `Device Name' found at line 4: `CTRL E G G #P #D #C  Device Name'
+DEBUG check_file: Check `test/acs_results/uefi_dump/devtree.log'
+DEBUG check_file: `test/acs_results/uefi_dump/devtree.log' exists
+DEBUG check_file: `test/acs_results/uefi_dump/devtree.log' not empty
+DEBUG check_file_contains: Check that file `test/acs_results/uefi_dump/devtree.log' contains ['/HD(1,GPT,', '/HD(2,GPT,', '/HD(3,GPT,']
+DEBUG check_file_contains: Looking for `/HD(1,GPT,'
+DEBUG __init__: LogReader `test/acs_results/uefi_dump/devtree.log'
+DEBUG logreader_detect_file_encoding: Detect encoding of `test/acs_results/uefi_dump/devtree.log'
+DEBUG logreader_detect_file_encoding: Encoding UTF-16
+ERROR check_file_contains: Could not find `/HD(1,GPT,' in `test/acs_results/uefi_dump/devtree.log'
+DEBUG check_file: Check `test/acs_results/uefi_dump/dh.log'
+DEBUG check_file: `test/acs_results/uefi_dump/dh.log' exists
+DEBUG check_file: `test/acs_results/uefi_dump/dh.log' not empty
+DEBUG check_file_contains: Check that file `test/acs_results/uefi_dump/dh.log' contains ['Handle dump', 'DevicePath', 'EFISystemPartition', 'FirmwareManagement', 'SimpleTextOut']
+DEBUG check_file_contains: Looking for `Handle dump'
+DEBUG __init__: LogReader `test/acs_results/uefi_dump/dh.log'
+DEBUG logreader_detect_file_encoding: Detect encoding of `test/acs_results/uefi_dump/dh.log'
+DEBUG logreader_detect_file_encoding: Encoding UTF-16
+DEBUG check_file_contains: `Handle dump' found at line 1: `Handle dump'
+DEBUG check_file_contains: Looking for `DevicePath'
+DEBUG check_file_contains: `DevicePath' found at line 4: `03: FirmwareVolume2 DevicePath(..yMapped(0xB,0x1000,0x1FFFFF)) FirmwareVolumeBlock'
+DEBUG check_file_contains: Looking for `EFISystemPartition'
+ERROR check_file_contains: Could not find `EFISystemPartition' in `test/acs_results/uefi_dump/dh.log'
+DEBUG check_file: Check `test/acs_results/uefi_dump/dmem.log'
+DEBUG check_file: `test/acs_results/uefi_dump/dmem.log' exists
+DEBUG check_file: `test/acs_results/uefi_dump/dmem.log' not empty
+DEBUG check_file_contains: Check that file `test/acs_results/uefi_dump/dmem.log' contains ['Memory Address', 'Valid EFI Header at Address', 'System: Table Structure size', 'Runtime Services', 'Boot Services', 'SAL System Table', 'ACPI Table', 'ACPI 2.0 Table', 'MPS Table', 'SMBIOS Table']
+DEBUG check_file_contains: Looking for `Memory Address'
+DEBUG __init__: LogReader `test/acs_results/uefi_dump/dmem.log'
+DEBUG logreader_detect_file_encoding: Detect encoding of `test/acs_results/uefi_dump/dmem.log'
+DEBUG logreader_detect_file_encoding: Encoding UTF-16
+DEBUG check_file_contains: `Memory Address' found at line 1: `Memory Address 00000000BFFD0018 78 Bytes'
+DEBUG check_file_contains: Looking for `Valid EFI Header at Address'
+DEBUG check_file_contains: `Valid EFI Header at Address' found at line 11: `Valid EFI Header at Address 00000000BFFD0018'
+DEBUG check_file_contains: Looking for `System: Table Structure size'
+DEBUG check_file_contains: `System: Table Structure size' found at line 13: `System: Table Structure size 00000078 revision 00020046'
+DEBUG check_file_contains: Looking for `Runtime Services'
+DEBUG check_file_contains: `Runtime Services' found at line 15: `Runtime Services 00000000BFFDFF18'
+DEBUG check_file_contains: Looking for `Boot Services'
+DEBUG check_file_contains: `Boot Services' found at line 16: `Boot Services    0000000047849AE0'
+DEBUG check_file_contains: Looking for `SAL System Table'
+DEBUG check_file_contains: `SAL System Table' found at line 17: `SAL System Table 0000000000000000'
+DEBUG check_file_contains: Looking for `ACPI Table'
+DEBUG check_file_contains: `ACPI Table' found at line 18: `ACPI Table       0000000000000000'
+DEBUG check_file_contains: Looking for `ACPI 2.0 Table'
+DEBUG check_file_contains: `ACPI 2.0 Table' found at line 19: `ACPI 2.0 Table   0000000000000000'
+DEBUG check_file_contains: Looking for `MPS Table'
+DEBUG check_file_contains: `MPS Table' found at line 20: `MPS Table        0000000000000000'
+DEBUG check_file_contains: Looking for `SMBIOS Table'
+DEBUG check_file_contains: `SMBIOS Table' found at line 21: `SMBIOS Table     00000000BFED0000'
+DEBUG check_file: Check `test/acs_results/uefi_dump/dmpstore.log'
+DEBUG check_file: `test/acs_results/uefi_dump/dmpstore.log' exists
+DEBUG check_file: `test/acs_results/uefi_dump/dmpstore.log' not empty
+DEBUG check_file_contains: Check that file `test/acs_results/uefi_dump/dmpstore.log' contains ['Variable', 'SecureBoot']
+DEBUG check_file_contains: Looking for `Variable'
+DEBUG __init__: LogReader `test/acs_results/uefi_dump/dmpstore.log'
+DEBUG logreader_detect_file_encoding: Detect encoding of `test/acs_results/uefi_dump/dmpstore.log'
+DEBUG logreader_detect_file_encoding: Encoding UTF-16
+DEBUG check_file_contains: `Variable' found at line 1: `Variable NV+RT+BS 'EB704011-1402-11D3-8E77-00A0C969723B:MTC' DataSize = 0x04'
+DEBUG check_file_contains: Looking for `SecureBoot'
+DEBUG check_file_contains: `SecureBoot' found at line 181: `Variable NV+BS 'F0A30BC7-AF08-4556-99C4-001009C93A44:SecureBootEnable' DataSize = 0x01'
+DEBUG check_file: Check `test/acs_results/uefi_dump/drivers.log'
+DEBUG check_file: `test/acs_results/uefi_dump/drivers.log' exists
+DEBUG check_file: `test/acs_results/uefi_dump/drivers.log' not empty
+DEBUG check_file_contains: Check that file `test/acs_results/uefi_dump/drivers.log' contains ['DRIVER NAME']
+DEBUG check_file_contains: Looking for `DRIVER NAME'
+DEBUG __init__: LogReader `test/acs_results/uefi_dump/drivers.log'
+DEBUG logreader_detect_file_encoding: Detect encoding of `test/acs_results/uefi_dump/drivers.log'
+DEBUG logreader_detect_file_encoding: Encoding UTF-16
+DEBUG check_file_contains: `DRIVER NAME' found at line 4: `V  VERSION  E G G #D #C DRIVER NAME                         IMAGE NAME'
+DEBUG check_file: Check `test/acs_results/uefi_dump/ifconfig.log'
+DEBUG check_file: `test/acs_results/uefi_dump/ifconfig.log' exists
+DEBUG check_file: `test/acs_results/uefi_dump/ifconfig.log' not empty
+DEBUG check_file: Check `test/acs_results/uefi_dump/map.log'
+ERROR check_file: `test/acs_results/uefi_dump/map.log' missing
+DEBUG check_file: Check `test/acs_results/uefi_dump/memmap.log'
+DEBUG check_file: `test/acs_results/uefi_dump/memmap.log' exists
+DEBUG check_file: `test/acs_results/uefi_dump/memmap.log' not empty
+DEBUG check_file_contains: Check that file `test/acs_results/uefi_dump/memmap.log' contains ['# Pages', 'Reserved  :', 'LoaderCode:', 'LoaderData:', 'BS_Code   :', 'BS_Data   :', 'RT_Code   :', 'RT_Data   :', 'ACPI_Recl :', 'ACPI_NVS  :', 'MMIO      :', 'MMIO_Port :', 'PalCode   :', 'Unaccepted:', 'Available :', 'Persistent:', 'Total Memory:']
+DEBUG check_file_contains: Looking for `# Pages'
+DEBUG __init__: LogReader `test/acs_results/uefi_dump/memmap.log'
+DEBUG logreader_detect_file_encoding: Detect encoding of `test/acs_results/uefi_dump/memmap.log'
+DEBUG logreader_detect_file_encoding: Encoding UTF-16
+DEBUG check_file_contains: `# Pages' found at line 1: `Type       Start            End              # Pages          Attributes'
+DEBUG check_file_contains: Looking for `Reserved  :'
+DEBUG check_file_contains: `Reserved  :' found at line 40: `  Reserved  :              0 Pages (0 Bytes)'
+DEBUG check_file_contains: Looking for `LoaderCode:'
+DEBUG check_file_contains: `LoaderCode:' found at line 41: `  LoaderCode:        129,092 Pages (528,760,832 Bytes)'
+DEBUG check_file_contains: Looking for `LoaderData:'
+DEBUG check_file_contains: `LoaderData:' found at line 42: `  LoaderData:              1 Pages (4,096 Bytes)'
+DEBUG check_file_contains: Looking for `BS_Code   :'
+DEBUG check_file_contains: `BS_Code   :' found at line 43: `  BS_Code   :            829 Pages (3,395,584 Bytes)'
+DEBUG check_file_contains: Looking for `BS_Data   :'
+DEBUG check_file_contains: `BS_Data   :' found at line 44: `  BS_Data   :          7,334 Pages (30,040,064 Bytes)'
+DEBUG check_file_contains: Looking for `RT_Code   :'
+DEBUG check_file_contains: `RT_Code   :' found at line 45: `  RT_Code   :            720 Pages (2,949,120 Bytes)'
+DEBUG check_file_contains: Looking for `RT_Data   :'
+DEBUG check_file_contains: `RT_Data   :' found at line 46: `  RT_Data   :            832 Pages (3,407,872 Bytes)'
+DEBUG check_file_contains: Looking for `ACPI_Recl :'
+DEBUG check_file_contains: `ACPI_Recl :' found at line 47: `  ACPI_Recl :              0 Pages (0 Bytes)'
+DEBUG check_file_contains: Looking for `ACPI_NVS  :'
+DEBUG check_file_contains: `ACPI_NVS  :' found at line 48: `  ACPI_NVS  :             16 Pages (65,536 Bytes)'
+DEBUG check_file_contains: Looking for `MMIO      :'
+DEBUG check_file_contains: `MMIO      :' found at line 49: `  MMIO      :         16,385 Pages (67,112,960 Bytes)'
+DEBUG check_file_contains: Looking for `MMIO_Port :'
+DEBUG check_file_contains: `MMIO_Port :' found at line 50: `  MMIO_Port :              0 Pages (0 Bytes)'
+DEBUG check_file_contains: Looking for `PalCode   :'
+DEBUG check_file_contains: `PalCode   :' found at line 51: `  PalCode   :              0 Pages (0 Bytes)'
+DEBUG check_file_contains: Looking for `Unaccepted:'
+DEBUG check_file_contains: `Unaccepted:' found at line 52: `  Unaccepted:              0 Pages (0 Bytes)'
+DEBUG check_file_contains: Looking for `Available :'
+DEBUG check_file_contains: `Available :' found at line 53: `  Available :        385,464 Pages (1,578,860,544 Bytes)'
+DEBUG check_file_contains: Looking for `Persistent:'
+DEBUG check_file_contains: `Persistent:' found at line 54: `  Persistent:              0 Pages (0 Bytes)'
+DEBUG check_file_contains: Looking for `Total Memory:'
+DEBUG check_file_contains: `Total Memory:' found at line 56: `Total Memory:          2,048 MB (2,147,483,648 Bytes)'
+DEBUG check_file: Check `test/acs_results/uefi_dump/pci.log'
+DEBUG check_file: `test/acs_results/uefi_dump/pci.log' exists
+DEBUG check_file: `test/acs_results/uefi_dump/pci.log' not empty
+DEBUG check_file: Check `test/acs_results/uefi_dump/smbiosview.log'
+DEBUG check_file: `test/acs_results/uefi_dump/smbiosview.log' missing (optional)
+DEBUG check_file: Check `test/acs_results/uefi_dump/uefi_version.log'
+DEBUG check_file: `test/acs_results/uefi_dump/uefi_version.log' exists
+DEBUG check_file: `test/acs_results/uefi_dump/uefi_version.log' not empty
+DEBUG check_file_contains: Check that file `test/acs_results/uefi_dump/uefi_version.log' contains ['UEFI Interactive Shell v2.2', 'EDK II', 'UEFI v2.']
+DEBUG check_file_contains: Looking for `UEFI Interactive Shell v2.2'
+DEBUG __init__: LogReader `test/acs_results/uefi_dump/uefi_version.log'
+DEBUG logreader_detect_file_encoding: Detect encoding of `test/acs_results/uefi_dump/uefi_version.log'
+DEBUG logreader_detect_file_encoding: Encoding UTF-16
+DEBUG check_file_contains: `UEFI Interactive Shell v2.2' found at line 1: `UEFI Interactive Shell v2.2'
+DEBUG check_file_contains: Looking for `EDK II'
+DEBUG check_file_contains: `EDK II' found at line 2: `EDK II'
+DEBUG check_file_contains: Looking for `UEFI v2.'
+DEBUG check_file_contains: `UEFI v2.' found at line 3: `UEFI v2.70 (EDK II, 0x00010000)'
+DEBUG check_dir: Check `test/acs_results/SIE/'
+DEBUG check_dir: `test/acs_results/SIE/' exists
+DEBUG check_dir: `test/acs_results/SIE/' has 5 entrie(s)
+DEBUG check_dir: `test/acs_results/SIE/' has enough entrie(s): 5 >= 3
+ERROR check_dir: `test/acs_results/SIE/' has too many entrie(s): 5 > 4
+DEBUG check_tree: Check `test/acs_results/SIE/'
+DEBUG check_file: Check `test/acs_results/SIE/result.md'
+DEBUG sct_parser: SCT parser `test/acs_results/SIE/result.md'
+DEBUG which: Which `parser.py --debug'
+DEBUG which: `None'
+DEBUG sct_parser: No parser
+DEBUG check_file: `test/acs_results/SIE/result.md' exists
+DEBUG check_file: `test/acs_results/SIE/result.md' not empty
+DEBUG check_file_contains: Check that file `test/acs_results/SIE/result.md' contains ['SCT Summary', 'Dropped:|0|', 'Failure:|0|', 'Warning:|0|', 'Dropped by group', 'Failure by group', 'Ignored by group', 'Warning by group']
+DEBUG check_file_contains: Looking for `SCT Summary'
+DEBUG __init__: LogReader `test/acs_results/SIE/result.md'
+DEBUG logreader_detect_file_encoding: Detect encoding of `test/acs_results/SIE/result.md'
+DEBUG logreader_detect_file_encoding: Encoding None
+DEBUG check_file_contains: `SCT Summary' found at line 1: `# SCT Summary'
+DEBUG check_file_contains: Looking for `Dropped:|0|'
+DEBUG check_file_contains: `Dropped:|0|' found at line 5: `|Dropped:|0|'
+DEBUG check_file_contains: Looking for `Failure:|0|'
+ERROR check_file_contains: Could not find `Failure:|0|' in `test/acs_results/SIE/result.md'
+DEBUG check_dir: Check `test/acs_results/SIE/fwts/'
+DEBUG check_dir: `test/acs_results/SIE/fwts/' exists
+DEBUG check_dir: `test/acs_results/SIE/fwts/' has 1 entrie(s)
+DEBUG check_dir: `test/acs_results/SIE/fwts/' has enough entrie(s): 1 >= 1
+DEBUG check_dir: `test/acs_results/SIE/fwts/' does not have too many entrie(s): 1 <= 1
+DEBUG check_tree: Check `test/acs_results/SIE/fwts/'
+DEBUG check_file: Check `test/acs_results/SIE/fwts/FWTSResults.log'
+DEBUG check_file: `test/acs_results/SIE/fwts/FWTSResults.log' exists
+DEBUG check_file: `test/acs_results/SIE/fwts/FWTSResults.log' not empty
+DEBUG check_file_contains: Check that file `test/acs_results/SIE/fwts/FWTSResults.log' contains ['Results generated by fwts: Version V2', 'Running tests: uefirtauthvar tpm2.', 'Test Failure Summary', 'Critical failures: NONE', 'High failures: NONE', 'Medium failures: NONE', 'Low failures: NONE', 'Other failures: NONE', 'Total:']
+DEBUG check_file_contains: Looking for `Results generated by fwts: Version V2'
+DEBUG __init__: LogReader `test/acs_results/SIE/fwts/FWTSResults.log'
+DEBUG logreader_detect_file_encoding: Detect encoding of `test/acs_results/SIE/fwts/FWTSResults.log'
+DEBUG logreader_detect_file_encoding: Encoding None
+DEBUG check_file_contains: `Results generated by fwts: Version V2' found at line 1: `Results generated by fwts: Version V23.01.00 (2023-01-16 04:09:35).'
+DEBUG check_file_contains: Looking for `Running tests: uefirtauthvar tpm2.'
+DEBUG check_file_contains: `Running tests: uefirtauthvar tpm2.' found at line 13: `Running tests: uefirtauthvar tpm2.'
+DEBUG check_file_contains: Looking for `Test Failure Summary'
+DEBUG check_file_contains: `Test Failure Summary' found at line 75: `Test Failure Summary'
+DEBUG check_file_contains: Looking for `Critical failures: NONE'
+DEBUG check_file_contains: `Critical failures: NONE' found at line 78: `Critical failures: NONE'
+DEBUG check_file_contains: Looking for `High failures: NONE'
+DEBUG check_file_contains: `High failures: NONE' found at line 80: `High failures: NONE'
+DEBUG check_file_contains: Looking for `Medium failures: NONE'
+DEBUG check_file_contains: `Medium failures: NONE' found at line 82: `Medium failures: NONE'
+DEBUG check_file_contains: Looking for `Low failures: NONE'
+DEBUG check_file_contains: `Low failures: NONE' found at line 84: `Low failures: NONE'
+DEBUG check_file_contains: Looking for `Other failures: NONE'
+DEBUG check_file_contains: `Other failures: NONE' found at line 86: `Other failures: NONE'
+DEBUG check_file_contains: Looking for `Total:'
+DEBUG check_file_contains: `Total:' found at line 93: `Total:         |   12|    0|    1|    0|    0|    0|'
+DEBUG if_contains: Warn if file `test/acs_results/SIE/fwts/FWTSResults.log' contains ['WARNING:']
+DEBUG __init__: LogReader `test/acs_results/SIE/fwts/FWTSResults.log'
+DEBUG logreader_detect_file_encoding: Detect encoding of `test/acs_results/SIE/fwts/FWTSResults.log'
+DEBUG logreader_detect_file_encoding: Encoding None
+DEBUG if_contains: No pattern in `test/acs_results/SIE/fwts/FWTSResults.log'
+DEBUG if_contains: Error if file `test/acs_results/SIE/fwts/FWTSResults.log' contains ['FAILED', 'uefirtauthvar: Failed to create authenticated variable with UEFI runtime service.', 'uefirtauthvar: Failed to set authenticated variable with UEFI runtime service.', 'uefirtauthvar: Set authenticated variable expected fail but success', 'uefirtauthvar: Set authenticated variable fail']
+DEBUG __init__: LogReader `test/acs_results/SIE/fwts/FWTSResults.log'
+DEBUG logreader_detect_file_encoding: Detect encoding of `test/acs_results/SIE/fwts/FWTSResults.log'
+DEBUG logreader_detect_file_encoding: Encoding None
+DEBUG if_contains: No pattern in `test/acs_results/SIE/fwts/FWTSResults.log'
+DEBUG check_dir: Check `test/acs_results/SIE/sct_results/'
+DEBUG check_dir: `test/acs_results/SIE/sct_results/' exists
+DEBUG check_dir: `test/acs_results/SIE/sct_results/' has 3 entrie(s)
+DEBUG check_dir: `test/acs_results/SIE/sct_results/' has enough entrie(s): 3 >= 3
+DEBUG check_dir: `test/acs_results/SIE/sct_results/' does not have too many entrie(s): 3 <= 3
+DEBUG check_tree: Check `test/acs_results/SIE/sct_results/'
+DEBUG check_dir: Check `test/acs_results/SIE/sct_results/EfiCompliantBBTest/'
+DEBUG check_dir: `test/acs_results/SIE/sct_results/EfiCompliantBBTest/' exists
+DEBUG check_dir: `test/acs_results/SIE/sct_results/EfiCompliantBBTest/' has 1 entrie(s)
+DEBUG check_dir: `test/acs_results/SIE/sct_results/EfiCompliantBBTest/' has enough entrie(s): 1 >= 1
+DEBUG check_dir: `test/acs_results/SIE/sct_results/EfiCompliantBBTest/' does not have too many entrie(s): 1 <= 1
+DEBUG check_tree: Check `test/acs_results/SIE/sct_results/EfiCompliantBBTest/'
+DEBUG check_file: Check `test/acs_results/SIE/sct_results/EfiCompliantBBTest/EfiCompliant.ini'
+DEBUG check_file: `test/acs_results/SIE/sct_results/EfiCompliantBBTest/EfiCompliant.ini' exists
+DEBUG check_file: `test/acs_results/SIE/sct_results/EfiCompliantBBTest/EfiCompliant.ini' not empty
+DEBUG check_file_contains: Check that file `test/acs_results/SIE/sct_results/EfiCompliantBBTest/EfiCompliant.ini' contains ['Test Configuration Specific', 'Platform Specific']
+DEBUG check_file_contains: Looking for `Test Configuration Specific'
+DEBUG __init__: LogReader `test/acs_results/SIE/sct_results/EfiCompliantBBTest/EfiCompliant.ini'
+DEBUG logreader_detect_file_encoding: Detect encoding of `test/acs_results/SIE/sct_results/EfiCompliantBBTest/EfiCompliant.ini'
+DEBUG logreader_detect_file_encoding: Encoding None
+DEBUG check_file_contains: `Test Configuration Specific' found at line 27: `###  [Test Configuration Specific]'
+DEBUG check_file_contains: Looking for `Platform Specific'
+DEBUG check_file_contains: `Platform Specific' found at line 33: `###  [Platform Specific]'
+DEBUG check_dir: Check `test/acs_results/SIE/sct_results/Overall/'
+DEBUG check_dir: `test/acs_results/SIE/sct_results/Overall/' exists
+DEBUG check_dir: `test/acs_results/SIE/sct_results/Overall/' has 2 entrie(s)
+DEBUG check_dir: `test/acs_results/SIE/sct_results/Overall/' has enough entrie(s): 2 >= 2
+DEBUG check_dir: `test/acs_results/SIE/sct_results/Overall/' does not have too many entrie(s): 2 <= 2
+DEBUG check_tree: Check `test/acs_results/SIE/sct_results/Overall/'
+DEBUG check_file: Check `test/acs_results/SIE/sct_results/Overall/Summary.ekl'
+DEBUG check_file: `test/acs_results/SIE/sct_results/Overall/Summary.ekl' exists
+DEBUG check_file: `test/acs_results/SIE/sct_results/Overall/Summary.ekl' not empty
+DEBUG check_file_contains: Check that file `test/acs_results/SIE/sct_results/Overall/Summary.ekl' contains ['|HEAD|', '|TERM|']
+DEBUG check_file_contains: Looking for `|HEAD|'
+DEBUG __init__: LogReader `test/acs_results/SIE/sct_results/Overall/Summary.ekl'
+DEBUG logreader_detect_file_encoding: Detect encoding of `test/acs_results/SIE/sct_results/Overall/Summary.ekl'
+DEBUG logreader_detect_file_encoding: Encoding UTF-16
+DEBUG check_file_contains: `|HEAD|' found at line 1: `|HEAD|||0||01-08-2023|09:25:28|E39747C4-22D0-4D52-9C15-3C4EFA80E6C8|0x00010000|VariableAttributes|Secure Boot Test|RuntimeServicesTest\SecureBootTest|No device path'
+DEBUG check_file_contains: Looking for `|TERM|'
+DEBUG check_file_contains: `|TERM|' found at line 18: `|TERM|0000|01-08-2023|09:25:29|0 00:00:01'
+DEBUG check_file: Check `test/acs_results/SIE/sct_results/Overall/Summary.log'
+DEBUG check_file: `test/acs_results/SIE/sct_results/Overall/Summary.log' exists
+DEBUG check_file: `test/acs_results/SIE/sct_results/Overall/Summary.log' not empty
+DEBUG check_file_contains: Check that file `test/acs_results/SIE/sct_results/Overall/Summary.log' contains ['Arm ACS Version: SystemReady IR ACS v2.0.0', 'BBR ACS 1.0.', 'Test Finished:']
+DEBUG check_file_contains: Looking for `Arm ACS Version: SystemReady IR ACS v2.0.0'
+DEBUG __init__: LogReader `test/acs_results/SIE/sct_results/Overall/Summary.log'
+DEBUG logreader_detect_file_encoding: Detect encoding of `test/acs_results/SIE/sct_results/Overall/Summary.log'
+DEBUG logreader_detect_file_encoding: Encoding UTF-16
+DEBUG check_file_contains: `Arm ACS Version: SystemReady IR ACS v2.0.0' found at line 2: `Arm ACS Version: SystemReady IR ACS v2.0.0'
+DEBUG check_file_contains: Looking for `BBR ACS 1.0.'
+DEBUG check_file_contains: `BBR ACS 1.0.' found at line 3: `BBR ACS 1.0.4 (EBBR)'
+DEBUG check_file_contains: Looking for `Test Finished:'
+DEBUG check_file_contains: `Test Finished:' found at line 76: `Test Finished: 08/01/23  09:25a'
+DEBUG check_dir: Check `test/acs_results/SIE/sct_results/Sequence/'
+DEBUG check_dir: `test/acs_results/SIE/sct_results/Sequence/' exists
+DEBUG check_dir: `test/acs_results/SIE/sct_results/Sequence/' has 3 entrie(s)
+DEBUG check_dir: `test/acs_results/SIE/sct_results/Sequence/' has enough entrie(s): 3 >= 3
+DEBUG check_dir: `test/acs_results/SIE/sct_results/Sequence/' does not have too many entrie(s): 3 <= 3
+DEBUG check_tree: Check `test/acs_results/SIE/sct_results/Sequence/'
+DEBUG check_file: Check `test/acs_results/SIE/sct_results/Sequence/BBSR.seq'
+DEBUG check_file: `test/acs_results/SIE/sct_results/Sequence/BBSR.seq' exists
+DEBUG check_file: `test/acs_results/SIE/sct_results/Sequence/BBSR.seq' not empty
+DEBUG check_file_contains: Check that file `test/acs_results/SIE/sct_results/Sequence/BBSR.seq' contains ['[Test Case]', 'Revision=', 'Guid=', 'Name=', 'Order=', 'Iterations=']
+DEBUG check_file_contains: Looking for `[Test Case]'
+DEBUG __init__: LogReader `test/acs_results/SIE/sct_results/Sequence/BBSR.seq'
+DEBUG logreader_detect_file_encoding: Detect encoding of `test/acs_results/SIE/sct_results/Sequence/BBSR.seq'
+DEBUG logreader_detect_file_encoding: Encoding UTF-16
+DEBUG check_file_contains: `[Test Case]' found at line 1: `[Test Case]'
+DEBUG check_file_contains: Looking for `Revision='
+DEBUG check_file_contains: `Revision=' found at line 2: `Revision=0x10000'
+DEBUG check_file_contains: Looking for `Guid='
+DEBUG check_file_contains: `Guid=' found at line 3: `Guid=39FF9C71-4B41-4E5B-AED7-87C794187D66'
+DEBUG check_file_contains: Looking for `Name='
+DEBUG check_file_contains: `Name=' found at line 4: `Name=GetInfo_Func'
+DEBUG check_file_contains: Looking for `Order='
+DEBUG check_file_contains: `Order=' found at line 5: `Order=0xFFFFFFFF'
+DEBUG check_file_contains: Looking for `Iterations='
+DEBUG check_file_contains: `Iterations=' found at line 6: `Iterations=0xFFFFFFFF'
+DEBUG check_file: Check `test/acs_results/SIE/sct_results/Sequence/EBBR_manual.seq'
+DEBUG check_file: `test/acs_results/SIE/sct_results/Sequence/EBBR_manual.seq' exists
+DEBUG check_file: `test/acs_results/SIE/sct_results/Sequence/EBBR_manual.seq' not empty
+DEBUG check_file_contains: Check that file `test/acs_results/SIE/sct_results/Sequence/EBBR_manual.seq' contains ['[Test Case]', 'Revision=', 'Guid=', 'Name=', 'Order=', 'Iterations=']
+DEBUG check_file_contains: Looking for `[Test Case]'
+DEBUG __init__: LogReader `test/acs_results/SIE/sct_results/Sequence/EBBR_manual.seq'
+DEBUG logreader_detect_file_encoding: Detect encoding of `test/acs_results/SIE/sct_results/Sequence/EBBR_manual.seq'
+DEBUG logreader_detect_file_encoding: Encoding UTF-16
+DEBUG check_file_contains: `[Test Case]' found at line 1: `[Test Case]'
+DEBUG check_file_contains: Looking for `Revision='
+DEBUG check_file_contains: `Revision=' found at line 2: `Revision=0x10000'
+DEBUG check_file_contains: Looking for `Guid='
+DEBUG check_file_contains: `Guid=' found at line 3: `Guid=7A825F36-6042-423E-A466-62D1F910E459'
+DEBUG check_file_contains: Looking for `Name='
+DEBUG check_file_contains: `Name=' found at line 4: `Name=RegisterRamDiskFunction'
+DEBUG check_file_contains: Looking for `Order='
+DEBUG check_file_contains: `Order=' found at line 5: `Order=0xFFFFFFFF'
+DEBUG check_file_contains: Looking for `Iterations='
+DEBUG check_file_contains: `Iterations=' found at line 6: `Iterations=0xFFFFFFFF'
+DEBUG check_file: Check `test/acs_results/SIE/sct_results/Sequence/EBBR.seq'
+DEBUG check_file: `test/acs_results/SIE/sct_results/Sequence/EBBR.seq' exists
+DEBUG check_file: `test/acs_results/SIE/sct_results/Sequence/EBBR.seq' not empty
+DEBUG check_file_contains: Check that file `test/acs_results/SIE/sct_results/Sequence/EBBR.seq' contains ['[Test Case]', 'Revision=', 'Guid=', 'Name=', 'Order=', 'Iterations=']
+DEBUG check_file_contains: Looking for `[Test Case]'
+DEBUG __init__: LogReader `test/acs_results/SIE/sct_results/Sequence/EBBR.seq'
+DEBUG logreader_detect_file_encoding: Detect encoding of `test/acs_results/SIE/sct_results/Sequence/EBBR.seq'
+DEBUG logreader_detect_file_encoding: Encoding UTF-16
+DEBUG check_file_contains: `[Test Case]' found at line 1: `[Test Case]'
+DEBUG check_file_contains: Looking for `Revision='
+DEBUG check_file_contains: `Revision=' found at line 2: `Revision=0x10000'
+DEBUG check_file_contains: Looking for `Guid='
+DEBUG check_file_contains: `Guid=' found at line 3: `Guid=6AC7F144-0B20-4354-AFC1-A1BACC03365F'
+DEBUG check_file_contains: Looking for `Name='
+DEBUG check_file_contains: `Name=' found at line 4: `Name=GetDriver_Func'
+DEBUG check_file_contains: Looking for `Order='
+DEBUG check_file_contains: `Order=' found at line 5: `Order=0xFFFFFFFF'
+DEBUG check_file_contains: Looking for `Iterations='
+DEBUG check_file_contains: `Iterations=' found at line 6: `Iterations=0xFFFFFFFF'
+DEBUG check_dir: Check `test/acs_results/SIE/tpm2/'
+DEBUG check_dir: `test/acs_results/SIE/tpm2/' exists
+DEBUG check_dir: `test/acs_results/SIE/tpm2/' has 3 entrie(s)
+DEBUG check_dir: `test/acs_results/SIE/tpm2/' has enough entrie(s): 3 >= 0
+DEBUG check_dir: Check `test/docs/'
+DEBUG check_dir: `test/docs/' exists
+DEBUG check_dir: `test/docs/' has 1 entrie(s)
+DEBUG check_dir: `test/docs/' has enough entrie(s): 1 >= 0
+DEBUG check_dir: Check `test/fw/'
+DEBUG check_dir: `test/fw/' exists
+DEBUG check_dir: `test/fw/' has 1 entrie(s)
+ERROR check_dir: `test/fw/' has too few entrie(s): 1 < 3
+DEBUG check_tree: Check `test/fw/'
+DEBUG check_file: Check `test/fw/u-boot-sniff.log'
+ERROR check_file: `test/fw/u-boot-sniff.log' missing
+DEBUG check_file: Check `test/fw/uefi-sniff.log'
+ERROR check_file: `test/fw/uefi-sniff.log' missing
+DEBUG check_file: Check `test/fw/capsule-update.log'
+ERROR check_file: `test/fw/capsule-update.log' missing
+DEBUG check_file: Check `test/fw/capsule-on-disk.log'
+ERROR check_file: `test/fw/capsule-on-disk.log' missing
+DEBUG check_tree: test/fw/capsule*.bin -> []
+ERROR check_tree: `test/fw/capsule*.bin' missing
+DEBUG check_dir: Check `test/manual-results/'
+DEBUG check_dir: `test/manual-results/' exists
+DEBUG check_dir: `test/manual-results/' has 1 entrie(s)
+DEBUG check_dir: `test/manual-results/' has enough entrie(s): 1 >= 1
+DEBUG check_dir: Check `test/os-logs/'
+DEBUG check_dir: `test/os-logs/' exists
+DEBUG check_dir: `test/os-logs/' has 4 entrie(s)
+DEBUG check_dir: `test/os-logs/' has enough entrie(s): 4 >= 2
+DEBUG check_tree: Check `test/os-logs/'
+DEBUG check_file: Check `test/os-logs/OS-image-download-links.txt'
+DEBUG check_file: `test/os-logs/OS-image-download-links.txt' exists
+DEBUG check_file: `test/os-logs/OS-image-download-links.txt' not empty
+DEBUG check_file_contains: Check that file `test/os-logs/OS-image-download-links.txt' contains ['For SystemReady IR']
+DEBUG check_file_contains: Looking for `For SystemReady IR'
+DEBUG __init__: LogReader `test/os-logs/OS-image-download-links.txt'
+DEBUG logreader_detect_file_encoding: Detect encoding of `test/os-logs/OS-image-download-links.txt'
+DEBUG feed: EUC-JP Japanese prober hit error at byte 23
+DEBUG feed: EUC-KR Korean prober hit error at byte 23
+DEBUG feed: CP949 Korean prober hit error at byte 23
+DEBUG feed: Big5 Chinese prober hit error at byte 24
+DEBUG feed: EUC-TW Taiwan prober hit error at byte 23
+DEBUG logreader_detect_file_encoding: Encoding None
+DEBUG check_file_contains: `For SystemReady IR' found at line 1: `For SystemReady IR'
+DEBUG check_tree: test/os-logs/linux-* -> ['test/os-logs/linux-distro2-version', 'test/os-logs/linux-distro1-version']
+DEBUG check_dir: Check `test/os-logs/linux-distro2-version/'
+DEBUG check_dir: `test/os-logs/linux-distro2-version/' exists
+DEBUG check_dir: `test/os-logs/linux-distro2-version/' has 1 entrie(s)
+DEBUG check_dir: `test/os-logs/linux-distro2-version/' has enough entrie(s): 1 >= 1
+DEBUG check_tree: Check `test/os-logs/linux-distro2-version/'
+DEBUG check_tree: test/os-logs/linux-distro2-version/*console.log -> []
+ERROR check_tree: `test/os-logs/linux-distro2-version/*console.log' missing
+DEBUG check_tree: test/os-logs/linux-distro2-version/*sys-firmware.tar.gz -> []
+ERROR check_tree: `test/os-logs/linux-distro2-version/*sys-firmware.tar.gz' missing
+DEBUG check_dir: Check `test/os-logs/linux-distro1-version/'
+DEBUG check_dir: `test/os-logs/linux-distro1-version/' exists
+DEBUG check_dir: `test/os-logs/linux-distro1-version/' has 1 entrie(s)
+DEBUG check_dir: `test/os-logs/linux-distro1-version/' has enough entrie(s): 1 >= 1
+DEBUG check_tree: Check `test/os-logs/linux-distro1-version/'
+DEBUG check_tree: test/os-logs/linux-distro1-version/*console.log -> []
+ERROR check_tree: `test/os-logs/linux-distro1-version/*console.log' missing
+DEBUG check_tree: test/os-logs/linux-distro1-version/*sys-firmware.tar.gz -> []
+ERROR check_tree: `test/os-logs/linux-distro1-version/*sys-firmware.tar.gz' missing
+DEBUG check_file: Check `test/report.txt'
+DEBUG check_file: `test/report.txt' exists
+DEBUG check_file: `test/report.txt' not empty
+DEBUG check_file_contains: Check that file `test/report.txt' contains ['General information', 'Test logs and results collected']
+DEBUG check_file_contains: Looking for `General information'
+DEBUG __init__: LogReader `test/report.txt'
+DEBUG logreader_detect_file_encoding: Detect encoding of `test/report.txt'
+DEBUG logreader_detect_file_encoding: Encoding None
+DEBUG check_file_contains: `General information' found at line 1: `General information'
+DEBUG check_file_contains: Looking for `Test logs and results collected'
+DEBUG check_file_contains: `Test logs and results collected' found at line 26: `- Test logs and results collected'
+DEBUG check_file: Check `test/sie-console.log'
+DEBUG check_file: `test/sie-console.log' exists
+DEBUG check_file: `test/sie-console.log' not empty
+DEBUG check_file_contains: Check that file `test/sie-console.log' contains ['Press any key to stop the SIE SCT running', 'Test preparing...', 'Done!', 'SIE SCT test suite execution is complete. Resetting the system', 'EFI stub: Booting Linux Kernel...', 'EFI stub: UEFI Secure Boot is enabled.', 'EFI stub: Using DTB from configuration table', 'Linux version', 'efi: ESRT=0x', 'esrt: Reserving ESRT space from 0x', 'secureboot', 'systemd', 'Call SIE ACS in Linux', 'SecureBoot enabled', 'The system is in SecureBoot mode', 'Test: Authenticated variable', 'SIE ACS run is completed', 'Please press <Enter> to continue ...']
+DEBUG check_file_contains: Looking for `Press any key to stop the SIE SCT running'
+DEBUG __init__: LogReader `test/sie-console.log'
+DEBUG logreader_detect_file_encoding: Detect encoding of `test/sie-console.log'
+DEBUG logreader_detect_file_encoding: Giving up
+DEBUG logreader_detect_file_encoding: Encoding None
+DEBUG check_file_contains: `Press any key to stop the SIE SCT running' found at line 35: `Press any key to stop the SIE SCT running'
+DEBUG check_file_contains: Looking for `Test preparing...'
+DEBUG check_file_contains: `Test preparing...' found at line 43: `Test preparing...'
+DEBUG check_file_contains: Looking for `Done!'
+DEBUG check_file_contains: `Done!' found at line 1194: `Done!'
+DEBUG check_file_contains: Looking for `SIE SCT test suite execution is complete. Resetting the system'
+DEBUG check_file_contains: `SIE SCT test suite execution is complete. Resetting the system' found at line 1198: `SIE SCT test suite execution is complete. Resetting the system'
+DEBUG check_file_contains: Looking for `EFI stub: Booting Linux Kernel...'
+DEBUG check_file_contains: `EFI stub: Booting Linux Kernel...' found at line 1212: `   The highlighted entry will be executed automatically in 10s.                   The highlighted entry will be executed automatically in 9s.                    The highlighted entry will be executed automatically in 8s.                                                                                                                                                                                bbr/bsa                                                                    *SCT for Security Interface Extension (optional)                             SCT for Security Interface Extension (optional)                            *Linux Boot for Security Interface Extension (optional)                     EFI stub: Booting Linux Kernel...'
+DEBUG check_file_contains: Looking for `EFI stub: UEFI Secure Boot is enabled.'
+DEBUG check_file_contains: `EFI stub: UEFI Secure Boot is enabled.' found at line 1214: `EFI stub: UEFI Secure Boot is enabled.'
+DEBUG check_file_contains: Looking for `EFI stub: Using DTB from configuration table'
+DEBUG check_file_contains: `EFI stub: Using DTB from configuration table' found at line 1215: `EFI stub: Using DTB from configuration table'
+DEBUG check_file_contains: Looking for `Linux version'
+DEBUG check_file_contains: `Linux version' found at line 1218: `[    0.000000] Linux version 6.0.0-yocto-standard (oe-user@oe-host) (aarch64-oe-linux-gcc (GCC) 12.2.0, GNU ld (GNU Binutils) 2.39.0.20220819) #1 SMP PREEMPT Sun Oct 2 21:09:07 UTC 2022'
+DEBUG check_file_contains: Looking for `efi: ESRT=0x'
+ERROR check_file_contains: Could not find `efi: ESRT=0x' in `test/sie-console.log'
+DEBUG if_contains: Warn if file `test/sie-console.log' contains ['-dirty', 'EFI stub: ERROR:', 'FIRMWARE BUG:', 'OVERLAP DETECTED']
+DEBUG __init__: LogReader `test/sie-console.log'
+DEBUG logreader_detect_file_encoding: Detect encoding of `test/sie-console.log'
+DEBUG logreader_detect_file_encoding: Giving up
+DEBUG logreader_detect_file_encoding: Encoding None
+DEBUG if_contains: No pattern in `test/sie-console.log'
+DEBUG if_contains: Error if file `test/sie-console.log' contains ['No EFI system partition', 'Failed to persist EFI variables']
+DEBUG __init__: LogReader `test/sie-console.log'
+DEBUG logreader_detect_file_encoding: Detect encoding of `test/sie-console.log'
+DEBUG logreader_detect_file_encoding: Giving up
+DEBUG logreader_detect_file_encoding: Encoding None
+DEBUG if_contains: No pattern in `test/sie-console.log'
+DEBUG check_must_have_esp: Check must have ESP `test/sie-console.log'
+DEBUG __init__: LogReader `test/sie-console.log'
+DEBUG logreader_detect_file_encoding: Detect encoding of `test/sie-console.log'
+DEBUG logreader_detect_file_encoding: Giving up
+DEBUG logreader_detect_file_encoding: Encoding None
+DEBUG check_must_have_esp: Matched shell line 17, `UEFI Interactive Shell v2.2'
+DEBUG check_must_have_esp: Matched edk2 line 18, `EDK II'
+DEBUG check_must_have_esp: Matched uefi line 19, `UEFI v2.70 (EDK II, 0x00010000)'
+DEBUG check_must_have_esp: Matched map line 20, `Mapping table'
+DEBUG check_must_have_esp: Matched alias line 21, `      FS0: Alias(s):HD0b:;BLK1:'
+DEBUG check_must_have_esp: Matched path line 22, `          PciRoot(0x0)/Pci(0x2,0x0)/HD(1,GPT,39BD33CE-612C-4B6E-A2CB-227C1A0FE56'
+DEBUG check_must_have_esp: No alias line 23 -> done
+DEBUG check_must_have_esp: Found device path(s): `dict_keys(['PciRoot(0x0)/Pci(0x2,0x0)/HD(1,GPT,39BD33CE-612C-4B6E-A2CB-227C1A0FE56'])'
+DEBUG deferred_checks: Deferred checks
+DEBUG deferred_check_capsule_guids_in_esrt: Deferred check capsule GUIDs in ESRT
+DEBUG deferred_check_capsule_guids_in_esrt: Capsule GUIDs: []
+DEBUG deferred_check_capsule_guids_in_esrt: ESRT GUIDs: set()
+DEBUG deferred_check_uefi_logs_esp: Deferred check UEFI logs ESP
+DEBUG deferred_check_uefi_logs_esp: ESP device path(s): dict_keys([])
+DEBUG deferred_check_uefi_logs_esp: Device path(s): [{'dev-path': 'PciRoot(0x0)/Pci(0x2,0x0)/HD(1,GPT,39BD33CE-612C-4B6E-A2CB-227C1A0FE56', 'filename': 'test/acs-console.log'}, {'dev-path': 'PciRoot(0x0)/Pci(0x2,0x0)/HD(1,GPT,39BD33CE-612C-4B6E-A2CB-227C1A0FE56', 'filename': 'test/sie-console.log'}]
+DEBUG deferred_check_uefi_logs_esp: `test/acs-console.log' must have an ESP
+DEBUG deferred_check_uefi_logs_esp: `test/sie-console.log' must have an ESP
+ERROR deferred_check_uefi_logs_esp: `test/sie-console.log' did not have an ESP
+ERROR deferred_check_uefi_logs_esp: `test/sie-console.log' did not have an ESP
+INFO <module>: 406 checks, 378 pass, 2 warnings, 26 errors
+DEBUG print_not_checked: Not checked:
+DEBUG print_not_checked: test/acs_results/SIE/sct_results_previous_run
+DEBUG print_not_checked: test/acs_results/SIE/tpm2/eventlog.log
+DEBUG print_not_checked: test/acs_results/SIE/tpm2/eventlog_pcr_diff.log
+DEBUG print_not_checked: test/acs_results/SIE/tpm2/pcr.log
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/devicetree/base/#address-cells
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/devicetree/base/#size-cells
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/devicetree/base/apb-pclk
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/devicetree/base/chosen/bootargs
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/devicetree/base/chosen/kaslr-seed
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/devicetree/base/chosen/linux,uefi-mmap-desc-size
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/devicetree/base/chosen/linux,uefi-mmap-desc-ver
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/devicetree/base/chosen/linux,uefi-mmap-size
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/devicetree/base/chosen/linux,uefi-mmap-start
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/devicetree/base/chosen/linux,uefi-system-table
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/devicetree/base/chosen/name
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/devicetree/base/chosen/u-boot,version
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/devicetree/base/compatible
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/devicetree/base/cpus
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/devicetree/base/flash@0
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/devicetree/base/flash@4000000
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/devicetree/base/fw-cfg@9020000
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/devicetree/base/gpio-keys
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/devicetree/base/gpio-poweroff
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/devicetree/base/gpio-restart
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/devicetree/base/intc@8000000
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/devicetree/base/interrupt-parent
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/devicetree/base/memory@40000000
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/devicetree/base/model
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/devicetree/base/name
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/devicetree/base/pcie@10000000
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/devicetree/base/pl011@9000000
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/devicetree/base/pl011@9040000
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/devicetree/base/pl031@9010000
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/devicetree/base/pl061@9030000
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/devicetree/base/pl061@90b0000
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/devicetree/base/platform-bus@c000000
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/devicetree/base/pmu
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/devicetree/base/psci/cpu_off
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/devicetree/base/psci/cpu_on
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/devicetree/base/psci/cpu_suspend
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/devicetree/base/psci/migrate
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/devicetree/base/secflash@0
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/devicetree/base/secram@e000000
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/devicetree/base/secure-chosen
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/devicetree/base/timer
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/devicetree/base/virtio_mmio@a000000
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/devicetree/base/virtio_mmio@a000200
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/devicetree/base/virtio_mmio@a000400
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/devicetree/base/virtio_mmio@a000600
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/devicetree/base/virtio_mmio@a000800
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/devicetree/base/virtio_mmio@a000a00
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/devicetree/base/virtio_mmio@a000c00
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/devicetree/base/virtio_mmio@a000e00
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/devicetree/base/virtio_mmio@a001000
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/devicetree/base/virtio_mmio@a001200
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/devicetree/base/virtio_mmio@a001400
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/devicetree/base/virtio_mmio@a001600
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/devicetree/base/virtio_mmio@a001800
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/devicetree/base/virtio_mmio@a001a00
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/devicetree/base/virtio_mmio@a001c00
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/devicetree/base/virtio_mmio@a001e00
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/devicetree/base/virtio_mmio@a002000
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/devicetree/base/virtio_mmio@a002200
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/devicetree/base/virtio_mmio@a002400
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/devicetree/base/virtio_mmio@a002600
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/devicetree/base/virtio_mmio@a002800
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/devicetree/base/virtio_mmio@a002a00
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/devicetree/base/virtio_mmio@a002c00
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/devicetree/base/virtio_mmio@a002e00
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/devicetree/base/virtio_mmio@a003000
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/devicetree/base/virtio_mmio@a003200
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/devicetree/base/virtio_mmio@a003400
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/devicetree/base/virtio_mmio@a003600
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/devicetree/base/virtio_mmio@a003800
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/devicetree/base/virtio_mmio@a003a00
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/devicetree/base/virtio_mmio@a003c00
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/devicetree/base/virtio_mmio@a003e00
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/dmi/entries
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/dmi/tables
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/efi/efivars/AuditMode-8be4df61-93ca-11d2-aa0d-00e098032b8c
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/efi/efivars/Boot0000-8be4df61-93ca-11d2-aa0d-00e098032b8c
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/efi/efivars/Boot0001-8be4df61-93ca-11d2-aa0d-00e098032b8c
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/efi/efivars/Boot0002-8be4df61-93ca-11d2-aa0d-00e098032b8c
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/efi/efivars/Boot0003-8be4df61-93ca-11d2-aa0d-00e098032b8c
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/efi/efivars/Boot0004-8be4df61-93ca-11d2-aa0d-00e098032b8c
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/efi/efivars/BootCurrent-8be4df61-93ca-11d2-aa0d-00e098032b8c
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/efi/efivars/BootOptionSupport-8be4df61-93ca-11d2-aa0d-00e098032b8c
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/efi/efivars/BootOrder-8be4df61-93ca-11d2-aa0d-00e098032b8c
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/efi/efivars/ConIn-8be4df61-93ca-11d2-aa0d-00e098032b8c
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/efi/efivars/ConInDev-8be4df61-93ca-11d2-aa0d-00e098032b8c
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/efi/efivars/ConOut-8be4df61-93ca-11d2-aa0d-00e098032b8c
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/efi/efivars/ConOutDev-8be4df61-93ca-11d2-aa0d-00e098032b8c
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/efi/efivars/DeployedMode-8be4df61-93ca-11d2-aa0d-00e098032b8c
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/efi/efivars/ErrOut-8be4df61-93ca-11d2-aa0d-00e098032b8c
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/efi/efivars/ErrOutDev-8be4df61-93ca-11d2-aa0d-00e098032b8c
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/efi/efivars/ExitBootServicesTestVariable-f6fab04f-acaf-4af3-b9fa-dcf97fb4426f
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/efi/efivars/KEK-8be4df61-93ca-11d2-aa0d-00e098032b8c
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/efi/efivars/Key0000-8be4df61-93ca-11d2-aa0d-00e098032b8c
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/efi/efivars/Key0001-8be4df61-93ca-11d2-aa0d-00e098032b8c
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/efi/efivars/Lang-8be4df61-93ca-11d2-aa0d-00e098032b8c
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/efi/efivars/LangCodes-8be4df61-93ca-11d2-aa0d-00e098032b8c
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/efi/efivars/MTC-eb704011-1402-11d3-8e77-00a0c969723b
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/efi/efivars/PK-8be4df61-93ca-11d2-aa0d-00e098032b8c
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/efi/efivars/PlatformLang-8be4df61-93ca-11d2-aa0d-00e098032b8c
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/efi/efivars/PlatformLangCodes-8be4df61-93ca-11d2-aa0d-00e098032b8c
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/efi/efivars/PlatformRecovery0000-8be4df61-93ca-11d2-aa0d-00e098032b8c
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/efi/efivars/RtcTimeSettings-b336f62d-4135-4a55-ae4e-4971bbf0885d
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/efi/efivars/SecureBoot-8be4df61-93ca-11d2-aa0d-00e098032b8c
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/efi/efivars/SetupMode-8be4df61-93ca-11d2-aa0d-00e098032b8c
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/efi/efivars/SignatureSupport-8be4df61-93ca-11d2-aa0d-00e098032b8c
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/efi/efivars/Timeout-8be4df61-93ca-11d2-aa0d-00e098032b8c
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/efi/efivars/VarErrorFlag-04b37fe8-f6ae-480b-bdd5-37d98c5e89aa
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/efi/efivars/VendorKeys-8be4df61-93ca-11d2-aa0d-00e098032b8c
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/efi/efivars/certdb-d9bee56e-75dc-49d9-b4d7-b534210f637a
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/efi/efivars/certdbv-d9bee56e-75dc-49d9-b4d7-b534210f637a
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/efi/efivars/db-d719b2cb-3d3a-4596-a3bc-dad00e67656f
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/efi/efivars/dbx-d719b2cb-3d3a-4596-a3bc-dad00e67656f
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/efi/fw_platform_size
+DEBUG print_not_checked: test/acs_results/linux_dump/firmware/efi/systab
+DEBUG print_not_checked: test/acs_results/sct_results_previous_run
+DEBUG print_not_checked: test/docs/.keep
+DEBUG print_not_checked: test/fw/readme.txt
+DEBUG print_not_checked: test/manual-results/.keep
+DEBUG print_not_checked: test/os-logs/linux-distro1-version/.keep
+DEBUG print_not_checked: test/os-logs/linux-distro2-version/.keep
+DEBUG print_not_checked: test/os-logs/screenshots

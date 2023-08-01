@@ -1,0 +1,613 @@
+/sys/firmware:
+drwxr-xr-x    3 root     root             0 Aug  1 09:15 devicetree
+drwxr-xr-x    4 root     root             0 Aug  1 09:15 dmi
+drwxr-xr-x    3 root     root             0 Aug  1 09:14 efi
+-r--------    1 root     root          8111 Aug  1 09:15 fdt
+
+/sys/firmware/devicetree:
+drwxr-xr-x   50 root     root             0 Aug  1 09:15 base
+
+/sys/firmware/devicetree/base:
+-r--r--r--    1 root     root             4 Aug  1 09:15 #address-cells
+-r--r--r--    1 root     root             4 Aug  1 09:15 #size-cells
+drwxr-xr-x    2 root     root             0 Aug  1 09:15 apb-pclk
+drwxr-xr-x    2 root     root             0 Aug  1 09:15 chosen
+-r--r--r--    1 root     root            17 Aug  1 09:15 compatible
+drwxr-xr-x    5 root     root             0 Aug  1 09:15 cpus
+drwxr-xr-x    2 root     root             0 Aug  1 09:15 flash@0
+drwxr-xr-x    2 root     root             0 Aug  1 09:15 fw-cfg@9020000
+drwxr-xr-x    3 root     root             0 Aug  1 09:15 gpio-keys
+drwxr-xr-x    3 root     root             0 Aug  1 09:15 intc@8000000
+-r--r--r--    1 root     root             4 Aug  1 09:15 interrupt-parent
+drwxr-xr-x    2 root     root             0 Aug  1 09:15 memory@40000000
+-r--r--r--    1 root     root            17 Aug  1 09:15 model
+-r--r--r--    1 root     root             1 Aug  1 09:15 name
+drwxr-xr-x    2 root     root             0 Aug  1 09:15 pcie@10000000
+drwxr-xr-x    2 root     root             0 Aug  1 09:15 pl011@9000000
+drwxr-xr-x    2 root     root             0 Aug  1 09:15 pl031@9010000
+drwxr-xr-x    2 root     root             0 Aug  1 09:15 pl061@9030000
+drwxr-xr-x    3 root     root             0 Aug  1 09:15 platform-bus@c000000
+drwxr-xr-x    2 root     root             0 Aug  1 09:15 pmu
+drwxr-xr-x    2 root     root             0 Aug  1 09:15 psci
+drwxr-xr-x    2 root     root             0 Aug  1 09:15 timer
+drwxr-xr-x    2 root     root             0 Aug  1 09:15 virtio_mmio@a000000
+drwxr-xr-x    2 root     root             0 Aug  1 09:15 virtio_mmio@a000200
+drwxr-xr-x    2 root     root             0 Aug  1 09:15 virtio_mmio@a000400
+drwxr-xr-x    2 root     root             0 Aug  1 09:15 virtio_mmio@a000600
+drwxr-xr-x    2 root     root             0 Aug  1 09:15 virtio_mmio@a000800
+drwxr-xr-x    2 root     root             0 Aug  1 09:15 virtio_mmio@a000a00
+drwxr-xr-x    2 root     root             0 Aug  1 09:15 virtio_mmio@a000c00
+drwxr-xr-x    2 root     root             0 Aug  1 09:15 virtio_mmio@a000e00
+drwxr-xr-x    2 root     root             0 Aug  1 09:15 virtio_mmio@a001000
+drwxr-xr-x    2 root     root             0 Aug  1 09:15 virtio_mmio@a001200
+drwxr-xr-x    2 root     root             0 Aug  1 09:15 virtio_mmio@a001400
+drwxr-xr-x    2 root     root             0 Aug  1 09:15 virtio_mmio@a001600
+drwxr-xr-x    2 root     root             0 Aug  1 09:15 virtio_mmio@a001800
+drwxr-xr-x    2 root     root             0 Aug  1 09:15 virtio_mmio@a001a00
+drwxr-xr-x    2 root     root             0 Aug  1 09:15 virtio_mmio@a001c00
+drwxr-xr-x    2 root     root             0 Aug  1 09:15 virtio_mmio@a001e00
+drwxr-xr-x    2 root     root             0 Aug  1 09:15 virtio_mmio@a002000
+drwxr-xr-x    2 root     root             0 Aug  1 09:15 virtio_mmio@a002200
+drwxr-xr-x    2 root     root             0 Aug  1 09:15 virtio_mmio@a002400
+drwxr-xr-x    2 root     root             0 Aug  1 09:15 virtio_mmio@a002600
+drwxr-xr-x    2 root     root             0 Aug  1 09:15 virtio_mmio@a002800
+drwxr-xr-x    2 root     root             0 Aug  1 09:15 virtio_mmio@a002a00
+drwxr-xr-x    2 root     root             0 Aug  1 09:15 virtio_mmio@a002c00
+drwxr-xr-x    2 root     root             0 Aug  1 09:15 virtio_mmio@a002e00
+drwxr-xr-x    2 root     root             0 Aug  1 09:15 virtio_mmio@a003000
+drwxr-xr-x    2 root     root             0 Aug  1 09:15 virtio_mmio@a003200
+drwxr-xr-x    2 root     root             0 Aug  1 09:15 virtio_mmio@a003400
+drwxr-xr-x    2 root     root             0 Aug  1 09:15 virtio_mmio@a003600
+drwxr-xr-x    2 root     root             0 Aug  1 09:15 virtio_mmio@a003800
+drwxr-xr-x    2 root     root             0 Aug  1 09:15 virtio_mmio@a003a00
+drwxr-xr-x    2 root     root             0 Aug  1 09:15 virtio_mmio@a003c00
+drwxr-xr-x    2 root     root             0 Aug  1 09:15 virtio_mmio@a003e00
+
+/sys/firmware/devicetree/base/apb-pclk:
+-r--r--r--    1 root     root             4 Aug  1 09:15 #clock-cells
+-r--r--r--    1 root     root             4 Aug  1 09:15 clock-frequency
+-r--r--r--    1 root     root             9 Aug  1 09:15 clock-output-names
+-r--r--r--    1 root     root            12 Aug  1 09:15 compatible
+-r--r--r--    1 root     root             9 Aug  1 09:15 name
+-r--r--r--    1 root     root             4 Aug  1 09:15 phandle
+
+/sys/firmware/devicetree/base/chosen:
+-r--r--r--    1 root     root            82 Aug  1 09:15 bootargs
+-r--r--r--    1 root     root             8 Aug  1 09:15 kaslr-seed
+-r--r--r--    1 root     root             4 Aug  1 09:15 linux,uefi-mmap-desc-size
+-r--r--r--    1 root     root             4 Aug  1 09:15 linux,uefi-mmap-desc-ver
+-r--r--r--    1 root     root             4 Aug  1 09:15 linux,uefi-mmap-size
+-r--r--r--    1 root     root             8 Aug  1 09:15 linux,uefi-mmap-start
+-r--r--r--    1 root     root             8 Aug  1 09:15 linux,uefi-system-table
+-r--r--r--    1 root     root             7 Aug  1 09:15 name
+-r--r--r--    1 root     root            15 Aug  1 09:15 stdout-path
+
+/sys/firmware/devicetree/base/cpus:
+-r--r--r--    1 root     root             4 Aug  1 09:15 #address-cells
+-r--r--r--    1 root     root             4 Aug  1 09:15 #size-cells
+drwxr-xr-x    3 root     root             0 Aug  1 09:15 cpu-map
+drwxr-xr-x    2 root     root             0 Aug  1 09:15 cpu@0
+drwxr-xr-x    2 root     root             0 Aug  1 09:15 cpu@1
+-r--r--r--    1 root     root             5 Aug  1 09:15 name
+
+/sys/firmware/devicetree/base/cpus/cpu-map:
+-r--r--r--    1 root     root             8 Aug  1 09:15 name
+drwxr-xr-x    3 root     root             0 Aug  1 09:15 socket0
+
+/sys/firmware/devicetree/base/cpus/cpu-map/socket0:
+drwxr-xr-x    4 root     root             0 Aug  1 09:15 cluster0
+-r--r--r--    1 root     root             8 Aug  1 09:15 name
+
+/sys/firmware/devicetree/base/cpus/cpu-map/socket0/cluster0:
+drwxr-xr-x    2 root     root             0 Aug  1 09:15 core0
+drwxr-xr-x    2 root     root             0 Aug  1 09:15 core1
+-r--r--r--    1 root     root             9 Aug  1 09:15 name
+
+/sys/firmware/devicetree/base/cpus/cpu-map/socket0/cluster0/core0:
+-r--r--r--    1 root     root             4 Aug  1 09:15 cpu
+-r--r--r--    1 root     root             6 Aug  1 09:15 name
+
+/sys/firmware/devicetree/base/cpus/cpu-map/socket0/cluster0/core1:
+-r--r--r--    1 root     root             4 Aug  1 09:15 cpu
+-r--r--r--    1 root     root             6 Aug  1 09:15 name
+
+/sys/firmware/devicetree/base/cpus/cpu@0:
+-r--r--r--    1 root     root            15 Aug  1 09:15 compatible
+-r--r--r--    1 root     root             4 Aug  1 09:15 device_type
+-r--r--r--    1 root     root             5 Aug  1 09:15 enable-method
+-r--r--r--    1 root     root             4 Aug  1 09:15 name
+-r--r--r--    1 root     root             4 Aug  1 09:15 phandle
+-r--r--r--    1 root     root             4 Aug  1 09:15 reg
+
+/sys/firmware/devicetree/base/cpus/cpu@1:
+-r--r--r--    1 root     root            15 Aug  1 09:15 compatible
+-r--r--r--    1 root     root             4 Aug  1 09:15 device_type
+-r--r--r--    1 root     root             5 Aug  1 09:15 enable-method
+-r--r--r--    1 root     root             4 Aug  1 09:15 name
+-r--r--r--    1 root     root             4 Aug  1 09:15 phandle
+-r--r--r--    1 root     root             4 Aug  1 09:15 reg
+
+/sys/firmware/devicetree/base/flash@0:
+-r--r--r--    1 root     root             4 Aug  1 09:15 bank-width
+-r--r--r--    1 root     root            10 Aug  1 09:15 compatible
+-r--r--r--    1 root     root             6 Aug  1 09:15 name
+-r--r--r--    1 root     root            32 Aug  1 09:15 reg
+-r--r--r--    1 root     root             9 Aug  1 09:15 status
+
+/sys/firmware/devicetree/base/fw-cfg@9020000:
+-r--r--r--    1 root     root            17 Aug  1 09:15 compatible
+-r--r--r--    1 root     root             0 Aug  1 09:15 dma-coherent
+-r--r--r--    1 root     root             7 Aug  1 09:15 name
+-r--r--r--    1 root     root            16 Aug  1 09:15 reg
+
+/sys/firmware/devicetree/base/gpio-keys:
+-r--r--r--    1 root     root            10 Aug  1 09:15 compatible
+-r--r--r--    1 root     root            10 Aug  1 09:15 name
+drwxr-xr-x    2 root     root             0 Aug  1 09:15 poweroff
+
+/sys/firmware/devicetree/base/gpio-keys/poweroff:
+-r--r--r--    1 root     root            12 Aug  1 09:15 gpios
+-r--r--r--    1 root     root            18 Aug  1 09:15 label
+-r--r--r--    1 root     root             4 Aug  1 09:15 linux,code
+-r--r--r--    1 root     root             9 Aug  1 09:15 name
+
+/sys/firmware/devicetree/base/intc@8000000:
+-r--r--r--    1 root     root             4 Aug  1 09:15 #address-cells
+-r--r--r--    1 root     root             4 Aug  1 09:15 #interrupt-cells
+-r--r--r--    1 root     root             4 Aug  1 09:15 #size-cells
+-r--r--r--    1 root     root            19 Aug  1 09:15 compatible
+-r--r--r--    1 root     root             0 Aug  1 09:15 interrupt-controller
+-r--r--r--    1 root     root             5 Aug  1 09:15 name
+-r--r--r--    1 root     root             4 Aug  1 09:15 phandle
+-r--r--r--    1 root     root             0 Aug  1 09:15 ranges
+-r--r--r--    1 root     root            32 Aug  1 09:15 reg
+drwxr-xr-x    2 root     root             0 Aug  1 09:15 v2m@8020000
+
+/sys/firmware/devicetree/base/intc@8000000/v2m@8020000:
+-r--r--r--    1 root     root            18 Aug  1 09:15 compatible
+-r--r--r--    1 root     root             0 Aug  1 09:15 msi-controller
+-r--r--r--    1 root     root             4 Aug  1 09:15 name
+-r--r--r--    1 root     root             4 Aug  1 09:15 phandle
+-r--r--r--    1 root     root            16 Aug  1 09:15 reg
+
+/sys/firmware/devicetree/base/memory@40000000:
+-r--r--r--    1 root     root             7 Aug  1 09:15 device_type
+-r--r--r--    1 root     root             7 Aug  1 09:15 name
+-r--r--r--    1 root     root            16 Aug  1 09:15 reg
+
+/sys/firmware/devicetree/base/pcie@10000000:
+-r--r--r--    1 root     root             4 Aug  1 09:15 #address-cells
+-r--r--r--    1 root     root             4 Aug  1 09:15 #interrupt-cells
+-r--r--r--    1 root     root             4 Aug  1 09:15 #size-cells
+-r--r--r--    1 root     root             8 Aug  1 09:15 bus-range
+-r--r--r--    1 root     root            22 Aug  1 09:15 compatible
+-r--r--r--    1 root     root             4 Aug  1 09:15 device_type
+-r--r--r--    1 root     root             0 Aug  1 09:15 dma-coherent
+-r--r--r--    1 root     root           640 Aug  1 09:15 interrupt-map
+-r--r--r--    1 root     root            16 Aug  1 09:15 interrupt-map-mask
+-r--r--r--    1 root     root             4 Aug  1 09:15 linux,pci-domain
+-r--r--r--    1 root     root            16 Aug  1 09:15 msi-map
+-r--r--r--    1 root     root             5 Aug  1 09:15 name
+-r--r--r--    1 root     root            84 Aug  1 09:15 ranges
+-r--r--r--    1 root     root            16 Aug  1 09:15 reg
+
+/sys/firmware/devicetree/base/pl011@9000000:
+-r--r--r--    1 root     root            17 Aug  1 09:15 clock-names
+-r--r--r--    1 root     root             8 Aug  1 09:15 clocks
+-r--r--r--    1 root     root            24 Aug  1 09:15 compatible
+-r--r--r--    1 root     root            12 Aug  1 09:15 interrupts
+-r--r--r--    1 root     root             6 Aug  1 09:15 name
+-r--r--r--    1 root     root            16 Aug  1 09:15 reg
+
+/sys/firmware/devicetree/base/pl031@9010000:
+-r--r--r--    1 root     root             9 Aug  1 09:15 clock-names
+-r--r--r--    1 root     root             4 Aug  1 09:15 clocks
+-r--r--r--    1 root     root            24 Aug  1 09:15 compatible
+-r--r--r--    1 root     root            12 Aug  1 09:15 interrupts
+-r--r--r--    1 root     root             6 Aug  1 09:15 name
+-r--r--r--    1 root     root            16 Aug  1 09:15 reg
+-r--r--r--    1 root     root             9 Aug  1 09:15 status
+
+/sys/firmware/devicetree/base/pl061@9030000:
+-r--r--r--    1 root     root             4 Aug  1 09:15 #gpio-cells
+-r--r--r--    1 root     root             9 Aug  1 09:15 clock-names
+-r--r--r--    1 root     root             4 Aug  1 09:15 clocks
+-r--r--r--    1 root     root            24 Aug  1 09:15 compatible
+-r--r--r--    1 root     root             0 Aug  1 09:15 gpio-controller
+-r--r--r--    1 root     root            12 Aug  1 09:15 interrupts
+-r--r--r--    1 root     root             6 Aug  1 09:15 name
+-r--r--r--    1 root     root             4 Aug  1 09:15 phandle
+-r--r--r--    1 root     root            16 Aug  1 09:15 reg
+
+/sys/firmware/devicetree/base/platform-bus@c000000:
+-r--r--r--    1 root     root             4 Aug  1 09:15 #address-cells
+-r--r--r--    1 root     root             4 Aug  1 09:15 #size-cells
+-r--r--r--    1 root     root            25 Aug  1 09:15 compatible
+-r--r--r--    1 root     root             4 Aug  1 09:15 interrupt-parent
+-r--r--r--    1 root     root            13 Aug  1 09:15 name
+-r--r--r--    1 root     root            16 Aug  1 09:15 ranges
+drwxr-xr-x    2 root     root             0 Aug  1 09:15 tpm_tis@0
+
+/sys/firmware/devicetree/base/platform-bus@c000000/tpm_tis@0:
+-r--r--r--    1 root     root            17 Aug  1 09:15 compatible
+-r--r--r--    1 root     root             8 Aug  1 09:15 name
+-r--r--r--    1 root     root             8 Aug  1 09:15 reg
+
+/sys/firmware/devicetree/base/pmu:
+-r--r--r--    1 root     root            16 Aug  1 09:15 compatible
+-r--r--r--    1 root     root            12 Aug  1 09:15 interrupts
+-r--r--r--    1 root     root             4 Aug  1 09:15 name
+
+/sys/firmware/devicetree/base/psci:
+-r--r--r--    1 root     root            35 Aug  1 09:15 compatible
+-r--r--r--    1 root     root             4 Aug  1 09:15 cpu_off
+-r--r--r--    1 root     root             4 Aug  1 09:15 cpu_on
+-r--r--r--    1 root     root             4 Aug  1 09:15 cpu_suspend
+-r--r--r--    1 root     root             4 Aug  1 09:15 method
+-r--r--r--    1 root     root             4 Aug  1 09:15 migrate
+-r--r--r--    1 root     root             5 Aug  1 09:15 name
+
+/sys/firmware/devicetree/base/timer:
+-r--r--r--    1 root     root             0 Aug  1 09:15 always-on
+-r--r--r--    1 root     root            32 Aug  1 09:15 compatible
+-r--r--r--    1 root     root            48 Aug  1 09:15 interrupts
+-r--r--r--    1 root     root             6 Aug  1 09:15 name
+
+/sys/firmware/devicetree/base/virtio_mmio@a000000:
+-r--r--r--    1 root     root            12 Aug  1 09:15 compatible
+-r--r--r--    1 root     root             0 Aug  1 09:15 dma-coherent
+-r--r--r--    1 root     root            12 Aug  1 09:15 interrupts
+-r--r--r--    1 root     root            12 Aug  1 09:15 name
+-r--r--r--    1 root     root            16 Aug  1 09:15 reg
+
+/sys/firmware/devicetree/base/virtio_mmio@a000200:
+-r--r--r--    1 root     root            12 Aug  1 09:15 compatible
+-r--r--r--    1 root     root             0 Aug  1 09:15 dma-coherent
+-r--r--r--    1 root     root            12 Aug  1 09:15 interrupts
+-r--r--r--    1 root     root            12 Aug  1 09:15 name
+-r--r--r--    1 root     root            16 Aug  1 09:15 reg
+
+/sys/firmware/devicetree/base/virtio_mmio@a000400:
+-r--r--r--    1 root     root            12 Aug  1 09:15 compatible
+-r--r--r--    1 root     root             0 Aug  1 09:15 dma-coherent
+-r--r--r--    1 root     root            12 Aug  1 09:15 interrupts
+-r--r--r--    1 root     root            12 Aug  1 09:15 name
+-r--r--r--    1 root     root            16 Aug  1 09:15 reg
+
+/sys/firmware/devicetree/base/virtio_mmio@a000600:
+-r--r--r--    1 root     root            12 Aug  1 09:15 compatible
+-r--r--r--    1 root     root             0 Aug  1 09:15 dma-coherent
+-r--r--r--    1 root     root            12 Aug  1 09:15 interrupts
+-r--r--r--    1 root     root            12 Aug  1 09:15 name
+-r--r--r--    1 root     root            16 Aug  1 09:15 reg
+
+/sys/firmware/devicetree/base/virtio_mmio@a000800:
+-r--r--r--    1 root     root            12 Aug  1 09:15 compatible
+-r--r--r--    1 root     root             0 Aug  1 09:15 dma-coherent
+-r--r--r--    1 root     root            12 Aug  1 09:15 interrupts
+-r--r--r--    1 root     root            12 Aug  1 09:15 name
+-r--r--r--    1 root     root            16 Aug  1 09:15 reg
+
+/sys/firmware/devicetree/base/virtio_mmio@a000a00:
+-r--r--r--    1 root     root            12 Aug  1 09:15 compatible
+-r--r--r--    1 root     root             0 Aug  1 09:15 dma-coherent
+-r--r--r--    1 root     root            12 Aug  1 09:15 interrupts
+-r--r--r--    1 root     root            12 Aug  1 09:15 name
+-r--r--r--    1 root     root            16 Aug  1 09:15 reg
+
+/sys/firmware/devicetree/base/virtio_mmio@a000c00:
+-r--r--r--    1 root     root            12 Aug  1 09:15 compatible
+-r--r--r--    1 root     root             0 Aug  1 09:15 dma-coherent
+-r--r--r--    1 root     root            12 Aug  1 09:15 interrupts
+-r--r--r--    1 root     root            12 Aug  1 09:15 name
+-r--r--r--    1 root     root            16 Aug  1 09:15 reg
+
+/sys/firmware/devicetree/base/virtio_mmio@a000e00:
+-r--r--r--    1 root     root            12 Aug  1 09:15 compatible
+-r--r--r--    1 root     root             0 Aug  1 09:15 dma-coherent
+-r--r--r--    1 root     root            12 Aug  1 09:15 interrupts
+-r--r--r--    1 root     root            12 Aug  1 09:15 name
+-r--r--r--    1 root     root            16 Aug  1 09:15 reg
+
+/sys/firmware/devicetree/base/virtio_mmio@a001000:
+-r--r--r--    1 root     root            12 Aug  1 09:15 compatible
+-r--r--r--    1 root     root             0 Aug  1 09:15 dma-coherent
+-r--r--r--    1 root     root            12 Aug  1 09:15 interrupts
+-r--r--r--    1 root     root            12 Aug  1 09:15 name
+-r--r--r--    1 root     root            16 Aug  1 09:15 reg
+
+/sys/firmware/devicetree/base/virtio_mmio@a001200:
+-r--r--r--    1 root     root            12 Aug  1 09:15 compatible
+-r--r--r--    1 root     root             0 Aug  1 09:15 dma-coherent
+-r--r--r--    1 root     root            12 Aug  1 09:15 interrupts
+-r--r--r--    1 root     root            12 Aug  1 09:15 name
+-r--r--r--    1 root     root            16 Aug  1 09:15 reg
+
+/sys/firmware/devicetree/base/virtio_mmio@a001400:
+-r--r--r--    1 root     root            12 Aug  1 09:15 compatible
+-r--r--r--    1 root     root             0 Aug  1 09:15 dma-coherent
+-r--r--r--    1 root     root            12 Aug  1 09:15 interrupts
+-r--r--r--    1 root     root            12 Aug  1 09:15 name
+-r--r--r--    1 root     root            16 Aug  1 09:15 reg
+
+/sys/firmware/devicetree/base/virtio_mmio@a001600:
+-r--r--r--    1 root     root            12 Aug  1 09:15 compatible
+-r--r--r--    1 root     root             0 Aug  1 09:15 dma-coherent
+-r--r--r--    1 root     root            12 Aug  1 09:15 interrupts
+-r--r--r--    1 root     root            12 Aug  1 09:15 name
+-r--r--r--    1 root     root            16 Aug  1 09:15 reg
+
+/sys/firmware/devicetree/base/virtio_mmio@a001800:
+-r--r--r--    1 root     root            12 Aug  1 09:15 compatible
+-r--r--r--    1 root     root             0 Aug  1 09:15 dma-coherent
+-r--r--r--    1 root     root            12 Aug  1 09:15 interrupts
+-r--r--r--    1 root     root            12 Aug  1 09:15 name
+-r--r--r--    1 root     root            16 Aug  1 09:15 reg
+
+/sys/firmware/devicetree/base/virtio_mmio@a001a00:
+-r--r--r--    1 root     root            12 Aug  1 09:15 compatible
+-r--r--r--    1 root     root             0 Aug  1 09:15 dma-coherent
+-r--r--r--    1 root     root            12 Aug  1 09:15 interrupts
+-r--r--r--    1 root     root            12 Aug  1 09:15 name
+-r--r--r--    1 root     root            16 Aug  1 09:15 reg
+
+/sys/firmware/devicetree/base/virtio_mmio@a001c00:
+-r--r--r--    1 root     root            12 Aug  1 09:15 compatible
+-r--r--r--    1 root     root             0 Aug  1 09:15 dma-coherent
+-r--r--r--    1 root     root            12 Aug  1 09:15 interrupts
+-r--r--r--    1 root     root            12 Aug  1 09:15 name
+-r--r--r--    1 root     root            16 Aug  1 09:15 reg
+
+/sys/firmware/devicetree/base/virtio_mmio@a001e00:
+-r--r--r--    1 root     root            12 Aug  1 09:15 compatible
+-r--r--r--    1 root     root             0 Aug  1 09:15 dma-coherent
+-r--r--r--    1 root     root            12 Aug  1 09:15 interrupts
+-r--r--r--    1 root     root            12 Aug  1 09:15 name
+-r--r--r--    1 root     root            16 Aug  1 09:15 reg
+
+/sys/firmware/devicetree/base/virtio_mmio@a002000:
+-r--r--r--    1 root     root            12 Aug  1 09:15 compatible
+-r--r--r--    1 root     root             0 Aug  1 09:15 dma-coherent
+-r--r--r--    1 root     root            12 Aug  1 09:15 interrupts
+-r--r--r--    1 root     root            12 Aug  1 09:15 name
+-r--r--r--    1 root     root            16 Aug  1 09:15 reg
+
+/sys/firmware/devicetree/base/virtio_mmio@a002200:
+-r--r--r--    1 root     root            12 Aug  1 09:15 compatible
+-r--r--r--    1 root     root             0 Aug  1 09:15 dma-coherent
+-r--r--r--    1 root     root            12 Aug  1 09:15 interrupts
+-r--r--r--    1 root     root            12 Aug  1 09:15 name
+-r--r--r--    1 root     root            16 Aug  1 09:15 reg
+
+/sys/firmware/devicetree/base/virtio_mmio@a002400:
+-r--r--r--    1 root     root            12 Aug  1 09:15 compatible
+-r--r--r--    1 root     root             0 Aug  1 09:15 dma-coherent
+-r--r--r--    1 root     root            12 Aug  1 09:15 interrupts
+-r--r--r--    1 root     root            12 Aug  1 09:15 name
+-r--r--r--    1 root     root            16 Aug  1 09:15 reg
+
+/sys/firmware/devicetree/base/virtio_mmio@a002600:
+-r--r--r--    1 root     root            12 Aug  1 09:15 compatible
+-r--r--r--    1 root     root             0 Aug  1 09:15 dma-coherent
+-r--r--r--    1 root     root            12 Aug  1 09:15 interrupts
+-r--r--r--    1 root     root            12 Aug  1 09:15 name
+-r--r--r--    1 root     root            16 Aug  1 09:15 reg
+
+/sys/firmware/devicetree/base/virtio_mmio@a002800:
+-r--r--r--    1 root     root            12 Aug  1 09:15 compatible
+-r--r--r--    1 root     root             0 Aug  1 09:15 dma-coherent
+-r--r--r--    1 root     root            12 Aug  1 09:15 interrupts
+-r--r--r--    1 root     root            12 Aug  1 09:15 name
+-r--r--r--    1 root     root            16 Aug  1 09:15 reg
+
+/sys/firmware/devicetree/base/virtio_mmio@a002a00:
+-r--r--r--    1 root     root            12 Aug  1 09:15 compatible
+-r--r--r--    1 root     root             0 Aug  1 09:15 dma-coherent
+-r--r--r--    1 root     root            12 Aug  1 09:15 interrupts
+-r--r--r--    1 root     root            12 Aug  1 09:15 name
+-r--r--r--    1 root     root            16 Aug  1 09:15 reg
+
+/sys/firmware/devicetree/base/virtio_mmio@a002c00:
+-r--r--r--    1 root     root            12 Aug  1 09:15 compatible
+-r--r--r--    1 root     root             0 Aug  1 09:15 dma-coherent
+-r--r--r--    1 root     root            12 Aug  1 09:15 interrupts
+-r--r--r--    1 root     root            12 Aug  1 09:15 name
+-r--r--r--    1 root     root            16 Aug  1 09:15 reg
+
+/sys/firmware/devicetree/base/virtio_mmio@a002e00:
+-r--r--r--    1 root     root            12 Aug  1 09:15 compatible
+-r--r--r--    1 root     root             0 Aug  1 09:15 dma-coherent
+-r--r--r--    1 root     root            12 Aug  1 09:15 interrupts
+-r--r--r--    1 root     root            12 Aug  1 09:15 name
+-r--r--r--    1 root     root            16 Aug  1 09:15 reg
+
+/sys/firmware/devicetree/base/virtio_mmio@a003000:
+-r--r--r--    1 root     root            12 Aug  1 09:15 compatible
+-r--r--r--    1 root     root             0 Aug  1 09:15 dma-coherent
+-r--r--r--    1 root     root            12 Aug  1 09:15 interrupts
+-r--r--r--    1 root     root            12 Aug  1 09:15 name
+-r--r--r--    1 root     root            16 Aug  1 09:15 reg
+
+/sys/firmware/devicetree/base/virtio_mmio@a003200:
+-r--r--r--    1 root     root            12 Aug  1 09:15 compatible
+-r--r--r--    1 root     root             0 Aug  1 09:15 dma-coherent
+-r--r--r--    1 root     root            12 Aug  1 09:15 interrupts
+-r--r--r--    1 root     root            12 Aug  1 09:15 name
+-r--r--r--    1 root     root            16 Aug  1 09:15 reg
+
+/sys/firmware/devicetree/base/virtio_mmio@a003400:
+-r--r--r--    1 root     root            12 Aug  1 09:15 compatible
+-r--r--r--    1 root     root             0 Aug  1 09:15 dma-coherent
+-r--r--r--    1 root     root            12 Aug  1 09:15 interrupts
+-r--r--r--    1 root     root            12 Aug  1 09:15 name
+-r--r--r--    1 root     root            16 Aug  1 09:15 reg
+
+/sys/firmware/devicetree/base/virtio_mmio@a003600:
+-r--r--r--    1 root     root            12 Aug  1 09:15 compatible
+-r--r--r--    1 root     root             0 Aug  1 09:15 dma-coherent
+-r--r--r--    1 root     root            12 Aug  1 09:15 interrupts
+-r--r--r--    1 root     root            12 Aug  1 09:15 name
+-r--r--r--    1 root     root            16 Aug  1 09:15 reg
+
+/sys/firmware/devicetree/base/virtio_mmio@a003800:
+-r--r--r--    1 root     root            12 Aug  1 09:15 compatible
+-r--r--r--    1 root     root             0 Aug  1 09:15 dma-coherent
+-r--r--r--    1 root     root            12 Aug  1 09:15 interrupts
+-r--r--r--    1 root     root            12 Aug  1 09:15 name
+-r--r--r--    1 root     root            16 Aug  1 09:15 reg
+
+/sys/firmware/devicetree/base/virtio_mmio@a003a00:
+-r--r--r--    1 root     root            12 Aug  1 09:15 compatible
+-r--r--r--    1 root     root             0 Aug  1 09:15 dma-coherent
+-r--r--r--    1 root     root            12 Aug  1 09:15 interrupts
+-r--r--r--    1 root     root            12 Aug  1 09:15 name
+-r--r--r--    1 root     root            16 Aug  1 09:15 reg
+
+/sys/firmware/devicetree/base/virtio_mmio@a003c00:
+-r--r--r--    1 root     root            12 Aug  1 09:15 compatible
+-r--r--r--    1 root     root             0 Aug  1 09:15 dma-coherent
+-r--r--r--    1 root     root            12 Aug  1 09:15 interrupts
+-r--r--r--    1 root     root            12 Aug  1 09:15 name
+-r--r--r--    1 root     root            16 Aug  1 09:15 reg
+
+/sys/firmware/devicetree/base/virtio_mmio@a003e00:
+-r--r--r--    1 root     root            12 Aug  1 09:15 compatible
+-r--r--r--    1 root     root             0 Aug  1 09:15 dma-coherent
+-r--r--r--    1 root     root            12 Aug  1 09:15 interrupts
+-r--r--r--    1 root     root            12 Aug  1 09:15 name
+-r--r--r--    1 root     root            16 Aug  1 09:15 reg
+
+/sys/firmware/dmi:
+drwxr-xr-x   11 root     root             0 Aug  1 09:15 entries
+drwxr-xr-x    2 root     root             0 Aug  1 09:15 tables
+
+/sys/firmware/dmi/entries:
+drwxr-xr-x    2 root     root             0 Aug  1 09:15 0-0
+drwxr-xr-x    2 root     root             0 Aug  1 09:15 1-0
+drwxr-xr-x    2 root     root             0 Aug  1 09:15 127-0
+drwxr-xr-x    2 root     root             0 Aug  1 09:15 16-0
+drwxr-xr-x    2 root     root             0 Aug  1 09:15 17-0
+drwxr-xr-x    2 root     root             0 Aug  1 09:15 19-0
+drwxr-xr-x    2 root     root             0 Aug  1 09:15 3-0
+drwxr-xr-x    2 root     root             0 Aug  1 09:15 32-0
+drwxr-xr-x    2 root     root             0 Aug  1 09:15 4-0
+
+/sys/firmware/dmi/entries/0-0:
+-r--------    1 root     root          4096 Aug  1 09:15 handle
+-r--------    1 root     root          4096 Aug  1 09:15 instance
+-r--------    1 root     root          4096 Aug  1 09:15 length
+-r--------    1 root     root          4096 Aug  1 09:15 position
+-r--------    1 root     root             0 Aug  1 09:15 raw
+-r--------    1 root     root          4096 Aug  1 09:15 type
+
+/sys/firmware/dmi/entries/1-0:
+-r--------    1 root     root          4096 Aug  1 09:15 handle
+-r--------    1 root     root          4096 Aug  1 09:15 instance
+-r--------    1 root     root          4096 Aug  1 09:15 length
+-r--------    1 root     root          4096 Aug  1 09:15 position
+-r--------    1 root     root             0 Aug  1 09:15 raw
+-r--------    1 root     root          4096 Aug  1 09:15 type
+
+/sys/firmware/dmi/entries/127-0:
+-r--------    1 root     root          4096 Aug  1 09:15 handle
+-r--------    1 root     root          4096 Aug  1 09:15 instance
+-r--------    1 root     root          4096 Aug  1 09:15 length
+-r--------    1 root     root          4096 Aug  1 09:15 position
+-r--------    1 root     root             0 Aug  1 09:15 raw
+-r--------    1 root     root          4096 Aug  1 09:15 type
+
+/sys/firmware/dmi/entries/16-0:
+-r--------    1 root     root          4096 Aug  1 09:15 handle
+-r--------    1 root     root          4096 Aug  1 09:15 instance
+-r--------    1 root     root          4096 Aug  1 09:15 length
+-r--------    1 root     root          4096 Aug  1 09:15 position
+-r--------    1 root     root             0 Aug  1 09:15 raw
+-r--------    1 root     root          4096 Aug  1 09:15 type
+
+/sys/firmware/dmi/entries/17-0:
+-r--------    1 root     root          4096 Aug  1 09:15 handle
+-r--------    1 root     root          4096 Aug  1 09:15 instance
+-r--------    1 root     root          4096 Aug  1 09:15 length
+-r--------    1 root     root          4096 Aug  1 09:15 position
+-r--------    1 root     root             0 Aug  1 09:15 raw
+-r--------    1 root     root          4096 Aug  1 09:15 type
+
+/sys/firmware/dmi/entries/19-0:
+-r--------    1 root     root          4096 Aug  1 09:15 handle
+-r--------    1 root     root          4096 Aug  1 09:15 instance
+-r--------    1 root     root          4096 Aug  1 09:15 length
+-r--------    1 root     root          4096 Aug  1 09:15 position
+-r--------    1 root     root             0 Aug  1 09:15 raw
+-r--------    1 root     root          4096 Aug  1 09:15 type
+
+/sys/firmware/dmi/entries/3-0:
+-r--------    1 root     root          4096 Aug  1 09:15 handle
+-r--------    1 root     root          4096 Aug  1 09:15 instance
+-r--------    1 root     root          4096 Aug  1 09:15 length
+-r--------    1 root     root          4096 Aug  1 09:15 position
+-r--------    1 root     root             0 Aug  1 09:15 raw
+-r--------    1 root     root          4096 Aug  1 09:15 type
+
+/sys/firmware/dmi/entries/32-0:
+-r--------    1 root     root          4096 Aug  1 09:15 handle
+-r--------    1 root     root          4096 Aug  1 09:15 instance
+-r--------    1 root     root          4096 Aug  1 09:15 length
+-r--------    1 root     root          4096 Aug  1 09:15 position
+-r--------    1 root     root             0 Aug  1 09:15 raw
+-r--------    1 root     root          4096 Aug  1 09:15 type
+
+/sys/firmware/dmi/entries/4-0:
+-r--------    1 root     root          4096 Aug  1 09:15 handle
+-r--------    1 root     root          4096 Aug  1 09:15 instance
+-r--------    1 root     root          4096 Aug  1 09:15 length
+-r--------    1 root     root          4096 Aug  1 09:15 position
+-r--------    1 root     root             0 Aug  1 09:15 raw
+-r--------    1 root     root          4096 Aug  1 09:15 type
+
+/sys/firmware/dmi/tables:
+-r--------    1 root     root           350 Aug  1 09:15 DMI
+-r--------    1 root     root            24 Aug  1 09:15 smbios_entry_point
+
+/sys/firmware/efi:
+drwxr-xr-x    2 root     root             0 Aug  1 09:14 efivars
+-r--r--r--    1 root     root          4096 Aug  1 09:15 fw_platform_size
+-r--------    1 root     root          4096 Aug  1 09:15 systab
+
+/sys/firmware/efi/efivars:
+-rw-r--r--    1 root     root            66 Aug  1 09:14 Boot0000-8be4df61-93ca-11d2-aa0d-00e098032b8c
+-rw-r--r--    1 root     root            82 Aug  1 09:14 Boot0001-8be4df61-93ca-11d2-aa0d-00e098032b8c
+-rw-r--r--    1 root     root           172 Aug  1 09:14 Boot0002-8be4df61-93ca-11d2-aa0d-00e098032b8c
+-rw-r--r--    1 root     root            92 Aug  1 09:14 Boot0003-8be4df61-93ca-11d2-aa0d-00e098032b8c
+-rw-r--r--    1 root     root            86 Aug  1 09:14 Boot0004-8be4df61-93ca-11d2-aa0d-00e098032b8c
+-rw-r--r--    1 root     root             6 Aug  1 09:14 BootCurrent-8be4df61-93ca-11d2-aa0d-00e098032b8c
+-rw-r--r--    1 root     root             8 Aug  1 09:14 BootOptionSupport-8be4df61-93ca-11d2-aa0d-00e098032b8c
+-rw-r--r--    1 root     root            14 Aug  1 09:14 BootOrder-8be4df61-93ca-11d2-aa0d-00e098032b8c
+-rw-r--r--    1 root     root            82 Aug  1 09:14 ConIn-8be4df61-93ca-11d2-aa0d-00e098032b8c
+-rw-r--r--    1 root     root           571 Aug  1 09:14 ConInDev-8be4df61-93ca-11d2-aa0d-00e098032b8c
+-rw-r--r--    1 root     root            67 Aug  1 09:14 ConOut-8be4df61-93ca-11d2-aa0d-00e098032b8c
+-rw-r--r--    1 root     root           571 Aug  1 09:14 ConOutDev-8be4df61-93ca-11d2-aa0d-00e098032b8c
+-rw-r--r--    1 root     root            67 Aug  1 09:14 ErrOut-8be4df61-93ca-11d2-aa0d-00e098032b8c
+-rw-r--r--    1 root     root           571 Aug  1 09:14 ErrOutDev-8be4df61-93ca-11d2-aa0d-00e098032b8c
+-rw-r--r--    1 root     root            12 Aug  1 09:14 ExitBootServicesTestVariable-f6fab04f-acaf-4af3-b9fa-dcf97fb4426f
+-rw-r--r--    1 root     root           827 Aug  1 09:14 KEK-8be4df61-93ca-11d2-aa0d-00e098032b8c
+-rw-r--r--    1 root     root            18 Aug  1 09:14 Key0000-8be4df61-93ca-11d2-aa0d-00e098032b8c
+-rw-r--r--    1 root     root            18 Aug  1 09:14 Key0001-8be4df61-93ca-11d2-aa0d-00e098032b8c
+-rw-r--r--    1 root     root             8 Aug  1 09:14 Lang-8be4df61-93ca-11d2-aa0d-00e098032b8c
+-rw-r--r--    1 root     root            17 Aug  1 09:14 LangCodes-8be4df61-93ca-11d2-aa0d-00e098032b8c
+-rw-r--r--    1 root     root             8 Aug  1 09:14 MTC-eb704011-1402-11d3-8e77-00a0c969723b
+-rw-r--r--    1 root     root            12 Aug  1 09:14 OsIndicationsSupported-8be4df61-93ca-11d2-aa0d-00e098032b8c
+-rw-r--r--    1 root     root           825 Aug  1 09:14 PK-8be4df61-93ca-11d2-aa0d-00e098032b8c
+-rw-r--r--    1 root     root             7 Aug  1 09:14 PlatformLang-8be4df61-93ca-11d2-aa0d-00e098032b8c
+-rw-r--r--    1 root     root            22 Aug  1 09:14 PlatformLangCodes-8be4df61-93ca-11d2-aa0d-00e098032b8c
+-rw-r--r--    1 root     root           114 Aug  1 09:14 PlatformRecovery0000-8be4df61-93ca-11d2-aa0d-00e098032b8c
+-rw-r--r--    1 root     root             8 Aug  1 09:14 RtcTimeSettings-b336f62d-4135-4a55-ae4e-4971bbf0885d
+-rw-r--r--    1 root     root             5 Aug  1 09:14 SecureBoot-8be4df61-93ca-11d2-aa0d-00e098032b8c
+-rw-r--r--    1 root     root             5 Aug  1 09:14 SetupMode-8be4df61-93ca-11d2-aa0d-00e098032b8c
+-rw-r--r--    1 root     root            68 Aug  1 09:14 SignatureSupport-8be4df61-93ca-11d2-aa0d-00e098032b8c
+-rw-r--r--    1 root     root             6 Aug  1 09:14 Timeout-8be4df61-93ca-11d2-aa0d-00e098032b8c
+-rw-r--r--    1 root     root             5 Aug  1 09:14 VarErrorFlag-04b37fe8-f6ae-480b-bdd5-37d98c5e89aa
+-rw-r--r--    1 root     root             5 Aug  1 09:14 VendorKeys-8be4df61-93ca-11d2-aa0d-00e098032b8c
+-rw-r--r--    1 root     root             8 Aug  1 09:14 certdb-d9bee56e-75dc-49d9-b4d7-b534210f637a
+-rw-r--r--    1 root     root             8 Aug  1 09:14 certdbv-d9bee56e-75dc-49d9-b4d7-b534210f637a
+-rw-r--r--    1 root     root           825 Aug  1 09:14 db-d719b2cb-3d3a-4596-a3bc-dad00e67656f
+-rw-r--r--    1 root     root           825 Aug  1 09:14 dbx-d719b2cb-3d3a-4596-a3bc-dad00e67656f

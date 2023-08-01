@@ -1,0 +1,22 @@
+           CPU0       CPU1       
+ 11:       8312       8541 GIC-0  27 Level     arch_timer
+ 13:          1          0 GIC-0  33 Level     uart-pl011
+ 14:          0          0 GIC-0  23 Level     arm-pmu
+ 19:          0          0       MSI 32768 Edge      virtio1-config
+ 20:        741          0       MSI 32769 Edge      virtio1-req.0
+ 21:          0        373       MSI 32770 Edge      virtio1-req.1
+ 22:          0          0       MSI 49152 Edge      virtio2-config
+ 23:         48          0       MSI 49153 Edge      virtio2-req.0
+ 24:          0          0       MSI 49154 Edge      virtio2-req.1
+ 25:          0          0       MSI 16384 Edge      virtio0-config
+ 26:          0          0       MSI 16385 Edge      virtio0-input.0
+ 27:          0          0       MSI 16386 Edge      virtio0-output.0
+ 28:          0          0 9030000.pl061   3 Edge      GPIO Key Poweroff
+IPI0:       636        540       Rescheduling interrupts
+IPI1:       582        518       Function call interrupts
+IPI2:         0          0       CPU stop interrupts
+IPI3:         0          0       CPU stop (for crash dump) interrupts
+IPI4:         0          0       Timer broadcast interrupts
+IPI5:         0          0       IRQ work interrupts
+IPI6:         0          0       CPU wake-up interrupts
+Err:          0
