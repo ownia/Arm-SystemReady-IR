@@ -1,5 +1,5 @@
 DEBUG git_commit: CompletedProcess(args="git -C '/home/weiouy01/code/systemready-scripts' describe --always --abbrev=12 --dirty", returncode=0, stdout=b'v2023.04-25-g14241ce5aeae-dirty\n', stderr=b'')
-DEBUG init_meta: meta-data: {'command-line': 'check-sr-results.py --debug --dir ../Arm-SystemReady-IoT/project/qemu_acs_ir_2.0/reports/', 'date': 'Thu Aug  3 03:02:09 2023 UTC', 'python-version': '3.8.10 (default, May 26 2023, 14:05:08)  [GCC 9.4.0]', 'git-commit': 'v2023.04-25-g14241ce5aeae-dirty'}
+DEBUG init_meta: meta-data: {'command-line': 'check-sr-results.py --dir ../Arm-SystemReady-IoT/project/qemu_acs_ir_2.0/reports/ --debug', 'date': 'Fri Aug  4 03:15:57 2023 UTC', 'python-version': '3.8.10 (default, May 26 2023, 14:05:08)  [GCC 9.4.0]', 'git-commit': 'v2023.04-25-g14241ce5aeae-dirty'}
 DEBUG check_prerequisites: Checking prerequisites
 DEBUG run: Running ('tar --version',)
 DEBUG run: CompletedProcess(args='tar --version', returncode=0, stdout=b'tar (GNU tar) 1.30\nCopyright (C) 2017 Free Software Foundation, Inc.\nLicense GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.\nThis is free software: you are free to change and redistribute it.\nThere is NO WARRANTY, to the extent permitted by law.\n\nWritten by John Gilmore and Jay Fenlason.\n', stderr=b'')
@@ -581,25 +581,22 @@ DEBUG logreader_detect_file_encoding: Encoding None
 DEBUG check_file_contains: `Linux generic-arm64 6.0.0-yocto-standard #1 SMP PREEMPT Sun Oct 2 21:09:07 UTC 2022 aarch64 GNU/Linux' found at line 1: `Linux generic-arm64 6.0.0-yocto-standard #1 SMP PREEMPT Sun Oct 2 21:09:07 UTC 2022 aarch64 GNU/Linux'
 DEBUG check_dir: Check `../Arm-SystemReady-IoT/project/qemu_acs_ir_2.0/reports//acs_results/linux_tools/'
 DEBUG check_dir: `../Arm-SystemReady-IoT/project/qemu_acs_ir_2.0/reports//acs_results/linux_tools/' exists
-DEBUG check_dir: `../Arm-SystemReady-IoT/project/qemu_acs_ir_2.0/reports//acs_results/linux_tools/' has 2 entrie(s)
-DEBUG check_dir: `../Arm-SystemReady-IoT/project/qemu_acs_ir_2.0/reports//acs_results/linux_tools/' has enough entrie(s): 2 >= 1
-DEBUG check_dir: `../Arm-SystemReady-IoT/project/qemu_acs_ir_2.0/reports//acs_results/linux_tools/' does not have too many entrie(s): 2 <= 2
+DEBUG check_dir: `../Arm-SystemReady-IoT/project/qemu_acs_ir_2.0/reports//acs_results/linux_tools/' has 1 entrie(s)
+DEBUG check_dir: `../Arm-SystemReady-IoT/project/qemu_acs_ir_2.0/reports//acs_results/linux_tools/' has enough entrie(s): 1 >= 1
+DEBUG check_dir: `../Arm-SystemReady-IoT/project/qemu_acs_ir_2.0/reports//acs_results/linux_tools/' does not have too many entrie(s): 1 <= 2
 DEBUG check_tree: Check `../Arm-SystemReady-IoT/project/qemu_acs_ir_2.0/reports//acs_results/linux_tools/'
-DEBUG check_tree: ../Arm-SystemReady-IoT/project/qemu_acs_ir_2.0/reports//acs_results/linux_tools/dt-validate.log* -> ['../Arm-SystemReady-IoT/project/qemu_acs_ir_2.0/reports//acs_results/linux_tools/dt-validate.log.old', '../Arm-SystemReady-IoT/project/qemu_acs_ir_2.0/reports//acs_results/linux_tools/dt-validate.log']
-DEBUG check_file: Check `../Arm-SystemReady-IoT/project/qemu_acs_ir_2.0/reports//acs_results/linux_tools/dt-validate.log.old'
-DEBUG check_file: `../Arm-SystemReady-IoT/project/qemu_acs_ir_2.0/reports//acs_results/linux_tools/dt-validate.log.old' exists
-DEBUG check_file: `../Arm-SystemReady-IoT/project/qemu_acs_ir_2.0/reports//acs_results/linux_tools/dt-validate.log.old' not empty
-DEBUG check_file_contains: Check that file `../Arm-SystemReady-IoT/project/qemu_acs_ir_2.0/reports//acs_results/linux_tools/dt-validate.log.old' contains ['DeviceTree bindings of Linux kernel version: ', 'dtschema version: 2022.9']
+DEBUG check_tree: ../Arm-SystemReady-IoT/project/qemu_acs_ir_2.0/reports//acs_results/linux_tools/dt-validate.log* -> ['../Arm-SystemReady-IoT/project/qemu_acs_ir_2.0/reports//acs_results/linux_tools/dt-validate.log']
+DEBUG check_file: Check `../Arm-SystemReady-IoT/project/qemu_acs_ir_2.0/reports//acs_results/linux_tools/dt-validate.log'
+DEBUG check_file: `../Arm-SystemReady-IoT/project/qemu_acs_ir_2.0/reports//acs_results/linux_tools/dt-validate.log' exists
+DEBUG check_file: `../Arm-SystemReady-IoT/project/qemu_acs_ir_2.0/reports//acs_results/linux_tools/dt-validate.log' not empty
+DEBUG check_file_contains: Check that file `../Arm-SystemReady-IoT/project/qemu_acs_ir_2.0/reports//acs_results/linux_tools/dt-validate.log' contains ['DeviceTree bindings of Linux kernel version: ', 'dtschema version: 2022.9']
 DEBUG check_file_contains: Looking for `DeviceTree bindings of Linux kernel version: '
-DEBUG __init__: LogReader `../Arm-SystemReady-IoT/project/qemu_acs_ir_2.0/reports//acs_results/linux_tools/dt-validate.log.old'
-DEBUG logreader_detect_file_encoding: Detect encoding of `../Arm-SystemReady-IoT/project/qemu_acs_ir_2.0/reports//acs_results/linux_tools/dt-validate.log.old'
+DEBUG __init__: LogReader `../Arm-SystemReady-IoT/project/qemu_acs_ir_2.0/reports//acs_results/linux_tools/dt-validate.log'
+DEBUG logreader_detect_file_encoding: Detect encoding of `../Arm-SystemReady-IoT/project/qemu_acs_ir_2.0/reports//acs_results/linux_tools/dt-validate.log'
 DEBUG logreader_detect_file_encoding: Encoding None
 DEBUG check_file_contains: `DeviceTree bindings of Linux kernel version: ' found at line 1: `DeviceTree bindings of Linux kernel version: 6.1.2'
 DEBUG check_file_contains: Looking for `dtschema version: 2022.9'
 DEBUG check_file_contains: `dtschema version: 2022.9' found at line 2: `dtschema version: 2022.9'
-DEBUG check_file: Check `../Arm-SystemReady-IoT/project/qemu_acs_ir_2.0/reports//acs_results/linux_tools/dt-validate.log'
-DEBUG check_file: `../Arm-SystemReady-IoT/project/qemu_acs_ir_2.0/reports//acs_results/linux_tools/dt-validate.log' exists
-ERROR check_file: `../Arm-SystemReady-IoT/project/qemu_acs_ir_2.0/reports//acs_results/linux_tools/dt-validate.log' empty
 DEBUG check_dir: Check `../Arm-SystemReady-IoT/project/qemu_acs_ir_2.0/reports//acs_results/sct_results/'
 DEBUG check_dir: `../Arm-SystemReady-IoT/project/qemu_acs_ir_2.0/reports//acs_results/sct_results/' exists
 DEBUG check_dir: `../Arm-SystemReady-IoT/project/qemu_acs_ir_2.0/reports//acs_results/sct_results/' has 3 entrie(s)
@@ -1343,7 +1340,7 @@ DEBUG deferred_check_uefi_logs_esp: `../Arm-SystemReady-IoT/project/qemu_acs_ir_
 DEBUG deferred_check_uefi_logs_esp: `../Arm-SystemReady-IoT/project/qemu_acs_ir_2.0/reports//sie-console.log' must have an ESP
 ERROR deferred_check_uefi_logs_esp: `../Arm-SystemReady-IoT/project/qemu_acs_ir_2.0/reports//sie-console.log' did not have an ESP
 ERROR deferred_check_uefi_logs_esp: `../Arm-SystemReady-IoT/project/qemu_acs_ir_2.0/reports//sie-console.log' did not have an ESP
-INFO <module>: 439 checks, 415 pass, 2 warnings, 22 errors
+INFO <module>: 437 checks, 414 pass, 2 warnings, 21 errors
 DEBUG print_not_checked: Not checked:
 DEBUG print_not_checked: ../Arm-SystemReady-IoT/project/qemu_acs_ir_2.0/reports//acs_results/SIE/tpm2/eventlog.log
 DEBUG print_not_checked: ../Arm-SystemReady-IoT/project/qemu_acs_ir_2.0/reports//acs_results/SIE/tpm2/eventlog_pcr_diff.log
