@@ -1,2 +1,12 @@
 tpm/
 console.log
+test.its
+tests.itb
+CRT*
+signed_capsule.bin
+unauth.bin
+tampered.bin
+signature.dtbo
+signature.dts
+qemu.dtb
+

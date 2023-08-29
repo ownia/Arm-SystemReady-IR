@@ -51,6 +51,12 @@ PWD=`pwd`
 TPMSOCK=/tmp/swtpm-sock$$
 MMCBLK0=/home/weiouy01/code/mmcblk0.bin
 
+DTB=''
+if [ -e qemu.dtb ];
+then
+echo "qemu.dtb exist"
+DBT=qemu.dtb
+fi
 
 if [ "$1" = "sie" ];
 then
@@ -115,6 +121,7 @@ echo "Running QEMU"
 $QEMU \
 	-bios $BIOS \
 	-cpu cortex-a57 -smp 2 -m 2048 -M virt,secure=on,acpi=off \
+	$DTB \
 	-d unimp,guest_errors \
 	-device virtio-blk-device,drive=hd1 \
 	-device virtio-blk-device,drive=hd0 \
