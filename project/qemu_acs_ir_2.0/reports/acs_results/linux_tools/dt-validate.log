@@ -3,18 +3,18 @@ dtschema version: 2022.9
 
 /home/root/fdt/fdt:0:0: /platform-bus@c000000/tpm_tis@0: failed to match any schema with compatible: ['tcg,tpm-tis-mmio']
 /home/root/fdt/fdt: gpio-keys: 'poweroff' does not match any of the regexes: '^(button|event|key|switch|(button|event|key|switch)-[a-z0-9-]+|[a-z0-9-]+-(button|event|key|switch))$', 'pinctrl-[0-9]+'
-	From schema: /home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/input/gpio-keys.yaml
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/input/gpio-keys.yaml
 /home/root/fdt/fdt: pl061@9030000: $nodename:0: 'pl061@9030000' does not match '^gpio@[0-9a-f]+$'
-	From schema: /home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/gpio/pl061-gpio.yaml
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/gpio/pl061-gpio.yaml
 /home/root/fdt/fdt: pl061@9030000: 'interrupt-controller' is a required property
-	From schema: /home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/gpio/pl061-gpio.yaml
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/gpio/pl061-gpio.yaml
 /home/root/fdt/fdt: pl061@9030000: '#interrupt-cells' is a required property
-	From schema: /home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/gpio/pl061-gpio.yaml
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/gpio/pl061-gpio.yaml
 /home/root/fdt/fdt: pl031@9010000: $nodename:0: 'pl031@9010000' does not match '^rtc(@.*|-[0-9a-f])*$'
-	From schema: /home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/rtc/arm,pl031.yaml
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/rtc/arm,pl031.yaml
 /home/root/fdt/fdt: pl011@9000000: $nodename:0: 'pl011@9000000' does not match '^serial(@.*)?$'
-	From schema: /home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/serial/pl011.yaml
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/serial/pl011.yaml
 /home/root/fdt/fdt: intc@8000000: $nodename:0: 'intc@8000000' does not match '^interrupt-controller(@[0-9a-f,]+)*$'
-	From schema: /home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/interrupt-controller/arm,gic.yaml
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/interrupt-controller/arm,gic.yaml
 /home/root/fdt/fdt: chosen: 'linux,uefi-mmap-desc-size', 'linux,uefi-mmap-desc-ver', 'linux,uefi-mmap-size', 'linux,uefi-mmap-start', 'linux,uefi-system-table' do not match any of the regexes: '^framebuffer', 'pinctrl-[0-9]+'
-	From schema: /home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/recipe-sysroot-native/usr/lib/python3.10/site-packages/dtschema/schemas/chosen.yaml
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/recipe-sysroot-native/usr/lib/python3.10/site-packages/dtschema/schemas/chosen.yaml

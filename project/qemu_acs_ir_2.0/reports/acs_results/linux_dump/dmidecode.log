@@ -7,7 +7,7 @@ Handle 0x0100, DMI type 1, 27 bytes
 System Information
 	Manufacturer: QEMU
 	Product Name: QEMU Virtual Machine
-	Version: virt-8.1
+	Version: virt-8.0
 	Serial Number: Not Specified
 	UUID: Not Settable
 	Wake-up Type: Power Switch
@@ -19,7 +19,7 @@ Chassis Information
 	Manufacturer: QEMU
 	Type: Other
 	Lock: Not Present
-	Version: virt-8.1
+	Version: virt-8.0
 	Serial Number: Not Specified
 	Asset Tag: Not Specified
 	Boot-up State: Safe
@@ -39,7 +39,7 @@ Processor Information
 	Family: Other
 	Manufacturer: QEMU
 	ID: 00 00 00 00 00 00 00 00
-	Version: virt-8.1
+	Version: virt-8.0
 	Voltage: Unknown
 	External Clock: Unknown
 	Max Speed: 2000 MHz
@@ -54,7 +54,7 @@ Processor Information
 	Part Number: Not Specified
 	Core Count: 2
 	Core Enabled: 2
-	Thread Count: 2
+	Thread Count: 1
 	Characteristics: None
 
 Handle 0x1000, DMI type 16, 23 bytes

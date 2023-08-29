@@ -1,33 +1,28 @@
 + DTC
 + DT-VALIDATE
-/home/weiouy01/code/test/acs_results/uefi/BsaDevTree.dtb: pl061@90b0000: $nodename:0: 'pl061@90b0000' does not match '^gpio@[0-9a-f]+$'
-	from schema $id: http://devicetree.org/schemas/gpio/pl061-gpio.yaml#
-/home/weiouy01/code/test/acs_results/uefi/BsaDevTree.dtb: gpio-keys: 'poweroff' does not match any of the regexes: '^(button|event|key|switch|(button|event|key|switch)-[a-z0-9-]+|[a-z0-9-]+-(button|event|key|switch))$', 'pinctrl-[0-9]+'
+../Arm-SystemReady-IoT/project/qemu_acs_ir_2.0/reports//acs_results/uefi/BsaDevTree.dtb: /platform-bus@c000000/tpm_tis@0: failed to match any schema with compatible: ['tcg,tpm-tis-mmio']
+/home/weiouy01/code/Arm-SystemReady-IoT/project/qemu_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: gpio-keys: 'poweroff' does not match any of the regexes: '^(button|event|key|switch|(button|event|key|switch)-[a-z0-9-]+|[a-z0-9-]+-(button|event|key|switch))$', 'pinctrl-[0-9]+'
 	from schema $id: http://devicetree.org/schemas/input/gpio-keys.yaml#
-/home/weiouy01/code/test/acs_results/uefi/BsaDevTree.dtb: pl061@9030000: $nodename:0: 'pl061@9030000' does not match '^gpio@[0-9a-f]+$'
+/home/weiouy01/code/Arm-SystemReady-IoT/project/qemu_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: pl061@9030000: $nodename:0: 'pl061@9030000' does not match '^gpio@[0-9a-f]+$'
 	from schema $id: http://devicetree.org/schemas/gpio/pl061-gpio.yaml#
-/home/weiouy01/code/test/acs_results/uefi/BsaDevTree.dtb: pl061@9030000: 'interrupt-controller' is a required property
+/home/weiouy01/code/Arm-SystemReady-IoT/project/qemu_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: pl061@9030000: 'interrupt-controller' is a required property
 	from schema $id: http://devicetree.org/schemas/gpio/pl061-gpio.yaml#
-/home/weiouy01/code/test/acs_results/uefi/BsaDevTree.dtb: pl061@9030000: '#interrupt-cells' is a required property
+/home/weiouy01/code/Arm-SystemReady-IoT/project/qemu_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: pl061@9030000: '#interrupt-cells' is a required property
 	from schema $id: http://devicetree.org/schemas/gpio/pl061-gpio.yaml#
-/home/weiouy01/code/test/acs_results/uefi/BsaDevTree.dtb: pl031@9010000: $nodename:0: 'pl031@9010000' does not match '^rtc(@.*|-[0-9a-f])*$'
+/home/weiouy01/code/Arm-SystemReady-IoT/project/qemu_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: pl031@9010000: $nodename:0: 'pl031@9010000' does not match '^rtc(@.*|-[0-9a-f])*$'
 	from schema $id: http://devicetree.org/schemas/rtc/arm,pl031.yaml#
-/home/weiouy01/code/test/acs_results/uefi/BsaDevTree.dtb: pl011@9040000: $nodename:0: 'pl011@9040000' does not match '^serial(@.*)?$'
+/home/weiouy01/code/Arm-SystemReady-IoT/project/qemu_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: pl011@9000000: $nodename:0: 'pl011@9000000' does not match '^serial(@.*)?$'
 	from schema $id: http://devicetree.org/schemas/serial/pl011.yaml#
-/home/weiouy01/code/test/acs_results/uefi/BsaDevTree.dtb: pl011@9000000: $nodename:0: 'pl011@9000000' does not match '^serial(@.*)?$'
-	from schema $id: http://devicetree.org/schemas/serial/pl011.yaml#
-/home/weiouy01/code/test/acs_results/uefi/BsaDevTree.dtb: intc@8000000: $nodename:0: 'intc@8000000' does not match '^interrupt-controller(@[0-9a-f,]+)*$'
+/home/weiouy01/code/Arm-SystemReady-IoT/project/qemu_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: intc@8000000: $nodename:0: 'intc@8000000' does not match '^interrupt-controller(@[0-9a-f,]+)*$'
 	from schema $id: http://devicetree.org/schemas/interrupt-controller/arm,gic.yaml#
-/home/weiouy01/code/test/acs_results/uefi/BsaDevTree.dtb: secflash@0: $nodename:0: 'secflash@0' does not match '^(flash|.*sram)(@.*)?$'
-	from schema $id: http://devicetree.org/schemas/mtd/mtd-physmap.yaml#
 + END
 + meta-data
 + ---------
-+ command-line: check-sr-results.py --dir ../test
-+ date: Tue Aug  1 09:33:55 2023 UTC
++ command-line: check-sr-results.py --dir ../Arm-SystemReady-IoT/project/qemu_acs_ir_2.0/reports/
++ date: Tue Aug 29 03:19:38 2023 UTC
 + dt-validate-version: 2023.6.1
 + dtc-version: DTC 1.5.0
-+ git-commit: v2023.04-25-g14241ce5aeae-dirty
++ git-commit: v2023.04-30-g62f6341201be
 + linux-version: linux-6.3.7
 + python-version: 3.8.10 (default, May 26 2023, 14:05:08)  [GCC 9.4.0]
 + tar-version: tar (GNU tar) 1.30

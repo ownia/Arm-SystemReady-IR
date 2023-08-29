@@ -1,28 +1,28 @@
 NOTICE:  Booting Trusted Firmware
-NOTICE:  BL1: v2.7(release):2023.05.1
-NOTICE:  BL1: Built : 12:27:24, Aug  2 2023
+NOTICE:  BL1: v2.7(release):2023.08-rc2-33-ge0166ecba0-dirty
+NOTICE:  BL1: Built : 17:42:20, Aug 28 2023
 NOTICE:  BL1: Booting BL2
-NOTICE:  BL2: v2.7(release):2023.05.1
-NOTICE:  BL2: Built : 12:27:24, Aug  2 2023
+NOTICE:  BL2: v2.7(release):2023.08-rc2-33-ge0166ecba0-dirty
+NOTICE:  BL2: Built : 17:42:20, Aug 28 2023
 NOTICE:  BL1: Booting BL31
-NOTICE:  BL31: v2.7(release):2023.05.1
-NOTICE:  BL31: Built : 12:27:24, Aug  2 2023
+NOTICE:  BL31: v2.7(release):2023.08-rc2-33-ge0166ecba0-dirty
+NOTICE:  BL31: Built : 17:42:20, Aug 28 2023
 
 
-U-Boot 2023.01 (Aug 02 2023 - 12:26:40 +0800)
+U-Boot 2023.01 (Aug 28 2023 - 17:41:34 +0800)
 
 DRAM:  2 GiB
 Core:  49 devices, 14 uclasses, devicetree: board
 Flash: 32 MiB
+MMC:   
 Loading Environment from Flash... *** Warning - bad CRC, using default environment
 
 In:    pl011@9000000
 Out:   pl011@9000000
 Err:   pl011@9000000
 Net:   eth0: virtio-net#29
-Hit any key to stop autoboot:  2  1  0 
+Hit any key to stop autoboot:  2  0 
 => 
-Unknown command 'u-boot=>' - try 'help'
 => help
 ?         - alias for 'help'
 base      - print or set address offset
@@ -88,6 +88,8 @@ lzmadec   - lzma uncompress a memory region
 md        - memory display
 mii       - MII utility commands
 mm        - memory modify (auto-incrementing address)
+mmc       - MMC sub system
+mmcinfo   - display MMC info
 mtd       - MTD utils
 mtdparts  - define flash/nand partitions
 mw        - memory write (fill)
@@ -132,11 +134,11 @@ usbboot   - boot from USB device
 version   - print monitor, compiler and linker version
 virtio    - virtio block devices sub-system
 => version
-U-Boot 2023.01 (Aug 02 2023 - 12:26:40 +0800)
+U-Boot 2023.01 (Aug 28 2023 - 17:41:34 +0800)
 
-aarch64-buildroot-linux-gnu-gcc.br_real (Buildroot 2023.05.1) 11.4.0
-GNU ld (GNU Binutils) 2.38
-=> printenv -v   
+aarch64-buildroot-linux-gnu-gcc.br_real (Buildroot 2023.08-rc2-33-ge0166ecba0-dirty) 12.3.0
+GNU ld (GNU Binutils) 2.40
+=> printenv
 arch=arm
 baudrate=115200
 board=qemu-arm
@@ -166,11 +168,12 @@ efi_dtb_prefixes=/ /dtb/ /dtb/current/
 ethaddr=52:54:00:12:34:56
 fdt_addr=0x40000000
 fdt_high=0xffffffff
-fdtcontroladdr=beeaaa70
+fdtcontroladdr=bee97a70
 initrd_high=0xffffffff
 kernel_addr_r=0x40400000
 load_efi_dtb=load ${devtype} ${devnum}:${distro_bootpart} ${fdt_addr_r} ${prefix}${efi_fdtfile}
 loadaddr=0x40200000
+mmc_boot=if mmc dev ${devnum}; then devtype=mmc; run scan_dev_for_boot_part; fi
 nvme_boot=run boot_pci_enum; run nvme_init; if nvme dev ${devnum}; then devtype=nvme; run scan_dev_for_boot_part; fi
 nvme_init=if ${nvme_need_init}; then setenv nvme_need_init false; nvme scan; fi
 pxefile_addr_r=0x40300000
@@ -191,7 +194,7 @@ vendor=emulation
 virtio_boot=run boot_pci_enum; run virtio_init; if virtio dev ${devnum}; then devtype=virtio; run scan_dev_for_boot_part; fi
 virtio_init=if ${virtio_need_init}; then virtio_need_init=false; virtio scan; fi
 
-Environment size: 4537/262140 bytes
+Environment size: 4617/262140 bytes
 => printenv -e
 7[r[999;999H[6n8** Unable to read file ubootefi.var **
 Failed to load EFI variables
@@ -227,7 +230,7 @@ PlatformLang:
 OsIndicationsSupported:
     8be4df61-93ca-11d2-aa0d-00e098032b8c (EFI_GLOBAL_VARIABLE_GUID)
     BS|RT|RO, DataSize = 0x8
-    00000000: 00 00 00 00 00 00 00 00                          ........
+    00000000: 1c 00 00 00 00 00 00 00                          ........
 SignatureSupport:
     8be4df61-93ca-11d2-aa0d-00e098032b8c (EFI_GLOBAL_VARIABLE_GUID)
     BS|RT|RO, DataSize = 0x20
@@ -240,16 +243,16 @@ DRAM bank   = 0x0000000000000000
 -> size     = 0x0000000080000000
 flashstart  = 0x0000000004000000
 flashsize   = 0x0000000002000000
-flashoffset = 0x00000000000f6338
+flashoffset = 0x0000000000102450
 baudrate    = 115200 bps
-relocaddr   = 0x00000000bfeed000
-reloc off   = 0x00000000bfeed000
+relocaddr   = 0x00000000bfeda000
+reloc off   = 0x00000000bfeda000
 Build       = 64-bit
 current eth = virtio-net#29
 ethaddr     = 52:54:00:12:34:56
 IP addr     = <NULL>
-fdt_blob    = 0x00000000beeaaa70
-new_fdt     = 0x00000000beeaaa70
+fdt_blob    = 0x00000000bee97a70
+new_fdt     = 0x00000000bee97a70
 fdt_size    = 0x0000000000002340
 lmb_dump_all:
  memory.cnt  = 0x1
@@ -257,30 +260,40 @@ lmb_dump_all:
  reserved.cnt  = 0x4
  reserved[0]	[0xe100000-0xeffffff], 0x00f00000 bytes flags: 4
  reserved[1]	[0x42000000-0x421fffff], 0x00200000 bytes flags: 4
- reserved[2]	[0xbde88000-0xbfffffff], 0x02178000 bytes flags: 0
- reserved[3]	[0xbeea65e0-0xbfffffff], 0x01159a20 bytes flags: 0
+ reserved[2]	[0xbde71000-0xbfffffff], 0x0218f000 bytes flags: 0
+ reserved[3]	[0xbee935f0-0xbfffffff], 0x0116ca10 bytes flags: 0
 devicetree  = board
 arch_number = 0x0000000000000000
 TLB addr    = 0x00000000bfff0000
-irq_sp      = 0x00000000beeaaa60
-sp start    = 0x00000000beeaaa60
+irq_sp      = 0x00000000bee97a60
+sp start    = 0x00000000bee97a60
 Early malloc usage: 3a8 / 2000
 => rtc list
 RTC #0 - rtc_emul
 RTC #1 - pl031@9010000
 => sf probe
 Unknown command 'sf' - try 'help'
-=> user reset        b reset
+=> usb reset
 resetting USB...
 No working controllers found
 => usb info
 USB is stopped. Please issue 'usb start' first.
 => mmc rescan
-Unknown command 'mmc' - try 'help'
-=> mmclist     ;lis    list
-Unknown command 'mmc' - try 'help'
+=> mmc list
+pci_mmc: 0 (SD)
 => mmc info
-Unknown command 'mmc' - try 'help'
+Device: pci_mmc
+Manufacturer ID: aa
+OEM: 5859
+Name: QEMU! 
+Bus Speed: 50000000
+Mode: SD High Speed (50MHz)
+Rd Block Len: 512
+SD version 2.0
+High Capacity: No
+Capacity: 128 MiB
+Bus Width: 4-bit
+Erase Group Size: 512 Bytes
 => efidebug devices
 efidebug - Configure UEFI environment
 
@@ -301,6 +314,17 @@ efidebug boot next <bootid>
 efidebug boot order [<bootid#1> [<bootid#2> [<bootid#3> [...]]]]
   - set/show UEFI boot order
 
+efidebug capsule update [-v] <capsule address>
+  - process a capsule
+efidebug capsule disk-update
+  - update a capsule from disk
+efidebug capsule show <capsule address>
+  - show capsule information
+efidebug capsule result [<capsule result var>]
+  - show a capsule update result
+efidebug capsule esrt
+  - print the ESRT
+
 efidebug drivers
   - show UEFI drivers
 efidebug dh
@@ -316,13 +340,13 @@ efidebug test bootmgr
 efidebug query [-nv][-bs][-rt][-at]
   - show size of UEFI variables store
 
-=> efidebug devices      rivers
+=> efidebug drivers
 Driver           Name                 Image Path
 ================ ==================== ====================
-00000000beeafa90 <NULL>               <built-in>
-=> efidebug drivers      h
+00000000bee9ca90 <NULL>               <built-in>
+=> efidebug dh
 
-00000000beeaf710
+00000000bee9c710
   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)
   Device Path To Text
   Device Path Utilities
@@ -335,131 +359,116 @@ Driver           Name                 Image Path
   Simple Text Input Ex
   Random Number Generator
 
-00000000bffeb7d8
+00000000bffe48d8
   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/Uart(0,0,D,D)
 
-00000000beeafa90
+00000000bee9ca90
   Driver Binding
 
-00000000beed20f0 (virtio-blk#30)
+00000000beebf300 (pci_mmc.blk)
+  /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(0)/SD(0)
+  Block IO
+
+00000000beebf430 (pci_mmc.blk:1)
+  /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(0)/SD(0)/HD(1,GPT,c056b21d-dbf5-4a6d-86ab-846dfbdbb05b,0x800,0x3f7df)
+  Block IO
+  Simple File System
+
+00000000beecd9e0 (virtio-blk#30)
   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/VenHw(63293792-adf5-9325-b99f-4e0e455c1b1e,00)
   Block IO
 
-00000000beed2260 (virtio-blk#30:1)
-  /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/VenHw(63293792-adf5-9325-b99f-4e0e455c1b1e,00)/HD(1,GPT,39bd33ce-612c-4b6e-a2cb-227c1a0fe561,0x800,0x32000)
+00000000beecdb50 (virtio-blk#30:1)
+  /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/VenHw(63293792-adf5-9325-b99f-4e0e455c1b1e,00)/HD(1,GPT,52efd74f-7879-465e-87f5-5d548120117a,0x800,0x4b000)
   Block IO
   Simple File System
 
-00000000beed2610 (virtio-blk#30:2)
-  /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/VenHw(63293792-adf5-9325-b99f-4e0e455c1b1e,00)/HD(2,GPT,a711e613-3b60-4285-86f5-9dc61ebcd632,0x32800,0xc78f0)
+00000000beedb020 (virtio-blk#30:2)
+  /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/VenHw(63293792-adf5-9325-b99f-4e0e455c1b1e,00)/HD(2,GPT,2556b0bf-bca5-4826-baf1-3164626f2ade,0x4b800,0xd97ec)
   Block IO
   Simple File System
 
-00000000beee0a10 (virtio-blk#30:3)
-  /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/VenHw(63293792-adf5-9325-b99f-4e0e455c1b1e,00)/HD(3,GPT,ad7e1ce3-1748-46c2-bd2d-0203caa33eb1,0xfa800,0x19000)
-  Block IO
-  Simple File System
-
-00000000beeee020 (virtio-blk#31)
+00000000beedc560 (virtio-blk#31)
   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/VenHw(63293792-adf5-9325-b99f-4e0e455c1b1e,01)
   Block IO
 
-00000000beeee190 (virtio-blk#31:1)
-  /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/VenHw(63293792-adf5-9325-b99f-4e0e455c1b1e,01)/HD(1,GPT,ff1546ea-a37f-467e-9150-4f78a2864e0f,0x40,0x40000)
+00000000beedc690 (virtio-blk#31:1)
+  /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/VenHw(63293792-adf5-9325-b99f-4e0e455c1b1e,01)/HD(1,GPT,4b398298-a61b-4101-a879-837293a02a68,0x40,0x40000)
   Block IO
   system
   Simple File System
 
-00000000beeee600 (virtio-blk#31:2)
-  /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/VenHw(63293792-adf5-9325-b99f-4e0e455c1b1e,01)/HD(2,GPT,296bf8fd-22c5-46d3-9fb5-d5c2612f2e76,0x40040,0x64000)
+00000000beedcb00 (virtio-blk#31:2)
+  /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/VenHw(63293792-adf5-9325-b99f-4e0e455c1b1e,01)/HD(2,GPT,73990bb7-b149-4ea7-a906-8a93193b9d1c,0x40040,0x64000)
   Block IO
   Simple File System
 
-00000000beeeebe0 (virtio-blk#32)
+00000000beeea050 (virtio-blk#32)
   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/VenHw(63293792-adf5-9325-b99f-4e0e455c1b1e,02)
   Block IO
   Simple File System
 
-00000000bef0f110
+00000000beefe0d0
+  Firmware Management
+
+00000000beefe270
   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/MAC(525400123456,1)
   Simple Network
   PXE Base Code
-=> efidebug dh  memmap
+=> efidebug memmap
 Type             Start            End              Attributes
 ================ ================ ================ ==========
-CONVENTIONAL     0000000040000000-00000000bde7c000 WB
-BOOT DATA        00000000bde7c000-00000000bde8a000 WB
-RUNTIME DATA     00000000bde8a000-00000000bde8b000 WB|RT
-BOOT DATA        00000000bde8b000-00000000bde8e000 WB
-RUNTIME DATA     00000000bde8e000-00000000bde8f000 WB|RT
-BOOT DATA        00000000bde8f000-00000000bde90000 WB
-RUNTIME DATA     00000000bde90000-00000000bde92000 WB|RT
-BOOT DATA        00000000bde92000-00000000bde93000 WB
-RUNTIME DATA     00000000bde93000-00000000bde97000 WB|RT
-BOOT DATA        00000000bde97000-00000000bdeaa000 WB
-BOOT CODE        00000000bdeaa000-00000000bfee0000 WB
-RUNTIME CODE     00000000bfee0000-00000000bfef0000 WB|RT
-BOOT CODE        00000000bfef0000-00000000c0000000 WB
-=> efidebug memmap      tables
+CONVENTIONAL     0000000040000000-00000000bde63000 WB
+BOOT DATA        00000000bde63000-00000000bde73000 WB
+RUNTIME DATA     00000000bde73000-00000000bde74000 WB|RT
+BOOT DATA        00000000bde74000-00000000bde77000 WB
+RUNTIME DATA     00000000bde77000-00000000bde78000 WB|RT
+BOOT DATA        00000000bde78000-00000000bde7b000 WB
+RUNTIME DATA     00000000bde7b000-00000000bde7d000 WB|RT
+BOOT DATA        00000000bde7d000-00000000bde7e000 WB
+RUNTIME DATA     00000000bde7e000-00000000bde82000 WB|RT
+BOOT DATA        00000000bde82000-00000000bde97000 WB
+BOOT CODE        00000000bde97000-00000000bfed0000 WB
+RUNTIME CODE     00000000bfed0000-00000000bfee0000 WB|RT
+BOOT CODE        00000000bfee0000-00000000c0000000 WB
+=> efidebug tables
 36122546-f7ef-4c8f-bd9b-eb8525b50c0b (EFI Conformance Profiles Table)
+b122a263-3661-4f68-9929-78f8b0d62180 (EFI System Resource Table)
 eb66918a-7eef-402a-842e-931d21c38ae9 (Runtime properties)
 eb9d2d31-2d88-11d3-9a16-0090273fc14d (SMBIOS table)
-=> efidebug tables      query
+=> efidebug query
 Max storage size 16360
 Remaining storage size 15704
 Max variable size 16328
-=> efidebug query     boot dump
-=> [6~    efidebug boot dump         ca   capsule
-Unknown command 'efidebugcapsule' - try 'help'
+=> efidebug boot dump
 => efidebug capsule esrt
-efidebug - Configure UEFI environment
-
-Usage:
-efidebug   - UEFI Shell-like interface to configure UEFI environment
-
-efidebug boot add - set UEFI BootXXXX variable
-  -b|-B <bootid> <label> <interface> <devnum>[:<part>] <file path>
-  -i|-I <interface> <devnum>[:<part>] <initrd file path>
-  (-b, -i for short form device path)
-  -s '<optional data>'
-efidebug boot rm <bootid#1> [<bootid#2> [<bootid#3> [...]]]
-  - delete UEFI BootXXXX variables
-efidebug boot dump
-  - dump all UEFI BootXXXX variables
-efidebug boot next <bootid>
-  - set UEFI BootNext variable
-efidebug boot order [<bootid#1> [<bootid#2> [<bootid#3> [...]]]]
-  - set/show UEFI boot order
-
-efidebug drivers
-  - show UEFI drivers
-efidebug dh
-  - show UEFI handles
-efidebug images
-  - show loaded images
-efidebug memmap
-  - show UEFI memory map
-efidebug tables
-  - show UEFI configuration tables
-efidebug test bootmgr
-  - run simple bootmgr for test
-efidebug query [-nv][-bs][-rt][-at]
-  - show size of UEFI variables store
-
+========================================
+ESRT: fw_resource_count=1
+ESRT: fw_resource_count_max=1
+ESRT: fw_resource_version=1
+[entry 0]==============================
+ESRT: fw_class=058B7D83-50D5-4C47-A195-60D86AD341C4
+ESRT: fw_type=unknown
+ESRT: fw_version=0
+ESRT: lowest_supported_fw_version=0
+ESRT: capsule_flags=0
+ESRT: last_attempt_version=0
+ESRT: last_attempt_status=success
+========================================
 => bootefi hello ${fdtcontroladdr}
-Booting /MemoryMapped(0x0,0xbff7ce50,0x31e0)
+Booting /MemoryMapped(0x0,0xbff72be0,0x31e0)
 Hello, world!
 Running on UEFI 2.10
 Have SMBIOS table
 Have device tree
 Load options: <none>
-Boot device: /MemoryMapped(0x0,0xbff7ce50,0x31e0)
+Boot device: /MemoryMapped(0x0,0xbff72be0,0x31e0)
 File path: <none>
 => bootefi selftest ${fdtcontroladdr}
 [1;37;40m
 Testing EFI API implementation
 [0;37;40m[1;37;40m
-Number of tests to execute: 41
+Number of tests to execute: 42
 [0;37;40m[1;34;40m
 Setting up 'block device'
 [0;37;40m[1;32;40mSetting up 'block device' succeeded
@@ -491,13 +500,14 @@ Executing 'device path'
 [0;37;40mInstalled device path protocols:
 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)
 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/Uart(0,0,D,D)
+/VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(0)/SD(0)
+/VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(0)/SD(0)/HD(1,GPT,c056b21d-dbf5-4a6d-86ab-846dfbdbb05b,0x800,0x3f7df)
 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/VenHw(63293792-adf5-9325-b99f-4e0e455c1b1e,00)
-/VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/VenHw(63293792-adf5-9325-b99f-4e0e455c1b1e,00)/HD(1,GPT,39bd33ce-612c-4b6e-a2cb-227c1a0fe561,0x800,0x32000)
-/VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/VenHw(63293792-adf5-9325-b99f-4e0e455c1b1e,00)/HD(2,GPT,a711e613-3b60-4285-86f5-9dc61ebcd632,0x32800,0xc78f0)
-/VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/VenHw(63293792-adf5-9325-b99f-4e0e455c1b1e,00)/HD(3,GPT,ad7e1ce3-1748-46c2-bd2d-0203caa33eb1,0xfa800,0x19000)
+/VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/VenHw(63293792-adf5-9325-b99f-4e0e455c1b1e,00)/HD(1,GPT,52efd74f-7879-465e-87f5-5d548120117a,0x800,0x4b000)
+/VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/VenHw(63293792-adf5-9325-b99f-4e0e455c1b1e,00)/HD(2,GPT,2556b0bf-bca5-4826-baf1-3164626f2ade,0x4b800,0xd97ec)
 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/VenHw(63293792-adf5-9325-b99f-4e0e455c1b1e,01)
-/VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/VenHw(63293792-adf5-9325-b99f-4e0e455c1b1e,01)/HD(1,GPT,ff1546ea-a37f-467e-9150-4f78a2864e0f,0x40,0x40000)
-/VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/VenHw(63293792-adf5-9325-b99f-4e0e455c1b1e,01)/HD(2,GPT,296bf8fd-22c5-46d3-9fb5-d5c2612f2e76,0x40040,0x64000)
+/VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/VenHw(63293792-adf5-9325-b99f-4e0e455c1b1e,01)/HD(1,GPT,4b398298-a61b-4101-a879-837293a02a68,0x40,0x40000)
+/VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/VenHw(63293792-adf5-9325-b99f-4e0e455c1b1e,01)/HD(2,GPT,73990bb7-b149-4ea7-a906-8a93193b9d1c,0x40040,0x64000)
 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/VenHw(63293792-adf5-9325-b99f-4e0e455c1b1e,02)
 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/MAC(525400123456,1)
 /VenHw(dbca4c98-6cb0-694d-0872-819c650cb7b8)/HD(1,MBR,0xd1535d21,0x1,0x7f)
@@ -517,6 +527,15 @@ Executing 'device path utilities protocol'
 [0;37;40m[1;34;40m
 Executing 'conformance profile table'
 [0;37;40m[1;32;40mExecuting 'conformance profile table' succeeded
+[0;37;40m[1;34;40m
+Setting up 'esrt'
+[0;37;40m[1;32;40mSetting up 'esrt' succeeded
+[0;37;40m[1;34;40m
+Executing 'esrt'
+[0;37;40m[1;32;40mExecuting 'esrt' succeeded
+[0;37;40m[1;34;40m
+Tearing down 'esrt'
+[0;37;40m[1;32;40mTearing down 'esrt' succeeded
 [0;37;40m[1;34;40m
 Setting up 'event groups'
 [0;37;40m[1;32;40mSetting up 'event groups' succeeded
@@ -650,7 +669,7 @@ Setting up 'real time clock'
 [0;37;40m[1;32;40mSetting up 'real time clock' succeeded
 [0;37;40m[1;34;40m
 Executing 'real time clock'
-[0;37;40mTime according to real time clock: 2023-08-02 04:26:40
+[0;37;40mTime according to real time clock: 2023-08-28 09:41:34
 [1;32;40mExecuting 'real time clock' succeeded
 [0;37;40m[1;34;40m
 Setting up 'simple network protocol'

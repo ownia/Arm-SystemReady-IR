@@ -11,33 +11,26 @@ BdsDxe: starting Boot0001 "UEFI Misc Device" from PciRoot(0x0)/Pci(0x2,0x0)
       Press enter to boot the selected OS, `e' to edit the commands       
       before booting or `c' for a command-line.                           [05;80H 
 [05;03H Linux Boot                                                                 [01D[0m[30m[47m[06;03H*bbr/bsa                                                                    [0m[37m[40m[01D[07;03H SCT for Security Interface Extension (optional)                            [01D[08;03H Linux Boot for Security Interface Extension (optional)                     [01D[09;03H                                                                            [01D[10;03H                                                                            [01D[11;03H                                                                            [01D[12;03H                                                                            [01D[13;03H                                                                            [01D[14;03H                                                                            [01D[15;03H                                                                            [01D[16;03H                                                                            [01D[17;03H                                                                            [01D[18;03H                                                                            [01D[19;03H                                                                            [01D[20;03H                                                                            [01D[21;03H                                                                            [01D[22;03H                                                                            [01D[23;03H                                                                            [01D[24;03H                                                                            [01D[25;03H                                                                            [01D[26;03H                                                                            [01D[27;03H                                                                            [01D[28;03H                                                                            [01D[29;03H                                                                            [01D[30;03H                                                                            [01D[31;03H                                                                            [01D[32;03H                                                                            [01D[33;03H                                                                            [01D[34;03H                                                                            [01D[35;03H                                                                            [01D[36;03H                                                                            [01D[37;03H                                                                            [01D[38;03H                                                                            [01D[39;03H                                                                            [01D[40;03H                                                                            [01D[41;03H                                                                            [01D[42;03H                                                                            [01D[02C 
-[06;78H[48;01H   The highlighted entry will be executed automatically in 10s.                [06;78H[48;01H                                                                               [49;01H                                                                               [06;78H[75D bbr/bsa                                                                    [01D[0m[30m[47m[07;03H*SCT for Security Interface Extension (optional)                            [0m[37m[40m[01D[0m[30m[40m[2J[01;01H[0m[37m[40m[0m[30m[40m[2J[04D[0m[37m[40m/EndEntire
-file path: /ACPI(a0341d0,0)/PCI(0,2)/HD(1,800,32000,ce33bd392c616e4b,2,2)
+[06;78H[48;01H   The highlighted entry will be executed automatically in 10s.                [06;78H[48;01H                                                                               [49;01H                                                                               [06;78H[75D bbr/bsa                                                                    [01D[0m[30m[47m[07;03H*SCT for Security Interface Extension (optional)                            [0m[37m[40m[01D[75D SCT for Security Interface Extension (optional)                            [01D[0m[30m[47m[08;03H*Linux Boot for Security Interface Extension (optional)                     [0m[37m[40m[01D[75D Linux Boot for Security Interface Extension (optional)                     [01D[0m[30m[47m[07;03H*SCT for Security Interface Extension (optional)                            [0m[37m[40m[01D[0m[30m[40m[2J[01;01H[0m[37m[40m[0m[30m[40m[2J[04D[0m[37m[40m/EndEntire
+file path: /ACPI(a0341d0,0)/PCI(0,2)/HD(1,800,4b000,4fd7ef5279785e46,2,2)
 /File(\EFI\BOOT)/File(Shell.efi)/EndEntire
 [2J[01;01HUEFI Interactive Shell v2.2
 EDK II
 UEFI v2.70 (EDK II, 0x00010000)
 [1m[33m[40mMapping table[0m[37m[40m
 [1m[33m[40m      FS0:[0m[37m[40m [1m[37m[40mAlias(s):[0m[37m[40mHD0b:;BLK1:
-          PciRoot(0x0)/Pci(0x2,0x0)/HD(1,GPT,39BD33CE-612C-4B6E-A2CB-227C1A0FE56
-1,0x800,0x32000)
-[1m[33m[40m      FS1:[0m[37m[40m [1m[37m[40mAlias(s):[0m[37m[40mHD0d:;BLK3:
-          PciRoot(0x0)/Pci(0x2,0x0)/HD(3,GPT,AD7E1CE3-1748-46C2-BD2D-0203CAA33EB
-1,0xFA800,0x19000)
+          PciRoot(0x0)/Pci(0x2,0x0)/HD(1,GPT,52EFD74F-7879-465E-87F5-5D548120117
+A,0x800,0x4B000)
 [1m[33m[40m     BLK0:[0m[37m[40m [1m[37m[40mAlias(s):[0m[37m[40m
           PciRoot(0x0)/Pci(0x2,0x0)
 [1m[33m[40m     BLK2:[0m[37m[40m [1m[37m[40mAlias(s):[0m[37m[40m
-          PciRoot(0x0)/Pci(0x2,0x0)/HD(2,GPT,A711E613-3B60-4285-86F5-9DC61EBCD63
-2,0x32800,0xC78F0)
-[1m[33m[40m     BLK4:[0m[37m[40m [1m[37m[40mAlias(s):[0m[37m[40m
+          PciRoot(0x0)/Pci(0x2,0x0)/HD(2,GPT,2556B0BF-BCA5-4826-BAF1-3164626F2AD
+E,0x4B800,0xD97EC)
+[1m[33m[40m     BLK3:[0m[37m[40m [1m[37m[40mAlias(s):[0m[37m[40m
           PciRoot(0x0)/Pci(0x3,0x0)
 [1m[33m[40mShell> [0m[37m[40mecho -off
 Press any key to stop the SIE SCT running
-Press any key within 5 seconds Press any key within 4 seconds Press any key within 3 seconds Press any key within 2 seconds Press any key within 1 seconds SIE SCT has completed run. Press any key to start SIE SCT execution from the beg
-inning. WARNING: Ensure you have backed up the existing logs.
-Press any key within 5 seconds - [ok]
-Directory '[1m[34m[40mSIE[0m[37m[40m' already exists.
-Load support files ...
+Press any key within 5 seconds Press any key within 4 seconds Press any key within 3 seconds Press any key within 2 seconds Press any key within 1 seconds Load support files ...
 Load proxy files ...
 Load test files ...
 Test preparing...
@@ -61,75 +54,21 @@ Verifies Secure Boot variable attributes.
 ------------------------------------------------------------
 Logfile: "\EFI\BOOT\bbr\SCT\Log\RuntimeServicesTest\SecureBootTest0\VariableAttr
 ibutes_0_0_E39747C4-22D0-4D52-9C15-3C4EFA80E6C8.log"
-Test Started: 08/01/23  09:25a
+Test Started: 08/29/23  02:51a
 ------------------------------------------------------------
-SecureBoot - Verify SecureBoot is enabled  -- PASS
-98F4A3F2-D329-4813-B00F-324A22F70D3C
-/home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-o
-e-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeServices/Secur
-eBoot/BlackBoxTest/VariableAttributesBBTest.c:136:Status - Success
-
-SecureBoot - Verify SetupMode == 0 -- PASS
-42FE7061-7AF6-4EE7-83ED-72BA5024CE83
-/home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-o
-e-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeServices/Secur
-eBoot/BlackBoxTest/VariableAttributesBBTest.c:166:Status - Success
-
-SecureBoot - Verify SecureBoot variable attributes -- PASS
-1A65C9B2-66AB-4363-A18F-52E12FA200BB
-/home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-o
-e-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeServices/Secur
-eBoot/BlackBoxTest/VariableAttributesBBTest.c:194:Status - Buffer Too Small
-
-Attributes=0x6, Expected=0x6
-
-SecureBoot - Verify SetupMode variable attributes -- PASS
-83D73DD3-3827-4762-9E4E-C7D865F94F27
-/home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-o
-e-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeServices/Secur
-eBoot/BlackBoxTest/VariableAttributesBBTest.c:229:Status - Buffer Too Small
-
-Attributes=0x6, Expected=0x6
-
-SecureBoot - Verify PK variable attributes -- PASS
-67BCE6BB-FE72-4E4B-8D81-F37EE7C56402
-/home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-o
-e-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeServices/Secur
-eBoot/BlackBoxTest/VariableAttributesBBTest.c:264:Status - Buffer Too Small
-
-Attributes=0x27, Expected=0x27
-
-SecureBoot - Verify KEK variable attributes -- PASS
-C465F19A-87A5-46D2-B95F-545A4B382E9B
-/home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-o
-e-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeServices/Secur
-eBoot/BlackBoxTest/VariableAttributesBBTest.c:299:Status - Buffer Too Small
-
-Attributes=0x27, Expected=0x27
-
-SecureBoot - Verify DB variable attributes -- PASS
-A4C882F4-7392-49BE-950C-5E7A31711A12
-/home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-o
-e-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeServices/Secur
-eBoot/BlackBoxTest/VariableAttributesBBTest.c:334:Status - Buffer Too Small
-
-Attributes=0x27, Expected=0x20
-
-SecureBoot - Verify DBX variable attributes -- PASS
-BC37E48E-614F-44E1-9D9A-80E56C9B0090
-/home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-o
-e-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeServices/Secur
-eBoot/BlackBoxTest/VariableAttributesBBTest.c:369:Status - Buffer Too Small
-
-Attributes=0x27, Expected=0x20
+SecureBoot - VariableAttributesBBTest: SecureBoot not enabled -- FAILURE
+6A8CAA83-B9DA-46C7-98F6-D4969DABDAA0
+/home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/
+work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeS
+ervices/SecureBoot/BlackBoxTest/VariableAttributesBBTest.c:124:Status - Success
 
 
-Returned Status Code: Success
+Returned Status Code: Not Found
 
-VariableAttributes: [PASSED]
-  Passes........... 8
+VariableAttributes: [FAILED]
+  Passes........... 0
   Warnings......... 0
-  Errors........... 0
+  Errors........... 1
 ------------------------------------------------------------
 UEFI 2.6
 Revision 0x00010000
@@ -137,8 +76,8 @@ Test Entry Point GUID: E39747C4-22D0-4D52-9C15-3C4EFA80E6C8
 ------------------------------------------------------------
 Logfile: "\EFI\BOOT\bbr\SCT\Log\RuntimeServicesTest\SecureBootTest0\VariableAttr
 ibutes_0_0_E39747C4-22D0-4D52-9C15-3C4EFA80E6C8.log"
-Test Finished: 08/01/23  09:25a
-Elapsed Time: 00 Days 00:00:01
+Test Finished: 08/29/23  02:51a
+Elapsed Time: 00 Days 00:00:00
 
 ------------------------------------------------------------
   Remaining test cases: 8
@@ -161,79 +100,34 @@ Verifies Secure Boot variable updates.
 ------------------------------------------------------------
 Logfile: "\EFI\BOOT\bbr\SCT\Log\RuntimeServicesTest\SecureBootTest0\VariableUpda
 tes_0_0_495CB6D7-0817-4015-A479-0DB4C2308626.log"
-Test Started: 08/01/23  09:25a
+Test Started: 08/29/23  02:51a
 ------------------------------------------------------------
 SecureBootVariableCleanup: Doing cleanup of secure boot variables
 
-SecureBoot - Verify unsigned KEK update -- PASS
-D2073163-EDB0-4D6B-BA8F-5C6116C1592C
-/home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-o
-e-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeServices/Secur
-eBoot/BlackBoxTest/VariableUpdatesBBTest.c:288:Status - 800000000000001A
+SecureBootVariableCleanup: KEK delete failed
 
-SecureBoot - Verify signed KEK update -- PASS
-D2073163-EDB0-4D6B-BA8F-5C6116C1592C
-/home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-o
-e-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeServices/Secur
-eBoot/BlackBoxTest/VariableUpdatesBBTest.c:355:Status - Success
+SecureBootVariableCleanup: db delete failed
 
-SecureBoot - Verify unsigned db update -- PASS
-25AD4F9B-6533-4A96-9447-FEED03EEC3E2
-/home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-o
-e-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeServices/Secur
-eBoot/BlackBoxTest/VariableUpdatesBBTest.c:492:Status - 800000000000001A
+SecureBootVariableCleanup: db clean up failed
 
-SecureBoot - Verify signed db update -- PASS
-2F1014EB-4E84-4293-BAD3-53035F9EAEB4
-/home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-o
-e-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeServices/Secur
-eBoot/BlackBoxTest/VariableUpdatesBBTest.c:557:Status - Success
+SecureBootVariableCleanup: dbx delete failed. Status=Invalid Parameter
 
-SecureBoot - Verify signed db update -- PASS
-021EF001-0CB2-45D4-8529-D4F0E83ADD1F
-/home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-o
-e-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeServices/Secur
-eBoot/BlackBoxTest/VariableUpdatesBBTest.c:622:Status - Success
+SecureBootVariableCleanup: dbx clean up failed
 
-SecureBoot - Verify signed db update data signed by TESTKEK2 -- PASS
-EAD975E5-0A13-45A6-ACDD-B3EE23643057
-/home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-o
-e-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeServices/Secur
-eBoot/BlackBoxTest/VariableUpdatesBBTest.c:687:Status - Success
-
-SecureBoot - Verify unsigned dbx update -- PASS
-70FEBF5B-27D6-44AE-AB43-059DDD8B2947
-/home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-o
-e-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeServices/Secur
-eBoot/BlackBoxTest/VariableUpdatesBBTest.c:826:Status - 800000000000001A
-
-SecureBoot - Verify signed dbx update -- PASS
-EFE0E633-FD4C-4B20-A64D-ED4F2AFBA5CE
-/home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-o
-e-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeServices/Secur
-eBoot/BlackBoxTest/VariableUpdatesBBTest.c:893:Status - Success
-
-SecureBoot - Verify signed KEK append update -- PASS
-6F4FE39C-DAA0-4A4E-BF44-CAFB05372B53
-/home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-o
-e-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeServices/Secur
-eBoot/BlackBoxTest/VariableUpdatesBBTest.c:1031:Status - Success
-
-SecureBoot - Verify signed DB append update -- PASS
-63BA72D3-9089-AC63-F089-AD902467DBD3
-/home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-o
-e-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeServices/Secur
-eBoot/BlackBoxTest/VariableUpdatesBBTest.c:1098:Status - Success
-
-SecureBootVariableCleanup: Doing cleanup of secure boot variables
+SecureBoot - VariableUpdatesBBTest: SecureBootVariableCleanup() failed -- FAILUR
+E
+6A8CAA83-B9DA-46C7-98F6-D4969DABDAA0
+/home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/
+work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeS
+ervices/SecureBoot/BlackBoxTest/VariableUpdatesBBTest.c:137:Status - Not Found
 
 
-Returned Status Code: Success
+Returned Status Code: Not Found
 
-VariableUpdates: [PASSED]
-  Passes........... 10
+VariableUpdates: [FAILED]
+  Passes........... 0
   Warnings......... 0
-  Errors........... 0
+  Errors........... 1
 ------------------------------------------------------------
 UEFI 2.6
 Revision 0x00010000
@@ -241,8 +135,8 @@ Test Entry Point GUID: 495CB6D7-0817-4015-A479-0DB4C2308626
 ------------------------------------------------------------
 Logfile: "\EFI\BOOT\bbr\SCT\Log\RuntimeServicesTest\SecureBootTest0\VariableUpda
 tes_0_0_495CB6D7-0817-4015-A479-0DB4C2308626.log"
-Test Finished: 08/01/23  09:25a
-Elapsed Time: 00 Days 00:00:05
+Test Finished: 08/29/23  02:51a
+Elapsed Time: 00 Days 00:00:00
 
 ------------------------------------------------------------
   Remaining test cases: 7
@@ -265,245 +159,245 @@ Test the conformance of Auth Variable
 ------------------------------------------------------------
 Logfile: "\EFI\BOOT\bbr\SCT\Log\RuntimeServicesTest\VariableServicesTest0\AuthVa
 r_Conf_0_0_28155531-80C5-4AD0-8471-A5E2AECF236C.log"
-Test Started: 08/01/23  09:25a
+Test Started: 08/29/23  02:51a
 ------------------------------------------------------------
 RT.SetVariable - Set Invalid Time Base Auth Variable -- PASS
 E9893BCB-EF2B-495C-82F0-D0630DA79476
-/home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-o
-e-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeServices/Varia
-bleServices/BlackBoxTest/AuthVariableServicesBBTestConformance.c:225:Status - 80
-0000000000001A
+/home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/
+work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeS
+ervices/VariableServices/BlackBoxTest/AuthVariableServicesBBTestConformance.c:22
+5:Status - 800000000000001A
 
 RT.SetVariable - Set Auth Variable with valid cert. -- PASS
 2534ABC0-1F01-48A0-96DE-F8BBA745C364
-Attributes = Array[0]. /home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/
-build/tmp/work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EF
-I/RuntimeServices/VariableServices/BlackBoxTest/AuthVariableServicesBBTestConfor
-mance.c:258:Status - Unsupported
+Attributes = Array[0]. /home/runner/work/arm-systemready/arm-systemready/IR/Yoct
+o/meta-woden/build/tmp/work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/Tes
+tCase/UEFI/EFI/RuntimeServices/VariableServices/BlackBoxTest/AuthVariableService
+sBBTestConformance.c:258:Status - Unsupported
 
 RT.SetVariable - Set Auth Variable with invalid cert. -- PASS
 55AF8FAD-1B12-45AD-B042-A643962F0470
-Attributes = Array[0]. /home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/
-build/tmp/work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EF
-I/RuntimeServices/VariableServices/BlackBoxTest/AuthVariableServicesBBTestConfor
-mance.c:283:Status - Unsupported
+Attributes = Array[0]. /home/runner/work/arm-systemready/arm-systemready/IR/Yoct
+o/meta-woden/build/tmp/work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/Tes
+tCase/UEFI/EFI/RuntimeServices/VariableServices/BlackBoxTest/AuthVariableService
+sBBTestConformance.c:283:Status - Unsupported
 
 RT.QueryVariableInfo - Query Auth Variable. -- PASS
 6D0740FB-388A-491F-B818-9B5CB5170F95
-Attributes = Array[0]. /home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/
-build/tmp/work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EF
-I/RuntimeServices/VariableServices/BlackBoxTest/AuthVariableServicesBBTestConfor
-mance.c:308:Status - Unsupported
+Attributes = Array[0]. /home/runner/work/arm-systemready/arm-systemready/IR/Yoct
+o/meta-woden/build/tmp/work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/Tes
+tCase/UEFI/EFI/RuntimeServices/VariableServices/BlackBoxTest/AuthVariableService
+sBBTestConformance.c:308:Status - Unsupported
 
 RT.SetVariable - Set Auth Variable with valid cert. -- PASS
 2534ABC0-1F01-48A0-96DE-F8BBA745C364
-Attributes = Array[1]. /home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/
-build/tmp/work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EF
-I/RuntimeServices/VariableServices/BlackBoxTest/AuthVariableServicesBBTestConfor
-mance.c:258:Status - Unsupported
+Attributes = Array[1]. /home/runner/work/arm-systemready/arm-systemready/IR/Yoct
+o/meta-woden/build/tmp/work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/Tes
+tCase/UEFI/EFI/RuntimeServices/VariableServices/BlackBoxTest/AuthVariableService
+sBBTestConformance.c:258:Status - Unsupported
 
 RT.SetVariable - Set Auth Variable with invalid cert. -- PASS
 55AF8FAD-1B12-45AD-B042-A643962F0470
-Attributes = Array[1]. /home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/
-build/tmp/work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EF
-I/RuntimeServices/VariableServices/BlackBoxTest/AuthVariableServicesBBTestConfor
-mance.c:283:Status - Unsupported
+Attributes = Array[1]. /home/runner/work/arm-systemready/arm-systemready/IR/Yoct
+o/meta-woden/build/tmp/work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/Tes
+tCase/UEFI/EFI/RuntimeServices/VariableServices/BlackBoxTest/AuthVariableService
+sBBTestConformance.c:283:Status - Unsupported
 
 RT.QueryVariableInfo - Query Auth Variable. -- PASS
 6D0740FB-388A-491F-B818-9B5CB5170F95
-Attributes = Array[1]. /home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/
-build/tmp/work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EF
-I/RuntimeServices/VariableServices/BlackBoxTest/AuthVariableServicesBBTestConfor
-mance.c:308:Status - Unsupported
+Attributes = Array[1]. /home/runner/work/arm-systemready/arm-systemready/IR/Yoct
+o/meta-woden/build/tmp/work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/Tes
+tCase/UEFI/EFI/RuntimeServices/VariableServices/BlackBoxTest/AuthVariableService
+sBBTestConformance.c:308:Status - Unsupported
 
 RT.SetVariable - Set Auth Variable with valid cert. -- PASS
 2534ABC0-1F01-48A0-96DE-F8BBA745C364
-Attributes = Array[2]. /home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/
-build/tmp/work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EF
-I/RuntimeServices/VariableServices/BlackBoxTest/AuthVariableServicesBBTestConfor
-mance.c:258:Status - Unsupported
+Attributes = Array[2]. /home/runner/work/arm-systemready/arm-systemready/IR/Yoct
+o/meta-woden/build/tmp/work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/Tes
+tCase/UEFI/EFI/RuntimeServices/VariableServices/BlackBoxTest/AuthVariableService
+sBBTestConformance.c:258:Status - Unsupported
 
 RT.SetVariable - Set Auth Variable with invalid cert. -- PASS
 55AF8FAD-1B12-45AD-B042-A643962F0470
-Attributes = Array[2]. /home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/
-build/tmp/work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EF
-I/RuntimeServices/VariableServices/BlackBoxTest/AuthVariableServicesBBTestConfor
-mance.c:283:Status - Unsupported
+Attributes = Array[2]. /home/runner/work/arm-systemready/arm-systemready/IR/Yoct
+o/meta-woden/build/tmp/work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/Tes
+tCase/UEFI/EFI/RuntimeServices/VariableServices/BlackBoxTest/AuthVariableService
+sBBTestConformance.c:283:Status - Unsupported
 
 RT.QueryVariableInfo - Query Auth Variable. -- PASS
 6D0740FB-388A-491F-B818-9B5CB5170F95
-Attributes = Array[2]. /home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/
-build/tmp/work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EF
-I/RuntimeServices/VariableServices/BlackBoxTest/AuthVariableServicesBBTestConfor
-mance.c:308:Status - Unsupported
+Attributes = Array[2]. /home/runner/work/arm-systemready/arm-systemready/IR/Yoct
+o/meta-woden/build/tmp/work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/Tes
+tCase/UEFI/EFI/RuntimeServices/VariableServices/BlackBoxTest/AuthVariableService
+sBBTestConformance.c:308:Status - Unsupported
 
 RT.SetVariable - Set Auth Variable with valid cert. -- PASS
 2534ABC0-1F01-48A0-96DE-F8BBA745C364
-Attributes = Array[3]. /home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/
-build/tmp/work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EF
-I/RuntimeServices/VariableServices/BlackBoxTest/AuthVariableServicesBBTestConfor
-mance.c:258:Status - Unsupported
+Attributes = Array[3]. /home/runner/work/arm-systemready/arm-systemready/IR/Yoct
+o/meta-woden/build/tmp/work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/Tes
+tCase/UEFI/EFI/RuntimeServices/VariableServices/BlackBoxTest/AuthVariableService
+sBBTestConformance.c:258:Status - Unsupported
 
 RT.SetVariable - Set Auth Variable with invalid cert. -- PASS
 55AF8FAD-1B12-45AD-B042-A643962F0470
-Attributes = Array[3]. /home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/
-build/tmp/work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EF
-I/RuntimeServices/VariableServices/BlackBoxTest/AuthVariableServicesBBTestConfor
-mance.c:283:Status - Unsupported
+Attributes = Array[3]. /home/runner/work/arm-systemready/arm-systemready/IR/Yoct
+o/meta-woden/build/tmp/work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/Tes
+tCase/UEFI/EFI/RuntimeServices/VariableServices/BlackBoxTest/AuthVariableService
+sBBTestConformance.c:283:Status - Unsupported
 
 RT.QueryVariableInfo - Query Auth Variable. -- PASS
 6D0740FB-388A-491F-B818-9B5CB5170F95
-Attributes = Array[3]. /home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/
-build/tmp/work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EF
-I/RuntimeServices/VariableServices/BlackBoxTest/AuthVariableServicesBBTestConfor
-mance.c:308:Status - Unsupported
+Attributes = Array[3]. /home/runner/work/arm-systemready/arm-systemready/IR/Yoct
+o/meta-woden/build/tmp/work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/Tes
+tCase/UEFI/EFI/RuntimeServices/VariableServices/BlackBoxTest/AuthVariableService
+sBBTestConformance.c:308:Status - Unsupported
 
 RT.SetVariable - Set Auth Variable with valid cert. -- PASS
 2534ABC0-1F01-48A0-96DE-F8BBA745C364
-Attributes = Array[4]. /home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/
-build/tmp/work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EF
-I/RuntimeServices/VariableServices/BlackBoxTest/AuthVariableServicesBBTestConfor
-mance.c:258:Status - Unsupported
+Attributes = Array[4]. /home/runner/work/arm-systemready/arm-systemready/IR/Yoct
+o/meta-woden/build/tmp/work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/Tes
+tCase/UEFI/EFI/RuntimeServices/VariableServices/BlackBoxTest/AuthVariableService
+sBBTestConformance.c:258:Status - Unsupported
 
 RT.SetVariable - Set Auth Variable with invalid cert. -- PASS
 55AF8FAD-1B12-45AD-B042-A643962F0470
-Attributes = Array[4]. /home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/
-build/tmp/work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EF
-I/RuntimeServices/VariableServices/BlackBoxTest/AuthVariableServicesBBTestConfor
-mance.c:283:Status - Unsupported
+Attributes = Array[4]. /home/runner/work/arm-systemready/arm-systemready/IR/Yoct
+o/meta-woden/build/tmp/work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/Tes
+tCase/UEFI/EFI/RuntimeServices/VariableServices/BlackBoxTest/AuthVariableService
+sBBTestConformance.c:283:Status - Unsupported
 
 RT.QueryVariableInfo - Query Auth Variable. -- PASS
 6D0740FB-388A-491F-B818-9B5CB5170F95
-Attributes = Array[4]. /home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/
-build/tmp/work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EF
-I/RuntimeServices/VariableServices/BlackBoxTest/AuthVariableServicesBBTestConfor
-mance.c:308:Status - Unsupported
+Attributes = Array[4]. /home/runner/work/arm-systemready/arm-systemready/IR/Yoct
+o/meta-woden/build/tmp/work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/Tes
+tCase/UEFI/EFI/RuntimeServices/VariableServices/BlackBoxTest/AuthVariableService
+sBBTestConformance.c:308:Status - Unsupported
 
 RT.SetVariable - Set Auth Variable with valid cert. -- PASS
 2534ABC0-1F01-48A0-96DE-F8BBA745C364
-Attributes = Array[5]. /home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/
-build/tmp/work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EF
-I/RuntimeServices/VariableServices/BlackBoxTest/AuthVariableServicesBBTestConfor
-mance.c:258:Status - Unsupported
+Attributes = Array[5]. /home/runner/work/arm-systemready/arm-systemready/IR/Yoct
+o/meta-woden/build/tmp/work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/Tes
+tCase/UEFI/EFI/RuntimeServices/VariableServices/BlackBoxTest/AuthVariableService
+sBBTestConformance.c:258:Status - Unsupported
 
 RT.SetVariable - Set Auth Variable with invalid cert. -- PASS
 55AF8FAD-1B12-45AD-B042-A643962F0470
-Attributes = Array[5]. /home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/
-build/tmp/work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EF
-I/RuntimeServices/VariableServices/BlackBoxTest/AuthVariableServicesBBTestConfor
-mance.c:283:Status - Unsupported
+Attributes = Array[5]. /home/runner/work/arm-systemready/arm-systemready/IR/Yoct
+o/meta-woden/build/tmp/work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/Tes
+tCase/UEFI/EFI/RuntimeServices/VariableServices/BlackBoxTest/AuthVariableService
+sBBTestConformance.c:283:Status - Unsupported
 
 RT.QueryVariableInfo - Query Auth Variable. -- PASS
 6D0740FB-388A-491F-B818-9B5CB5170F95
-Attributes = Array[5]. /home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/
-build/tmp/work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EF
-I/RuntimeServices/VariableServices/BlackBoxTest/AuthVariableServicesBBTestConfor
-mance.c:308:Status - Unsupported
+Attributes = Array[5]. /home/runner/work/arm-systemready/arm-systemready/IR/Yoct
+o/meta-woden/build/tmp/work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/Tes
+tCase/UEFI/EFI/RuntimeServices/VariableServices/BlackBoxTest/AuthVariableService
+sBBTestConformance.c:308:Status - Unsupported
 
 RT.SetVariable - Set Auth Variable with valid cert. -- PASS
 2534ABC0-1F01-48A0-96DE-F8BBA745C364
-Attributes = Array[6]. /home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/
-build/tmp/work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EF
-I/RuntimeServices/VariableServices/BlackBoxTest/AuthVariableServicesBBTestConfor
-mance.c:258:Status - Unsupported
+Attributes = Array[6]. /home/runner/work/arm-systemready/arm-systemready/IR/Yoct
+o/meta-woden/build/tmp/work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/Tes
+tCase/UEFI/EFI/RuntimeServices/VariableServices/BlackBoxTest/AuthVariableService
+sBBTestConformance.c:258:Status - Unsupported
 
 RT.SetVariable - Set Auth Variable with invalid cert. -- PASS
 55AF8FAD-1B12-45AD-B042-A643962F0470
-Attributes = Array[6]. /home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/
-build/tmp/work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EF
-I/RuntimeServices/VariableServices/BlackBoxTest/AuthVariableServicesBBTestConfor
-mance.c:283:Status - Unsupported
+Attributes = Array[6]. /home/runner/work/arm-systemready/arm-systemready/IR/Yoct
+o/meta-woden/build/tmp/work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/Tes
+tCase/UEFI/EFI/RuntimeServices/VariableServices/BlackBoxTest/AuthVariableService
+sBBTestConformance.c:283:Status - Unsupported
 
 RT.QueryVariableInfo - Query Auth Variable. -- PASS
 6D0740FB-388A-491F-B818-9B5CB5170F95
-Attributes = Array[6]. /home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/
-build/tmp/work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EF
-I/RuntimeServices/VariableServices/BlackBoxTest/AuthVariableServicesBBTestConfor
-mance.c:308:Status - Unsupported
+Attributes = Array[6]. /home/runner/work/arm-systemready/arm-systemready/IR/Yoct
+o/meta-woden/build/tmp/work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/Tes
+tCase/UEFI/EFI/RuntimeServices/VariableServices/BlackBoxTest/AuthVariableService
+sBBTestConformance.c:308:Status - Unsupported
 
 RT.SetVariable - Set Auth Variable with valid cert. -- PASS
 2534ABC0-1F01-48A0-96DE-F8BBA745C364
-Attributes = Array[7]. /home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/
-build/tmp/work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EF
-I/RuntimeServices/VariableServices/BlackBoxTest/AuthVariableServicesBBTestConfor
-mance.c:258:Status - Unsupported
+Attributes = Array[7]. /home/runner/work/arm-systemready/arm-systemready/IR/Yoct
+o/meta-woden/build/tmp/work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/Tes
+tCase/UEFI/EFI/RuntimeServices/VariableServices/BlackBoxTest/AuthVariableService
+sBBTestConformance.c:258:Status - Unsupported
 
 RT.SetVariable - Set Auth Variable with invalid cert. -- PASS
 55AF8FAD-1B12-45AD-B042-A643962F0470
-Attributes = Array[7]. /home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/
-build/tmp/work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EF
-I/RuntimeServices/VariableServices/BlackBoxTest/AuthVariableServicesBBTestConfor
-mance.c:283:Status - Unsupported
+Attributes = Array[7]. /home/runner/work/arm-systemready/arm-systemready/IR/Yoct
+o/meta-woden/build/tmp/work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/Tes
+tCase/UEFI/EFI/RuntimeServices/VariableServices/BlackBoxTest/AuthVariableService
+sBBTestConformance.c:283:Status - Unsupported
 
 RT.QueryVariableInfo - Query Auth Variable. -- PASS
 6D0740FB-388A-491F-B818-9B5CB5170F95
-Attributes = Array[7]. /home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/
-build/tmp/work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EF
-I/RuntimeServices/VariableServices/BlackBoxTest/AuthVariableServicesBBTestConfor
-mance.c:308:Status - Unsupported
+Attributes = Array[7]. /home/runner/work/arm-systemready/arm-systemready/IR/Yoct
+o/meta-woden/build/tmp/work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/Tes
+tCase/UEFI/EFI/RuntimeServices/VariableServices/BlackBoxTest/AuthVariableService
+sBBTestConformance.c:308:Status - Unsupported
 
 RT.SetVariable - Set Auth Variable with valid cert. -- PASS
 2534ABC0-1F01-48A0-96DE-F8BBA745C364
-Attributes = Array[8]. /home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/
-build/tmp/work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EF
-I/RuntimeServices/VariableServices/BlackBoxTest/AuthVariableServicesBBTestConfor
-mance.c:258:Status - Unsupported
+Attributes = Array[8]. /home/runner/work/arm-systemready/arm-systemready/IR/Yoct
+o/meta-woden/build/tmp/work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/Tes
+tCase/UEFI/EFI/RuntimeServices/VariableServices/BlackBoxTest/AuthVariableService
+sBBTestConformance.c:258:Status - Unsupported
 
 RT.SetVariable - Set Auth Variable with invalid cert. -- PASS
 55AF8FAD-1B12-45AD-B042-A643962F0470
-Attributes = Array[8]. /home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/
-build/tmp/work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EF
-I/RuntimeServices/VariableServices/BlackBoxTest/AuthVariableServicesBBTestConfor
-mance.c:283:Status - Unsupported
+Attributes = Array[8]. /home/runner/work/arm-systemready/arm-systemready/IR/Yoct
+o/meta-woden/build/tmp/work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/Tes
+tCase/UEFI/EFI/RuntimeServices/VariableServices/BlackBoxTest/AuthVariableService
+sBBTestConformance.c:283:Status - Unsupported
 
 RT.QueryVariableInfo - Query Auth Variable. -- PASS
 6D0740FB-388A-491F-B818-9B5CB5170F95
-Attributes = Array[8]. /home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/
-build/tmp/work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EF
-I/RuntimeServices/VariableServices/BlackBoxTest/AuthVariableServicesBBTestConfor
-mance.c:308:Status - Unsupported
+Attributes = Array[8]. /home/runner/work/arm-systemready/arm-systemready/IR/Yoct
+o/meta-woden/build/tmp/work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/Tes
+tCase/UEFI/EFI/RuntimeServices/VariableServices/BlackBoxTest/AuthVariableService
+sBBTestConformance.c:308:Status - Unsupported
 
 RT.SetVariable - Set Auth Variable with valid cert. -- PASS
 2534ABC0-1F01-48A0-96DE-F8BBA745C364
-Attributes = Array[9]. /home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/
-build/tmp/work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EF
-I/RuntimeServices/VariableServices/BlackBoxTest/AuthVariableServicesBBTestConfor
-mance.c:258:Status - Unsupported
+Attributes = Array[9]. /home/runner/work/arm-systemready/arm-systemready/IR/Yoct
+o/meta-woden/build/tmp/work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/Tes
+tCase/UEFI/EFI/RuntimeServices/VariableServices/BlackBoxTest/AuthVariableService
+sBBTestConformance.c:258:Status - Unsupported
 
 RT.SetVariable - Set Auth Variable with invalid cert. -- PASS
 55AF8FAD-1B12-45AD-B042-A643962F0470
-Attributes = Array[9]. /home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/
-build/tmp/work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EF
-I/RuntimeServices/VariableServices/BlackBoxTest/AuthVariableServicesBBTestConfor
-mance.c:283:Status - Unsupported
+Attributes = Array[9]. /home/runner/work/arm-systemready/arm-systemready/IR/Yoct
+o/meta-woden/build/tmp/work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/Tes
+tCase/UEFI/EFI/RuntimeServices/VariableServices/BlackBoxTest/AuthVariableService
+sBBTestConformance.c:283:Status - Unsupported
 
 RT.QueryVariableInfo - Query Auth Variable. -- PASS
 6D0740FB-388A-491F-B818-9B5CB5170F95
-Attributes = Array[9]. /home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/
-build/tmp/work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EF
-I/RuntimeServices/VariableServices/BlackBoxTest/AuthVariableServicesBBTestConfor
-mance.c:308:Status - Unsupported
+Attributes = Array[9]. /home/runner/work/arm-systemready/arm-systemready/IR/Yoct
+o/meta-woden/build/tmp/work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/Tes
+tCase/UEFI/EFI/RuntimeServices/VariableServices/BlackBoxTest/AuthVariableService
+sBBTestConformance.c:308:Status - Unsupported
 
 RT.SetVariable - Set Auth Variable with valid cert. -- PASS
 2534ABC0-1F01-48A0-96DE-F8BBA745C364
-Attributes = Array[10]. /home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden
-/build/tmp/work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/E
-FI/RuntimeServices/VariableServices/BlackBoxTest/AuthVariableServicesBBTestConfo
-rmance.c:258:Status - Unsupported
+Attributes = Array[10]. /home/runner/work/arm-systemready/arm-systemready/IR/Yoc
+to/meta-woden/build/tmp/work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/Te
+stCase/UEFI/EFI/RuntimeServices/VariableServices/BlackBoxTest/AuthVariableServic
+esBBTestConformance.c:258:Status - Unsupported
 
 RT.SetVariable - Set Auth Variable with invalid cert. -- PASS
 55AF8FAD-1B12-45AD-B042-A643962F0470
-Attributes = Array[10]. /home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden
-/build/tmp/work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/E
-FI/RuntimeServices/VariableServices/BlackBoxTest/AuthVariableServicesBBTestConfo
-rmance.c:283:Status - Unsupported
+Attributes = Array[10]. /home/runner/work/arm-systemready/arm-systemready/IR/Yoc
+to/meta-woden/build/tmp/work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/Te
+stCase/UEFI/EFI/RuntimeServices/VariableServices/BlackBoxTest/AuthVariableServic
+esBBTestConformance.c:283:Status - Unsupported
 
 RT.QueryVariableInfo - Query Auth Variable. -- PASS
 6D0740FB-388A-491F-B818-9B5CB5170F95
-Attributes = Array[10]. /home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden
-/build/tmp/work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/E
-FI/RuntimeServices/VariableServices/BlackBoxTest/AuthVariableServicesBBTestConfo
-rmance.c:308:Status - Unsupported
+Attributes = Array[10]. /home/runner/work/arm-systemready/arm-systemready/IR/Yoc
+to/meta-woden/build/tmp/work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/Te
+stCase/UEFI/EFI/RuntimeServices/VariableServices/BlackBoxTest/AuthVariableServic
+esBBTestConformance.c:308:Status - Unsupported
 
 
 Returned Status Code: Success
@@ -519,7 +413,7 @@ Test Entry Point GUID: 28155531-80C5-4AD0-8471-A5E2AECF236C
 ------------------------------------------------------------
 Logfile: "\EFI\BOOT\bbr\SCT\Log\RuntimeServicesTest\VariableServicesTest0\AuthVa
 r_Conf_0_0_28155531-80C5-4AD0-8471-A5E2AECF236C.log"
-Test Finished: 08/01/23  09:25a
+Test Finished: 08/29/23  02:51a
 Elapsed Time: 00 Days 00:00:01
 
 ------------------------------------------------------------
@@ -543,136 +437,136 @@ Test the function of Auth Variable
 ------------------------------------------------------------
 Logfile: "\EFI\BOOT\bbr\SCT\Log\RuntimeServicesTest\VariableServicesTest0\AuthVa
 r_Func_0_0_9338D0EC-807B-4750-986A-8F2A91BB3616.log"
-Test Started: 08/01/23  09:25a
+Test Started: 08/29/23  02:51a
 ------------------------------------------------------------
 RT.SetVariable - Create one Time Base Auth Variable, the expect return status sh
 ould be EFI_SUCCESS -- PASS
 008E18A5-C345-48AE-9134-61A692E30B87
-/home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-o
-e-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeServices/Varia
-bleServices/BlackBoxTest/AuthVariableServicesBBTestFunction.c:635:Status - Succe
-ss
+/home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/
+work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeS
+ervices/VariableServices/BlackBoxTest/AuthVariableServicesBBTestFunction.c:635:S
+tatus - Success
 
 RT.SetVariable - The Created Time Base Auth Variable should pass the data valida
 tion -- PASS
 20678B3E-BCCA-4186-84AF-4716E7AFDE85
-/home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-o
-e-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeServices/Varia
-bleServices/BlackBoxTest/AuthVariableServicesBBTestFunction.c:666:Status - Succe
-ss
+/home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/
+work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeS
+ervices/VariableServices/BlackBoxTest/AuthVariableServicesBBTestFunction.c:666:S
+tatus - Success
 
 RT.SetVariable - The 2nd Call SetVariable with the same Data, the return status 
 should be EFI_SECURITY_VIOLATION -- PASS
 AA6BF36F-DAE5-43ED-954D-C1C7979D32A0
-/home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-o
-e-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeServices/Varia
-bleServices/BlackBoxTest/AuthVariableServicesBBTestFunction.c:695:Status - 80000
-0000000001A
+/home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/
+work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeS
+ervices/VariableServices/BlackBoxTest/AuthVariableServicesBBTestFunction.c:695:S
+tatus - 800000000000001A
 
 RT.SetVariable - Call SetVariable with invalid Auth info, the return status shou
 ld be EFI_SECURITY_VIOLATION -- PASS
 2BC131EC-0530-4994-BB81-15355CEFE588
-/home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-o
-e-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeServices/Varia
-bleServices/BlackBoxTest/AuthVariableServicesBBTestFunction.c:723:Status - 80000
-0000000001A
+/home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/
+work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeS
+ervices/VariableServices/BlackBoxTest/AuthVariableServicesBBTestFunction.c:723:S
+tatus - 800000000000001A
 
 RT.SetVariable - SetVariable to new value by using the same key but a new timest
 amp, it should succeed -- PASS
 0E49B21E-409C-4502-9EC6-55FE85F85495
-/home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-o
-e-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeServices/Varia
-bleServices/BlackBoxTest/AuthVariableServicesBBTestFunction.c:751:Status - Succe
-ss
+/home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/
+work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeS
+ervices/VariableServices/BlackBoxTest/AuthVariableServicesBBTestFunction.c:751:S
+tatus - Success
 
 RT.SetVariable - The new value in the Time Base Auth Variable should pass the da
 ta validation -- PASS
 ADABAC45-1E0D-40B0-9BD1-8C3AD7FB69D6
-/home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-o
-e-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeServices/Varia
-bleServices/BlackBoxTest/AuthVariableServicesBBTestFunction.c:783:Status - Succe
-ss
+/home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/
+work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeS
+ervices/VariableServices/BlackBoxTest/AuthVariableServicesBBTestFunction.c:783:S
+tatus - Success
 
 RT.SetVariable - SetVariable with the old data and one old timestamp, the expect
  status should be EFI_SECURITY_VIOLATION -- PASS
 6339807B-0741-45C4-81A8-E2DE5A0BFB55
-/home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-o
-e-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeServices/Varia
-bleServices/BlackBoxTest/AuthVariableServicesBBTestFunction.c:811:Status - 80000
-0000000001A
+/home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/
+work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeS
+ervices/VariableServices/BlackBoxTest/AuthVariableServicesBBTestFunction.c:811:S
+tatus - 800000000000001A
 
 RT.SetVariable - SetVariable with one existing variable but Data area is changed
  due to different key and valid, the call should return EFI_SECURITY_VIOLATION -
 - PASS
 A2D53DEA-8275-4B9A-BDA0-AC86FB4E0F30
-/home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-o
-e-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeServices/Varia
-bleServices/BlackBoxTest/AuthVariableServicesBBTestFunction.c:839:Status - 80000
-0000000001A
+/home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/
+work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeS
+ervices/VariableServices/BlackBoxTest/AuthVariableServicesBBTestFunction.c:839:S
+tatus - 800000000000001A
 
 RT.SetVariable - The Time Base Auth Variable Append operation should succeed -- 
 PASS
 28C7F0DB-2546-4374-8FF9-7580C4689B93
-/home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-o
-e-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeServices/Varia
-bleServices/BlackBoxTest/AuthVariableServicesBBTestFunction.c:867:Status - Succe
-ss
+/home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/
+work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeS
+ervices/VariableServices/BlackBoxTest/AuthVariableServicesBBTestFunction.c:867:S
+tatus - Success
 
 RT.SetVariable - The Appended Time Base Auth Variable should pass the data valid
 ation -- PASS
 1E87DBE9-234B-4C82-8C86-2F26FAC6602E
-/home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-o
-e-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeServices/Varia
-bleServices/BlackBoxTest/AuthVariableServicesBBTestFunction.c:903:Status - Succe
-ss
+/home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/
+work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeS
+ervices/VariableServices/BlackBoxTest/AuthVariableServicesBBTestFunction.c:903:S
+tatus - Success
 
 RT.SetVariable - Del Time Base Auth Variable, the expect return status should be
  EFI_SUCCESS -- PASS
 3CC4ADD2-0ED7-4837-B463-BC46D13B2F65
-/home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-o
-e-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeServices/Varia
-bleServices/BlackBoxTest/AuthVariableServicesBBTestFunction.c:932:Status - Succe
-ss
+/home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/
+work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeS
+ervices/VariableServices/BlackBoxTest/AuthVariableServicesBBTestFunction.c:932:S
+tatus - Success
 
 RT.SetVariable - The Deleted Time Base Auth Variable should not be found -- PASS
 
 FA50A705-5D95-4CAD-B46C-A0129B68228E
-/home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-o
-e-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeServices/Varia
-bleServices/BlackBoxTest/AuthVariableServicesBBTestFunction.c:963:Status - Not F
-ound
+/home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/
+work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeS
+ervices/VariableServices/BlackBoxTest/AuthVariableServicesBBTestFunction.c:963:S
+tatus - Not Found
 
 RT.SetVariable - SetVariable with one different key after the original variable 
 is deleted, the return status should be EFI_SUCCESS -- PASS
 27E8E4DE-56ED-4710-A63A-C635E39D3364
-/home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-o
-e-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeServices/Varia
-bleServices/BlackBoxTest/AuthVariableServicesBBTestFunction.c:991:Status - Succe
-ss
+/home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/
+work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeS
+ervices/VariableServices/BlackBoxTest/AuthVariableServicesBBTestFunction.c:991:S
+tatus - Success
 
 RT.SetVariable - The Time Base Auth Variable Append operation should succeed -- 
 PASS
 BA99E7F8-8018-46A2-B2E5-8BDE42C1E6D5
-/home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-o
-e-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeServices/Varia
-bleServices/BlackBoxTest/AuthVariableServicesBBTestFunction.c:1019:Status - Succ
-ess
+/home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/
+work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeS
+ervices/VariableServices/BlackBoxTest/AuthVariableServicesBBTestFunction.c:1019:
+Status - Success
 
 RT.SetVariable - SetVariable with one old timestamp, the return status should be
  EFI_SECURITY_VIOLATION -- PASS
 C764906D-73BB-44B7-AE40-0C51DEC3C751
-/home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-o
-e-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeServices/Varia
-bleServices/BlackBoxTest/AuthVariableServicesBBTestFunction.c:1048:Status - 8000
-00000000001A
+/home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/
+work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeS
+ervices/VariableServices/BlackBoxTest/AuthVariableServicesBBTestFunction.c:1048:
+Status - 800000000000001A
 
 RT.SetVariable - Del Time Base Auth Variable, the expect return status should be
  EFI_SUCCESS -- PASS
 1A28FA01-135C-4AEB-A1B4-686A0B53B209
-/home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-o
-e-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeServices/Varia
-bleServices/BlackBoxTest/AuthVariableServicesBBTestFunction.c:1077:Status - Succ
-ess
+/home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/
+work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeS
+ervices/VariableServices/BlackBoxTest/AuthVariableServicesBBTestFunction.c:1077:
+Status - Success
 
 
 Returned Status Code: Success
@@ -688,7 +582,7 @@ Test Entry Point GUID: 9338D0EC-807B-4750-986A-8F2A91BB3616
 ------------------------------------------------------------
 Logfile: "\EFI\BOOT\bbr\SCT\Log\RuntimeServicesTest\VariableServicesTest0\AuthVa
 r_Func_0_0_9338D0EC-807B-4750-986A-8F2A91BB3616.log"
-Test Finished: 08/01/23  09:25a
+Test Finished: 08/29/23  02:51a
 Elapsed Time: 00 Days 00:00:02
 
 ------------------------------------------------------------
@@ -712,21 +606,21 @@ Test that UEFI variable size requirements of BBSR are met.
 ------------------------------------------------------------
 Logfile: "\EFI\BOOT\bbr\SCT\Log\RuntimeServicesTest\BBSRVariableSizeTest0\BBSRVa
 riableSizeTest_func_0_0_19A9EDCF-EEB9-43E4-86A0-F28734FED429.log"
-Test Started: 08/01/23  09:25a
+Test Started: 08/29/23  02:51a
 ------------------------------------------------------------
 
 QueryVariable MaxStorageSize is 262044 MaxVariableSize is 65476
 RT.SecurityVariableSizeTest - BBSR Variable Size test -- PASS
 B6DC17CA-71E1-4BD5-9E76-F9A0847D9AE4
-/home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-o
-e-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeServices/BBSRV
-ariableSizeTest/BlackBoxTest/BBSRVariableSizeBBTestFunction.c:164:
+/home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/
+work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeS
+ervices/BBSRVariableSizeTest/BlackBoxTest/BBSRVariableSizeBBTestFunction.c:164:
 
 RT.SecurityVariableSizeTest - BBSR Variable Size test -- PASS
 9B37033F-53AF-4097-AAE3-73FD28D267D5
-/home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-o
-e-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeServices/BBSRV
-ariableSizeTest/BlackBoxTest/BBSRVariableSizeBBTestFunction.c:191:
+/home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/
+work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeS
+ervices/BBSRVariableSizeTest/BlackBoxTest/BBSRVariableSizeBBTestFunction.c:191:
 
 
 Returned Status Code: Success
@@ -742,7 +636,7 @@ Test Entry Point GUID: 19A9EDCF-EEB9-43E4-86A0-F28734FED429
 ------------------------------------------------------------
 Logfile: "\EFI\BOOT\bbr\SCT\Log\RuntimeServicesTest\BBSRVariableSizeTest0\BBSRVa
 riableSizeTest_func_0_0_19A9EDCF-EEB9-43E4-86A0-F28734FED429.log"
-Test Finished: 08/01/23  09:25a
+Test Finished: 08/29/23  02:51a
 Elapsed Time: 00 Days 00:00:00
 
 ------------------------------------------------------------
@@ -766,21 +660,23 @@ Test the GetActivePcrBanks API
 ------------------------------------------------------------
 Logfile: "\EFI\BOOT\bbr\SCT\Log\TCG2ProtocolTest0\GetActivePcrBanks_Conf_0_0_847
 F1AE0-B429-49F1-9E0C-8F43FB553454.log"
-Test Started: 08/01/23  09:25a
+Test Started: 08/29/23  02:51a
 ------------------------------------------------------------
 TCG2_PROTOCOL.GetActivePcrBanks - GetActivePcrBanks() returns EFI_INVALID_PARAME
 TER with NULL pointer Passed in -- PASS
 7A1E79A3-4064-4372-BB64-55B8F2A5A326
-/home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-o
-e-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/Protocol/TCG2Protocol
-/BlackBoxTest/TCG2ProtocolBBTestConformance.c:539: Status - Invalid Parameter
+/home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/
+work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/Protocol
+/TCG2Protocol/BlackBoxTest/TCG2ProtocolBBTestConformance.c:540: Status - Invalid
+ Parameter
 
 TCG2_PROTOCOL.GetActivePcrBanks - GetActivePcrBanks should return with EFI_SUCCE
 SS and have SHA256/384/512 Algoritms in its Bitmap -- PASS
 B0E717C4-B1E2-49F7-B2D7-6058977D092C
-/home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-o
-e-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/Protocol/TCG2Protocol
-/BlackBoxTest/TCG2ProtocolBBTestConformance.c:595: Status - Success
+/home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/
+work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/Protocol
+/TCG2Protocol/BlackBoxTest/TCG2ProtocolBBTestConformance.c:596: Status - Success
+
 
 
 Returned Status Code: Success
@@ -796,7 +692,7 @@ Test Entry Point GUID: 847F1AE0-B429-49F1-9E0C-8F43FB553454
 ------------------------------------------------------------
 Logfile: "\EFI\BOOT\bbr\SCT\Log\TCG2ProtocolTest0\GetActivePcrBanks_Conf_0_0_847
 F1AE0-B429-49F1-9E0C-8F43FB553454.log"
-Test Finished: 08/01/23  09:25a
+Test Finished: 08/29/23  02:51a
 Elapsed Time: 00 Days 00:00:00
 
 ------------------------------------------------------------
@@ -820,36 +716,40 @@ Test the GetCapablity API
 ------------------------------------------------------------
 Logfile: "\EFI\BOOT\bbr\SCT\Log\TCG2ProtocolTest0\GetCapability_Conf_0_0_39FF9C7
 1-4B41-4E5B-AED7-87C794187D67.log"
-Test Started: 08/01/23  09:25a
+Test Started: 08/29/23  02:51a
 ------------------------------------------------------------
 TCG2_PROTOCOL.GetCapability - GetCapability() returns EFI_INVALID_PARAMETER with
  NULL pointer Capability Struct Passed in -- PASS
 CA93B02A-E897-4400-8138-C8A8CB2FC1ED
-/home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-o
-e-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/Protocol/TCG2Protocol
-/BlackBoxTest/TCG2ProtocolBBTestConformance.c:263: Status - Invalid Parameter
+/home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/
+work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/Protocol
+/TCG2Protocol/BlackBoxTest/TCG2ProtocolBBTestConformance.c:263: Status - Invalid
+ Parameter
 
 TCG2_PROTOCOL.GetCapability - GetCapability() populates all elements of EFI_TCG_
 BOOT_SERVICE_CAPABILITY -- PASS
 FDEE7001-7E28-4E35-9966-980BEBBAF157
-/home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-o
-e-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/Protocol/TCG2Protocol
-/BlackBoxTest/TCG2ProtocolBBTestConformance.c:397: Status - Success
+/home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/
+work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/Protocol
+/TCG2Protocol/BlackBoxTest/TCG2ProtocolBBTestConformance.c:398: Status - Success
+
 
 TCG2_PROTOCOL.GetCapability() - GetCapability() handling of input struct size le
 ss than the size of EFI_TCG2_BOOT_SERVICE_CAPABILITY up to and including the Man
 ufacturerID field -- PASS
 DA8821D9-3D2C-4698-8CD5-0F0C82941D0C
-/home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-o
-e-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/Protocol/TCG2Protocol
-/BlackBoxTest/TCG2ProtocolBBTestConformance.c:445: Status - Buffer Too Small
+/home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/
+work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/Protocol
+/TCG2Protocol/BlackBoxTest/TCG2ProtocolBBTestConformance.c:446: Status - Buffer 
+Too Small
 
 TCG2_PROTOCOL.GetCapability - GetCapability() backwards compatibility check for 
 1.0 version of EFI_TCG_BOOT_SERVICE_CAPABILITY -- PASS
 8DDB031B-7448-40EE-B1A2-E6F8E8C4E55F
-/home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-o
-e-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/Protocol/TCG2Protocol
-/BlackBoxTest/TCG2ProtocolBBTestConformance.c:504: Status - Success
+/home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/
+work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/Protocol
+/TCG2Protocol/BlackBoxTest/TCG2ProtocolBBTestConformance.c:505: Status - Success
+
 
 
 Returned Status Code: Success
@@ -865,8 +765,8 @@ Test Entry Point GUID: 39FF9C71-4B41-4E5B-AED7-87C794187D67
 ------------------------------------------------------------
 Logfile: "\EFI\BOOT\bbr\SCT\Log\TCG2ProtocolTest0\GetCapability_Conf_0_0_39FF9C7
 1-4B41-4E5B-AED7-87C794187D67.log"
-Test Finished: 08/01/23  09:25a
-Elapsed Time: 00 Days 00:00:00
+Test Finished: 08/29/23  02:51a
+Elapsed Time: 00 Days 00:00:01
 
 ------------------------------------------------------------
   Remaining test cases: 2
@@ -889,89 +789,94 @@ Test the HashLogExtendEvent API
 ------------------------------------------------------------
 Logfile: "\EFI\BOOT\bbr\SCT\Log\TCG2ProtocolTest0\HashLogExtendEvent_Conf_0_0_90
 7A7878-B294-F147-E90A-6543AB557646.log"
-Test Started: 08/01/23  09:25a
+Test Started: 08/29/23  02:51a
 ------------------------------------------------------------
 TCG2_PROTOCOL.HashLogExtendEvent - Test with NULL DataToHash Pointer should retu
 rn EFI_INVALID_PARAMETER -- PASS
 7A1E79A3-4064-4372-BB64-55B8F2A5A326
-/home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-o
-e-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/Protocol/TCG2Protocol
-/BlackBoxTest/TCG2ProtocolBBTestConformance.c:655: Status - Invalid Parameter
+/home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/
+work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/Protocol
+/TCG2Protocol/BlackBoxTest/TCG2ProtocolBBTestConformance.c:656: Status - Invalid
+ Parameter
 
 TCG2_PROTOCOL.HashLogExtendEvent - Test with NULL EfiTcgEvent Pointer should ret
 urn EFI_INVALID_PARAMETER -- PASS
 B0E717C4-B1E2-49F7-B2D7-6058977D092C
-/home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-o
-e-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/Protocol/TCG2Protocol
-/BlackBoxTest/TCG2ProtocolBBTestConformance.c:681: Status - Invalid Parameter
+/home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/
+work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/Protocol
+/TCG2Protocol/BlackBoxTest/TCG2ProtocolBBTestConformance.c:682: Status - Invalid
+ Parameter
 
 TCG2_PROTOCOL.HashLogExtendEvent - Test with Event.Size < Event.Header.HeaderSiz
 e + sizeof(UINT32) should return EFI_INVALID_PARAMETER -- PASS
 A8E1B5E6-FC09-461C-B0E9-2A49CD25C124
-/home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-o
-e-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/Protocol/TCG2Protocol
-/BlackBoxTest/TCG2ProtocolBBTestConformance.c:709: Status - Invalid Parameter
+/home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/
+work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/Protocol
+/TCG2Protocol/BlackBoxTest/TCG2ProtocolBBTestConformance.c:710: Status - Invalid
+ Parameter
 
 TCG2_PROTOCOL.HashLogExtendEvent - Test with PCRIndex > 23 should return  EFI_IN
 VALID_PARAMETER -- PASS
 26F04A9B-7B7A-4F47-BEA8-B1A60265198A
-/home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-o
-e-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/Protocol/TCG2Protocol
-/BlackBoxTest/TCG2ProtocolBBTestConformance.c:738: Status - Invalid Parameter
+/home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/
+work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/Protocol
+/TCG2Protocol/BlackBoxTest/TCG2ProtocolBBTestConformance.c:739: Status - Invalid
+ Parameter
 
 TCG2_PROTOCOL.HashLogExtendEvent - HashLogExtendEvent() Test: HashLogExtendEvent
- should return EFI_SUCCESS -- FAILURE
+ should return EFI_SUCCESS -- PASS
 4D1D9985-91E2-4948-8916-BB981362391D
-/home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-o
-e-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/Protocol/TCG2Protocol
-/BlackBoxTest/TCG2ProtocolBBTestConformance.c:798: Status - Volume Full
+/home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/
+work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/Protocol
+/TCG2Protocol/BlackBoxTest/TCG2ProtocolBBTestConformance.c:799: Status - Success
+
 
 TCG2_PROTOCOL.HashLogExtendEvent - HashLogExtendEvent() Test Handling of PE_COFF
 _IMAGE flag -- PASS
 FB59CAB7-4F8C-4DED-A41C-C841201C3722
-/home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-o
-e-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/Protocol/TCG2Protocol
-/BlackBoxTest/TCG2ProtocolBBTestConformance.c:826: Status - Unsupported
+/home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/
+work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/Protocol
+/TCG2Protocol/BlackBoxTest/TCG2ProtocolBBTestConformance.c:827: Status - Unsuppo
+rted
 
 TCG2_PROTOCOL.GetEventLog - GetEventLog() should return EFI_INVALID_PARAMETER wh
 en passed in invalid EventLog Format -- PASS
 0363D22F-C66A-4872-A546-067F6A0DDBCD
-/home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-o
-e-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/Protocol/TCG2Protocol
-/BlackBoxTest/TCG2ProtocolBBTestConformance.c:872: Status - Invalid Parameter
+/home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/
+work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/Protocol
+/TCG2Protocol/BlackBoxTest/TCG2ProtocolBBTestConformance.c:873: Status - Invalid
+ Parameter
 
 TCG2_PROTOCOL.GetEventLog - GetEventLog() should return EFI_SUCCESS -- PASS
 9CD6D636-603A-4B78-80A3-A3B9CC6A0B08
-/home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-o
-e-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/Protocol/TCG2Protocol
-/BlackBoxTest/TCG2ProtocolBBTestConformance.c:929: Status - Success
+/home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/
+work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/Protocol
+/TCG2Protocol/BlackBoxTest/TCG2ProtocolBBTestConformance.c:930: Status - Success
+
 
 TCG2_PROTOCOL.GetEventLog - GetEventLog() should return correct EventLogHeader -
 - PASS
 FC80408E-9A3C-4054-96F9-312335C23135
-/home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-o
-e-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/Protocol/TCG2Protocol
-/BlackBoxTest/TCG2ProtocolBBTestConformance.c:984: Status - Success
+/home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/
+work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/Protocol
+/TCG2Protocol/BlackBoxTest/TCG2ProtocolBBTestConformance.c:985: Status - Success
 
 
-TCG2 Protocol GetEventLog Test: PCR Index of Last event should be 16
-
-TCG2 Protocol GetEventLog Test: PCR Index of last event should be type EV_POST_C
-ODE
 TCG2_PROTOCOL.GetEventLog - GetEventLog() should record Event from Checkpoint2 a
-s last EventLogEntry -- FAILURE
+s last EventLogEntry -- PASS
 45FA1A42-912A-5124-84F4-4167ABB58990
-/home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-o
-e-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/Protocol/TCG2Protocol
-/BlackBoxTest/TCG2ProtocolBBTestConformance.c:1019: Status - Success
+/home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/
+work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/Protocol
+/TCG2Protocol/BlackBoxTest/TCG2ProtocolBBTestConformance.c:1020: Status - Succes
+s
 
 
 Returned Status Code: Success
 
-HashLogExtendEvent_Conf: [FAILED]
-  Passes........... 8
+HashLogExtendEvent_Conf: [PASSED]
+  Passes........... 10
   Warnings......... 0
-  Errors........... 2
+  Errors........... 0
 ------------------------------------------------------------
 UEFI 2.6
 Revision 0x00010000
@@ -979,7 +884,7 @@ Test Entry Point GUID: 907A7878-B294-F147-E90A-6543AB557646
 ------------------------------------------------------------
 Logfile: "\EFI\BOOT\bbr\SCT\Log\TCG2ProtocolTest0\HashLogExtendEvent_Conf_0_0_90
 7A7878-B294-F147-E90A-6543AB557646.log"
-Test Finished: 08/01/23  09:25a
+Test Finished: 08/29/23  02:51a
 Elapsed Time: 00 Days 00:00:00
 
 ------------------------------------------------------------
@@ -1003,19 +908,21 @@ Test the SubmitCommmand API
 ------------------------------------------------------------
 Logfile: "\EFI\BOOT\bbr\SCT\Log\TCG2ProtocolTest0\SubmitCommand_Conf_0_0_9087AD7
 8-9AD2-4172-9ABC-982308F56D26.log"
-Test Started: 08/01/23  09:25a
+Test Started: 08/29/23  02:51a
 ------------------------------------------------------------
 TCG2_PROTOCOL.SubmitCommand - SubmitCommand() should return EFI_SUCCESS -- PASS
 1689BC3A-2298-A116-284C-C1DDAAD8EF51
-/home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-o
-e-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/Protocol/TCG2Protocol
-/BlackBoxTest/TCG2ProtocolBBTestConformance.c:1074: Status - Success
+/home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/
+work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/Protocol
+/TCG2Protocol/BlackBoxTest/TCG2ProtocolBBTestConformance.c:1075: Status - Succes
+s
 
 TCG2_PROTOCOL.SubmitCommand - SubmitCommand() should return EFI_SUCCESS -- PASS
 126A789A-1932-3234-21AB-42648A7B6376
-/home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-o
-e-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/Protocol/TCG2Protocol
-/BlackBoxTest/TCG2ProtocolBBTestConformance.c:1150: Status - Success
+/home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/
+work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/Protocol
+/TCG2Protocol/BlackBoxTest/TCG2ProtocolBBTestConformance.c:1151: Status - Succes
+s
 
 
 Returned Status Code: Success
@@ -1031,7 +938,7 @@ Test Entry Point GUID: 9087AD78-9AD2-4172-9ABC-982308F56D26
 ------------------------------------------------------------
 Logfile: "\EFI\BOOT\bbr\SCT\Log\TCG2ProtocolTest0\SubmitCommand_Conf_0_0_9087AD7
 8-9AD2-4172-9ABC-982308F56D26.log"
-Test Finished: 08/01/23  09:25a
+Test Finished: 08/29/23  02:51a
 Elapsed Time: 00 Days 00:00:00
 
 ------------------------------------------------------------
@@ -1055,131 +962,31 @@ Verifies Secure Boot image loading.
 ------------------------------------------------------------
 Logfile: "\EFI\BOOT\bbr\SCT\Log\RuntimeServicesTest\SecureBootTest0\ImageLoading
 _0_0_BA4A8DD9-2D6A-43A6-96CF-7947892B7359.log"
-Test Started: 08/01/23  09:25a
+Test Started: 08/29/23  02:51a
 ------------------------------------------------------------
-SecureBoot - Verify load of unsigned image. -- PASS
-6C605B08-2AB7-4681-9F2F-74D08D964E35
-/home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-o
-e-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeServices/Secur
-eBoot/BlackBoxTest/ImageLoadingBBTest.c:548:Status - Access Denied
-
-SecureBoot - Verify load of signed image, but not in db. -- PASS
-34DAA12D-302B-4AFD-9F1F-CB552E5948BE
-/home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-o
-e-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeServices/Secur
-eBoot/BlackBoxTest/ImageLoadingBBTest.c:588:Status - Access Denied
-
-SecureBoot - Verify load of signed image, first signature in list. -- PASS
-5E1C06CB-F84A-4B38-8096-2F7B9591BB3A
-/home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-o
-e-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeServices/Secur
-eBoot/BlackBoxTest/ImageLoadingBBTest.c:625:Status - Success
-
-SecureBoot - Verify load of signed image, second signature in list. -- PASS
-85F7E35E-E333-4D44-83F8-03394189F3B2
-/home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-o
-e-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeServices/Secur
-eBoot/BlackBoxTest/ImageLoadingBBTest.c:662:Status - Success
-
-SecureBoot - Verify load of unsigned image with hash in list. -- PASS
-AA8167AE-F03A-4074-B278-D6F1290A86A7
-/home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-o
-e-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeServices/Secur
-eBoot/BlackBoxTest/ImageLoadingBBTest.c:699:Status - Success
-
-SecureBoot - Verify load of signed image with signature in db and revoked in dbx
- with SHA256 hash. -- PASS
-B62A25F4-C24E-4853-9AD1-8B3FC59B29D7
-/home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-o
-e-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeServices/Secur
-eBoot/BlackBoxTest/ImageLoadingBBTest.c:784:Status - Access Denied
-
-SecureBoot - Verify load of signed image with signature in db and revoked in dbx
- with SHA384 hash. -- PASS
-54E33072-43D2-4FBF-B44E-1D1CE7F71AD2
-/home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-o
-e-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeServices/Secur
-eBoot/BlackBoxTest/ImageLoadingBBTest.c:824:Status - Access Denied
-
-SecureBoot - Verify load of signed image with signature in db and revoked in dbx
- with SHA512 hash. -- PASS
-20A23F21-31F1-4264-A6CB-7DC7E6963C63
-/home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-o
-e-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeServices/Secur
-eBoot/BlackBoxTest/ImageLoadingBBTest.c:864:Status - Access Denied
-
-SecureBoot - Verify load of signed image with signature in db and revoked in dbx
- with certificate. -- PASS
-4BB36713-D8E2-405B-8BDA-8612C79291A9
-/home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-o
-e-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeServices/Secur
-eBoot/BlackBoxTest/ImageLoadingBBTest.c:904:Status - Access Denied
-
-SecureBoot - Verify load of signed image with signature in db and revoked in dbx
- with hash of image. -- PASS
-3B48371B-C27E-4C19-B999-54537EA4BFED
-/home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-o
-e-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeServices/Secur
-eBoot/BlackBoxTest/ImageLoadingBBTest.c:944:Status - Access Denied
-
-SecureBoot - TestImage1.bin in Image Execution Info Table with SIG_NOT_FOUND. --
- FAILURE
-B3A670AA-0FBA-48CA-9D01-0EE9700965A9
-/home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-o
-e-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeServices/Secur
-eBoot/BlackBoxTest/ImageLoadingBBTest.c:1079:Status - Success
-
-SecureBoot - TestImage2.bin in Image Execution Info Table with SIG_NOT_FOUND. --
- PASS
-00C3C2F2-39D5-4D35-B7E7-587CA0F3CB75
-/home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-o
-e-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeServices/Secur
-eBoot/BlackBoxTest/ImageLoadingBBTest.c:1096:Status - Success
-
-SecureBoot - TestImage6.bin in Image Execution Info Table with SIG_FAILED. -- PA
-SS
-55211C3F-C438-485A-B175-B1EF5D3141C7
-/home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-o
-e-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeServices/Secur
-eBoot/BlackBoxTest/ImageLoadingBBTest.c:1113:Status - Success
-
-SecureBoot - TestImage7.bin in Image Execution Info Table with SIG_FAILED. -- PA
-SS
-32A28AE3-9DCB-4F3E-8624-E33E50A933E1
-/home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-o
-e-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeServices/Secur
-eBoot/BlackBoxTest/ImageLoadingBBTest.c:1130:Status - Success
-
-SecureBoot - TestImage8.bin in Image Execution Info Table with SIG_FAILED. -- PA
-SS
-9031EE38-3E1A-44F2-8E08-F52B52AD1BD9
-/home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-o
-e-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeServices/Secur
-eBoot/BlackBoxTest/ImageLoadingBBTest.c:1147:Status - Success
-
-SecureBoot - TestImage9.bin in Image Execution Info Table with SIG_FAILED. -- PA
-SS
-73AAE70E-7953-4983-894A-1E6AF27825D7
-/home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-o
-e-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeServices/Secur
-eBoot/BlackBoxTest/ImageLoadingBBTest.c:1164:Status - Success
-
-SecureBoot - Verify load of TestImage10.bin recorded in Image Execution Info Tab
-le. -- FAILURE
-26D2B894-37C3-44D5-8BF3-6CA6011AB462
-/home/edhcha01/IR2.0/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-o
-e-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeServices/Secur
-eBoot/BlackBoxTest/ImageLoadingBBTest.c:1181:Status - Success
+SecureBoot - ImageLoadingTest: SecureBoot not enabled -- FAILURE
+6A8CAA83-B9DA-46C7-98F6-D4969DABDAA0
+/home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/
+work/armv8a-oe-linux/ebbr-sct/1.0-r0/edk2-test/SctPkg/TestCase/UEFI/EFI/RuntimeS
+ervices/SecureBoot/BlackBoxTest/ImageLoadingBBTest.c:250:Status - Success
 
 SecureBootVariableCleanup: Doing cleanup of secure boot variables
 
+SecureBootVariableCleanup: db delete failed
 
-Returned Status Code: Success
+SecureBootVariableCleanup: db clean up failed
+
+SecureBootVariableCleanup: dbx delete failed. Status=Invalid Parameter
+
+SecureBootVariableCleanup: dbx clean up failed
+
+
+Returned Status Code: Not Found
 
 ImageLoading: [FAILED]
-  Passes........... 15
+  Passes........... 0
   Warnings......... 0
-  Errors........... 2
+  Errors........... 1
 ------------------------------------------------------------
 UEFI 2.6
 Revision 0x00010000
@@ -1187,8 +994,8 @@ Test Entry Point GUID: BA4A8DD9-2D6A-43A6-96CF-7947892B7359
 ------------------------------------------------------------
 Logfile: "\EFI\BOOT\bbr\SCT\Log\RuntimeServicesTest\SecureBootTest0\ImageLoading
 _0_0_BA4A8DD9-2D6A-43A6-96CF-7947892B7359.log"
-Test Finished: 08/01/23  09:25a
-Elapsed Time: 00 Days 00:00:03
+Test Finished: 08/29/23  02:51a
+Elapsed Time: 00 Days 00:00:00
 
 ------------------------------------------------------------
 Done!
@@ -1209,9 +1016,8 @@ BdsDxe: starting Boot0001 "UEFI Misc Device" from PciRoot(0x0)/Pci(0x2,0x0)
       Press enter to boot the selected OS, `e' to edit the commands       
       before booting or `c' for a command-line.                           [05;80H 
 [05;03H Linux Boot                                                                 [01D[0m[30m[47m[06;03H*bbr/bsa                                                                    [0m[37m[40m[01D[07;03H SCT for Security Interface Extension (optional)                            [01D[08;03H Linux Boot for Security Interface Extension (optional)                     [01D[09;03H                                                                            [01D[10;03H                                                                            [01D[11;03H                                                                            [01D[12;03H                                                                            [01D[13;03H                                                                            [01D[14;03H                                                                            [01D[15;03H                                                                            [01D[16;03H                                                                            [01D[17;03H                                                                            [01D[18;03H                                                                            [01D[19;03H                                                                            [01D[20;03H                                                                            [01D[21;03H                                                                            [01D[22;03H                                                                            [01D[23;03H                                                                            [01D[24;03H                                                                            [01D[25;03H                                                                            [01D[26;03H                                                                            [01D[27;03H                                                                            [01D[28;03H                                                                            [01D[29;03H                                                                            [01D[30;03H                                                                            [01D[31;03H                                                                            [01D[32;03H                                                                            [01D[33;03H                                                                            [01D[34;03H                                                                            [01D[35;03H                                                                            [01D[36;03H                                                                            [01D[37;03H                                                                            [01D[38;03H                                                                            [01D[39;03H                                                                            [01D[40;03H                                                                            [01D[41;03H                                                                            [01D[42;03H                                                                            [01D[02C 
-[06;78H[48;01H   The highlighted entry will be executed automatically in 10s.                [06;78H[48;01H   The highlighted entry will be executed automatically in 9s.                 [06;78H[48;01H   The highlighted entry will be executed automatically in 8s.                 [06;78H[48;01H                                                                               [49;01H                                                                               [06;78H[75D bbr/bsa                                                                    [01D[0m[30m[47m[07;03H*SCT for Security Interface Extension (optional)                            [0m[37m[40m[01D[75D SCT for Security Interface Extension (optional)                            [01D[0m[30m[47m[08;03H*Linux Boot for Security Interface Extension (optional)                     [0m[37m[40m[01D[0m[30m[40m[2J[01;01H[0m[37m[40m[0m[30m[40m[2J[04D[0m[37m[40mEFI stub: Booting Linux Kernel...
+[06;78H[48;01H   The highlighted entry will be executed automatically in 10s.                [06;78H[48;01H   The highlighted entry will be executed automatically in 9s.                 [06;78H[48;01H   The highlighted entry will be executed automatically in 8s.                 [06;78H[48;01H   The highlighted entry will be executed automatically in 7s.                 [06;78H[48;01H                                                                               [49;01H                                                                               [06;78H[75D bbr/bsa                                                                    [01D[0m[30m[47m[07;03H*SCT for Security Interface Extension (optional)                            [0m[37m[40m[01D[75D SCT for Security Interface Extension (optional)                            [01D[0m[30m[47m[08;03H*Linux Boot for Security Interface Extension (optional)                     [0m[37m[40m[01D[0m[30m[40m[2J[01;01H[0m[37m[40m[0m[30m[40m[2J[04D[0m[37m[40mEFI stub: Booting Linux Kernel...
 EFI stub: EFI_RNG_PROTOCOL unavailable
-EFI stub: UEFI Secure Boot is enabled.
 EFI stub: Using DTB from configuration table
 EFI stub: Exiting boot services...
 [    0.000000] Booting Linux on physical CPU 0x0000000000 [0x411fd070]
@@ -1219,7 +1025,7 @@ EFI stub: Exiting boot services...
 [    0.000000] random: crng init done
 [    0.000000] Machine model: linux,dummy-virt
 [    0.000000] efi: EFI v2.70 by EDK II
-[    0.000000] efi: SMBIOS 3.0=0xbfed0000 TPMFinalLog=0xbc4f0000 MEMATTR=0xbe27f018 TPMEventLog=0xbc40e018 MEMRESERVE=0xbc40cb98 
+[    0.000000] efi: SMBIOS 3.0=0xbfed0000 TPMFinalLog=0xbc4f0000 MEMATTR=0xbe70a018 TPMEventLog=0xbc40f018 MEMRESERVE=0xbc40cb98 
 [    0.000000] efi: memattr: Unexpected EFI Memory Attributes table version 2
 [    0.000000] NUMA: No NUMA configuration found
 [    0.000000] NUMA: Faking a node at [mem 0x0000000040000000-0x00000000bfffffff]
@@ -1257,12 +1063,12 @@ EFI stub: Exiting boot services...
 [    0.000000] Fallback order for Node 0: 0 
 [    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 516096
 [    0.000000] Policy zone: DMA
-[    0.000000] Kernel command line: BOOT_IMAGE=/Image root=PARTUUID=a711e613-3b60-4285-86f5-9dc61ebcd632 rootwait rootfstype=ext4 secureboot
+[    0.000000] Kernel command line: BOOT_IMAGE=/Image root=PARTUUID=2556b0bf-bca5-4826-baf1-3164626f2ade rootwait rootfstype=ext4 secureboot
 [    0.000000] Unknown kernel command line parameters "secureboot BOOT_IMAGE=/Image", will be passed to user space.
 [    0.000000] Dentry cache hash table entries: 262144 (order: 9, 2097152 bytes, linear)
 [    0.000000] Inode-cache hash table entries: 131072 (order: 8, 1048576 bytes, linear)
 [    0.000000] mem auto-init: stack:all(zero), heap alloc:off, heap free:off
-[    0.000000] Memory: 1980104K/2097152K available (16064K kernel code, 3538K rwdata, 9144K rodata, 7168K init, 609K bss, 84280K reserved, 32768K cma-reserved)
+[    0.000000] Memory: 1980108K/2097152K available (16064K kernel code, 3538K rwdata, 9144K rodata, 7168K init, 609K bss, 84276K reserved, 32768K cma-reserved)
 [    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=2, Nodes=1
 [    0.000000] rcu: Preemptible hierarchical RCU implementation.
 [    0.000000] rcu: 	RCU event tracing is enabled.
@@ -1277,343 +1083,343 @@ EFI stub: Exiting boot services...
 [    0.000000] rcu: srcu_init: Setting srcu_struct sizes based on contention.
 [    0.000000] arch_timer: cp15 timer(s) running at 62.50MHz (virt).
 [    0.000000] clocksource: arch_sys_counter: mask: 0x1ffffffffffffff max_cycles: 0x1cd42e208c, max_idle_ns: 881590405314 ns
-[    0.000094] sched_clock: 57 bits at 63MHz, resolution 16ns, wraps every 4398046511096ns
-[    0.014364] Console: colour dummy device 80x25
-[    0.017587] printk: console [tty0] enabled
-[    0.020008] Calibrating delay loop (skipped), value calculated using timer frequency.. 125.00 BogoMIPS (lpj=250000)
-[    0.020214] pid_max: default: 32768 minimum: 301
-[    0.021253] LSM: Security Framework initializing
-[    0.027309] Mount-cache hash table entries: 4096 (order: 3, 32768 bytes, linear)
-[    0.027546] Mountpoint-cache hash table entries: 4096 (order: 3, 32768 bytes, linear)
-[    0.075796] cacheinfo: Unable to detect cache hierarchy for CPU 0
-[    0.085400] cblist_init_generic: Setting adjustable number of callback queues.
-[    0.085632] cblist_init_generic: Setting shift to 1 and lim to 1.
-[    0.086124] cblist_init_generic: Setting shift to 1 and lim to 1.
-[    0.087918] rcu: Hierarchical SRCU implementation.
-[    0.087997] rcu: 	Max phase no-delay instances is 1000.
-[    0.099780] Remapping and enabling EFI services.
-[    0.103830] smp: Bringing up secondary CPUs ...
-[    0.109993] Detected PIPT I-cache on CPU1
-[    0.111048] cacheinfo: Unable to detect cache hierarchy for CPU 1
-[    0.111465] CPU1: Booted secondary processor 0x0000000001 [0x411fd070]
-[    0.115708] smp: Brought up 1 node, 2 CPUs
-[    0.115852] SMP: Total of 2 processors activated.
-[    0.115953] CPU features: detected: 32-bit EL0 Support
-[    0.115999] CPU features: detected: 32-bit EL1 Support
-[    0.116097] CPU features: detected: CRC32 instructions
-[    0.123007] CPU: All CPU(s) started at EL1
-[    0.125132] alternatives: patching kernel code
-[    0.160053] devtmpfs: initialized
-[    0.179517] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
-[    0.179876] futex hash table entries: 512 (order: 3, 32768 bytes, linear)
-[    0.185200] pinctrl core: initialized pinctrl subsystem
-[    0.204390] SMBIOS 3.0.0 present.
-[    0.204770] DMI: QEMU QEMU Virtual Machine, BIOS unknown 2/2/2022
-[    0.218044] NET: Registered PF_NETLINK/PF_ROUTE protocol family
-[    0.234244] DMA: preallocated 256 KiB GFP_KERNEL pool for atomic allocations
-[    0.235719] DMA: preallocated 256 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
-[    0.236178] DMA: preallocated 256 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
-[    0.236679] audit: initializing netlink subsys (disabled)
-[    0.239469] audit: type=2000 audit(0.208:1): state=initialized audit_enabled=0 res=1
-[    0.247796] thermal_sys: Registered thermal governor 'step_wise'
-[    0.247864] thermal_sys: Registered thermal governor 'power_allocator'
-[    0.248625] cpuidle: using governor menu
-[    0.249988] hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
-[    0.250819] ASID allocator initialised with 32768 entries
-[    0.259374] Serial: AMBA PL011 UART driver
-[    0.319756] 9000000.pl011: ttyAMA0 at MMIO 0x9000000 (irq = 13, base_baud = 0) is a PL011 rev1
-[    0.411238] printk: console [ttyAMA0] enabled
-[    0.435494] KASLR enabled
-[    0.497224] HugeTLB: registered 1.00 GiB page size, pre-allocated 0 pages
-[    0.498231] HugeTLB: 16380 KiB vmemmap can be freed for a 1.00 GiB page
-[    0.499269] HugeTLB: registered 32.0 MiB page size, pre-allocated 0 pages
-[    0.500235] HugeTLB: 508 KiB vmemmap can be freed for a 32.0 MiB page
-[    0.501392] HugeTLB: registered 2.00 MiB page size, pre-allocated 0 pages
-[    0.502353] HugeTLB: 28 KiB vmemmap can be freed for a 2.00 MiB page
-[    0.503212] HugeTLB: registered 64.0 KiB page size, pre-allocated 0 pages
-[    0.504129] HugeTLB: 0 KiB vmemmap can be freed for a 64.0 KiB page
-[    0.526220] ACPI: Interpreter disabled.
-[    0.538463] iommu: Default domain type: Translated 
-[    0.540022] iommu: DMA domain TLB invalidation policy: strict mode 
-[    0.545251] SCSI subsystem initialized
-[    0.551707] usbcore: registered new interface driver usbfs
-[    0.553274] usbcore: registered new interface driver hub
-[    0.554282] usbcore: registered new device driver usb
-[    0.561088] pps_core: LinuxPPS API ver. 1 registered
-[    0.562109] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
-[    0.563881] PTP clock support registered
-[    0.565749] EDAC MC: Ver: 3.0.0
-[    0.573575] Registered efivars operations
-[    0.583547] FPGA manager framework
-[    0.586365] Advanced Linux Sound Architecture Driver Initialized.
-[    0.614324] vgaarb: loaded
-[    0.618687] clocksource: Switched to clocksource arch_sys_counter
-[    0.628311] VFS: Disk quotas dquot_6.6.0
-[    0.629488] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
-[    0.633521] pnp: PnP ACPI: disabled
-[    0.695700] NET: Registered PF_INET protocol family
-[    0.700472] IP idents hash table entries: 32768 (order: 6, 262144 bytes, linear)
-[    0.712191] tcp_listen_portaddr_hash hash table entries: 1024 (order: 2, 16384 bytes, linear)
-[    0.713587] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
-[    0.714983] TCP established hash table entries: 16384 (order: 5, 131072 bytes, linear)
-[    0.716718] TCP bind hash table entries: 16384 (order: 6, 262144 bytes, linear)
-[    0.718115] TCP: Hash tables configured (established 16384 bind 16384)
-[    0.721659] UDP hash table entries: 1024 (order: 3, 32768 bytes, linear)
-[    0.723252] UDP-Lite hash table entries: 1024 (order: 3, 32768 bytes, linear)
-[    0.726167] NET: Registered PF_UNIX/PF_LOCAL protocol family
-[    0.733191] RPC: Registered named UNIX socket transport module.
-[    0.734263] RPC: Registered udp transport module.
-[    0.735339] RPC: Registered tcp transport module.
-[    0.736181] RPC: Registered tcp NFSv4.1 backchannel transport module.
-[    0.737311] PCI: CLS 0 bytes, default 64
-[    0.750245] hw perfevents: enabled with armv8_pmuv3 PMU driver, 7 counters available
-[    0.753260] kvm [1]: HYP mode not available
-[    0.761841] Initialise system trusted keyrings
-[    0.766812] workingset: timestamp_bits=42 max_order=19 bucket_order=0
-[    0.801250] squashfs: version 4.0 (2009/01/31) Phillip Lougher
-[    0.809769] NFS: Registering the id_resolver key type
-[    0.811688] Key type id_resolver registered
-[    0.812579] Key type id_legacy registered
-[    0.814235] nfs4filelayout_init: NFSv4 File Layout Driver Registering...
-[    0.815839] nfs4flexfilelayout_init: NFSv4 Flexfile Layout Driver Registering...
-[    0.819165] 9p: Installing v9fs 9p2000 file system support
-[    0.857727] Key type asymmetric registered
-[    0.858841] Asymmetric key parser 'x509' registered
-[    0.860372] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 245)
-[    0.861738] io scheduler mq-deadline registered
-[    0.862781] io scheduler kyber registered
-[    0.963473] pl061_gpio 9030000.pl061: PL061 GPIO chip registered
-[    0.978809] pci-host-generic 4010000000.pcie: host bridge /pcie@10000000 ranges:
-[    0.981619] pci-host-generic 4010000000.pcie:       IO 0x003eff0000..0x003effffff -> 0x0000000000
-[    0.984613] pci-host-generic 4010000000.pcie:      MEM 0x0010000000..0x003efeffff -> 0x0010000000
-[    0.986313] pci-host-generic 4010000000.pcie:      MEM 0x8000000000..0xffffffffff -> 0x8000000000
-[    0.989684] pci-host-generic 4010000000.pcie: Memory resource size exceeds max for 32 bits
-[    0.992351] pci-host-generic 4010000000.pcie: ECAM at [mem 0x4010000000-0x401fffffff] for [bus 00-ff]
-[    0.996603] pci-host-generic 4010000000.pcie: PCI host bridge to bus 0000:00
-[    0.998219] pci_bus 0000:00: root bus resource [bus 00-ff]
-[    0.999758] pci_bus 0000:00: root bus resource [io  0x0000-0xffff]
-[    1.000956] pci_bus 0000:00: root bus resource [mem 0x10000000-0x3efeffff]
-[    1.002180] pci_bus 0000:00: root bus resource [mem 0x8000000000-0xffffffffff]
-[    1.007563] pci 0000:00:00.0: [1b36:0008] type 00 class 0x060000
-[    1.015560] pci 0000:00:01.0: [1af4:1000] type 00 class 0x020000
-[    1.017404] pci 0000:00:01.0: reg 0x10: [io  0x0100-0x011f]
-[    1.019964] pci 0000:00:01.0: reg 0x14: [mem 0x10002000-0x10002fff]
-[    1.023457] pci 0000:00:01.0: reg 0x20: [mem 0x8000000000-0x8000003fff 64bit pref]
-[    1.027488] pci 0000:00:02.0: [1af4:1001] type 00 class 0x010000
-[    1.029156] pci 0000:00:02.0: reg 0x10: [io  0x0080-0x00ff]
-[    1.031452] pci 0000:00:02.0: reg 0x14: [mem 0x10001000-0x10001fff]
-[    1.035153] pci 0000:00:02.0: reg 0x20: [mem 0x8000004000-0x8000007fff 64bit pref]
-[    1.040023] pci 0000:00:03.0: [1af4:1001] type 00 class 0x010000
-[    1.042473] pci 0000:00:03.0: reg 0x10: [io  0x0000-0x007f]
-[    1.045223] pci 0000:00:03.0: reg 0x14: [mem 0x10000000-0x10000fff]
-[    1.048162] pci 0000:00:03.0: reg 0x20: [mem 0x8000008000-0x800000bfff 64bit pref]
-[    1.057928] pci 0000:00:01.0: BAR 4: assigned [mem 0x8000000000-0x8000003fff 64bit pref]
-[    1.060304] pci 0000:00:02.0: BAR 4: assigned [mem 0x8000004000-0x8000007fff 64bit pref]
-[    1.061793] pci 0000:00:03.0: BAR 4: assigned [mem 0x8000008000-0x800000bfff 64bit pref]
-[    1.063951] pci 0000:00:01.0: BAR 1: assigned [mem 0x10000000-0x10000fff]
-[    1.065304] pci 0000:00:02.0: BAR 1: assigned [mem 0x10001000-0x10001fff]
-[    1.066472] pci 0000:00:03.0: BAR 1: assigned [mem 0x10002000-0x10002fff]
-[    1.067512] pci 0000:00:02.0: BAR 0: assigned [io  0x1000-0x107f]
-[    1.069028] pci 0000:00:03.0: BAR 0: assigned [io  0x1080-0x10ff]
-[    1.070552] pci 0000:00:01.0: BAR 0: assigned [io  0x1100-0x111f]
-[    1.088634] EINJ: ACPI disabled.
-[    1.168051] virtio-pci 0000:00:01.0: enabling device (0005 -> 0007)
-[    1.173454] virtio-pci 0000:00:02.0: enabling device (0005 -> 0007)
-[    1.176559] virtio-pci 0000:00:03.0: enabling device (0005 -> 0007)
-[    1.207015] Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
-[    1.217775] SuperH (H)SCI(F) driver initialized
-[    1.220962] msm_serial: driver initialized
-[    1.227600] tpm_tis c000000.tpm_tis: 2.0 TPM (device-id 0x1, rev-id 1)
-[    1.249534] cacheinfo: Unable to detect cache hierarchy for CPU 0
-[    1.288821] loop: module loaded
-[    1.293568] virtio_blk virtio1: 2/0/0 default/read/poll queues
-[    1.310880] virtio_blk virtio1: [vda] 1128482 512-byte logical blocks (578 MB/551 MiB)
-[    1.346611]  vda: vda1 vda2 vda3
-[    1.360465] virtio_blk virtio2: 2/0/0 default/read/poll queues
-[    1.364239] virtio_blk virtio2: [vdb] 409600 512-byte logical blocks (210 MB/200 MiB)
-[    1.375250] megasas: 07.719.03.00-rc1
-[    1.397621] tun: Universal TUN/TAP device driver, 1.6
-[    1.412050] thunder_xcv, ver 1.0
-[    1.412758] thunder_bgx, ver 1.0
-[    1.413374] nicpf, ver 1.0
-[    1.417089] hns3: Hisilicon Ethernet Network Driver for Hip08 Family - version
-[    1.418092] hns3: Copyright (c) 2017 Huawei Corporation.
-[    1.419606] hclge is initializing
-[    1.420309] e1000: Intel(R) PRO/1000 Network Driver
-[    1.421027] e1000: Copyright (c) 1999-2006 Intel Corporation.
-[    1.422103] e1000e: Intel(R) PRO/1000 Network Driver
-[    1.423020] e1000e: Copyright(c) 1999 - 2015 Intel Corporation.
-[    1.424319] igb: Intel(R) Gigabit Ethernet Network Driver
-[    1.425051] igb: Copyright (c) 2007-2014 Intel Corporation.
-[    1.426296] igbvf: Intel(R) Gigabit Virtual Function Network Driver
-[    1.427443] igbvf: Copyright (c) 2009 - 2012 Intel Corporation.
-[    1.430411] sky2: driver version 1.30
-[    1.437314] VFIO - User Level meta-driver version: 0.3
-[    1.450202] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
-[    1.451790] ehci-pci: EHCI PCI platform driver
-[    1.452991] ehci-platform: EHCI generic platform driver
-[    1.454405] ehci-orion: EHCI orion driver
-[    1.455913] ehci-exynos: EHCI Exynos driver
-[    1.457407] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
-[    1.459141] ohci-pci: OHCI PCI platform driver
-[    1.461427] ohci-platform: OHCI generic platform driver
-[    1.462967] ohci-exynos: OHCI Exynos driver
-[    1.467572] usbcore: registered new interface driver usb-storage
-[    1.488183] rtc-efi rtc-efi.0: registered as rtc0
-[    1.491539] rtc-efi rtc-efi.0: setting system clock to 2023-08-01T09:26:30 UTC (1690881990)
-[    1.497327] i2c_dev: i2c /dev entries driver
-[    1.537531] sdhci: Secure Digital Host Controller Interface driver
-[    1.538780] sdhci: Copyright(c) Pierre Ossman
-[    1.545247] Synopsys Designware Multimedia Card Interface Driver
-[    1.550223] sdhci-pltfm: SDHCI platform and OF driver helper
-[    1.564537] ledtrig-cpu: registered to indicate activity on CPUs
-[    1.571345] pstore: Registered efi as persistent store backend
-[    1.583052] usbcore: registered new interface driver usbhid
-[    1.584360] usbhid: USB HID core driver
-[    1.617299] NET: Registered PF_PACKET protocol family
-[    1.621606] 9pnet: Installing 9P2000 support
-[    1.623059] Key type dns_resolver registered
-[    1.627563] registered taskstats version 1
-[    1.628546] Loading compiled-in X.509 certificates
-[    1.635119] pstore: Using crash dump compression: deflate
-[    1.692908] input: gpio-keys as /devices/platform/gpio-keys/input/input0
-[    1.705896] ALSA device list:
-[    1.706620]   No soundcards found.
-[    1.716220] uart-pl011 9000000.pl011: no DMA platform data
-[    1.741937] EXT4-fs (vda2): INFO: recovery required on readonly filesystem
-[    1.743100] EXT4-fs (vda2): write access will be enabled during recovery
-[    1.804753] EXT4-fs (vda2): recovery complete
-[    1.813249] EXT4-fs (vda2): mounted filesystem with ordered data mode. Quota mode: none.
-[    1.815358] VFS: Mounted root (ext4 filesystem) readonly on device 254:2.
-[    1.820596] devtmpfs: mounted
-[    1.921696] Freeing unused kernel memory: 7168K
-[    1.925337] Run /sbin/init as init process
-[    2.363494] NET: Registered PF_INET6 protocol family
-[    2.378516] Segment Routing with IPv6
-[    2.379657] In-situ OAM (IOAM) with IPv6
-[    2.569373] systemd[1]: systemd 251.8+ running in system mode (-PAM -AUDIT -SELINUX -APPARMOR +IMA -SMACK +SECCOMP -GCRYPT -GNUTLS -OPENSSL +ACL +BLKID -CURL -ELFUTILS -FIDO2 -IDN2 -IDN -IPTC +KMOD -LIBCRYPTSETUP +LIBFDISK -PCRE2 -PWQUALITY -P11KIT -QRENCODE -TPM2 -BZIP2 -LZ4 -XZ -ZLIB +ZSTD -BPF_FRAMEWORK -XKBCOMMON +UTMP +SYSVINIT default-hierarchy=hybrid)
-[    2.574901] systemd[1]: Detected virtualization qemu.
-[    2.576196] systemd[1]: Detected architecture arm64.
+[    0.000125] sched_clock: 57 bits at 63MHz, resolution 16ns, wraps every 4398046511096ns
+[    0.015931] Console: colour dummy device 80x25
+[    0.018973] printk: console [tty0] enabled
+[    0.021559] Calibrating delay loop (skipped), value calculated using timer frequency.. 125.00 BogoMIPS (lpj=250000)
+[    0.021770] pid_max: default: 32768 minimum: 301
+[    0.022748] LSM: Security Framework initializing
+[    0.026725] Mount-cache hash table entries: 4096 (order: 3, 32768 bytes, linear)
+[    0.026827] Mountpoint-cache hash table entries: 4096 (order: 3, 32768 bytes, linear)
+[    0.082823] cacheinfo: Unable to detect cache hierarchy for CPU 0
+[    0.099213] cblist_init_generic: Setting adjustable number of callback queues.
+[    0.099449] cblist_init_generic: Setting shift to 1 and lim to 1.
+[    0.099928] cblist_init_generic: Setting shift to 1 and lim to 1.
+[    0.101729] rcu: Hierarchical SRCU implementation.
+[    0.101803] rcu: 	Max phase no-delay instances is 1000.
+[    0.109921] Remapping and enabling EFI services.
+[    0.113893] smp: Bringing up secondary CPUs ...
+[    0.117491] Detected PIPT I-cache on CPU1
+[    0.118348] cacheinfo: Unable to detect cache hierarchy for CPU 1
+[    0.118707] CPU1: Booted secondary processor 0x0000000001 [0x411fd070]
+[    0.123143] smp: Brought up 1 node, 2 CPUs
+[    0.123298] SMP: Total of 2 processors activated.
+[    0.123396] CPU features: detected: 32-bit EL0 Support
+[    0.123441] CPU features: detected: 32-bit EL1 Support
+[    0.123539] CPU features: detected: CRC32 instructions
+[    0.130338] CPU: All CPU(s) started at EL1
+[    0.130888] alternatives: patching kernel code
+[    0.167824] devtmpfs: initialized
+[    0.183843] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+[    0.184138] futex hash table entries: 512 (order: 3, 32768 bytes, linear)
+[    0.189417] pinctrl core: initialized pinctrl subsystem
+[    0.205611] SMBIOS 3.0.0 present.
+[    0.206027] DMI: QEMU QEMU Virtual Machine, BIOS unknown 2/2/2022
+[    0.218328] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+[    0.232874] DMA: preallocated 256 KiB GFP_KERNEL pool for atomic allocations
+[    0.234403] DMA: preallocated 256 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+[    0.234972] DMA: preallocated 256 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+[    0.235385] audit: initializing netlink subsys (disabled)
+[    0.238474] audit: type=2000 audit(0.196:1): state=initialized audit_enabled=0 res=1
+[    0.244310] thermal_sys: Registered thermal governor 'step_wise'
+[    0.244373] thermal_sys: Registered thermal governor 'power_allocator'
+[    0.245091] cpuidle: using governor menu
+[    0.246320] hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+[    0.247167] ASID allocator initialised with 32768 entries
+[    0.253512] Serial: AMBA PL011 UART driver
+[    0.294429] 9000000.pl011: ttyAMA0 at MMIO 0x9000000 (irq = 13, base_baud = 0) is a PL011 rev1
+[    0.359455] printk: console [ttyAMA0] enabled
+[    0.388169] KASLR enabled
+[    0.421445] HugeTLB: registered 1.00 GiB page size, pre-allocated 0 pages
+[    0.422338] HugeTLB: 16380 KiB vmemmap can be freed for a 1.00 GiB page
+[    0.423352] HugeTLB: registered 32.0 MiB page size, pre-allocated 0 pages
+[    0.424178] HugeTLB: 508 KiB vmemmap can be freed for a 32.0 MiB page
+[    0.424894] HugeTLB: registered 2.00 MiB page size, pre-allocated 0 pages
+[    0.425636] HugeTLB: 28 KiB vmemmap can be freed for a 2.00 MiB page
+[    0.426336] HugeTLB: registered 64.0 KiB page size, pre-allocated 0 pages
+[    0.427075] HugeTLB: 0 KiB vmemmap can be freed for a 64.0 KiB page
+[    0.443567] ACPI: Interpreter disabled.
+[    0.454251] iommu: Default domain type: Translated 
+[    0.454908] iommu: DMA domain TLB invalidation policy: strict mode 
+[    0.458264] SCSI subsystem initialized
+[    0.462170] usbcore: registered new interface driver usbfs
+[    0.463104] usbcore: registered new interface driver hub
+[    0.463952] usbcore: registered new device driver usb
+[    0.467487] pps_core: LinuxPPS API ver. 1 registered
+[    0.468108] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.469354] PTP clock support registered
+[    0.470665] EDAC MC: Ver: 3.0.0
+[    0.479591] Registered efivars operations
+[    0.486822] FPGA manager framework
+[    0.488602] Advanced Linux Sound Architecture Driver Initialized.
+[    0.501872] vgaarb: loaded
+[    0.505511] clocksource: Switched to clocksource arch_sys_counter
+[    0.512767] VFS: Disk quotas dquot_6.6.0
+[    0.514572] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    0.518267] pnp: PnP ACPI: disabled
+[    0.569626] NET: Registered PF_INET protocol family
+[    0.572742] IP idents hash table entries: 32768 (order: 6, 262144 bytes, linear)
+[    0.585201] tcp_listen_portaddr_hash hash table entries: 1024 (order: 2, 16384 bytes, linear)
+[    0.586586] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[    0.587754] TCP established hash table entries: 16384 (order: 5, 131072 bytes, linear)
+[    0.589116] TCP bind hash table entries: 16384 (order: 6, 262144 bytes, linear)
+[    0.590599] TCP: Hash tables configured (established 16384 bind 16384)
+[    0.593695] UDP hash table entries: 1024 (order: 3, 32768 bytes, linear)
+[    0.594770] UDP-Lite hash table entries: 1024 (order: 3, 32768 bytes, linear)
+[    0.597697] NET: Registered PF_UNIX/PF_LOCAL protocol family
+[    0.604381] RPC: Registered named UNIX socket transport module.
+[    0.605134] RPC: Registered udp transport module.
+[    0.606305] RPC: Registered tcp transport module.
+[    0.606820] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    0.607617] PCI: CLS 0 bytes, default 64
+[    0.624775] hw perfevents: enabled with armv8_pmuv3 PMU driver, 7 counters available
+[    0.627286] kvm [1]: HYP mode not available
+[    0.633694] Initialise system trusted keyrings
+[    0.637592] workingset: timestamp_bits=42 max_order=19 bucket_order=0
+[    0.662963] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    0.667811] NFS: Registering the id_resolver key type
+[    0.668967] Key type id_resolver registered
+[    0.669700] Key type id_legacy registered
+[    0.670680] nfs4filelayout_init: NFSv4 File Layout Driver Registering...
+[    0.671475] nfs4flexfilelayout_init: NFSv4 Flexfile Layout Driver Registering...
+[    0.673955] 9p: Installing v9fs 9p2000 file system support
+[    0.709981] Key type asymmetric registered
+[    0.710763] Asymmetric key parser 'x509' registered
+[    0.711840] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 245)
+[    0.712950] io scheduler mq-deadline registered
+[    0.713916] io scheduler kyber registered
+[    0.760780] pl061_gpio 9030000.pl061: PL061 GPIO chip registered
+[    0.773584] pci-host-generic 4010000000.pcie: host bridge /pcie@10000000 ranges:
+[    0.775674] pci-host-generic 4010000000.pcie:       IO 0x003eff0000..0x003effffff -> 0x0000000000
+[    0.777951] pci-host-generic 4010000000.pcie:      MEM 0x0010000000..0x003efeffff -> 0x0010000000
+[    0.779065] pci-host-generic 4010000000.pcie:      MEM 0x8000000000..0xffffffffff -> 0x8000000000
+[    0.780728] pci-host-generic 4010000000.pcie: Memory resource size exceeds max for 32 bits
+[    0.782919] pci-host-generic 4010000000.pcie: ECAM at [mem 0x4010000000-0x401fffffff] for [bus 00-ff]
+[    0.786264] pci-host-generic 4010000000.pcie: PCI host bridge to bus 0000:00
+[    0.787375] pci_bus 0000:00: root bus resource [bus 00-ff]
+[    0.788131] pci_bus 0000:00: root bus resource [io  0x0000-0xffff]
+[    0.788956] pci_bus 0000:00: root bus resource [mem 0x10000000-0x3efeffff]
+[    0.789894] pci_bus 0000:00: root bus resource [mem 0x8000000000-0xffffffffff]
+[    0.793175] pci 0000:00:00.0: [1b36:0008] type 00 class 0x060000
+[    0.799855] pci 0000:00:01.0: [1af4:1000] type 00 class 0x020000
+[    0.801679] pci 0000:00:01.0: reg 0x10: [io  0x0100-0x011f]
+[    0.802770] pci 0000:00:01.0: reg 0x14: [mem 0x10002000-0x10002fff]
+[    0.804631] pci 0000:00:01.0: reg 0x20: [mem 0x8000000000-0x8000003fff 64bit pref]
+[    0.807545] pci 0000:00:02.0: [1af4:1001] type 00 class 0x010000
+[    0.809024] pci 0000:00:02.0: reg 0x10: [io  0x0080-0x00ff]
+[    0.810542] pci 0000:00:02.0: reg 0x14: [mem 0x10001000-0x10001fff]
+[    0.813007] pci 0000:00:02.0: reg 0x20: [mem 0x8000004000-0x8000007fff 64bit pref]
+[    0.815613] pci 0000:00:03.0: [1af4:1001] type 00 class 0x010000
+[    0.817043] pci 0000:00:03.0: reg 0x10: [io  0x0000-0x007f]
+[    0.818288] pci 0000:00:03.0: reg 0x14: [mem 0x10000000-0x10000fff]
+[    0.820040] pci 0000:00:03.0: reg 0x20: [mem 0x8000008000-0x800000bfff 64bit pref]
+[    0.825064] pci 0000:00:01.0: BAR 4: assigned [mem 0x8000000000-0x8000003fff 64bit pref]
+[    0.827085] pci 0000:00:02.0: BAR 4: assigned [mem 0x8000004000-0x8000007fff 64bit pref]
+[    0.828079] pci 0000:00:03.0: BAR 4: assigned [mem 0x8000008000-0x800000bfff 64bit pref]
+[    0.828975] pci 0000:00:01.0: BAR 1: assigned [mem 0x10000000-0x10000fff]
+[    0.829920] pci 0000:00:02.0: BAR 1: assigned [mem 0x10001000-0x10001fff]
+[    0.830638] pci 0000:00:03.0: BAR 1: assigned [mem 0x10002000-0x10002fff]
+[    0.831372] pci 0000:00:02.0: BAR 0: assigned [io  0x1000-0x107f]
+[    0.832317] pci 0000:00:03.0: BAR 0: assigned [io  0x1080-0x10ff]
+[    0.833227] pci 0000:00:01.0: BAR 0: assigned [io  0x1100-0x111f]
+[    0.845158] EINJ: ACPI disabled.
+[    0.894442] virtio-pci 0000:00:01.0: enabling device (0005 -> 0007)
+[    0.899987] virtio-pci 0000:00:02.0: enabling device (0005 -> 0007)
+[    0.903014] virtio-pci 0000:00:03.0: enabling device (0005 -> 0007)
+[    0.933611] Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+[    0.946499] SuperH (H)SCI(F) driver initialized
+[    0.948827] msm_serial: driver initialized
+[    0.955376] tpm_tis c000000.tpm_tis: 2.0 TPM (device-id 0x1, rev-id 1)
+[    0.970947] cacheinfo: Unable to detect cache hierarchy for CPU 0
+[    1.010864] loop: module loaded
+[    1.012524] virtio_blk virtio1: 2/0/0 default/read/poll queues
+[    1.028384] virtio_blk virtio1: [vda] 1200142 512-byte logical blocks (614 MB/586 MiB)
+[    1.054778]  vda: vda1 vda2
+[    1.065188] virtio_blk virtio2: 2/0/0 default/read/poll queues
+[    1.068719] virtio_blk virtio2: [vdb] 409600 512-byte logical blocks (210 MB/200 MiB)
+[    1.077828] megasas: 07.719.03.00-rc1
+[    1.099691] tun: Universal TUN/TAP device driver, 1.6
+[    1.116974] thunder_xcv, ver 1.0
+[    1.117914] thunder_bgx, ver 1.0
+[    1.118421] nicpf, ver 1.0
+[    1.124293] hns3: Hisilicon Ethernet Network Driver for Hip08 Family - version
+[    1.125030] hns3: Copyright (c) 2017 Huawei Corporation.
+[    1.126350] hclge is initializing
+[    1.126931] e1000: Intel(R) PRO/1000 Network Driver
+[    1.127435] e1000: Copyright (c) 1999-2006 Intel Corporation.
+[    1.128252] e1000e: Intel(R) PRO/1000 Network Driver
+[    1.128713] e1000e: Copyright(c) 1999 - 2015 Intel Corporation.
+[    1.129561] igb: Intel(R) Gigabit Ethernet Network Driver
+[    1.130019] igb: Copyright (c) 2007-2014 Intel Corporation.
+[    1.130636] igbvf: Intel(R) Gigabit Virtual Function Network Driver
+[    1.131159] igbvf: Copyright (c) 2009 - 2012 Intel Corporation.
+[    1.133209] sky2: driver version 1.30
+[    1.139001] VFIO - User Level meta-driver version: 0.3
+[    1.147139] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    1.148205] ehci-pci: EHCI PCI platform driver
+[    1.148959] ehci-platform: EHCI generic platform driver
+[    1.150223] ehci-orion: EHCI orion driver
+[    1.150996] ehci-exynos: EHCI Exynos driver
+[    1.151703] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[    1.152539] ohci-pci: OHCI PCI platform driver
+[    1.153498] ohci-platform: OHCI generic platform driver
+[    1.154424] ohci-exynos: OHCI Exynos driver
+[    1.156610] usbcore: registered new interface driver usb-storage
+[    1.170012] rtc-efi rtc-efi.0: registered as rtc0
+[    1.172056] rtc-efi rtc-efi.0: setting system clock to 2023-08-29T02:52:13 UTC (1693277533)
+[    1.177164] i2c_dev: i2c /dev entries driver
+[    1.197376] sdhci: Secure Digital Host Controller Interface driver
+[    1.198080] sdhci: Copyright(c) Pierre Ossman
+[    1.202528] Synopsys Designware Multimedia Card Interface Driver
+[    1.206746] sdhci-pltfm: SDHCI platform and OF driver helper
+[    1.215494] ledtrig-cpu: registered to indicate activity on CPUs
+[    1.223175] pstore: Registered efi as persistent store backend
+[    1.231482] usbcore: registered new interface driver usbhid
+[    1.232151] usbhid: USB HID core driver
+[    1.252721] NET: Registered PF_PACKET protocol family
+[    1.255302] 9pnet: Installing 9P2000 support
+[    1.256272] Key type dns_resolver registered
+[    1.258484] registered taskstats version 1
+[    1.259254] Loading compiled-in X.509 certificates
+[    1.265088] pstore: Using crash dump compression: deflate
+[    1.311590] input: gpio-keys as /devices/platform/gpio-keys/input/input0
+[    1.320701] ALSA device list:
+[    1.321187]   No soundcards found.
+[    1.329795] uart-pl011 9000000.pl011: no DMA platform data
+[    1.354681] EXT4-fs (vda2): INFO: recovery required on readonly filesystem
+[    1.355527] EXT4-fs (vda2): write access will be enabled during recovery
+[    1.513054] EXT4-fs (vda2): recovery complete
+[    1.518906] EXT4-fs (vda2): mounted filesystem with ordered data mode. Quota mode: none.
+[    1.520190] VFS: Mounted root (ext4 filesystem) readonly on device 254:2.
+[    1.523861] devtmpfs: mounted
+[    1.628183] Freeing unused kernel memory: 7168K
+[    1.630412] Run /sbin/init as init process
+[    1.983588] NET: Registered PF_INET6 protocol family
+[    1.998194] Segment Routing with IPv6
+[    1.999073] In-situ OAM (IOAM) with IPv6
+[    2.181593] systemd[1]: systemd 251.8+ running in system mode (-PAM -AUDIT -SELINUX -APPARMOR +IMA -SMACK +SECCOMP -GCRYPT -GNUTLS -OPENSSL +ACL +BLKID -CURL -ELFUTILS -FIDO2 -IDN2 -IDN -IPTC +KMOD -LIBCRYPTSETUP +LIBFDISK -PCRE2 -PWQUALITY -P11KIT -QRENCODE -TPM2 -BZIP2 -LZ4 -XZ -ZLIB +ZSTD -BPF_FRAMEWORK -XKBCOMMON +UTMP +SYSVINIT default-hierarchy=hybrid)
+[    2.185904] systemd[1]: Detected virtualization qemu.
+[    2.187034] systemd[1]: Detected architecture arm64.
 
 Welcome to [1mWoden 0.0 (master)[0m!
 
-[    2.688499] systemd[1]: Hostname set to <generic-arm64>.
-[    4.821568] systemd[1]: Queued start job for default target Multi-User System.
-[    5.252156] systemd[1]: Created slice Slice /system/getty.
+[    2.290854] systemd[1]: Hostname set to <generic-arm64>.
+[    4.227614] systemd[1]: Queued start job for default target Multi-User System.
+[    4.598416] systemd[1]: Created slice Slice /system/getty.
 [[0;32m  OK  [0m] Created slice [0;1;39mSlice /system/getty[0m.
-[    5.276859] systemd[1]: Created slice Slice /system/modprobe.
+[    4.625866] systemd[1]: Created slice Slice /system/modprobe.
 [[0;32m  OK  [0m] Created slice [0;1;39mSlice /system/modprobe[0m.
-[    5.298426] systemd[1]: Created slice Slice /system/serial-getty.
+[    4.646060] systemd[1]: Created slice Slice /system/serial-getty.
 [[0;32m  OK  [0m] Created slice [0;1;39mSlice /system/serial-getty[0m.
-[    5.317951] systemd[1]: Created slice User and Session Slice.
+[    4.663526] systemd[1]: Created slice User and Session Slice.
 [[0;32m  OK  [0m] Created slice [0;1;39mUser and Session Slice[0m.
-[    5.327052] systemd[1]: Started Dispatch Password Requests to Console Directory Watch.
+[    4.674005] systemd[1]: Started Dispatch Password Requests to Console Directory Watch.
 [[0;32m  OK  [0m] Started [0;1;39mDispatch Password …ts to Console Directory Watch[0m.
-[    5.341570] systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+[    4.683454] systemd[1]: Started Forward Password Requests to Wall Directory Watch.
 [[0;32m  OK  [0m] Started [0;1;39mForward Password R…uests to Wall Directory Watch[0m.
-[    5.351359] systemd[1]: Reached target Path Units.
+[    4.690448] systemd[1]: Reached target Path Units.
 [[0;32m  OK  [0m] Reached target [0;1;39mPath Units[0m.
-[    5.356106] systemd[1]: Reached target Remote File Systems.
+[    4.694645] systemd[1]: Reached target Remote File Systems.
 [[0;32m  OK  [0m] Reached target [0;1;39mRemote File Systems[0m.
-[    5.363577] systemd[1]: Reached target Slice Units.
+[    4.698180] systemd[1]: Reached target Slice Units.
 [[0;32m  OK  [0m] Reached target [0;1;39mSlice Units[0m.
-[    5.368458] systemd[1]: Reached target Swaps.
+[    4.701989] systemd[1]: Reached target Swaps.
 [[0;32m  OK  [0m] Reached target [0;1;39mSwaps[0m.
-[    5.387754] systemd[1]: Listening on Syslog Socket.
+[    4.715588] systemd[1]: Listening on Syslog Socket.
 [[0;32m  OK  [0m] Listening on [0;1;39mSyslog Socket[0m.
-[    5.397606] systemd[1]: Listening on initctl Compatibility Named Pipe.
+[    4.723679] systemd[1]: Listening on initctl Compatibility Named Pipe.
 [[0;32m  OK  [0m] Listening on [0;1;39minitctl Compatibility Named Pipe[0m.
-[    5.417021] systemd[1]: Listening on Journal Audit Socket.
+[    4.736093] systemd[1]: Listening on Journal Audit Socket.
 [[0;32m  OK  [0m] Listening on [0;1;39mJournal Audit Socket[0m.
-[    5.430358] systemd[1]: Listening on Journal Socket (/dev/log).
+[    4.746737] systemd[1]: Listening on Journal Socket (/dev/log).
 [[0;32m  OK  [0m] Listening on [0;1;39mJournal Socket (/dev/log)[0m.
-[    5.447721] systemd[1]: Listening on Journal Socket.
+[    4.758115] systemd[1]: Listening on Journal Socket.
 [[0;32m  OK  [0m] Listening on [0;1;39mJournal Socket[0m.
-[    5.463991] systemd[1]: Listening on Network Service Netlink Socket.
+[    4.769809] systemd[1]: Listening on Network Service Netlink Socket.
 [[0;32m  OK  [0m] Listening on [0;1;39mNetwork Service Netlink Socket[0m.
-[    5.476929] systemd[1]: Listening on udev Control Socket.
+[    4.779788] systemd[1]: Listening on udev Control Socket.
 [[0;32m  OK  [0m] Listening on [0;1;39mudev Control Socket[0m.
-[    5.487238] systemd[1]: Listening on udev Kernel Socket.
+[    4.787637] systemd[1]: Listening on udev Kernel Socket.
 [[0;32m  OK  [0m] Listening on [0;1;39mudev Kernel Socket[0m.
-[    5.496537] systemd[1]: Listening on User Database Manager Socket.
+[    4.795659] systemd[1]: Listening on User Database Manager Socket.
 [[0;32m  OK  [0m] Listening on [0;1;39mUser Database Manager Socket[0m.
-[    5.598146] systemd[1]: Mounting Huge Pages File System...
+[    4.861717] systemd[1]: Mounting Huge Pages File System...
          Mounting [0;1;39mHuge Pages File System[0m...
-[    5.715942] systemd[1]: Mounting POSIX Message Queue File System...
+[    4.949220] systemd[1]: Mounting POSIX Message Queue File System...
          Mounting [0;1;39mPOSIX Message Queue File System[0m...
-[    5.775237] systemd[1]: Mounting Kernel Debug File System...
+[    5.013002] systemd[1]: Mounting Kernel Debug File System...
          Mounting [0;1;39mKernel Debug File System[0m...
-[    5.784933] systemd[1]: Kernel Trace File System was skipped because of a failed condition check (ConditionPathExists=/sys/kernel/tracing).
-[    5.872422] systemd[1]: Mounting Temporary Directory /tmp...
+[    5.026895] systemd[1]: Kernel Trace File System was skipped because of a failed condition check (ConditionPathExists=/sys/kernel/tracing).
+[    5.089086] systemd[1]: Mounting Temporary Directory /tmp...
          Mounting [0;1;39mTemporary Directory /tmp[0m...
-[    5.884043] systemd[1]: Create List of Static Device Nodes was skipped because of a failed condition check (ConditionFileNotEmpty=/lib/modules/6.0.0-yocto-standard/modules.devname).
-[    5.962139] systemd[1]: Starting Load Kernel Module configfs...
+[    5.095332] systemd[1]: Create List of Static Device Nodes was skipped because of a failed condition check (ConditionFileNotEmpty=/lib/modules/6.0.0-yocto-standard/modules.devname).
+[    5.152327] systemd[1]: Starting Load Kernel Module configfs...
          Starting [0;1;39mLoad Kernel Module configfs[0m...
-[    6.046928] systemd[1]: Starting Load Kernel Module drm...
+[    5.192969] systemd[1]: Starting Load Kernel Module drm...
          Starting [0;1;39mLoad Kernel Module drm[0m...
-[    6.137424] systemd[1]: Starting Load Kernel Module fuse...
+[    5.232338] systemd[1]: Starting Load Kernel Module fuse...
          Starting [0;1;39mLoad Kernel Module fuse[0m...
-[    6.219620] systemd[1]: Starting File System Check on Root Device...
+[    5.299160] systemd[1]: Starting File System Check on Root Device...
          Starting [0;1;39mFile System Check on Root Device[0m...
-[    6.351950] systemd[1]: Starting Journal Service...
+[    5.418544] systemd[1]: Starting Journal Service...
          Starting [0;1;39mJournal Service[0m...
-[    6.380636] systemd[1]: Load Kernel Modules was skipped because all trigger condition checks failed.
-[    6.468756] systemd[1]: Starting Generate network units from Kernel command line...
+[    5.452200] systemd[1]: Load Kernel Modules was skipped because all trigger condition checks failed.
+[    5.545954] systemd[1]: Starting Generate network units from Kernel command line...
          Starting [0;1;39mGenerate network …ts from Kernel command line[0m...
-[    6.630318] systemd[1]: Starting Apply Kernel Variables...
+[    5.681058] systemd[1]: Starting Apply Kernel Variables...
          Starting [0;1;39mApply Kernel Variables[0m...
-[    6.783717] systemd[1]: Starting Coldplug All udev Devices...
+[    5.815153] systemd[1]: Starting Coldplug All udev Devices...
          Starting [0;1;39mColdplug All udev Devices[0m...
-[    7.047187] systemd[1]: Mounted Huge Pages File System.
+[    6.047898] systemd[1]: Mounted Huge Pages File System.
 [[0;32m  OK  [0m] Mounted [0;1;39mHuge Pages File System[0m.
-[    7.095945] systemd[1]: Mounted POSIX Message Queue File System.
+[    6.079696] systemd[1]: Mounted POSIX Message Queue File System.
 [[0;32m  OK  [0m] Mounted [0;1;39mPOSIX Message Queue File System[0m.
-[    7.149137] systemd[1]: Mounted Kernel Debug File System.
+[    6.103072] systemd[1]: Mounted Kernel Debug File System.
 [[0;32m  OK  [0m] Mounted [0;1;39mKernel Debug File System[0m.
-[    7.168219] systemd[1]: Mounted Temporary Directory /tmp.
+[    6.122752] systemd[1]: Mounted Temporary Directory /tmp.
 [[0;32m  OK  [0m] Mounted [0;1;39mTemporary Directory /tmp[0m.
-[    7.218999] systemd[1]: modprobe@configfs.service: Deactivated successfully.
-[    7.265299] systemd[1]: Finished Load Kernel Module configfs.
+[    6.173090] systemd[1]: modprobe@configfs.service: Deactivated successfully.
+[    6.198623] systemd[1]: Finished Load Kernel Module configfs.
 [[0;32m  OK  [0m] Finished [0;1;39mLoad Kernel Module configfs[0m.
-[    7.302483] systemd[1]: modprobe@drm.service: Deactivated successfully.
-[    7.333156] systemd[1]: Finished Load Kernel Module drm.
+[    6.220483] systemd[1]: modprobe@drm.service: Deactivated successfully.
+[    6.231149] systemd[1]: Finished Load Kernel Module drm.
 [[0;32m  OK  [0m] Finished [0;1;39mLoad Kernel Module drm[0m.
-[    7.385041] systemd[1]: modprobe@fuse.service: Deactivated successfully.
-[    7.414928] systemd[1]: Finished Load Kernel Module fuse.
+[    6.250477] systemd[1]: modprobe@fuse.service: Deactivated successfully.
+[    6.262804] systemd[1]: Finished Load Kernel Module fuse.
 [[0;32m  OK  [0m] Finished [0;1;39mLoad Kernel Module fuse[0m.
-[    7.471607] systemd[1]: Finished File System Check on Root Device.
+[    6.280154] systemd[1]: Finished File System Check on Root Device.
 [[0;32m  OK  [0m] Finished [0;1;39mFile System Check on Root Device[0m.
-[    7.518176] systemd[1]: Finished Generate network units from Kernel command line.
+[    6.296524] systemd[1]: Finished Generate network units from Kernel command line.
 [[0;32m  OK  [0m] Finished [0;1;39mGenerate network units from Kernel command line[0m.
-[    7.580501] systemd[1]: Finished Apply Kernel Variables.
+[    6.327375] systemd[1]: Finished Apply Kernel Variables.
 [[0;32m  OK  [0m] Finished [0;1;39mApply Kernel Variables[0m.
-[    7.608684] systemd[1]: Reached target Preparation for Network.
+[    6.341972] systemd[1]: Reached target Preparation for Network.
 [[0;32m  OK  [0m] Reached target [0;1;39mPreparation for Network[0m.
-[    7.629943] systemd[1]: FUSE Control File System was skipped because of a failed condition check (ConditionPathExists=/sys/fs/fuse/connections).
-[    7.748069] systemd[1]: Mounting Kernel Configuration File System...
+[    6.352975] systemd[1]: FUSE Control File System was skipped because of a failed condition check (ConditionPathExists=/sys/fs/fuse/connections).
+[    6.408543] systemd[1]: Mounting Kernel Configuration File System...
          Mounting [0;1;39mKernel Configuration File System[0m...
-[    7.904649] systemd[1]: Starting Remount Root and Kernel File Systems...
+[    6.518437] systemd[1]: Starting Remount Root and Kernel File Systems...
          Starting [0;1;39mRemount Root and Kernel File Systems[0m...
-[    8.048165] systemd[1]: Mounted Kernel Configuration File System.
+[    6.638601] systemd[1]: Mounted Kernel Configuration File System.
 [[0;32m  OK  [0m] Mounted [0;1;39mKernel Configuration File System[0m.
-[    8.392207] EXT4-fs (vda2): re-mounted. Quota mode: none.
-[    8.535312] systemd[1]: Finished Remount Root and Kernel File Systems.
+[    6.937815] EXT4-fs (vda2): re-mounted. Quota mode: none.
+[    7.023308] systemd[1]: Finished Remount Root and Kernel File Systems.
 [[0;32m  OK  [0m] Finished [0;1;39mRemount Root and Kernel File Systems[0m.
-[    8.557820] systemd[1]: Rebuild Hardware Database was skipped because of a failed condition check (ConditionNeedsUpdate=/etc).
-[    8.562093] systemd[1]: Platform Persistent Storage Archival was skipped because of a failed condition check (ConditionDirectoryNotEmpty=/sys/fs/pstore).
-[    8.577318] systemd[1]: Create System Users was skipped because of a failed condition check (ConditionNeedsUpdate=/etc).
-[    8.699349] systemd[1]: Starting Create Static Device Nodes in /dev...
+[    7.048768] systemd[1]: Rebuild Hardware Database was skipped because of a failed condition check (ConditionNeedsUpdate=/etc).
+[    7.062776] systemd[1]: Platform Persistent Storage Archival was skipped because of a failed condition check (ConditionDirectoryNotEmpty=/sys/fs/pstore).
+[    7.066991] systemd[1]: Create System Users was skipped because of a failed condition check (ConditionNeedsUpdate=/etc).
+[    7.138705] systemd[1]: Starting Create Static Device Nodes in /dev...
          Starting [0;1;39mCreate Static Device Nodes in /dev[0m...
-[    8.736382] systemd[1]: Started Journal Service.
+[    7.235452] systemd[1]: Started Journal Service.
 [[0;32m  OK  [0m] Started [0;1;39mJournal Service[0m.
          Starting [0;1;39mFlush Journal to Persistent Storage[0m...
-[    9.080684] systemd-journald[120]: Received client request to flush runtime journal.
+[    7.542655] systemd-journald[122]: Received client request to flush runtime journal.
 [[0;32m  OK  [0m] Finished [0;1;39mFlush Journal to Persistent Storage[0m.
 [[0;32m  OK  [0m] Finished [0;1;39mCreate Static Device Nodes in /dev[0m.
 [[0;32m  OK  [0m] Reached target [0;1;39mPreparation for Local File Systems[0m.
          Mounting [0;1;39m/var/volatile[0m...
-[    9.390162] audit: type=1334 audit(1690881998.396:2): prog-id=5 op=LOAD
-[    9.404355] audit: type=1334 audit(1690881998.412:3): prog-id=6 op=LOAD
+[    7.770862] audit: type=1334 audit(1693277540.096:2): prog-id=5 op=LOAD
+[    7.779424] audit: type=1334 audit(1693277540.104:3): prog-id=6 op=LOAD
          Starting [0;1;39mRule-based Manage…for Device Events and Files[0m...
 [[0;32m  OK  [0m] Mounted [0;1;39m/var/volatile[0m.
          Starting [0;1;39mLoad/Save Random Seed[0m...
@@ -1621,37 +1427,29 @@ Welcome to [1mWoden 0.0 (master)[0m!
 [[0;32m  OK  [0m] Started [0;1;39mRule-based Manager for Device Events and Files[0m.
          Starting [0;1;39mNetwork Configuration[0m...
 [[0;32m  OK  [0m] Started [0;1;39mNetwork Configuration[0m.
-[[0m[0;31m*     [0m] (1 of 3) A start job is running for…g All udev Devices (8s / no limit)
-M[K[[0;1;31m*[0m[0;31m*    [0m] (1 of 3) A start job is running for…g All udev Devices (9s / no limit)
-M[K[[0;31m*[0;1;31m*[0m[0;31m*   [0m] (1 of 3) A start job is running for…g All udev Devices (9s / no limit)
-M[K[ [0;31m*[0;1;31m*[0m[0;31m*  [0m] (2 of 3) A start job is running for…by-uuid/5139-7EF5 (10s / 1min 30s)
-M[K[  [0;31m*[0;1;31m*[0m[0;31m* [0m] (2 of 3) A start job is running for…by-uuid/5139-7EF5 (10s / 1min 30s)
-M[K[   [0;31m*[0;1;31m*[0m[0;31m*[0m] (2 of 3) A start job is running for…by-uuid/5139-7EF5 (11s / 1min 30s)
-M[K[    [0;31m*[0;1;31m*[0m] (3 of 3) A start job is running for…by-uuid/2B22-B45F (11s / 1min 30s)
-M[K[     [0;31m*[0m] (3 of 3) A start job is running for…by-uuid/2B22-B45F (12s / 1min 30s)
+[[0m[0;31m*     [0m] (1 of 2) A start job is running for…g All udev Devices (7s / no limit)
+M[K[[0;1;31m*[0m[0;31m*    [0m] (1 of 2) A start job is running for…g All udev Devices (8s / no limit)
+M[K[[0;31m*[0;1;31m*[0m[0;31m*   [0m] (1 of 2) A start job is running for…g All udev Devices (8s / no limit)
+M[K[ [0;31m*[0;1;31m*[0m[0;31m*  [0m] (2 of 2) A start job is running for…/by-uuid/F949-F6F7 (9s / 1min 30s)
+M[K[  [0;31m*[0;1;31m*[0m[0;31m* [0m] (2 of 2) A start job is running for…by-uuid/F949-F6F7 (10s / 1min 30s)
 M[K[[0;32m  OK  [0m] Finished [0;1;39mColdplug All udev Devices[0m.
-[K[[0;32m  OK  [0m] Found device [0;1;39m/dev/disk/by-uuid/2B22-B45F[0m.
-[[0;32m  OK  [0m] Found device [0;1;39m/dev/disk/by-uuid/5139-7EF5[0m.
+[K[[0;32m  OK  [0m] Found device [0;1;39m/dev/disk/by-uuid/F949-F6F7[0m.
          Mounting [0;1;39m/boot[0m...
-         Mounting [0;1;39m/results[0m...
-[   19.052033] FAT-fs (vda1): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
-[   19.189746] FAT-fs (vda3): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+[   16.232900] FAT-fs (vda1): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
 [[0;32m  OK  [0m] Mounted [0;1;39m/boot[0m.
-[[0;32m  OK  [0m] Mounted [0;1;39m/results[0m.
 [[0;32m  OK  [0m] Reached target [0;1;39mLocal File Systems[0m.
+[   16.337674] virtio_net virtio0 enp0s1: renamed from eth0
          Starting [0;1;39mCreate Volatile Files and Directories[0m...
 [[0;32m  OK  [0m] Finished [0;1;39mCreate Volatile Files and Directories[0m.
-[   20.126039] audit: type=1334 audit(1690882009.132:4): prog-id=7 op=LOAD
-[   20.130361] audit: type=1334 audit(1690882009.136:5): prog-id=8 op=LOAD
+[   16.971640] audit: type=1334 audit(1693277549.296:4): prog-id=7 op=LOAD
+[   16.979405] audit: type=1334 audit(1693277549.304:5): prog-id=8 op=LOAD
 [[0;32m  OK  [0m] Started [0;1;39mHardware RNG Entropy Gatherer Daemon[0m.
-[   20.445250] virtio_net virtio0 enp0s1: renamed from eth0
          Starting [0;1;39mNetwork Name Resolution[0m...
          Starting [0;1;39mNetwork Time Synchronization[0m...
          Starting [0;1;39mRecord System Boot/Shutdown in UTMP[0m...
 [[0;32m  OK  [0m] Finished [0;1;39mRecord System Boot/Shutdown in UTMP[0m.
-[    [0;31m*[0;1;31m*[0m] (1 of 2) A start job is running for…e Synchronization (18s / 1min 45s)
-M[K[[0;32m  OK  [0m] Started [0;1;39mNetwork Name Resolution[0m.
-[K[[0;32m  OK  [0m] Reached target [0;1;39mNetwork[0m.
+[[0;32m  OK  [0m] Started [0;1;39mNetwork Name Resolution[0m.
+[[0;32m  OK  [0m] Reached target [0;1;39mNetwork[0m.
 [[0;32m  OK  [0m] Reached target [0;1;39mHost and Network Name Lookups[0m.
 [[0;32m  OK  [0m] Started [0;1;39mNetwork Time Synchronization[0m.
 [[0;32m  OK  [0m] Reached target [0;1;39mSystem Initialization[0m.
@@ -1663,16 +1461,16 @@ Welcome to [1mWoden 0.0 (master)[0m!
 [[0;32m  OK  [0m] Reached target [0;1;39mBasic System[0m.
 [[0;32m  OK  [0m] Started [0;1;39mRun script with sy…emd right before login prompt[0m.
 [[0;32m  OK  [0m] Started [0;1;39mKernel Logging Service[0m.
-[   24.320465] init.sh[168]: init.sh
-[   24.324901] init.sh[168]: Mounting efivarfs ...
+[   20.182424] init.sh[170]: init.sh
+[   20.202445] init.sh[170]: Mounting efivarfs ...
 [[0;32m  OK  [0m] Started [0;1;39mSystem Logging Service[0m.
          Starting [0;1;39mD-Bus System Message Bus[0m...
 [[0;32m  OK  [0m] Started [0;1;39mGetty on tty1[0m.
 [[0;32m  OK  [0m] Started [0;1;39mSerial Getty on ttyAMA0[0m.
 [[0;32m  OK  [0m] Started [0;1;39mSerial Getty on ttyS0[0m.
 [[0;32m  OK  [0m] Reached target [0;1;39mLogin Prompts[0m.
-[   25.576309] audit: type=1334 audit(1690882014.584:6): prog-id=9 op=LOAD
-[   25.592120] audit: type=1334 audit(1690882014.600:7): prog-id=10 op=LOAD
+[   21.138297] audit: type=1334 audit(1693277553.464:6): prog-id=9 op=LOAD
+[   21.140970] audit: type=1334 audit(1693277553.464:7): prog-id=10 op=LOAD
          Starting [0;1;39mUser Login Management[0m...
 [[0;32m  OK  [0m] Started [0;1;39mD-Bus System Message Bus[0m.
 [[0;32m  OK  [0m] Started [0;1;39mUser Login Management[0m.
@@ -1684,52 +1482,36 @@ Woden 0.0 generic-arm64 ttyAMA0
 
 generic-arm64 login: root (automatic login)
 
-7[r[999;999H[6n8root@generic-arm64:~# [   29.588905] init.sh[168]: Attempting to mount the results partition ...
-[   29.952871] init.sh[168]: 254 0 vda
-[   30.016898] init.sh[198]: mknod: /dev/vda: File exists
-[   30.213000] /dev/vda: Can't open blockdev
-[   30.146641] init.sh[199]: mount: /mnt: /dev/vda already mounted or mount point busy.
-[   30.163615] init.sh[199]:        dmesg(1) may have more information after failed mount system call.
-[   30.250530] init.sh[200]: umount: /mnt: not mounted.
-[   30.525282] init.sh[168]: 254 1 vda1
-[   30.587042] init.sh[210]: mknod: /dev/vda1: File exists
-[   31.034890] init.sh[168]: 254 2 vda2
-[   31.078692] init.sh[222]: mknod: /dev/vda2: File exists
-[   31.600651] init.sh[168]: 254 3 vda3
-[   31.647979] init.sh[234]: mknod: /dev/vda3: File exists
-[   31.805006] init.sh[168]: Setting RESULT_DEVICE to /dev/vda3
-[   31.890885] init.sh[168]: Mounted the results partition on device /dev/vda3
-[   35.046807] init.sh[168]: Call SIE ACS in Linux
-[   35.177959] init.sh[242]: mount: /sys/kernel/security: securityfs already mounted on /sys/kernel/security.
-[   35.183788] init.sh[242]:        dmesg(1) may have more information after failed mount system call.
-[   40.365803] init.sh[241]: SecureBoot enabled
-[   40.371452] init.sh[241]: The system is in SecureBoot mode
-[   40.639386] init.sh[241]: Test Executed are uefirtauthvar tpm2
-[   41.634500] init.sh[258]: Test: Authenticated variable tests.
-[   43.386483] init.sh[258]:                                                                      :   0.0% /  Create authenticated variable test.                                :   0.0% -  Create authenticated variable test.                                :   4.5% \                                                                                 Create authenticated variable test.                     1 passed
-[   43.398594] init.sh[258]:   Authenticated variable test with the same authenticated variable.  :   4.5% |  Authenticated variable test with the same authenticated variable.  :   9.1% /                                                                                 Authenticated variable test with the same authentica..  1 passed
-[   43.429211] init.sh[258]:   Authenticated variable test with another valid authenticated variab:   9.1% -  Authenticated variable test with another valid authenticated variab:  13.6% \                                                                                 Authenticated variable test with another valid authe..  1 passed
-[   44.207277] init.sh[258]:   Append authenticated variable test.                                :  13.6% |  Append authenticated variable test.                                :  18.2% /                                                                                 Append authenticated variable test.                     1 passed
-[   45.086916] init.sh[258]:   Update authenticated variable test.                                :  18.2% -  Update authenticated variable test.                                :  22.7% \                                                                                 Update authenticated variable test.                     1 passed
-[   45.133730] init.sh[258]:   Authenticated variable test with old authenticated variable.       :  22.7% |  Authenticated variable test with old authenticated variable.       :  27.3% /                                                                                 Authenticated variable test with old authenticated v..  1 passed
-[   45.873586] init.sh[258]:   Delete authenticated variable test.                                :  27.3% -  Delete authenticated variable test.                                :  31.8% \                                                                                 Delete authenticated variable test.                     1 passed
-[   45.886658] init.sh[258]:   Authenticated variable test with invalid modified data.            :  31.8% |  Authenticated variable test with invalid modified data.            :  36.4% /                                                                                 Authenticated variable test with invalid modified data  1 passed
-[   45.933979] init.sh[258]:   Authenticated variable test with invalid modified timestamp.       :  36.4% -  Authenticated variable test with invalid modified timestamp.       :  40.9% \                                                                                 Authenticated variable test with invalid modified ti..  1 passed
-[   45.980085] init.sh[258]:   Authenticated variable test with different guid.                   :  40.9% |  Authenticated variable test with different guid.                   :  45.5% /                                                                                 Authenticated variable test with different guid.        1 passed
-[   47.753543] init.sh[258]:   Set and delete authenticated variable created by different key test:  45.5% -  Set and delete authenticated variable created by different key test:  50.0% \                                                                                 Set and delete authenticated variable created by dif..  2 passed
-[   47.759997] init.sh[258]: Test: TPM2 Trusted Platform Module 2 test.
-[   47.789587] init.sh[258]:                                                                      :  50.0% |                                                                                Test aborted.
-[   47.810098] init.sh[258]: Running 2 tests, results appended to /mnt/acs_results/SIE/fwts/FWTSResults.log
-[   47.887406] init.sh[241]: TPM2: dumping PCRs and event log
-[   48.236964] init.sh[241]:   Event log: /mnt/acs_results/SIE/tpm2/eventlog.log
-[   50.226721] init.sh[241]:   PCRs: /mnt/acs_results/SIE/tpm2/pcr.log
-[   52.101115] init.sh[277]: Traceback (most recent call last):
-[   52.113743] init.sh[277]:   File "/bin/verify_tpm_measurements.py", line 89, in <module>
-[   52.118188] init.sh[277]:     compare()
-[   52.121599] init.sh[277]:   File "/bin/verify_tpm_measurements.py", line 70, in compare
-[   52.129606] init.sh[277]:     pcr = _256_line[1]  + x + 1
-[   52.132300] init.sh[277]: IndexError: list index out of range
-[   52.227290] init.sh[168]: SIE ACS run is completed\n
-[   52.240811] init.sh[168]: Please press <Enter> to continue ...
+7[r[999;999H[6n8root@generic-arm64:~# [   25.506109] init.sh[170]: Attempting to mount the results partition ...
+[   26.054197] init.sh[170]: Mounted the results partition on device /dev/vda1
+[   29.174629] init.sh[170]: Call SIE ACS in Linux
+[   29.372000] init.sh[198]: mount: /sys/kernel/security: securityfs already mounted on /sys/kernel/security.
+[   29.384745] init.sh[198]:        dmesg(1) may have more information after failed mount system call.
+[   34.563283] init.sh[197]: SecureBoot disabled
+[   34.575176] init.sh[197]: WARNING: The System is not in SecureBoot mode
+[   34.788767] init.sh[197]: Test Executed are uefirtauthvar tpm2
+[   35.698353] init.sh[213]: Test: Authenticated variable tests.
+[   36.228896] init.sh[213]:                                                                      :   0.0% /  Create authenticated variable test.                                :   0.0% -  Create authenticated variable test.                                :   4.5% \                                                                                 Create authenticated variable test.                     1 passed
+[   36.245498] init.sh[213]:   Authenticated variable test with the same authenticated variable.  :   4.5% |  Authenticated variable test with the same authenticated variable.  :   9.1% /                                                                                 Authenticated variable test with the same authentica..  1 passed
+[   36.251632] init.sh[213]:   Authenticated variable test with another valid authenticated variab:   9.1% -  Authenticated variable test with another valid authenticated variab:  13.6% \                                                                                 Authenticated variable test with another valid authe..  1 passed
+[   36.503662] init.sh[213]:   Append authenticated variable test.                                :  13.6% |  Append authenticated variable test.                                :  18.2% /                                                                                 Append authenticated variable test.                     1 passed
+[   36.531624] init.sh[213]:   Update authenticated variable test.                                :  18.2% -  Update authenticated variable test.                                :  22.7% \                                                                                 Update authenticated variable test.                     1 passed
+[   36.555806] init.sh[213]:   Authenticated variable test with old authenticated variable.       :  22.7% |  Authenticated variable test with old authenticated variable.       :  27.3% /                                                                                 Authenticated variable test with old authenticated v..  1 passed
+[   36.574084] init.sh[213]:   Delete authenticated variable test.                                :  27.3% -  Delete authenticated variable test.                                :  31.8% \                                                                                 Delete authenticated variable test.                     1 passed
+[   36.582041] init.sh[213]:   Authenticated variable test with invalid modified data.            :  31.8% |  Authenticated variable test with invalid modified data.            :  36.4% /                                                                                 Authenticated variable test with invalid modified data  1 passed
+[   36.593063] init.sh[213]:   Authenticated variable test with invalid modified timestamp.       :  36.4% -  Authenticated variable test with invalid modified timestamp.       :  40.9% \                                                                                 Authenticated variable test with invalid modified ti..  1 passed
+[   36.613816] init.sh[213]:   Authenticated variable test with different guid.                   :  40.9% |  Authenticated variable test with different guid.                   :  45.5% /                                                                                 Authenticated variable test with different guid.        1 passed
+[   37.261401] init.sh[213]:   Set and delete authenticated variable created by different key test:  45.5% -  Set and delete authenticated variable created by different key test:  50.0% \                                                                                 Set and delete authenticated variable created by dif..  2 passed
+[   37.281613] init.sh[213]: Test: TPM2 Trusted Platform Module 2 test.
+[   37.284710] init.sh[213]:                                                                      :  50.0% |                                                                                Test aborted.
+[   37.314020] init.sh[213]: Running 2 tests, results appended to /mnt/acs_results/SIE/fwts/FWTSResults.log
+[   37.402226] init.sh[197]: TPM2: dumping PCRs and event log
+[   37.751576] init.sh[197]:   Event log: /mnt/acs_results/SIE/tpm2/eventlog.log
+[   39.469235] init.sh[197]:   PCRs: /mnt/acs_results/SIE/tpm2/pcr.log
+[   39.550044] init.sh[197]: PCR reg entry not found at the end of event log, eventlog vs pcr comparision not possible
+[   39.565975] init.sh[170]: SIE ACS run is completed\n
+[   39.575313] init.sh[170]: Please press <Enter> to continue ...
 
+root@generic-arm64:~# 
+root@generic-arm64:~# 
 root@generic-arm64:~# 

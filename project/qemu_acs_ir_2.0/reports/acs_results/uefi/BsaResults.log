@@ -1,7 +1,7 @@
 
 
  BSA Architecture Compliance Suite
-          Version 1.0.4
+          Version 1.0.5
 
  Starting tests with print level :  3
 
@@ -23,7 +23,8 @@
  Peripheral: Num of SATA controllers  :    0 
  Peripheral: Num of UART controllers  :    1 
 
-      ***  Starting PE tests ***  
+      *** Starting PE tests ***  
+
 Operating System View:
    1 : Check Arch symmetry across PE              : Result:  PASS 
    2 : Check for number of PE                     : Result:  PASS 
@@ -42,21 +43,24 @@ Operating System View:
 
       One or more PE tests failed or were skipped.
 
-      ***  Starting Memory Map tests ***  
+      *** Starting Memory Map tests ***  
+
 Operating System View:
  102 : Mem Access Response in finite time         : Result:  PASS 
  103 : PE must access all NS addr space           : Result:  PASS 
 
       All Memory tests passed.
 
-      ***  Starting GIC tests ***  
+      *** Starting GIC tests ***  
+
 Operating System View:
  201 : Check GIC version                          : Result:  PASS 
  202 : Check GICv2 Valid Configuration            : Result:  PASS 
  205 : Non-secure SGIs are implemented            : Result:  PASS 
- 206 : Check PPI Assignments for OS               : Result:  PASS 
+ 206 : Check EL1-Phy timer PPI assignment         : Result:  PASS 
+ 207 : Check EL1-Virt timer PPI assignment        : Result:  PASS 
 
-      *** Starting GICv2m tests ***
+      *** Starting GICv2m tests ***  
 
 Operating System View:
  251 : Check MSI SPI are Edge Triggered      
@@ -75,10 +79,10 @@ Operating System View:
 
       One or more GIC tests failed or were skipped.
 
-      *** Starting System MMU tests ***  
        No SMMU Controller Found, Skipping SMMU tests...
 
       *** Starting Timer tests ***  
+
 Operating System View:
  401 : Check Counter Frequency                    : Result:  PASS 
  402 : SYS Timer if PE Timer not ON               : Result:  PASS 
@@ -92,10 +96,10 @@ Operating System View:
       One or more Timer tests failed or were skipped.
 
       *** Starting Wakeup semantic tests ***  
+
 Operating System View:
  501 : Wake from EL1 PHY Timer Int                : Result:  PASS 
  502 : Wake from EL1 VIR Timer Int                : Result:  PASS 
- 503 : Wake from EL2 PHY Timer Int                : Result:  PASS 
  504 : Wake from Watchdog WS0 Int            
        Checkpoint --  1                           : Result:  SKIPPED 
  505 : Wake from System Timer Int            
@@ -104,6 +108,7 @@ Operating System View:
       One or more Wakeup tests failed or were skipped.
 
       *** Starting Peripheral tests ***  
+
 Operating System View:
  601 : USB CTRL Interface                    
        Checkpoint --  1                           : Result:  SKIPPED 
@@ -116,16 +121,15 @@ Operating System View:
 
       One or more Peripheral tests failed or were skipped.
 
-      *** Starting Watchdog tests ***  
        No Watchdog Found, Skipping Watchdog tests...
 
       *** Starting PCIe tests ***  
+
 Operating System View:
  801 : Check ECAM Presence                        : Result:  PASS 
 
        No PCIe Devices Found, Skipping PCIe tests...
 
-      *** Starting PCIe Exerciser tests ***  
        USER Override - Skipping all Exerciser tests 
 
      ------------------------------------------------------- 

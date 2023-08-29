@@ -3,6 +3,6 @@ Timeout: 5 seconds
 BootOrder: 0000,0001,0002,0003,0004
 Boot0000* UiApp	FvVol(64074afe-340a-4be6-94ba-91b5b4d0f71e)/FvFile(462caa21-7614-4503-836e-8ab6f4662331)
 Boot0001* UEFI Misc Device	PciRoot(0x0)/Pci(0x2,0x0){auto_created_boot_option}
-Boot0002* UEFI PXEv4 (MAC:525400123456)	PciRoot(0x0)/Pci(0x1,0x0)/MAC(525400123456,1)/IPv4(0.0.0.00.0.0.0,0,0){auto_created_boot_option}
-Boot0003* EFI Internal Shell	FvVol(64074afe-340a-4be6-94ba-91b5b4d0f71e)/FvFile(7c04a583-9e3e-4f1c-ad65-e05268d0b4d1)
-Boot0004* UEFI Misc Device 2	PciRoot(0x0)/Pci(0x3,0x0){auto_created_boot_option}
+Boot0002* UEFI Misc Device 2	PciRoot(0x0)/Pci(0x3,0x0){auto_created_boot_option}
+Boot0003* UEFI PXEv4 (MAC:525400123456)	PciRoot(0x0)/Pci(0x1,0x0)/MAC(525400123456,1)/IPv4(0.0.0.00.0.0.0,0,0){auto_created_boot_option}
+Boot0004* EFI Internal Shell	FvVol(64074afe-340a-4be6-94ba-91b5b4d0f71e)/FvFile(7c04a583-9e3e-4f1c-ad65-e05268d0b4d1)

@@ -39,9 +39,9 @@ A QEMU executable is also generated at output/host/bin/qemu-system-aarch64
 Specific information for this Buildroot configuration is available in board/qemu/aarch64-ebbr/readme.txt
 EOF
 
-QEMU=/home/weiouy01/code/tmp/buildroot/output/host/bin/qemu-system-aarch64
-BIOS=/home/weiouy01/code/tmp/buildroot/output/images/flash.bin
-ESP=/home/weiouy01/code/tmp/buildroot/output/images/disk.img
+QEMU=/home/weiouy01/code/buildroot/output/host/bin/qemu-system-aarch64
+BIOS=/home/weiouy01/code/buildroot/output/images/flash.bin
+ESP=/home/weiouy01/code/buildroot/output/images/disk.img
 FLASH0=/home/weiouy01/code/sie_edk2/flash0.img
 FLASH1=/home/weiouy01/code/sie_edk2/flash1.img
 IMAGE=/home/weiouy01/code/ir-acs-live-image-generic-arm64.wic
@@ -49,6 +49,7 @@ IMAGE=/home/weiouy01/code/ir-acs-live-image-generic-arm64.wic
 TRANS=/home/weiouy01/code/disk.img
 PWD=`pwd`
 TPMSOCK=/tmp/swtpm-sock$$
+MMCBLK0=/home/weiouy01/code/mmcblk0.bin
 
 
 if [ "$1" = "sie" ];
@@ -121,6 +122,9 @@ $QEMU \
 	-device virtio-rng-device,rng=rng0 \
 	-drive file=$IMAGE,if=none,format=raw,id=hd0 \
 	-drive file=$ESP,if=none,format=raw,id=hd1 \
+	-device sdhci-pci \
+	-device sd-card,drive=sd0 \
+	-drive id=sd0,if=none,format=raw,file=$MMCBLK0 \
 	-monitor null \
 	-netdev user,id=eth0 \
 	-nodefaults \

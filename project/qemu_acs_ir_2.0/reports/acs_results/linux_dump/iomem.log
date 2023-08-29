@@ -8,24 +8,23 @@
   10001000-10001fff : 0000:00:02.0
   10002000-10002fff : 0000:00:03.0
 40000000-bc4effff : System RAM
-  984c0000-99d6ffff : Kernel code
-  99d70000-9a46ffff : reserved
-  9a470000-9a88ffff : Kernel data
-  9c9c0000-9c9c1fff : reserved
-  9cd7e000-9cd7efff : reserved
+  98390000-99c3ffff : Kernel code
+  99c40000-9a33ffff : reserved
+  9a340000-9a75ffff : Kernel data
+  9c8a0000-9c8a1fff : reserved
   ba400000-bc3fffff : reserved
   bc40c000-bc40cfff : reserved
-  bc40f000-bc412fff : reserved
+  bc40d000-bc40dfff : reserved
+  bc410000-bc412fff : reserved
 bc4f0000-bc72ffff : reserved
 bc730000-bfbfffff : System RAM
-  bd400000-bf5fffff : reserved
-  bf6d1000-bf7d1fff : reserved
-  bf7d2000-bf7f9fff : reserved
-  bf7fc000-bf7fdfff : reserved
-  bf7fe000-bf7fefff : reserved
-  bf7ff000-bf812fff : reserved
-  bf813000-bf81cfff : reserved
-  bf81d000-bfbfffff : reserved
+  bd4d3000-bd7d3fff : reserved
+  bd7d4000-bd7fbfff : reserved
+  bd7fe000-bf7fffff : reserved
+  bf800000-bf800fff : reserved
+  bf801000-bf814fff : reserved
+  bf815000-bf81efff : reserved
+  bf81f000-bfbfffff : reserved
 bfc00000-bffdffff : reserved
 bffe0000-bfffffff : System RAM
   bffe0000-bfffffff : reserved
