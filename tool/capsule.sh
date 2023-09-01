@@ -1,6 +1,6 @@
 # Clear files
 rm -rf CRT.crt CRT.esl CRT.key test.its tests.itb \
-	signed_capsule.bin unauth.bin tampered.bin \
+	capsule1.bin signed_capsule.bin unauth.bin tampered.bin \
 	signature.dts signature.dtbo signature.dts qemu.dtb
 
 # Generate tests.itb
@@ -10,9 +10,9 @@ cat << EOF > test.its
      description = "Automatic U-Boot update";
      \#address-cells = <1>;
      images {
-             u-boot.bin {
+             flash.bin {
                      description = "U-Boot binary";
-                     data = /incbin/("/home/weiouy01/code/buildroot/output/build/uboot-2023.01/u-boot.bin");
+                     data = /incbin/("/home/weiouy01/code/buildroot/output/images/flash.bin");
                      compression = "none";
                      type = "firmware";
                      arch = "arm64";
@@ -31,7 +31,15 @@ openssl req -x509 -sha256 -newkey rsa:2048 -subj /CN=CRT/ -keyout CRT.key -out C
 cert-to-efi-sig-list CRT.crt CRT.esl
 
 # Generate signed capsule.bin
-/home/weiouy01/code/u-boot/tools/mkeficapsule --monotonic-count 1 \
+/home/weiouy01/code/u-boot/tools/mkeficapsule \
+	--monotonic-count 1 \
+	--index 1 \
+	--instance 0 \
+	--guid 058B7D83-50D5-4C47-A195-60D86AD341C4 \
+	"tests.itb" \
+	"capsule1.bin"
+/home/weiouy01/code/u-boot/tools/mkeficapsule \
+	--monotonic-count 1 \
 	--private-key "CRT.key" \
 	--certificate "CRT.crt" \
 	--index 1 \
@@ -60,7 +68,7 @@ fdtoverlay -i qemu.dtb -o qemu.dtb -v signature.dtbo
 # Copy files to storage
 mkdir tmp/
 sudo mount /home/weiouy01/code/disk.img tmp/
-sudo cp signed_capsule.bin unauth.bin tampered.bin tmp/
+sudo cp capsule1.bin signed_capsule.bin unauth.bin tampered.bin tmp/
 sync tmp/
 sudo umount tmp/
 rm -rf tmp/
