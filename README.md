@@ -13,6 +13,7 @@
 * https://developer.arm.com/documentation/den0094/latest
 * https://developer.arm.com/documentation/den0107/latest
 * https://developer.arm.com/documentation/den0109/latest
+* https://developer.arm.com/documentation/den0098/latest
 * https://developer.arm.com/documentation/DUI1101/latest
 * https://developer.arm.com/documentation/ihi0062/latest
 * https://developer.arm.com/documentation/102872/latest
