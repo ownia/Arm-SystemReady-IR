@@ -1,0 +1,311 @@
++ DTC
+/dev/null: Warning (unit_address_vs_reg): /memory: node has a reg or ranges property, but no unit name
+/dev/null: Warning (unit_address_vs_reg): /usb@fe800000: node has a unit name, but no reg property
+/dev/null: Warning (unit_address_vs_reg): /usb@fe800000/dwc3: node has a reg or ranges property, but no unit name
+/dev/null: Warning (unit_address_vs_reg): /usb@fe900000: node has a unit name, but no reg property
+/dev/null: Warning (unit_address_vs_reg): /usb@fe900000/dwc3: node has a reg or ranges property, but no unit name
+/dev/null: Warning (unit_address_vs_reg): /dmc: node has a reg or ranges property, but no unit name
+/dev/null: Warning (avoid_unnecessary_addr_size): /syscon@ff320000: unnecessary #address-cells/#size-cells without "ranges" or child "reg" property
+/dev/null: Warning (avoid_unnecessary_addr_size): /mipi@ff960000: unnecessary #address-cells/#size-cells without "ranges" or child "reg" property
+/dev/null: Warning (avoid_unnecessary_addr_size): /mipi@ff968000: unnecessary #address-cells/#size-cells without "ranges" or child "reg" property
+/dev/null: Warning (graph_child_address): /mipi@ff960000/ports: graph node has single child node 'port@0', #address-cells/#size-cells are not necessary
+/dev/null: Warning (graph_child_address): /mipi@ff968000/ports: graph node has single child node 'port@0', #address-cells/#size-cells are not necessary
+/dev/null: Warning (graph_child_address): /edp@ff970000/ports/port@1: graph node has single child node 'endpoint@0', #address-cells/#size-cells are not necessary
++ DT-VALIDATE
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: /: memory: False schema does not allow {'reg': [[0, 2097152, 0, 4158652416]], 'device_type': ['memory']}
+	from schema $id: http://devicetree.org/schemas/root-node.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: ethernet@fe300000: Unevaluated properties are not allowed ('snps,txpbl' was unexpected)
+	from schema $id: http://devicetree.org/schemas/net/rockchip-dwmac.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: mmc@fe320000: Unevaluated properties are not allowed ('u-boot,dm-pre-reloc', 'u-boot,spl-fifo-mode' were unexpected)
+	from schema $id: http://devicetree.org/schemas/mmc/rockchip-dw-mshc.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: sdhci@fe330000: $nodename:0: 'sdhci@fe330000' does not match '^mmc(@.*)?$'
+	from schema $id: http://devicetree.org/schemas/mmc/arasan,sdhci.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: sdhci@fe330000: Unevaluated properties are not allowed ('bus-width', 'disable-cqe-dcmd', 'max-frequency', 'mmc-hs400-1_8v', 'mmc-hs400-enhanced-strobe', 'non-removable', 'power-domains', 'u-boot,dm-pre-reloc' were unexpected)
+	from schema $id: http://devicetree.org/schemas/mmc/arasan,sdhci.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: usb@fe800000: 'dwc3', 'extcon' do not match any of the regexes: '^usb@', 'pinctrl-[0-9]+'
+	from schema $id: http://devicetree.org/schemas/usb/rockchip,rk3399-dwc3.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: dwc3: $nodename:0: 'dwc3' does not match '^usb(@.*)?'
+	from schema $id: http://devicetree.org/schemas/usb/snps,dwc3.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: dwc3: Unevaluated properties are not allowed ('phy_type' was unexpected)
+	from schema $id: http://devicetree.org/schemas/usb/snps,dwc3.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: usb@fe900000: 'dwc3' does not match any of the regexes: '^usb@', 'pinctrl-[0-9]+'
+	from schema $id: http://devicetree.org/schemas/usb/rockchip,rk3399-dwc3.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: dwc3: $nodename:0: 'dwc3' does not match '^usb(@.*)?'
+	from schema $id: http://devicetree.org/schemas/usb/snps,dwc3.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: dwc3: Unevaluated properties are not allowed ('phy_type' was unexpected)
+	from schema $id: http://devicetree.org/schemas/usb/snps,dwc3.yaml#
+../Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports//acs_results/uefi/BsaDevTree.dtb: /dp@fec00000: failed to match any schema with compatible: ['rockchip,rk3399-cdn-dp']
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: interrupt-controller@fee00000: interrupt-controller@fee20000: False schema does not allow {'compatible': ['arm,gic-v3-its'], 'msi-controller': True, '#msi-cells': [[1]], 'reg': [[0, 4276224000, 0, 131072]], 'phandle': [[18]]}
+	from schema $id: http://devicetree.org/schemas/interrupt-controller/arm,gic-v3.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: serial@ff1a0000: Unevaluated properties are not allowed ('u-boot,dm-pre-reloc' was unexpected)
+	from schema $id: http://devicetree.org/schemas/serial/snps-dw-apb-uart.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: thermal-zones: 'cpu', 'gpu' do not match any of the regexes: '^[a-zA-Z][a-zA-Z0-9\\-]{1,12}-thermal$', 'pinctrl-[0-9]+'
+	from schema $id: http://devicetree.org/schemas/thermal/thermal-zones.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: qos@ffa58000: compatible: 'anyOf' conditional failed, one must be fixed:
+	['syscon'] is too short
+	'syscon' is not one of ['allwinner,sun8i-a83t-system-controller', 'allwinner,sun8i-h3-system-controller', 'allwinner,sun8i-v3s-system-controller', 'allwinner,sun50i-a64-system-controller', 'amd,pensando-elba-syscon', 'brcm,cru-clkset', 'freecom,fsg-cs2-system-controller', 'fsl,imx93-aonmix-ns-syscfg', 'fsl,imx93-wakeupmix-syscfg', 'hisilicon,dsa-subctrl', 'hisilicon,hi6220-sramctrl', 'hisilicon,pcie-sas-subctrl', 'hisilicon,peri-subctrl', 'hpe,gxp-sysreg', 'intel,lgm-syscon', 'marvell,armada-3700-usb2-host-misc', 'mediatek,mt8135-pctl-a-syscfg', 'mediatek,mt8135-pctl-b-syscfg', 'mediatek,mt8365-syscfg', 'microchip,lan966x-cpu-syscon', 'microchip,sparx5-cpu-syscon', 'mstar,msc313-pmsleep', 'nuvoton,wpcm450-shm', 'rockchip,px30-qos', 'rockchip,rk3036-qos', 'rockchip,rk3066-qos', 'rockchip,rk3228-qos', 'rockchip,rk3288-qos', 'rockchip,rk3368-qos', 'rockchip,rk3399-qos', 'rockchip,rk3568-qos', 'rockchip,rk3588-qos', 'rockchip,rv1126-qos']
+	from schema $id: http://devicetree.org/schemas/mfd/syscon.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: qos@ffa5c000: compatible: 'anyOf' conditional failed, one must be fixed:
+	['syscon'] is too short
+	'syscon' is not one of ['allwinner,sun8i-a83t-system-controller', 'allwinner,sun8i-h3-system-controller', 'allwinner,sun8i-v3s-system-controller', 'allwinner,sun50i-a64-system-controller', 'amd,pensando-elba-syscon', 'brcm,cru-clkset', 'freecom,fsg-cs2-system-controller', 'fsl,imx93-aonmix-ns-syscfg', 'fsl,imx93-wakeupmix-syscfg', 'hisilicon,dsa-subctrl', 'hisilicon,hi6220-sramctrl', 'hisilicon,pcie-sas-subctrl', 'hisilicon,peri-subctrl', 'hpe,gxp-sysreg', 'intel,lgm-syscon', 'marvell,armada-3700-usb2-host-misc', 'mediatek,mt8135-pctl-a-syscfg', 'mediatek,mt8135-pctl-b-syscfg', 'mediatek,mt8365-syscfg', 'microchip,lan966x-cpu-syscon', 'microchip,sparx5-cpu-syscon', 'mstar,msc313-pmsleep', 'nuvoton,wpcm450-shm', 'rockchip,px30-qos', 'rockchip,rk3036-qos', 'rockchip,rk3066-qos', 'rockchip,rk3228-qos', 'rockchip,rk3288-qos', 'rockchip,rk3368-qos', 'rockchip,rk3399-qos', 'rockchip,rk3568-qos', 'rockchip,rk3588-qos', 'rockchip,rv1126-qos']
+	from schema $id: http://devicetree.org/schemas/mfd/syscon.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: qos@ffa60080: compatible: 'anyOf' conditional failed, one must be fixed:
+	['syscon'] is too short
+	'syscon' is not one of ['allwinner,sun8i-a83t-system-controller', 'allwinner,sun8i-h3-system-controller', 'allwinner,sun8i-v3s-system-controller', 'allwinner,sun50i-a64-system-controller', 'amd,pensando-elba-syscon', 'brcm,cru-clkset', 'freecom,fsg-cs2-system-controller', 'fsl,imx93-aonmix-ns-syscfg', 'fsl,imx93-wakeupmix-syscfg', 'hisilicon,dsa-subctrl', 'hisilicon,hi6220-sramctrl', 'hisilicon,pcie-sas-subctrl', 'hisilicon,peri-subctrl', 'hpe,gxp-sysreg', 'intel,lgm-syscon', 'marvell,armada-3700-usb2-host-misc', 'mediatek,mt8135-pctl-a-syscfg', 'mediatek,mt8135-pctl-b-syscfg', 'mediatek,mt8365-syscfg', 'microchip,lan966x-cpu-syscon', 'microchip,sparx5-cpu-syscon', 'mstar,msc313-pmsleep', 'nuvoton,wpcm450-shm', 'rockchip,px30-qos', 'rockchip,rk3036-qos', 'rockchip,rk3066-qos', 'rockchip,rk3228-qos', 'rockchip,rk3288-qos', 'rockchip,rk3368-qos', 'rockchip,rk3399-qos', 'rockchip,rk3568-qos', 'rockchip,rk3588-qos', 'rockchip,rv1126-qos']
+	from schema $id: http://devicetree.org/schemas/mfd/syscon.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: qos@ffa60100: compatible: 'anyOf' conditional failed, one must be fixed:
+	['syscon'] is too short
+	'syscon' is not one of ['allwinner,sun8i-a83t-system-controller', 'allwinner,sun8i-h3-system-controller', 'allwinner,sun8i-v3s-system-controller', 'allwinner,sun50i-a64-system-controller', 'amd,pensando-elba-syscon', 'brcm,cru-clkset', 'freecom,fsg-cs2-system-controller', 'fsl,imx93-aonmix-ns-syscfg', 'fsl,imx93-wakeupmix-syscfg', 'hisilicon,dsa-subctrl', 'hisilicon,hi6220-sramctrl', 'hisilicon,pcie-sas-subctrl', 'hisilicon,peri-subctrl', 'hpe,gxp-sysreg', 'intel,lgm-syscon', 'marvell,armada-3700-usb2-host-misc', 'mediatek,mt8135-pctl-a-syscfg', 'mediatek,mt8135-pctl-b-syscfg', 'mediatek,mt8365-syscfg', 'microchip,lan966x-cpu-syscon', 'microchip,sparx5-cpu-syscon', 'mstar,msc313-pmsleep', 'nuvoton,wpcm450-shm', 'rockchip,px30-qos', 'rockchip,rk3036-qos', 'rockchip,rk3066-qos', 'rockchip,rk3228-qos', 'rockchip,rk3288-qos', 'rockchip,rk3368-qos', 'rockchip,rk3399-qos', 'rockchip,rk3568-qos', 'rockchip,rk3588-qos', 'rockchip,rv1126-qos']
+	from schema $id: http://devicetree.org/schemas/mfd/syscon.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: qos@ffa60180: compatible: 'anyOf' conditional failed, one must be fixed:
+	['syscon'] is too short
+	'syscon' is not one of ['allwinner,sun8i-a83t-system-controller', 'allwinner,sun8i-h3-system-controller', 'allwinner,sun8i-v3s-system-controller', 'allwinner,sun50i-a64-system-controller', 'amd,pensando-elba-syscon', 'brcm,cru-clkset', 'freecom,fsg-cs2-system-controller', 'fsl,imx93-aonmix-ns-syscfg', 'fsl,imx93-wakeupmix-syscfg', 'hisilicon,dsa-subctrl', 'hisilicon,hi6220-sramctrl', 'hisilicon,pcie-sas-subctrl', 'hisilicon,peri-subctrl', 'hpe,gxp-sysreg', 'intel,lgm-syscon', 'marvell,armada-3700-usb2-host-misc', 'mediatek,mt8135-pctl-a-syscfg', 'mediatek,mt8135-pctl-b-syscfg', 'mediatek,mt8365-syscfg', 'microchip,lan966x-cpu-syscon', 'microchip,sparx5-cpu-syscon', 'mstar,msc313-pmsleep', 'nuvoton,wpcm450-shm', 'rockchip,px30-qos', 'rockchip,rk3036-qos', 'rockchip,rk3066-qos', 'rockchip,rk3228-qos', 'rockchip,rk3288-qos', 'rockchip,rk3368-qos', 'rockchip,rk3399-qos', 'rockchip,rk3568-qos', 'rockchip,rk3588-qos', 'rockchip,rv1126-qos']
+	from schema $id: http://devicetree.org/schemas/mfd/syscon.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: qos@ffa70000: compatible: 'anyOf' conditional failed, one must be fixed:
+	['syscon'] is too short
+	'syscon' is not one of ['allwinner,sun8i-a83t-system-controller', 'allwinner,sun8i-h3-system-controller', 'allwinner,sun8i-v3s-system-controller', 'allwinner,sun50i-a64-system-controller', 'amd,pensando-elba-syscon', 'brcm,cru-clkset', 'freecom,fsg-cs2-system-controller', 'fsl,imx93-aonmix-ns-syscfg', 'fsl,imx93-wakeupmix-syscfg', 'hisilicon,dsa-subctrl', 'hisilicon,hi6220-sramctrl', 'hisilicon,pcie-sas-subctrl', 'hisilicon,peri-subctrl', 'hpe,gxp-sysreg', 'intel,lgm-syscon', 'marvell,armada-3700-usb2-host-misc', 'mediatek,mt8135-pctl-a-syscfg', 'mediatek,mt8135-pctl-b-syscfg', 'mediatek,mt8365-syscfg', 'microchip,lan966x-cpu-syscon', 'microchip,sparx5-cpu-syscon', 'mstar,msc313-pmsleep', 'nuvoton,wpcm450-shm', 'rockchip,px30-qos', 'rockchip,rk3036-qos', 'rockchip,rk3066-qos', 'rockchip,rk3228-qos', 'rockchip,rk3288-qos', 'rockchip,rk3368-qos', 'rockchip,rk3399-qos', 'rockchip,rk3568-qos', 'rockchip,rk3588-qos', 'rockchip,rv1126-qos']
+	from schema $id: http://devicetree.org/schemas/mfd/syscon.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: qos@ffa70080: compatible: 'anyOf' conditional failed, one must be fixed:
+	['syscon'] is too short
+	'syscon' is not one of ['allwinner,sun8i-a83t-system-controller', 'allwinner,sun8i-h3-system-controller', 'allwinner,sun8i-v3s-system-controller', 'allwinner,sun50i-a64-system-controller', 'amd,pensando-elba-syscon', 'brcm,cru-clkset', 'freecom,fsg-cs2-system-controller', 'fsl,imx93-aonmix-ns-syscfg', 'fsl,imx93-wakeupmix-syscfg', 'hisilicon,dsa-subctrl', 'hisilicon,hi6220-sramctrl', 'hisilicon,pcie-sas-subctrl', 'hisilicon,peri-subctrl', 'hpe,gxp-sysreg', 'intel,lgm-syscon', 'marvell,armada-3700-usb2-host-misc', 'mediatek,mt8135-pctl-a-syscfg', 'mediatek,mt8135-pctl-b-syscfg', 'mediatek,mt8365-syscfg', 'microchip,lan966x-cpu-syscon', 'microchip,sparx5-cpu-syscon', 'mstar,msc313-pmsleep', 'nuvoton,wpcm450-shm', 'rockchip,px30-qos', 'rockchip,rk3036-qos', 'rockchip,rk3066-qos', 'rockchip,rk3228-qos', 'rockchip,rk3288-qos', 'rockchip,rk3368-qos', 'rockchip,rk3399-qos', 'rockchip,rk3568-qos', 'rockchip,rk3588-qos', 'rockchip,rv1126-qos']
+	from schema $id: http://devicetree.org/schemas/mfd/syscon.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: qos@ffa74000: compatible: 'anyOf' conditional failed, one must be fixed:
+	['syscon'] is too short
+	'syscon' is not one of ['allwinner,sun8i-a83t-system-controller', 'allwinner,sun8i-h3-system-controller', 'allwinner,sun8i-v3s-system-controller', 'allwinner,sun50i-a64-system-controller', 'amd,pensando-elba-syscon', 'brcm,cru-clkset', 'freecom,fsg-cs2-system-controller', 'fsl,imx93-aonmix-ns-syscfg', 'fsl,imx93-wakeupmix-syscfg', 'hisilicon,dsa-subctrl', 'hisilicon,hi6220-sramctrl', 'hisilicon,pcie-sas-subctrl', 'hisilicon,peri-subctrl', 'hpe,gxp-sysreg', 'intel,lgm-syscon', 'marvell,armada-3700-usb2-host-misc', 'mediatek,mt8135-pctl-a-syscfg', 'mediatek,mt8135-pctl-b-syscfg', 'mediatek,mt8365-syscfg', 'microchip,lan966x-cpu-syscon', 'microchip,sparx5-cpu-syscon', 'mstar,msc313-pmsleep', 'nuvoton,wpcm450-shm', 'rockchip,px30-qos', 'rockchip,rk3036-qos', 'rockchip,rk3066-qos', 'rockchip,rk3228-qos', 'rockchip,rk3288-qos', 'rockchip,rk3368-qos', 'rockchip,rk3399-qos', 'rockchip,rk3568-qos', 'rockchip,rk3588-qos', 'rockchip,rv1126-qos']
+	from schema $id: http://devicetree.org/schemas/mfd/syscon.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: qos@ffa76000: compatible: 'anyOf' conditional failed, one must be fixed:
+	['syscon'] is too short
+	'syscon' is not one of ['allwinner,sun8i-a83t-system-controller', 'allwinner,sun8i-h3-system-controller', 'allwinner,sun8i-v3s-system-controller', 'allwinner,sun50i-a64-system-controller', 'amd,pensando-elba-syscon', 'brcm,cru-clkset', 'freecom,fsg-cs2-system-controller', 'fsl,imx93-aonmix-ns-syscfg', 'fsl,imx93-wakeupmix-syscfg', 'hisilicon,dsa-subctrl', 'hisilicon,hi6220-sramctrl', 'hisilicon,pcie-sas-subctrl', 'hisilicon,peri-subctrl', 'hpe,gxp-sysreg', 'intel,lgm-syscon', 'marvell,armada-3700-usb2-host-misc', 'mediatek,mt8135-pctl-a-syscfg', 'mediatek,mt8135-pctl-b-syscfg', 'mediatek,mt8365-syscfg', 'microchip,lan966x-cpu-syscon', 'microchip,sparx5-cpu-syscon', 'mstar,msc313-pmsleep', 'nuvoton,wpcm450-shm', 'rockchip,px30-qos', 'rockchip,rk3036-qos', 'rockchip,rk3066-qos', 'rockchip,rk3228-qos', 'rockchip,rk3288-qos', 'rockchip,rk3368-qos', 'rockchip,rk3399-qos', 'rockchip,rk3568-qos', 'rockchip,rk3588-qos', 'rockchip,rv1126-qos']
+	from schema $id: http://devicetree.org/schemas/mfd/syscon.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: qos@ffa90000: compatible: 'anyOf' conditional failed, one must be fixed:
+	['syscon'] is too short
+	'syscon' is not one of ['allwinner,sun8i-a83t-system-controller', 'allwinner,sun8i-h3-system-controller', 'allwinner,sun8i-v3s-system-controller', 'allwinner,sun50i-a64-system-controller', 'amd,pensando-elba-syscon', 'brcm,cru-clkset', 'freecom,fsg-cs2-system-controller', 'fsl,imx93-aonmix-ns-syscfg', 'fsl,imx93-wakeupmix-syscfg', 'hisilicon,dsa-subctrl', 'hisilicon,hi6220-sramctrl', 'hisilicon,pcie-sas-subctrl', 'hisilicon,peri-subctrl', 'hpe,gxp-sysreg', 'intel,lgm-syscon', 'marvell,armada-3700-usb2-host-misc', 'mediatek,mt8135-pctl-a-syscfg', 'mediatek,mt8135-pctl-b-syscfg', 'mediatek,mt8365-syscfg', 'microchip,lan966x-cpu-syscon', 'microchip,sparx5-cpu-syscon', 'mstar,msc313-pmsleep', 'nuvoton,wpcm450-shm', 'rockchip,px30-qos', 'rockchip,rk3036-qos', 'rockchip,rk3066-qos', 'rockchip,rk3228-qos', 'rockchip,rk3288-qos', 'rockchip,rk3368-qos', 'rockchip,rk3399-qos', 'rockchip,rk3568-qos', 'rockchip,rk3588-qos', 'rockchip,rv1126-qos']
+	from schema $id: http://devicetree.org/schemas/mfd/syscon.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: qos@ffa98000: compatible: 'anyOf' conditional failed, one must be fixed:
+	['syscon'] is too short
+	'syscon' is not one of ['allwinner,sun8i-a83t-system-controller', 'allwinner,sun8i-h3-system-controller', 'allwinner,sun8i-v3s-system-controller', 'allwinner,sun50i-a64-system-controller', 'amd,pensando-elba-syscon', 'brcm,cru-clkset', 'freecom,fsg-cs2-system-controller', 'fsl,imx93-aonmix-ns-syscfg', 'fsl,imx93-wakeupmix-syscfg', 'hisilicon,dsa-subctrl', 'hisilicon,hi6220-sramctrl', 'hisilicon,pcie-sas-subctrl', 'hisilicon,peri-subctrl', 'hpe,gxp-sysreg', 'intel,lgm-syscon', 'marvell,armada-3700-usb2-host-misc', 'mediatek,mt8135-pctl-a-syscfg', 'mediatek,mt8135-pctl-b-syscfg', 'mediatek,mt8365-syscfg', 'microchip,lan966x-cpu-syscon', 'microchip,sparx5-cpu-syscon', 'mstar,msc313-pmsleep', 'nuvoton,wpcm450-shm', 'rockchip,px30-qos', 'rockchip,rk3036-qos', 'rockchip,rk3066-qos', 'rockchip,rk3228-qos', 'rockchip,rk3288-qos', 'rockchip,rk3368-qos', 'rockchip,rk3399-qos', 'rockchip,rk3568-qos', 'rockchip,rk3588-qos', 'rockchip,rv1126-qos']
+	from schema $id: http://devicetree.org/schemas/mfd/syscon.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: qos@ffaa0000: compatible: 'anyOf' conditional failed, one must be fixed:
+	['syscon'] is too short
+	'syscon' is not one of ['allwinner,sun8i-a83t-system-controller', 'allwinner,sun8i-h3-system-controller', 'allwinner,sun8i-v3s-system-controller', 'allwinner,sun50i-a64-system-controller', 'amd,pensando-elba-syscon', 'brcm,cru-clkset', 'freecom,fsg-cs2-system-controller', 'fsl,imx93-aonmix-ns-syscfg', 'fsl,imx93-wakeupmix-syscfg', 'hisilicon,dsa-subctrl', 'hisilicon,hi6220-sramctrl', 'hisilicon,pcie-sas-subctrl', 'hisilicon,peri-subctrl', 'hpe,gxp-sysreg', 'intel,lgm-syscon', 'marvell,armada-3700-usb2-host-misc', 'mediatek,mt8135-pctl-a-syscfg', 'mediatek,mt8135-pctl-b-syscfg', 'mediatek,mt8365-syscfg', 'microchip,lan966x-cpu-syscon', 'microchip,sparx5-cpu-syscon', 'mstar,msc313-pmsleep', 'nuvoton,wpcm450-shm', 'rockchip,px30-qos', 'rockchip,rk3036-qos', 'rockchip,rk3066-qos', 'rockchip,rk3228-qos', 'rockchip,rk3288-qos', 'rockchip,rk3368-qos', 'rockchip,rk3399-qos', 'rockchip,rk3568-qos', 'rockchip,rk3588-qos', 'rockchip,rv1126-qos']
+	from schema $id: http://devicetree.org/schemas/mfd/syscon.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: qos@ffaa0080: compatible: 'anyOf' conditional failed, one must be fixed:
+	['syscon'] is too short
+	'syscon' is not one of ['allwinner,sun8i-a83t-system-controller', 'allwinner,sun8i-h3-system-controller', 'allwinner,sun8i-v3s-system-controller', 'allwinner,sun50i-a64-system-controller', 'amd,pensando-elba-syscon', 'brcm,cru-clkset', 'freecom,fsg-cs2-system-controller', 'fsl,imx93-aonmix-ns-syscfg', 'fsl,imx93-wakeupmix-syscfg', 'hisilicon,dsa-subctrl', 'hisilicon,hi6220-sramctrl', 'hisilicon,pcie-sas-subctrl', 'hisilicon,peri-subctrl', 'hpe,gxp-sysreg', 'intel,lgm-syscon', 'marvell,armada-3700-usb2-host-misc', 'mediatek,mt8135-pctl-a-syscfg', 'mediatek,mt8135-pctl-b-syscfg', 'mediatek,mt8365-syscfg', 'microchip,lan966x-cpu-syscon', 'microchip,sparx5-cpu-syscon', 'mstar,msc313-pmsleep', 'nuvoton,wpcm450-shm', 'rockchip,px30-qos', 'rockchip,rk3036-qos', 'rockchip,rk3066-qos', 'rockchip,rk3228-qos', 'rockchip,rk3288-qos', 'rockchip,rk3368-qos', 'rockchip,rk3399-qos', 'rockchip,rk3568-qos', 'rockchip,rk3588-qos', 'rockchip,rv1126-qos']
+	from schema $id: http://devicetree.org/schemas/mfd/syscon.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: qos@ffaa8000: compatible: 'anyOf' conditional failed, one must be fixed:
+	['syscon'] is too short
+	'syscon' is not one of ['allwinner,sun8i-a83t-system-controller', 'allwinner,sun8i-h3-system-controller', 'allwinner,sun8i-v3s-system-controller', 'allwinner,sun50i-a64-system-controller', 'amd,pensando-elba-syscon', 'brcm,cru-clkset', 'freecom,fsg-cs2-system-controller', 'fsl,imx93-aonmix-ns-syscfg', 'fsl,imx93-wakeupmix-syscfg', 'hisilicon,dsa-subctrl', 'hisilicon,hi6220-sramctrl', 'hisilicon,pcie-sas-subctrl', 'hisilicon,peri-subctrl', 'hpe,gxp-sysreg', 'intel,lgm-syscon', 'marvell,armada-3700-usb2-host-misc', 'mediatek,mt8135-pctl-a-syscfg', 'mediatek,mt8135-pctl-b-syscfg', 'mediatek,mt8365-syscfg', 'microchip,lan966x-cpu-syscon', 'microchip,sparx5-cpu-syscon', 'mstar,msc313-pmsleep', 'nuvoton,wpcm450-shm', 'rockchip,px30-qos', 'rockchip,rk3036-qos', 'rockchip,rk3066-qos', 'rockchip,rk3228-qos', 'rockchip,rk3288-qos', 'rockchip,rk3368-qos', 'rockchip,rk3399-qos', 'rockchip,rk3568-qos', 'rockchip,rk3588-qos', 'rockchip,rv1126-qos']
+	from schema $id: http://devicetree.org/schemas/mfd/syscon.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: qos@ffaa8080: compatible: 'anyOf' conditional failed, one must be fixed:
+	['syscon'] is too short
+	'syscon' is not one of ['allwinner,sun8i-a83t-system-controller', 'allwinner,sun8i-h3-system-controller', 'allwinner,sun8i-v3s-system-controller', 'allwinner,sun50i-a64-system-controller', 'amd,pensando-elba-syscon', 'brcm,cru-clkset', 'freecom,fsg-cs2-system-controller', 'fsl,imx93-aonmix-ns-syscfg', 'fsl,imx93-wakeupmix-syscfg', 'hisilicon,dsa-subctrl', 'hisilicon,hi6220-sramctrl', 'hisilicon,pcie-sas-subctrl', 'hisilicon,peri-subctrl', 'hpe,gxp-sysreg', 'intel,lgm-syscon', 'marvell,armada-3700-usb2-host-misc', 'mediatek,mt8135-pctl-a-syscfg', 'mediatek,mt8135-pctl-b-syscfg', 'mediatek,mt8365-syscfg', 'microchip,lan966x-cpu-syscon', 'microchip,sparx5-cpu-syscon', 'mstar,msc313-pmsleep', 'nuvoton,wpcm450-shm', 'rockchip,px30-qos', 'rockchip,rk3036-qos', 'rockchip,rk3066-qos', 'rockchip,rk3228-qos', 'rockchip,rk3288-qos', 'rockchip,rk3368-qos', 'rockchip,rk3399-qos', 'rockchip,rk3568-qos', 'rockchip,rk3588-qos', 'rockchip,rv1126-qos']
+	from schema $id: http://devicetree.org/schemas/mfd/syscon.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: qos@ffab0000: compatible: 'anyOf' conditional failed, one must be fixed:
+	['syscon'] is too short
+	'syscon' is not one of ['allwinner,sun8i-a83t-system-controller', 'allwinner,sun8i-h3-system-controller', 'allwinner,sun8i-v3s-system-controller', 'allwinner,sun50i-a64-system-controller', 'amd,pensando-elba-syscon', 'brcm,cru-clkset', 'freecom,fsg-cs2-system-controller', 'fsl,imx93-aonmix-ns-syscfg', 'fsl,imx93-wakeupmix-syscfg', 'hisilicon,dsa-subctrl', 'hisilicon,hi6220-sramctrl', 'hisilicon,pcie-sas-subctrl', 'hisilicon,peri-subctrl', 'hpe,gxp-sysreg', 'intel,lgm-syscon', 'marvell,armada-3700-usb2-host-misc', 'mediatek,mt8135-pctl-a-syscfg', 'mediatek,mt8135-pctl-b-syscfg', 'mediatek,mt8365-syscfg', 'microchip,lan966x-cpu-syscon', 'microchip,sparx5-cpu-syscon', 'mstar,msc313-pmsleep', 'nuvoton,wpcm450-shm', 'rockchip,px30-qos', 'rockchip,rk3036-qos', 'rockchip,rk3066-qos', 'rockchip,rk3228-qos', 'rockchip,rk3288-qos', 'rockchip,rk3368-qos', 'rockchip,rk3399-qos', 'rockchip,rk3568-qos', 'rockchip,rk3588-qos', 'rockchip,rv1126-qos']
+	from schema $id: http://devicetree.org/schemas/mfd/syscon.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: qos@ffab0080: compatible: 'anyOf' conditional failed, one must be fixed:
+	['syscon'] is too short
+	'syscon' is not one of ['allwinner,sun8i-a83t-system-controller', 'allwinner,sun8i-h3-system-controller', 'allwinner,sun8i-v3s-system-controller', 'allwinner,sun50i-a64-system-controller', 'amd,pensando-elba-syscon', 'brcm,cru-clkset', 'freecom,fsg-cs2-system-controller', 'fsl,imx93-aonmix-ns-syscfg', 'fsl,imx93-wakeupmix-syscfg', 'hisilicon,dsa-subctrl', 'hisilicon,hi6220-sramctrl', 'hisilicon,pcie-sas-subctrl', 'hisilicon,peri-subctrl', 'hpe,gxp-sysreg', 'intel,lgm-syscon', 'marvell,armada-3700-usb2-host-misc', 'mediatek,mt8135-pctl-a-syscfg', 'mediatek,mt8135-pctl-b-syscfg', 'mediatek,mt8365-syscfg', 'microchip,lan966x-cpu-syscon', 'microchip,sparx5-cpu-syscon', 'mstar,msc313-pmsleep', 'nuvoton,wpcm450-shm', 'rockchip,px30-qos', 'rockchip,rk3036-qos', 'rockchip,rk3066-qos', 'rockchip,rk3228-qos', 'rockchip,rk3288-qos', 'rockchip,rk3368-qos', 'rockchip,rk3399-qos', 'rockchip,rk3568-qos', 'rockchip,rk3588-qos', 'rockchip,rv1126-qos']
+	from schema $id: http://devicetree.org/schemas/mfd/syscon.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: qos@ffab8000: compatible: 'anyOf' conditional failed, one must be fixed:
+	['syscon'] is too short
+	'syscon' is not one of ['allwinner,sun8i-a83t-system-controller', 'allwinner,sun8i-h3-system-controller', 'allwinner,sun8i-v3s-system-controller', 'allwinner,sun50i-a64-system-controller', 'amd,pensando-elba-syscon', 'brcm,cru-clkset', 'freecom,fsg-cs2-system-controller', 'fsl,imx93-aonmix-ns-syscfg', 'fsl,imx93-wakeupmix-syscfg', 'hisilicon,dsa-subctrl', 'hisilicon,hi6220-sramctrl', 'hisilicon,pcie-sas-subctrl', 'hisilicon,peri-subctrl', 'hpe,gxp-sysreg', 'intel,lgm-syscon', 'marvell,armada-3700-usb2-host-misc', 'mediatek,mt8135-pctl-a-syscfg', 'mediatek,mt8135-pctl-b-syscfg', 'mediatek,mt8365-syscfg', 'microchip,lan966x-cpu-syscon', 'microchip,sparx5-cpu-syscon', 'mstar,msc313-pmsleep', 'nuvoton,wpcm450-shm', 'rockchip,px30-qos', 'rockchip,rk3036-qos', 'rockchip,rk3066-qos', 'rockchip,rk3228-qos', 'rockchip,rk3288-qos', 'rockchip,rk3368-qos', 'rockchip,rk3399-qos', 'rockchip,rk3568-qos', 'rockchip,rk3588-qos', 'rockchip,rv1126-qos']
+	from schema $id: http://devicetree.org/schemas/mfd/syscon.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: qos@ffac0000: compatible: 'anyOf' conditional failed, one must be fixed:
+	['syscon'] is too short
+	'syscon' is not one of ['allwinner,sun8i-a83t-system-controller', 'allwinner,sun8i-h3-system-controller', 'allwinner,sun8i-v3s-system-controller', 'allwinner,sun50i-a64-system-controller', 'amd,pensando-elba-syscon', 'brcm,cru-clkset', 'freecom,fsg-cs2-system-controller', 'fsl,imx93-aonmix-ns-syscfg', 'fsl,imx93-wakeupmix-syscfg', 'hisilicon,dsa-subctrl', 'hisilicon,hi6220-sramctrl', 'hisilicon,pcie-sas-subctrl', 'hisilicon,peri-subctrl', 'hpe,gxp-sysreg', 'intel,lgm-syscon', 'marvell,armada-3700-usb2-host-misc', 'mediatek,mt8135-pctl-a-syscfg', 'mediatek,mt8135-pctl-b-syscfg', 'mediatek,mt8365-syscfg', 'microchip,lan966x-cpu-syscon', 'microchip,sparx5-cpu-syscon', 'mstar,msc313-pmsleep', 'nuvoton,wpcm450-shm', 'rockchip,px30-qos', 'rockchip,rk3036-qos', 'rockchip,rk3066-qos', 'rockchip,rk3228-qos', 'rockchip,rk3288-qos', 'rockchip,rk3368-qos', 'rockchip,rk3399-qos', 'rockchip,rk3568-qos', 'rockchip,rk3588-qos', 'rockchip,rv1126-qos']
+	from schema $id: http://devicetree.org/schemas/mfd/syscon.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: qos@ffac0080: compatible: 'anyOf' conditional failed, one must be fixed:
+	['syscon'] is too short
+	'syscon' is not one of ['allwinner,sun8i-a83t-system-controller', 'allwinner,sun8i-h3-system-controller', 'allwinner,sun8i-v3s-system-controller', 'allwinner,sun50i-a64-system-controller', 'amd,pensando-elba-syscon', 'brcm,cru-clkset', 'freecom,fsg-cs2-system-controller', 'fsl,imx93-aonmix-ns-syscfg', 'fsl,imx93-wakeupmix-syscfg', 'hisilicon,dsa-subctrl', 'hisilicon,hi6220-sramctrl', 'hisilicon,pcie-sas-subctrl', 'hisilicon,peri-subctrl', 'hpe,gxp-sysreg', 'intel,lgm-syscon', 'marvell,armada-3700-usb2-host-misc', 'mediatek,mt8135-pctl-a-syscfg', 'mediatek,mt8135-pctl-b-syscfg', 'mediatek,mt8365-syscfg', 'microchip,lan966x-cpu-syscon', 'microchip,sparx5-cpu-syscon', 'mstar,msc313-pmsleep', 'nuvoton,wpcm450-shm', 'rockchip,px30-qos', 'rockchip,rk3036-qos', 'rockchip,rk3066-qos', 'rockchip,rk3228-qos', 'rockchip,rk3288-qos', 'rockchip,rk3368-qos', 'rockchip,rk3399-qos', 'rockchip,rk3568-qos', 'rockchip,rk3588-qos', 'rockchip,rv1126-qos']
+	from schema $id: http://devicetree.org/schemas/mfd/syscon.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: qos@ffac8000: compatible: 'anyOf' conditional failed, one must be fixed:
+	['syscon'] is too short
+	'syscon' is not one of ['allwinner,sun8i-a83t-system-controller', 'allwinner,sun8i-h3-system-controller', 'allwinner,sun8i-v3s-system-controller', 'allwinner,sun50i-a64-system-controller', 'amd,pensando-elba-syscon', 'brcm,cru-clkset', 'freecom,fsg-cs2-system-controller', 'fsl,imx93-aonmix-ns-syscfg', 'fsl,imx93-wakeupmix-syscfg', 'hisilicon,dsa-subctrl', 'hisilicon,hi6220-sramctrl', 'hisilicon,pcie-sas-subctrl', 'hisilicon,peri-subctrl', 'hpe,gxp-sysreg', 'intel,lgm-syscon', 'marvell,armada-3700-usb2-host-misc', 'mediatek,mt8135-pctl-a-syscfg', 'mediatek,mt8135-pctl-b-syscfg', 'mediatek,mt8365-syscfg', 'microchip,lan966x-cpu-syscon', 'microchip,sparx5-cpu-syscon', 'mstar,msc313-pmsleep', 'nuvoton,wpcm450-shm', 'rockchip,px30-qos', 'rockchip,rk3036-qos', 'rockchip,rk3066-qos', 'rockchip,rk3228-qos', 'rockchip,rk3288-qos', 'rockchip,rk3368-qos', 'rockchip,rk3399-qos', 'rockchip,rk3568-qos', 'rockchip,rk3588-qos', 'rockchip,rv1126-qos']
+	from schema $id: http://devicetree.org/schemas/mfd/syscon.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: qos@ffac8080: compatible: 'anyOf' conditional failed, one must be fixed:
+	['syscon'] is too short
+	'syscon' is not one of ['allwinner,sun8i-a83t-system-controller', 'allwinner,sun8i-h3-system-controller', 'allwinner,sun8i-v3s-system-controller', 'allwinner,sun50i-a64-system-controller', 'amd,pensando-elba-syscon', 'brcm,cru-clkset', 'freecom,fsg-cs2-system-controller', 'fsl,imx93-aonmix-ns-syscfg', 'fsl,imx93-wakeupmix-syscfg', 'hisilicon,dsa-subctrl', 'hisilicon,hi6220-sramctrl', 'hisilicon,pcie-sas-subctrl', 'hisilicon,peri-subctrl', 'hpe,gxp-sysreg', 'intel,lgm-syscon', 'marvell,armada-3700-usb2-host-misc', 'mediatek,mt8135-pctl-a-syscfg', 'mediatek,mt8135-pctl-b-syscfg', 'mediatek,mt8365-syscfg', 'microchip,lan966x-cpu-syscon', 'microchip,sparx5-cpu-syscon', 'mstar,msc313-pmsleep', 'nuvoton,wpcm450-shm', 'rockchip,px30-qos', 'rockchip,rk3036-qos', 'rockchip,rk3066-qos', 'rockchip,rk3228-qos', 'rockchip,rk3288-qos', 'rockchip,rk3368-qos', 'rockchip,rk3399-qos', 'rockchip,rk3568-qos', 'rockchip,rk3588-qos', 'rockchip,rv1126-qos']
+	from schema $id: http://devicetree.org/schemas/mfd/syscon.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: qos@ffad0000: compatible: 'anyOf' conditional failed, one must be fixed:
+	['syscon'] is too short
+	'syscon' is not one of ['allwinner,sun8i-a83t-system-controller', 'allwinner,sun8i-h3-system-controller', 'allwinner,sun8i-v3s-system-controller', 'allwinner,sun50i-a64-system-controller', 'amd,pensando-elba-syscon', 'brcm,cru-clkset', 'freecom,fsg-cs2-system-controller', 'fsl,imx93-aonmix-ns-syscfg', 'fsl,imx93-wakeupmix-syscfg', 'hisilicon,dsa-subctrl', 'hisilicon,hi6220-sramctrl', 'hisilicon,pcie-sas-subctrl', 'hisilicon,peri-subctrl', 'hpe,gxp-sysreg', 'intel,lgm-syscon', 'marvell,armada-3700-usb2-host-misc', 'mediatek,mt8135-pctl-a-syscfg', 'mediatek,mt8135-pctl-b-syscfg', 'mediatek,mt8365-syscfg', 'microchip,lan966x-cpu-syscon', 'microchip,sparx5-cpu-syscon', 'mstar,msc313-pmsleep', 'nuvoton,wpcm450-shm', 'rockchip,px30-qos', 'rockchip,rk3036-qos', 'rockchip,rk3066-qos', 'rockchip,rk3228-qos', 'rockchip,rk3288-qos', 'rockchip,rk3368-qos', 'rockchip,rk3399-qos', 'rockchip,rk3568-qos', 'rockchip,rk3588-qos', 'rockchip,rv1126-qos']
+	from schema $id: http://devicetree.org/schemas/mfd/syscon.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: qos@ffad8080: compatible: 'anyOf' conditional failed, one must be fixed:
+	['syscon'] is too short
+	'syscon' is not one of ['allwinner,sun8i-a83t-system-controller', 'allwinner,sun8i-h3-system-controller', 'allwinner,sun8i-v3s-system-controller', 'allwinner,sun50i-a64-system-controller', 'amd,pensando-elba-syscon', 'brcm,cru-clkset', 'freecom,fsg-cs2-system-controller', 'fsl,imx93-aonmix-ns-syscfg', 'fsl,imx93-wakeupmix-syscfg', 'hisilicon,dsa-subctrl', 'hisilicon,hi6220-sramctrl', 'hisilicon,pcie-sas-subctrl', 'hisilicon,peri-subctrl', 'hpe,gxp-sysreg', 'intel,lgm-syscon', 'marvell,armada-3700-usb2-host-misc', 'mediatek,mt8135-pctl-a-syscfg', 'mediatek,mt8135-pctl-b-syscfg', 'mediatek,mt8365-syscfg', 'microchip,lan966x-cpu-syscon', 'microchip,sparx5-cpu-syscon', 'mstar,msc313-pmsleep', 'nuvoton,wpcm450-shm', 'rockchip,px30-qos', 'rockchip,rk3036-qos', 'rockchip,rk3066-qos', 'rockchip,rk3228-qos', 'rockchip,rk3288-qos', 'rockchip,rk3368-qos', 'rockchip,rk3399-qos', 'rockchip,rk3568-qos', 'rockchip,rk3588-qos', 'rockchip,rv1126-qos']
+	from schema $id: http://devicetree.org/schemas/mfd/syscon.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: qos@ffae0000: compatible: 'anyOf' conditional failed, one must be fixed:
+	['syscon'] is too short
+	'syscon' is not one of ['allwinner,sun8i-a83t-system-controller', 'allwinner,sun8i-h3-system-controller', 'allwinner,sun8i-v3s-system-controller', 'allwinner,sun50i-a64-system-controller', 'amd,pensando-elba-syscon', 'brcm,cru-clkset', 'freecom,fsg-cs2-system-controller', 'fsl,imx93-aonmix-ns-syscfg', 'fsl,imx93-wakeupmix-syscfg', 'hisilicon,dsa-subctrl', 'hisilicon,hi6220-sramctrl', 'hisilicon,pcie-sas-subctrl', 'hisilicon,peri-subctrl', 'hpe,gxp-sysreg', 'intel,lgm-syscon', 'marvell,armada-3700-usb2-host-misc', 'mediatek,mt8135-pctl-a-syscfg', 'mediatek,mt8135-pctl-b-syscfg', 'mediatek,mt8365-syscfg', 'microchip,lan966x-cpu-syscon', 'microchip,sparx5-cpu-syscon', 'mstar,msc313-pmsleep', 'nuvoton,wpcm450-shm', 'rockchip,px30-qos', 'rockchip,rk3036-qos', 'rockchip,rk3066-qos', 'rockchip,rk3228-qos', 'rockchip,rk3288-qos', 'rockchip,rk3368-qos', 'rockchip,rk3399-qos', 'rockchip,rk3568-qos', 'rockchip,rk3588-qos', 'rockchip,rv1126-qos']
+	from schema $id: http://devicetree.org/schemas/mfd/syscon.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: power-controller: 'pd_edp@25', 'pd_emmc@23', 'pd_gmac@22', 'pd_gpu@35', 'pd_iep@34', 'pd_rga@33', 'pd_sd@27', 'pd_sdioaudio@28', 'pd_usb3@24', 'pd_vcodec@31', 'pd_vdu@32', 'pd_vio@15' do not match any of the regexes: '^power-domain@[0-9a-f]+$', 'pinctrl-[0-9]+'
+	from schema $id: http://devicetree.org/schemas/power/rockchip,power-controller.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: pd_vio@15: 'pd_tcpc0@RK3399_PD_TCPC0', 'pd_tcpc1@RK3399_PD_TCPC1' do not match any of the regexes: '.*-names$', '.*-supply$', '^#.*-cells$', '^#[a-zA-Z0-9,+\\-._]{0,63}$', '^[a-zA-Z0-9][a-zA-Z0-9,+\\-._]{0,63}$', '^[a-zA-Z0-9][a-zA-Z0-9,+\\-._]{0,63}@[0-9a-fA-F]+(,[0-9a-fA-F]+)*$', '^__.*__$', 'pinctrl-[0-9]+'
+	from schema $id: http://devicetree.org/schemas/dt-core.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: syscon@ff320000: u-boot,dm-pre-reloc: True is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/soc/rockchip/grf.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: i2c@ff3c0000: Unevaluated properties are not allowed ('u-boot,dm-pre-reloc' was unexpected)
+	from schema $id: http://devicetree.org/schemas/i2c/i2c-rk3x.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: pmic@20: 'u-boot,dm-pre-reloc' does not match any of the regexes: 'pinctrl-[0-9]+'
+	from schema $id: http://devicetree.org/schemas/mfd/rockchip,rk809.yaml#
+../Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports//acs_results/uefi/BsaDevTree.dtb: /i2c@ff3c0000/tcs452x@1c: failed to match any schema with compatible: ['tcs,tcs452x']
+../Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports//acs_results/uefi/BsaDevTree.dtb: /i2c@ff3c0000/tcs452x@10: failed to match any schema with compatible: ['tcs,tcs452x']
+../Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports//acs_results/uefi/BsaDevTree.dtb: /i2c@ff3e0000/fusb30x@22: failed to match any schema with compatible: ['fairchild,fusb302']
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: pwm@ff420000: clock-names: ['pwm'] is too short
+	from schema $id: http://devicetree.org/schemas/pwm/pwm-rockchip.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: pwm@ff420010: clock-names: ['pwm'] is too short
+	from schema $id: http://devicetree.org/schemas/pwm/pwm-rockchip.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: pwm@ff420020: clock-names: ['pwm'] is too short
+	from schema $id: http://devicetree.org/schemas/pwm/pwm-rockchip.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: pwm@ff420030: clock-names: ['pwm'] is too short
+	from schema $id: http://devicetree.org/schemas/pwm/pwm-rockchip.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: iommu@ff650800: 'interrupt-names' does not match any of the regexes: 'pinctrl-[0-9]+'
+	from schema $id: http://devicetree.org/schemas/iommu/rockchip,iommu.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: iommu@ff660480: 'interrupt-names' does not match any of the regexes: 'pinctrl-[0-9]+'
+	from schema $id: http://devicetree.org/schemas/iommu/rockchip,iommu.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: iommu@ff670800: 'interrupt-names' does not match any of the regexes: 'pinctrl-[0-9]+'
+	from schema $id: http://devicetree.org/schemas/iommu/rockchip,iommu.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: pmu-clock-controller@ff750000: 'u-boot,dm-pre-reloc' does not match any of the regexes: 'pinctrl-[0-9]+'
+	from schema $id: http://devicetree.org/schemas/clock/rockchip,rk3399-cru.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: clock-controller@ff760000: 'u-boot,dm-pre-reloc' does not match any of the regexes: 'pinctrl-[0-9]+'
+	from schema $id: http://devicetree.org/schemas/clock/rockchip,rk3399-cru.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: syscon@ff770000: u-boot,dm-pre-reloc: True is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/soc/rockchip/grf.yaml#
+../Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports//acs_results/uefi/BsaDevTree.dtb: /syscon@ff770000/phy@f780: failed to match any schema with compatible: ['rockchip,rk3399-emmc-phy']
+../Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports//acs_results/uefi/BsaDevTree.dtb: /syscon@ff770000/pcie-phy: failed to match any schema with compatible: ['rockchip,rk3399-pcie-phy']
+../Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports//acs_results/uefi/BsaDevTree.dtb: /phy@ff7c0000: failed to match any schema with compatible: ['rockchip,rk3399-typec-phy']
+../Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports//acs_results/uefi/BsaDevTree.dtb: /phy@ff800000: failed to match any schema with compatible: ['rockchip,rk3399-typec-phy']
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: vop@ff8f0000: 'u-boot,dm-pre-reloc' does not match any of the regexes: 'pinctrl-[0-9]+'
+	from schema $id: http://devicetree.org/schemas/display/rockchip/rockchip-vop.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: iommu@ff8f3f00: 'interrupt-names' does not match any of the regexes: 'pinctrl-[0-9]+'
+	from schema $id: http://devicetree.org/schemas/iommu/rockchip,iommu.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: vop@ff900000: 'u-boot,dm-pre-reloc' does not match any of the regexes: 'pinctrl-[0-9]+'
+	from schema $id: http://devicetree.org/schemas/display/rockchip/rockchip-vop.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: iommu@ff903f00: 'interrupt-names' does not match any of the regexes: 'pinctrl-[0-9]+'
+	from schema $id: http://devicetree.org/schemas/iommu/rockchip,iommu.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: iommu@ff914000: 'interrupt-names' does not match any of the regexes: 'pinctrl-[0-9]+'
+	from schema $id: http://devicetree.org/schemas/iommu/rockchip,iommu.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: iommu@ff924000: 'interrupt-names' does not match any of the regexes: 'pinctrl-[0-9]+'
+	from schema $id: http://devicetree.org/schemas/iommu/rockchip,iommu.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: hdmi@ff940000: clock-names:4: 'cec' is not one of ['vpll', 'ref']
+	from schema $id: http://devicetree.org/schemas/display/rockchip/rockchip,dw-hdmi.yaml#
+../Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports//acs_results/uefi/BsaDevTree.dtb: /mipi@ff960000: failed to match any schema with compatible: ['rockchip,rk3399-mipi-dsi', 'snps,dw-mipi-dsi']
+../Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports//acs_results/uefi/BsaDevTree.dtb: /mipi@ff960000: failed to match any schema with compatible: ['rockchip,rk3399-mipi-dsi', 'snps,dw-mipi-dsi']
+../Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports//acs_results/uefi/BsaDevTree.dtb: /mipi@ff968000: failed to match any schema with compatible: ['rockchip,rk3399-mipi-dsi', 'snps,dw-mipi-dsi']
+../Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports//acs_results/uefi/BsaDevTree.dtb: /mipi@ff968000: failed to match any schema with compatible: ['rockchip,rk3399-mipi-dsi', 'snps,dw-mipi-dsi']
+../Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports//acs_results/uefi/BsaDevTree.dtb: /edp@ff970000: failed to match any schema with compatible: ['rockchip,rk3399-edp']
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: gpu@ff9a0000: interrupt-names:0: 'job' was expected
+	from schema $id: http://devicetree.org/schemas/gpu/arm,mali-midgard.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: gpu@ff9a0000: interrupt-names:1: 'mmu' was expected
+	from schema $id: http://devicetree.org/schemas/gpu/arm,mali-midgard.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: gpu@ff9a0000: interrupt-names:2: 'gpu' was expected
+	from schema $id: http://devicetree.org/schemas/gpu/arm,mali-midgard.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: pinctrl: gpio0@ff720000:#interrupt-cells: [[2]] is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: pinctrl: gpio0@ff720000:compatible: ['rockchip,gpio-bank'] is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: pinctrl: gpio0@ff720000:gpio-controller: True is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: pinctrl: gpio0@ff720000:phandle: [[27]] is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: pinctrl: gpio0@ff720000:reg: [[0, 4285661184, 0, 256]] is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: pinctrl: gpio0@ff720000:interrupts: [[0, 14, 4, 0]] is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: pinctrl: gpio0@ff720000:#gpio-cells: [[2]] is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: pinctrl: gpio0@ff720000:clocks: [[106, 23]] is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: pinctrl: gpio0@ff720000:interrupt-controller: True is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: pinctrl: gpio2@ff780000:#interrupt-cells: [[2]] is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: pinctrl: gpio2@ff780000:compatible: ['rockchip,gpio-bank'] is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: pinctrl: gpio2@ff780000:gpio-controller: True is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: pinctrl: gpio2@ff780000:reg: [[0, 4286054400, 0, 256]] is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: pinctrl: gpio2@ff780000:interrupts: [[0, 16, 4, 0]] is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: pinctrl: gpio2@ff780000:#gpio-cells: [[2]] is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: pinctrl: gpio2@ff780000:clocks: [[8, 336]] is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: pinctrl: gpio2@ff780000:interrupt-controller: True is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: pinctrl: gpio4@ff790000:#interrupt-cells: [[2]] is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: pinctrl: gpio4@ff790000:compatible: ['rockchip,gpio-bank'] is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: pinctrl: gpio4@ff790000:gpio-controller: True is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: pinctrl: gpio4@ff790000:phandle: [[171]] is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: pinctrl: gpio4@ff790000:reg: [[0, 4286119936, 0, 256]] is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: pinctrl: gpio4@ff790000:interrupts: [[0, 18, 4, 0]] is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: pinctrl: gpio4@ff790000:#gpio-cells: [[2]] is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: pinctrl: gpio4@ff790000:clocks: [[8, 338]] is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: pinctrl: gpio4@ff790000:interrupt-controller: True is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: pinctrl: gpio3@ff788000:#interrupt-cells: [[2]] is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: pinctrl: gpio3@ff788000:compatible: ['rockchip,gpio-bank'] is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: pinctrl: gpio3@ff788000:gpio-controller: True is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: pinctrl: gpio3@ff788000:phandle: [[20]] is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: pinctrl: gpio3@ff788000:reg: [[0, 4286087168, 0, 256]] is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: pinctrl: gpio3@ff788000:interrupts: [[0, 17, 4, 0]] is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: pinctrl: gpio3@ff788000:#gpio-cells: [[2]] is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: pinctrl: gpio3@ff788000:clocks: [[8, 337]] is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: pinctrl: gpio3@ff788000:interrupt-controller: True is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: pinctrl: leds-gpio:rockchip,pins: [[2, 5, 0, 163], [2, 4, 0, 163], [2, 3, 0, 163]] is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: pinctrl: u-boot,dm-pre-reloc: True is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: pinctrl: gpio1@ff730000:#interrupt-cells: [[2]] is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: pinctrl: gpio1@ff730000:compatible: ['rockchip,gpio-bank'] is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: pinctrl: gpio1@ff730000:gpio-controller: True is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: pinctrl: gpio1@ff730000:phandle: [[113]] is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: pinctrl: gpio1@ff730000:reg: [[0, 4285726720, 0, 256]] is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: pinctrl: gpio1@ff730000:interrupts: [[0, 15, 4, 0]] is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: pinctrl: gpio1@ff730000:#gpio-cells: [[2]] is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: pinctrl: gpio1@ff730000:clocks: [[106, 24]] is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: pinctrl: gpio1@ff730000:interrupt-controller: True is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: pinctrl: sleep: {'ap-pwroff': {'rockchip,pins': [[1, 5, 1, 160]]}, 'ddrio-pwroff': {'rockchip,pins': [[0, 1, 1, 160]]}} is not of type 'array'
+	from schema $id: http://devicetree.org/schemas/powerpc/sleep.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: pinctrl: leds-gpio: {'rockchip,pins': [[2, 5, 0, 163], [2, 4, 0, 163], [2, 3, 0, 163]]} is not of type 'array'
+	from schema $id: http://devicetree.org/schemas/gpio/gpio-consumer.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: tsadc: otp-gpio: {'rockchip,pins': [[1, 6, 0, 160]], 'phandle': [[83]]} is not of type 'array'
+	from schema $id: http://devicetree.org/schemas/gpio/gpio-consumer.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: pmic: vsel1-gpio: {'rockchip,pins': [[1, 17, 0, 164]], 'phandle': [[118]]} is not of type 'array'
+	from schema $id: http://devicetree.org/schemas/gpio/gpio-consumer.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: pmic: vsel2-gpio: {'rockchip,pins': [[1, 14, 0, 164]], 'phandle': [[119]]} is not of type 'array'
+	from schema $id: http://devicetree.org/schemas/gpio/gpio-consumer.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: pmic: soc-slppin-gpio: {'rockchip,pins': [[1, 5, 0, 165]]} is not of type 'array'
+	from schema $id: http://devicetree.org/schemas/gpio/gpio-consumer.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_acs_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: backlight: 'power-supply' is a required property
+	from schema $id: http://devicetree.org/schemas/leds/backlight/pwm-backlight.yaml#

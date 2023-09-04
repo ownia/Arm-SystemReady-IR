@@ -1,0 +1,131 @@
+00200000-b6b63fff : System RAM
+  0042e000-0042efff : reserved
+  00440000-0044ffff : reserved
+  00450000-0045ffff : reserved
+  00460000-0046ffff : reserved
+  00470000-0047ffff : reserved
+  00500000-0050ffff : reserved
+  00510000-0051ffff : reserved
+  00520000-0052ffff : reserved
+  080ee000-08111fff : reserved
+  2b360000-2cc0ffff : Kernel code
+  2cc10000-2d30ffff : reserved
+  2d310000-2d72ffff : Kernel data
+  b695c000-b695dfff : reserved
+  b6960000-b696efff : reserved
+  b6b63000-b6b63fff : reserved
+b6b64000-b6b64fff : reserved
+b6b65000-b6b71fff : System RAM
+b6b72000-b6b73fff : reserved
+b6b74000-b6b74fff : System RAM
+b6b75000-b6b75fff : reserved
+b6b76000-b6b77fff : System RAM
+b6b78000-b6b78fff : reserved
+b6b79000-b6f72fff : System RAM
+b6f73000-b6f73fff : reserved
+b6f74000-b6f78fff : System RAM
+b6f79000-b6f79fff : reserved
+b6f7a000-b6f7efff : System RAM
+b6f7f000-b6f7ffff : reserved
+b6f80000-b6f81fff : System RAM
+b6f82000-b6f82fff : reserved
+b6f83000-b71f5fff : System RAM
+b71f6000-b71f7fff : reserved
+b71f8000-b71f9fff : System RAM
+b71fa000-b71fafff : reserved
+b71fb000-b721afff : System RAM
+b721b000-b721cfff : reserved
+b721d000-b7220fff : System RAM
+b7221000-b7221fff : reserved
+b7222000-b75bffff : System RAM
+b75c0000-b75c0fff : reserved
+b75c1000-b75c1fff : System RAM
+b75c2000-b75c2fff : reserved
+b75c3000-b75cafff : System RAM
+b75cb000-b75cbfff : reserved
+b75cc000-b76a2fff : System RAM
+b76a3000-b76a3fff : reserved
+b76a4000-b76a4fff : System RAM
+b76a5000-b76a5fff : reserved
+b76a6000-b76a6fff : System RAM
+b76a7000-b76a7fff : reserved
+b76a8000-b7900fff : System RAM
+b7901000-b7901fff : reserved
+b7902000-b7903fff : System RAM
+b7904000-b7904fff : reserved
+b7905000-b7906fff : System RAM
+b7907000-b7907fff : reserved
+b7908000-b7909fff : System RAM
+b790a000-b790afff : reserved
+b790b000-b790cfff : System RAM
+b790d000-b790dfff : reserved
+b790e000-b790ffff : System RAM
+b7910000-b7910fff : reserved
+b7911000-b7914fff : System RAM
+b7915000-b7915fff : reserved
+b7916000-b7917fff : System RAM
+b7918000-b7918fff : reserved
+b7919000-b791efff : System RAM
+b791f000-b791ffff : reserved
+b7920000-b7921fff : System RAM
+b7922000-b7922fff : reserved
+b7923000-b7928fff : System RAM
+b7929000-b7929fff : reserved
+b792a000-b792dfff : System RAM
+b792e000-b792efff : reserved
+b792f000-b7933fff : System RAM
+b7934000-b7934fff : reserved
+b7935000-b7a18fff : System RAM
+b7a19000-b7a19fff : reserved
+b7a1a000-f4de2fff : System RAM
+  f0e00000-f4bfffff : reserved
+f4de3000-f4de5fff : reserved
+f4de6000-f4ec2fff : System RAM
+f4ec3000-f4ec9fff : reserved
+f4eca000-f4ecafff : System RAM
+f4ecb000-f4ecbfff : reserved
+f4ecc000-f4ecdfff : System RAM
+f4ece000-f4ecffff : reserved
+f4ed0000-f4ed1fff : System RAM
+  f4ed1000-f4ed1fff : reserved
+f4ed2000-f4ed3fff : reserved
+f4ed4000-f4ed4fff : System RAM
+f4ed5000-f4ed9fff : reserved
+f4eda000-f4edafff : System RAM
+f4edb000-f4edbfff : reserved
+f4edc000-f4eddfff : System RAM
+f4ede000-f4edffff : reserved
+f4ee0000-f4ee0fff : System RAM
+f4ee1000-f4ee1fff : reserved
+f4ee2000-f4ee2fff : System RAM
+f4ee3000-f4ee3fff : reserved
+f4ee4000-f4ee4fff : System RAM
+f4ee5000-f4ee5fff : reserved
+f4ee6000-f4ee7fff : System RAM
+f4ee8000-f4ee8fff : reserved
+f4ee9000-f7efffff : System RAM
+  f5000000-f75fffff : reserved
+  f7747000-f77befff : reserved
+  f77c1000-f77c1fff : reserved
+  f77c2000-f77c4fff : reserved
+  f77c5000-f77c5fff : reserved
+  f77c6000-f77d9fff : reserved
+  f77da000-f782cfff : reserved
+  f782d000-f7efffff : reserved
+f7f00000-f7f0ffff : reserved
+f7f10000-f7ffffff : System RAM
+  f7f10000-f7ffffff : reserved
+fe320000-fe323fff : fe320000.mmc mmc@fe320000
+fe330000-fe33ffff : fe330000.sdhci sdhci@fe330000
+fe3c0000-fe3dffff : fe3c0000.usb usb@fe3c0000
+fe3e0000-fe3fffff : fe3e0000.usb usb@fe3e0000
+fe900000-fe907fff : dwc3
+  fe900000-fe907fff : xhci-hcd.0.auto dwc3
+fe90c100-fe9fffff : fe900000.dwc3 dwc3
+fee00000-fee0ffff : GICD
+fef00000-fefbffff : GICR
+ff1a0000-ff1a001f : serial
+ff3c0000-ff3c0fff : ff3c0000.i2c i2c@ff3c0000
+ff3e0000-ff3e0fff : ff3e0000.i2c i2c@ff3e0000
+ff420000-ff42000f : ff420000.pwm pwm@ff420000
+ff420020-ff42002f : ff420020.pwm pwm@ff4200

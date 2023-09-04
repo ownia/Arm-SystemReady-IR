@@ -1,0 +1,386 @@
+DeviceTree bindings of Linux kernel version: 6.1.2 
+dtschema version: 2022.9 
+
+/home/root/fdt/fdt: /: memory: False schema does not allow {'reg': [[0, 2097152, 0, 4158652416]], 'device_type': ['memory']}
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/recipe-sysroot-native/usr/lib/python3.10/site-packages/dtschema/schemas/root-node.yaml
+/home/root/fdt/fdt:0:0: /pcie@f8000000: failed to match any schema with compatible: ['rockchip,rk3399-pcie']
+/home/root/fdt/fdt: ethernet@fe300000: Unevaluated properties are not allowed ('snps,txpbl' was unexpected)
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/net/rockchip-dwmac.yaml
+/home/root/fdt/fdt: mmc@fe310000: Unevaluated properties are not allowed ('power-domains' was unexpected)
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/mmc/rockchip-dw-mshc.yaml
+/home/root/fdt/fdt: mmc@fe320000: Unevaluated properties are not allowed ('power-domains', 'u-boot,dm-pre-reloc', 'u-boot,spl-fifo-mode' were unexpected)
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/mmc/rockchip-dw-mshc.yaml
+/home/root/fdt/fdt: sdhci@fe330000: $nodename:0: 'sdhci@fe330000' does not match '^mmc(@.*)?$'
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/mmc/arasan,sdhci.yaml
+/home/root/fdt/fdt: sdhci@fe330000: Unevaluated properties are not allowed ('bus-width', 'disable-cqe-dcmd', 'max-frequency', 'mmc-hs400-1_8v', 'mmc-hs400-enhanced-strobe', 'non-removable', 'power-domains', 'u-boot,dm-pre-reloc' were unexpected)
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/mmc/arasan,sdhci.yaml
+/home/root/fdt/fdt: usb@fe800000: #address-cells:0:0: 1 was expected
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/usb/rockchip,dwc3.yaml
+/home/root/fdt/fdt: usb@fe800000: #size-cells:0:0: 0 was expected
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/usb/rockchip,dwc3.yaml
+/home/root/fdt/fdt: usb@fe800000: compatible: ['rockchip,rk3399-dwc3'] does not contain items matching the given schema
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/usb/rockchip,dwc3.yaml
+/home/root/fdt/fdt: usb@fe800000: Unevaluated properties are not allowed ('#address-cells', '#size-cells', 'compatible', 'dwc3', 'extcon', 'ranges', 'reset-names' were unexpected)
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/usb/rockchip,dwc3.yaml
+/home/root/fdt/fdt: usb@fe800000: 'reg' is a required property
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/usb/rockchip,dwc3.yaml
+/home/root/fdt/fdt: usb@fe800000: 'oneOf' conditional failed, one must be fixed:
+	'interrupts' is a required property
+	'interrupts-extended' is a required property
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/usb/rockchip,dwc3.yaml
+/home/root/fdt/fdt: usb@fe800000: compatible: ['rockchip,rk3399-dwc3'] is too short
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/usb/rockchip,dwc3.yaml
+/home/root/fdt/fdt: usb@fe800000: clocks: [[8, 129], [8, 131], [8, 246], [8, 248], [8, 244], [8, 249]] is too long
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/usb/rockchip,dwc3.yaml
+/home/root/fdt/fdt: usb@fe800000: clock-names:3: 'grf_clk' was expected
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/usb/rockchip,dwc3.yaml
+/home/root/fdt/fdt: usb@fe800000: clock-names: ['ref_clk', 'suspend_clk', 'bus_clk', 'aclk_usb3_rksoc_axi_perf', 'aclk_usb3', 'grf_clk'] is too long
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/usb/rockchip,dwc3.yaml
+/home/root/fdt/fdt: usb@fe800000: Unevaluated properties are not allowed ('#address-cells', '#size-cells', 'clock-names', 'clocks', 'compatible', 'dwc3', 'extcon', 'ranges' were unexpected)
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/usb/rockchip,dwc3.yaml
+/home/root/fdt/fdt: usb@fe800000: 'reg' is a required property
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/usb/rockchip,dwc3.yaml
+/home/root/fdt/fdt: usb@fe800000: 'oneOf' conditional failed, one must be fixed:
+	'interrupts' is a required property
+	'interrupts-extended' is a required property
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/usb/rockchip,dwc3.yaml
+/home/root/fdt/fdt: dwc3: $nodename:0: 'dwc3' does not match '^usb(@.*)?'
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/usb/snps,dwc3.yaml
+/home/root/fdt/fdt: dwc3: Unevaluated properties are not allowed ('phy_type', 'power-domains' were unexpected)
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/usb/snps,dwc3.yaml
+/home/root/fdt/fdt: usb@fe900000: #address-cells:0:0: 1 was expected
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/usb/rockchip,dwc3.yaml
+/home/root/fdt/fdt: usb@fe900000: #size-cells:0:0: 0 was expected
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/usb/rockchip,dwc3.yaml
+/home/root/fdt/fdt: usb@fe900000: compatible: ['rockchip,rk3399-dwc3'] does not contain items matching the given schema
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/usb/rockchip,dwc3.yaml
+/home/root/fdt/fdt: usb@fe900000: Unevaluated properties are not allowed ('#address-cells', '#size-cells', 'compatible', 'dwc3', 'ranges', 'reset-names' were unexpected)
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/usb/rockchip,dwc3.yaml
+/home/root/fdt/fdt: usb@fe900000: 'reg' is a required property
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/usb/rockchip,dwc3.yaml
+/home/root/fdt/fdt: usb@fe900000: 'oneOf' conditional failed, one must be fixed:
+	'interrupts' is a required property
+	'interrupts-extended' is a required property
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/usb/rockchip,dwc3.yaml
+/home/root/fdt/fdt: usb@fe900000: compatible: ['rockchip,rk3399-dwc3'] is too short
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/usb/rockchip,dwc3.yaml
+/home/root/fdt/fdt: usb@fe900000: clocks: [[8, 130], [8, 132], [8, 247], [8, 248], [8, 244], [8, 249]] is too long
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/usb/rockchip,dwc3.yaml
+/home/root/fdt/fdt: usb@fe900000: clock-names:3: 'grf_clk' was expected
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/usb/rockchip,dwc3.yaml
+/home/root/fdt/fdt: usb@fe900000: clock-names: ['ref_clk', 'suspend_clk', 'bus_clk', 'aclk_usb3_rksoc_axi_perf', 'aclk_usb3', 'grf_clk'] is too long
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/usb/rockchip,dwc3.yaml
+/home/root/fdt/fdt: usb@fe900000: Unevaluated properties are not allowed ('#address-cells', '#size-cells', 'clock-names', 'clocks', 'compatible', 'dwc3', 'ranges' were unexpected)
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/usb/rockchip,dwc3.yaml
+/home/root/fdt/fdt: usb@fe900000: 'reg' is a required property
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/usb/rockchip,dwc3.yaml
+/home/root/fdt/fdt: usb@fe900000: 'oneOf' conditional failed, one must be fixed:
+	'interrupts' is a required property
+	'interrupts-extended' is a required property
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/usb/rockchip,dwc3.yaml
+/home/root/fdt/fdt: dwc3: $nodename:0: 'dwc3' does not match '^usb(@.*)?'
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/usb/snps,dwc3.yaml
+/home/root/fdt/fdt: dwc3: Unevaluated properties are not allowed ('phy_type', 'power-domains' were unexpected)
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/usb/snps,dwc3.yaml
+/home/root/fdt/fdt:0:0: /dp@fec00000: failed to match any schema with compatible: ['rockchip,rk3399-cdn-dp']
+/home/root/fdt/fdt: interrupt-controller@fee00000: interrupt-controller@fee20000: False schema does not allow {'compatible': ['arm,gic-v3-its'], 'msi-controller': True, '#msi-cells': [[1]], 'reg': [[0, 4276224000, 0, 131072]], 'phandle': [[18]]}
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/interrupt-controller/arm,gic-v3.yaml
+/home/root/fdt/fdt: spi@ff1d0000: Unevaluated properties are not allowed ('u-boot,dm-pre-reloc' was unexpected)
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/spi/spi-rockchip.yaml
+/home/root/fdt/fdt: thermal-zones: 'cpu', 'gpu' do not match any of the regexes: '^[a-zA-Z][a-zA-Z0-9\\-]{1,12}-thermal$', 'pinctrl-[0-9]+'
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/thermal/thermal-zones.yaml
+/home/root/fdt/fdt: qos@ffa58000: compatible: 'anyOf' conditional failed, one must be fixed:
+	['syscon'] is too short
+	'syscon' is not one of ['allwinner,sun8i-a83t-system-controller', 'allwinner,sun8i-h3-system-controller', 'allwinner,sun8i-v3s-system-controller', 'allwinner,sun50i-a64-system-controller', 'brcm,cru-clkset', 'freecom,fsg-cs2-system-controller', 'fsl,imx93-aonmix-ns-syscfg', 'fsl,imx93-wakeupmix-syscfg', 'hisilicon,dsa-subctrl', 'hisilicon,hi6220-sramctrl', 'hisilicon,pcie-sas-subctrl', 'hisilicon,peri-subctrl', 'intel,lgm-syscon', 'marvell,armada-3700-usb2-host-misc', 'mediatek,mt8135-pctl-a-syscfg', 'mediatek,mt8135-pctl-b-syscfg', 'microchip,lan966x-cpu-syscon', 'microchip,sparx5-cpu-syscon', 'mstar,msc313-pmsleep', 'rockchip,px30-qos', 'rockchip,rk3036-qos', 'rockchip,rk3066-qos', 'rockchip,rk3228-qos', 'rockchip,rk3288-qos', 'rockchip,rk3368-qos', 'rockchip,rk3399-qos', 'rockchip,rk3568-qos', 'rockchip,rk3588-qos', 'rockchip,rv1126-qos', 'samsung,exynos3-sysreg', 'samsung,exynos4-sysreg', 'samsung,exynos5-sysreg', 'samsung,exynos5433-sysreg', 'samsung,exynos850-sysreg', 'samsung,exynosautov9-sysreg']
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/mfd/syscon.yaml
+/home/root/fdt/fdt: qos@ffa5c000: compatible: 'anyOf' conditional failed, one must be fixed:
+	['syscon'] is too short
+	'syscon' is not one of ['allwinner,sun8i-a83t-system-controller', 'allwinner,sun8i-h3-system-controller', 'allwinner,sun8i-v3s-system-controller', 'allwinner,sun50i-a64-system-controller', 'brcm,cru-clkset', 'freecom,fsg-cs2-system-controller', 'fsl,imx93-aonmix-ns-syscfg', 'fsl,imx93-wakeupmix-syscfg', 'hisilicon,dsa-subctrl', 'hisilicon,hi6220-sramctrl', 'hisilicon,pcie-sas-subctrl', 'hisilicon,peri-subctrl', 'intel,lgm-syscon', 'marvell,armada-3700-usb2-host-misc', 'mediatek,mt8135-pctl-a-syscfg', 'mediatek,mt8135-pctl-b-syscfg', 'microchip,lan966x-cpu-syscon', 'microchip,sparx5-cpu-syscon', 'mstar,msc313-pmsleep', 'rockchip,px30-qos', 'rockchip,rk3036-qos', 'rockchip,rk3066-qos', 'rockchip,rk3228-qos', 'rockchip,rk3288-qos', 'rockchip,rk3368-qos', 'rockchip,rk3399-qos', 'rockchip,rk3568-qos', 'rockchip,rk3588-qos', 'rockchip,rv1126-qos', 'samsung,exynos3-sysreg', 'samsung,exynos4-sysreg', 'samsung,exynos5-sysreg', 'samsung,exynos5433-sysreg', 'samsung,exynos850-sysreg', 'samsung,exynosautov9-sysreg']
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/mfd/syscon.yaml
+/home/root/fdt/fdt: qos@ffa60080: compatible: 'anyOf' conditional failed, one must be fixed:
+	['syscon'] is too short
+	'syscon' is not one of ['allwinner,sun8i-a83t-system-controller', 'allwinner,sun8i-h3-system-controller', 'allwinner,sun8i-v3s-system-controller', 'allwinner,sun50i-a64-system-controller', 'brcm,cru-clkset', 'freecom,fsg-cs2-system-controller', 'fsl,imx93-aonmix-ns-syscfg', 'fsl,imx93-wakeupmix-syscfg', 'hisilicon,dsa-subctrl', 'hisilicon,hi6220-sramctrl', 'hisilicon,pcie-sas-subctrl', 'hisilicon,peri-subctrl', 'intel,lgm-syscon', 'marvell,armada-3700-usb2-host-misc', 'mediatek,mt8135-pctl-a-syscfg', 'mediatek,mt8135-pctl-b-syscfg', 'microchip,lan966x-cpu-syscon', 'microchip,sparx5-cpu-syscon', 'mstar,msc313-pmsleep', 'rockchip,px30-qos', 'rockchip,rk3036-qos', 'rockchip,rk3066-qos', 'rockchip,rk3228-qos', 'rockchip,rk3288-qos', 'rockchip,rk3368-qos', 'rockchip,rk3399-qos', 'rockchip,rk3568-qos', 'rockchip,rk3588-qos', 'rockchip,rv1126-qos', 'samsung,exynos3-sysreg', 'samsung,exynos4-sysreg', 'samsung,exynos5-sysreg', 'samsung,exynos5433-sysreg', 'samsung,exynos850-sysreg', 'samsung,exynosautov9-sysreg']
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/mfd/syscon.yaml
+/home/root/fdt/fdt: qos@ffa60100: compatible: 'anyOf' conditional failed, one must be fixed:
+	['syscon'] is too short
+	'syscon' is not one of ['allwinner,sun8i-a83t-system-controller', 'allwinner,sun8i-h3-system-controller', 'allwinner,sun8i-v3s-system-controller', 'allwinner,sun50i-a64-system-controller', 'brcm,cru-clkset', 'freecom,fsg-cs2-system-controller', 'fsl,imx93-aonmix-ns-syscfg', 'fsl,imx93-wakeupmix-syscfg', 'hisilicon,dsa-subctrl', 'hisilicon,hi6220-sramctrl', 'hisilicon,pcie-sas-subctrl', 'hisilicon,peri-subctrl', 'intel,lgm-syscon', 'marvell,armada-3700-usb2-host-misc', 'mediatek,mt8135-pctl-a-syscfg', 'mediatek,mt8135-pctl-b-syscfg', 'microchip,lan966x-cpu-syscon', 'microchip,sparx5-cpu-syscon', 'mstar,msc313-pmsleep', 'rockchip,px30-qos', 'rockchip,rk3036-qos', 'rockchip,rk3066-qos', 'rockchip,rk3228-qos', 'rockchip,rk3288-qos', 'rockchip,rk3368-qos', 'rockchip,rk3399-qos', 'rockchip,rk3568-qos', 'rockchip,rk3588-qos', 'rockchip,rv1126-qos', 'samsung,exynos3-sysreg', 'samsung,exynos4-sysreg', 'samsung,exynos5-sysreg', 'samsung,exynos5433-sysreg', 'samsung,exynos850-sysreg', 'samsung,exynosautov9-sysreg']
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/mfd/syscon.yaml
+/home/root/fdt/fdt: qos@ffa60180: compatible: 'anyOf' conditional failed, one must be fixed:
+	['syscon'] is too short
+	'syscon' is not one of ['allwinner,sun8i-a83t-system-controller', 'allwinner,sun8i-h3-system-controller', 'allwinner,sun8i-v3s-system-controller', 'allwinner,sun50i-a64-system-controller', 'brcm,cru-clkset', 'freecom,fsg-cs2-system-controller', 'fsl,imx93-aonmix-ns-syscfg', 'fsl,imx93-wakeupmix-syscfg', 'hisilicon,dsa-subctrl', 'hisilicon,hi6220-sramctrl', 'hisilicon,pcie-sas-subctrl', 'hisilicon,peri-subctrl', 'intel,lgm-syscon', 'marvell,armada-3700-usb2-host-misc', 'mediatek,mt8135-pctl-a-syscfg', 'mediatek,mt8135-pctl-b-syscfg', 'microchip,lan966x-cpu-syscon', 'microchip,sparx5-cpu-syscon', 'mstar,msc313-pmsleep', 'rockchip,px30-qos', 'rockchip,rk3036-qos', 'rockchip,rk3066-qos', 'rockchip,rk3228-qos', 'rockchip,rk3288-qos', 'rockchip,rk3368-qos', 'rockchip,rk3399-qos', 'rockchip,rk3568-qos', 'rockchip,rk3588-qos', 'rockchip,rv1126-qos', 'samsung,exynos3-sysreg', 'samsung,exynos4-sysreg', 'samsung,exynos5-sysreg', 'samsung,exynos5433-sysreg', 'samsung,exynos850-sysreg', 'samsung,exynosautov9-sysreg']
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/mfd/syscon.yaml
+/home/root/fdt/fdt: qos@ffa70000: compatible: 'anyOf' conditional failed, one must be fixed:
+	['syscon'] is too short
+	'syscon' is not one of ['allwinner,sun8i-a83t-system-controller', 'allwinner,sun8i-h3-system-controller', 'allwinner,sun8i-v3s-system-controller', 'allwinner,sun50i-a64-system-controller', 'brcm,cru-clkset', 'freecom,fsg-cs2-system-controller', 'fsl,imx93-aonmix-ns-syscfg', 'fsl,imx93-wakeupmix-syscfg', 'hisilicon,dsa-subctrl', 'hisilicon,hi6220-sramctrl', 'hisilicon,pcie-sas-subctrl', 'hisilicon,peri-subctrl', 'intel,lgm-syscon', 'marvell,armada-3700-usb2-host-misc', 'mediatek,mt8135-pctl-a-syscfg', 'mediatek,mt8135-pctl-b-syscfg', 'microchip,lan966x-cpu-syscon', 'microchip,sparx5-cpu-syscon', 'mstar,msc313-pmsleep', 'rockchip,px30-qos', 'rockchip,rk3036-qos', 'rockchip,rk3066-qos', 'rockchip,rk3228-qos', 'rockchip,rk3288-qos', 'rockchip,rk3368-qos', 'rockchip,rk3399-qos', 'rockchip,rk3568-qos', 'rockchip,rk3588-qos', 'rockchip,rv1126-qos', 'samsung,exynos3-sysreg', 'samsung,exynos4-sysreg', 'samsung,exynos5-sysreg', 'samsung,exynos5433-sysreg', 'samsung,exynos850-sysreg', 'samsung,exynosautov9-sysreg']
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/mfd/syscon.yaml
+/home/root/fdt/fdt: qos@ffa70080: compatible: 'anyOf' conditional failed, one must be fixed:
+	['syscon'] is too short
+	'syscon' is not one of ['allwinner,sun8i-a83t-system-controller', 'allwinner,sun8i-h3-system-controller', 'allwinner,sun8i-v3s-system-controller', 'allwinner,sun50i-a64-system-controller', 'brcm,cru-clkset', 'freecom,fsg-cs2-system-controller', 'fsl,imx93-aonmix-ns-syscfg', 'fsl,imx93-wakeupmix-syscfg', 'hisilicon,dsa-subctrl', 'hisilicon,hi6220-sramctrl', 'hisilicon,pcie-sas-subctrl', 'hisilicon,peri-subctrl', 'intel,lgm-syscon', 'marvell,armada-3700-usb2-host-misc', 'mediatek,mt8135-pctl-a-syscfg', 'mediatek,mt8135-pctl-b-syscfg', 'microchip,lan966x-cpu-syscon', 'microchip,sparx5-cpu-syscon', 'mstar,msc313-pmsleep', 'rockchip,px30-qos', 'rockchip,rk3036-qos', 'rockchip,rk3066-qos', 'rockchip,rk3228-qos', 'rockchip,rk3288-qos', 'rockchip,rk3368-qos', 'rockchip,rk3399-qos', 'rockchip,rk3568-qos', 'rockchip,rk3588-qos', 'rockchip,rv1126-qos', 'samsung,exynos3-sysreg', 'samsung,exynos4-sysreg', 'samsung,exynos5-sysreg', 'samsung,exynos5433-sysreg', 'samsung,exynos850-sysreg', 'samsung,exynosautov9-sysreg']
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/mfd/syscon.yaml
+/home/root/fdt/fdt: qos@ffa74000: compatible: 'anyOf' conditional failed, one must be fixed:
+	['syscon'] is too short
+	'syscon' is not one of ['allwinner,sun8i-a83t-system-controller', 'allwinner,sun8i-h3-system-controller', 'allwinner,sun8i-v3s-system-controller', 'allwinner,sun50i-a64-system-controller', 'brcm,cru-clkset', 'freecom,fsg-cs2-system-controller', 'fsl,imx93-aonmix-ns-syscfg', 'fsl,imx93-wakeupmix-syscfg', 'hisilicon,dsa-subctrl', 'hisilicon,hi6220-sramctrl', 'hisilicon,pcie-sas-subctrl', 'hisilicon,peri-subctrl', 'intel,lgm-syscon', 'marvell,armada-3700-usb2-host-misc', 'mediatek,mt8135-pctl-a-syscfg', 'mediatek,mt8135-pctl-b-syscfg', 'microchip,lan966x-cpu-syscon', 'microchip,sparx5-cpu-syscon', 'mstar,msc313-pmsleep', 'rockchip,px30-qos', 'rockchip,rk3036-qos', 'rockchip,rk3066-qos', 'rockchip,rk3228-qos', 'rockchip,rk3288-qos', 'rockchip,rk3368-qos', 'rockchip,rk3399-qos', 'rockchip,rk3568-qos', 'rockchip,rk3588-qos', 'rockchip,rv1126-qos', 'samsung,exynos3-sysreg', 'samsung,exynos4-sysreg', 'samsung,exynos5-sysreg', 'samsung,exynos5433-sysreg', 'samsung,exynos850-sysreg', 'samsung,exynosautov9-sysreg']
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/mfd/syscon.yaml
+/home/root/fdt/fdt: qos@ffa76000: compatible: 'anyOf' conditional failed, one must be fixed:
+	['syscon'] is too short
+	'syscon' is not one of ['allwinner,sun8i-a83t-system-controller', 'allwinner,sun8i-h3-system-controller', 'allwinner,sun8i-v3s-system-controller', 'allwinner,sun50i-a64-system-controller', 'brcm,cru-clkset', 'freecom,fsg-cs2-system-controller', 'fsl,imx93-aonmix-ns-syscfg', 'fsl,imx93-wakeupmix-syscfg', 'hisilicon,dsa-subctrl', 'hisilicon,hi6220-sramctrl', 'hisilicon,pcie-sas-subctrl', 'hisilicon,peri-subctrl', 'intel,lgm-syscon', 'marvell,armada-3700-usb2-host-misc', 'mediatek,mt8135-pctl-a-syscfg', 'mediatek,mt8135-pctl-b-syscfg', 'microchip,lan966x-cpu-syscon', 'microchip,sparx5-cpu-syscon', 'mstar,msc313-pmsleep', 'rockchip,px30-qos', 'rockchip,rk3036-qos', 'rockchip,rk3066-qos', 'rockchip,rk3228-qos', 'rockchip,rk3288-qos', 'rockchip,rk3368-qos', 'rockchip,rk3399-qos', 'rockchip,rk3568-qos', 'rockchip,rk3588-qos', 'rockchip,rv1126-qos', 'samsung,exynos3-sysreg', 'samsung,exynos4-sysreg', 'samsung,exynos5-sysreg', 'samsung,exynos5433-sysreg', 'samsung,exynos850-sysreg', 'samsung,exynosautov9-sysreg']
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/mfd/syscon.yaml
+/home/root/fdt/fdt: qos@ffa90000: compatible: 'anyOf' conditional failed, one must be fixed:
+	['syscon'] is too short
+	'syscon' is not one of ['allwinner,sun8i-a83t-system-controller', 'allwinner,sun8i-h3-system-controller', 'allwinner,sun8i-v3s-system-controller', 'allwinner,sun50i-a64-system-controller', 'brcm,cru-clkset', 'freecom,fsg-cs2-system-controller', 'fsl,imx93-aonmix-ns-syscfg', 'fsl,imx93-wakeupmix-syscfg', 'hisilicon,dsa-subctrl', 'hisilicon,hi6220-sramctrl', 'hisilicon,pcie-sas-subctrl', 'hisilicon,peri-subctrl', 'intel,lgm-syscon', 'marvell,armada-3700-usb2-host-misc', 'mediatek,mt8135-pctl-a-syscfg', 'mediatek,mt8135-pctl-b-syscfg', 'microchip,lan966x-cpu-syscon', 'microchip,sparx5-cpu-syscon', 'mstar,msc313-pmsleep', 'rockchip,px30-qos', 'rockchip,rk3036-qos', 'rockchip,rk3066-qos', 'rockchip,rk3228-qos', 'rockchip,rk3288-qos', 'rockchip,rk3368-qos', 'rockchip,rk3399-qos', 'rockchip,rk3568-qos', 'rockchip,rk3588-qos', 'rockchip,rv1126-qos', 'samsung,exynos3-sysreg', 'samsung,exynos4-sysreg', 'samsung,exynos5-sysreg', 'samsung,exynos5433-sysreg', 'samsung,exynos850-sysreg', 'samsung,exynosautov9-sysreg']
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/mfd/syscon.yaml
+/home/root/fdt/fdt: qos@ffa98000: compatible: 'anyOf' conditional failed, one must be fixed:
+	['syscon'] is too short
+	'syscon' is not one of ['allwinner,sun8i-a83t-system-controller', 'allwinner,sun8i-h3-system-controller', 'allwinner,sun8i-v3s-system-controller', 'allwinner,sun50i-a64-system-controller', 'brcm,cru-clkset', 'freecom,fsg-cs2-system-controller', 'fsl,imx93-aonmix-ns-syscfg', 'fsl,imx93-wakeupmix-syscfg', 'hisilicon,dsa-subctrl', 'hisilicon,hi6220-sramctrl', 'hisilicon,pcie-sas-subctrl', 'hisilicon,peri-subctrl', 'intel,lgm-syscon', 'marvell,armada-3700-usb2-host-misc', 'mediatek,mt8135-pctl-a-syscfg', 'mediatek,mt8135-pctl-b-syscfg', 'microchip,lan966x-cpu-syscon', 'microchip,sparx5-cpu-syscon', 'mstar,msc313-pmsleep', 'rockchip,px30-qos', 'rockchip,rk3036-qos', 'rockchip,rk3066-qos', 'rockchip,rk3228-qos', 'rockchip,rk3288-qos', 'rockchip,rk3368-qos', 'rockchip,rk3399-qos', 'rockchip,rk3568-qos', 'rockchip,rk3588-qos', 'rockchip,rv1126-qos', 'samsung,exynos3-sysreg', 'samsung,exynos4-sysreg', 'samsung,exynos5-sysreg', 'samsung,exynos5433-sysreg', 'samsung,exynos850-sysreg', 'samsung,exynosautov9-sysreg']
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/mfd/syscon.yaml
+/home/root/fdt/fdt: qos@ffaa0000: compatible: 'anyOf' conditional failed, one must be fixed:
+	['syscon'] is too short
+	'syscon' is not one of ['allwinner,sun8i-a83t-system-controller', 'allwinner,sun8i-h3-system-controller', 'allwinner,sun8i-v3s-system-controller', 'allwinner,sun50i-a64-system-controller', 'brcm,cru-clkset', 'freecom,fsg-cs2-system-controller', 'fsl,imx93-aonmix-ns-syscfg', 'fsl,imx93-wakeupmix-syscfg', 'hisilicon,dsa-subctrl', 'hisilicon,hi6220-sramctrl', 'hisilicon,pcie-sas-subctrl', 'hisilicon,peri-subctrl', 'intel,lgm-syscon', 'marvell,armada-3700-usb2-host-misc', 'mediatek,mt8135-pctl-a-syscfg', 'mediatek,mt8135-pctl-b-syscfg', 'microchip,lan966x-cpu-syscon', 'microchip,sparx5-cpu-syscon', 'mstar,msc313-pmsleep', 'rockchip,px30-qos', 'rockchip,rk3036-qos', 'rockchip,rk3066-qos', 'rockchip,rk3228-qos', 'rockchip,rk3288-qos', 'rockchip,rk3368-qos', 'rockchip,rk3399-qos', 'rockchip,rk3568-qos', 'rockchip,rk3588-qos', 'rockchip,rv1126-qos', 'samsung,exynos3-sysreg', 'samsung,exynos4-sysreg', 'samsung,exynos5-sysreg', 'samsung,exynos5433-sysreg', 'samsung,exynos850-sysreg', 'samsung,exynosautov9-sysreg']
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/mfd/syscon.yaml
+/home/root/fdt/fdt: qos@ffaa0080: compatible: 'anyOf' conditional failed, one must be fixed:
+	['syscon'] is too short
+	'syscon' is not one of ['allwinner,sun8i-a83t-system-controller', 'allwinner,sun8i-h3-system-controller', 'allwinner,sun8i-v3s-system-controller', 'allwinner,sun50i-a64-system-controller', 'brcm,cru-clkset', 'freecom,fsg-cs2-system-controller', 'fsl,imx93-aonmix-ns-syscfg', 'fsl,imx93-wakeupmix-syscfg', 'hisilicon,dsa-subctrl', 'hisilicon,hi6220-sramctrl', 'hisilicon,pcie-sas-subctrl', 'hisilicon,peri-subctrl', 'intel,lgm-syscon', 'marvell,armada-3700-usb2-host-misc', 'mediatek,mt8135-pctl-a-syscfg', 'mediatek,mt8135-pctl-b-syscfg', 'microchip,lan966x-cpu-syscon', 'microchip,sparx5-cpu-syscon', 'mstar,msc313-pmsleep', 'rockchip,px30-qos', 'rockchip,rk3036-qos', 'rockchip,rk3066-qos', 'rockchip,rk3228-qos', 'rockchip,rk3288-qos', 'rockchip,rk3368-qos', 'rockchip,rk3399-qos', 'rockchip,rk3568-qos', 'rockchip,rk3588-qos', 'rockchip,rv1126-qos', 'samsung,exynos3-sysreg', 'samsung,exynos4-sysreg', 'samsung,exynos5-sysreg', 'samsung,exynos5433-sysreg', 'samsung,exynos850-sysreg', 'samsung,exynosautov9-sysreg']
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/mfd/syscon.yaml
+/home/root/fdt/fdt: qos@ffaa8000: compatible: 'anyOf' conditional failed, one must be fixed:
+	['syscon'] is too short
+	'syscon' is not one of ['allwinner,sun8i-a83t-system-controller', 'allwinner,sun8i-h3-system-controller', 'allwinner,sun8i-v3s-system-controller', 'allwinner,sun50i-a64-system-controller', 'brcm,cru-clkset', 'freecom,fsg-cs2-system-controller', 'fsl,imx93-aonmix-ns-syscfg', 'fsl,imx93-wakeupmix-syscfg', 'hisilicon,dsa-subctrl', 'hisilicon,hi6220-sramctrl', 'hisilicon,pcie-sas-subctrl', 'hisilicon,peri-subctrl', 'intel,lgm-syscon', 'marvell,armada-3700-usb2-host-misc', 'mediatek,mt8135-pctl-a-syscfg', 'mediatek,mt8135-pctl-b-syscfg', 'microchip,lan966x-cpu-syscon', 'microchip,sparx5-cpu-syscon', 'mstar,msc313-pmsleep', 'rockchip,px30-qos', 'rockchip,rk3036-qos', 'rockchip,rk3066-qos', 'rockchip,rk3228-qos', 'rockchip,rk3288-qos', 'rockchip,rk3368-qos', 'rockchip,rk3399-qos', 'rockchip,rk3568-qos', 'rockchip,rk3588-qos', 'rockchip,rv1126-qos', 'samsung,exynos3-sysreg', 'samsung,exynos4-sysreg', 'samsung,exynos5-sysreg', 'samsung,exynos5433-sysreg', 'samsung,exynos850-sysreg', 'samsung,exynosautov9-sysreg']
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/mfd/syscon.yaml
+/home/root/fdt/fdt: qos@ffaa8080: compatible: 'anyOf' conditional failed, one must be fixed:
+	['syscon'] is too short
+	'syscon' is not one of ['allwinner,sun8i-a83t-system-controller', 'allwinner,sun8i-h3-system-controller', 'allwinner,sun8i-v3s-system-controller', 'allwinner,sun50i-a64-system-controller', 'brcm,cru-clkset', 'freecom,fsg-cs2-system-controller', 'fsl,imx93-aonmix-ns-syscfg', 'fsl,imx93-wakeupmix-syscfg', 'hisilicon,dsa-subctrl', 'hisilicon,hi6220-sramctrl', 'hisilicon,pcie-sas-subctrl', 'hisilicon,peri-subctrl', 'intel,lgm-syscon', 'marvell,armada-3700-usb2-host-misc', 'mediatek,mt8135-pctl-a-syscfg', 'mediatek,mt8135-pctl-b-syscfg', 'microchip,lan966x-cpu-syscon', 'microchip,sparx5-cpu-syscon', 'mstar,msc313-pmsleep', 'rockchip,px30-qos', 'rockchip,rk3036-qos', 'rockchip,rk3066-qos', 'rockchip,rk3228-qos', 'rockchip,rk3288-qos', 'rockchip,rk3368-qos', 'rockchip,rk3399-qos', 'rockchip,rk3568-qos', 'rockchip,rk3588-qos', 'rockchip,rv1126-qos', 'samsung,exynos3-sysreg', 'samsung,exynos4-sysreg', 'samsung,exynos5-sysreg', 'samsung,exynos5433-sysreg', 'samsung,exynos850-sysreg', 'samsung,exynosautov9-sysreg']
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/mfd/syscon.yaml
+/home/root/fdt/fdt: qos@ffab0000: compatible: 'anyOf' conditional failed, one must be fixed:
+	['syscon'] is too short
+	'syscon' is not one of ['allwinner,sun8i-a83t-system-controller', 'allwinner,sun8i-h3-system-controller', 'allwinner,sun8i-v3s-system-controller', 'allwinner,sun50i-a64-system-controller', 'brcm,cru-clkset', 'freecom,fsg-cs2-system-controller', 'fsl,imx93-aonmix-ns-syscfg', 'fsl,imx93-wakeupmix-syscfg', 'hisilicon,dsa-subctrl', 'hisilicon,hi6220-sramctrl', 'hisilicon,pcie-sas-subctrl', 'hisilicon,peri-subctrl', 'intel,lgm-syscon', 'marvell,armada-3700-usb2-host-misc', 'mediatek,mt8135-pctl-a-syscfg', 'mediatek,mt8135-pctl-b-syscfg', 'microchip,lan966x-cpu-syscon', 'microchip,sparx5-cpu-syscon', 'mstar,msc313-pmsleep', 'rockchip,px30-qos', 'rockchip,rk3036-qos', 'rockchip,rk3066-qos', 'rockchip,rk3228-qos', 'rockchip,rk3288-qos', 'rockchip,rk3368-qos', 'rockchip,rk3399-qos', 'rockchip,rk3568-qos', 'rockchip,rk3588-qos', 'rockchip,rv1126-qos', 'samsung,exynos3-sysreg', 'samsung,exynos4-sysreg', 'samsung,exynos5-sysreg', 'samsung,exynos5433-sysreg', 'samsung,exynos850-sysreg', 'samsung,exynosautov9-sysreg']
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/mfd/syscon.yaml
+/home/root/fdt/fdt: qos@ffab0080: compatible: 'anyOf' conditional failed, one must be fixed:
+	['syscon'] is too short
+	'syscon' is not one of ['allwinner,sun8i-a83t-system-controller', 'allwinner,sun8i-h3-system-controller', 'allwinner,sun8i-v3s-system-controller', 'allwinner,sun50i-a64-system-controller', 'brcm,cru-clkset', 'freecom,fsg-cs2-system-controller', 'fsl,imx93-aonmix-ns-syscfg', 'fsl,imx93-wakeupmix-syscfg', 'hisilicon,dsa-subctrl', 'hisilicon,hi6220-sramctrl', 'hisilicon,pcie-sas-subctrl', 'hisilicon,peri-subctrl', 'intel,lgm-syscon', 'marvell,armada-3700-usb2-host-misc', 'mediatek,mt8135-pctl-a-syscfg', 'mediatek,mt8135-pctl-b-syscfg', 'microchip,lan966x-cpu-syscon', 'microchip,sparx5-cpu-syscon', 'mstar,msc313-pmsleep', 'rockchip,px30-qos', 'rockchip,rk3036-qos', 'rockchip,rk3066-qos', 'rockchip,rk3228-qos', 'rockchip,rk3288-qos', 'rockchip,rk3368-qos', 'rockchip,rk3399-qos', 'rockchip,rk3568-qos', 'rockchip,rk3588-qos', 'rockchip,rv1126-qos', 'samsung,exynos3-sysreg', 'samsung,exynos4-sysreg', 'samsung,exynos5-sysreg', 'samsung,exynos5433-sysreg', 'samsung,exynos850-sysreg', 'samsung,exynosautov9-sysreg']
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/mfd/syscon.yaml
+/home/root/fdt/fdt: qos@ffab8000: compatible: 'anyOf' conditional failed, one must be fixed:
+	['syscon'] is too short
+	'syscon' is not one of ['allwinner,sun8i-a83t-system-controller', 'allwinner,sun8i-h3-system-controller', 'allwinner,sun8i-v3s-system-controller', 'allwinner,sun50i-a64-system-controller', 'brcm,cru-clkset', 'freecom,fsg-cs2-system-controller', 'fsl,imx93-aonmix-ns-syscfg', 'fsl,imx93-wakeupmix-syscfg', 'hisilicon,dsa-subctrl', 'hisilicon,hi6220-sramctrl', 'hisilicon,pcie-sas-subctrl', 'hisilicon,peri-subctrl', 'intel,lgm-syscon', 'marvell,armada-3700-usb2-host-misc', 'mediatek,mt8135-pctl-a-syscfg', 'mediatek,mt8135-pctl-b-syscfg', 'microchip,lan966x-cpu-syscon', 'microchip,sparx5-cpu-syscon', 'mstar,msc313-pmsleep', 'rockchip,px30-qos', 'rockchip,rk3036-qos', 'rockchip,rk3066-qos', 'rockchip,rk3228-qos', 'rockchip,rk3288-qos', 'rockchip,rk3368-qos', 'rockchip,rk3399-qos', 'rockchip,rk3568-qos', 'rockchip,rk3588-qos', 'rockchip,rv1126-qos', 'samsung,exynos3-sysreg', 'samsung,exynos4-sysreg', 'samsung,exynos5-sysreg', 'samsung,exynos5433-sysreg', 'samsung,exynos850-sysreg', 'samsung,exynosautov9-sysreg']
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/mfd/syscon.yaml
+/home/root/fdt/fdt: qos@ffac0000: compatible: 'anyOf' conditional failed, one must be fixed:
+	['syscon'] is too short
+	'syscon' is not one of ['allwinner,sun8i-a83t-system-controller', 'allwinner,sun8i-h3-system-controller', 'allwinner,sun8i-v3s-system-controller', 'allwinner,sun50i-a64-system-controller', 'brcm,cru-clkset', 'freecom,fsg-cs2-system-controller', 'fsl,imx93-aonmix-ns-syscfg', 'fsl,imx93-wakeupmix-syscfg', 'hisilicon,dsa-subctrl', 'hisilicon,hi6220-sramctrl', 'hisilicon,pcie-sas-subctrl', 'hisilicon,peri-subctrl', 'intel,lgm-syscon', 'marvell,armada-3700-usb2-host-misc', 'mediatek,mt8135-pctl-a-syscfg', 'mediatek,mt8135-pctl-b-syscfg', 'microchip,lan966x-cpu-syscon', 'microchip,sparx5-cpu-syscon', 'mstar,msc313-pmsleep', 'rockchip,px30-qos', 'rockchip,rk3036-qos', 'rockchip,rk3066-qos', 'rockchip,rk3228-qos', 'rockchip,rk3288-qos', 'rockchip,rk3368-qos', 'rockchip,rk3399-qos', 'rockchip,rk3568-qos', 'rockchip,rk3588-qos', 'rockchip,rv1126-qos', 'samsung,exynos3-sysreg', 'samsung,exynos4-sysreg', 'samsung,exynos5-sysreg', 'samsung,exynos5433-sysreg', 'samsung,exynos850-sysreg', 'samsung,exynosautov9-sysreg']
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/mfd/syscon.yaml
+/home/root/fdt/fdt: qos@ffac0080: compatible: 'anyOf' conditional failed, one must be fixed:
+	['syscon'] is too short
+	'syscon' is not one of ['allwinner,sun8i-a83t-system-controller', 'allwinner,sun8i-h3-system-controller', 'allwinner,sun8i-v3s-system-controller', 'allwinner,sun50i-a64-system-controller', 'brcm,cru-clkset', 'freecom,fsg-cs2-system-controller', 'fsl,imx93-aonmix-ns-syscfg', 'fsl,imx93-wakeupmix-syscfg', 'hisilicon,dsa-subctrl', 'hisilicon,hi6220-sramctrl', 'hisilicon,pcie-sas-subctrl', 'hisilicon,peri-subctrl', 'intel,lgm-syscon', 'marvell,armada-3700-usb2-host-misc', 'mediatek,mt8135-pctl-a-syscfg', 'mediatek,mt8135-pctl-b-syscfg', 'microchip,lan966x-cpu-syscon', 'microchip,sparx5-cpu-syscon', 'mstar,msc313-pmsleep', 'rockchip,px30-qos', 'rockchip,rk3036-qos', 'rockchip,rk3066-qos', 'rockchip,rk3228-qos', 'rockchip,rk3288-qos', 'rockchip,rk3368-qos', 'rockchip,rk3399-qos', 'rockchip,rk3568-qos', 'rockchip,rk3588-qos', 'rockchip,rv1126-qos', 'samsung,exynos3-sysreg', 'samsung,exynos4-sysreg', 'samsung,exynos5-sysreg', 'samsung,exynos5433-sysreg', 'samsung,exynos850-sysreg', 'samsung,exynosautov9-sysreg']
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/mfd/syscon.yaml
+/home/root/fdt/fdt: qos@ffac8000: compatible: 'anyOf' conditional failed, one must be fixed:
+	['syscon'] is too short
+	'syscon' is not one of ['allwinner,sun8i-a83t-system-controller', 'allwinner,sun8i-h3-system-controller', 'allwinner,sun8i-v3s-system-controller', 'allwinner,sun50i-a64-system-controller', 'brcm,cru-clkset', 'freecom,fsg-cs2-system-controller', 'fsl,imx93-aonmix-ns-syscfg', 'fsl,imx93-wakeupmix-syscfg', 'hisilicon,dsa-subctrl', 'hisilicon,hi6220-sramctrl', 'hisilicon,pcie-sas-subctrl', 'hisilicon,peri-subctrl', 'intel,lgm-syscon', 'marvell,armada-3700-usb2-host-misc', 'mediatek,mt8135-pctl-a-syscfg', 'mediatek,mt8135-pctl-b-syscfg', 'microchip,lan966x-cpu-syscon', 'microchip,sparx5-cpu-syscon', 'mstar,msc313-pmsleep', 'rockchip,px30-qos', 'rockchip,rk3036-qos', 'rockchip,rk3066-qos', 'rockchip,rk3228-qos', 'rockchip,rk3288-qos', 'rockchip,rk3368-qos', 'rockchip,rk3399-qos', 'rockchip,rk3568-qos', 'rockchip,rk3588-qos', 'rockchip,rv1126-qos', 'samsung,exynos3-sysreg', 'samsung,exynos4-sysreg', 'samsung,exynos5-sysreg', 'samsung,exynos5433-sysreg', 'samsung,exynos850-sysreg', 'samsung,exynosautov9-sysreg']
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/mfd/syscon.yaml
+/home/root/fdt/fdt: qos@ffac8080: compatible: 'anyOf' conditional failed, one must be fixed:
+	['syscon'] is too short
+	'syscon' is not one of ['allwinner,sun8i-a83t-system-controller', 'allwinner,sun8i-h3-system-controller', 'allwinner,sun8i-v3s-system-controller', 'allwinner,sun50i-a64-system-controller', 'brcm,cru-clkset', 'freecom,fsg-cs2-system-controller', 'fsl,imx93-aonmix-ns-syscfg', 'fsl,imx93-wakeupmix-syscfg', 'hisilicon,dsa-subctrl', 'hisilicon,hi6220-sramctrl', 'hisilicon,pcie-sas-subctrl', 'hisilicon,peri-subctrl', 'intel,lgm-syscon', 'marvell,armada-3700-usb2-host-misc', 'mediatek,mt8135-pctl-a-syscfg', 'mediatek,mt8135-pctl-b-syscfg', 'microchip,lan966x-cpu-syscon', 'microchip,sparx5-cpu-syscon', 'mstar,msc313-pmsleep', 'rockchip,px30-qos', 'rockchip,rk3036-qos', 'rockchip,rk3066-qos', 'rockchip,rk3228-qos', 'rockchip,rk3288-qos', 'rockchip,rk3368-qos', 'rockchip,rk3399-qos', 'rockchip,rk3568-qos', 'rockchip,rk3588-qos', 'rockchip,rv1126-qos', 'samsung,exynos3-sysreg', 'samsung,exynos4-sysreg', 'samsung,exynos5-sysreg', 'samsung,exynos5433-sysreg', 'samsung,exynos850-sysreg', 'samsung,exynosautov9-sysreg']
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/mfd/syscon.yaml
+/home/root/fdt/fdt: qos@ffad0000: compatible: 'anyOf' conditional failed, one must be fixed:
+	['syscon'] is too short
+	'syscon' is not one of ['allwinner,sun8i-a83t-system-controller', 'allwinner,sun8i-h3-system-controller', 'allwinner,sun8i-v3s-system-controller', 'allwinner,sun50i-a64-system-controller', 'brcm,cru-clkset', 'freecom,fsg-cs2-system-controller', 'fsl,imx93-aonmix-ns-syscfg', 'fsl,imx93-wakeupmix-syscfg', 'hisilicon,dsa-subctrl', 'hisilicon,hi6220-sramctrl', 'hisilicon,pcie-sas-subctrl', 'hisilicon,peri-subctrl', 'intel,lgm-syscon', 'marvell,armada-3700-usb2-host-misc', 'mediatek,mt8135-pctl-a-syscfg', 'mediatek,mt8135-pctl-b-syscfg', 'microchip,lan966x-cpu-syscon', 'microchip,sparx5-cpu-syscon', 'mstar,msc313-pmsleep', 'rockchip,px30-qos', 'rockchip,rk3036-qos', 'rockchip,rk3066-qos', 'rockchip,rk3228-qos', 'rockchip,rk3288-qos', 'rockchip,rk3368-qos', 'rockchip,rk3399-qos', 'rockchip,rk3568-qos', 'rockchip,rk3588-qos', 'rockchip,rv1126-qos', 'samsung,exynos3-sysreg', 'samsung,exynos4-sysreg', 'samsung,exynos5-sysreg', 'samsung,exynos5433-sysreg', 'samsung,exynos850-sysreg', 'samsung,exynosautov9-sysreg']
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/mfd/syscon.yaml
+/home/root/fdt/fdt: qos@ffad8080: compatible: 'anyOf' conditional failed, one must be fixed:
+	['syscon'] is too short
+	'syscon' is not one of ['allwinner,sun8i-a83t-system-controller', 'allwinner,sun8i-h3-system-controller', 'allwinner,sun8i-v3s-system-controller', 'allwinner,sun50i-a64-system-controller', 'brcm,cru-clkset', 'freecom,fsg-cs2-system-controller', 'fsl,imx93-aonmix-ns-syscfg', 'fsl,imx93-wakeupmix-syscfg', 'hisilicon,dsa-subctrl', 'hisilicon,hi6220-sramctrl', 'hisilicon,pcie-sas-subctrl', 'hisilicon,peri-subctrl', 'intel,lgm-syscon', 'marvell,armada-3700-usb2-host-misc', 'mediatek,mt8135-pctl-a-syscfg', 'mediatek,mt8135-pctl-b-syscfg', 'microchip,lan966x-cpu-syscon', 'microchip,sparx5-cpu-syscon', 'mstar,msc313-pmsleep', 'rockchip,px30-qos', 'rockchip,rk3036-qos', 'rockchip,rk3066-qos', 'rockchip,rk3228-qos', 'rockchip,rk3288-qos', 'rockchip,rk3368-qos', 'rockchip,rk3399-qos', 'rockchip,rk3568-qos', 'rockchip,rk3588-qos', 'rockchip,rv1126-qos', 'samsung,exynos3-sysreg', 'samsung,exynos4-sysreg', 'samsung,exynos5-sysreg', 'samsung,exynos5433-sysreg', 'samsung,exynos850-sysreg', 'samsung,exynosautov9-sysreg']
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/mfd/syscon.yaml
+/home/root/fdt/fdt: qos@ffae0000: compatible: 'anyOf' conditional failed, one must be fixed:
+	['syscon'] is too short
+	'syscon' is not one of ['allwinner,sun8i-a83t-system-controller', 'allwinner,sun8i-h3-system-controller', 'allwinner,sun8i-v3s-system-controller', 'allwinner,sun50i-a64-system-controller', 'brcm,cru-clkset', 'freecom,fsg-cs2-system-controller', 'fsl,imx93-aonmix-ns-syscfg', 'fsl,imx93-wakeupmix-syscfg', 'hisilicon,dsa-subctrl', 'hisilicon,hi6220-sramctrl', 'hisilicon,pcie-sas-subctrl', 'hisilicon,peri-subctrl', 'intel,lgm-syscon', 'marvell,armada-3700-usb2-host-misc', 'mediatek,mt8135-pctl-a-syscfg', 'mediatek,mt8135-pctl-b-syscfg', 'microchip,lan966x-cpu-syscon', 'microchip,sparx5-cpu-syscon', 'mstar,msc313-pmsleep', 'rockchip,px30-qos', 'rockchip,rk3036-qos', 'rockchip,rk3066-qos', 'rockchip,rk3228-qos', 'rockchip,rk3288-qos', 'rockchip,rk3368-qos', 'rockchip,rk3399-qos', 'rockchip,rk3568-qos', 'rockchip,rk3588-qos', 'rockchip,rv1126-qos', 'samsung,exynos3-sysreg', 'samsung,exynos4-sysreg', 'samsung,exynos5-sysreg', 'samsung,exynos5433-sysreg', 'samsung,exynos850-sysreg', 'samsung,exynosautov9-sysreg']
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/mfd/syscon.yaml
+/home/root/fdt/fdt: power-controller: 'pd_edp@25', 'pd_emmc@23', 'pd_gmac@22', 'pd_gpu@35', 'pd_iep@34', 'pd_rga@33', 'pd_sd@27', 'pd_sdioaudio@28', 'pd_usb3@24', 'pd_vcodec@31', 'pd_vdu@32', 'pd_vio@15' do not match any of the regexes: '^power-domain@[0-9a-f]+$', 'pinctrl-[0-9]+'
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/power/rockchip,power-controller.yaml
+/home/root/fdt/fdt: pd_vio@15: 'pd_tcpc0@RK3399_PD_TCPC0', 'pd_tcpc1@RK3399_PD_TCPC1' do not match any of the regexes: '.*-names$', '.*-supply$', '^#.*-cells$', '^#[a-zA-Z0-9,+\\-._]{0,63}$', '^[a-zA-Z0-9][a-zA-Z0-9,+\\-._]{0,63}$', '^[a-zA-Z][a-zA-Z0-9,+\\-._]{0,63}@[0-9a-fA-F]+(,[0-9a-fA-F]+)*$', '^__.*__$', 'pinctrl-[0-9]+'
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/recipe-sysroot-native/usr/lib/python3.10/site-packages/dtschema/schemas/dt-core.yaml
+/home/root/fdt/fdt: syscon@ff320000: u-boot,dm-pre-reloc: True is not of type 'object'
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/soc/rockchip/grf.yaml
+/home/root/fdt/fdt: i2c@ff3c0000: Unevaluated properties are not allowed ('u-boot,dm-pre-reloc' was unexpected)
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/i2c/i2c-rk3x.yaml
+/home/root/fdt/fdt: pmic@20: 'u-boot,dm-pre-reloc' does not match any of the regexes: 'pinctrl-[0-9]+'
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/mfd/rockchip,rk809.yaml
+/home/root/fdt/fdt:0:0: /i2c@ff3c0000/tcs452x@1c: failed to match any schema with compatible: ['tcs,tcs452x']
+/home/root/fdt/fdt:0:0: /i2c@ff3c0000/tcs452x@10: failed to match any schema with compatible: ['tcs,tcs452x']
+/home/root/fdt/fdt:0:0: /i2c@ff3e0000/fusb30x@22: failed to match any schema with compatible: ['fairchild,fusb302']
+/home/root/fdt/fdt: pwm@ff420000: clock-names: ['pwm'] is too short
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/pwm/pwm-rockchip.yaml
+/home/root/fdt/fdt: pwm@ff420010: clock-names: ['pwm'] is too short
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/pwm/pwm-rockchip.yaml
+/home/root/fdt/fdt: pwm@ff420020: clock-names: ['pwm'] is too short
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/pwm/pwm-rockchip.yaml
+/home/root/fdt/fdt: pwm@ff420030: clock-names: ['pwm'] is too short
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/pwm/pwm-rockchip.yaml
+/home/root/fdt/fdt: iommu@ff650800: 'interrupt-names' does not match any of the regexes: 'pinctrl-[0-9]+'
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/iommu/rockchip,iommu.yaml
+/home/root/fdt/fdt: iommu@ff660480: 'interrupt-names' does not match any of the regexes: 'pinctrl-[0-9]+'
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/iommu/rockchip,iommu.yaml
+/home/root/fdt/fdt: iommu@ff670800: 'interrupt-names' does not match any of the regexes: 'pinctrl-[0-9]+'
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/iommu/rockchip,iommu.yaml
+/home/root/fdt/fdt: pmu-clock-controller@ff750000: 'u-boot,dm-pre-reloc' does not match any of the regexes: 'pinctrl-[0-9]+'
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/clock/rockchip,rk3399-cru.yaml
+/home/root/fdt/fdt: clock-controller@ff760000: 'u-boot,dm-pre-reloc' does not match any of the regexes: 'pinctrl-[0-9]+'
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/clock/rockchip,rk3399-cru.yaml
+/home/root/fdt/fdt: syscon@ff770000: u-boot,dm-pre-reloc: True is not of type 'object'
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/soc/rockchip/grf.yaml
+/home/root/fdt/fdt: usb2-phy@e450: '#phy-cells' is a required property
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/recipe-sysroot-native/usr/lib/python3.10/site-packages/dtschema/schemas/phy/phy-provider.yaml
+/home/root/fdt/fdt: usb2-phy@e460: '#phy-cells' is a required property
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/recipe-sysroot-native/usr/lib/python3.10/site-packages/dtschema/schemas/phy/phy-provider.yaml
+/home/root/fdt/fdt:0:0: /syscon@ff770000/phy@f780: failed to match any schema with compatible: ['rockchip,rk3399-emmc-phy']
+/home/root/fdt/fdt:0:0: /syscon@ff770000/pcie-phy: failed to match any schema with compatible: ['rockchip,rk3399-pcie-phy']
+/home/root/fdt/fdt: phy@ff7c0000: '#phy-cells' is a required property
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/recipe-sysroot-native/usr/lib/python3.10/site-packages/dtschema/schemas/phy/phy-provider.yaml
+/home/root/fdt/fdt:0:0: /phy@ff7c0000: failed to match any schema with compatible: ['rockchip,rk3399-typec-phy']
+/home/root/fdt/fdt: phy@ff800000: '#phy-cells' is a required property
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/recipe-sysroot-native/usr/lib/python3.10/site-packages/dtschema/schemas/phy/phy-provider.yaml
+/home/root/fdt/fdt:0:0: /phy@ff800000: failed to match any schema with compatible: ['rockchip,rk3399-typec-phy']
+/home/root/fdt/fdt: vop@ff8f0000: 'u-boot,dm-pre-reloc' does not match any of the regexes: 'pinctrl-[0-9]+'
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/display/rockchip/rockchip-vop.yaml
+/home/root/fdt/fdt: iommu@ff8f3f00: 'interrupt-names' does not match any of the regexes: 'pinctrl-[0-9]+'
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/iommu/rockchip,iommu.yaml
+/home/root/fdt/fdt: vop@ff900000: 'u-boot,dm-pre-reloc' does not match any of the regexes: 'pinctrl-[0-9]+'
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/display/rockchip/rockchip-vop.yaml
+/home/root/fdt/fdt: iommu@ff903f00: 'interrupt-names' does not match any of the regexes: 'pinctrl-[0-9]+'
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/iommu/rockchip,iommu.yaml
+/home/root/fdt/fdt: iommu@ff914000: 'interrupt-names' does not match any of the regexes: 'pinctrl-[0-9]+'
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/iommu/rockchip,iommu.yaml
+/home/root/fdt/fdt: iommu@ff924000: 'interrupt-names' does not match any of the regexes: 'pinctrl-[0-9]+'
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/iommu/rockchip,iommu.yaml
+/home/root/fdt/fdt: hdmi@ff940000: clock-names:4: 'cec' is not one of ['vpll', 'ref']
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/display/rockchip/rockchip,dw-hdmi.yaml
+/home/root/fdt/fdt: hdmi@ff940000: Unevaluated properties are not allowed ('#sound-dai-cells', 'power-domains' were unexpected)
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/display/rockchip/rockchip,dw-hdmi.yaml
+/home/root/fdt/fdt:0:0: /mipi@ff960000: failed to match any schema with compatible: ['rockchip,rk3399-mipi-dsi', 'snps,dw-mipi-dsi']
+/home/root/fdt/fdt:0:0: /mipi@ff960000: failed to match any schema with compatible: ['rockchip,rk3399-mipi-dsi', 'snps,dw-mipi-dsi']
+/home/root/fdt/fdt:0:0: /mipi@ff968000: failed to match any schema with compatible: ['rockchip,rk3399-mipi-dsi', 'snps,dw-mipi-dsi']
+/home/root/fdt/fdt:0:0: /mipi@ff968000: failed to match any schema with compatible: ['rockchip,rk3399-mipi-dsi', 'snps,dw-mipi-dsi']
+/home/root/fdt/fdt:0:0: /edp@ff970000: failed to match any schema with compatible: ['rockchip,rk3399-edp']
+/home/root/fdt/fdt: gpu@ff9a0000: interrupt-names:0: 'job' was expected
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/gpu/arm,mali-midgard.yaml
+/home/root/fdt/fdt: gpu@ff9a0000: interrupt-names:1: 'mmu' was expected
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/gpu/arm,mali-midgard.yaml
+/home/root/fdt/fdt: gpu@ff9a0000: interrupt-names:2: 'gpu' was expected
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/gpu/arm,mali-midgard.yaml
+/home/root/fdt/fdt: pinctrl: gpio4@ff790000:#gpio-cells: [[2]] is not of type 'object'
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/pinctrl/rockchip,pinctrl.yaml
+/home/root/fdt/fdt: pinctrl: gpio4@ff790000:clocks: [[8, 338]] is not of type 'object'
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/pinctrl/rockchip,pinctrl.yaml
+/home/root/fdt/fdt: pinctrl: gpio4@ff790000:interrupts: [[0, 18, 4, 0]] is not of type 'object'
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/pinctrl/rockchip,pinctrl.yaml
+/home/root/fdt/fdt: pinctrl: gpio4@ff790000:phandle: [[171]] is not of type 'object'
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/pinctrl/rockchip,pinctrl.yaml
+/home/root/fdt/fdt: pinctrl: gpio4@ff790000:reg: [[0, 4286119936, 0, 256]] is not of type 'object'
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/pinctrl/rockchip,pinctrl.yaml
+/home/root/fdt/fdt: pinctrl: gpio4@ff790000:interrupt-controller: True is not of type 'object'
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/pinctrl/rockchip,pinctrl.yaml
+/home/root/fdt/fdt: pinctrl: gpio4@ff790000:compatible: ['rockchip,gpio-bank'] is not of type 'object'
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/pinctrl/rockchip,pinctrl.yaml
+/home/root/fdt/fdt: pinctrl: gpio4@ff790000:gpio-controller: True is not of type 'object'
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/pinctrl/rockchip,pinctrl.yaml
+/home/root/fdt/fdt: pinctrl: gpio4@ff790000:#interrupt-cells: [[2]] is not of type 'object'
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/pinctrl/rockchip,pinctrl.yaml
+/home/root/fdt/fdt: pinctrl: leds-gpio:rockchip,pins: [[2, 5, 0, 163], [2, 4, 0, 163], [2, 3, 0, 163]] is not of type 'object'
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/pinctrl/rockchip,pinctrl.yaml
+/home/root/fdt/fdt: pinctrl: gpio2@ff780000:#gpio-cells: [[2]] is not of type 'object'
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/pinctrl/rockchip,pinctrl.yaml
+/home/root/fdt/fdt: pinctrl: gpio2@ff780000:clocks: [[8, 336]] is not of type 'object'
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/pinctrl/rockchip,pinctrl.yaml
+/home/root/fdt/fdt: pinctrl: gpio2@ff780000:interrupts: [[0, 16, 4, 0]] is not of type 'object'
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/pinctrl/rockchip,pinctrl.yaml
+/home/root/fdt/fdt: pinctrl: gpio2@ff780000:reg: [[0, 4286054400, 0, 256]] is not of type 'object'
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/pinctrl/rockchip,pinctrl.yaml
+/home/root/fdt/fdt: pinctrl: gpio2@ff780000:interrupt-controller: True is not of type 'object'
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/pinctrl/rockchip,pinctrl.yaml
+/home/root/fdt/fdt: pinctrl: gpio2@ff780000:compatible: ['rockchip,gpio-bank'] is not of type 'object'
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/pinctrl/rockchip,pinctrl.yaml
+/home/root/fdt/fdt: pinctrl: gpio2@ff780000:gpio-controller: True is not of type 'object'
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/pinctrl/rockchip,pinctrl.yaml
+/home/root/fdt/fdt: pinctrl: gpio2@ff780000:#interrupt-cells: [[2]] is not of type 'object'
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/pinctrl/rockchip,pinctrl.yaml
+/home/root/fdt/fdt: pinctrl: gpio3@ff788000:#gpio-cells: [[2]] is not of type 'object'
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/pinctrl/rockchip,pinctrl.yaml
+/home/root/fdt/fdt: pinctrl: gpio3@ff788000:clocks: [[8, 337]] is not of type 'object'
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/pinctrl/rockchip,pinctrl.yaml
+/home/root/fdt/fdt: pinctrl: gpio3@ff788000:interrupts: [[0, 17, 4, 0]] is not of type 'object'
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/pinctrl/rockchip,pinctrl.yaml
+/home/root/fdt/fdt: pinctrl: gpio3@ff788000:phandle: [[20]] is not of type 'object'
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/pinctrl/rockchip,pinctrl.yaml
+/home/root/fdt/fdt: pinctrl: gpio3@ff788000:reg: [[0, 4286087168, 0, 256]] is not of type 'object'
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/pinctrl/rockchip,pinctrl.yaml
+/home/root/fdt/fdt: pinctrl: gpio3@ff788000:interrupt-controller: True is not of type 'object'
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/pinctrl/rockchip,pinctrl.yaml
+/home/root/fdt/fdt: pinctrl: gpio3@ff788000:compatible: ['rockchip,gpio-bank'] is not of type 'object'
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/pinctrl/rockchip,pinctrl.yaml
+/home/root/fdt/fdt: pinctrl: gpio3@ff788000:gpio-controller: True is not of type 'object'
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/pinctrl/rockchip,pinctrl.yaml
+/home/root/fdt/fdt: pinctrl: gpio3@ff788000:#interrupt-cells: [[2]] is not of type 'object'
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/pinctrl/rockchip,pinctrl.yaml
+/home/root/fdt/fdt: pinctrl: u-boot,dm-pre-reloc: True is not of type 'object'
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/pinctrl/rockchip,pinctrl.yaml
+/home/root/fdt/fdt: pinctrl: gpio0@ff720000:#gpio-cells: [[2]] is not of type 'object'
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/pinctrl/rockchip,pinctrl.yaml
+/home/root/fdt/fdt: pinctrl: gpio0@ff720000:clocks: [[106, 23]] is not of type 'object'
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/pinctrl/rockchip,pinctrl.yaml
+/home/root/fdt/fdt: pinctrl: gpio0@ff720000:interrupts: [[0, 14, 4, 0]] is not of type 'object'
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/pinctrl/rockchip,pinctrl.yaml
+/home/root/fdt/fdt: pinctrl: gpio0@ff720000:phandle: [[27]] is not of type 'object'
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/pinctrl/rockchip,pinctrl.yaml
+/home/root/fdt/fdt: pinctrl: gpio0@ff720000:reg: [[0, 4285661184, 0, 256]] is not of type 'object'
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/pinctrl/rockchip,pinctrl.yaml
+/home/root/fdt/fdt: pinctrl: gpio0@ff720000:interrupt-controller: True is not of type 'object'
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/pinctrl/rockchip,pinctrl.yaml
+/home/root/fdt/fdt: pinctrl: gpio0@ff720000:compatible: ['rockchip,gpio-bank'] is not of type 'object'
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/pinctrl/rockchip,pinctrl.yaml
+/home/root/fdt/fdt: pinctrl: gpio0@ff720000:gpio-controller: True is not of type 'object'
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/pinctrl/rockchip,pinctrl.yaml
+/home/root/fdt/fdt: pinctrl: gpio0@ff720000:#interrupt-cells: [[2]] is not of type 'object'
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/pinctrl/rockchip,pinctrl.yaml
+/home/root/fdt/fdt: pinctrl: gpio1@ff730000:#gpio-cells: [[2]] is not of type 'object'
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/pinctrl/rockchip,pinctrl.yaml
+/home/root/fdt/fdt: pinctrl: gpio1@ff730000:clocks: [[106, 24]] is not of type 'object'
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/pinctrl/rockchip,pinctrl.yaml
+/home/root/fdt/fdt: pinctrl: gpio1@ff730000:interrupts: [[0, 15, 4, 0]] is not of type 'object'
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/pinctrl/rockchip,pinctrl.yaml
+/home/root/fdt/fdt: pinctrl: gpio1@ff730000:phandle: [[113]] is not of type 'object'
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/pinctrl/rockchip,pinctrl.yaml
+/home/root/fdt/fdt: pinctrl: gpio1@ff730000:reg: [[0, 4285726720, 0, 256]] is not of type 'object'
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/pinctrl/rockchip,pinctrl.yaml
+/home/root/fdt/fdt: pinctrl: gpio1@ff730000:interrupt-controller: True is not of type 'object'
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/pinctrl/rockchip,pinctrl.yaml
+/home/root/fdt/fdt: pinctrl: gpio1@ff730000:compatible: ['rockchip,gpio-bank'] is not of type 'object'
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/pinctrl/rockchip,pinctrl.yaml
+/home/root/fdt/fdt: pinctrl: gpio1@ff730000:gpio-controller: True is not of type 'object'
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/pinctrl/rockchip,pinctrl.yaml
+/home/root/fdt/fdt: pinctrl: gpio1@ff730000:#interrupt-cells: [[2]] is not of type 'object'
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/pinctrl/rockchip,pinctrl.yaml
+/home/root/fdt/fdt: pinctrl: sleep: {'ap-pwroff': {'rockchip,pins': [[1, 5, 1, 160]]}, 'ddrio-pwroff': {'rockchip,pins': [[0, 1, 1, 160]]}} is not of type 'array'
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/powerpc/sleep.yaml
+/home/root/fdt/fdt: pinctrl: leds-gpio: {'rockchip,pins': [[2, 5, 0, 163], [2, 4, 0, 163], [2, 3, 0, 163]]} is not of type 'array'
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/recipe-sysroot-native/usr/lib/python3.10/site-packages/dtschema/schemas/gpio/gpio-consumer.yaml
+/home/root/fdt/fdt: tsadc: otp-gpio: {'rockchip,pins': [[1, 6, 0, 160]], 'phandle': [[83]]} is not of type 'array'
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/recipe-sysroot-native/usr/lib/python3.10/site-packages/dtschema/schemas/gpio/gpio-consumer.yaml
+/home/root/fdt/fdt: pmic: vsel1-gpio: {'rockchip,pins': [[1, 17, 0, 164]], 'phandle': [[118]]} is not of type 'array'
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/recipe-sysroot-native/usr/lib/python3.10/site-packages/dtschema/schemas/gpio/gpio-consumer.yaml
+/home/root/fdt/fdt: pmic: vsel2-gpio: {'rockchip,pins': [[1, 14, 0, 164]], 'phandle': [[119]]} is not of type 'array'
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/recipe-sysroot-native/usr/lib/python3.10/site-packages/dtschema/schemas/gpio/gpio-consumer.yaml
+/home/root/fdt/fdt: pmic: soc-slppin-gpio: {'rockchip,pins': [[1, 5, 0, 165]]} is not of type 'array'
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/recipe-sysroot-native/usr/lib/python3.10/site-packages/dtschema/schemas/gpio/gpio-consumer.yaml
+/home/root/fdt/fdt: backlight: 'power-supply' is a required property
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/leds/backlight/pwm-backlight.yaml
+/home/root/fdt/fdt: vdd-center: Unevaluated properties are not allowed ('regulator-init-microvolt' was unexpected)
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/regulator/pwm-regulator.yaml
+/home/root/fdt/fdt:0:0: /usbhub-reset: failed to match any schema with compatible: ['usbhub-reset']
+/home/root/fdt/fdt:0:0: /syscon@ff620000: failed to match any schema with compatible: ['rockchip,rk3399-cic', 'syscon']
+/home/root/fdt/fdt:0:0: /dfi@ff630000: failed to match any schema with compatible: ['rockchip,rk3399-dfi']
+/home/root/fdt/fdt:0:0: /rng@ff8b8000: failed to match any schema with compatible: ['rockchip,cryptov1-rng']
+/home/root/fdt/fdt: dmc: 'operating-points-v2' is a required property
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/memory-controllers/rockchip,rk3399-dmc.yaml
+/home/root/fdt/fdt: dmc: 'center-supply' is a required property
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/memory-controllers/rockchip,rk3399-dmc.yaml
+/home/root/fdt/fdt: dmc: 'reg', 'rockchip,sdram-params', 'u-boot,dm-pre-reloc' do not match any of the regexes: 'pinctrl-[0-9]+'
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/image/usr/bin/bindings/memory-controllers/rockchip,rk3399-dmc.yaml
+/home/root/fdt/fdt:0:0: /syscon@ff330000: failed to match any schema with compatible: ['rockchip,rk3399-pmusgrf', 'syscon']
+/home/root/fdt/fdt: chosen: 'linux,uefi-mmap-desc-size', 'linux,uefi-mmap-desc-ver', 'linux,uefi-mmap-size', 'linux,uefi-mmap-start', 'linux,uefi-system-table', 'u-boot,spl-boot-device', 'u-boot,spl-boot-order' do not match any of the regexes: '^framebuffer', 'pinctrl-[0-9]+'
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/recipe-sysroot-native/usr/lib/python3.10/site-packages/dtschema/schemas/chosen.yaml
+/home/root/fdt/fdt: chosen: u-boot,spl-boot-order: b'same-as-spl\x00/sdhci@fe330000\x00/mmc@fe320000\x00' is not of type 'object', 'array', 'boolean', 'null'
+	From schema: /home/runner/work/arm-systemready/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/armv8a-oe-linux/process-schema/1.0-r0/recipe-sysroot-native/usr/lib/python3.10/site-packages/dtschema/schemas/dt-core.yaml
