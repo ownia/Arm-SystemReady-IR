@@ -35,7 +35,7 @@ cert-to-efi-sig-list CRT.crt CRT.esl
 	--monotonic-count 1 \
 	--index 1 \
 	--instance 0 \
-	--guid 058B7D83-50D5-4C47-A195-60D86AD341C4 \
+	--guid 877CF56B-F402-41CB-A6A8-75A8CC494F3C \
 	"tests.itb" \
 	"capsule1.bin"
 /home/weiouy01/code/u-boot/tools/mkeficapsule \
@@ -68,7 +68,7 @@ fdtoverlay -i qemu.dtb -o qemu.dtb -v signature.dtbo
 # Copy files to storage
 mkdir tmp/
 sudo mount /home/weiouy01/code/disk.img tmp/
-sudo cp capsule1.bin signed_capsule.bin unauth.bin tampered.bin tmp/
+sudo cp -f capsule1.bin signed_capsule.bin unauth.bin tampered.bin tmp/
 sync tmp/
 sudo umount tmp/
 rm -rf tmp/

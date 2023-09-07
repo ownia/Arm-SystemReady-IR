@@ -112,10 +112,6 @@ $QEMU \
 	-serial stdio \
 	#-chardev stdio,id=char0,logfile=console.log,signal=on \
 	#-serial chardev:char0 \
-elif [ "$1" = "check" ];
-then
-	echo "Check SR results"
-	python3 systemready-scripts/check-sr-results.py --dir test --debug 2>&1 | tee check-sr-result.log
 else
 echo "Running QEMU"
 $QEMU \
