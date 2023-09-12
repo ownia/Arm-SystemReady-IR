@@ -51,11 +51,12 @@ PWD=`pwd`
 TPMSOCK=/tmp/swtpm-sock$$
 MMCBLK0=/home/weiouy01/code/mmcblk0.bin
 
-DTB=''
 if [ -e qemu.dtb ];
 then
 echo "qemu.dtb exist"
-DBT=qemu.dtb
+DTB="--dtb qemu.dtb"
+else
+echo "qemu.dtb not exist"
 fi
 
 if [ "$1" = "sie" ];

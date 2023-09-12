@@ -32,10 +32,9 @@ cert-to-efi-sig-list CRT.crt CRT.esl
 
 # Generate signed capsule.bin
 /home/weiouy01/code/u-boot/tools/mkeficapsule \
-	--monotonic-count 1 \
 	--index 1 \
 	--instance 0 \
-	--guid 877CF56B-F402-41CB-A6A8-75A8CC494F3C \
+	--guid 058B7D83-50D5-4C47-A195-60D86AD341C4 \
 	"tests.itb" \
 	"capsule1.bin"
 /home/weiouy01/code/u-boot/tools/mkeficapsule \
