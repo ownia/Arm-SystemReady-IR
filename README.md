@@ -1,6 +1,6 @@
 # Arm SystemReady IoT
 
-### Arm SystemReady IR (IoT Ready)
+### Arm SystemReady IR
 
 2.x <br>
 3.0 --> Base-D
@@ -14,6 +14,7 @@
 * https://developer.arm.com/documentation/den0107/latest
 * https://developer.arm.com/documentation/den0109/latest
 * https://developer.arm.com/documentation/den0098/latest
+* https://developer.arm.com/documentation/den0118/latest
 * https://developer.arm.com/documentation/DUI1101/latest
 * https://developer.arm.com/documentation/ihi0062/latest
 * https://developer.arm.com/documentation/102872/latest
@@ -30,4 +31,4 @@
 * https://gitlab.arm.com/systemready/edk2-test-parser
 * https://gitlab.arm.com/systemready/systemready-ir-template
 * https://gitlab.arm.com/systemready/systemready-scripts
-
+* https://gitlab.com/Linaro/trustedsubstrate/mbfw/-/releases
