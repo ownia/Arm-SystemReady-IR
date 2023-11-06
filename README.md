@@ -5,9 +5,6 @@
 2.x <br>
 3.0 --> Base-D
 
-### Platform bringup
-TB-RK3568X0: https://github.com/ownia/u-boot/tree/TB-RK3568X0C
-
 ### Related Links
 * https://www.arm.com/architecture/system-architectures/systemready-certification-program/ir
 * https://developer.arm.com/documentation/den0022/latest
