@@ -1,19 +1,21 @@
 # Arm SystemReady IoT
 
-### Arm SystemReady IR
+## Arm SystemReady IR
 
 2.x <br>
 3.0 --> Base-D
 
-### Notes
+## Notes
 
-## Enrolling keys in U-Boot on QEMU
+### Enrolling keys in U-Boot on QEMU
+```
 load virtio 0 ${loadaddr} security-interface-extension-keys/TestPK1.auth && setenv -e -nv -bs -rt -at -i ${loadaddr}:$filesize PK
 load virtio 0 ${loadaddr} security-interface-extension-keys/TestKEK1.auth && setenv -e -nv -bs -rt -at -i ${loadaddr}:$filesize KEK
 load virtio 0 ${loadaddr} security-interface-extension-keys/TestDB1.auth && setenv -e -nv -bs -rt -at -i ${loadaddr}:$filesize db
 load virtio 0 ${loadaddr} security-interface-extension-keys/TestDBX1.auth && setenv -e -nv -bs -rt -at -i ${loadaddr}:$filesize dbx
+```
 
-### Related Links
+## Related Links
 * https://www.arm.com/architecture/system-architectures/systemready-certification-program/ir
 * https://developer.arm.com/documentation/den0022/latest
 * https://developer.arm.com/documentation/den0028/latest
