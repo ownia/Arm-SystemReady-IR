@@ -39,17 +39,24 @@ A QEMU executable is also generated at output/host/bin/qemu-system-aarch64
 Specific information for this Buildroot configuration is available in board/qemu/aarch64-ebbr/readme.txt
 EOF
 
+# QEMU
 QEMU=/home/weiouy01/code/buildroot/output/host/bin/qemu-system-aarch64
-BIOS=/home/weiouy01/code/buildroot/output/images/flash.bin
-ESP=/home/weiouy01/code/buildroot/output/images/disk.img
-FLASH0=/home/weiouy01/code/sie_edk2/flash0.img
-FLASH1=/home/weiouy01/code/sie_edk2/flash1.img
+# U-Boot, TF-A, OP-TEE
+BIOS=/home/weiouy01/code/flash.bin
+# GPT, ESP, rootfs
+DISK=/home/weiouy01/code/disk.img
+# IR ACS image
 IMAGE=/home/weiouy01/code/ir-acs-live-image-generic-arm64.wic
-#ESP=/home/weiouy01/code/esp.img
-TRANS=/home/weiouy01/code/disk.img
+# flash0 for QEMU_EFI.fd
+FLASH0=/home/weiouy01/code/flash0.img
+# flash1 for efi var install
+FLASH1=/home/weiouy01/code/flash1.img
+# An Ext4 partition for file transfer
+TRANS=/home/weiouy01/code/trans.img
+# A simulated raw partition
+MMCBLK0=/home/weiouy01/code/mmcblk0.bin
 PWD=`pwd`
 TPMSOCK=/tmp/swtpm-sock$$
-MMCBLK0=/home/weiouy01/code/mmcblk0.bin
 
 if [ -e qemu.dtb ];
 then
@@ -79,9 +86,10 @@ $QEMU \
 	-device virtio-blk-pci,drive=hd0 \
 	-drive file=$IMAGE,if=none,format=raw,id=hd0 \
 	-drive file=$TRANS,format=raw \
-	-chardev stdio,id=char0,logfile=console.log,signal=on \
-	-serial chardev:char0 \
-	# -display none -nographic
+	-nographic
+	#-chardev stdio,id=char0,logfile=console.log,signal=on \
+	#-serial chardev:char0 \
+	# -display none
 elif [ "$1" = "sie_new" ];
 then
 echo "Creating TPM Emulator socket"
@@ -99,7 +107,7 @@ $QEMU \
 	-netdev type=user,id=net0 \
 	-object rng-random,filename=/dev/urandom,id=rng0 \
 	-drive file=$IMAGE,if=none,format=raw,id=hd0 \
-	-drive file=$ESP,if=none,format=raw,id=hd1 \
+	-drive file=$DISK,if=none,format=raw,id=hd1 \
 	-machine secure=on,acpi=off \
 	-display none \
 	-rtc base=utc,clock=host \
@@ -114,21 +122,28 @@ $QEMU \
 	#-chardev stdio,id=char0,logfile=console.log,signal=on \
 	#-serial chardev:char0 \
 else
+echo "Creating TPM Emulator socket"
+[ -e $PWD/tpm ] || mkdir $PWD/tpm
+swtpm socket --tpm2 -t -d --tpmstate dir=$PWD/tpm --ctrl type=unixio,path=$TPMSOCK
+echo $TPMSOCK
 echo "Running QEMU"
 $QEMU \
 	-bios $BIOS \
 	-cpu cortex-a57 -smp 2 -m 2048 -M virt,secure=on,acpi=off \
 	$DTB \
-	-d unimp,guest_errors \
+	-d unimp \
 	-device virtio-blk-device,drive=hd1 \
 	-device virtio-blk-device,drive=hd0 \
 	-device virtio-net-device,netdev=eth0 \
 	-device virtio-rng-device,rng=rng0 \
 	-drive file=$IMAGE,if=none,format=raw,id=hd0 \
-	-drive file=$ESP,if=none,format=raw,id=hd1 \
+	-drive file=$DISK,if=none,format=raw,id=hd1 \
 	-device sdhci-pci \
 	-device sd-card,drive=sd0 \
 	-drive id=sd0,if=none,format=raw,file=$MMCBLK0 \
+	-chardev socket,id=chrtpm,path=$TPMSOCK \
+	-tpmdev emulator,id=tpm0,chardev=chrtpm \
+	-device tpm-tis-device,tpmdev=tpm0 \
 	-monitor null \
 	-netdev user,id=eth0 \
 	-nodefaults \

@@ -66,7 +66,7 @@ fdtoverlay -i qemu.dtb -o qemu.dtb -v signature.dtbo
 
 # Copy files to storage
 mkdir tmp/
-sudo mount /home/weiouy01/code/disk.img tmp/
+sudo mount /home/weiouy01/code/trans.img tmp/
 sudo cp -f capsule1.bin signed_capsule.bin unauth.bin tampered.bin tmp/
 sync tmp/
 sudo umount tmp/
