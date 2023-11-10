@@ -1,0 +1,56 @@
+0010f000-0010f0ff : 10f000.sram sram@10f000
+00200000-7ce54fff : System RAM
+  53510000-5545ffff : Kernel code
+  55460000-560affff : reserved
+  560b0000-5670ffff : Kernel data
+  57530000-57544fff : reserved
+  5a948000-5a948fff : reserved
+  5a949000-5a949fff : reserved
+  5a94a000-5a960fff : reserved
+  78e00000-7cdfffff : reserved
+  7ce3a000-7ce52fff : reserved
+  7ce53000-7ce53fff : reserved
+7ce55000-7ce55fff : reserved
+7ce56000-7ce58fff : System RAM
+7ce59000-7ce6afff : reserved
+7ce6b000-7ded3fff : System RAM
+7ded4000-7ded4fff : reserved
+7ded5000-7fe9ffff : System RAM
+  7f5f5000-7f8f5fff : reserved
+  7f8f6000-7f971fff : reserved
+  7f974000-7f975fff : reserved
+  7f976000-7f976fff : reserved
+  7f977000-7f98afff : reserved
+  7f98b000-7fe9ffff : reserved
+7fea0000-7feaffff : reserved
+7feb0000-7fffffff : System RAM
+  7feb0000-7fffffff : reserved
+fcc00000-fcc07fff : usb@fcc00000
+  fcc00000-fcc07fff : xhci-hcd.0.auto usb@fcc00000
+fcc0c100-fcffffff : fcc00000.usb usb@fcc00000
+fd400000-fd40ffff : GICD
+fd460000-fd4dffff : GICR
+fd800000-fd83ffff : fd800000.usb usb@fd800000
+fd840000-fd87ffff : fd840000.usb usb@fd840000
+fd880000-fd8bffff : fd880000.usb usb@fd880000
+fd8c0000-fd8fffff : fd8c0000.usb usb@fd8c0000
+fdd40000-fdd40fff : fdd40000.i2c i2c@fdd40000
+fdd60000-fdd600ff : fdd60000.gpio gpio@fdd60000
+fdea0800-fdea083f : fdea0800.iommu iommu@fdea0800
+fdee0800-fdee083f : fdee0800.iommu iommu@fdee0800
+fe043e00-fe043eff : fe043e00.iommu iommu@fe043e00
+fe043f00-fe043fff : fe043e00.iommu iommu@fe043e00
+fe2b0000-fe2b3fff : fe2b0000.mmc mmc@fe2b0000
+fe2c0000-fe2c3fff : fe2c0000.mmc mmc@fe2c0000
+fe310000-fe31ffff : fe310000.mmc mmc@fe310000
+fe530000-fe533fff : dma-controller@fe530000
+  fe530000-fe533fff : fe530000.dma-controller dma-controller@fe530000
+fe550000-fe553fff : dma-controller@fe550000
+  fe550000-fe553fff : fe550000.dma-controller dma-controller@fe550000
+fe5a0000-fe5a0fff : fe5a0000.i2c i2c@fe5a0000
+fe600000-fe6000ff : fe600000.watchdog watchdog@fe600000
+fe660000-fe66001f : serial
+fe740000-fe7400ff : fe740000.gpio gpio@fe740000
+fe750000-fe7500ff : fe750000.gpio gpio@fe750000
+fe760000-fe7600ff : fe760000.gpio gpio@fe760000
+fe770000-fe7700ff : fe770000.gpio gpio@fe770000

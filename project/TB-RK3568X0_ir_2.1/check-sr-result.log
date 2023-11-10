@@ -1,0 +1,29 @@
+WARNING run_identify: Could not identify...
+WARNING if_contains: `-dirty' found in `../Arm-SystemReady-IoT/project/TB-RK3568X0_ir_2.1/reports//acs-console.log' at line 52: `U-Boot SPL 2023.10-g166c4089bb-dirty (Nov 09 2023 - 09:56:55 +0800)' (warning once)
+ERROR check_dir: `../Arm-SystemReady-IoT/project/TB-RK3568X0_ir_2.1/reports//acs_results/' has too many entrie(s): 12 > 9
+ERROR check_file_contains: Could not find `Dropped:|0|' in `../Arm-SystemReady-IoT/project/TB-RK3568X0_ir_2.1/reports//acs_results/result.md'
+INFO identify_guid: GUID `a2d37d82-51e0-420d-83f5-470db993dd35' unknown, in `../Arm-SystemReady-IoT/project/TB-RK3568X0_ir_2.1/reports//acs_results/app_output/CapsuleApp_ESRT_table_info.log'
+INFO identify_guid: GUID `5a30833f-8c43-47b1-a41b-84d40883d0c6' unknown, in `../Arm-SystemReady-IoT/project/TB-RK3568X0_ir_2.1/reports//acs_results/app_output/CapsuleApp_ESRT_table_info.log'
+ERROR check_file_contains: Could not find `SystemReady IR ACS v2.0.0' in `../Arm-SystemReady-IoT/project/TB-RK3568X0_ir_2.1/reports//acs_results/fwts/FWTSResults.log'
+ERROR check_file_contains: Could not find `SystemReady IR ACS v2.0.0' in `../Arm-SystemReady-IoT/project/TB-RK3568X0_ir_2.1/reports//acs_results/linux_acs/bsa_acs_app/BSALinuxResults.log'
+ERROR check_dir: `../Arm-SystemReady-IoT/project/TB-RK3568X0_ir_2.1/reports//acs_results/linux_dump/' has too many entrie(s): 12 > 11
+ERROR check_file_contains: Could not find `Linux generic-arm64 6.0.0-yocto-standard #1 SMP PREEMPT Sun Oct 2 21:09:07 UTC 2022 aarch64 GNU/Linux' in `../Arm-SystemReady-IoT/project/TB-RK3568X0_ir_2.1/reports//acs_results/linux_dump/uname.log'
+ERROR check_dir: `../Arm-SystemReady-IoT/project/TB-RK3568X0_ir_2.1/reports//acs_results/linux_tools/' has too many entrie(s): 5 > 2
+ERROR check_file_contains: Could not find `dtschema version: 2022.9' in `../Arm-SystemReady-IoT/project/TB-RK3568X0_ir_2.1/reports//acs_results/linux_tools/dt-validate.log'
+ERROR check_file_contains: Could not find `Arm ACS Version: SystemReady IR ACS v2.0.0' in `../Arm-SystemReady-IoT/project/TB-RK3568X0_ir_2.1/reports//acs_results/sct_results/Overall/Summary.log'
+ERROR check_devicetree: 6 dt-parser error no schema with `../Arm-SystemReady-IoT/project/TB-RK3568X0_ir_2.1/reports//acs_results/uefi/BsaDevTree.dtb.log'!
+ERROR check_devicetree: 2 dt-parser error no yaml schema with `../Arm-SystemReady-IoT/project/TB-RK3568X0_ir_2.1/reports//acs_results/uefi/BsaDevTree.dtb.log'!
+ERROR check_file_contains: Could not find `/HD(3,GPT,' in `../Arm-SystemReady-IoT/project/TB-RK3568X0_ir_2.1/reports//acs_results/uefi_dump/map.log'
+WARNING if_contains: `-dirty' found in `../Arm-SystemReady-IoT/project/TB-RK3568X0_ir_2.1/reports//fw/u-boot-sniff.log' at line 112: `U-Boot 2023.10-g166c4089bb-dirty (Nov 09 2023 - 09:56:55 +0800)' (warning once)
+WARNING if_contains: `-dirty' found in `../Arm-SystemReady-IoT/project/TB-RK3568X0_ir_2.1/reports//fw/uefi-sniff.log' at line 195: `00000030: 62 62 2D 64 69 72 74 79-00 31 30 2F 30 31 2F 32  *bb-dirty.10/01/2*' (warning once)
+INFO check_uefi_sniff: Found ESP `HD(5,GPT,01af895c-5cdd-ca46-babb-259ddec58a00,0x800,0x3800)'
+ERROR check_file: `../Arm-SystemReady-IoT/project/TB-RK3568X0_ir_2.1/reports//fw/capsule-update.log' missing
+ERROR check_file: `../Arm-SystemReady-IoT/project/TB-RK3568X0_ir_2.1/reports//fw/capsule-on-disk.log' missing
+ERROR check_tree: `../Arm-SystemReady-IoT/project/TB-RK3568X0_ir_2.1/reports//fw/capsule*.bin' missing
+ERROR check_tree: `../Arm-SystemReady-IoT/project/TB-RK3568X0_ir_2.1/reports//os-logs/linux-distro3-version/*console.log' missing
+ERROR check_tree: `../Arm-SystemReady-IoT/project/TB-RK3568X0_ir_2.1/reports//os-logs/linux-distro3-version/*sys-firmware.tar.gz' missing
+ERROR check_tree: `../Arm-SystemReady-IoT/project/TB-RK3568X0_ir_2.1/reports//os-logs/linux-distro2-version/*console.log' missing
+ERROR check_tree: `../Arm-SystemReady-IoT/project/TB-RK3568X0_ir_2.1/reports//os-logs/linux-distro2-version/*sys-firmware.tar.gz' missing
+ERROR check_tree: `../Arm-SystemReady-IoT/project/TB-RK3568X0_ir_2.1/reports//os-logs/linux-distro1-version/*console.log' missing
+ERROR check_tree: `../Arm-SystemReady-IoT/project/TB-RK3568X0_ir_2.1/reports//os-logs/linux-distro1-version/*sys-firmware.tar.gz' missing
+INFO <module>: 415 checks, 391 pass, 3 warnings, 21 errors
