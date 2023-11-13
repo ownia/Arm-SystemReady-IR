@@ -1,0 +1,35 @@
+General information
+-------------------
+- Arm SystemReady Band: IR
+- System name:
+- Prepared by:
+- E-mail:
+- Date:
+
+System Information
+------------------
+- Company:
+- System:
+- SoC:
+- FW version:
+- Memory:
+- Storage devices / disks:
+- Network controllers:
+- Other Hardware information:
+
+Test Logs and Results
+----------------------
+- ACS version used:
+- ACS URL (if pre-built binary):
+- Changes to ACS (if built from source):
+
+- Test Logs collected
+[ ] ACS - SCT
+[ ] ACS - BSA - UEFI
+[ ] ACS - BSA - Linux
+[ ] ACS - FWTS
+[ ] ACS - Linux boot log
+[ ] ACS - Linux dumps
+[ ] ACS - UEFI Shell dumps
+[ ] ACS - Capsule Update
+

@@ -1,0 +1,457 @@
+
+
+ BSA Architecture Compliance Suite
+          Version 1.0.6
+
+ Starting tests with print level :  1
+
+
+ Creating Platform Information Tables
+ Using SMC as PSCI conduit
+ Creating PE INFO table
+ PE_INFO: Number of PE detected       :    6 
+ PE_INFO: Primary PE index       :    0 
+ Creating GIC INFO table
+
+       gic version from info table = 3  GIC INFO: GIC version                :    v3 
+ GIC_INFO: Number of GICD             :    1 
+ GIC_INFO: Number of GICR RD          :    1 
+ GIC_INFO: Number of ITS              :    1 
+
+       gic version from info table = 3 
+       gic version from info table = 3 
+       gic version from info table = 3   GIC_INIT: D base FEE00000
+  GIC_INIT: Interrupts 288
+  GIC_INIT: Setting Up Vector Table...
+  GIC_INIT: GICD_CTLR value 0x00000037
+ Creating TIMER INFO table
+ TIMER_INFO: Number of system timers  :    0 
+ Creating WATCHDOG INFO table
+ WATCHDOG_INFO: Number of Watchdogs   :    0 
+ Creating PCIe INFO table
+ PCIE_INFO: Number of ECAM regions    :    0 
+ Creating SMMU INFO table
+ SMMU_INFO: Number of SMMU CTRL       :    0 
+ Creating PERIPHERAL INFO table
+ Peripheral: Num of USB controllers   :    5 
+ Peripheral: Num of SATA controllers  :    0 
+ Peripheral: Num of UART controllers  :    0 
+
+ No ECAM is present Creating MEMORY INFO table
+
+      *** Starting PE tests ***  
+
+Operating System View:
+   1 : Check Arch symmetry across PE                  START
+
+       cache size read is 700FE01A 
+       cache size read is 703FE07A        PSCI_CPU_ON: success  
+       PSCI_CPU_ON: success  
+       PSCI_CPU_ON: success  
+       PSCI_CPU_ON: success  
+
+       Reg compare failed for PE index=4 for Register: PMCEID0_EL0
+       Current PE value = 0x67FFBFFF         Other PE value = 0x7FFF0F3F
+       Failed on PE -    4
+       B_PE_01
+       Checkpoint --  1                           : Result:  FAIL 
+         END
+
+   2 : Check for number of PE                         START
+
+       gic version from info table = 3 
+       B_PE_02
+                                       : Result:  PASS 
+         END
+
+   3 : Check for AdvSIMD and FP support               START
+       PSCI_CPU_ON: success  
+       PSCI_CPU_ON: success  
+       PSCI_CPU_ON: success  
+       PSCI_CPU_ON: success  
+       PSCI_CPU_ON: success  
+
+       B_PE_03
+                                       : Result:  PASS 
+         END
+
+   4 : Check PE 4KB Granule Support                   START
+       PSCI_CPU_ON: success  
+       PSCI_CPU_ON: success  
+       PSCI_CPU_ON: success  
+       PSCI_CPU_ON: success  
+       PSCI_CPU_ON: success  
+
+       B_PE_04
+                                       : Result:  PASS 
+         END
+
+   6 : Check Cryptographic extensions                 START
+       PSCI_CPU_ON: success  
+       PSCI_CPU_ON: success  
+       PSCI_CPU_ON: success  
+       PSCI_CPU_ON: success  
+       PSCI_CPU_ON: success  
+
+       B_PE_06
+                                       : Result:  PASS 
+         END
+
+   7 : Check Little Endian support                    START
+       PSCI_CPU_ON: success  
+       PSCI_CPU_ON: success  
+       PSCI_CPU_ON: success  
+       PSCI_CPU_ON: success  
+       PSCI_CPU_ON: success  
+
+       B_PE_07
+                                       : Result:  PASS 
+         END
+
+   8 : Check EL1 and EL0 implementation               START
+       PSCI_CPU_ON: success  
+       PSCI_CPU_ON: success  
+       PSCI_CPU_ON: success  
+       PSCI_CPU_ON: success  
+       PSCI_CPU_ON: success  
+
+       B_PE_08
+                                       : Result:  PASS 
+         END
+
+   9 : Check for PMU and PMU counters                 START
+       PSCI_CPU_ON: success  
+       PSCI_CPU_ON: success  
+       PSCI_CPU_ON: success  
+       PSCI_CPU_ON: success  
+       PSCI_CPU_ON: success  
+
+       B_PE_09
+                                       : Result:  PASS 
+         END
+
+  10 : Check PMU Overflow signal                      START
+
+       gic version from info table = 3 
+       gic version from info table = 3 
+       GIC_INIT: In Exception Handler Type : 1
+       gic version from info table = 3 
+ Received PMUIRQ 
+       gic version from info table = 3 
+       gic version from info table = 3 
+       GIC_INIT: Common Handler, FAR = 6344402B
+       GIC_INIT: Common Handler, ESR = 2500021
+       B_PE_10
+                                       : Result:  PASS 
+         END
+
+  11 : Check num of Breakpoints and type              START
+       PSCI_CPU_ON: success  
+       PSCI_CPU_ON: success  
+       PSCI_CPU_ON: success  
+       PSCI_CPU_ON: success  
+       PSCI_CPU_ON: success  
+
+       B_PE_11
+                                       : Result:  PASS 
+         END
+
+  12 : Check Synchronous Watchpoints                  START
+       PSCI_CPU_ON: success  
+       PSCI_CPU_ON: success  
+       PSCI_CPU_ON: success  
+       PSCI_CPU_ON: success  
+       PSCI_CPU_ON: success  
+
+       B_PE_12
+                                       : Result:  PASS 
+         END
+
+  13 : Check CRC32 instruction support                START
+       PSCI_CPU_ON: success  
+       PSCI_CPU_ON: success  
+       PSCI_CPU_ON: success  
+       PSCI_CPU_ON: success  
+       PSCI_CPU_ON: success  
+
+       B_PE_13
+                                       : Result:  PASS 
+         END
+
+  14 : Check PAuth if implementation                  START
+       PSCI_CPU_ON: success  
+       PSCI_CPU_ON: success  
+       PSCI_CPU_ON: success  
+       PSCI_CPU_ON: success  
+       PSCI_CPU_ON: success  
+
+       B_PE_15
+       Checkpoint --  1                           : Result:  SKIPPED 
+         END
+
+
+      One or more PE tests failed or were skipped.
+
+      *** Starting Memory Map tests ***  
+
+Operating System View:
+ 102 : Mem Access Response in finite time             START
+Instance 0x0 not found for memory type 0x1000
+
+       Error in getting dev mem for index 0  
+       B_MEM_01
+                                       : Result:  PASS 
+         END
+
+ 103 : PE must access all NS addr space               START
+
+       B_MEM_05
+                                       : Result:  PASS 
+         END
+
+
+      All Memory tests passed.
+
+      *** Starting GIC tests ***  
+
+       gic version from info table = 3 
+Operating System View:
+ 201 : Check GIC version                              START
+
+       gic version from info table = 3 
+       Received GIC version =    3      
+       B_GIC_01
+                                       : Result:  PASS 
+         END
+
+ 203 : If PCIe, GICv3 then ITS, LPI                   START
+
+       gic version from info table = 3 
+       B_GIC_03
+       Checkpoint --  1                           : Result:  SKIPPED 
+         END
+
+ 204 : Check GICv3 Security States                    START
+
+       gic version from info table = 3 
+       B_GIC_04
+                                       : Result:  PASS 
+         END
+
+ 205 : Non-secure SGIs are implemented                START
+
+       PE MPIDR 0x0       gicr_rdindex 0       gicrd_base 0xFEF00000
+       GICR_TYPER 0x1
+
+       PE RD base address FEF00000  data 0x80FFFF
+       B_GIC_05
+                                       : Result:  PASS 
+         END
+
+ 206 : Check EL1-Phy timer PPI assignment             START
+
+       gic version from info table = 3 
+       gic version from info table = 3 
+       GIC_INIT: In Exception Handler Type : 1
+       gic version from info table = 3 
+       Received phy el1 interrupt   
+       gic version from info table = 3 
+       gic version from info table = 3 
+       GIC_INIT: Common Handler, FAR = 6344402B
+       GIC_INIT: Common Handler, ESR = 2500021
+       B_PPI_01
+                                       : Result:  PASS 
+         END
+
+ 207 : Check EL1-Virt timer PPI assignment            START
+
+       gic version from info table = 3 
+       gic version from info table = 3 
+       GIC_INIT: In Exception Handler Type : 1
+       gic version from info table = 3 
+       Received virt el1 interrupt   
+       gic version from info table = 3 
+       gic version from info table = 3 
+       GIC_INIT: Common Handler, FAR = 6344402B
+       GIC_INIT: Common Handler, ESR = 2500021
+       B_PPI_01
+                                       : Result:  PASS 
+         END
+
+
+       No GICv2m, Skipping all GICv2m tests 
+
+       No ITS, Skipping all DeviceID & ITS tests 
+
+      One or more GIC tests failed or were skipped.
+
+       No SMMU Controller Found, Skipping SMMU tests...
+
+      *** Starting Timer tests ***  
+
+Operating System View:
+ 401 : Check Counter Frequency                        START
+
+       Counter frequency is 16E3600     
+       B_TIME_01, B_TIME_02
+                                       : Result:  PASS 
+         END
+
+ 402 : SYS Timer if PE Timer not ON                   START
+
+ Physical EL1 timer flag = 0
+ Physical EL2 timer flag = 0
+ Virtual EL1 timer flag  = 0
+       PE Timers are not always-on 
+       And no system wake up timer
+       Failed on PE -    0
+       B_TIME_06
+       Checkpoint --  1                           : Result:  FAIL 
+         END
+
+ 403 : Memory mapped timer check                      START
+
+       No System timers are defined  
+       B_TIME_07, B_TIME_10
+       Checkpoint --  1                           : Result:  SKIPPED 
+         END
+
+ 404 : Generate Mem Mapped SYS Timer Intr             START
+
+       No System timers are defined  
+       B_TIME_08
+       Checkpoint --  1                           : Result:  SKIPPED 
+         END
+
+ 405 : Restore PE timer on PE wake up                 START
+
+       No non-secure systimer implemented
+       B_TIME_09
+       Checkpoint --  1                           : Result:  SKIPPED 
+         END
+
+
+      One or more Timer tests failed or were skipped.
+
+      *** Starting Wakeup semantic tests ***  
+
+Operating System View:
+ 501 : Wake from EL1 PHY Timer Int                    START
+
+       gic version from info table = 3 
+       gic version from info table = 3 
+       GIC_INIT: In Exception Handler Type : 1
+       gic version from info table = 3        Received EL1 PHY interrupt       
+
+       gic version from info table = 3 
+       gic version from info table = 3 
+       GIC_INIT: Common Handler, FAR = 6344402B
+       GIC_INIT: Common Handler, ESR = 2500021
+       B_WAK_01, B_WAK_02, B_WAK_03, B_WAK_04, B_WAK_05                     
+       B_WAK_06, B_WAK_07, B_WAK_10, B_WAK_11
+                                       : Result:  PASS 
+         END
+
+ 502 : Wake from EL1 VIR Timer Int                    START
+
+       gic version from info table = 3 
+       gic version from info table = 3 
+       gic version from info table = 3 
+       gic version from info table = 3 
+       GIC_INIT: In Exception Handler Type : 1
+       gic version from info table = 3        Received EL1 VIRT interrupt      
+
+       gic version from info table = 3 
+       gic version from info table = 3 
+       GIC_INIT: Common Handler, FAR = 6344402B
+       GIC_INIT: Common Handler, ESR = 2500021
+       B_WAK_01, B_WAK_02, B_WAK_03, B_WAK_04, B_WAK_05                     
+       B_WAK_06, B_WAK_07, B_WAK_10, B_WAK_11
+                                       : Result:  PASS 
+         END
+
+ 503 : Wake from EL2 PHY Timer Int                    START
+
+       gic version from info table = 3 
+       gic version from info table = 3 
+       gic version from info table = 3 
+       gic version from info table = 3 
+       GIC_INIT: In Exception Handler Type : 1
+       gic version from info table = 3        Received EL2 Physical interrupt  
+
+       gic version from info table = 3 
+       gic version from info table = 3 
+       GIC_INIT: Common Handler, FAR = 6344402B
+       GIC_INIT: Common Handler, ESR = 2500021
+       B_WAK_01, B_WAK_02, B_WAK_03, B_WAK_04, B_WAK_05                     
+       B_WAK_06, B_WAK_07, B_WAK_10, B_WAK_11
+                                       : Result:  PASS 
+         END
+
+ 504 : Wake from Watchdog WS0 Int                     START
+
+       No watchdog implemented      
+       B_WAK_01, B_WAK_02, B_WAK_03, B_WAK_04, B_WAK_05                     
+       B_WAK_06, B_WAK_07, B_WAK_10, B_WAK_11
+       Checkpoint --  1                           : Result:  SKIPPED 
+         END
+
+ 505 : Wake from System Timer Int                     START
+
+       No system timers implemented
+       B_WAK_01, B_WAK_02, B_WAK_03, B_WAK_04, B_WAK_05                     
+       B_WAK_06, B_WAK_07, B_WAK_10, B_WAK_11
+       Checkpoint --  1                           : Result:  SKIPPED 
+         END
+
+
+      One or more Wakeup tests failed or were skipped.
+
+      *** Starting Peripheral tests ***  
+
+Operating System View:
+ 601 : USB CTRL Interface                             START
+
+       Detected USB CTRL 1 supports 1 interface and not EHCI/XHCI
+       Failed on PE -    0
+       B_PER_01, B_PER_02
+       Checkpoint --  1                           : Result:  FAIL 
+         END
+
+ 602 : Check SATA CTRL Interface                      START
+
+       B_PER_03
+       Checkpoint --  1                           : Result:  SKIPPED 
+         END
+
+ 603 : Check Arm BSA UART register offsets            START
+
+       No UART defined by Platform      
+       Failed on PE -    0
+       B_PER_05
+       Checkpoint --  1                           : Result:  FAIL 
+         END
+
+ 606 : 16550 compatible UART                          START
+
+       No UART defined by Platform      
+       Failed on PE -    0
+       B_PER_05
+       Checkpoint --  1                           : Result:  FAIL 
+         END
+
+
+      One or more Peripheral tests failed or were skipped.
+
+       No Watchdog Found, Skipping Watchdog tests...
+
+      *** No ECAM region found, Skipping PCIE tests *** 
+
+       USER Override - Skipping all Exerciser tests 
+
+     ------------------------------------------------------- 
+     Total Tests run  =   35  Tests Passed  =   22  Tests Failed =    5
+     ------------------------------------------------------- 
+
+      *** BSA tests complete. Reset the system. *** 
+
