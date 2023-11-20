@@ -1,0 +1,52 @@
+
+****************************************************************
+
+                         Running ethtool
+
+****************************************************************
+INFO: Detected following ethernet interfaces via ip command :
+0: end0
+
+INFO: Bringing down all ethernet interfaces using ifconfig
+ifconfig end0 down
+
+****************************************************************
+
+
+INFO: Bringing up ethernet interface: end0
+INFO: Running "ethtool end0 " :
+Settings for end0:
+	Supported ports: [ TP	 MII ]
+	Supported link modes:   10baseT/Half 10baseT/Full
+	                        100baseT/Half 100baseT/Full
+	                        1000baseT/Half 1000baseT/Full
+	Supported pause frame use: Symmetric Receive-only
+	Supports auto-negotiation: Yes
+	Supported FEC modes: Not reported
+	Advertised link modes:  10baseT/Half 10baseT/Full
+	                        100baseT/Half 100baseT/Full
+	                        1000baseT/Half 1000baseT/Full
+	Advertised pause frame use: Symmetric Receive-only
+	Advertised auto-negotiation: Yes
+	Advertised FEC modes: Not reported
+	Speed: Unknown!
+	Duplex: Unknown! (255)
+	Auto-negotiation: on
+	master-slave cfg: preferred slave
+	master-slave status: unknown
+	Port: Twisted Pair
+	PHYAD: 0
+	Transceiver: external
+	MDI-X: Unknown
+	Supports Wake-on: ug
+	Wake-on: d
+        Current message level: 0x0000003f (63)
+                               drv probe link timer ifdown ifup
+	Link detected: no
+
+
+INFO: Ethernet interface end0 doesn't supports ethtool self test
+INFO: Link not detected for end0
+
+****************************************************************
+

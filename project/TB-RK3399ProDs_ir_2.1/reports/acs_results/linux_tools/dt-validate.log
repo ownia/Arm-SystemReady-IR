@@ -1,0 +1,168 @@
+DeviceTree bindings of Linux kernel version: 6.5 
+dtschema version: 2023.7 
+
+/home/root/fdt/fdt: /: memory: False schema does not allow {'reg': [[0, 2097152, 0, 4158652416]], 'device_type': ['memory']}
+	from schema $id: http://devicetree.org/schemas/root-node.yaml#
+/home/root/fdt/fdt: ethernet@fe300000: Unevaluated properties are not allowed ('snps,txpbl' was unexpected)
+	from schema $id: http://devicetree.org/schemas/net/rockchip-dwmac.yaml#
+/home/root/fdt/fdt: mmc@fe320000: Unevaluated properties are not allowed ('u-boot,dm-pre-reloc', 'u-boot,spl-fifo-mode' were unexpected)
+	from schema $id: http://devicetree.org/schemas/mmc/rockchip-dw-mshc.yaml#
+/home/root/fdt/fdt: mmc@fe330000: Unevaluated properties are not allowed ('power-domains', 'u-boot,dm-pre-reloc' were unexpected)
+	from schema $id: http://devicetree.org/schemas/mmc/arasan,sdhci.yaml#
+/home/root/fdt/fdt: usb@fe800000: 'extcon' does not match any of the regexes: '^usb@', 'pinctrl-[0-9]+'
+	from schema $id: http://devicetree.org/schemas/usb/rockchip,rk3399-dwc3.yaml#
+/home/root/fdt/fdt: /dp@fec00000: failed to match any schema with compatible: ['rockchip,rk3399-cdn-dp']
+/home/root/fdt/fdt: interrupt-controller@fee00000: interrupt-controller@fee20000: False schema does not allow {'compatible': ['arm,gic-v3-its'], 'msi-controller': True, '#msi-cells': [[1]], 'reg': [[0, 4276224000, 0, 131072]], 'phandle': [[18]]}
+	from schema $id: http://devicetree.org/schemas/interrupt-controller/arm,gic-v3.yaml#
+/home/root/fdt/fdt: serial@ff1a0000: Unevaluated properties are not allowed ('u-boot,dm-pre-reloc' was unexpected)
+	from schema $id: http://devicetree.org/schemas/serial/snps-dw-apb-uart.yaml#
+/home/root/fdt/fdt: syscon@ff320000: u-boot,dm-pre-reloc: True is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/soc/rockchip/grf.yaml#
+/home/root/fdt/fdt: i2c@ff3c0000: Unevaluated properties are not allowed ('u-boot,dm-pre-reloc' was unexpected)
+	from schema $id: http://devicetree.org/schemas/i2c/i2c-rk3x.yaml#
+/home/root/fdt/fdt: pmic@20: 'u-boot,dm-pre-reloc' does not match any of the regexes: 'pinctrl-[0-9]+'
+	from schema $id: http://devicetree.org/schemas/mfd/rockchip,rk809.yaml#
+/home/root/fdt/fdt: /i2c@ff3c0000/tcs452x@1c: failed to match any schema with compatible: ['tcs,tcs452x']
+/home/root/fdt/fdt: /i2c@ff3c0000/tcs452x@10: failed to match any schema with compatible: ['tcs,tcs452x']
+/home/root/fdt/fdt: /i2c@ff3e0000/fusb30x@22: failed to match any schema with compatible: ['fairchild,fusb302']
+/home/root/fdt/fdt: iommu@ff650800: 'interrupt-names' does not match any of the regexes: 'pinctrl-[0-9]+'
+	from schema $id: http://devicetree.org/schemas/iommu/rockchip,iommu.yaml#
+/home/root/fdt/fdt: iommu@ff660480: 'interrupt-names' does not match any of the regexes: 'pinctrl-[0-9]+'
+	from schema $id: http://devicetree.org/schemas/iommu/rockchip,iommu.yaml#
+/home/root/fdt/fdt: iommu@ff670800: 'interrupt-names' does not match any of the regexes: 'pinctrl-[0-9]+'
+	from schema $id: http://devicetree.org/schemas/iommu/rockchip,iommu.yaml#
+/home/root/fdt/fdt: pmu-clock-controller@ff750000: 'u-boot,dm-pre-reloc' does not match any of the regexes: 'pinctrl-[0-9]+'
+	from schema $id: http://devicetree.org/schemas/clock/rockchip,rk3399-cru.yaml#
+/home/root/fdt/fdt: clock-controller@ff760000: 'u-boot,dm-pre-reloc' does not match any of the regexes: 'pinctrl-[0-9]+'
+	from schema $id: http://devicetree.org/schemas/clock/rockchip,rk3399-cru.yaml#
+/home/root/fdt/fdt: syscon@ff770000: u-boot,dm-pre-reloc: True is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/soc/rockchip/grf.yaml#
+/home/root/fdt/fdt: /syscon@ff770000/phy@f780: failed to match any schema with compatible: ['rockchip,rk3399-emmc-phy']
+/home/root/fdt/fdt: /syscon@ff770000/pcie-phy: failed to match any schema with compatible: ['rockchip,rk3399-pcie-phy']
+/home/root/fdt/fdt: /phy@ff7c0000: failed to match any schema with compatible: ['rockchip,rk3399-typec-phy']
+/home/root/fdt/fdt: /phy@ff800000: failed to match any schema with compatible: ['rockchip,rk3399-typec-phy']
+/home/root/fdt/fdt: vop@ff8f0000: 'u-boot,dm-pre-reloc' does not match any of the regexes: 'pinctrl-[0-9]+'
+	from schema $id: http://devicetree.org/schemas/display/rockchip/rockchip-vop.yaml#
+/home/root/fdt/fdt: iommu@ff8f3f00: 'interrupt-names' does not match any of the regexes: 'pinctrl-[0-9]+'
+	from schema $id: http://devicetree.org/schemas/iommu/rockchip,iommu.yaml#
+/home/root/fdt/fdt: vop@ff900000: 'u-boot,dm-pre-reloc' does not match any of the regexes: 'pinctrl-[0-9]+'
+	from schema $id: http://devicetree.org/schemas/display/rockchip/rockchip-vop.yaml#
+/home/root/fdt/fdt: iommu@ff903f00: 'interrupt-names' does not match any of the regexes: 'pinctrl-[0-9]+'
+	from schema $id: http://devicetree.org/schemas/iommu/rockchip,iommu.yaml#
+/home/root/fdt/fdt: iommu@ff914000: 'interrupt-names' does not match any of the regexes: 'pinctrl-[0-9]+'
+	from schema $id: http://devicetree.org/schemas/iommu/rockchip,iommu.yaml#
+/home/root/fdt/fdt: iommu@ff924000: 'interrupt-names' does not match any of the regexes: 'pinctrl-[0-9]+'
+	from schema $id: http://devicetree.org/schemas/iommu/rockchip,iommu.yaml#
+/home/root/fdt/fdt: hdmi@ff940000: clock-names:4: 'cec' is not one of ['vpll', 'ref']
+	from schema $id: http://devicetree.org/schemas/display/rockchip/rockchip,dw-hdmi.yaml#
+/home/root/fdt/fdt: mipi@ff960000: $nodename:0: 'mipi@ff960000' does not match '^dsi(@.*)?$'
+	from schema $id: http://devicetree.org/schemas/display/rockchip/rockchip,dw-mipi-dsi.yaml#
+/home/root/fdt/fdt: mipi@ff968000: $nodename:0: 'mipi@ff968000' does not match '^dsi(@.*)?$'
+	from schema $id: http://devicetree.org/schemas/display/rockchip/rockchip,dw-mipi-dsi.yaml#
+/home/root/fdt/fdt: pinctrl: gpio1@ff730000:clocks: [[106, 24]] is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/root/fdt/fdt: pinctrl: gpio1@ff730000:gpio-controller: True is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/root/fdt/fdt: pinctrl: gpio1@ff730000:interrupts: [[0, 15, 4, 0]] is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/root/fdt/fdt: pinctrl: gpio1@ff730000:#gpio-cells: [[2]] is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/root/fdt/fdt: pinctrl: gpio1@ff730000:reg: [[0, 4285726720, 0, 256]] is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/root/fdt/fdt: pinctrl: gpio1@ff730000:interrupt-controller: True is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/root/fdt/fdt: pinctrl: gpio1@ff730000:#interrupt-cells: [[2]] is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/root/fdt/fdt: pinctrl: gpio1@ff730000:compatible: ['rockchip,gpio-bank'] is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/root/fdt/fdt: pinctrl: gpio3@ff788000:clocks: [[8, 337]] is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/root/fdt/fdt: pinctrl: gpio3@ff788000:gpio-controller: True is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/root/fdt/fdt: pinctrl: gpio3@ff788000:interrupts: [[0, 17, 4, 0]] is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/root/fdt/fdt: pinctrl: gpio3@ff788000:#gpio-cells: [[2]] is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/root/fdt/fdt: pinctrl: gpio3@ff788000:reg: [[0, 4286087168, 0, 256]] is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/root/fdt/fdt: pinctrl: gpio3@ff788000:interrupt-controller: True is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/root/fdt/fdt: pinctrl: gpio3@ff788000:#interrupt-cells: [[2]] is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/root/fdt/fdt: pinctrl: gpio3@ff788000:compatible: ['rockchip,gpio-bank'] is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/root/fdt/fdt: pinctrl: leds-gpio:rockchip,pins: [[2, 5, 0, 166], [2, 4, 0, 166], [2, 3, 0, 166]] is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/root/fdt/fdt: pinctrl: gpio2@ff780000:clocks: [[8, 336]] is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/root/fdt/fdt: pinctrl: gpio2@ff780000:gpio-controller: True is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/root/fdt/fdt: pinctrl: gpio2@ff780000:interrupts: [[0, 16, 4, 0]] is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/root/fdt/fdt: pinctrl: gpio2@ff780000:#gpio-cells: [[2]] is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/root/fdt/fdt: pinctrl: gpio2@ff780000:reg: [[0, 4286054400, 0, 256]] is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/root/fdt/fdt: pinctrl: gpio2@ff780000:interrupt-controller: True is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/root/fdt/fdt: pinctrl: gpio2@ff780000:#interrupt-cells: [[2]] is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/root/fdt/fdt: pinctrl: gpio2@ff780000:compatible: ['rockchip,gpio-bank'] is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/root/fdt/fdt: pinctrl: u-boot,dm-pre-reloc: True is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/root/fdt/fdt: pinctrl: gpio4@ff790000:clocks: [[8, 338]] is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/root/fdt/fdt: pinctrl: gpio4@ff790000:gpio-controller: True is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/root/fdt/fdt: pinctrl: gpio4@ff790000:interrupts: [[0, 18, 4, 0]] is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/root/fdt/fdt: pinctrl: gpio4@ff790000:#gpio-cells: [[2]] is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/root/fdt/fdt: pinctrl: gpio4@ff790000:reg: [[0, 4286119936, 0, 256]] is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/root/fdt/fdt: pinctrl: gpio4@ff790000:interrupt-controller: True is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/root/fdt/fdt: pinctrl: gpio4@ff790000:#interrupt-cells: [[2]] is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/root/fdt/fdt: pinctrl: gpio4@ff790000:compatible: ['rockchip,gpio-bank'] is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/root/fdt/fdt: pinctrl: gpio0@ff720000:clocks: [[106, 23]] is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/root/fdt/fdt: pinctrl: gpio0@ff720000:gpio-controller: True is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/root/fdt/fdt: pinctrl: gpio0@ff720000:interrupts: [[0, 14, 4, 0]] is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/root/fdt/fdt: pinctrl: gpio0@ff720000:#gpio-cells: [[2]] is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/root/fdt/fdt: pinctrl: gpio0@ff720000:reg: [[0, 4285661184, 0, 256]] is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/root/fdt/fdt: pinctrl: gpio0@ff720000:interrupt-controller: True is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/root/fdt/fdt: pinctrl: gpio0@ff720000:#interrupt-cells: [[2]] is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/root/fdt/fdt: pinctrl: gpio0@ff720000:compatible: ['rockchip,gpio-bank'] is not of type 'object'
+	from schema $id: http://devicetree.org/schemas/pinctrl/rockchip,pinctrl.yaml#
+/home/root/fdt/fdt: pinctrl: leds-gpio: {'rockchip,pins': [[2, 5, 0, 166], [2, 4, 0, 166], [2, 3, 0, 166]]} is not of type 'array'
+	from schema $id: http://devicetree.org/schemas/gpio/gpio-consumer.yaml#
+/home/root/fdt/fdt: pmic: vsel1-gpio: {'rockchip,pins': [[1, 17, 0, 167]], 'phandle': [[118]]} is not of type 'array'
+	from schema $id: http://devicetree.org/schemas/gpio/gpio-consumer.yaml#
+/home/root/fdt/fdt: pmic: vsel2-gpio: {'rockchip,pins': [[1, 14, 0, 167]], 'phandle': [[119]]} is not of type 'array'
+	from schema $id: http://devicetree.org/schemas/gpio/gpio-consumer.yaml#
+/home/root/fdt/fdt: pmic: soc-slppin-gpio: {'rockchip,pins': [[1, 5, 0, 168]]} is not of type 'array'
+	from schema $id: http://devicetree.org/schemas/gpio/gpio-consumer.yaml#
+/home/root/fdt/fdt: vdd-center: Unevaluated properties are not allowed ('regulator-init-microvolt' was unexpected)
+	from schema $id: http://devicetree.org/schemas/regulator/pwm-regulator.yaml#
+/home/root/fdt/fdt: /usbhub-reset: failed to match any schema with compatible: ['usbhub-reset']
+/home/root/fdt/fdt: /syscon@ff620000: failed to match any schema with compatible: ['rockchip,rk3399-cic', 'syscon']
+/home/root/fdt/fdt: /dfi@ff630000: failed to match any schema with compatible: ['rockchip,rk3399-dfi']
+/home/root/fdt/fdt: /rng@ff8b8000: failed to match any schema with compatible: ['rockchip,cryptov1-rng']
+/home/root/fdt/fdt: dmc: 'operating-points-v2' is a required property
+	from schema $id: http://devicetree.org/schemas/memory-controllers/rockchip,rk3399-dmc.yaml#
+/home/root/fdt/fdt: dmc: 'center-supply' is a required property
+	from schema $id: http://devicetree.org/schemas/memory-controllers/rockchip,rk3399-dmc.yaml#
+/home/root/fdt/fdt: dmc: 'reg', 'rockchip,sdram-params', 'u-boot,dm-pre-reloc' do not match any of the regexes: 'pinctrl-[0-9]+'
+	from schema $id: http://devicetree.org/schemas/memory-controllers/rockchip,rk3399-dmc.yaml#
+/home/root/fdt/fdt: /syscon@ff330000: failed to match any schema with compatible: ['rockchip,rk3399-pmusgrf', 'syscon']
+/home/root/fdt/fdt: chosen: 'u-boot,spl-boot-device', 'u-boot,spl-boot-order' do not match any of the regexes: '^framebuffer', 'pinctrl-[0-9]+'
+	from schema $id: http://devicetree.org/schemas/chosen.yaml#

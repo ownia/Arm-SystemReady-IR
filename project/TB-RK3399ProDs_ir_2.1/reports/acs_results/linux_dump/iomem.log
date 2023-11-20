@@ -1,0 +1,72 @@
+00200000-f4ebafff : System RAM
+  00627000-00627fff : reserved
+  00640000-0064ffff : reserved
+  00650000-0065ffff : reserved
+  00660000-0066ffff : reserved
+  00670000-0067ffff : reserved
+  00700000-0070ffff : reserved
+  00710000-0071ffff : reserved
+  00720000-0072ffff : reserved
+  080ec000-08113fff : reserved
+  3fb40000-41a8ffff : Kernel code
+  41a90000-426dffff : reserved
+  426e0000-42d3ffff : Kernel data
+  b6970000-b697ffff : reserved
+  b6ce3000-b6ce3fff : reserved
+  b6ce5000-b6ce5fff : reserved
+  b6ce6000-b6ce6fff : reserved
+  f0e00000-f4dfffff : reserved
+f4ebb000-f4ebbfff : reserved
+f4ebc000-f4ebefff : System RAM
+  f4ebd000-f4ebdfff : reserved
+f4ebf000-f4ebffff : reserved
+f4ec0000-f4ec1fff : System RAM
+f4ec2000-f4ec3fff : reserved
+f4ec4000-f4ec4fff : System RAM
+f4ec5000-f4ec8fff : reserved
+f4ec9000-f7eeffff : System RAM
+  f5000000-f73fffff : reserved
+  f750c000-f750cfff : reserved
+  f750d000-f75c6fff : reserved
+  f75c9000-f75cbfff : reserved
+  f75cc000-f75dffff : reserved
+  f75e0000-f762ffff : reserved
+  f7630000-f7eeffff : reserved
+f7ef0000-f7efffff : reserved
+f7f00000-f7ffffff : System RAM
+  f7f00000-f7ffffff : reserved
+fe300000-fe30ffff : fe300000.ethernet ethernet@fe300000
+fe320000-fe323fff : fe320000.mmc mmc@fe320000
+fe330000-fe33ffff : fe330000.mmc mmc@fe330000
+fe3c0000-fe3dffff : fe3c0000.usb usb@fe3c0000
+fe3e0000-fe3fffff : fe3e0000.usb usb@fe3e0000
+fe900000-fe907fff : usb@fe900000
+  fe900000-fe907fff : xhci-hcd.6.auto usb@fe900000
+fe90c100-fe9fffff : fe900000.usb usb@fe900000
+fee00000-fee0ffff : GICD
+fef00000-fefbffff : GICR
+ff1a0000-ff1a001f : serial
+ff3c0000-ff3c0fff : ff3c0000.i2c i2c@ff3c0000
+ff3e0000-ff3e0fff : ff3e0000.i2c i2c@ff3e0000
+ff420000-ff42000f : ff420000.pwm pwm@ff420000
+ff420020-ff42002f : ff420020.pwm pwm@ff420020
+ff420030-ff42003f : ff420030.pwm pwm@ff420030
+ff650800-ff65083f : ff650800.iommu iommu@ff650800
+ff660480-ff6604bf : ff660480.iommu iommu@ff660480
+ff6604c0-ff6604ff : ff660480.iommu iommu@ff660480
+ff690000-ff69007f : ff690000.efuse efuse@ff690000
+ff6d0000-ff6d3fff : dma-controller@ff6d0000
+  ff6d0000-ff6d3fff : ff6d0000.dma-controller dma-controller@ff6d0000
+ff6e0000-ff6e3fff : dma-controller@ff6e0000
+  ff6e0000-ff6e3fff : ff6e0000.dma-controller dma-controller@ff6e0000
+ff720000-ff7200ff : ff720000.gpio0 gpio0@ff720000
+ff730000-ff7300ff : ff730000.gpio1 gpio1@ff730000
+ff780000-ff7800ff : ff780000.gpio2 gpio2@ff780000
+ff788000-ff7880ff : ff788000.gpio3 gpio3@ff788000
+ff790000-ff7900ff : ff790000.gpio4 gpio4@ff790000
+ff800000-ff83ffff : ff800000.phy phy@ff800000
+ff848000-ff8480ff : ff848000.watchdog watchdog@ff848000
+ff914000-ff9140ff : ff914000.iommu iommu@ff914000
+ff915000-ff9150ff : ff914000.iommu iommu@ff914000
+ff924000-ff9240ff : ff924000.iommu iommu@ff924000
+ff925000-ff9250ff : ff924000.iommu iommu@ff924000

@@ -1,0 +1,36 @@
+           CPU0       CPU1       CPU2       CPU3       CPU4       CPU5       
+ 18:          0          0          0          0          0          0     GICv3  25 Level     vgic
+ 20:          0          0          0          0          0          0     GICv3  27 Level     kvm guest vtimer
+ 23:        976        905        692        754       1348       1285     GICv3  30 Level     arch_timer
+ 25:        320        274        228        147        172        244     GICv3 113 Level     rk_timer
+ 31:          0          0          0          0          0          0     GICv3  37 Level     ff6d0000.dma-controller
+ 32:          0          0          0          0          0          0     GICv3  38 Level     ff6d0000.dma-controller
+ 33:          0          0          0          0          0          0     GICv3  39 Level     ff6e0000.dma-controller
+ 34:          0          0          0          0          0          0     GICv3  40 Level     ff6e0000.dma-controller
+ 35:        182          0          0          0          0          0     GICv3 132 Level     ttyS2
+ 36:          0          0          0          0          0          0     GICv3 147 Level     ff650800.iommu
+ 37:          0          0          0          0          0          0     GICv3 149 Level     ff660480.iommu
+ 38:          0          0          0          0          0          0     GICv3  75 Level     ff914000.iommu
+ 39:          0          0          0          0          0          0     GICv3  76 Level     ff924000.iommu
+ 40:        615          0          0          0          0          0     GICv3  89 Level     ff3c0000.i2c
+ 41:          0          0          0          0          0          0  rockchip_gpio_irq  21 Level     rk817
+ 66:          0          0          0          0          0          0     GICv3  90 Level     ff3e0000.i2c
+ 67:          0          0          0          0          0          0     GICv3 152 Edge      ff848000.watchdog
+ 68:       4077          0          0          0          0          0     GICv3  97 Level     dw-mci
+ 69:        457          0          0          0          0          0     GICv3  43 Level     mmc0
+ 70:          0          0          0          0          0          0  GICv3-23   0 Level     arm-pmu
+ 71:          0          0          0          0          0          0  GICv3-23   1 Level     arm-pmu
+ 72:          0          0          0          0          0          0  rockchip_gpio_irq   7 Edge      fe320000.mmc cd
+ 73:          0          0          0          0          0          0     GICv3  63 Level     rockchip_usb2phy
+ 74:         85          0          0          0          0          0     GICv3 142 Level     xhci-hcd:usb1
+ 75:          0          0          0          0          0          0     GICv3  62 Level     ehci_hcd:usb3
+ 76:          0          0          0          0          0          0     GICv3  64 Level     ohci_hcd:usb4
+ 77:          0          0          0          0          0          0     GICv3  44 Level     end0
+IPI0:       159        224        189        223        186        329       Rescheduling interrupts
+IPI1:       702        806        694        954       1252       1080       Function call interrupts
+IPI2:         0          0          0          0          0          0       CPU stop interrupts
+IPI3:         0          0          0          0          0          0       CPU stop (for crash dump) interrupts
+IPI4:       170        258        291        259        206        260       Timer broadcast interrupts
+IPI5:         0          0          0          0          0          0       IRQ work interrupts
+IPI6:         0          0          0          0          0          0       CPU wake-up interrupts
+Err:          0
