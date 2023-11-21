@@ -1,0 +1,23 @@
+INFO run_identify: Identified as SystemReady IR v2.1.
+INFO <module>: Detected version is SystemReady IR v2.1
+ERROR check_dir: `/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_ir_2.1/reports//acs_results/' has too many entrie(s): 11 > 10
+ERROR check_file_contains: Could not find `Failure:|0|' in `/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_ir_2.1/reports//acs_results/result.md'
+WARNING identify_guid: GUID `e2bb9c06-70e9-4b14-97a3-5a7913176e3f' is known: "U-Boot legacy (< v2022.07) EFI_FIRMWARE_IMAGE_TYPE_UBOOT_RAW_GUID", in `/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_ir_2.1/reports//acs_results/app_output/CapsuleApp_ESRT_table_info.log'
+ERROR check_file_contains: Could not find `Medium failures: NONE' in `/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_ir_2.1/reports//acs_results/fwts/FWTSResults.log'
+ERROR if_contains: `FAILED' found in `/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_ir_2.1/reports//acs_results/fwts/FWTSResults.log' at line 35: `FAILED [MEDIUM] The fw_class is set to default u-boot raw guid: Test 2,'
+ERROR if_contains: `This is an invalid entry.' found in `/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_ir_2.1/reports//acs_results/fwts/FWTSResults.log' at line 36: `e2bb9c06-70e9-4b14-97a3-5a7913176e3f This is an invalid entry.'
+WARNING if_contains: `-dirty' found in `/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_ir_2.1/reports//fw/u-boot-sniff.log' at line 103: `U-Boot 2022.04-dirty (Sep 07 2023 - 17:11:01 +0100)' (warning once)
+WARNING if_contains: `-dirty' found in `/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_ir_2.1/reports//fw/uefi-sniff.log' at line 199: `00000020: 30 32 32 2E 30 34 2D 64-69 72 74 79 00 30 34 2F  *022.04-dirty.04/*' (warning once)
+ERROR check_uefi_sniff: Could not find an ESP in `/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_ir_2.1/reports//fw/uefi-sniff.log'
+WARNING if_contains: `-dirty' found in `/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_ir_2.1/reports//fw/capsule-update.log' at line 1: `U-Boot SPL 2022.04-dirty (Sep 07 2023 - 17:11:01 +0100)' (warning once)
+WARNING check_uefi_capsule: Capsule GUID `e2bb9c06-70e9-4b14-97a3-5a7913176e3f' is known: "U-Boot legacy (< v2022.07) EFI_FIRMWARE_IMAGE_TYPE_UBOOT_RAW_GUID", in `/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_ir_2.1/reports//fw/capsule1.bin'
+ERROR check_tree: `/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_ir_2.1/reports//os-logs/linux-distro3-version/*console.log' missing
+ERROR check_tree: `/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_ir_2.1/reports//os-logs/linux-distro3-version/*sys-firmware.tar.gz' missing
+ERROR check_tree: `/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_ir_2.1/reports//os-logs/linux-distro2-version/*console.log' missing
+ERROR check_tree: `/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_ir_2.1/reports//os-logs/linux-distro2-version/*sys-firmware.tar.gz' missing
+ERROR check_tree: `/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_ir_2.1/reports//os-logs/linux-distro1-version/*console.log' missing
+ERROR check_tree: `/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_ir_2.1/reports//os-logs/linux-distro1-version/*sys-firmware.tar.gz' missing
+ERROR deferred_check_uefi_logs_esp: `/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_ir_2.1/reports//fw/capsule-on-disk.log' did not have an ESP
+ERROR deferred_check_uefi_logs_esp: `/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_ir_2.1/reports//fw/capsule-on-disk.log' did not have an ESP
+ERROR deferred_check_uefi_logs_esp: `/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_ir_2.1/reports//fw/capsule-on-disk.log' did not have an ESP
+INFO <module>: 478 checks, 458 pass, 5 warnings, 15 errors

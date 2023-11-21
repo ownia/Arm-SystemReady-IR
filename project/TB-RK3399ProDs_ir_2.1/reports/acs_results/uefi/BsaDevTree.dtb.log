@@ -1,0 +1,12 @@
++ DTC
+/dev/null: Warning (unit_address_vs_reg): /memory: node has a reg or ranges property, but no unit name
+/dev/null: Warning (unit_address_vs_reg): /usb@fe800000: node has a unit name, but no reg property
+/dev/null: Warning (unit_address_vs_reg): /usb@fe900000: node has a unit name, but no reg property
+/dev/null: Warning (unit_address_vs_reg): /dmc: node has a reg or ranges property, but no unit name
+/dev/null: Warning (pci_device_reg): /pcie@f8000000/interrupt-controller: missing PCI reg property
+/dev/null: Warning (avoid_unnecessary_addr_size): /mipi@ff960000: unnecessary #address-cells/#size-cells without "ranges" or child "reg" property
+/dev/null: Warning (avoid_unnecessary_addr_size): /mipi@ff968000: unnecessary #address-cells/#size-cells without "ranges" or child "reg" property
+/dev/null: Warning (graph_child_address): /mipi@ff960000/ports: graph node has single child node 'port@0', #address-cells/#size-cells are not necessary
+/dev/null: Warning (graph_child_address): /mipi@ff968000/ports: graph node has single child node 'port@0', #address-cells/#size-cells are not necessary
+/dev/null: Warning (graph_child_address): /edp@ff970000/ports/port@1: graph node has single child node 'endpoint@0', #address-cells/#size-cells are not necessary
++ DT-VALIDATE

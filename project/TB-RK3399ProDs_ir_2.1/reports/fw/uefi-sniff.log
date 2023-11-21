@@ -1,0 +1,365 @@
+Shell> dmem
+Memory Address 00000000F7EFCB80 78 Bytes
+  F7EFCB80: 49 42 49 20 53 59 53 54-5A 00 02 00 78 00 00 00  *IBI SYSTZ...x...*
+  F7EFCB90: 21 C5 1D 84 00 00 00 00-F8 CB EF F7 00 00 00 00  *!...............*
+  F7EFCBA0: 00 04 22 20 00 00 00 00-00 00 00 00 00 00 00 00  *.." ............*
+  F7EFCBB0: 28 E4 FB F7 00 00 00 00-80 6E F0 F5 00 00 00 00  *(........n......*
+  F7EFCBC0: 48 10 A4 B7 00 00 00 00-00 00 00 00 00 00 00 00  *H...............*
+  F7EFCBD0: 88 E4 FB F7 00 00 00 00-28 CC EF F7 00 00 00 00  *........(.......*
+  F7EFCBE0: 60 E2 FB F7 00 00 00 00-04 00 00 00 00 00 00 00  *`...............*
+  F7EFCBF0: 40 40 EC F4 00 00 00 00-                         *@@......*
+
+Valid EFI Header at Address 00000000F7EFCB80
+---------------------------------------------
+System: Table Structure size 00000078 revision 0002005A
+ConIn (00000000F7FBE428) ConOut (00000000B7A41048) StdErr (00000000F7FBE488)
+Runtime Services 00000000F7EFCC28
+Boot Services    00000000F7FBE260
+SAL System Table 0000000000000000
+ACPI Table       0000000000000000
+ACPI 2.0 Table   0000000000000000
+MPS Table        0000000000000000
+SMBIOS Table     00000000F4EBD000
+Shell> pci
+pci: Protocol - PciRootBridgeIo not found.
+Shell> drivers
+            T   D
+D           Y C I
+R           P F A
+V  VERSION  E G G #D #C DRIVER NAME                         IMAGE NAME
+== ======== = = = == == =================================== ==========
+ E FFFFFFFF ? - -  -  - <null string>                       
+Shell> devices
+     T   D
+     Y C I
+     P F A
+CTRL E G G #P #D #C  Device Name
+==== = = = == == === =========================================================
+Shell> devtree
+ Ctrl[01] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)
+ Ctrl[02] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/Uart(0,0,D,D)
+ Ctrl[03] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(1)/SD(0)
+ Ctrl[04] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(1)/SD(0)/HD(1,GPT,2a2dfc9d-43ff-430d-99f8-25be8f747ec4,0x800,0x4b000)
+ Ctrl[05] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(1)/SD(0)/HD(2,GPT,5602a318-bde2-40e1-87c2-a56c6650f128,0x4b800,0xfc76c)
+ Ctrl[06] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(1)
+ Ctrl[07] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(1)/HD(1,GPT,5a30833f-8c43-47b1-a41d-84d40883d0c6,0x40,0x1f40)
+ Ctrl[08] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(1)/HD(2,GPT,67ad7741-4638-47c6-a488-d396583e582a,0x1f80,0x80)
+ Ctrl[09] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(1)/HD(3,GPT,3adea03d-c612-46ed-cff9-b79439f11561,0x2000,0x2000)
+ Ctrl[0A] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(1)/HD(4,GPT,e582484a-9010-404a-899d-47bd16ba3fa8,0x4000,0x2000)
+ Ctrl[0B] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(1)/HD(5,GPT,dc11277f-eb7f-42d9-8027-a83b14220e50,0x6000,0x2000)
+ Ctrl[0C] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(1)/HD(6,GPT,295a726a-357d-4382-d5a6-e7e871da99e0,0x8000,0x38000)
+ Ctrl[0D] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(1)/HD(7,GPT,c62b80b9-4842-db44-8b4e-870255a2607b,0x40000,0x80000)
+ Ctrl[10] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/MAC(8e1b79e0cfc6,1)
+Shell> dmpstore
+Variable RT+BS 'EFIGlobalVariable:OsIndicationsSupported' DataSize = 0x08
+  00000000: 1C 00 00 00 00 00 00 00-                         *........*
+Variable NV+RT+BS 'EFIGlobalVariable:PlatformLang' DataSize = 0x06
+  00000000: 65 6E 2D 55 53 00                                *en-US.*
+Variable RT+BS 'EFIGlobalVariable:PlatformLangCodes' DataSize = 0x06
+  00000000: 65 6E 2D 55 53 00                                *en-US.*
+Variable RT+BS 'EFIGlobalVariable:VendorKeys' DataSize = 0x01
+  00000000: 00                                               *.*
+Variable RT+BS 'EFIGlobalVariable:DeployedMode' DataSize = 0x01
+  00000000: 00                                               *.*
+Variable RT+BS 'EFIGlobalVariable:AuditMode' DataSize = 0x01
+  00000000: 00                                               *.*
+Variable RT+BS 'EFIGlobalVariable:SetupMode' DataSize = 0x01
+  00000000: 01                                               *.*
+Variable RT+BS 'EFIGlobalVariable:SecureBoot' DataSize = 0x01
+  00000000: 00                                               *.*
+Shell> dh -d -v
+Handle dump
+01: DevicePath(F5F04FB0)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b) DevicePathToText(F7F921E8) DevicePathUtilities(F7F921F8) E617D64C-FE08-46DA-F4DC-BBD5870C7300(F7FBE520) UnicodeCollation2(F7F927B0) HIIString(F7F92568) HIIDatabase(F7F92510) SimpleTextOut(F7FBE488)   Address: F7FBE488 Attrib 07
+     mode 0: Col 80 Row 25
+     mode 1: Col -1 Row -1
+  *  mode 2: Col 140 Row 34 SimpleTextIn(F7FBE428) SimpleTextInEx(F7FBE440) Rng(F7F92730) 
+02: DevicePath(F4EE3040)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/Uart(0,0,D,D) 
+03: DevicePath(F4EE0040)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(1)/SD(0) BlockIO(F5F04EB8)   Removable MId:1 bsize 200, lblock 1DACBFF (15,931,539,456), raw rw !cached 
+04: DevicePath(F4EDD040)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(1)/SD(0)/HD(1,GPT,2a2dfc9d-43ff-430d-99f8-25be8f747ec4,0x800,0x4b000) BlockIO(F5F07778)   Removable MId:1 bsize 200, lblock 4AFFF (157,286,400), partition rw !cached SimpleFileSystem(F5F05100) 
+05: DevicePath(F4EDB040)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(1)/SD(0)/HD(2,GPT,5602a318-bde2-40e1-87c2-a56c6650f128,0x4b800,0xfc76c) BlockIO(F5F07908)   Removable MId:1 bsize 200, lblock FC76B (529,455,104), partition rw !cached SimpleFileSystem(F5F04F60) 
+06: DevicePath(F4EDA040)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(1) BlockIO(F5F06CE8)   Removable MId:1 bsize 200, lblock 3A3DFFF (31,268,536,320), raw rw !cached 
+07: DevicePath(F4ED7040)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(1)/HD(1,GPT,5a30833f-8c43-47b1-a41d-84d40883d0c6,0x40,0x1f40) BlockIO(F5F1FED8)   Removable MId:1 bsize 200, lblock 1F3F (4,096,000), partition rw !cached 
+08: DevicePath(F4ED5040)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(1)/HD(2,GPT,67ad7741-4638-47c6-a488-d396583e582a,0x1f80,0x80) BlockIO(F5F201B8)   Removable MId:1 bsize 200, lblock 7F (65,536), partition rw !cached 
+09: DevicePath(F4ED3040)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(1)/HD(3,GPT,3adea03d-c612-46ed-cff9-b79439f11561,0x2000,0x2000) BlockIO(F5F20A08)   Removable MId:1 bsize 200, lblock 1FFF (4,194,304), partition rw !cached 
+0A: DevicePath(F4ED1040)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(1)/HD(4,GPT,e582484a-9010-404a-899d-47bd16ba3fa8,0x4000,0x2000) BlockIO(F5F21248)   Removable MId:1 bsize 200, lblock 1FFF (4,194,304), partition rw !cached 
+0B: DevicePath(F4ECF040)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(1)/HD(5,GPT,dc11277f-eb7f-42d9-8027-a83b14220e50,0x6000,0x2000) BlockIO(F5F215A8)   Removable MId:1 bsize 200, lblock 1FFF (4,194,304), partition rw !cached SimpleFileSystem(F5F07560) 
+0C: DevicePath(F4ECD040)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(1)/HD(6,GPT,295a726a-357d-4382-d5a6-e7e871da99e0,0x8000,0x38000) BlockIO(F5F222C8)   Removable MId:1 bsize 200, lblock 37FFF (117,440,512), partition rw !cached 
+0D: DevicePath(F4ECB040)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(1)/HD(7,GPT,c62b80b9-4842-db44-8b4e-870255a2607b,0x40000,0x80000) BlockIO(F5F22F28)   Removable MId:1 bsize 200, lblock 7FFFF (268,435,456), partition rw !cached EFISystemPartition(0) SimpleFileSystem(F5F070A0) 
+0E: DriverBinding(F5F21BE0) 
+   Driver Name [0E]   : <Unknown>
+   Driver Image Name  : <Unknown>
+   Driver Version     : FFFFFFFF
+   Driver Type        : <Unknown>
+   Configuration      : NO
+   Diagnostics        : NO
+   Managing           : None
+0F: FirmwareManagement(F7F92300) 
+10: SimpleNetwork(F5F278E8) DevicePath(F4EC3040)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/MAC(8e1b79e0cfc6,1) PXEBaseCode(F5F27C00) 
+11: ImageDevicePath(F4EB5040)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(1)/SD(0)/HD(1,GPT,2a2dfc9d-43ff-430d-99f8-25be8f747ec4,0x800,0x4b000)/efi\boot\bootaa64.efi LoadedImage(F5F20B30)   Revision......: 0x00001000
+  ParentHandle..: F5F04FD0
+  SystemTable...: F7EFCB80
+  DeviceHandle..: F5F07750
+  FilePath......: /efi\boot\bootaa64.efi
+  PdbFileName...: <null string>
+  OptionsSize...: 0
+  LoadOptions...: 0
+  ImageBase.....: F4DD8000
+  ImageSize.....: DD000
+  CodeType......: EfiLoaderCode
+  DataType......: EfiLoaderData
+  Unload........: 0 
+12: ImageDevicePath(F4DD5040)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(1)/SD(0)/HD(1,GPT,2a2dfc9d-43ff-430d-99f8-25be8f747ec4,0x800,0x4b000)/\EFI\BOOT/Shell.efi LoadedImage(F5F06E10)   Revision......: 0x00001000
+  ParentHandle..: F5F20BA0
+  SystemTable...: F7EFCB80
+  DeviceHandle..: F5F07750
+  FilePath......: /\EFI\BOOT/Shell.efi
+  PdbFileName...: <null string>
+  OptionsSize...: 0
+  LoadOptions...: 0
+  ImageBase.....: B7933000
+  ImageSize.....: D9000
+  CodeType......: EfiLoaderCode
+  DataType......: EfiLoaderData
+  Unload........: 0 SimpleTextOut(B7A41048)   Address: B7A41048 Attrib 07
+     mode 0: Col 80 Row 25
+     mode 1: Col -1 Row -1
+  *  mode 2: Col 140 Row 34 ShellParameters(B7A2A040) Shell(B79F75C0) 
+Shell> memmap
+Type       Start            End              # Pages          Attributes
+Available  0000000000200000-00000000080ECFFF 0000000000007EED 0000000000000008
+ACPI_Recl  00000000080ED000-0000000008112FFF 0000000000000026 0000000000000008
+Available  0000000008113000-00000000B78BEFFF 00000000000AF7AC 0000000000000008
+BS_Data    00000000B78BF000-00000000B7932FFF 0000000000000074 0000000000000008
+LoaderCode 00000000B7933000-00000000B7A0BFFF 00000000000000D9 0000000000000008
+BS_Data    00000000B7A0C000-00000000B7AE5FFF 00000000000000DA 0000000000000008
+LoaderData 00000000B7AE6000-00000000B7AE6FFF 0000000000000001 0000000000000008
+LoaderCode 00000000B7AE7000-00000000F4DD0FFF 000000000003D2EA 0000000000000008
+BS_Data    00000000F4DD1000-00000000F4DD7FFF 0000000000000007 0000000000000008
+LoaderCode 00000000F4DD8000-00000000F4EB4FFF 00000000000000DD 0000000000000008
+BS_Data    00000000F4EB5000-00000000F4EBCFFF 0000000000000008 0000000000000008
+RT_Data    00000000F4EBD000-00000000F4EBDFFF 0000000000000001 8000000000000008
+BS_Data    00000000F4EBE000-00000000F4EC0FFF 0000000000000003 0000000000000008
+RT_Data    00000000F4EC1000-00000000F4EC1FFF 0000000000000001 8000000000000008
+BS_Data    00000000F4EC2000-00000000F4EC3FFF 0000000000000002 0000000000000008
+RT_Data    00000000F4EC4000-00000000F4EC5FFF 0000000000000002 8000000000000008
+BS_Data    00000000F4EC6000-00000000F4EC6FFF 0000000000000001 0000000000000008
+RT_Data    00000000F4EC7000-00000000F4ECAFFF 0000000000000004 8000000000000008
+BS_Data    00000000F4ECB000-00000000F4EE3FFF 0000000000000019 0000000000000008
+LoaderData 00000000F4EE4000-00000000F7EEFFFF 000000000000300C 0000000000000008
+RT_Code    00000000F7EF0000-00000000F7EFFFFF 0000000000000010 8000000000000008
+LoaderData 00000000F7F00000-00000000F7FFFFFF 0000000000000100 0000000000000008
+ 
+  Reserved  :              0 Pages (0 Bytes)
+  LoaderCode:        251,040 Pages (1,028,259,840 Bytes)
+  LoaderData:         12,557 Pages (51,433,472 Bytes)
+  BS_Code   :              0 Pages (0 Bytes)
+  BS_Data   :            380 Pages (1,556,480 Bytes)
+  RT_Code   :             16 Pages (65,536 Bytes)
+  RT_Data   :              8 Pages (32,768 Bytes)
+  ACPI_Recl :             38 Pages (155,648 Bytes)
+  ACPI_NVS  :              0 Pages (0 Bytes)
+  MMIO      :              0 Pages (0 Bytes)
+  MMIO_Port :              0 Pages (0 Bytes)
+  PalCode   :              0 Pages (0 Bytes)
+  Unaccepted:              0 Pages (0 Bytes)
+  Available :        751,257 Pages (3,077,148,672 Bytes)
+  Persistent:              0 Pages (0 Bytes)
+              -------------- 
+Total Memory:          3,966 MB (4,158,652,416 Bytes)
+Shell> smbiosview
+SMBIOS Entry Point Structure:
+Anchor String:        _SM_
+EPS Checksum:         0x47
+Entry Point Len:      31
+Version:              3.0
+Number of Structures: 7
+Max Struct size:      57
+Table Address:        0xF4EBD020
+Table Length:         254
+Entry Point revision: 0x0
+SMBIOS BCD Revision:  0x0
+Inter Anchor:         _DMI_
+Inter Checksum:       0x94
+Formatted Area:  
+  00000000: 00 00 00 00 00                                   *.....*
+
+=========================================================
+Query Structure, conditions are:
+QueryType   = Random 
+QueryHandle = Random
+ShowType    = SHOW_DETAIL
+
+
+=========================================================
+Type=0, Handle=0x0
+Dump Structure as:
+Index=0,Length=0x39,Addr=0xF4EBD020
+00000000: 00 18 00 00 01 02 00 00-03 00 80 08 01 00 00 00  *................*
+00000010: 00 00 00 0C 16 04 FF FF-55 2D 42 6F 6F 74 00 32  *........U-Boot.2*
+00000020: 30 32 32 2E 30 34 2D 64-69 72 74 79 00 30 34 2F  *022.04-dirty.04/*
+00000030: 30 31 2F 32 30 32 32 00-00                       *01/2022..*
+Structure Type: BIOS Information
+Format part Len : 24
+Structure Handle: 0
+Vendor: U-Boot
+BiosVersion: 2022.04-dirty
+BiosSegment: 0x0
+BiosReleaseDate: 04/01/2022
+BiosSize:  64 KB
+BIOS Characteristics: 
+PCI is supported
+BIOS is Upgradeable(FLASH)
+Selectable Boot is supported
+ Bits 32:47 are reserved for BIOS Vendor
+ Bits 48:64 are reserved for System Vendor
+BIOS Characteristics Extension Byte1:
+BIOS Characteristics Extension Byte2:
+Enable Targeted Content Distribution
+UEFI Specification is supported
+ Bits 5:7 are reserved for future assignment
+SystemBiosMajorRelease: 22
+SystemBiosMinorRelease: 4
+EmbeddedControllerFirmwareMajorRelease: 255
+EmbeddedControllerFirmwareMinorRelease: 255
+
+
+=========================================================
+Type=1, Handle=0x1
+Dump Structure as:
+Index=1,Length=0x34,Addr=0xF4EBD059
+00000000: 01 1B 01 00 01 02 00 00-00 00 00 00 00 00 00 00  *................*
+00000010: 00 00 00 00 00 00 00 00-00 00 00 55 6E 6B 6E 6F  *...........Unkno*
+00000020: 77 6E 00 55 6E 6B 6E 6F-77 6E 20 50 72 6F 64 75  *wn.Unknown Produ*
+00000030: 63 74 00 00                                      *ct..*
+Structure Type: System Information
+Format part Len : 27
+Structure Handle: 1
+Manufacturer: Unknown
+ProductName: Unknown Product
+Version: 
+SerialNumber: 
+Dump Uuid
+size=16:
+00000000: 00 00 00 00 00 00 00 00-00 00 00 00 00 00 00 00  *................*
+System Wakeup Type: Reserved
+SKUNumber: 
+Family: 
+
+
+=========================================================
+Type=2, Handle=0x2
+Dump Structure as:
+Index=2,Length=0x27,Addr=0xF4EBD08D
+00000000: 02 0E 02 00 01 02 00 00-00 01 00 00 00 0A 55 6E  *..............Un*
+00000010: 6B 6E 6F 77 6E 00 55 6E-6B 6E 6F 77 6E 20 50 72  *known.Unknown Pr*
+00000020: 6F 64 75 63 74 00 00                             *oduct..*
+Structure Type: Base Board Information
+Format part Len : 14
+Structure Handle: 2
+Manufacturer: Unknown
+ProductName: Unknown Product
+Version: 
+SerialNumber: 
+AssetTag: 
+Base Board Feature Flags: Hosting board
+LocationInChassis: 
+ChassisHandle: 0x0
+Base Board Board Type: Motherboard
+
+
+=========================================================
+Type=3, Handle=0x3
+Dump Structure as:
+Index=3,Length=0x1E,Addr=0xF4EBD0B4
+00000000: 03 15 03 00 01 03 00 00-00 03 03 03 03 00 00 00  *................*
+00000010: 00 00 00 00 00 55 6E 6B-6E 6F 77 6E 00 00        *.....Unknown..*
+Structure Type: System Enclosure
+Format part Len : 21
+Structure Handle: 3
+Manufacturer: Unknown
+Type: 3
+System Enclosure or Chassis Types:  Desktop
+Version: 
+SerialNumber: 
+AssetTag: 
+Bootup state System Enclosure or Chassis Status:  Safe
+Power Supply State System Enclosure or Chassis Status:  Safe
+Thermal state System Enclosure or Chassis Status:  Safe
+Security Status System Enclosure or Chassis Security Status:  None
+Dump OemDefined
+size=4:
+00000000: 00 00 00 00                                      *....*
+Height: 0
+NumberofPowerCords: 0
+ContainedElementCount: 0
+ContainedElementRecordLength: 0
+
+
+=========================================================
+Type=4, Handle=0x4
+Dump Structure as:
+Index=4,Length=0x39,Addr=0xF4EBD0D2
+00000000: 04 30 04 00 00 03 02 01-00 00 00 00 00 00 00 00  *.0..............*
+00000010: 01 00 00 00 00 00 00 00-01 06 FF FF FF FF FF FF  *................*
+00000020: 00 00 00 00 00 00 00 00-02 00 00 00 00 00 00 00  *................*
+00000030: 55 6E 6B 6E 6F 77 6E 00-00                       *Unknown..*
+Structure Type: Processor Information
+Format part Len : 48
+Structure Handle: 4
+SocketDesignation: 
+Processor Type:  Central Processor
+Processor Family: Unknown
+ProcessorManufacturer: Unknown
+Dump ProcessorId
+size=8:
+00000000: 00 00 00 00 00 00 00 00-                         *........*
+ProcessorVersion: Unknown
+Processor Information -  Voltage:
+ExternalClock: 0
+MaxSpeed: 0
+CurrentSpeed: 0
+Processor Status:
+CPU Socket Unpopulated
+CPU Enabled
+Processor Upgrade: None
+L1CacheHandle: 0xFFFF
+L2CacheHandle: 0xFFFF
+L3CacheHandle: 0xFFFF
+SerialNumber: 
+AssetTag: 
+PartNumber: 
+CoreCount: 0
+EnabledCoreCount: 0
+ThreadCount: 0
+Processor Characteristics: No Info
+CoreCount2: 0
+EnabledCoreCount2: 0
+ThreadCount2: 0
+
+
+=========================================================
+Type=32, Handle=0x5
+Dump Structure as:
+Index=5,Length=0xD,Addr=0xF4EBD10B
+00000000: 20 0B 05 00 00 00 00 00-00 00 00 00 00           * ............*
+Structure Type: System Boot Information 
+Format part Len : 11
+Structure Handle: 5
+Dump Reserved
+size=6:
+00000000: 00 00 00 00 00 00                                *......*
+System Boot Status:  No errors detected
+
+=========================================================
+Type=127, Handle=0x6
+Dump Structure as:
+Index=6,Length=0x6,Addr=0xF4EBD118
+00000000: 7F 04 06 00 00 00                                *......*
+Structure Type: End-of-Table 
+Format part Len : 4
+Structure Handle: 6
+This structure indicates the End-of-table!
+
+
+=========================================================
+Shell> 
