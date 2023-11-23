@@ -1,5 +1,5 @@
 tpm/
-console.log
+qemu-console.log
 test.its
 tests.itb
 CRT*

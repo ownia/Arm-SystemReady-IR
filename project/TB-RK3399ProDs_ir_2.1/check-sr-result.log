@@ -11,13 +11,7 @@ WARNING if_contains: `-dirty' found in `/home/weiouy01/code/Arm-SystemReady-IoT/
 ERROR check_uefi_sniff: Could not find an ESP in `/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_ir_2.1/reports//fw/uefi-sniff.log'
 WARNING if_contains: `-dirty' found in `/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_ir_2.1/reports//fw/capsule-update.log' at line 1: `U-Boot SPL 2022.04-dirty (Sep 07 2023 - 17:11:01 +0100)' (warning once)
 WARNING check_uefi_capsule: Capsule GUID `e2bb9c06-70e9-4b14-97a3-5a7913176e3f' is known: "U-Boot legacy (< v2022.07) EFI_FIRMWARE_IMAGE_TYPE_UBOOT_RAW_GUID", in `/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_ir_2.1/reports//fw/capsule1.bin'
-ERROR check_tree: `/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_ir_2.1/reports//os-logs/linux-distro3-version/*console.log' missing
-ERROR check_tree: `/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_ir_2.1/reports//os-logs/linux-distro3-version/*sys-firmware.tar.gz' missing
-ERROR check_tree: `/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_ir_2.1/reports//os-logs/linux-distro2-version/*console.log' missing
-ERROR check_tree: `/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_ir_2.1/reports//os-logs/linux-distro2-version/*sys-firmware.tar.gz' missing
-ERROR check_tree: `/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_ir_2.1/reports//os-logs/linux-distro1-version/*console.log' missing
-ERROR check_tree: `/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_ir_2.1/reports//os-logs/linux-distro1-version/*sys-firmware.tar.gz' missing
 ERROR deferred_check_uefi_logs_esp: `/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_ir_2.1/reports//fw/capsule-on-disk.log' did not have an ESP
 ERROR deferred_check_uefi_logs_esp: `/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_ir_2.1/reports//fw/capsule-on-disk.log' did not have an ESP
 ERROR deferred_check_uefi_logs_esp: `/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3399ProDs_ir_2.1/reports//fw/capsule-on-disk.log' did not have an ESP
-INFO <module>: 478 checks, 458 pass, 5 warnings, 15 errors
+INFO <module>: 526 checks, 512 pass, 5 warnings, 9 errors

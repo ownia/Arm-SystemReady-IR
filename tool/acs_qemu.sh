@@ -87,7 +87,7 @@ $QEMU \
 	-drive file=$IMAGE,if=none,format=raw,id=hd0 \
 	-drive file=$TRANS,format=raw \
 	-nographic
-	#-chardev stdio,id=char0,logfile=console.log,signal=on \
+	#-chardev stdio,id=char0,logfile=qemu-console.log,signal=on \
 	#-serial chardev:char0 \
 	# -display none
 elif [ "$1" = "sie_new" ];
@@ -119,7 +119,7 @@ $QEMU \
 	-drive file=$TRANS,format=raw \
 	-monitor null -nodefaults \
 	-serial stdio \
-	#-chardev stdio,id=char0,logfile=console.log,signal=on \
+	#-chardev stdio,id=char0,logfile=qemu-console.log,signal=on \
 	#-serial chardev:char0 \
 else
 echo "Creating TPM Emulator socket"
@@ -151,6 +151,6 @@ $QEMU \
 	-object rng-random,filename=/dev/urandom,id=rng0 \
 	-rtc base=utc,clock=host \
 	-drive file=$TRANS,format=raw \
-	-chardev stdio,id=char0,logfile=console.log,signal=on \
+	-chardev stdio,id=char0,logfile=qemu-console.log,signal=on \
 	-serial chardev:char0
 fi
