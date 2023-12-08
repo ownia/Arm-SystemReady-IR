@@ -1,0 +1,671 @@
+
+U-Boot SPL 2021.04-g54c098f (May 24 2023 - 00:09:59 +0800)
+switch to partitions #0, OK
+mmc0(part 0) is current device
+fail to find extra gpr
+get ptdev slots attrubites from gpr error, ret = 6
+set_ptdev_slots_attr_from_gpr fail
+U-Boot SPL d9342_ref done
+NOTICE:  BL31: v2.1(release):d9342_ref
+NOTICE:  BL31: Built : 16:35:46, Jan 29 2023
+
+
+U-Boot 2021.04 (Dec 08 2023 - 11:13:44 +0800) d9342_ref_capsule
+
+Model: Semidrive kunlun D9342 REF Board
+DRAM:  1.6 GiB
+Relocation Offset is: 1baba000
+Relocating to 770ba000, new gd at 750a9d60, sp at 75093d90
+MMC:   sdhci@34180000: 0, sdhci@341a0000: 1
+Loading Environment from MMC... switch to partitions #0, OK
+mmc0(part 0) is current device
+partition[boot] is not found
+part get fail
+default bootsystem_type is linux os
+Writing to MMC(0)... OK
+In:    serial@30520000
+Out:   serial@30520000
+Err:   serial@30520000
+Net:   No phy clock provided -38gpio_request_by_name(phy reset) not provided -2
+Warning: eth@30170000 (eth0) using random MAC address - a2:a2:4e:c9:f0:16
+eth0: eth@30170000No phy clock provided -38FEC: can't find phy-handle
+
+Warning: eth@306A0000 (eth1) using random MAC address - 9e:52:dc:99:9a:c7
+, eth1: eth@306A0000
+switch to partitions #0, OK
+mmc0(part 0) is current device
+
+MMC read: dev # 0, block # 12773760, count 227 ... 227 blocks read: OK
+sdrv_update_mmc_boot bootreason 2
+enter normal mmc boot mode 
+Hit any key to stop autoboot:  2  1  0 
+starting USB...
+Bus dwc3: Register 2000140 NbrPorts 2
+Starting the controller
+USB XHCI 1.10
+Bus dwc3: usb maximum-speed not found
+Register 2000140 NbrPorts 2
+Starting the controller
+USB XHCI 1.10
+scanning bus dwc3 for devices... 1 USB Device(s) found
+scanning bus dwc3 for devices... 1 USB Device(s) found
+       scanning usb for storage devices... 0 Storage Device(s) found
+
+Device 0: unknown device
+switch to partitions #0, OK
+mmc0(part 0) is current device
+Scanning mmc 0:1b...
+Scanning disk sdhci@34180000.blk...
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+Scanning disk sdhci@341a0000.blk...
+Found 40 disks
+Missing RNG device for EFI_RNG_PROTOCOL
+BootOrder not defined
+EFI boot manager: Cannot load any image
+switch to partitions #0, OK
+mmc1 is current device
+Scanning mmc 1:1...
+BootOrder not defined
+EFI boot manager: Cannot load any image
+Found EFI removable media binary efi/boot/bootaa64.efi
+647168 bytes read in 51 ms (12.1 MiB/s)
+Booting /efi\boot\bootaa64.efi
+Welcome to GRUB!
+
+eth@30170000 Waiting for PHY auto negotiation to complete......... TIMEOUT !
+phy_startup() failed: -110FAILED: -110EQOS_DMA_MODE_SWR stuckFAILED: -110GNU GRUB  version 2.11
+
+ввввввввввввввввввввв”Ђввввввввввв”Ђввввввввввввввввввввв”Ђввввввввввв”Ђввввввввввввввввввввв”Ђввввввввввв”Ђввввввввввввввввввввв”Ђввввввввввв”Ђввввввввввввввввввввв”Ђввввввввввв”Ђввввввввввввввввввввв”Ђввввввввввв”Ђввввввввввввввввввввв”Ђввввввввввв”Ђввввввввввввввввввввв”Ђввввввввввввввввв”‚ввввввввввввввввввввввввввввв”‚ввв”‚ввввввввввввввввввввввввввввв”‚ввв”‚вввввввввввввввв”Ђввввввввввв”Ђввввввввввввввввввввв”Ђввввввввввв”Ђввввввввввввввввввввв”Ђввввввввввв”Ђввввввввввввввввввввв”Ђввввввввввв”Ђввввввввввввввввввввв”Ђввввввввввв”Ђввввввввввввввввввввв”Ђввввввввввв”Ђввввввввввввввввввввв”Ђввввввввввв”Ђввввввввввввввввввввв”Ђввввввввввв”Ђввввввввв     Use the в and в keys to select which entry is highlighted.                                                                                                                                                                                       
+      Press enter to boot the selected OS, `e' to edit the commands before booting or `c' for a command-line.                                                                                                                                            Linux BusyBox                                                                                                                                                                                                                                           *bbr/bsa                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             The highlighted entry will be executed automatically in 5s.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+/EndEntire
+file path: /HardwareVendor(e61d73b9-a384-4acc-aeab-82e828f3628b)[0: ]/UnknownMessaging(1a)/UnknownMessaging(1a)/HD(1,800,fffff,515b82c280983847,2,2)/File(\EFI\BOOT)/File(Shell.efi)/EndEntire
+UEFI Interactive Shell v2.2
+EDK II
+UEFI v2.80 (Das U-Boot, 0x20210400)
+Mapping table
+      FS0: Alias(s):HD0n:;BLK5:
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(13,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x2580,0xc000)
+      FS1: Alias(s):HD0ba:;BLK18:
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(25,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1e980,0x400000)
+      FS2: Alias(s):HD0bc:;BLK20:
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(27,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x81e980,0x400000)
+      FS3: Alias(s):HD0bk:;BLK29:
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(35,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0xc4b980,0x80000)
+      FS4: Alias(s):HD0bl:;BLK30:
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(36,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0xccb980,0x105d65f)
+      FS5: Alias(s):HD0b:;BLK38:
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(1)/SD(1)/HD(1,GPT,c2825b51-9880-4738-ae28-a0792f1e4e3d,0x800,0xfffff)
+      FS6: Alias(s):HD0c:;BLK39:
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(1)/SD(1)/HD(2,GPT,c2825b51-9880-4738-ae28-a0792f1e4e3d,0x100800,0x18fff)
+     BLK0: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)
+     BLK1: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(1,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1000,0x40)
+    BLK12: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(2,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1040,0x40)
+    BLK23: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(3,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1080,0x100)
+    BLK31: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(4,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1180,0x100)
+    BLK32: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(5,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1280,0x100)
+    BLK33: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(6,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1380,0x100)
+    BLK34: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(7,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1480,0x400)
+    BLK35: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(8,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1880,0x400)
+    BLK36: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(9,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1c80,0x80)
+     BLK2: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(10,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1d00,0x80)
+     BLK3: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(11,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1d80,0x400)
+     BLK4: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(12,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x2180,0x400)
+     BLK6: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(14,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0xe580,0xc000)
+     BLK7: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(15,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1a580,0x100)
+     BLK8: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(16,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1a680,0x100)
+     BLK9: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(17,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1a780,0x1000)
+    BLK10: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(18,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1b780,0x1000)
+    BLK11: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(19,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1c780,0x80)
+    BLK13: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(20,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1c800,0x80)
+    BLK14: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(21,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1c880,0x1000)
+    BLK15: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(22,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1d880,0x1000)
+    BLK16: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(23,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1e880,0x80)
+    BLK17: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(24,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1e900,0x80)
+    BLK19: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(26,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x41e980,0x400000)
+    BLK21: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(28,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0xc1e980,0x10000)
+    BLK22: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(29,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0xc2e980,0x400)
+    BLK24: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(30,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0xc2ed80,0x400)
+    BLK25: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(31,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0xc2f180,0x400)
+    BLK26: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(32,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0xc2f580,0x400)
+    BLK27: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(33,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0xc2f980,0xe000)
+    BLK28: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(34,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0xc3d980,0xe000)
+    BLK37: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(1)/SD(1)
+Press ESC in 5 seconds to skip startup.nsh or any other key to continue.
+Shell> FS5:
+FS5:\> EEFI\BOOT\aapp\CapsuleApp.efi -E
+
+ASSERT_EFI_ERROR (Status = Not Found)
+ASSERT [CapsuleApp] /home/cherat01/ATEG/SystemReady/BBR/arm-systemready/IR/scripts/edk2/MdePkg/Library/DxeServicesTableLib/DxeServicesTableLib.c(58): !EFI_ERROR (Status)
+ASSERT [CapsuleApp] /home/cherat01/ATEG/SystemReady/BBR/arm-systemready/IR/scripts/edk2/MdePkg/Library/DxeServicesTableLib/DxeServicesTableLib.c(59): gDS != ((void *) 0)
+
+ASSERT_EFI_ERROR (Status = Not Found)
+ASSERT [CapsuleApp] /home/cherat01/ATEG/SystemReady/BBR/arm-systemready/IR/scripts/edk2/Build/MdeModule/DEBUG_GCC5/AARCH64/MdeModulePkg/Application/CapsuleApp/CapsuleApp/DEBUG/AutoGen.c(415): !EFI_ERROR (Status)
+
+ASSERT_EFI_ERROR (Status = Not Found)
+ASSERT [CapsuleApp] /home/cherat01/ATEG/SystemReady/BBR/arm-systemready/IR/scripts/edk2/MdePkg/Library/DxeHobLib/HobLib.c(48): !EFI_ERROR (Status)
+ASSERT [CapsuleApp] /home/cherat01/ATEG/SystemReady/BBR/arm-systemready/IR/scripts/edk2/MdePkg/Library/DxeHobLib/HobLib.c(49): mHobList != ((void *) 0)
+##############
+# ESRT TABLE #
+##############
+ESRT - Not Found
+FS5:\> EFI\BOOT\app\CapsuleApp.efi -E P
+
+ASSERT_EFI_ERROR (Status = Not Found)
+ASSERT [CapsuleApp] /home/cherat01/ATEG/SystemReady/BBR/arm-systemready/IR/scripts/edk2/MdePkg/Library/DxeServicesTableLib/DxeServicesTableLib.c(58): !EFI_ERROR (Status)
+ASSERT [CapsuleApp] /home/cherat01/ATEG/SystemReady/BBR/arm-systemready/IR/scripts/edk2/MdePkg/Library/DxeServicesTableLib/DxeServicesTableLib.c(59): gDS != ((void *) 0)
+
+ASSERT_EFI_ERROR (Status = Not Found)
+ASSERT [CapsuleApp] /home/cherat01/ATEG/SystemReady/BBR/arm-systemready/IR/scripts/edk2/Build/MdeModule/DEBUG_GCC5/AARCH64/MdeModulePkg/Application/CapsuleApp/CapsuleApp/DEBUG/AutoGen.c(415): !EFI_ERROR (Status)
+
+ASSERT_EFI_ERROR (Status = Not Found)
+ASSERT [CapsuleApp] /home/cherat01/ATEG/SystemReady/BBR/arm-systemready/IR/scripts/edk2/MdePkg/Library/DxeHobLib/HobLib.c(48): !EFI_ERROR (Status)
+ASSERT [CapsuleApp] /home/cherat01/ATEG/SystemReady/BBR/arm-systemready/IR/scripts/edk2/MdePkg/Library/DxeHobLib/HobLib.c(49): mHobList != ((void *) 0)
+############
+# FMP DATA #
+############
+dfu_alt_init: dfu_alt_num=1
+dfu_fill_entity: u-boot.bin part 0 21 interface: mmc dev: 0
+ownia get partition bootloader_a
+ownia part 116864 4096 512
+dfu_alt_init: dfu_alt_num=1
+dfu_fill_entity: u-boot.bin part 0 21 interface: mmc dev: 0
+ownia get partition bootloader_a
+ownia part 116864 4096 512
+FMP (0) ImageInfo:
+  DescriptorVersion  - 0x4
+  DescriptorCount    - 0x1
+  DescriptorSize     - 0x78
+  PackageVersion     - 0xFFFFFFFF
+  PackageVersionName - "<null string>"
+  ImageDescriptor (0)
+    ImageIndex                  - 0x1
+    ImageTypeId                 - 00000000-9C06-E2BB-E970-144B97A35A79
+    ImageId                     - 0x0
+    ImageIdName                 - "u-boot.bin"
+    Version                     - 0x0
+    VersionName                 - "<null string>"
+    Size                        - 0x0
+    AttributesSupported         - 0x5
+      IMAGE_UPDATABLE           - 0x1
+      RESET_REQUIRED            - 0x0
+      AUTHENTICATION_REQUIRED   - 0x4
+      IN_USE                    - 0x0
+      UEFI_IMAGE                - 0x0
+    AttributesSetting           - 0x1
+      IMAGE_UPDATABLE           - 0x1
+      RESET_REQUIRED            - 0x0
+      AUTHENTICATION_REQUIRED   - 0x0
+      IN_USE                    - 0x0
+      UEFI_IMAGE                - 0x0
+    Compatibilities             - 0x0
+      COMPATIB_CHECK_SUPPORTED  - 0x0
+    LowestSupportedImageVersion - 0x0
+    LastAttemptVersion          - 0x0
+    LastAttemptStatus           - 0x0 (Success)
+    HardwareInstance            - 0x1
+    Dependencies                - NULL
+FMP (0) PackageInfo - Unsupported
+dfu_alt_init: dfu_alt_num=1
+dfu_fill_entity: u-boot.bin part 0 21 interface: mmc dev: 0
+ownia get partition bootloader_a
+ownia part 116864 4096 512
+dfu_alt_init: dfu_alt_num=1
+dfu_fill_entity: u-boot.bin part 0 21 interface: mmc dev: 0
+ownia get partition bootloader_a
+ownia part 116864 4096 512
+FMP (1) ImageInfo:
+  DescriptorVersion  - 0x4
+  DescriptorCount    - 0x1
+  DescriptorSize     - 0x78
+  PackageVersion     - 0xFFFFFFFF
+  PackageVersionName - "<null string>"
+  ImageDescriptor (0)
+    ImageIndex                  - 0x1
+    ImageTypeId                 - 00000000-FF2D-AE13-D49A-254E9AC86D80
+    ImageId                     - 0x0
+    ImageIdName                 - "u-boot.bin"
+    Version                     - 0x0
+    VersionName                 - "<null string>"
+    Size                        - 0x0
+    AttributesSupported         - 0x5
+      IMAGE_UPDATABLE           - 0x1
+      RESET_REQUIRED            - 0x0
+      AUTHENTICATION_REQUIRED   - 0x4
+      IN_USE                    - 0x0
+      UEFI_IMAGE                - 0x0
+    AttributesSetting           - 0x1
+      IMAGE_UPDATABLE           - 0x1
+      RESET_REQUIRED            - 0x0
+      AUTHENTICATION_REQUIRED   - 0x0
+      IN_USE                    - 0x0
+      UEFI_IMAGE                - 0x0
+    Compatibilities             - 0x0
+      COMPATIB_CHECK_SUPPORTED  - 0x0
+    LowestSupportedImageVersion - 0x0
+    LastAttemptVersion          - 0x0
+    LastAttemptStatus           - 0x0 (Success)
+    HardwareInstance            - 0x1
+    Dependencies                - NULL
+FMP (1) PackageInfo - Unsupported
+
+FS5:\> EFI\BOOT\app\CapsuleApp.efi -P  cacapsule1.bin
+
+ASSERT_EFI_ERROR (Status = Not Found)
+ASSERT [CapsuleApp] /home/cherat01/ATEG/SystemReady/BBR/arm-systemready/IR/scripts/edk2/MdePkg/Library/DxeServicesTableLib/DxeServicesTableLib.c(58): !EFI_ERROR (Status)
+ASSERT [CapsuleApp] /home/cherat01/ATEG/SystemReady/BBR/arm-systemready/IR/scripts/edk2/MdePkg/Library/DxeServicesTableLib/DxeServicesTableLib.c(59): gDS != ((void *) 0)
+
+ASSERT_EFI_ERROR (Status = Not Found)
+ASSERT [CapsuleApp] /home/cherat01/ATEG/SystemReady/BBR/arm-systemready/IR/scripts/edk2/Build/MdeModule/DEBUG_GCC5/AARCH64/MdeModulePkg/Application/CapsuleApp/CapsuleApp/DEBUG/AutoGen.c(415): !EFI_ERROR (Status)
+
+ASSERT_EFI_ERROR (Status = Not Found)
+ASSERT [CapsuleApp] /home/cherat01/ATEG/SystemReady/BBR/arm-systemready/IR/scripts/edk2/MdePkg/Library/DxeHobLib/HobLib.c(48): !EFI_ERROR (Status)
+ASSERT [CapsuleApp] /home/cherat01/ATEG/SystemReady/BBR/arm-systemready/IR/scripts/edk2/MdePkg/Library/DxeHobLib/HobLib.c(49): mHobList != ((void *) 0)
+CapsuleApp: creating capsule descriptors at 0x6C93A040
+CapsuleApp: capsule data starts          at 0x6C7FD040 with size 0x121E20
+CapsuleApp: capsule block/size              0x6C7FD040/0x121E20
+dfu_alt_init: dfu_alt_num=1
+dfu_fill_entity: u-boot.bin part 0 21 interface: mmc dev: 0
+ownia get partition bootloader_a
+ownia part 116864 4096 512
+dfu_alt_init: dfu_alt_num=1
+dfu_fill_entity: u-boot.bin part 0 21 interface: mmc dev: 0
+ownia get partition bootloader_a
+ownia part 116864 4096 512
+dfu_alt_init: dfu_alt_num=1
+dfu_fill_entity: u-boot.bin part 0 21 interface: mmc dev: 0
+ownia get partition bootloader_a
+ownia part 116864 4096 512
+dfu_alt_init: dfu_alt_num=1
+dfu_fill_entity: u-boot.bin part 0 21 interface: mmc dev: 0
+ownia get partition bootloader_a
+ownia part 116864 4096 512
+Processing update 'u-boot.bin' :sha1+ 
+dfu_write_by_name: name: u-boot.bin addr: 0x000000006c7fd164 len: 1185864 device: <NULL>:<NULL>
+dfu_alt_init: dfu_alt_num=1
+dfu_fill_entity: u-boot.bin part 0 21 interface: mmc dev: 0
+ownia get partition bootloader_a
+ownia part 116864 4096 512
+dfu_write_by_name: image name: u-boot.bin strlen: 10
+dfu_write_from_mem_addr: dfu buf size: 8388608
+dfu_write_from_mem_addr: dp: 0x000000006c7fd164 left: 1185864 write: 1185864
+dfu_write: name: u-boot.bin buf: 0x000000006c7fd164 size: 0x121848 p_num: 0x0 offset: 0x0 bufoffset: 0x0
+mmc_block_op: MMC WRITE dev: 0 start: 116864 cnt: 2317 buf: 0x0000000075ac0040
+#resetting ...
+Rebooting with reason: 0xb
+
+U-Boot SPL 2021.04-g54c098f (May 24 2023 - 00:09:59 +0800)
+switch to partitions #0, OK
+mmc0(part 0) is current device
+fail to find extra gpr
+get ptdev slots attrubites from gpr error, ret = 6
+set_ptdev_slots_attr_from_gpr fail
+U-Boot SPL d9342_ref done
+NOTICE:  BL31: v2.1(release):d9342_ref
+NOTICE:  BL31: Built : 16:35:46, Jan 29 2023
+
+
+U-Boot 2021.04 (Dec 08 2023 - 11:24:20 +0800) d9342_ref
+
+Model: Semidrive kunlun D9342 REF Board
+DRAM:  1.6 GiB
+Relocation Offset is: 1baba000
+Relocating to 770ba000, new gd at 750a9d60, sp at 75093d90
+MMC:   sdhci@34180000: 0, sdhci@341a0000: 1
+Loading Environment from MMC... switch to partitions #0, OK
+mmc0(part 0) is current device
+partition[boot] is not found
+part get fail
+default bootsystem_type is linux os
+Writing to MMC(0)... OK
+In:    serial@30520000
+Out:   serial@30520000
+Err:   serial@30520000
+Net:   No phy clock provided -38gpio_request_by_name(phy reset) not provided -2
+Warning: eth@30170000 (eth0) using random MAC address - 16:49:3c:9a:63:9e
+eth0: eth@30170000No phy clock provided -38FEC: can't find phy-handle
+
+Warning: eth@306A0000 (eth1) using random MAC address - 06:c2:7d:33:ec:b9
+, eth1: eth@306A0000
+switch to partitions #0, OK
+mmc0(part 0) is current device
+
+MMC read: dev # 0, block # 12773760, count 227 ... 227 blocks read: OK
+sdrv_update_mmc_boot bootreason 2
+enter normal mmc boot mode 
+Hit any key to stop autoboot:  2  1  0 
+starting USB...
+Bus dwc3: Register 2000140 NbrPorts 2
+Starting the controller
+USB XHCI 1.10
+Bus dwc3: usb maximum-speed not found
+Register 2000140 NbrPorts 2
+Starting the controller
+USB XHCI 1.10
+scanning bus dwc3 for devices... 1 USB Device(s) found
+scanning bus dwc3 for devices... 1 USB Device(s) found
+       scanning usb for storage devices... 0 Storage Device(s) found
+
+Device 0: unknown device
+switch to partitions #0, OK
+mmc0(part 0) is current device
+Scanning mmc 0:1b...
+Scanning disk sdhci@34180000.blk...
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+Scanning disk sdhci@341a0000.blk...
+Found 40 disks
+Missing RNG device for EFI_RNG_PROTOCOL
+BootOrder not defined
+EFI boot manager: Cannot load any image
+switch to partitions #0, OK
+mmc1 is current device
+Scanning mmc 1:1...
+BootOrder not defined
+EFI boot manager: Cannot load any image
+Found EFI removable media binary efi/boot/bootaa64.efi
+647168 bytes read in 51 ms (12.1 MiB/s)
+Booting /efi\boot\bootaa64.efi
+Welcome to GRUB!
+
+eth@30170000 Waiting for PHY auto negotiation to complete......... TIMEOUT !
+phy_startup() failed: -110FAILED: -110EQOS_DMA_MODE_SWR stuckFAILED: -110GNU GRUB  version 2.11
+
+ввввввввввввввввввввв”Ђввввввввввв”Ђввввввввввввввввввввв”Ђввввввввввв”Ђввввввввввввввввввввв”Ђввввввввввв”Ђввввввввввввввввввввв”Ђввввввввввв”Ђввввввввввввввввввввв”Ђввввввввввв”Ђввввввввввввввввввввв”Ђввввввввввв”Ђввввввввввввввввввввв”Ђввввввввввв”Ђввввввввввввввввввввв”Ђввввввввввввввввв”‚ввввввввввввввввввввввввввввв”‚ввв”‚ввввввввввввввввввввввввввввв”‚ввв”‚вввввввввввввввв”Ђввввввввввв”Ђввввввввввввввввввввв”Ђввввввввввв”Ђввввввввввввввввввввв”Ђввввввввввв”Ђввввввввввввввввввввв”Ђввввввввввв”Ђввввввввввввввввввввв”Ђввввввввввв”Ђввввввввввввввввввввв”Ђввввввввввв”Ђввввввввввввввввввввв”Ђввввввввввв”Ђввввввввввввввввввввв”Ђввввввввввв”Ђввввввввв     Use the в and в keys to select which entry is highlighted.                                                                                                                                                                                       
+      Press enter to boot the selected OS, `e' to edit the commands before booting or `c' for a command-line.                                                                                                                                            Linux BusyBox                                                                                                                                                                                                                                           *bbr/bsa                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             The highlighted entry will be executed automatically in 5s.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+/EndEntire
+file path: /HardwareVendor(e61d73b9-a384-4acc-aeab-82e828f3628b)[0: ]/UnknownMessaging(1a)/UnknownMessaging(1a)/HD(1,800,fffff,515b82c280983847,2,2)/File(\EFI\BOOT)/File(Shell.efi)/EndEntire
+UEFI Interactive Shell v2.2
+EDK II
+UEFI v2.80 (Das U-Boot, 0x20210400)
+Mapping table
+      FS0: Alias(s):HD0n:;BLK5:
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(13,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x2580,0xc000)
+      FS1: Alias(s):HD0ba:;BLK18:
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(25,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1e980,0x400000)
+      FS2: Alias(s):HD0bc:;BLK20:
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(27,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x81e980,0x400000)
+      FS3: Alias(s):HD0bk:;BLK29:
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(35,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0xc4b980,0x80000)
+      FS4: Alias(s):HD0bl:;BLK30:
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(36,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0xccb980,0x105d65f)
+      FS5: Alias(s):HD0b:;BLK38:
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(1)/SD(1)/HD(1,GPT,c2825b51-9880-4738-ae28-a0792f1e4e3d,0x800,0xfffff)
+      FS6: Alias(s):HD0c:;BLK39:
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(1)/SD(1)/HD(2,GPT,c2825b51-9880-4738-ae28-a0792f1e4e3d,0x100800,0x18fff)
+     BLK0: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)
+     BLK1: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(1,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1000,0x40)
+    BLK12: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(2,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1040,0x40)
+    BLK23: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(3,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1080,0x100)
+    BLK31: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(4,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1180,0x100)
+    BLK32: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(5,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1280,0x100)
+    BLK33: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(6,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1380,0x100)
+    BLK34: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(7,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1480,0x400)
+    BLK35: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(8,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1880,0x400)
+    BLK36: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(9,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1c80,0x80)
+     BLK2: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(10,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1d00,0x80)
+     BLK3: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(11,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1d80,0x400)
+     BLK4: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(12,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x2180,0x400)
+     BLK6: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(14,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0xe580,0xc000)
+     BLK7: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(15,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1a580,0x100)
+     BLK8: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(16,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1a680,0x100)
+     BLK9: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(17,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1a780,0x1000)
+    BLK10: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(18,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1b780,0x1000)
+    BLK11: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(19,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1c780,0x80)
+    BLK13: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(20,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1c800,0x80)
+    BLK14: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(21,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1c880,0x1000)
+    BLK15: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(22,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1d880,0x1000)
+    BLK16: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(23,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1e880,0x80)
+    BLK17: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(24,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1e900,0x80)
+    BLK19: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(26,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x41e980,0x400000)
+    BLK21: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(28,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0xc1e980,0x10000)
+    BLK22: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(29,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0xc2e980,0x400)
+    BLK24: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(30,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0xc2ed80,0x400)
+    BLK25: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(31,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0xc2f180,0x400)
+    BLK26: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(32,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0xc2f580,0x400)
+    BLK27: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(33,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0xc2f980,0xe000)
+    BLK28: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(34,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0xc3d980,0xe000)
+    BLK37: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(1)/SD(1)
+Press ESC in 5 seconds to skip startup.nsh or any other key to continue.
+Shell> FS5:
+FS5:\> EEFIEFI\BOOT\aapp\CapsuleApp.efi -E
+
+ASSERT_EFI_ERROR (Status = Not Found)
+ASSERT [CapsuleApp] /home/cherat01/ATEG/SystemReady/BBR/arm-systemready/IR/scripts/edk2/MdePkg/Library/DxeServicesTableLib/DxeServicesTableLib.c(58): !EFI_ERROR (Status)
+ASSERT [CapsuleApp] /home/cherat01/ATEG/SystemReady/BBR/arm-systemready/IR/scripts/edk2/MdePkg/Library/DxeServicesTableLib/DxeServicesTableLib.c(59): gDS != ((void *) 0)
+
+ASSERT_EFI_ERROR (Status = Not Found)
+ASSERT [CapsuleApp] /home/cherat01/ATEG/SystemReady/BBR/arm-systemready/IR/scripts/edk2/Build/MdeModule/DEBUG_GCC5/AARCH64/MdeModulePkg/Application/CapsuleApp/CapsuleApp/DEBUG/AutoGen.c(415): !EFI_ERROR (Status)
+
+ASSERT_EFI_ERROR (Status = Not Found)
+ASSERT [CapsuleApp] /home/cherat01/ATEG/SystemReady/BBR/arm-systemready/IR/scripts/edk2/MdePkg/Library/DxeHobLib/HobLib.c(48): !EFI_ERROR (Status)
+ASSERT [CapsuleApp] /home/cherat01/ATEG/SystemReady/BBR/arm-systemready/IR/scripts/edk2/MdePkg/Library/DxeHobLib/HobLib.c(49): mHobList != ((void *) 0)
+##############
+# ESRT TABLE #
+##############
+ESRT - Not Found
+FS5:\> EFI\BOOT\app\CapsuleApp.efi -E P
+
+ASSERT_EFI_ERROR (Status = Not Found)
+ASSERT [CapsuleApp] /home/cherat01/ATEG/SystemReady/BBR/arm-systemready/IR/scripts/edk2/MdePkg/Library/DxeServicesTableLib/DxeServicesTableLib.c(58): !EFI_ERROR (Status)
+ASSERT [CapsuleApp] /home/cherat01/ATEG/SystemReady/BBR/arm-systemready/IR/scripts/edk2/MdePkg/Library/DxeServicesTableLib/DxeServicesTableLib.c(59): gDS != ((void *) 0)
+
+ASSERT_EFI_ERROR (Status = Not Found)
+ASSERT [CapsuleApp] /home/cherat01/ATEG/SystemReady/BBR/arm-systemready/IR/scripts/edk2/Build/MdeModule/DEBUG_GCC5/AARCH64/MdeModulePkg/Application/CapsuleApp/CapsuleApp/DEBUG/AutoGen.c(415): !EFI_ERROR (Status)
+
+ASSERT_EFI_ERROR (Status = Not Found)
+ASSERT [CapsuleApp] /home/cherat01/ATEG/SystemReady/BBR/arm-systemready/IR/scripts/edk2/MdePkg/Library/DxeHobLib/HobLib.c(48): !EFI_ERROR (Status)
+ASSERT [CapsuleApp] /home/cherat01/ATEG/SystemReady/BBR/arm-systemready/IR/scripts/edk2/MdePkg/Library/DxeHobLib/HobLib.c(49): mHobList != ((void *) 0)
+############
+# FMP DATA #
+############
+dfu_alt_init: dfu_alt_num=1
+dfu_fill_entity: u-boot.bin part 0 21 interface: mmc dev: 0
+ownia get partition bootloader_a
+ownia part 116864 4096 512
+dfu_alt_init: dfu_alt_num=1
+dfu_fill_entity: u-boot.bin part 0 21 interface: mmc dev: 0
+ownia get partition bootloader_a
+ownia part 116864 4096 512
+FMP (0) ImageInfo:
+  DescriptorVersion  - 0x4
+  DescriptorCount    - 0x1
+  DescriptorSize     - 0x78
+  PackageVersion     - 0xFFFFFFFF
+  PackageVersionName - "<null string>"
+  ImageDescriptor (0)
+    ImageIndex                  - 0x1
+    ImageTypeId                 - 00000000-9C06-E2BB-E970-144B97A35A79
+    ImageId                     - 0x0
+    ImageIdName                 - "u-boot.bin"
+    Version                     - 0x0
+    VersionName                 - "<null string>"
+    Size                        - 0x0
+    AttributesSupported         - 0x5
+      IMAGE_UPDATABLE           - 0x1
+      RESET_REQUIRED            - 0x0
+      AUTHENTICATION_REQUIRED   - 0x4
+      IN_USE                    - 0x0
+      UEFI_IMAGE                - 0x0
+    AttributesSetting           - 0x1
+      IMAGE_UPDATABLE           - 0x1
+      RESET_REQUIRED            - 0x0
+      AUTHENTICATION_REQUIRED   - 0x0
+      IN_USE                    - 0x0
+      UEFI_IMAGE                - 0x0
+    Compatibilities             - 0x0
+      COMPATIB_CHECK_SUPPORTED  - 0x0
+    LowestSupportedImageVersion - 0x0
+    LastAttemptVersion          - 0x0
+    LastAttemptStatus           - 0x0 (Success)
+    HardwareInstance            - 0x1
+    Dependencies                - NULL
+FMP (0) PackageInfo - Unsupported
+dfu_alt_init: dfu_alt_num=1
+dfu_fill_entity: u-boot.bin part 0 21 interface: mmc dev: 0
+ownia get partition bootloader_a
+ownia part 116864 4096 512
+dfu_alt_init: dfu_alt_num=1
+dfu_fill_entity: u-boot.bin part 0 21 interface: mmc dev: 0
+ownia get partition bootloader_a
+ownia part 116864 4096 512
+FMP (1) ImageInfo:
+  DescriptorVersion  - 0x4
+  DescriptorCount    - 0x1
+  DescriptorSize     - 0x78
+  PackageVersion     - 0xFFFFFFFF
+  PackageVersionName - "<null string>"
+  ImageDescriptor (0)
+    ImageIndex                  - 0x1
+    ImageTypeId                 - 00000000-FF2D-AE13-D49A-254E9AC86D80
+    ImageId                     - 0x0
+    ImageIdName                 - "u-boot.bin"
+    Version                     - 0x0
+    VersionName                 - "<null string>"
+    Size                        - 0x0
+    AttributesSupported         - 0x5
+      IMAGE_UPDATABLE           - 0x1
+      RESET_REQUIRED            - 0x0
+      AUTHENTICATION_REQUIRED   - 0x4
+      IN_USE                    - 0x0
+      UEFI_IMAGE                - 0x0
+    AttributesSetting           - 0x1
+      IMAGE_UPDATABLE           - 0x1
+      RESET_REQUIRED            - 0x0
+      AUTHENTICATION_REQUIRED   - 0x0
+      IN_USE                    - 0x0
+      UEFI_IMAGE                - 0x0
+    Compatibilities             - 0x0
+      COMPATIB_CHECK_SUPPORTED  - 0x0
+    LowestSupportedImageVersion - 0x0
+    LastAttemptVersion          - 0x0
+    LastAttemptStatus           - 0x0 (Success)
+    HardwareInstance            - 0x1
+    Dependencies                - NULL
+FMP (1) PackageInfo - Unsupported
+
+FS5:\> 

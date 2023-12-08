@@ -1,0 +1,10 @@
+INFO identify_ebbr_seq: Identified `/home/weiouy01/code/Arm-SystemReady-IoT/project/Semidrive-D9_ir_1.2/reports//acs_results/sct_results/Sequence/EBBR.seq' as "ACS-IR v21.09_1.0" (SystemReady IR v1.1).
+ERROR check_file_contains: Could not find `Test: UEFI' in `/home/weiouy01/code/Arm-SystemReady-IoT/project/Semidrive-D9_ir_1.2/reports//acs-console.log'
+ERROR check_dir: `/home/weiouy01/code/Arm-SystemReady-IoT/project/Semidrive-D9_ir_1.2/reports//acs_results/fwts/' missing
+ERROR check_dir: `/home/weiouy01/code/Arm-SystemReady-IoT/project/Semidrive-D9_ir_1.2/reports//acs_results/linux_dump/' missing
+ERROR check_file: `/home/weiouy01/code/Arm-SystemReady-IoT/project/Semidrive-D9_ir_1.2/reports//manual-results/bsa-linux/console.log' missing
+ERROR check_tree: `/home/weiouy01/code/Arm-SystemReady-IoT/project/Semidrive-D9_ir_1.2/reports//os-logs/linux-distro2-version/*console.log' missing
+ERROR check_tree: `/home/weiouy01/code/Arm-SystemReady-IoT/project/Semidrive-D9_ir_1.2/reports//os-logs/linux-distro2-version/*sys-firmware.tar.gz' missing
+ERROR check_tree: `/home/weiouy01/code/Arm-SystemReady-IoT/project/Semidrive-D9_ir_1.2/reports//os-logs/linux-distro1-version/*console.log' missing
+ERROR check_tree: `/home/weiouy01/code/Arm-SystemReady-IoT/project/Semidrive-D9_ir_1.2/reports//os-logs/linux-distro1-version/*sys-firmware.tar.gz' missing
+INFO <module>: 154 checks, 146 pass, 0 warning, 8 errors

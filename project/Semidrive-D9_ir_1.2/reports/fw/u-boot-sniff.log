@@ -1,0 +1,1049 @@
+
+U-Boot SPL 2021.04-g54c098f (May 24 2023 - 00:09:59 +0800)
+switch to partitions #0, OK
+mmc0(part 0) is current device
+fail to find extra gpr
+get ptdev slots attrubites from gpr error, ret = 6
+set_ptdev_slots_attr_from_gpr fail
+U-Boot SPL d9342_ref done
+NOTICE:  BL31: v2.1(release):d9342_ref
+NOTICE:  BL31: Built : 16:35:46, Jan 29 2023
+
+
+U-Boot 2021.04 (Dec 08 2023 - 11:24:20 +0800) d9342_ref
+
+Model: Semidrive kunlun D9342 REF Board
+DRAM:  1.6 GiB
+Relocation Offset is: 1baba000
+Relocating to 770ba000, new gd at 750a9d60, sp at 75093d90
+MMC:   sdhci@34180000: 0, sdhci@341a0000: 1
+Loading Environment from MMC... switch to partitions #0, OK
+mmc0(part 0) is current device
+partition[boot] is not found
+part get fail
+default bootsystem_type is linux os
+Writing to MMC(0)... OK
+In:    serial@30520000
+Out:   serial@30520000
+Err:   serial@30520000
+Net:   No phy clock provided -38gpio_request_by_name(phy reset) not provided -2
+Warning: eth@30170000 (eth0) using random MAC address - 6e:86:8e:2d:59:e2
+eth0: eth@30170000No phy clock provided -38FEC: can't find phy-handle
+
+Warning: eth@306A0000 (eth1) using random MAC address - 8a:db:b2:0e:bc:9a
+, eth1: eth@306A0000
+switch to partitions #0, OK
+mmc0(part 0) is current device
+
+MMC read: dev # 0, block # 12773760, count 227 ... 227 blocks read: OK
+sdrv_update_mmc_boot bootreason 2
+enter normal mmc boot mode 
+Hit any key to stop autoboot:  2  0
+=> 
+=> 
+=> 
+=> 
+=> 
+=> 
+=> 
+=> 
+=> 
+=> 
+=> 
+=> 
+=> 
+=> 
+=> 
+=> 
+=> 
+=> 
+=> 
+=> 
+=> 
+=> 
+=> 
+=> 
+=> 
+=> 
+=> 
+=> 
+=> 
+=> 
+=> 
+=> 
+=> 
+=> 
+=> 
+=> 
+=> 
+=> 
+=> 
+=> 
+=> 
+=> 
+=> 
+=> 
+=> 
+=> 
+=> 
+=> help
+?         - alias for 'help'
+adc       - ADC sub-system
+base      - print or set address offset
+bdinfo    - print Board Info structure
+blkcache  - block cache diagnostics and control
+boot      - boot default, i.e., run 'bootcmd'
+bootd     - boot default, i.e., run 'bootcmd'
+bootefi   - Boots an EFI payload from memory
+bootelf   - Boot from an ELF image in memory
+booti     - boot Linux kernel 'Image' format from memory
+bootm     - boot application image from memory
+bootp     - boot image via network using BOOTP/TFTP protocol
+bootvx    - Boot vxWorks from an ELF image
+cmp       - memory compare
+coninfo   - print console devices and information
+cp        - memory copy
+crc32     - checksum calculation
+date      - get/set/reset date & time
+dfu       - Device Firmware Upgrade
+dhcp      - boot image via network using DHCP/TFTP protocol
+dm        - Driver model low level access
+dumpfile  - dump mmc0's data to mmc1(sdcard)
+NOTE:sdcard should be fat32 format
+
+echo      - echo args to console
+editenv   - edit environment variable
+efidebug  - Configure UEFI environment
+env       - environment handling commands
+erase     - erase FLASH memory
+exit      - exit script
+ext2load  - load binary file from a Ext2 filesystem
+ext2ls    - list files in a directory (default /)
+ext4load  - load binary file from a Ext4 filesystem
+ext4ls    - list files in a directory (default /)
+ext4size  - determine a file's size
+ext4write - create a file in the root directory
+false     - do nothing, unsuccessfully
+fastboot  - run as a fastboot usb or udp device
+fatinfo   - print information about filesystem
+fatload   - load binary file from a dos filesystem
+fatls     - list files in a directory (default /)
+fatmkdir  - create a directory
+fatrm     - delete a file
+fatsize   - determine a file's size
+fatwrite  - write file into a dos filesystem
+fdt       - flattened device tree utility commands
+flinfo    - print FLASH memory information
+fstype    - Look up a filesystem type
+fstypes   - List supported filesystem types
+go        - start application at address 'addr'
+gpio      - query and control gpio pins
+gpt       - GUID Partition Table
+gzwrite   - unzip and write memory to block device
+help      - print command description/usage
+i2c       - I2C sub-system
+imxtract  - extract a part of a multi-image
+itest     - return true/false on integer compare
+ln        - Create a symbolic link
+load      - load binary file from a filesystem
+loadb     - load binary file over serial line (kermit mode)
+loadx     - load binary file over serial line (xmodem mode)
+loady     - load binary file over serial line (ymodem mode)
+loop      - infinite loop on address range
+ls        - list files in a directory (default /)
+md        - memory display
+mdio      - MDIO utility commands
+mii       - MII utility commands
+misc      - Access miscellaneous devices with MISC uclass driver APIs
+mm        - memory modify (auto-incrementing address)
+mmc       - MMC sub system
+mmcinfo   - display MMC info
+mtd       - MTD utils
+mw        - memory write (fill)
+nfs       - boot image via network using NFS protocol
+nm        - memory modify (constant address)
+panic     - Panic with optional message
+part      - disk partition related commands
+ping      - send ICMP ECHO_REQUEST to network host
+printenv  - print environment variables
+protect   - enable or disable FLASH write protection
+pxe       - commands to get and boot from pxe files
+random    - fill memory with random pattern
+reset     - Perform RESET of the CPU
+run       - run commands in an environment variable
+save      - save file to a filesystem
+saveenv   - save environment variables to persistent storage
+setenv    - set environment variables
+sf        - SPI flash sub-system
+showvar   - print local hushshell variables
+size      - determine a file's size
+sleep     - delay execution for some time
+source    - run script from memory
+sspi      - SPI utility command
+stop_tick - stop_tick
+
+sysboot   - command to get and boot from syslinux files
+test      - minimal test like /bin/sh
+tftpboot  - boot image via network using TFTP protocol
+tick      - tick once/period
+
+true      - do nothing, successfully
+ums       - Use the UMS [USB Mass Storage]
+unzip     - unzip a memory region
+update    - update mmc0(EMMC) from mmc1(sdcard)
+
+usb       - USB sub-system
+usbboot   - boot from USB device
+version   - print monitor, compiler and linker version
+wdt       - Watchdog sub-system
+=> version
+U-Boot 2021.04 (Dec 08 2023 - 11:24:20 +0800) d9342_ref
+
+aarch64-linux-gnu-gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0
+GNU ld (GNU Binutils for Ubuntu) 2.34
+=> printenv
+androidboot_addr_r=0x57480000
+arch=arm
+baudrate=115200
+board=d9342_ref
+board_name=d9342_ref
+boot_a_script=load ${devtype} ${devnum}:${distro_bootpart} ${scriptaddr} ${prefix}${script}; source ${scriptaddr}
+boot_dev=0
+boot_efi_binary=load ${devtype} ${devnum}:${distro_bootpart} ${kernel_addr_r} efi/boot/bootaa64.efi; if fdt addr ${fdt_addr_r}; then bootefi ${kernel_addr_r} ${fdt_addr_r};else bootefi ${kernel_addr_r} ${fdtcontroladdr};fi
+boot_efi_bootmgr=if fdt addr ${fdt_addr_r}; then bootefi bootmgr ${fdt_addr_r};else bootefi bootmgr;fi
+boot_extlinux=sysboot ${devtype} ${devnum}:${distro_bootpart} any ${scriptaddr} ${prefix}${boot_syslinux_conf}
+boot_net_usb_start=usb start
+boot_prefixes=/ /boot/
+boot_script_dhcp=boot.scr.uimg
+boot_scripts=boot.scr.uimg boot.scr
+boot_syslinux_conf=extlinux/extlinux.conf
+boot_targets=usb0 mmc0 mmc1 mmc2 
+bootcmd=run set_bootargs;run distro_bootcmd; 
+bootcmd_mmc0=devnum=0; run mmc_boot
+bootcmd_mmc1=devnum=1; run mmc_boot
+bootcmd_mmc2=devnum=2; run mmc_boot
+bootcmd_sd=run set_bootargs;if test ${muti_dtb} -eq 1;then run muti_dtb_boot;else run mmc_boot_sd;fi;
+bootcmd_usb0=devnum=0; run usb_boot
+bootdelay=2
+cpu=armv8
+dfu_alt_info=mmc 0=u-boot.bin part 0 21
+distro_bootcmd=for target in ${boot_targets}; do run bootcmd_${target}; done
+efi_dtb_prefixes=/ /dtb/ /dtb/current/
+fdt_addr_r=0x57200000
+fdtcontroladdr=75093da0
+fdtfile=semidrive/d9_d9342_ap1_ref.dtb
+fileaddr=5b280000
+filesize=121db0
+kernel_addr_r=0x5B280000
+kernel_comp_addr_r=0x61200000
+kernel_comp_size=0x2000000
+load_efi_dtb=load ${devtype} ${devnum}:${distro_bootpart} ${fdt_addr_r} ${prefix}${efi_fdtfile}
+load_kernel_dtb=mmc dev ${boot_dev}; mmc part_read dtb ${fdt_addr_r}
+loglevel=4
+mmc_boot=if mmc dev ${devnum}; then devtype=mmc; run scan_dev_for_boot_part; fi
+mmc_boot_sd=mmc dev ${boot_dev}; mmc part_read kernel ${kernel_addr_r};fdt addr ${fdt_addr_r};if test $? -ne 0; then mmc part_read dtb ${fdt_addr_r};fi;booti ${kernel_addr_r} - ${fdt_addr_r};
+muti_dtb=0
+muti_dtb_boot=mmc dev ${boot_dev}; mmc part_read kernel ${uimage_addr_r};fdt addr ${fdt_addr_r};if test $? -ne 0; then mmc part_read dtb ${fdt_addr_r};fi;adc key;if test ${adc_key} -eq 1;then bootm ${uimage_addr_r}#conf@1 - ${fdt_addr_r};elif test ${adc_key} -eq 2;then bootm ${uimage_addr_r}#conf@2 - ${fdt_addr_r};else bootm ${uimage_addr_r}#conf@3 - ${fdt_addr_r};fi;
+ramdisk_addr_r=0x63200000
+rootfs_part=/dev/mmcblk0p25
+rootfstype=ext4
+scan_dev_for_boot=echo Scanning ${devtype} ${devnum}:${distro_bootpart}...; for prefix in ${boot_prefixes}; do run scan_dev_for_extlinux; run scan_dev_for_scripts; done;run scan_dev_for_efi;
+scan_dev_for_boot_part=part list ${devtype} ${devnum} -bootable devplist; env exists devplist || setenv devplist 1; for distro_bootpart in ${devplist}; do if fstype ${devtype} ${devnum}:${distro_bootpart} bootfstype; then run scan_dev_for_boot; fi; done; setenv devplist
+scan_dev_for_efi=setenv efi_fdtfile ${fdtfile}; for prefix in ${efi_dtb_prefixes}; do if test -e ${devtype} ${devnum}:${distro_bootpart} ${prefix}${efi_fdtfile}; then run load_efi_dtb; fi;done;run boot_efi_bootmgr;if test -e ${devtype} ${devnum}:${distro_bootpart} efi/boot/bootaa64.efi; then echo Found EFI removable media binary efi/boot/bootaa64.efi; run boot_efi_binary; echo EFI LOAD FAILED: continuing...; fi; setenv efi_fdtfile
+scan_dev_for_extlinux=if test -e ${devtype} ${devnum}:${distro_bootpart} ${prefix}${boot_syslinux_conf}; then echo Found ${prefix}${boot_syslinux_conf}; run boot_extlinux; echo SCRIPT FAILED: continuing...; fi
+scan_dev_for_scripts=for script in ${boot_scripts}; do if test -e ${devtype} ${devnum}:${distro_bootpart} ${prefix}${script}; then echo Found U-Boot script ${prefix}${script}; run boot_a_script; echo SCRIPT FAILED: continuing...; fi; done
+sdcard_burn=0
+serial#=SDRV-D9-D9342
+serialno=1C11373534574614
+set_bootargs=setenv bootargs skip_initramfs noinitrd root=${rootfs_part} rootfstype=${rootfstype} rootwait rw init=/sbin/init highres=1 earlycon loglevel=${loglevel} nr_uarts=16 console=ttyS0,115200n8 fbcon=map:1 androidboot.mode=normal androidboot.selinux=permissive androidboot.debuggable=1 androidboot.serialno=${serialno} androidboot.dm_verity=disable psplash=false global_reset sdcard_burn=${sdcard_burn}
+slot_suffix=_a
+soc=d9
+stderr=serial@30520000
+stdin=serial@30520000
+stdout=serial@30520000
+uimage_addr_r=0x5a000000
+usb_boot=usb start; if usb dev ${devnum}; then devtype=usb; run scan_dev_for_boot_part; fi
+vendor=semidrive
+
+Environment size: 4462/65532 bytes
+=> printenv -e
+Scanning disk sdhci@34180000.blk...
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+Scanning disk sdhci@341a0000.blk...
+Found 40 disks
+Missing RNG device for EFI_RNG_PROTOCOL
+PlatformLang:
+    8be4df61-93ca-11d2-aa0d-00e098032b8c EFI_GLOBAL_VARIABLE_GUID
+    NV|BS|RT, DataSize = 0x6
+    00000000: 65 6e 2d 55 53 00                                en-US.
+OsIndications:
+    8be4df61-93ca-11d2-aa0d-00e098032b8c EFI_GLOBAL_VARIABLE_GUID
+    NV|BS|RT, DataSize = 0x8
+    00000000: 04 00 00 00 00 00 00 00                          ........
+SecureBoot:
+    8be4df61-93ca-11d2-aa0d-00e098032b8c EFI_GLOBAL_VARIABLE_GUID
+    BS|RT|RO, DataSize = 0x1
+    00000000: 00                                               .
+SetupMode:
+    8be4df61-93ca-11d2-aa0d-00e098032b8c EFI_GLOBAL_VARIABLE_GUID
+    BS|RT|RO, DataSize = 0x1
+    00000000: 01                                               .
+AuditMode:
+    8be4df61-93ca-11d2-aa0d-00e098032b8c EFI_GLOBAL_VARIABLE_GUID
+    BS|RT|RO, DataSize = 0x1
+    00000000: 00                                               .
+DeployedMode:
+    8be4df61-93ca-11d2-aa0d-00e098032b8c EFI_GLOBAL_VARIABLE_GUID
+    BS|RT|RO, DataSize = 0x1
+    00000000: 00                                               .
+VendorKeys:
+    8be4df61-93ca-11d2-aa0d-00e098032b8c EFI_GLOBAL_VARIABLE_GUID
+    BS|RT|RO, DataSize = 0x1
+    00000000: 00                                               .
+PlatformLangCodes:
+    8be4df61-93ca-11d2-aa0d-00e098032b8c EFI_GLOBAL_VARIABLE_GUID
+    BS|RT|RO, DataSize = 0x6
+    00000000: 65 6e 2d 55 53 00                                en-US.
+OsIndicationsSupported:
+    8be4df61-93ca-11d2-aa0d-00e098032b8c EFI_GLOBAL_VARIABLE_GUID
+    BS|RT|RO, DataSize = 0x8
+    00000000: 1c 00 00 00 00 00 00 00                          ........
+=> bdinfo
+boot_params = 0x0000000000000000
+DRAM bank   = 0x0000000000000000
+-> start    = 0x0000000057200000
+-> size     = 0x0000000020000000
+DRAM bank   = 0x0000000000000001
+-> start    = 0x000000007c600000
+-> size     = 0x0000000043a00000
+flashstart  = 0x0000000000000000
+flashsize   = 0x0000000000000000
+flashoffset = 0x0000000000000000
+baudrate    = 115200 bps
+relocaddr   = 0x00000000770ba000
+reloc off   = 0x000000001baba000
+Build       = 64-bit
+current eth = eth@30170000
+ethaddr     = (not set)
+IP addr     = <NULL>
+fdt_blob    = 0x0000000075093da0
+new_fdt     = 0x0000000075093da0
+fdt_size    = 0x0000000000015fc0
+lmb_dump_all:
+    memory.cnt		   = 0x2
+    memory.size		   = 0x0
+    memory.reg[0x0].base   = 0x57200000
+		   .size   = 0x20000000
+    memory.reg[0x1].base   = 0x7c600000
+		   .size   = 0x43a00000
+
+    reserved.cnt	   = 0x4
+    reserved.size	   = 0x0
+    reserved.reg[0x0].base = 0x4ad10000
+		     .size = 0xf0000
+    reserved.reg[0x1].base = 0x4af10000
+		     .size = 0xf0000
+    reserved.reg[0x2].base = 0x66200000
+		     .size = 0x100000
+    reserved.reg[0x3].base = 0x75091a80
+		     .size = 0x216e580
+arch_number = 0x0000000000000000
+TLB addr    = 0x00000000771f0000
+irq_sp      = 0x0000000075093d90
+sp start    = 0x0000000075093d90
+Early malloc usage: 4e8 / 1000
+=> rtc list
+Unknown command 'rtc' - try 'help'
+=> sf probe
+Invalid bus 0 (err=-19)
+Failed to initialize SPI flash at 0:0 (error -19)
+=> usb reset
+resetting USB...
+Bus dwc3: Register 2000140 NbrPorts 2
+Starting the controller
+USB XHCI 1.10
+Bus dwc3: usb maximum-speed not found
+Register 2000140 NbrPorts 2
+Starting the controller
+USB XHCI 1.10
+scanning bus dwc3 for devices... 1 USB Device(s) found
+scanning bus dwc3 for devices... 1 USB Device(s) found
+       scanning usb for storage devices... 0 Storage Device(s) found
+=> usb info
+1: Hub,  USB Revision 3.0
+ - U-Boot XHCI Host Controller 
+ - Class: Hub
+ - PacketSize: 512  Configurations: 1
+ - Vendor: 0x0000  Product 0x0000 Version 1.0
+   Configuration: 1
+   - Interfaces: 1 Self Powered 0mA
+     Interface: 0
+     - Alternate Setting 0, Endpoints: 1
+     - Class Hub
+     - Endpoint 1 In Interrupt MaxPacket 8 Interval 255ms
+
+1: Hub,  USB Revision 3.0
+ - U-Boot XHCI Host Controller 
+ - Class: Hub
+ - PacketSize: 512  Configurations: 1
+ - Vendor: 0x0000  Product 0x0000 Version 1.0
+   Configuration: 1
+   - Interfaces: 1 Self Powered 0mA
+     Interface: 0
+     - Alternate Setting 0, Endpoints: 1
+     - Class Hub
+     - Endpoint 1 In Interrupt MaxPacket 8 Interval 255ms
+
+=> mmc rescan
+=> mmc list
+sdhci@34180000: 0 (eMMC)
+sdhci@341a0000: 1 (SD)
+=> mmc info
+Device: sdhci@34180000
+Manufacturer ID: d6
+OEM: 103
+Name: 88A43 
+Bus Speed: 200000000
+Mode: HS400 (200MHz)
+Rd Block Len: 512
+MMC version 5.1
+High Capacity: Yes
+Capacity: 14.6 GiB
+Bus Width: 8-bit DDR
+Erase Group Size: 512 KiB
+HC WP Group Size: 4 MiB
+User Capacity: 14.6 GiB WRREL
+Boot Capacity: 4 MiB ENH
+RPMB Capacity: 4 MiB ENH
+Boot area 0 is not write protected
+Boot area 1 is not write protected
+=> efidebug devices
+Device           Device Path
+================ ====================
+00000000751e7be0 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)
+00000000751e7ef0 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)
+00000000751e8560 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(1,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1000,0x40)
+00000000751e91a0 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(2,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1040,0x40)
+00000000751e9a10 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(3,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1080,0x100)
+00000000751ea2d0 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(4,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1180,0x100)
+00000000751eafa0 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(5,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1280,0x100)
+00000000751ebc20 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(6,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1380,0x100)
+00000000751ec490 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(7,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1480,0x400)
+00000000751ecd50 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(8,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1880,0x400)
+00000000751eda20 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(9,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1c80,0x80)
+00000000751e7700 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(10,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1d00,0x80)
+00000000751e7910 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(11,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1d80,0x400)
+00000000751ee8b0 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(12,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x2180,0x400)
+00000000751eea00 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(13,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x2580,0xc000)
+00000000751ef270 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(14,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0xe580,0xc000)
+00000000751ea040 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(15,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1a580,0x100)
+00000000751f0230 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(16,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1a680,0x100)
+00000000751f0380 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(17,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1a780,0x1000)
+00000000751e8830 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(18,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1b780,0x1000)
+00000000751e9470 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(19,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1c780,0x80)
+00000000751e9ca0 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(20,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1c800,0x80)
+00000000751eb1b0 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(21,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1c880,0x1000)
+00000000751ebe30 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(22,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1d880,0x1000)
+00000000751ec6a0 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(23,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1e880,0x80)
+00000000751ec7b0 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(24,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1e900,0x80)
+00000000751ed060 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(25,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1e980,0x400000)
+00000000751ea8f0 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(26,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x41e980,0x400000)
+00000000751eef20 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(27,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x81e980,0x400000)
+00000000751edcf0 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(28,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0xc1e980,0x10000)
+00000000751ede80 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(29,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0xc2e980,0x400)
+00000000751e9e30 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(30,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0xc2ed80,0x400)
+00000000751f0020 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(31,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0xc2f180,0x400)
+00000000751e0810 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(32,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0xc2f580,0x400)
+00000000751f19a0 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(33,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0xc2f980,0xe000)
+00000000751f1ab0 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(34,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0xc3d980,0xe000)
+00000000751f1c80 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(35,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0xc4b980,0x80000)
+00000000751f9ad0 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(36,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0xccb980,0x105d65f)
+00000000751f9d10 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(1)/SD(1)
+00000000751f9ea0 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(1)/SD(1)/HD(1,GPT,c2825b51-9880-4738-ae28-a0792f1e4e3d,0x800,0xfffff)
+00000000751fa0a0 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(1)/SD(1)/HD(2,GPT,c2825b51-9880-4738-ae28-a0792f1e4e3d,0x100800,0x18fff)
+00000000751fa3e0 /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/MAC(6e868e2d59e2,1)
+=> efidebug drivers
+Driver           Name                 Image Path
+================ ==================== ====================
+00000000751f9a60 <NULL>               <built-in>
+=> efidebug dh
+Handle           Protocols
+================ ====================
+00000000751e7be0 Device Path, Device Path To Text, Device Path Utilities, Device-Tree Fixup, Unicode Collation 2, HII String, HII Database, Firmware Management
+00000000751e7d90 Simple Text Output
+00000000751e7e00 Simple Text Input, Simple Text Input Ex
+00000000751e7ef0 Device Path, Block IO
+00000000751e8560 Device Path, Block IO
+00000000751e91a0 Device Path, Block IO
+00000000751e9a10 Device Path, Block IO
+00000000751ea2d0 Device Path, Block IO
+00000000751eafa0 Device Path, Block IO
+00000000751ebc20 Device Path, Block IO
+00000000751ec490 Device Path, Block IO
+00000000751ecd50 Device Path, Block IO
+00000000751eda20 Device Path, Block IO
+00000000751e7700 Device Path, Block IO
+00000000751e7910 Device Path, Block IO
+00000000751ee8b0 Device Path, Block IO
+00000000751eea00 Device Path, Block IO, Simple File System
+00000000751ef270 Device Path, Block IO
+00000000751ea040 Device Path, Block IO
+00000000751f0230 Device Path, Block IO
+00000000751f0380 Device Path, Block IO
+00000000751e8830 Device Path, Block IO
+00000000751e9470 Device Path, Block IO
+00000000751e9ca0 Device Path, Block IO
+00000000751eb1b0 Device Path, Block IO
+00000000751ebe30 Device Path, Block IO
+00000000751ec6a0 Device Path, Block IO
+00000000751ec7b0 Device Path, Block IO
+00000000751ed060 Device Path, Block IO, Simple File System
+00000000751ea8f0 Device Path, Block IO
+00000000751eef20 Device Path, Block IO, System Partition, Simple File System
+00000000751edcf0 Device Path, Block IO
+00000000751ede80 Device Path, Block IO
+00000000751e9e30 Device Path, Block IO
+00000000751f0020 Device Path, Block IO
+00000000751e0810 Device Path, Block IO
+00000000751f19a0 Device Path, Block IO
+00000000751f1ab0 Device Path, Block IO
+00000000751f1c80 Device Path, Block IO, Simple File System
+00000000751f9ad0 Device Path, Block IO, Simple File System
+00000000751f9d10 Device Path, Block IO
+00000000751f9ea0 Device Path, Block IO, Simple File System
+00000000751fa0a0 Device Path, Block IO, Simple File System
+00000000751f9a60 Driver Binding
+00000000751fa3e0 Simple Network, Device Path, PXE Base Code
+0000000075208930 Firmware Management
+=> efidebug memmap
+Type             Start            End              Attributes
+================ ================ ================ ==========
+CONVENTIONAL     0000000057200000-0000000074005000 WB
+BOOT DATA        0000000074005000-0000000074033000 WB
+LOADER DATA      0000000074033000-0000000074034000 WB
+BOOT DATA        0000000074034000-0000000074035000 WB
+RUNTIME DATA     0000000074035000-0000000074036000 WB|RT
+BOOT DATA        0000000074036000-0000000074038000 WB
+RESERVED         0000000074038000-0000000074039000 WB
+RUNTIME DATA     0000000074039000-000000007403c000 WB|RT
+BOOT DATA        000000007403c000-000000007403d000 WB
+RUNTIME DATA     000000007403d000-0000000074041000 WB|RT
+RESERVED         0000000074041000-0000000074042000 WB
+BOOT DATA        0000000074042000-0000000074043000 WB
+RESERVED         0000000074043000-0000000074044000 WB
+BOOT DATA        0000000074044000-0000000074046000 WB
+RESERVED         0000000074046000-0000000074048000 WB
+BOOT DATA        0000000074048000-0000000074049000 WB
+RESERVED         0000000074049000-000000007404a000 WB
+BOOT DATA        000000007404a000-000000007404b000 WB
+RESERVED         000000007404b000-000000007404c000 WB
+BOOT DATA        000000007404c000-000000007404d000 WB
+RESERVED         000000007404d000-000000007404e000 WB
+BOOT DATA        000000007404e000-000000007404f000 WB
+RESERVED         000000007404f000-0000000074050000 WB
+BOOT DATA        0000000074050000-0000000074051000 WB
+RESERVED         0000000074051000-0000000074052000 WB
+BOOT DATA        0000000074052000-0000000074053000 WB
+RESERVED         0000000074053000-0000000074054000 WB
+BOOT DATA        0000000074054000-0000000074055000 WB
+RESERVED         0000000074055000-0000000074056000 WB
+BOOT DATA        0000000074056000-0000000074057000 WB
+RESERVED         0000000074057000-0000000074058000 WB
+BOOT DATA        0000000074058000-0000000074059000 WB
+RESERVED         0000000074059000-000000007405a000 WB
+BOOT DATA        000000007405a000-000000007405b000 WB
+RESERVED         000000007405b000-000000007405c000 WB
+BOOT DATA        000000007405c000-000000007405d000 WB
+RESERVED         000000007405d000-000000007405e000 WB
+BOOT DATA        000000007405e000-000000007405f000 WB
+RESERVED         000000007405f000-0000000074060000 WB
+BOOT DATA        0000000074060000-0000000074061000 WB
+RESERVED         0000000074061000-0000000074062000 WB
+BOOT DATA        0000000074062000-0000000074063000 WB
+RESERVED         0000000074063000-0000000074064000 WB
+BOOT DATA        0000000074064000-0000000074065000 WB
+RESERVED         0000000074065000-0000000074066000 WB
+BOOT DATA        0000000074066000-0000000074067000 WB
+RESERVED         0000000074067000-0000000074068000 WB
+BOOT DATA        0000000074068000-0000000074069000 WB
+RESERVED         0000000074069000-000000007406a000 WB
+BOOT DATA        000000007406a000-000000007406b000 WB
+RESERVED         000000007406b000-000000007406c000 WB
+BOOT DATA        000000007406c000-000000007406d000 WB
+RESERVED         000000007406d000-000000007406e000 WB
+BOOT DATA        000000007406e000-000000007406f000 WB
+RESERVED         000000007406f000-0000000074070000 WB
+BOOT DATA        0000000074070000-0000000074071000 WB
+RESERVED         0000000074071000-0000000074072000 WB
+BOOT DATA        0000000074072000-0000000074073000 WB
+RESERVED         0000000074073000-0000000074074000 WB
+BOOT DATA        0000000074074000-0000000074075000 WB
+RESERVED         0000000074075000-0000000074076000 WB
+BOOT DATA        0000000074076000-0000000074077000 WB
+RESERVED         0000000074077000-0000000074078000 WB
+BOOT DATA        0000000074078000-0000000074079000 WB
+RESERVED         0000000074079000-000000007407a000 WB
+BOOT DATA        000000007407a000-000000007407b000 WB
+RESERVED         000000007407b000-000000007407c000 WB
+BOOT DATA        000000007407c000-000000007407d000 WB
+RESERVED         000000007407d000-000000007407e000 WB
+BOOT DATA        000000007407e000-000000007407f000 WB
+RESERVED         000000007407f000-0000000074080000 WB
+BOOT DATA        0000000074080000-0000000074081000 WB
+RESERVED         0000000074081000-0000000074082000 WB
+BOOT DATA        0000000074082000-0000000074083000 WB
+RESERVED         0000000074083000-0000000074084000 WB
+BOOT DATA        0000000074084000-0000000074085000 WB
+RESERVED         0000000074085000-0000000074086000 WB
+BOOT DATA        0000000074086000-0000000074087000 WB
+RESERVED         0000000074087000-0000000074088000 WB
+BOOT DATA        0000000074088000-0000000074089000 WB
+RESERVED         0000000074089000-000000007408a000 WB
+BOOT DATA        000000007408a000-000000007408b000 WB
+RESERVED         000000007408b000-000000007408c000 WB
+BOOT DATA        000000007408c000-000000007408d000 WB
+RESERVED         000000007408d000-000000007408e000 WB
+BOOT DATA        000000007408e000-0000000074090000 WB
+RESERVED         0000000074090000-0000000074091000 WB
+BOOT DATA        0000000074091000-0000000074093000 WB
+LOADER DATA      0000000074093000-00000000770b0000 WB
+RUNTIME CODE     00000000770b0000-00000000770c0000 WB|RT
+LOADER DATA      00000000770c0000-0000000077200000 WB
+BOOT DATA        000000007c600000-00000000c0000000 WB
+=> efidebug tables
+eb66918a-7eef-402a-842e-931d21c38ae9 Runtime properties
+eb9d2d31-2d88-11d3-9a16-0090273fc14d SMBIOS table
+=> efidebug boot dump
+=> efidebug capsule esrt
+efidebug - Configure UEFI environment
+
+Usage:
+efidebug   - UEFI Shell-like interface to configure UEFI environment
+
+efidebug boot add <bootid> <label> <interface> <devnum>[:<part>] <file path> [<load options>]
+  - set UEFI BootXXXX variable
+    <load options> will be passed to UEFI application
+efidebug boot rm <bootid#1> [<bootid#2> [<bootid#3> [...]]]
+  - delete UEFI BootXXXX variables
+efidebug boot dump
+  - dump all UEFI BootXXXX variables
+efidebug boot next <bootid>
+  - set UEFI BootNext variable
+efidebug boot order [<bootid#1> [<bootid#2> [<bootid#3> [...]]]]
+  - set/show UEFI boot order
+
+efidebug capsule update [-v] <capsule address>
+  - process a capsule
+efidebug capsule disk-update
+  - update a capsule from disk
+efidebug capsule show <capsule address>
+  - show capsule information
+efidebug capsule result [<capsule result var>]
+  - show a capsule update result
+
+efidebug devices
+  - show UEFI devices
+efidebug drivers
+  - show UEFI drivers
+efidebug dh
+  - show UEFI handles
+efidebug images
+  - show loaded images
+efidebug memmap
+  - show UEFI memory map
+efidebug tables
+  - show UEFI configuration tables
+efidebug test bootmgr
+  - run simple bootmgr for test
+efidebug query [-nv][-bs][-rt][-at]
+  - show size of UEFI variables store
+
+=> bootefi hello ${fdtcontroladdr}
+Booting /MemoryMapped(0x0,0x7716e920,0x11e0)
+Hello, world!
+Running on UEFI 2.8
+Have SMBIOS table
+Have device tree
+Load options: <none>
+Boot device: /MemoryMapped(0x0,0x7716e920,0x11e0)
+File path: <none>
+=> bootefi selftest ${fdtcontroladdr}
+
+Testing EFI API implementation
+
+Number of tests to execute: 39
+
+Setting up 'block device'
+Setting up 'block device' succeeded
+
+Executing 'block device'
+lib/efi_selftest/efi_selftest_block_device.c(404):
+TODO: Wrong volume label '', expected 'U-BOOT TEST'
+Executing 'block device' succeeded
+
+Tearing down 'block device'
+Tearing down 'block device' succeeded
+
+Setting up 'configuration tables'
+Setting up 'configuration tables' succeeded
+
+Executing 'configuration tables'
+Executing 'configuration tables' succeeded
+
+Setting up 'controllers'
+Setting up 'controllers' succeeded
+
+Executing 'controllers'
+Executing 'controllers' succeeded
+
+Setting up 'device path'
+Setting up 'device path' succeeded
+
+Executing 'device path'
+Installed device path protocols:
+/VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)
+/VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)
+/VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(1,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1000,0x40)
+/VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(2,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1040,0x40)
+/VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(3,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1080,0x100)
+/VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(4,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1180,0x100)
+/VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(5,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1280,0x100)
+/VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(6,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1380,0x100)
+/VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(7,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1480,0x400)
+/VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(8,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1880,0x400)
+/VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(9,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1c80,0x80)
+/VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(10,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1d00,0x80)
+/VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(11,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1d80,0x400)
+/VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(12,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x2180,0x400)
+/VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(13,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x2580,0xc000)
+/VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(14,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0xe580,0xc000)
+/VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(15,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1a580,0x100)
+/VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(16,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1a680,0x100)
+/VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(17,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1a780,0x1000)
+/VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(18,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1b780,0x1000)
+/VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(19,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1c780,0x80)
+/VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(20,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1c800,0x80)
+/VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(21,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1c880,0x1000)
+/VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(22,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1d880,0x1000)
+/VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(23,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1e880,0x80)
+/VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(24,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1e900,0x80)
+/VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(25,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1e980,0x400000)
+/VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(26,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x41e980,0x400000)
+/VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(27,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x81e980,0x400000)
+/VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(28,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0xc1e980,0x10000)
+/VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(29,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0xc2e980,0x400)
+/VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(30,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0xc2ed80,0x400)
+/VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(31,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0xc2f180,0x400)
+/VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(32,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0xc2f580,0x400)
+/VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(33,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0xc2f980,0xe000)
+/VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(34,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0xc3d980,0xe000)
+/VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(35,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0xc4b980,0x80000)
+/VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(36,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0xccb980,0x105d65f)
+/VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(1)/SD(1)
+/VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(1)/SD(1)/HD(1,GPT,c2825b51-9880-4738-ae28-a0792f1e4e3d,0x800,0xfffff)
+/VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(1)/SD(1)/HD(2,GPT,c2825b51-9880-4738-ae28-a0792f1e4e3d,0x100800,0x18fff)
+/VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/MAC(6e868e2d59e2,1)
+/VenHw(dbca4c98-6cb0-694d-0872-819c650cb7b8)/HD(1,MBR,0xd1535d21,0x1,0x7f)
+/VenHw(dbca4c98-6cb0-694d-0872-819c650cbbb1)
+/VenHw(dbca4c98-6cb0-694d-0872-819c650cbbb1)/VenHw(dbca4c98-6cb0-694d-0872-819c650cbba2)
+/VenHw(dbca4c98-6cb0-694d-0872-819c650cbbb1)/VenHw(dbca4c98-6cb0-694d-0872-819c650cbba2)/VenHw(dbca4c98-6cb0-694d-0872-819c650cbbc3)
+Executing 'device path' succeeded
+
+Tearing down 'device path'
+Tearing down 'device path' succeeded
+
+Setting up 'device path utilities protocol'
+Setting up 'device path utilities protocol' succeeded
+
+Executing 'device path utilities protocol'
+Executing 'device path utilities protocol' succeeded
+
+Setting up 'event groups'
+Setting up 'event groups' succeeded
+
+Executing 'event groups'
+Executing 'event groups' succeeded
+
+Setting up 'event services'
+Setting up 'event services' succeeded
+
+Executing 'event services'
+Executing 'event services' succeeded
+
+Tearing down 'event services'
+Tearing down 'event services' succeeded
+
+Setting up 'device tree'
+Setting up 'device tree' succeeded
+
+Executing 'device tree'
+compatible: semidrive,kunlun
+serial-number: SDRV-D9-D9342
+Executing 'device tree' succeeded
+
+Setting up 'graphical output'
+Graphical output protocol is not available.
+Setting up 'graphical output' succeeded
+
+Executing 'graphical output'
+Executing 'graphical output' succeeded
+
+Tearing down 'graphical output'
+Tearing down 'graphical output' succeeded
+
+Setting up 'HII database protocols'
+Setting up 'HII database protocols' succeeded
+
+Executing 'HII database protocols'
+test_hii_database_new_package_list:
+test_hii_database_update_package_list:
+test_hii_database_list_package_lists:
+test_hii_database_export_package_lists:
+test_hii_database_register_package_notify:
+test_hii_database_unregister_package_notify:
+test_hii_database_find_keyboard_layouts:
+test_hii_database_get_keyboard_layout:
+test_hii_database_set_keyboard_layout:
+test_hii_database_get_package_list_handle:
+test_hii_string_new_string:
+new string id is 2
+test_hii_string_get_string:
+test_hii_string_set_string:
+test_hii_string_get_languages:
+got languages are en-US;zh-Hant
+test_hii_string_get_secondary_languages:
+no secondary languages
+Executing 'HII database protocols' succeeded
+
+Setting up 'load file protocol'
+Setting up 'load file protocol' succeeded
+
+Executing 'load file protocol'
+EFI application calling Exit
+Executing 'load file protocol' succeeded
+
+Tearing down 'load file protocol'
+Tearing down 'load file protocol' succeeded
+
+Setting up 'loaded image'
+Setting up 'loaded image' succeeded
+
+Executing 'loaded image'
+2 protocols installed on image handle
+Executing 'loaded image' succeeded
+
+Setting up 'load image from file'
+Setting up 'load image from file' succeeded
+
+Executing 'load image from file'
+EFI application calling Exit
+Executing 'load image from file' succeeded
+
+Tearing down 'load image from file'
+Tearing down 'load image from file' succeeded
+
+Setting up 'mem'
+Setting up 'mem' succeeded
+
+Executing 'mem'
+Executing 'mem' succeeded
+
+Setting up 'memory'
+Setting up 'memory' succeeded
+
+Executing 'memory'
+Executing 'memory' succeeded
+
+Setting up 'open protocol'
+Setting up 'open protocol' succeeded
+
+Executing 'open protocol'
+Executing 'open protocol' succeeded
+
+Tearing down 'open protocol'
+Tearing down 'open protocol' succeeded
+
+Setting up 'manage protocols'
+Setting up 'manage protocols' succeeded
+
+Executing 'manage protocols'
+Executing 'manage protocols' succeeded
+
+Tearing down 'manage protocols'
+Tearing down 'manage protocols' succeeded
+
+Setting up 'register protocol notify'
+Setting up 'register protocol notify' succeeded
+
+Executing 'register protocol notify'
+Executing 'register protocol notify' succeeded
+
+Tearing down 'register protocol notify'
+Tearing down 'register protocol notify' succeeded
+
+Setting up 'random number generator'
+Setting up 'random number generator' succeeded
+
+Executing 'random number generator'
+lib/efi_selftest/efi_selftest_rng.c(52):
+ERROR: Random number generator protocol not available
+lib/efi_selftest/efi_selftest.c(114):
+ERROR: Executing 'random number generator' failed
+
+Setting up 'real time clock'
+Setting up 'real time clock' succeeded
+
+Executing 'real time clock'
+Time according to real time clock: 2023-12-08 03:24:20
+Executing 'real time clock' succeeded
+
+Setting up 'simple network protocol'
+eth@30170000 Waiting for PHY auto negotiation to complete......... TIMEOUT !
+phy_startup() failed: -110FAILED: -110EQOS_DMA_MODE_SWR stuckFAILED: -110lib/efi_selftest/efi_selftest_snp.c(269):
+ERROR: Failed to initialize network adapter
+lib/efi_selftest/efi_selftest.c(89):
+ERROR: Setting up 'simple network protocol' failed
+
+Tearing down 'simple network protocol'
+lib/efi_selftest/efi_selftest_snp.c(448):
+ERROR: Failed to shut down network adapter
+lib/efi_selftest/efi_selftest_snp.c(452):
+ERROR: Failed to shutdown network adapter
+lib/efi_selftest/efi_selftest.c(139):
+ERROR: Tearing down 'simple network protocol' failed
+
+Setting up 'start image return'
+Setting up 'start image return' succeeded
+
+Executing 'start image return'
+EFI application returning w/o calling Exit
+Executing 'start image return' succeeded
+
+Tearing down 'start image return'
+Tearing down 'start image return' succeeded
+
+Setting up 'start image exit'
+Setting up 'start image exit' succeeded
+
+Executing 'start image exit'
+EFI application calling Exit
+Executing 'start image exit' succeeded
+
+Tearing down 'start image exit'
+Tearing down 'start image exit' succeeded
+
+Executing 'text output'
+
+Color palette
+00000000000000000000000000000010000000000000002000000000000000300000000000000040000000000000005000000000000000600000000000000070
+00000000000000010000000000000011000000000000002100000000000000310000000000000041000000000000005100000000000000610000000000000071
+00000000000000020000000000000012000000000000002200000000000000320000000000000042000000000000005200000000000000620000000000000072
+00000000000000030000000000000013000000000000002300000000000000330000000000000043000000000000005300000000000000630000000000000073
+00000000000000040000000000000014000000000000002400000000000000340000000000000044000000000000005400000000000000640000000000000074
+00000000000000050000000000000015000000000000002500000000000000350000000000000045000000000000005500000000000000650000000000000075
+00000000000000060000000000000016000000000000002600000000000000360000000000000046000000000000005600000000000000660000000000000076
+00000000000000070000000000000017000000000000002700000000000000370000000000000047000000000000005700000000000000670000000000000077
+00000000000000080000000000000018000000000000002800000000000000380000000000000048000000000000005800000000000000680000000000000078
+00000000000000090000000000000019000000000000002900000000000000390000000000000049000000000000005900000000000000690000000000000079
+000000000000000a000000000000001a000000000000002a000000000000003a000000000000004a000000000000005a000000000000006a000000000000007a
+000000000000000b000000000000001b000000000000002b000000000000003b000000000000004b000000000000005b000000000000006b000000000000007b
+000000000000000c000000000000001c000000000000002c000000000000003c000000000000004c000000000000005c000000000000006c000000000000007c
+000000000000000d000000000000001d000000000000002d000000000000003d000000000000004d000000000000005d000000000000006d000000000000007d
+000000000000000e000000000000001e000000000000002e000000000000003e000000000000004e000000000000005e000000000000006e000000000000007e
+000000000000000f000000000000001f000000000000002f000000000000003f000000000000004f000000000000005f000000000000006f000000000000007f
+Testing cursor column update
+
+123ננ
+Executing 'text output' succeeded
+
+Setting up 'task priority levels'
+Setting up 'task priority levels' succeeded
+
+Executing 'task priority levels'
+Executing 'task priority levels' succeeded
+
+Tearing down 'task priority levels'
+Tearing down 'task priority levels' succeeded
+
+Setting up 'unicode collation'
+Setting up 'unicode collation' succeeded
+
+Executing 'unicode collation'
+Executing 'unicode collation' succeeded
+
+Setting up 'variables'
+Setting up 'variables' succeeded
+
+Executing 'variables'
+Executing 'variables' succeeded
+
+Setting up 'watchdog timer'
+Setting up 'watchdog timer' succeeded
+
+Executing 'watchdog timer'
+Executing 'watchdog timer' succeeded
+
+Tearing down 'watchdog timer'
+Tearing down 'watchdog timer' succeeded
+
+Setting up 'crc32'
+Setting up 'crc32' succeeded
+
+Setting up 'ExitBootServices'
+Setting up 'ExitBootServices' succeeded
+
+Setting up 'variables at runtime'
+Setting up 'variables at runtime' succeeded
+
+Setting up 'virtual address map'
+Setting up 'virtual address map' succeeded
+
+Boot services terminated
+
+Executing 'crc32'
+Executing 'crc32' succeeded
+
+Executing 'ExitBootServices'
+
+Boot services terminated
+Executing 'ExitBootServices' succeeded
+
+Executing 'variables at runtime'
+Executing 'variables at runtime' succeeded
+
+Executing 'virtual address map'
+Executing 'virtual address map' succeeded
+
+Summary: 3 failures
+
+Preparing for reset. Press any key...

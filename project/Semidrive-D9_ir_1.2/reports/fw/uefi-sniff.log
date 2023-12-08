@@ -1,0 +1,806 @@
+
+U-Boot SPL 2021.04-g54c098f (May 24 2023 - 00:09:59 +0800)
+switch to partitions #0, OK
+mmc0(part 0) is current device
+fail to find extra gpr
+get ptdev slots attrubites from gpr error, ret = 6
+set_ptdev_slots_attr_from_gpr fail
+U-Boot SPL d9342_ref done
+NOTICE:  BL31: v2.1(release):d9342_ref
+NOTICE:  BL31: Built : 16:35:46, Jan 29 2023
+
+
+U-Boot 2021.04 (Dec 08 2023 - 11:24:20 +0800) d9342_ref
+
+Model: Semidrive kunlun D9342 REF Board
+DRAM:  1.6 GiB
+Relocation Offset is: 1baba000
+Relocating to 770ba000, new gd at 750a9d60, sp at 75093d90
+MMC:   sdhci@34180000: 0, sdhci@341a0000: 1
+Loading Environment from MMC... switch to partitions #0, OK
+mmc0(part 0) is current device
+partition[boot] is not found
+part get fail
+default bootsystem_type is linux os
+Writing to MMC(0)... OK
+In:    serial@30520000
+Out:   serial@30520000
+Err:   serial@30520000
+Net:   No phy clock provided -38gpio_request_by_name(phy reset) not provided -2
+Warning: eth@30170000 (eth0) using random MAC address - 52:03:ec:6b:32:65
+eth0: eth@30170000No phy clock provided -38FEC: can't find phy-handle
+
+Warning: eth@306A0000 (eth1) using random MAC address - 8a:c8:6f:63:13:80
+, eth1: eth@306A0000
+switch to partitions #0, OK
+mmc0(part 0) is current device
+
+MMC read: dev # 0, block # 12773760, count 227 ... 227 blocks read: OK
+sdrv_update_mmc_boot bootreason 2
+enter normal mmc boot mode 
+Hit any key to stop autoboot:  2  1  0 
+starting USB...
+Bus dwc3: Register 2000140 NbrPorts 2
+Starting the controller
+USB XHCI 1.10
+Bus dwc3: usb maximum-speed not found
+Register 2000140 NbrPorts 2
+Starting the controller
+USB XHCI 1.10
+scanning bus dwc3 for devices... 1 USB Device(s) found
+scanning bus dwc3 for devices... 1 USB Device(s) found
+       scanning usb for storage devices... 0 Storage Device(s) found
+
+Device 0: unknown device
+switch to partitions #0, OK
+mmc0(part 0) is current device
+Scanning mmc 0:1b...
+Scanning disk sdhci@34180000.blk...
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+** Unrecognized filesystem type **
+Scanning disk sdhci@341a0000.blk...
+Found 40 disks
+Missing RNG device for EFI_RNG_PROTOCOL
+BootOrder not defined
+EFI boot manager: Cannot load any image
+switch to partitions #0, OK
+mmc1 is current device
+Scanning mmc 1:1...
+BootOrder not defined
+EFI boot manager: Cannot load any image
+Found EFI removable media binary efi/boot/bootaa64.efi
+647168 bytes read in 51 ms (12.1 MiB/s)
+Booting /efi\boot\bootaa64.efi
+Welcome to GRUB!
+
+eth@30170000 Waiting for PHY auto negotiation to complete......... TIMEOUT !
+phy_startup() failed: -110FAILED: -110EQOS_DMA_MODE_SWR stuckFAILED: -110GNU GRUB  version 2.11
+
+ввввввввввввввввввввв”Ђввввввввввв”Ђввввввввввввввввввввв”Ђввввввввввв”Ђввввввввввввввввввввв”Ђввввввввввв”Ђввввввввввввввввввввв”Ђввввввввввв”Ђввввввввввввввввввввв”Ђввввввввввв”Ђввввввввввввввввввввв”Ђввввввввввв”Ђввввввввввввввввввввв”Ђввввввввввв”Ђввввввввввввввввввввв”Ђввввввввввввввввв”‚ввввввввввввввввввввввввввввв”‚ввв”‚ввввввввввввввввввввввввввввв”‚ввв”‚вввввввввввввввв”Ђввввввввввв”Ђввввввввввввввввввввв”Ђввввввввввв”Ђввввввввввввввввввввв”Ђввввввввввв”Ђввввввввввввввввввввв”Ђввввввввввв”Ђввввввввввввввввввввв”Ђввввввввввв”Ђввввввввввввввввввввв”Ђввввввввввв”Ђввввввввввввввввввввв”Ђввввввввввв”Ђввввввввввввввввввввв”Ђввввввввввв”Ђввввввввв     Use the в and в keys to select which entry is highlighted.                                                                                                                                                                                       
+      Press enter to boot the selected OS, `e' to edit the commands before booting or `c' for a command-line.                                                                                                                                            Linux BusyBox                                                                                                                                                                                                                                           *bbr/bsa                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             The highlighted entry will be executed automatically in 5s.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+/EndEntire
+file path: /HardwareVendor(e61d73b9-a384-4acc-aeab-82e828f3628b)[0: ]/UnknownMessaging(1a)/UnknownMessaging(1a)/HD(1,800,fffff,515b82c280983847,2,2)/File(\EFI\BOOT)/File(Shell.efi)/EndEntire
+UEFI Interactive Shell v2.2
+EDK II
+UEFI v2.80 (Das U-Boot, 0x20210400)
+Mapping table
+      FS0: Alias(s):HD0n:;BLK5:
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(13,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x2580,0xc000)
+      FS1: Alias(s):HD0ba:;BLK18:
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(25,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1e980,0x400000)
+      FS2: Alias(s):HD0bc:;BLK20:
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(27,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x81e980,0x400000)
+      FS3: Alias(s):HD0bk:;BLK29:
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(35,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0xc4b980,0x80000)
+      FS4: Alias(s):HD0bl:;BLK30:
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(36,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0xccb980,0x105d65f)
+      FS5: Alias(s):HD0b:;BLK38:
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(1)/SD(1)/HD(1,GPT,c2825b51-9880-4738-ae28-a0792f1e4e3d,0x800,0xfffff)
+      FS6: Alias(s):HD0c:;BLK39:
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(1)/SD(1)/HD(2,GPT,c2825b51-9880-4738-ae28-a0792f1e4e3d,0x100800,0x18fff)
+     BLK0: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)
+     BLK1: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(1,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1000,0x40)
+    BLK12: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(2,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1040,0x40)
+    BLK23: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(3,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1080,0x100)
+    BLK31: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(4,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1180,0x100)
+    BLK32: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(5,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1280,0x100)
+    BLK33: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(6,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1380,0x100)
+    BLK34: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(7,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1480,0x400)
+    BLK35: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(8,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1880,0x400)
+    BLK36: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(9,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1c80,0x80)
+     BLK2: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(10,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1d00,0x80)
+     BLK3: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(11,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1d80,0x400)
+     BLK4: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(12,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x2180,0x400)
+     BLK6: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(14,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0xe580,0xc000)
+     BLK7: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(15,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1a580,0x100)
+     BLK8: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(16,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1a680,0x100)
+     BLK9: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(17,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1a780,0x1000)
+    BLK10: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(18,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1b780,0x1000)
+    BLK11: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(19,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1c780,0x80)
+    BLK13: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(20,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1c800,0x80)
+    BLK14: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(21,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1c880,0x1000)
+    BLK15: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(22,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1d880,0x1000)
+    BLK16: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(23,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1e880,0x80)
+    BLK17: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(24,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1e900,0x80)
+    BLK19: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(26,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x41e980,0x400000)
+    BLK21: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(28,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0xc1e980,0x10000)
+    BLK22: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(29,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0xc2e980,0x400)
+    BLK24: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(30,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0xc2ed80,0x400)
+    BLK25: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(31,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0xc2f180,0x400)
+    BLK26: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(32,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0xc2f580,0x400)
+    BLK27: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(33,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0xc2f980,0xe000)
+    BLK28: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(34,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0xc3d980,0xe000)
+    BLK37: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(1)/SD(1)
+Press ESC in 5 seconds to skip startup.nsh or any other key to continue.
+Shell> pci
+pci: Protocol - PciRootBridgeIo not found.
+Shell> drivers
+            T   D
+D           Y C I
+R           P F A
+V  VERSION  E G G #D #C DRIVER NAME                         IMAGE NAME
+== ======== = = = == == =================================== ==========
+2C FFFFFFFF ? - -  -  - <null string>                       
+Shell> devices
+     T   D
+     Y C I
+     P F A
+CTRL E G G #P #D #C  Device Name
+==== = = = == == === =========================================================
+Shell> devtree
+ Ctrl[01] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)
+ Ctrl[04] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)
+ Ctrl[05] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(1,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1000,0x40)
+ Ctrl[06] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(2,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1040,0x40)
+ Ctrl[07] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(3,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1080,0x100)
+ Ctrl[08] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(4,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1180,0x100)
+ Ctrl[09] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(5,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1280,0x100)
+ Ctrl[0A] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(6,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1380,0x100)
+ Ctrl[0B] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(7,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1480,0x400)
+ Ctrl[0C] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(8,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1880,0x400)
+ Ctrl[0D] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(9,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1c80,0x80)
+ Ctrl[0E] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(10,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1d00,0x80)
+ Ctrl[0F] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(11,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1d80,0x400)
+ Ctrl[10] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(12,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x2180,0x400)
+ Ctrl[11] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(13,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x2580,0xc000)
+ Ctrl[12] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(14,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0xe580,0xc000)
+ Ctrl[13] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(15,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1a580,0x100)
+ Ctrl[14] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(16,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1a680,0x100)
+ Ctrl[15] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(17,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1a780,0x1000)
+ Ctrl[16] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(18,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1b780,0x1000)
+ Ctrl[17] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(19,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1c780,0x80)
+ Ctrl[18] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(20,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1c800,0x80)
+ Ctrl[19] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(21,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1c880,0x1000)
+ Ctrl[1A] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(22,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1d880,0x1000)
+ Ctrl[1B] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(23,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1e880,0x80)
+ Ctrl[1C] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(24,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1e900,0x80)
+ Ctrl[1D] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(25,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1e980,0x400000)
+ Ctrl[1E] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(26,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x41e980,0x400000)
+ Ctrl[1F] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(27,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x81e980,0x400000)
+ Ctrl[20] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(28,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0xc1e980,0x10000)
+ Ctrl[21] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(29,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0xc2e980,0x400)
+ Ctrl[22] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(30,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0xc2ed80,0x400)
+ Ctrl[23] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(31,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0xc2f180,0x400)
+ Ctrl[24] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(32,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0xc2f580,0x400)
+ Ctrl[25] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(33,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0xc2f980,0xe000)
+ Ctrl[26] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(34,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0xc3d980,0xe000)
+ Ctrl[27] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(35,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0xc4b980,0x80000)
+ Ctrl[28] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(36,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0xccb980,0x105d65f)
+ Ctrl[29] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(1)/SD(1)
+ Ctrl[2A] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(1)/SD(1)/HD(1,GPT,c2825b51-9880-4738-ae28-a0792f1e4e3d,0x800,0xfffff)
+ Ctrl[2B] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(1)/SD(1)/HD(2,GPT,c2825b51-9880-4738-ae28-a0792f1e4e3d,0x100800,0x18fff)
+ Ctrl[2D] /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/MAC(5203ec6b3265,1)
+Shell> dmpstore
+Variable RT+BS 'EFIGlobalVariable:OsIndicationsSupported' DataSize = 0x08
+  00000000: 1C 00 00 00 00 00 00 00-                         *........*
+Variable RT+BS 'EFIGlobalVariable:PlatformLangCodes' DataSize = 0x06
+  00000000: 65 6E 2D 55 53 00                                *en-US.*
+Variable RT+BS 'EFIGlobalVariable:VendorKeys' DataSize = 0x01
+  00000000: 00                                               *.*
+Variable RT+BS 'EFIGlobalVariable:DeployedMode' DataSize = 0x01
+  00000000: 00                                               *.*
+Variable RT+BS 'EFIGlobalVariable:AuditMode' DataSize = 0x01
+  00000000: 00                                               *.*
+Variable RT+BS 'EFIGlobalVariable:SetupMode' DataSize = 0x01
+  00000000: 01                                               *.*
+Variable RT+BS 'EFIGlobalVariable:SecureBoot' DataSize = 0x01
+  00000000: 00                                               *.*
+Variable NV+RT+BS 'EFIGlobalVariable:OsIndications' DataSize = 0x08
+  00000000: 04 00 00 00 00 00 00 00-                         *........*
+Variable NV+RT+BS 'EFIGlobalVariable:PlatformLang' DataSize = 0x06
+  00000000: 65 6E 2D 55 53 00                                *en-US.*
+Shell> dh -d -v
+Handle dump
+01: DevicePath(751FA350)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b) DevicePathToText(77172238) DevicePathUtilities(77172248) E617D64C-FE08-46DA-F4DC-BBD5870C7300(771A55E0) UnicodeCollation2(77172830) HIIString(77172600) HIIDatabase(771725A8) FirmwareManagement(77172370) 
+02: SimpleTextOut(771A5548)   Address: 771A5548 Attrib 07
+     mode 0: Col 80 Row 25
+     mode 1: Col 80 Row 50
+  *  mode 2: Col 253 Row 53 
+03: SimpleTextIn(771A54E8) SimpleTextInEx(771A5500) 
+04: DevicePath(74090040)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0) BlockIO(751FA7E8)   Removable MId:1 bsize 200, lblock 1D28FFF (15,655,239,680), raw rw !cached 
+05: DevicePath(7408D040)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(1,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1000,0x40) BlockIO(751FA9B8)   Removable MId:1 bsize 200, lblock 3F (32,768), partition rw !cached 
+06: DevicePath(7408B040)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(2,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1040,0x40) BlockIO(751FB648)   Removable MId:1 bsize 200, lblock 3F (32,768), partition rw !cached 
+07: DevicePath(74089040)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(3,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1080,0x100) BlockIO(751FC2C8)   Removable MId:1 bsize 200, lblock FF (131,072), partition rw !cached 
+08: DevicePath(74087040)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(4,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1180,0x100) BlockIO(751FCB38)   Removable MId:1 bsize 200, lblock FF (131,072), partition rw !cached 
+09: DevicePath(74085040)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(5,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1280,0x100) BlockIO(751FD3F8)   Removable MId:1 bsize 200, lblock FF (131,072), partition rw !cached 
+0A: DevicePath(74083040)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(6,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1380,0x100) BlockIO(751FE0C8)   Removable MId:1 bsize 200, lblock FF (131,072), partition rw !cached 
+0B: DevicePath(74081040)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(7,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1480,0x400) BlockIO(751FED48)   Removable MId:1 bsize 200, lblock 3FF (524,288), partition rw !cached 
+0C: DevicePath(7407F040)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(8,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1880,0x400) BlockIO(751FF5B8)   Removable MId:1 bsize 200, lblock 3FF (524,288), partition rw !cached 
+0D: DevicePath(7407D040)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(9,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1c80,0x80) BlockIO(751FFE78)   Removable MId:1 bsize 200, lblock 7F (65,536), partition rw !cached 
+0E: DevicePath(7407B040)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(10,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1d00,0x80) BlockIO(75200B48)   Removable MId:1 bsize 200, lblock 7F (65,536), partition rw !cached 
+0F: DevicePath(74079040)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(11,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1d80,0x400) BlockIO(752017C8)   Removable MId:1 bsize 200, lblock 3FF (524,288), partition rw !cached 
+10: DevicePath(74077040)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(12,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x2180,0x400) BlockIO(75202038)   Removable MId:1 bsize 200, lblock 3FF (524,288), partition rw !cached 
+11: DevicePath(74075040)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(13,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x2580,0xc000) BlockIO(752028F8)   Removable MId:1 bsize 200, lblock BFFF (25,165,824), partition rw !cached SimpleFileSystem(75202CF0) 
+12: DevicePath(74073040)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(14,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0xe580,0xc000) BlockIO(75202D88)   Removable MId:1 bsize 200, lblock BFFF (25,165,824), partition rw !cached 
+13: DevicePath(74071040)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(15,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1a580,0x100) BlockIO(75203A08)   Removable MId:1 bsize 200, lblock FF (131,072), partition rw !cached 
+14: DevicePath(7406F040)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(16,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1a680,0x100) BlockIO(75203BD8)   Removable MId:1 bsize 200, lblock FF (131,072), partition rw !cached 
+15: DevicePath(7406D040)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(17,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1a780,0x1000) BlockIO(75203DA8)   Removable MId:1 bsize 200, lblock FFF (2,097,152), partition rw !cached 
+16: DevicePath(7406B040)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(18,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1b780,0x1000) BlockIO(752047C8)   Removable MId:1 bsize 200, lblock FFF (2,097,152), partition rw !cached 
+17: DevicePath(74069040)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(19,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1c780,0x80) BlockIO(75205208)   Removable MId:1 bsize 200, lblock 7F (65,536), partition rw !cached 
+18: DevicePath(74067040)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(20,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1c800,0x80) BlockIO(75205C48)   Removable MId:1 bsize 200, lblock 7F (65,536), partition rw !cached 
+19: DevicePath(74065040)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(21,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1c880,0x1000) BlockIO(75206688)   Removable MId:1 bsize 200, lblock FFF (2,097,152), partition rw !cached 
+1A: DevicePath(74063040)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(22,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1d880,0x1000) BlockIO(751FB858)   Removable MId:1 bsize 200, lblock FFF (2,097,152), partition rw !cached 
+1B: DevicePath(74061040)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(23,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1e880,0x80) BlockIO(751FC4D8)   Removable MId:1 bsize 200, lblock 7F (65,536), partition rw !cached 
+1C: DevicePath(7405F040)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(24,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1e900,0x80) BlockIO(751FC5E8)   Removable MId:1 bsize 200, lblock 7F (65,536), partition rw !cached 
+1D: DevicePath(7405D040)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(25,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x1e980,0x400000) BlockIO(751FF058)   Removable MId:1 bsize 200, lblock 3FFFFF (2,147,483,648), partition rw !cached SimpleFileSystem(75204360) 
+1E: DevicePath(7405B040)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(26,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x41e980,0x400000) BlockIO(751FE358)   Removable MId:1 bsize 200, lblock 3FFFFF (2,147,483,648), partition rw !cached 
+1F: DevicePath(74059040)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(27,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0x81e980,0x400000) BlockIO(75200088)   Removable MId:1 bsize 200, lblock 3FFFFF (2,147,483,648), partition rw !cached EFISystemPartition(0) SimpleFileSystem(751FC690) 
+20: DevicePath(74057040)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(28,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0xc1e980,0x10000) BlockIO(75200D58)   Removable MId:1 bsize 200, lblock FFFF (33,554,432), partition rw !cached 
+21: DevicePath(74055040)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(29,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0xc2e980,0x400) BlockIO(75202248)   Removable MId:1 bsize 200, lblock 3FF (524,288), partition rw !cached 
+22: DevicePath(74053040)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(30,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0xc2ed80,0x400) BlockIO(75202F98)   Removable MId:1 bsize 200, lblock 3FF (524,288), partition rw !cached 
+23: DevicePath(74051040)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(31,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0xc2f180,0x400) BlockIO(75203068)   Removable MId:1 bsize 200, lblock 3FF (524,288), partition rw !cached 
+24: DevicePath(7404F040)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(32,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0xc2f580,0x400) BlockIO(751E9A38)   Removable MId:1 bsize 200, lblock 3FF (524,288), partition rw !cached 
+25: DevicePath(7404D040)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(33,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0xc2f980,0xe000) BlockIO(751FFC58)   Removable MId:1 bsize 200, lblock DFFF (29,360,128), partition rw !cached 
+26: DevicePath(7404B040)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(34,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0xc3d980,0xe000) BlockIO(751F9F28)   Removable MId:1 bsize 200, lblock DFFF (29,360,128), partition rw !cached 
+27: DevicePath(74049040)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(35,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0xc4b980,0x80000) BlockIO(751FA0F8)   Removable MId:1 bsize 200, lblock 7FFFF (268,435,456), partition rw !cached SimpleFileSystem(75203150) 
+28: DevicePath(74047040)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/eMMC(0)/eMMC(0)/HD(36,GPT,911c87f6-13ab-4eab-8dc5-9633f9e7c14d,0xccb980,0x105d65f) BlockIO(751FACC8)   Removable MId:1 bsize 200, lblock 105D65E (8,785,804,800), partition rw !cached SimpleFileSystem(751FCD20) 
+29: DevicePath(74046040)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(1)/SD(1) BlockIO(751FAEB8)   Removable MId:1 bsize 200, lblock 1DACBFF (15,931,539,456), raw rw !cached 
+2A: DevicePath(74043040)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(1)/SD(1)/HD(1,GPT,c2825b51-9880-4738-ae28-a0792f1e4e3d,0x800,0xfffff) BlockIO(751FB048)   Removable MId:1 bsize 200, lblock FFFFE (536,870,400), partition rw !cached SimpleFileSystem(751FCD90) 
+2B: DevicePath(74041040)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(1)/SD(1)/HD(2,GPT,c2825b51-9880-4738-ae28-a0792f1e4e3d,0x100800,0x18fff) BlockIO(751FCE28)   Removable MId:1 bsize 200, lblock 18FFE (52,428,288), partition rw !cached SimpleFileSystem(751FCFD0) 
+2C: DriverBinding(751EA440) 
+   Driver Name [2C]   : <Unknown>
+   Driver Image Name  : <Unknown>
+   Driver Version     : FFFFFFFF
+   Driver Type        : <Unknown>
+   Configuration      : NO
+   Diagnostics        : NO
+   Managing           : None
+2D: SimpleNetwork(75209928) DevicePath(74038040)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/MAC(5203ec6b3265,1) PXEBaseCode(75209C40) 
+2E: FirmwareManagement(77172340) 
+2F: ImageDevicePath(7402D040)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(1)/SD(1)/HD(1,GPT,c2825b51-9880-4738-ae28-a0792f1e4e3d,0x800,0xfffff)/efi\boot\bootaa64.efi LoadedImage(7521BE50)   Revision......: 0x00001000
+  ParentHandle..: 751FA4F0
+  SystemTable...: 770BAB10
+  DeviceHandle..: 751FB020
+  FilePath......: /efi\boot\bootaa64.efi
+  PdbFileName...: <null string>
+  OptionsSize...: 2C6
+  LoadOptions...: 7521BFA0
+  ImageBase.....: 73F8F000
+  ImageSize.....: 9E000
+  CodeType......: EfiLoaderCode
+  DataType......: EfiLoaderData
+  Unload........: 0 
+30: ImageDevicePath(73F8C040)   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)/SD(1)/SD(1)/HD(1,GPT,c2825b51-9880-4738-ae28-a0792f1e4e3d,0x800,0xfffff)/\EFI\BOOT/Shell.efi LoadedImage(7521D420)   Revision......: 0x00001000
+  ParentHandle..: 7521BEC0
+  SystemTable...: 770BAB10
+  DeviceHandle..: 751FB020
+  FilePath......: /\EFI\BOOT/Shell.efi
+  PdbFileName...: <null string>
+  OptionsSize...: 0
+  LoadOptions...: 0
+  ImageBase.....: 6CB9B000
+  ImageSize.....: F1000
+  CodeType......: EfiLoaderCode
+  DataType......: EfiLoaderData
+  Unload........: 0 SimpleTextOut(6CAFC048)   Address: 6CAFC048 Attrib 07
+     mode 0: Col 80 Row 25
+     mode 1: Col 80 Row 50
+  *  mode 2: Col 253 Row 53 ShellParameters(6CAB7040) Shell(6CC77110) 
+Shell> memmap
+Type       Start            End              # Pages          Attributes
+Reserved   0000000045C10000-0000000045CFFFFF 00000000000000F0 0000000000000008
+Reserved   0000000045E10000-0000000045EFFFFF 00000000000000F0 0000000000000008
+Available  0000000057200000-00000000591FFFFF 0000000000002000 0000000000000008
+BS_Data    0000000059200000-00000000595FFFFF 0000000000000400 0000000000000008
+Available  0000000059600000-000000005F0BFFFF 0000000000005AC0 0000000000000008
+ACPI_Recl  000000005F0C0000-000000005F11FFFF 0000000000000060 0000000000000008
+Available  000000005F120000-00000000661FFFFF 00000000000070E0 0000000000000008
+BS_Data    0000000066200000-00000000662FFFFF 0000000000000100 0000000000000008
+Available  0000000066300000-000000006C997FFF 0000000000006698 0000000000000008
+BS_Data    000000006C998000-000000006C99EFFF 0000000000000007 0000000000000008
+Available  000000006C99F000-000000006C9A0FFF 0000000000000002 0000000000000008
+BS_Data    000000006C9A1000-000000006C9FFFFF 000000000000005F 0000000000000008
+Reserved   000000006CA00000-000000006CA00FFF 0000000000000001 0000000000000008
+BS_Data    000000006CA01000-000000006CA01FFF 0000000000000001 0000000000000008
+Reserved   000000006CA02000-000000006CA02FFF 0000000000000001 0000000000000008
+BS_Data    000000006CA03000-000000006CA04FFF 0000000000000002 0000000000000008
+Reserved   000000006CA05000-000000006CA05FFF 0000000000000001 0000000000000008
+BS_Data    000000006CA06000-000000006CA07FFF 0000000000000002 0000000000000008
+Reserved   000000006CA08000-000000006CA08FFF 0000000000000001 0000000000000008
+BS_Data    000000006CA09000-000000006CA0AFFF 0000000000000002 0000000000000008
+Reserved   000000006CA0B000-000000006CA0BFFF 0000000000000001 0000000000000008
+BS_Data    000000006CA0C000-000000006CA0DFFF 0000000000000002 0000000000000008
+Reserved   000000006CA0E000-000000006CA0EFFF 0000000000000001 0000000000000008
+BS_Data    000000006CA0F000-000000006CA10FFF 0000000000000002 0000000000000008
+Reserved   000000006CA11000-000000006CA11FFF 0000000000000001 0000000000000008
+BS_Data    000000006CA12000-000000006CA13FFF 0000000000000002 0000000000000008
+Reserved   000000006CA14000-000000006CA14FFF 0000000000000001 0000000000000008
+BS_Data    000000006CA15000-000000006CA16FFF 0000000000000002 0000000000000008
+Reserved   000000006CA17000-000000006CA17FFF 0000000000000001 0000000000000008
+BS_Data    000000006CA18000-000000006CA19FFF 0000000000000002 0000000000000008
+Reserved   000000006CA1A000-000000006CA1AFFF 0000000000000001 0000000000000008
+BS_Data    000000006CA1B000-000000006CA1CFFF 0000000000000002 0000000000000008
+Reserved   000000006CA1D000-000000006CA1DFFF 0000000000000001 0000000000000008
+BS_Data    000000006CA1E000-000000006CA1FFFF 0000000000000002 0000000000000008
+Reserved   000000006CA20000-000000006CA20FFF 0000000000000001 0000000000000008
+BS_Data    000000006CA21000-000000006CA22FFF 0000000000000002 0000000000000008
+Reserved   000000006CA23000-000000006CA23FFF 0000000000000001 0000000000000008
+BS_Data    000000006CA24000-000000006CA25FFF 0000000000000002 0000000000000008
+Reserved   000000006CA26000-000000006CA26FFF 0000000000000001 0000000000000008
+BS_Data    000000006CA27000-000000006CA28FFF 0000000000000002 0000000000000008
+Reserved   000000006CA29000-000000006CA29FFF 0000000000000001 0000000000000008
+BS_Data    000000006CA2A000-000000006CA2BFFF 0000000000000002 0000000000000008
+Reserved   000000006CA2C000-000000006CA2CFFF 0000000000000001 0000000000000008
+BS_Data    000000006CA2D000-000000006CA2EFFF 0000000000000002 0000000000000008
+Reserved   000000006CA2F000-000000006CA2FFFF 0000000000000001 0000000000000008
+BS_Data    000000006CA30000-000000006CA31FFF 0000000000000002 0000000000000008
+Reserved   000000006CA32000-000000006CA32FFF 0000000000000001 0000000000000008
+BS_Data    000000006CA33000-000000006CA34FFF 0000000000000002 0000000000000008
+Reserved   000000006CA35000-000000006CA35FFF 0000000000000001 0000000000000008
+BS_Data    000000006CA36000-000000006CA37FFF 0000000000000002 0000000000000008
+Reserved   000000006CA38000-000000006CA38FFF 0000000000000001 0000000000000008
+BS_Data    000000006CA39000-000000006CA3AFFF 0000000000000002 0000000000000008
+Reserved   000000006CA3B000-000000006CA3BFFF 0000000000000001 0000000000000008
+BS_Data    000000006CA3C000-000000006CA3DFFF 0000000000000002 0000000000000008
+Reserved   000000006CA3E000-000000006CA3EFFF 0000000000000001 0000000000000008
+BS_Data    000000006CA3F000-000000006CA40FFF 0000000000000002 0000000000000008
+Reserved   000000006CA41000-000000006CA41FFF 0000000000000001 0000000000000008
+BS_Data    000000006CA42000-000000006CA43FFF 0000000000000002 0000000000000008
+Reserved   000000006CA44000-000000006CA44FFF 0000000000000001 0000000000000008
+BS_Data    000000006CA45000-000000006CA46FFF 0000000000000002 0000000000000008
+Reserved   000000006CA47000-000000006CA47FFF 0000000000000001 0000000000000008
+BS_Data    000000006CA48000-000000006CA49FFF 0000000000000002 0000000000000008
+Reserved   000000006CA4A000-000000006CA4AFFF 0000000000000001 0000000000000008
+BS_Data    000000006CA4B000-000000006CA4CFFF 0000000000000002 0000000000000008
+Reserved   000000006CA4D000-000000006CA4DFFF 0000000000000001 0000000000000008
+BS_Data    000000006CA4E000-000000006CA4FFFF 0000000000000002 0000000000000008
+Reserved   000000006CA50000-000000006CA50FFF 0000000000000001 0000000000000008
+BS_Data    000000006CA51000-000000006CA52FFF 0000000000000002 0000000000000008
+Reserved   000000006CA53000-000000006CA53FFF 0000000000000001 0000000000000008
+BS_Data    000000006CA54000-000000006CA55FFF 0000000000000002 0000000000000008
+Reserved   000000006CA56000-000000006CA56FFF 0000000000000001 0000000000000008
+BS_Data    000000006CA57000-000000006CA58FFF 0000000000000002 0000000000000008
+Reserved   000000006CA59000-000000006CA59FFF 0000000000000001 0000000000000008
+BS_Data    000000006CA5A000-000000006CA5BFFF 0000000000000002 0000000000000008
+Reserved   000000006CA5C000-000000006CA5CFFF 0000000000000001 0000000000000008
+BS_Data    000000006CA5D000-000000006CA5EFFF 0000000000000002 0000000000000008
+Reserved   000000006CA5F000-000000006CA5FFFF 0000000000000001 0000000000000008
+BS_Data    000000006CA60000-000000006CA61FFF 0000000000000002 0000000000000008
+Reserved   000000006CA62000-000000006CA62FFF 0000000000000001 0000000000000008
+BS_Data    000000006CA63000-000000006CA64FFF 0000000000000002 0000000000000008
+Reserved   000000006CA65000-000000006CA65FFF 0000000000000001 0000000000000008
+BS_Data    000000006CA66000-000000006CA67FFF 0000000000000002 0000000000000008
+Reserved   000000006CA68000-000000006CA68FFF 0000000000000001 0000000000000008
+BS_Data    000000006CA69000-000000006CA6AFFF 0000000000000002 0000000000000008
+Reserved   000000006CA6B000-000000006CA6BFFF 0000000000000001 0000000000000008
+BS_Data    000000006CA6C000-000000006CA6DFFF 0000000000000002 0000000000000008
+Reserved   000000006CA6E000-000000006CA6EFFF 0000000000000001 0000000000000008
+BS_Data    000000006CA6F000-000000006CA70FFF 0000000000000002 0000000000000008
+Reserved   000000006CA71000-000000006CA71FFF 0000000000000001 0000000000000008
+BS_Data    000000006CA72000-000000006CA73FFF 0000000000000002 0000000000000008
+Reserved   000000006CA74000-000000006CA74FFF 0000000000000001 0000000000000008
+BS_Data    000000006CA75000-000000006CA76FFF 0000000000000002 0000000000000008
+Reserved   000000006CA77000-000000006CA78FFF 0000000000000002 0000000000000008
+BS_Data    000000006CA79000-000000006CA7CFFF 0000000000000004 0000000000000008
+Reserved   000000006CA7D000-000000006CA7DFFF 0000000000000001 0000000000000008
+BS_Data    000000006CA7E000-000000006CA7FFFF 0000000000000002 0000000000000008
+Reserved   000000006CA80000-000000006CA80FFF 0000000000000001 0000000000000008
+BS_Data    000000006CA81000-000000006CA84FFF 0000000000000004 0000000000000008
+Reserved   000000006CA85000-000000006CA85FFF 0000000000000001 0000000000000008
+BS_Data    000000006CA86000-000000006CA87FFF 0000000000000002 0000000000000008
+Reserved   000000006CA88000-000000006CA88FFF 0000000000000001 0000000000000008
+BS_Data    000000006CA89000-000000006CA8CFFF 0000000000000004 0000000000000008
+Reserved   000000006CA8D000-000000006CA8DFFF 0000000000000001 0000000000000008
+BS_Data    000000006CA8E000-000000006CA8FFFF 0000000000000002 0000000000000008
+Reserved   000000006CA90000-000000006CA90FFF 0000000000000001 0000000000000008
+BS_Data    000000006CA91000-000000006CA94FFF 0000000000000004 0000000000000008
+Reserved   000000006CA95000-000000006CA95FFF 0000000000000001 0000000000000008
+BS_Data    000000006CA96000-000000006CA97FFF 0000000000000002 0000000000000008
+Reserved   000000006CA98000-000000006CA98FFF 0000000000000001 0000000000000008
+BS_Data    000000006CA99000-000000006CA9CFFF 0000000000000004 0000000000000008
+Reserved   000000006CA9D000-000000006CA9DFFF 0000000000000001 0000000000000008
+BS_Data    000000006CA9E000-000000006CA9FFFF 0000000000000002 0000000000000008
+Reserved   000000006CAA0000-000000006CAA0FFF 0000000000000001 0000000000000008
+BS_Data    000000006CAA1000-000000006CAA4FFF 0000000000000004 0000000000000008
+Reserved   000000006CAA5000-000000006CAA5FFF 0000000000000001 0000000000000008
+BS_Data    000000006CAA6000-000000006CAA7FFF 0000000000000002 0000000000000008
+Reserved   000000006CAA8000-000000006CAA8FFF 0000000000000001 0000000000000008
+BS_Data    000000006CAA9000-000000006CAADFFF 0000000000000005 0000000000000008
+Reserved   000000006CAAE000-000000006CAAEFFF 0000000000000001 0000000000000008
+BS_Data    000000006CAAF000-000000006CAB4FFF 0000000000000006 0000000000000008
+Reserved   000000006CAB5000-000000006CAB5FFF 0000000000000001 0000000000000008
+BS_Data    000000006CAB6000-000000006CB9AFFF 00000000000000E5 0000000000000008
+LoaderCode 000000006CB9B000-000000006CD7CFFF 00000000000001E2 0000000000000008
+LoaderData 000000006CD7D000-000000006CD7DFFF 0000000000000001 0000000000000008
+LoaderCode 000000006CD7E000-0000000073F87FFF 000000000000720A 0000000000000008
+BS_Data    0000000073F88000-0000000073F8BFFF 0000000000000004 0000000000000008
+Reserved   0000000073F8C000-0000000073F8EFFF 0000000000000003 0000000000000008
+LoaderCode 0000000073F8F000-000000007402CFFF 000000000000009E 0000000000000008
+Reserved   000000007402D000-0000000074033FFF 0000000000000007 0000000000000008
+BS_Data    0000000074034000-0000000074034FFF 0000000000000001 0000000000000008
+RT_Data    0000000074035000-0000000074035FFF 0000000000000001 8000000000000008
+BS_Data    0000000074036000-0000000074037FFF 0000000000000002 0000000000000008
+Reserved   0000000074038000-0000000074038FFF 0000000000000001 0000000000000008
+RT_Data    0000000074039000-000000007403BFFF 0000000000000003 8000000000000008
+BS_Data    000000007403C000-000000007403CFFF 0000000000000001 0000000000000008
+RT_Data    000000007403D000-0000000074040FFF 0000000000000004 8000000000000008
+Reserved   0000000074041000-0000000074041FFF 0000000000000001 0000000000000008
+BS_Data    0000000074042000-0000000074042FFF 0000000000000001 0000000000000008
+Reserved   0000000074043000-0000000074043FFF 0000000000000001 0000000000000008
+BS_Data    0000000074044000-0000000074045FFF 0000000000000002 0000000000000008
+Reserved   0000000074046000-0000000074047FFF 0000000000000002 0000000000000008
+BS_Data    0000000074048000-0000000074048FFF 0000000000000001 0000000000000008
+Reserved   0000000074049000-0000000074049FFF 0000000000000001 0000000000000008
+BS_Data    000000007404A000-000000007404AFFF 0000000000000001 0000000000000008
+Reserved   000000007404B000-000000007404BFFF 0000000000000001 0000000000000008
+BS_Data    000000007404C000-000000007404CFFF 0000000000000001 0000000000000008
+Reserved   000000007404D000-000000007404DFFF 0000000000000001 0000000000000008
+BS_Data    000000007404E000-000000007404EFFF 0000000000000001 0000000000000008
+Reserved   000000007404F000-000000007404FFFF 0000000000000001 0000000000000008
+BS_Data    0000000074050000-0000000074050FFF 0000000000000001 0000000000000008
+Reserved   0000000074051000-0000000074051FFF 0000000000000001 0000000000000008
+BS_Data    0000000074052000-0000000074052FFF 0000000000000001 0000000000000008
+Reserved   0000000074053000-0000000074053FFF 0000000000000001 0000000000000008
+BS_Data    0000000074054000-0000000074054FFF 0000000000000001 0000000000000008
+Reserved   0000000074055000-0000000074055FFF 0000000000000001 0000000000000008
+BS_Data    0000000074056000-0000000074056FFF 0000000000000001 0000000000000008
+Reserved   0000000074057000-0000000074057FFF 0000000000000001 0000000000000008
+BS_Data    0000000074058000-0000000074058FFF 0000000000000001 0000000000000008
+Reserved   0000000074059000-0000000074059FFF 0000000000000001 0000000000000008
+BS_Data    000000007405A000-000000007405AFFF 0000000000000001 0000000000000008
+Reserved   000000007405B000-000000007405BFFF 0000000000000001 0000000000000008
+BS_Data    000000007405C000-000000007405CFFF 0000000000000001 0000000000000008
+Reserved   000000007405D000-000000007405DFFF 0000000000000001 0000000000000008
+BS_Data    000000007405E000-000000007405EFFF 0000000000000001 0000000000000008
+Reserved   000000007405F000-000000007405FFFF 0000000000000001 0000000000000008
+BS_Data    0000000074060000-0000000074060FFF 0000000000000001 0000000000000008
+Reserved   0000000074061000-0000000074061FFF 0000000000000001 0000000000000008
+BS_Data    0000000074062000-0000000074062FFF 0000000000000001 0000000000000008
+Reserved   0000000074063000-0000000074063FFF 0000000000000001 0000000000000008
+BS_Data    0000000074064000-0000000074064FFF 0000000000000001 0000000000000008
+Reserved   0000000074065000-0000000074065FFF 0000000000000001 0000000000000008
+BS_Data    0000000074066000-0000000074066FFF 0000000000000001 0000000000000008
+Reserved   0000000074067000-0000000074067FFF 0000000000000001 0000000000000008
+BS_Data    0000000074068000-0000000074068FFF 0000000000000001 0000000000000008
+Reserved   0000000074069000-0000000074069FFF 0000000000000001 0000000000000008
+BS_Data    000000007406A000-000000007406AFFF 0000000000000001 0000000000000008
+Reserved   000000007406B000-000000007406BFFF 0000000000000001 0000000000000008
+BS_Data    000000007406C000-000000007406CFFF 0000000000000001 0000000000000008
+Reserved   000000007406D000-000000007406DFFF 0000000000000001 0000000000000008
+BS_Data    000000007406E000-000000007406EFFF 0000000000000001 0000000000000008
+Reserved   000000007406F000-000000007406FFFF 0000000000000001 0000000000000008
+BS_Data    0000000074070000-0000000074070FFF 0000000000000001 0000000000000008
+Reserved   0000000074071000-0000000074071FFF 0000000000000001 0000000000000008
+BS_Data    0000000074072000-0000000074072FFF 0000000000000001 0000000000000008
+Reserved   0000000074073000-0000000074073FFF 0000000000000001 0000000000000008
+BS_Data    0000000074074000-0000000074074FFF 0000000000000001 0000000000000008
+Reserved   0000000074075000-0000000074075FFF 0000000000000001 0000000000000008
+BS_Data    0000000074076000-0000000074076FFF 0000000000000001 0000000000000008
+Reserved   0000000074077000-0000000074077FFF 0000000000000001 0000000000000008
+BS_Data    0000000074078000-0000000074078FFF 0000000000000001 0000000000000008
+Reserved   0000000074079000-0000000074079FFF 0000000000000001 0000000000000008
+BS_Data    000000007407A000-000000007407AFFF 0000000000000001 0000000000000008
+Reserved   000000007407B000-000000007407BFFF 0000000000000001 0000000000000008
+BS_Data    000000007407C000-000000007407CFFF 0000000000000001 0000000000000008
+Reserved   000000007407D000-000000007407DFFF 0000000000000001 0000000000000008
+BS_Data    000000007407E000-000000007407EFFF 0000000000000001 0000000000000008
+Reserved   000000007407F000-000000007407FFFF 0000000000000001 0000000000000008
+BS_Data    0000000074080000-0000000074080FFF 0000000000000001 0000000000000008
+Reserved   0000000074081000-0000000074081FFF 0000000000000001 0000000000000008
+BS_Data    0000000074082000-0000000074082FFF 0000000000000001 0000000000000008
+Reserved   0000000074083000-0000000074083FFF 0000000000000001 0000000000000008
+BS_Data    0000000074084000-0000000074084FFF 0000000000000001 0000000000000008
+Reserved   0000000074085000-0000000074085FFF 0000000000000001 0000000000000008
+BS_Data    0000000074086000-0000000074086FFF 0000000000000001 0000000000000008
+Reserved   0000000074087000-0000000074087FFF 0000000000000001 0000000000000008
+BS_Data    0000000074088000-0000000074088FFF 0000000000000001 0000000000000008
+Reserved   0000000074089000-0000000074089FFF 0000000000000001 0000000000000008
+BS_Data    000000007408A000-000000007408AFFF 0000000000000001 0000000000000008
+Reserved   000000007408B000-000000007408BFFF 0000000000000001 0000000000000008
+BS_Data    000000007408C000-000000007408CFFF 0000000000000001 0000000000000008
+Reserved   000000007408D000-000000007408DFFF 0000000000000001 0000000000000008
+BS_Data    000000007408E000-000000007408FFFF 0000000000000002 0000000000000008
+Reserved   0000000074090000-0000000074090FFF 0000000000000001 0000000000000008
+BS_Data    0000000074091000-0000000074092FFF 0000000000000002 0000000000000008
+LoaderData 0000000074093000-00000000770AFFFF 000000000000301D 0000000000000008
+RT_Code    00000000770B0000-00000000770BFFFF 0000000000000010 8000000000000008
+LoaderData 00000000770C0000-00000000771FFFFF 0000000000000140 0000000000000008
+BS_Data    000000007C600000-00000000BFFFFFFF 0000000000043A00 0000000000000008
+ 
+  Reserved  :            587 Pages (2,404,352 Bytes)
+  LoaderCode:         29,834 Pages (122,200,064 Bytes)
+  LoaderData:         12,638 Pages (51,765,248 Bytes)
+  BS_Code   :              0 Pages (0 Bytes)
+  BS_Data   :        278,779 Pages (1,141,878,784 Bytes)
+  RT_Code   :             16 Pages (65,536 Bytes)
+  RT_Data   :              8 Pages (32,768 Bytes)
+  ACPI_Recl :             96 Pages (393,216 Bytes)
+  ACPI_NVS  :              0 Pages (0 Bytes)
+  MMIO      :              0 Pages (0 Bytes)
+  MMIO_Port :              0 Pages (0 Bytes)
+  PalCode   :              0 Pages (0 Bytes)
+  Available :         86,586 Pages (354,656,256 Bytes)
+  Persistent:              0 Pages (0 Bytes)
+              -------------- 
+Total Memory:          1,593 MB (1,670,991,872 Bytes)
+Shell> smbiosview
+SMBIOS Entry Point Structure:
+Anchor String:        _SM_
+EPS Checksum:         0x47
+Entry Point Len:      31
+Version:              3.0
+Number of Structures: 7
+Max Struct size:      57
+Table Address:        0x74035020
+Table Length:         206
+Entry Point revision: 0x0
+SMBIOS BCD Revision:  0x0
+Inter Anchor:         _DMI_
+Inter Checksum:       0xAC
+Formatted Area:  
+  00000000: 00 00 00 00 00                                   *.....*
+
+=========================================================
+Query Structure, conditions are:
+QueryType   = Random 
+QueryHandle = Random
+ShowType    = SHOW_DETAIL
+
+
+=========================================================
+Type=0, Handle=0x0
+Dump Structure as:
+Index=0,Length=0x33,Addr=0x74035020
+00000000: 00 18 00 00 01 02 00 00-03 00 80 08 01 00 00 00  *................*
+00000010: 00 00 08 04 15 04 FF FF-55 2D 42 6F 6F 74 00 32  *........U-Boot.2*
+00000020: 30 32 31 2E 30 34 00 31-32 2F 30 38 2F 32 30 32  *021.04.12/08/202*
+00000030: 33 00 00                                         *3..*
+Structure Type: BIOS Information
+Format part Len : 24
+Structure Handle: 0
+Vendor: U-Boot
+BiosVersion: 2021.04
+BiosSegment: 0x0
+BiosReleaseDate: 12/08/2023
+BiosSize:  64 KB
+BIOS Characteristics: 
+PCI is supported
+BIOS is Upgradeable(FLASH)
+Selectable Boot is supported
+ Bits 32:47 are reserved for BIOS Vendor
+ Bits 48:64 are reserved for System Vendor
+BIOS Characteristics Extension Byte1:
+I2O boot is supported
+BIOS Characteristics Extension Byte2:
+Enable Targeted Content Distribution
+ Bits 5:7 are reserved for future assignment
+SystemBiosMajorRelease: 21
+SystemBiosMinorRelease: 4
+EmbeddedControllerFirmwareMajorRelease: 255
+EmbeddedControllerFirmwareMinorRelease: 255
+
+
+=========================================================
+Type=1, Handle=0x1
+Dump Structure as:
+Index=1,Length=0x2A,Addr=0x74035053
+00000000: 01 1B 01 00 00 00 00 01-53 44 52 56 2D 44 39 2D  *........SDRV-D9-*
+00000010: 44 39 33 34 32 00 00 00-00 00 00 53 44 52 56 2D  *D9342......SDRV-*
+00000020: 44 39 2D 44 39 33 34 32-00 00                    *D9-D9342..*
+Structure Type: System Information
+Format part Len : 27
+Structure Handle: 1
+Manufacturer: 
+ProductName: 
+Version: 
+SerialNumber: SDRV-D9-D9342
+Dump Uuid
+size=16:
+00000000: 53 44 52 56 2D 44 39 2D-44 39 33 34 32 00 00 00  *SDRV-D9-D9342...*
+System Wakeup Type: Reserved
+SKUNumber: 
+Family: 
+
+
+=========================================================
+Type=2, Handle=0x2
+Dump Structure as:
+Index=2,Length=0x14,Addr=0x7403507D
+00000000: 02 0E 02 00 00 00 00 00-00 01 00 00 00 0A 00 03  *................*
+00000010: 15 03 00 00                                      *....*
+Structure Type: Base Board Information
+Format part Len : 14
+Structure Handle: 2
+Manufacturer: 
+ProductName: 
+Version: 
+SerialNumber: 
+AssetTag: 
+Base Board Feature Flags: Hosting board
+LocationInChassis: 
+ChassisHandle: 0x0
+Base Board Board Type: Motherboard
+
+
+=========================================================
+Type=0, Handle=0x0
+Dump Structure as:
+Index=3,Length=0x33,Addr=0x74035020
+00000000: 00 18 00 00 01 02 00 00-03 00 80 08 01 00 00 00  *................*
+00000010: 00 00 08 04 15 04 FF FF-55 2D 42 6F 6F 74 00 32  *........U-Boot.2*
+00000020: 30 32 31 2E 30 34 00 31-32 2F 30 38 2F 32 30 32  *021.04.12/08/202*
+00000030: 33 00 00                                         *3..*
+Structure Type: BIOS Information
+Format part Len : 24
+Structure Handle: 0
+Vendor: U-Boot
+BiosVersion: 2021.04
+BiosSegment: 0x0
+BiosReleaseDate: 12/08/2023
+BiosSize:  64 KB
+BIOS Characteristics: 
+PCI is supported
+BIOS is Upgradeable(FLASH)
+Selectable Boot is supported
+ Bits 32:47 are reserved for BIOS Vendor
+ Bits 48:64 are reserved for System Vendor
+BIOS Characteristics Extension Byte1:
+I2O boot is supported
+BIOS Characteristics Extension Byte2:
+Enable Targeted Content Distribution
+ Bits 5:7 are reserved for future assignment
+SystemBiosMajorRelease: 21
+SystemBiosMinorRelease: 4
+EmbeddedControllerFirmwareMajorRelease: 255
+EmbeddedControllerFirmwareMinorRelease: 255
+
+
+=========================================================
+Type=1, Handle=0x1
+Dump Structure as:
+Index=4,Length=0x2A,Addr=0x74035053
+00000000: 01 1B 01 00 00 00 00 01-53 44 52 56 2D 44 39 2D  *........SDRV-D9-*
+00000010: 44 39 33 34 32 00 00 00-00 00 00 53 44 52 56 2D  *D9342......SDRV-*
+00000020: 44 39 2D 44 39 33 34 32-00 00                    *D9-D9342..*
+Structure Type: System Information
+Format part Len : 27
+Structure Handle: 1
+Manufacturer: 
+ProductName: 
+Version: 
+SerialNumber: SDRV-D9-D9342
+Dump Uuid
+size=16:
+00000000: 53 44 52 56 2D 44 39 2D-44 39 33 34 32 00 00 00  *SDRV-D9-D9342...*
+System Wakeup Type: Reserved
+SKUNumber: 
+Family: 
+
+
+=========================================================
+Type=2, Handle=0x2
+Dump Structure as:
+Index=5,Length=0x14,Addr=0x7403507D
+00000000: 02 0E 02 00 00 00 00 00-00 01 00 00 00 0A 00 03  *................*
+00000010: 15 03 00 00                                      *....*
+Structure Type: Base Board Information
+Format part Len : 14
+Structure Handle: 2
+Manufacturer: 
+ProductName: 
+Version: 
+SerialNumber: 
+AssetTag: 
+Base Board Feature Flags: Hosting board
+LocationInChassis: 
+ChassisHandle: 0x0
+Base Board Board Type: Motherboard
+
+
+=========================================================
+Type=0, Handle=0x0
+Dump Structure as:
+Index=6,Length=0x33,Addr=0x74035020
+00000000: 00 18 00 00 01 02 00 00-03 00 80 08 01 00 00 00  *................*
+00000010: 00 00 08 04 15 04 FF FF-55 2D 42 6F 6F 74 00 32  *........U-Boot.2*
+00000020: 30 32 31 2E 30 34 00 31-32 2F 30 38 2F 32 30 32  *021.04.12/08/202*
+00000030: 33 00 00                                         *3..*
+Structure Type: BIOS Information
+Format part Len : 24
+Structure Handle: 0
+Vendor: U-Boot
+BiosVersion: 2021.04
+BiosSegment: 0x0
+BiosReleaseDate: 12/08/2023
+BiosSize:  64 KB
+BIOS Characteristics: 
+PCI is supported
+BIOS is Upgradeable(FLASH)
+Selectable Boot is supported
+ Bits 32:47 are reserved for BIOS Vendor
+ Bits 48:64 are reserved for System Vendor
+BIOS Characteristics Extension Byte1:
+I2O boot is supported
+BIOS Characteristics Extension Byte2:
+Enable Targeted Content Distribution
+ Bits 5:7 are reserved for future assignment
+SystemBiosMajorRelease: 21
+SystemBiosMinorRelease: 4
+EmbeddedControllerFirmwareMajorRelease: 255
+EmbeddedControllerFirmwareMinorRelease: 255
+
+
+=========================================================
+Shell> 
