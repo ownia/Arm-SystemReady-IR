@@ -11,3 +11,7 @@ signature.dtbo
 signature.dts
 qemu.dtb
 
+!tool/ir_*/*.its
+tool/ir_*/*.bin
+tool/ir_*/*.img
+tool/ir_*/*.itb
