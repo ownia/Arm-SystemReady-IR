@@ -32,6 +32,8 @@ load virtio 0 ${loadaddr} security-interface-extension-keys/TestDBX1.auth && set
 * https://developer.arm.com/documentation/107981/latest
 * https://developer.arm.com/documentation/102858/latest
 * https://developer.arm.com/documentation/107981/latest
+* https://developer.arm.com/documentation/DUI109506/latest
+* https://developer.arm.com/documentation/den0110/latest
 * https://pcisig.com/pci-express-6.0-specification
 * https://uefi.org/specifications
 * https://github.com/ARM-software/arm-systemready
