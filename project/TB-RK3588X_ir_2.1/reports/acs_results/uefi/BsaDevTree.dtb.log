@@ -1,0 +1,64 @@
++ DTC
+/dev/null: Warning (unit_address_vs_reg): /memory: node has a reg or ranges property, but no unit name
+/dev/null: Warning (unit_address_vs_reg): /binman/simple-bin/fit/images/@atf-SEQ: node has a unit name, but no reg property
+/dev/null: Warning (unit_address_vs_reg): /binman/simple-bin/fit/images/@tee-SEQ: node has a unit name, but no reg property
+/dev/null: Warning (unit_address_vs_reg): /binman/simple-bin/fit/images/@fdt-SEQ: node has a unit name, but no reg property
+/dev/null: Warning (unit_address_vs_reg): /binman/simple-bin/fit/configurations/@config-SEQ: node has a unit name, but no reg property
+/dev/null: Warning (pci_device_reg): /pcie@fe180000/legacy-interrupt-controller: missing PCI reg property
+/dev/null: Warning (pci_device_reg): /pcie@fe190000/legacy-interrupt-controller: missing PCI reg property
+/dev/null: Warning (pci_device_reg): /pcie@fe150000/legacy-interrupt-controller: missing PCI reg property
+/dev/null: Warning (pci_device_reg): /pcie@fe160000/legacy-interrupt-controller: missing PCI reg property
+/dev/null: Warning (pci_device_reg): /pcie@fe170000/legacy-interrupt-controller: missing PCI reg property
++ DT-VALIDATE
+/home/weiouy01/.local/lib/python3.8/site-packages/dtschema/schemas/reserved-memory/shared-dma-pool.yaml: warning: ignoring duplicate '$id' value 'http://devicetree.org/schemas/reserved-memory/shared-dma-pool.yaml#'
+/home/weiouy01/.local/lib/python3.8/site-packages/dtschema/schemas/reserved-memory/memory-region.yaml: warning: ignoring duplicate '$id' value 'http://devicetree.org/schemas/reserved-memory/memory-region.yaml#'
+/home/weiouy01/.local/lib/python3.8/site-packages/dtschema/schemas/reserved-memory/reserved-memory.yaml: warning: ignoring duplicate '$id' value 'http://devicetree.org/schemas/reserved-memory/reserved-memory.yaml#'
+/home/weiouy01/.local/lib/python3.8/site-packages/dtschema/schemas/reserved-memory/framebuffer.yaml: warning: ignoring duplicate '$id' value 'http://devicetree.org/schemas/reserved-memory/framebuffer.yaml#'
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3588X_ir_2.1/reports/acs_results/uefi/BsaDevTree.dtb: /: memory: False schema does not allow {'reg': [[0, 2097152, 0, 4024434688], [1, 0, 1, 0]], 'device_type': ['memory']}
+	from schema $id: http://devicetree.org/schemas/root-node.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3588X_ir_2.1/reports/acs_results/uefi/BsaDevTree.dtb: usb@fc800000: compatible: 'oneOf' conditional failed, one must be fixed:
+	['rockchip,rk3588-ehci', 'generic-ehci'] is too long
+	'rockchip,rk3588-ehci' is not one of ['allwinner,sun4i-a10-ehci', 'allwinner,sun50i-a64-ehci', 'allwinner,sun50i-h6-ehci', 'allwinner,sun50i-h616-ehci', 'allwinner,sun5i-a13-ehci', 'allwinner,sun6i-a31-ehci', 'allwinner,sun7i-a20-ehci', 'allwinner,sun8i-a23-ehci', 'allwinner,sun8i-a83t-ehci', 'allwinner,sun8i-h3-ehci', 'allwinner,sun8i-r40-ehci', 'allwinner,sun9i-a80-ehci', 'allwinner,sun20i-d1-ehci', 'aspeed,ast2400-ehci', 'aspeed,ast2500-ehci', 'aspeed,ast2600-ehci', 'brcm,bcm3384-ehci', 'brcm,bcm63268-ehci', 'brcm,bcm6328-ehci', 'brcm,bcm6358-ehci', 'brcm,bcm6362-ehci', 'brcm,bcm6368-ehci', 'brcm,bcm7125-ehci', 'brcm,bcm7346-ehci', 'brcm,bcm7358-ehci', 'brcm,bcm7360-ehci', 'brcm,bcm7362-ehci', 'brcm,bcm7420-ehci', 'brcm,bcm7425-ehci', 'brcm,bcm7435-ehci', 'hpe,gxp-ehci', 'ibm,476gtr-ehci', 'nxp,lpc1850-ehci', 'qca,ar7100-ehci', 'snps,hsdk-v1.0-ehci', 'socionext,uniphier-ehci']
+	'rockchip,rk3588-ehci' is not one of ['cavium,octeon-6335-ehci', 'ibm,usb-ehci-440epx', 'ibm,usb-ehci-460ex', 'nintendo,hollywood-usb-ehci', 'st,spear600-ehci']
+	'rockchip,rk3588-ehci' is not one of ['generic-ehci', 'marvell,armada-3700-ehci', 'marvell,orion-ehci', 'nuvoton,npcm750-ehci', 'nuvoton,npcm845-ehci', 'ti,ehci-omap', 'usb-ehci']
+	'usb-ehci' was expected
+	from schema $id: http://devicetree.org/schemas/usb/generic-ehci.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3588X_ir_2.1/reports//acs_results/uefi/BsaDevTree.dtb: /usb@fc800000: failed to match any schema with compatible: ['rockchip,rk3588-ehci', 'generic-ehci']
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3588X_ir_2.1/reports/acs_results/uefi/BsaDevTree.dtb: usb@fc840000: compatible: 'oneOf' conditional failed, one must be fixed:
+	['rockchip,rk3588-ohci', 'generic-ohci'] is too long
+	'rockchip,rk3588-ohci' is not one of ['allwinner,sun4i-a10-ohci', 'allwinner,sun50i-a64-ohci', 'allwinner,sun50i-h6-ohci', 'allwinner,sun50i-h616-ohci', 'allwinner,sun5i-a13-ohci', 'allwinner,sun6i-a31-ohci', 'allwinner,sun7i-a20-ohci', 'allwinner,sun8i-a23-ohci', 'allwinner,sun8i-a83t-ohci', 'allwinner,sun8i-h3-ohci', 'allwinner,sun8i-r40-ohci', 'allwinner,sun9i-a80-ohci', 'allwinner,sun20i-d1-ohci', 'brcm,bcm3384-ohci', 'brcm,bcm63268-ohci', 'brcm,bcm6328-ohci', 'brcm,bcm6358-ohci', 'brcm,bcm6362-ohci', 'brcm,bcm6368-ohci', 'brcm,bcm7125-ohci', 'brcm,bcm7346-ohci', 'brcm,bcm7358-ohci', 'brcm,bcm7360-ohci', 'brcm,bcm7362-ohci', 'brcm,bcm7420-ohci', 'brcm,bcm7425-ohci', 'brcm,bcm7435-ohci', 'hpe,gxp-ohci', 'ibm,476gtr-ohci', 'ingenic,jz4740-ohci', 'snps,hsdk-v1.0-ohci']
+	'rockchip,rk3588-ohci' is not one of ['generic-ohci', 'ti,ohci-omap3']
+	'rockchip,rk3588-ohci' is not one of ['cavium,octeon-6335-ohci', 'nintendo,hollywood-usb-ohci', 'nxp,ohci-nxp', 'st,spear600-ohci']
+	'usb-ohci' was expected
+	from schema $id: http://devicetree.org/schemas/usb/generic-ohci.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3588X_ir_2.1/reports/acs_results/uefi/BsaDevTree.dtb: usb@fc840000: clocks: [[27, 398], [27, 399], [27, 704], [28]] is too long
+	from schema $id: http://devicetree.org/schemas/usb/generic-ohci.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3588X_ir_2.1/reports//acs_results/uefi/BsaDevTree.dtb: /usb@fc840000: failed to match any schema with compatible: ['rockchip,rk3588-ohci', 'generic-ohci']
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3588X_ir_2.1/reports/acs_results/uefi/BsaDevTree.dtb: usb@fc880000: compatible: 'oneOf' conditional failed, one must be fixed:
+	['rockchip,rk3588-ehci', 'generic-ehci'] is too long
+	'rockchip,rk3588-ehci' is not one of ['allwinner,sun4i-a10-ehci', 'allwinner,sun50i-a64-ehci', 'allwinner,sun50i-h6-ehci', 'allwinner,sun50i-h616-ehci', 'allwinner,sun5i-a13-ehci', 'allwinner,sun6i-a31-ehci', 'allwinner,sun7i-a20-ehci', 'allwinner,sun8i-a23-ehci', 'allwinner,sun8i-a83t-ehci', 'allwinner,sun8i-h3-ehci', 'allwinner,sun8i-r40-ehci', 'allwinner,sun9i-a80-ehci', 'allwinner,sun20i-d1-ehci', 'aspeed,ast2400-ehci', 'aspeed,ast2500-ehci', 'aspeed,ast2600-ehci', 'brcm,bcm3384-ehci', 'brcm,bcm63268-ehci', 'brcm,bcm6328-ehci', 'brcm,bcm6358-ehci', 'brcm,bcm6362-ehci', 'brcm,bcm6368-ehci', 'brcm,bcm7125-ehci', 'brcm,bcm7346-ehci', 'brcm,bcm7358-ehci', 'brcm,bcm7360-ehci', 'brcm,bcm7362-ehci', 'brcm,bcm7420-ehci', 'brcm,bcm7425-ehci', 'brcm,bcm7435-ehci', 'hpe,gxp-ehci', 'ibm,476gtr-ehci', 'nxp,lpc1850-ehci', 'qca,ar7100-ehci', 'snps,hsdk-v1.0-ehci', 'socionext,uniphier-ehci']
+	'rockchip,rk3588-ehci' is not one of ['cavium,octeon-6335-ehci', 'ibm,usb-ehci-440epx', 'ibm,usb-ehci-460ex', 'nintendo,hollywood-usb-ehci', 'st,spear600-ehci']
+	'rockchip,rk3588-ehci' is not one of ['generic-ehci', 'marvell,armada-3700-ehci', 'marvell,orion-ehci', 'nuvoton,npcm750-ehci', 'nuvoton,npcm845-ehci', 'ti,ehci-omap', 'usb-ehci']
+	'usb-ehci' was expected
+	from schema $id: http://devicetree.org/schemas/usb/generic-ehci.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3588X_ir_2.1/reports//acs_results/uefi/BsaDevTree.dtb: /usb@fc880000: failed to match any schema with compatible: ['rockchip,rk3588-ehci', 'generic-ehci']
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3588X_ir_2.1/reports/acs_results/uefi/BsaDevTree.dtb: usb@fc8c0000: compatible: 'oneOf' conditional failed, one must be fixed:
+	['rockchip,rk3588-ohci', 'generic-ohci'] is too long
+	'rockchip,rk3588-ohci' is not one of ['allwinner,sun4i-a10-ohci', 'allwinner,sun50i-a64-ohci', 'allwinner,sun50i-h6-ohci', 'allwinner,sun50i-h616-ohci', 'allwinner,sun5i-a13-ohci', 'allwinner,sun6i-a31-ohci', 'allwinner,sun7i-a20-ohci', 'allwinner,sun8i-a23-ohci', 'allwinner,sun8i-a83t-ohci', 'allwinner,sun8i-h3-ohci', 'allwinner,sun8i-r40-ohci', 'allwinner,sun9i-a80-ohci', 'allwinner,sun20i-d1-ohci', 'brcm,bcm3384-ohci', 'brcm,bcm63268-ohci', 'brcm,bcm6328-ohci', 'brcm,bcm6358-ohci', 'brcm,bcm6362-ohci', 'brcm,bcm6368-ohci', 'brcm,bcm7125-ohci', 'brcm,bcm7346-ohci', 'brcm,bcm7358-ohci', 'brcm,bcm7360-ohci', 'brcm,bcm7362-ohci', 'brcm,bcm7420-ohci', 'brcm,bcm7425-ohci', 'brcm,bcm7435-ohci', 'hpe,gxp-ohci', 'ibm,476gtr-ohci', 'ingenic,jz4740-ohci', 'snps,hsdk-v1.0-ohci']
+	'rockchip,rk3588-ohci' is not one of ['generic-ohci', 'ti,ohci-omap3']
+	'rockchip,rk3588-ohci' is not one of ['cavium,octeon-6335-ohci', 'nintendo,hollywood-usb-ohci', 'nxp,ohci-nxp', 'st,spear600-ohci']
+	'usb-ohci' was expected
+	from schema $id: http://devicetree.org/schemas/usb/generic-ohci.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3588X_ir_2.1/reports/acs_results/uefi/BsaDevTree.dtb: usb@fc8c0000: clocks: [[27, 400], [27, 401], [27, 704], [31]] is too long
+	from schema $id: http://devicetree.org/schemas/usb/generic-ohci.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3588X_ir_2.1/reports//acs_results/uefi/BsaDevTree.dtb: /usb@fc8c0000: failed to match any schema with compatible: ['rockchip,rk3588-ohci', 'generic-ohci']
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3588X_ir_2.1/reports//acs_results/uefi/BsaDevTree.dtb: /syscon@fd5bc000: failed to match any schema with compatible: ['rockchip,rk3588-pipe-phy-grf', 'syscon']
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3588X_ir_2.1/reports//acs_results/uefi/BsaDevTree.dtb: /syscon@fd5c4000: failed to match any schema with compatible: ['rockchip,rk3588-pipe-phy-grf', 'syscon']
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3588X_ir_2.1/reports//acs_results/uefi/BsaDevTree.dtb: /syscon@fd5d8000: failed to match any schema with compatible: ['rockchip,rk3588-usb2phy-grf', 'syscon', 'simple-mfd']
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3588X_ir_2.1/reports//acs_results/uefi/BsaDevTree.dtb: /syscon@fd5d8000/usb2-phy@8000: failed to match any schema with compatible: ['rockchip,rk3588-usb2phy']
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3588X_ir_2.1/reports//acs_results/uefi/BsaDevTree.dtb: /syscon@fd5dc000: failed to match any schema with compatible: ['rockchip,rk3588-usb2phy-grf', 'syscon', 'simple-mfd']
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3588X_ir_2.1/reports//acs_results/uefi/BsaDevTree.dtb: /syscon@fd5dc000/usb2-phy@c000: failed to match any schema with compatible: ['rockchip,rk3588-usb2phy']
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3588X_ir_2.1/reports/acs_results/uefi/BsaDevTree.dtb: serial@fd890000: dma-names:0: 'rx' was expected
+	from schema $id: http://devicetree.org/schemas/serial/snps-dw-apb-uart.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3588X_ir_2.1/reports/acs_results/uefi/BsaDevTree.dtb: serial@fd890000: dma-names:1: 'tx' was expected
+	from schema $id: http://devicetree.org/schemas/serial/snps-dw-apb-uart.yaml#
