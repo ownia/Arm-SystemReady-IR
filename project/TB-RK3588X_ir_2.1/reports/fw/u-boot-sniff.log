@@ -1,93 +1,3 @@
-DDR d5483af87d cym 23/11/23-16:15:24,fwver: v1.15
-LPDDR4X, 2112MHz
-channel[0] BW=16 Col=10 Bk=8 CS0 Row=16 CS1 Row=16 CS=2 Die BW=16 Size=2048MB
-channel[1] BW=16 Col=10 Bk=8 CS0 Row=16 CS1 Row=16 CS=2 Die BW=16 Size=2048MB
-channel[2] BW=16 Col=10 Bk=8 CS0 Row=16 CS1 Row=16 CS=2 Die BW=16 Size=2048MB
-channel[3] BW=16 Col=10 Bk=8 CS0 Row=16 CS1 Row=16 CS=2 Die BW=16 Size=2048MB
-Manufacturer ID:0x1
-CH0 RX Vref:27.9%, TX Vref:19.8%,19.8%
-CH1 RX Vref:28.5%, TX Vref:21.8%,21.8%
-CH2 RX Vref:28.9%, TX Vref:21.8%,21.8%
-CH3 RX Vref:29.3%, TX Vref:21.8%,21.8%
-change to F1: 528MHz
-change to F2: 1068MHz
-change to F3: 1560MHz
-change to F0: 2112MHz
-out
-U-Boot SPL board init
-U-Boot SPL 2017.09-g82435751526-231214-dirty #zhangzj (Dec 14 2023 - 09:16:28)
-SPL Hotkey: ctrl+m
-unknown raw ID 0 0 0
-unrecognized JEDEC id bytes: 00, 00, 00
-Trying to boot from MMC2
-MMC: no card present
-mmc_init: -123, time 0
-spl: mmc init failed with error: -123
-Trying to boot from MMC1
-SPL: A/B-slot: _a, successful: 0, tries-remain: 7
-Trying fit image at 0x4000 sector
-## Verified-boot: 0
-## Checking atf-1 0x00040000 ... sha256(b40ce543bb...) + OK
-## Checking u-boot 0x00a00000 ... sha256(ab99852c7d...) + OK
-## Checking fdt-1 0x00b05ce8 ... sha256(17a80e0e8a...) + OK
-## Checking atf-2 0x000f0000 ... sha256(f202de33d9...) + OK
-## Checking atf-3 0xff100000 ... sha256(af08976afd...) + OK
-## Checking tee-1 0x08400000 ... sha256(617eb0ee15...) + OK
-Jumping to U-Boot(0x00a00000) via ARM Trusted Firmware(0x00040000)
-Total: 95.938/255.438 ms
-
-INFO:    Preloader serial: 2
-NOTICE:  BL31: v2.3():v2.3-616-gdc1125f48:finley.xiao
-NOTICE:  BL31: Built : 16:41:17, Jul 13 2023
-INFO:    spec: 0x1
-INFO:    ext 32k is valid
-INFO:    ddr: stride-en 4CH
-INFO:    GICv3 without legacy support detected.
-INFO:    ARM GICv3 driver initialized in EL3
-INFO:    valid_cpu_msk=0xff bcore0_rst = 0x0, bcore1_rst = 0x0
-INFO:    system boots from cpu-hwid-0
-INFO:    idle_st=0x21fff, pd_st=0x11fff9, repair_st=0xfff70001
-ERROR:   dfs get fsp_params[0] error, 0xfead0004 != 0xfead0003
-ERROR:   dfs get fsp_params[1] error, 0x1111 != 0xfead0003
-ERROR:   dfs get fsp_params[2] error, 0x0 != 0xfead0003
-ERROR:   dfs get fsp_params[3] error, 0x60241520 != 0xfead0003
-ERROR:   loader&trust unmatch!!! Please update trust if need enable dmc
-INFO:    BL31: Initialising Exception Handling Framework
-INFO:    BL31: Initializing runtime services
-INFO:    BL31: Initializing BL32
-I/TC: 
-I/TC: OP-TEE version: 3.13.0-760-g540ade275 #zhangzj (gcc version 10.2.1 20201103 (GNU Toolchain for the A-profile Architecture 10.2-2020.11 (arm-10.16))) #3 Tue Dec  5 14:36:05 CST 2023 aarch64, fwver: null 
-I/TC: OP-TEE memory: TEEOS 0x200000 TA 0xc00000 SHM 0x200000
-I/TC: Primary CPU initializing
-I/TC: Primary CPU switching to normal world boot
-INFO:    BL31: Preparing for EL3 exit to normal world
-INFO:    Entry point address = 0xa00000
-INFO:    SPSR = 0x3c9
-
-
-U-Boot 2024.01-rc4-00046-g20d0464300-dirty (Dec 14 2023 - 10:02:53 +0800)
-
-Model: Rockchip RK3588 EVB1 V10 Board
-DRAM:  8 GiB (effective 7.7 GiB)
-Core:  330 devices, 28 uclasses, devicetree: separate
-MMC:   mmc@fe2e0000: 0
-Loading Environment from nowhere... OK
-In:    serial@feb50000
-Out:   serial@feb50000
-Err:   serial@feb50000
-Model: Rockchip RK3588 EVB1 V10 Board
-Unable to get mmc desc
-Net:   eth0: ethernet@fe1b0000
-Hit any key to stop autoboot:  2  0
-=> 
-=> 
-=> 
-=> 
-=> 
-=> 
-=> 
-=> 
-=> 
 => 
 => help
 ?         - alias for 'help'
@@ -140,6 +50,7 @@ gpio      - query and control gpio pins
 gpt       - GUID Partition Table
 gzwrite   - unzip and write memory to block device
 help      - print command description/usage
+hvc       - Issue a Hypervisor Call
 iminfo    - print header information for application image
 imxtract  - extract a part of a multi-image
 itest     - return true/false on integer compare
@@ -171,14 +82,17 @@ pxe       - get and boot from pxe files
 random    - fill memory with random pattern
 regulator - uclass operations
 reset     - Perform RESET of the CPU
+rng       - print bytes from the hardware random number generator
 rtc       - RTC subsystem
 run       - run commands in an environment variable
 save      - save file to a filesystem
+saveenv   - save environment variables to persistent storage
 setenv    - set environment variables
 sf        - SPI flash sub-system
 showvar   - print local hushshell variables
 size      - determine a file's size
 sleep     - delay execution for some time
+smc       - Issue a Secure Monitor Call
 source    - run script from memory
 test      - minimal test like /bin/sh
 tftpboot  - load file via network using TFTP protocol
@@ -190,7 +104,7 @@ usbboot   - boot from USB device
 vbe       - Verified Boot for Embedded
 version   - print monitor, compiler and linker version
 => version
-U-Boot 2024.01-rc4-00046-g20d0464300-dirty (Dec 14 2023 - 10:02:53 +0800)
+U-Boot 2024.01-rc5-g40e0647209-dirty (Jan 04 2024 - 13:43:31 +0800)
 
 aarch64-linux-gnu-gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0
 GNU ld (GNU Binutils for Ubuntu) 2.34
@@ -199,17 +113,20 @@ arch=arm
 baudrate=1500000
 board=evb_rk3588
 board_name=evb_rk3588
-boot_targets=mmc1 mmc0 nvme scsi usb pxe dhcp spi
+boot_targets=usb0
 bootcmd=bootflow scan -lb
 bootdelay=2
 cpu=armv8
 cpuid#=41325041440000000000000000160f16
+dfu_alt_info=mmc 0=u-boot.itb raw 0x4000 0x2000
 eth1addr=aa:b3:c9:36:ca:51
 ethaddr=aa:b3:c9:36:ca:50
 fdt_addr_r=0x0a100000
-fdtcontroladdr=ede9ca80
+fdtcontroladdr=edeb0a00
 fdtfile=rockchip/rk3588-evb1-v10.dtb
 fdtoverlay_addr_r=0x02000000
+fileaddr=2080000
+filesize=1d0af1
 kernel_addr_r=0x02080000
 kernel_comp_addr_r=0x08000000
 kernel_comp_size=0x2000000
@@ -227,11 +144,30 @@ stdin=serial@feb50000
 stdout=serial@feb50000
 vendor=rockchip
 
-Environment size: 1016/126972 bytes
+Environment size: 1065/32764 bytes
 => printenv -e
-No EFI system partition
-No EFI system partition
-Failed to persist EFI variables
+PlatformLang:
+    8be4df61-93ca-11d2-aa0d-00e098032b8c (EFI_GLOBAL_VARIABLE_GUID)
+    NV|BS|RT, DataSize = 0x6
+    00000000: 65 6e 2d 55 53 00                                en-US.
+AuthVarDER:
+    15edf297-e832-4d30-8200-a525a931e33e (15edf297-e832-4d30-8200-a525a931e33e)
+    2012-07-02 16:56:46
+    NV|BS|RT|AT, DataSize = 0xa
+    00000000: 30 31 32 33 34 35 36 37 38 38                    0123456788
+AuthVarDER01:
+    15edf297-e832-4d30-8200-a525a931e33e (15edf297-e832-4d30-8200-a525a931e33e)
+    2012-11-15 09:32:28
+    NV|BS|RT|AT, DataSize = 0xa
+    00000000: 30 31 32 33 34 35 36 37 38 39                    0123456789
+FmpState0001:
+    5452a04a-462d-4433-9778-2b5259277bb3 (5452a04a-462d-4433-9778-2b5259277bb3)
+    NV|BS|RT|RO, DataSize = 0x10
+    00000000: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+ExitBootServicesTestVariable:
+    f6fab04f-acaf-4af3-b9fa-dcf97fb4426f (f6fab04f-acaf-4af3-b9fa-dcf97fb4426f)
+    NV|BS|RT, DataSize = 0x8
+    00000000: 02 00 00 00 00 00 00 80                          ........
 SecureBoot:
     8be4df61-93ca-11d2-aa0d-00e098032b8c (EFI_GLOBAL_VARIABLE_GUID)
     BS|RT|RO, DataSize = 0x1
@@ -255,10 +191,6 @@ VendorKeys:
 PlatformLangCodes:
     8be4df61-93ca-11d2-aa0d-00e098032b8c (EFI_GLOBAL_VARIABLE_GUID)
     BS|RT|RO, DataSize = 0x6
-    00000000: 65 6e 2d 55 53 00                                en-US.
-PlatformLang:
-    8be4df61-93ca-11d2-aa0d-00e098032b8c (EFI_GLOBAL_VARIABLE_GUID)
-    NV|BS|RT, DataSize = 0x6
     00000000: 65 6e 2d 55 53 00                                en-US.
 OsIndicationsSupported:
     8be4df61-93ca-11d2-aa0d-00e098032b8c (EFI_GLOBAL_VARIABLE_GUID)
@@ -286,22 +218,22 @@ flashstart  = 0x0000000000000000
 flashsize   = 0x0000000000000000
 flashoffset = 0x0000000000000000
 baudrate    = 1500000 bps
-relocaddr   = 0x00000000efed7000
-reloc off   = 0x00000000ef4d7000
+relocaddr   = 0x00000000efed4000
+reloc off   = 0x00000000ef4d4000
 Build       = 64-bit
 current eth = ethernet@fe1b0000
 ethaddr     = aa:b3:c9:36:ca:50
 IP addr     = <NULL>
-fdt_blob    = 0x00000000ede9ca80
-new_fdt     = 0x00000000ede9ca80
-fdt_size    = 0x000000000001b320
+fdt_blob    = 0x00000000edeb0a00
+new_fdt     = 0x00000000edeb0a00
+fdt_size    = 0x000000000001b3a0
 lmb_dump_all:
  memory.cnt = 0x2 / max = 0x10
  memory[0]	[0x200000-0xefffffff], 0xefe00000 bytes flags: 0
  memory[1]	[0x100000000-0x1ffffffff], 0x100000000 bytes flags: 0
  reserved.cnt = 0x3 / max = 0x10
- reserved[0]	[0xb05ce8-0xb20fff], 0x0001b318 bytes flags: 0
- reserved[1]	[0xece5a000-0xefffffff], 0x031a6000 bytes flags: 0
+ reserved[0]	[0xb08c60-0xb23fff], 0x0001b3a0 bytes flags: 0
+ reserved[1]	[0xece6e000-0xefffffff], 0x03192000 bytes flags: 0
  reserved[2]	[0x100000000-0x1ffffffff], 0x100000000 bytes flags: 0
 devicetree  = separate
 serial addr = 0x00000000feb50000
@@ -311,119 +243,14 @@ serial addr = 0x00000000feb50000
  clock      = 0x00000000016e3600
 arch_number = 0x0000000000000000
 TLB addr    = 0x00000000efff0000
-irq_sp      = 0x00000000ede9ca70
-sp start    = 0x00000000ede9ca70
-Early malloc usage: ac8 / 80000
+irq_sp      = 0x00000000edeb09f0
+sp start    = 0x00000000edeb09f0
+Early malloc usage: ad0 / 80000
 => rtc list
 RTC #0 - rtc_emul
 => sf probe
 Invalid bus 0 (err=-19)
-"Synchronous Abort" handler, esr 0x96000021, far 0x4a
-elr: 0000000000a388c4 lr : 0000000000a20280 (reloc)
-elr: 00000000eff0f8c4 lr : 00000000efef7280
-x0 : 0000000000000002 x1 : 0000000000000000
-x2 : 000000000000000a x3 : 00000000feb50000
-x4 : 00000000feb50000 x5 : 00000000ede9bff8
-x6 : 0000000000000039 x7 : 0000000000000000
-x8 : 0000000000000001 x9 : 00000000000186a0
-x10: 000000000000000d x11: 0000000000000006
-x12: 000000000001869f x13: 00000000f0000000
-x14: 00000000fffffffe x15: 00000000ede9c1cc
-x16: 00000000eff279ec x17: 0000000000000000
-x18: 00000000edeb7da0 x19: 0000000000000000
-x20: 0000000000000000 x21: 0000000000000000
-x22: 0000000000000000 x23: 00000000effdd000
-x24: 0000000000000001 x25: 00000000000f4240
-x26: 00000000ffffffed x27: 0000000000000000
-x28: 00000000edefb4c0 x29: 00000000ede9c6e0
-
-Code: b4000040 f9401c00 d65f03c0 b4000040 (f9402400) 
-Resetting CPU ...
-
-resetting ...
-DDR d5483af87d cym 23/11/23-16:15:24,fwver: v1.15
-LPDDR4X, 2112MHz
-channel[0] BW=16 Col=10 Bk=8 CS0 Row=16 CS1 Row=16 CS=2 Die BW=16 Size=2048MB
-channel[1] BW=16 Col=10 Bk=8 CS0 Row=16 CS1 Row=16 CS=2 Die BW=16 Size=2048MB
-channel[2] BW=16 Col=10 Bk=8 CS0 Row=16 CS1 Row=16 CS=2 Die BW=16 Size=2048MB
-channel[3] BW=16 Col=10 Bk=8 CS0 Row=16 CS1 Row=16 CS=2 Die BW=16 Size=2048MB
-Manufacturer ID:0x1
-CH0 RX Vref:27.9%, TX Vref:19.8%,19.8%
-CH1 RX Vref:28.5%, TX Vref:21.8%,21.8%
-CH2 RX Vref:28.5%, TX Vref:20.8%,20.8%
-CH3 RX Vref:29.3%, TX Vref:21.8%,21.8%
-change to F1: 528MHz
-change to F2: 1068MHz
-change to F3: 1560MHz
-change to F0: 2112MHz
-out
-U-Boot SPL board init
-U-Boot SPL 2017.09-g82435751526-231214-dirty #zhangzj (Dec 14 2023 - 09:16:28)
-unknown raw ID 0 0 0
-unrecognized JEDEC id bytes: 00, 00, 00
-Trying to boot from MMC2
-MMC: no card present
-mmc_init: -123, time 0
-spl: mmc init failed with error: -123
-Trying to boot from MMC1
-SPL: A/B-slot: _a, successful: 0, tries-remain: 7
-Trying fit image at 0x4000 sector
-## Verified-boot: 0
-## Checking atf-1 0x00040000 ... sha256(b40ce543bb...) + OK
-## Checking u-boot 0x00a00000 ... sha256(ab99852c7d...) + OK
-## Checking fdt-1 0x00b05ce8 ... sha256(17a80e0e8a...) + OK
-## Checking atf-2 0x000f0000 ... sha256(f202de33d9...) + OK
-## Checking atf-3 0xff100000 ... sha256(af08976afd...) + OK
-## Checking tee-1 0x08400000 ... sha256(617eb0ee15...) + OK
-Jumping to U-Boot(0x00a00000) via ARM Trusted Firmware(0x00040000)
-Total: 95.790/255.372 ms
-
-INFO:    Preloader serial: 2
-NOTICE:  BL31: v2.3():v2.3-616-gdc1125f48:finley.xiao
-NOTICE:  BL31: Built : 16:41:17, Jul 13 2023
-INFO:    spec: 0x1
-INFO:    ext 32k is valid
-INFO:    ddr: stride-en 4CH
-INFO:    GICv3 without legacy support detected.
-INFO:    ARM GICv3 driver initialized in EL3
-INFO:    valid_cpu_msk=0xff bcore0_rst = 0x0, bcore1_rst = 0x0
-INFO:    system boots from cpu-hwid-0
-INFO:    idle_st=0x21fff, pd_st=0x11fff9, repair_st=0xfff70001
-ERROR:   dfs get fsp_params[0] error, 0xfead0004 != 0xfead0003
-ERROR:   dfs get fsp_params[1] error, 0x1111 != 0xfead0003
-ERROR:   dfs get fsp_params[2] error, 0x0 != 0xfead0003
-ERROR:   dfs get fsp_params[3] error, 0x60241520 != 0xfead0003
-ERROR:   loader&trust unmatch!!! Please update trust if need enable dmc
-INFO:    BL31: Initialising Exception Handling Framework
-INFO:    BL31: Initializing runtime services
-INFO:    BL31: Initializing BL32
-I/TC: 
-I/TC: OP-TEE version: 3.13.0-760-g540ade275 #zhangzj (gcc version 10.2.1 20201103 (GNU Toolchain for the A-profile Architecture 10.2-2020.11 (arm-10.16))) #3 Tue Dec  5 14:36:05 CST 2023 aarch64, fwver: null 
-I/TC: OP-TEE memory: TEEOS 0x200000 TA 0xc00000 SHM 0x200000
-I/TC: Primary CPU initializing
-I/TC: Primary CPU switching to normal world boot
-INFO:    BL31: Preparing for EL3 exit to normal world
-INFO:    Entry point address = 0xa00000
-INFO:    SPSR = 0x3c9
-
-
-U-Boot 2024.01-rc4-00046-g20d0464300-dirty (Dec 14 2023 - 10:02:53 +0800)
-
-Model: Rockchip RK3588 EVB1 V10 Board
-DRAM:  8 GiB (effective 7.7 GiB)
-Core:  330 devices, 28 uclasses, devicetree: separate
-MMC:   mmc@fe2e0000: 0
-Loading Environment from nowhere... OK
-In:    serial@feb50000
-Out:   serial@feb50000
-Err:   serial@feb50000
-Model: Rockchip RK3588 EVB1 V10 Board
-Unable to get mmc desc
-Net:   eth0: ethernet@fe1b0000
-Hit any key to stop autoboot:  2  0 
-=> 
-=> 
-=> 
+Failed to initialize SPI flash at 0:0 (error -19)
 => usb reset
 resetting USB...
 Bus usb@fc800000: USB EHCI 1.00
@@ -492,13 +319,13 @@ Device: mmc@fe2e0000
 Manufacturer ID: 70
 OEM: 0
 Name: TX2932 
-Bus Speed: 52000000
-Mode: MMC High Speed (52MHz)
+Bus Speed: 200000000
+Mode: HS400ES (200MHz)
 Rd Block Len: 512
 MMC version 5.1
 High Capacity: Yes
 Capacity: 29.1 GiB
-Bus Width: 8-bit
+Bus Width: 8-bit DDR
 Erase Group Size: 512 KiB
 HC WP Group Size: 8 MiB
 User Capacity: 29.1 GiB
@@ -507,9 +334,6 @@ RPMB Capacity: 4 MiB ENH
 Boot area 0 is not write protected
 Boot area 1 is not write protected
 => efidebug devices
-No EFI system partition
-No EFI system partition
-Failed to persist EFI variables
 efidebug - Configure UEFI environment
 
 Usage:
@@ -558,10 +382,10 @@ efidebug query [-nv][-bs][-rt][-at]
 => efidebug drivers
 Driver           Name                 Image Path
 ================ ==================== ====================
-00000000edef64f0 <NULL>               <built-in>
+00000000edf0a5f0 <NULL>               <built-in>
 => efidebug dh
 
-00000000edef6170
+00000000edf0a270
   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b)
   Device Path To Text
   Device Path Utilities
@@ -572,80 +396,81 @@ Driver           Name                 Image Path
   Simple Text Output
   Simple Text Input
   Simple Text Input Ex
+  Random Number Generator
 
-00000000effe4930
+00000000effe48b8
   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b,0000000000000000)/Uart(0,0,D,D)
 
-00000000edef64f0
+00000000edf0a5f0
   Driver Binding
 
-00000000edf1db40 (mmc@fe2e0000.blk)
+00000000edf0bb90 (mmc@fe2e0000.blk)
   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b,0000000000000000)/eMMC(0)/eMMC(0)
   Block IO
 
-00000000edf1dcf0 (mmc@fe2e0000.blk:1)
+00000000edf0bd00 (mmc@fe2e0000.blk:1)
   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b,0000000000000000)/eMMC(0)/eMMC(0)/HD(1,GPT,5a30833f-8c43-47b1-a41d-84d40883d0c6,0x4000,0x2000)
   Block IO
 
-00000000edf1e0b0 (mmc@fe2e0000.blk:2)
+00000000edf0c0c0 (mmc@fe2e0000.blk:2)
   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b,0000000000000000)/eMMC(0)/eMMC(0)/HD(2,GPT,67ad7741-4638-47c6-a488-d396583e582a,0x6000,0x2000)
   Block IO
 
-00000000edf1e910 (mmc@fe2e0000.blk:3)
+00000000edf0c920 (mmc@fe2e0000.blk:3)
   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b,0000000000000000)/eMMC(0)/eMMC(0)/HD(3,GPT,7a3f0000-0000-446a-8000-702f00006273,0x8000,0x20000)
   Block IO
   Simple File System
 
-00000000edf1f190 (mmc@fe2e0000.blk:4)
+00000000edf0d200 (mmc@fe2e0000.blk:4)
   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b,0000000000000000)/eMMC(0)/eMMC(0)/HD(4,GPT,e582484a-9010-404a-899d-47bd16ba3fa8,0x28000,0x40000)
   Block IO
 
-00000000edf1fe10 (mmc@fe2e0000.blk:5)
+00000000edf0de40 (mmc@fe2e0000.blk:5)
   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b,0000000000000000)/eMMC(0)/eMMC(0)/HD(5,GPT,dc11277f-eb7f-42d9-8027-a83b14220e50,0x68000,0x10000)
   Block IO
 
-00000000edf206a0 (mmc@fe2e0000.blk:6)
+00000000edf0e6a0 (mmc@fe2e0000.blk:6)
   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b,0000000000000000)/eMMC(0)/eMMC(0)/HD(6,GPT,614e0000-0000-4b53-8000-1d28000054a9,0x78000,0x1c00000)
   Block IO
   Simple File System
 
-00000000edf20f10 (mmc@fe2e0000.blk:7)
+00000000edf0ef50 (mmc@fe2e0000.blk:7)
   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b,0000000000000000)/eMMC(0)/eMMC(0)/HD(7,GPT,a26ad83c-802b-4321-ac9b-b7d356d112af,0x1c78000,0x40000)
   Block IO
+  system
+  Simple File System
 
-00000000edf21c00 (mmc@fe2e0000.blk:8)
+00000000edf0f1b0 (mmc@fe2e0000.blk:8)
   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b,0000000000000000)/eMMC(0)/eMMC(0)/HD(8,GPT,48c6a675-3744-45f6-d7ff-474449eeb98e,0x1cb8000,0x1d91fdf)
   Block IO
 
-00000000edf22560
+00000000edf14f50
   Firmware Management
 
-00000000edf22c60
+00000000edf150f0
   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b,0000000000000000)/MAC(aab3c936ca50,1)
   Simple Network
   PXE Base Code
 => efidebug memmap
 Type             Start            End              Attributes
 ================ ================ ================ ==========
-CONVENTIONAL     0000000000200000-00000000ece5a000 WB
-BOOT DATA        00000000ece5a000-00000000ece5f000 WB
-RUNTIME DATA     00000000ece5f000-00000000ece60000 WB|RT
-BOOT DATA        00000000ece60000-00000000ece63000 WB
-RUNTIME DATA     00000000ece63000-00000000ece65000 WB|RT
-BOOT DATA        00000000ece65000-00000000ece66000 WB
-RUNTIME DATA     00000000ece66000-00000000ece86000 WB|RT
-BOOT DATA        00000000ece86000-00000000ece98000 WB
-RUNTIME DATA     00000000ece98000-00000000ece99000 WB|RT
-BOOT DATA        00000000ece99000-00000000ece9c000 WB
-BOOT CODE        00000000ece9c000-00000000efed0000 WB
+CONVENTIONAL     0000000000200000-00000000ece6e000 WB
+BOOT DATA        00000000ece6e000-00000000ece73000 WB
+RUNTIME DATA     00000000ece73000-00000000ece74000 WB|RT
+BOOT DATA        00000000ece74000-00000000ece77000 WB
+RUNTIME DATA     00000000ece77000-00000000ece79000 WB|RT
+BOOT DATA        00000000ece79000-00000000ece7a000 WB
+RUNTIME DATA     00000000ece7a000-00000000ece9b000 WB|RT
+BOOT DATA        00000000ece9b000-00000000eceb0000 WB
+BOOT CODE        00000000eceb0000-00000000efed0000 WB
 RUNTIME CODE     00000000efed0000-00000000efee0000 WB|RT
 BOOT CODE        00000000efee0000-00000000f0000000 WB
 BOOT DATA        0000000100000000-0000000200000000 WB
 => efidebug tables
-00000000ece62040  36122546-f7ef-4c8f-bd9b-eb8525b50c0b  EFI Conformance Profiles Table
-00000000ece5d040  b122a263-3661-4f68-9929-78f8b0d62180  EFI System Resource Table
-00000000ece5f040  eb66918a-7eef-402a-842e-931d21c38ae9  Runtime properties
-00000000ece98000  eb9d2d31-2d88-11d3-9a16-0090273fc14d  SMBIOS table
+00000000ece76040  36122546-f7ef-4c8f-bd9b-eb8525b50c0b  EFI Conformance Profiles Table
+00000000ece71040  b122a263-3661-4f68-9929-78f8b0d62180  EFI System Resource Table
+00000000ece73040  eb66918a-7eef-402a-842e-931d21c38ae9  Runtime properties
+00000000ece9a000  eb9d2d31-2d88-11d3-9a16-0090273fc14d  SMBIOS table
 => efidebug query
 Error: Cannot query UEFI variables, r = 2
 => efidebug boot dump
@@ -664,19 +489,19 @@ ESRT: last_attempt_version=0
 ESRT: last_attempt_status=success
 ========================================
 => bootefi hello ${fdtcontroladdr}
-Booting /MemoryMapped(0x0,0xeff74460,0x31b0)
+Booting /MemoryMapped(0x0,0xeff732c0,0x31b0)
 Hello, world!
 Running on UEFI 2.10
 Have SMBIOS table
 Have device tree
 Load options: <none>
 File path: <none>
-Boot device: /MemoryMapped(0x0,0xeff74460,0x31b0)
+Boot device: /MemoryMapped(0x0,0xeff732c0,0x31b0)
 => bootefi selftest ${fdtcontroladdr}
 
 Testing EFI API implementation
 
-Number of tests to execute: 40
+Number of tests to execute: 41
 
 Setting up 'block device'
 Setting up 'block device' succeeded
@@ -871,27 +696,41 @@ Executing 'register protocol notify' succeeded
 Tearing down 'register protocol notify'
 Tearing down 'register protocol notify' succeeded
 
+Setting up 'random number generator'
+Setting up 'random number generator' succeeded
+
+Executing 'random number generator'
+Executing 'random number generator' succeeded
+
 Setting up 'real time clock'
 Setting up 'real time clock' succeeded
 
 Executing 'real time clock'
-Time according to real time clock: 2023-12-14 02:02:53
+Time according to real time clock: 2024-01-04 05:43:31
 Executing 'real time clock' succeeded
 
 Setting up 'simple network protocol'
-ethernet@fe1b0000 Waiting for PHY auto negotiation to complete......... TIMEOUT !
-phy_startup() failed: -110FAILED: -110lib/efi_selftest/efi_selftest_snp.c(269):
-ERROR: Failed to initialize network adapter
-lib/efi_selftest/efi_selftest.c(89):
-ERROR: Setting up 'simple network protocol' failed
+ethernet@fe1b0000 Waiting for PHY auto negotiation to complete........ done
+Setting up 'simple network protocol' succeeded
+
+Executing 'simple network protocol'
+DHCP Discover
+DHCP Discover
+DHCP Discover
+DHCP Discover
+DHCP Discover
+DHCP Discover
+DHCP Discover
+DHCP Discover
+DHCP Discover
+DHCP Discover
+lib/efi_selftest/efi_selftest_snp.c(353):
+ERROR: Timeout occurred
+lib/efi_selftest/efi_selftest.c(114):
+ERROR: Executing 'simple network protocol' failed
 
 Tearing down 'simple network protocol'
-lib/efi_selftest/efi_selftest_snp.c(456):
-ERROR: Failed to shut down network adapter
-lib/efi_selftest/efi_selftest_snp.c(460):
-ERROR: Failed to shutdown network adapter
-lib/efi_selftest/efi_selftest.c(139):
-ERROR: Tearing down 'simple network protocol' failed
+Tearing down 'simple network protocol' succeeded
 
 Setting up 'start image return'
 Setting up 'start image return' succeeded
@@ -934,7 +773,7 @@ Color palette
 000000000000000f000000000000001f000000000000002f000000000000003f000000000000004f000000000000005f000000000000006f000000000000007f
 Testing cursor column update
 
-123ðð
+123ï¿½ï¿½
 Executing 'text output' succeeded
 
 Setting up 'task priority levels'
@@ -995,6 +834,6 @@ Executing 'variables at runtime' succeeded
 Executing 'virtual address map'
 Executing 'virtual address map' succeeded
 
-Summary: 2 failures
+Summary: 1 failures
 
 Preparing for reset. Press any key...

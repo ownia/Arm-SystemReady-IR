@@ -1,0 +1,20 @@
+INFO run_identify: Identified as SystemReady IR v2.1 with SIE.
+INFO <module>: Detected version is SystemReady IR v2.1 with SIE
+WARNING if_contains: `-dirty' found in `/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3588X_ir_2.1/reports//acs-console.log' at line 18: `U-Boot SPL 2017.09-g82435751526-231214-dirty #zhangzj (Dec 14 2023 - 09:16:28)' (warning once)
+ERROR check_file_contains: Could not find `Failure:|0|' in `/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3588X_ir_2.1/reports//acs_results/result.md'
+INFO identify_guid: GUID `5452a04a-462d-4433-9778-2b5259277bb3' unknown, in `/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3588X_ir_2.1/reports//acs_results/app_output/CapsuleApp_ESRT_table_info.log'
+ERROR check_devicetree: 19 dt-parser error no schema with `/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3588X_ir_2.1/reports//acs_results/uefi/BsaDevTree.dtb.log'!
+ERROR check_devicetree: 6 dt-parser error no yaml schema with `/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3588X_ir_2.1/reports//acs_results/uefi/BsaDevTree.dtb.log'!
+ERROR check_file_contains: Could not find `/HD(3,GPT,' in `/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3588X_ir_2.1/reports//acs_results/uefi_dump/map.log'
+ERROR check_file_contains: Could not find `Failure:|0|' in `/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3588X_ir_2.1/reports//acs_results/SIE/result.md'
+WARNING if_contains: `-dirty' found in `/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3588X_ir_2.1/reports//fw/u-boot-sniff.log' at line 107: `U-Boot 2024.01-rc5-g40e0647209-dirty (Jan 04 2024 - 13:43:31 +0800)' (warning once)
+INFO check_uefi_sniff: Found ESP `HD(1,GPT,9243297a-4de6-4110-a7fe-d09a91cb21ac,0x800,0x4b000)'
+INFO check_uefi_capsule: Capsule GUID `5452a04a-462d-4433-9778-2b5259277bb3' is unknown, in `/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3588X_ir_2.1/reports//fw/capsule1.bin'
+ERROR check_tree: `/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3588X_ir_2.1/reports//os-logs/linux-distro3-version/*console.log' missing
+ERROR check_tree: `/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3588X_ir_2.1/reports//os-logs/linux-distro3-version/*sys-firmware.tar.gz' missing
+ERROR check_tree: `/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3588X_ir_2.1/reports//os-logs/linux-distro2-version/*console.log' missing
+ERROR check_tree: `/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3588X_ir_2.1/reports//os-logs/linux-distro2-version/*sys-firmware.tar.gz' missing
+ERROR check_tree: `/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3588X_ir_2.1/reports//os-logs/linux-distro1-version/*console.log' missing
+ERROR check_tree: `/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3588X_ir_2.1/reports//os-logs/linux-distro1-version/*sys-firmware.tar.gz' missing
+ERROR check_file_contains: Could not find `EFI stub: UEFI Secure Boot is enabled.' in `/home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3588X_ir_2.1/reports//sie-console.log'
+INFO <module>: 565 checks, 551 pass, 2 warnings, 12 errors
