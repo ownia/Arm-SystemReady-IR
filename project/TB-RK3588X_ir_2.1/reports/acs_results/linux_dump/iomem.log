@@ -1,22 +1,24 @@
 0010f000-0010f0ff : 10f000.sram sram@10f000
-00200000-00b07fff : System RAM
-00b08000-00b23fff : reserved
-00b24000-ece72fff : System RAM
-  24f80000-26ecffff : Kernel code
-  26ed0000-27b1ffff : reserved
-  27b20000-2818ffff : Kernel data
-  b0ad0000-b0ae9fff : reserved
-  b0cf1000-b0cf1fff : reserved
-  b0cf3000-b0cf3fff : reserved
-  b0cf4000-b0cf4fff : reserved
-  e8e46000-ece64fff : reserved
-  ece71000-ece71fff : reserved
-ece73000-ece73fff : reserved
-ece74000-ece76fff : System RAM
-ece77000-ece78fff : reserved
-ece79000-ece79fff : System RAM
-ece7a000-ece9afff : reserved
-ece9b000-efecffff : System RAM
+00200000-00b06fff : System RAM
+00b07000-00b21fff : reserved
+00b22000-083fffff : System RAM
+08400000-093fffff : reserved
+09400000-ece75fff : System RAM
+  62e40000-64d8ffff : Kernel code
+  64d90000-659dffff : reserved
+  659e0000-6604ffff : Kernel data
+  ab930000-ab948fff : reserved
+  aed56000-aed56fff : reserved
+  aed57000-aed57fff : reserved
+  aed58000-aed72fff : reserved
+  e8e4a000-ece67fff : reserved
+  ece74000-ece74fff : reserved
+ece76000-ece76fff : reserved
+ece77000-ece79fff : System RAM
+ece7a000-ece7bfff : reserved
+ece7c000-ece7cfff : System RAM
+ece7d000-ece9dfff : reserved
+ece9e000-efecffff : System RAM
   ede00000-efdfffff : reserved
 efed0000-efedffff : reserved
 efee0000-efffffff : System RAM
@@ -25,6 +27,7 @@ fc840000-fc87ffff : fc840000.usb usb@fc840000
 fc880000-fc8bffff : fc880000.usb usb@fc880000
 fc8c0000-fc8fffff : fc8c0000.usb usb@fc8c0000
 fd600000-fd6fffff : fd600000.sram sram@fd600000
+fd880000-fd880fff : fd880000.i2c i2c@fd880000
 fd8a0000-fd8a00ff : fd8a0000.gpio gpio@fd8a0000
 fd8b0020-fd8b002f : fd8b0020.pwm pwm@fd8b0020
 fe1b0000-fe1bffff : fe1b0000.ethernet ethernet@fe1b0000
@@ -58,9 +61,10 @@ ff001000-ff0effff : ff001000.sram sram@ff001000
   100310000-10031ffff : reserved
   100320000-10032ffff : reserved
   1f6400000-1febfffff : reserved
-  1fec29000-1fece8fff : reserved
-  1fece9000-1fece9fff : reserved
-  1fecea000-1fede1fff : reserved
-  1fede3000-1fede6fff : reserved
-  1fede7000-1fedfafff : reserved
-  1fedfb000-1ffffffff : reserved
+  1fec36000-1fecf5fff : reserved
+  1fecf6000-1fecf6fff : reserved
+  1fecf7000-1fedeefff : reserved
+  1fedf0000-1fedf1fff : reserved
+  1fedf2000-1fedf4fff : reserved
+  1fedf5000-1fee08fff : reserved
+  1fee09000-1ffffffff : reserved

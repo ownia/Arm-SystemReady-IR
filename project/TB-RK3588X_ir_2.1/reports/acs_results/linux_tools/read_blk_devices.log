@@ -108,9 +108,9 @@ INFO: mmcblk0p7 partition is PRECIOUS.
       EFI System partition : C12A7328-F81F-11D2-BA4B-00A0C93EC93B
       Skipping block read...
 
-INFO: Partition : /dev/mmcblk0p8 Partition type GUID : 9EE35D5B-1534-498D-ACA1-2EA95D08AFB2 "Platform required bit" : 0
-INFO: Performing block read on /dev/mmcblk0p8 part_guid = 9EE35D5B-1534-498D-ACA1-2EA95D08AFB2
-INFO: Block read on /dev/mmcblk0p8 part_guid = 9EE35D5B-1534-498D-ACA1-2EA95D08AFB2 successful
+INFO: Partition : /dev/mmcblk0p8 Partition type GUID : 0FC63DAF-8483-4772-8E79-3D69D8477DE4 "Platform required bit" : 0
+INFO: Performing block read on /dev/mmcblk0p8 part_guid = 0FC63DAF-8483-4772-8E79-3D69D8477DE4
+INFO: Block read on /dev/mmcblk0p8 part_guid = 0FC63DAF-8483-4772-8E79-3D69D8477DE4 successful
 
 ********************************************************************************************************************************
 

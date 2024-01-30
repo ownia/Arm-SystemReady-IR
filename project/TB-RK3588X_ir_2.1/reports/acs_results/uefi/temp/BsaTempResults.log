@@ -36,10 +36,9 @@ Operating System View:
    8 : Check EL1 and EL0 implementation           : Result:  PASS 
    9 : Check for PMU and PMU counters             : Result:  PASS 
   10 : Check PMU Overflow signal             
-       Invalid Interrupt ID number 0x620075 
-       GIC Install Handler Failed...
+       Interrupt not recieved within timeout
        Failed on PE -    0
-       Checkpoint --  1                           : Result:  FAIL 
+       Checkpoint --  2                           : Result:  FAIL 
   11 : Check num of Breakpoints and type          : Result:  PASS 
   12 : Check Synchronous Watchpoints              : Result:  PASS 
   13 : Check CRC32 instruction support            : Result:  PASS 

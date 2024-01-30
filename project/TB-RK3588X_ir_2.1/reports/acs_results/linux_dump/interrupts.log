@@ -1,10 +1,10 @@
            CPU0       CPU1       CPU2       CPU3       CPU4       CPU5       CPU6       CPU7       
  18:          0          0          0          0          0          0          0          0     GICv3  25 Level     vgic
- 19:       1437        669        444        643        854       1242        706        758     GICv3  26 Level     arch_timer
+ 19:       1234        581        593        676        604        669        985        626     GICv3  26 Level     arch_timer
  20:          0          0          0          0          0          0          0          0     GICv3  27 Level     kvm guest vtimer
  23:          0          0          0          0          0          0          0          0     GICv3  30 Level     kvm guest ptimer
- 25:       1594       1041        266        550        798        462        352        631     GICv3 321 Level     rk_timer
- 31:          3          0          0          0          0          0          0          0     GICv3 423 Level     rockchip_usb2phy
+ 25:        852        391        214        353        237        384        269        506     GICv3 321 Level     rk_timer
+ 31:          2          0          0          0          0          0          0          0     GICv3 423 Level     rockchip_usb2phy
  32:          2          0          0          0          0          0          0          0     GICv3 424 Level     rockchip_usb2phy
  33:          0          0          0          0          0          0          0          0     GICv3 118 Level     fea10000.dma-controller
  34:          0          0          0          0          0          0          0          0     GICv3 119 Level     fea10000.dma-controller
@@ -12,24 +12,25 @@
  36:          0          0          0          0          0          0          0          0     GICv3 121 Level     fea30000.dma-controller
  37:          0          0          0          0          0          0          0          0     GICv3 122 Level     fed10000.dma-controller
  38:          0          0          0          0          0          0          0          0     GICv3 123 Level     fed10000.dma-controller
- 39:        307          0          0          0          0          0          0          0     GICv3 365 Level     ttyS2
+ 39:        268          0          0          0          0          0          0          0     GICv3 365 Level     ttyS2
  40:          0          0          0          0          0          0          0          0     GICv3 360 Level     feb20000.spi
- 41:          0          0          0          0          0          0          0          0     GICv3 351 Level     feaa0000.i2c
- 42:          0          0          0          0          0          0          0          0     GICv3 347 Edge      feaf0000.watchdog
- 43:       1499          0          0          0          0          0          0          0     GICv3 237 Level     mmc0
- 44:          0          0          0          0          0          0          0          0  GICv3-23   0 Level     arm-pmu
- 45:          0          0          0          0          0          0          0          0  GICv3-23   1 Level     arm-pmu
- 46:          0          0          0          0          0          0          0          0     GICv3 247 Level     ehci_hcd:usb1
- 47:       4715          0          0          0          0          0          0          0     GICv3 250 Level     ehci_hcd:usb2
- 48:          0          0          0          0          0          0          0          0     GICv3 248 Level     ohci_hcd:usb4
- 49:          0          0          0          0          0          0          0          0     GICv3 251 Level     ohci_hcd:usb3
- 50:          6          0          0          0          0          0          0          0     GICv3 259 Level     eth0
- 51:          0          0          0          0          0          0          0          0     GICv3 258 Level     eth0
-IPI0:       109        111        176        155         93        156        273        147       Rescheduling interrupts
-IPI1:       990       1211       1011       1882       1896       2468       1332       2052       Function call interrupts
+ 41:         54          0          0          0          0          0          0          0     GICv3 349 Level     fd880000.i2c
+ 42:          0          0          0          0          0          0          0          0     GICv3 351 Level     feaa0000.i2c
+ 43:          0          0          0          0          0          0          0          0     GICv3 347 Edge      feaf0000.watchdog
+ 44:       1071          0          0          0          0          0          0          0     GICv3 237 Level     mmc0
+ 45:          0          0          0          0          0          0          0          0  GICv3-23   0 Level     arm-pmu
+ 46:          0          0          0          0          0          0          0          0  GICv3-23   1 Level     arm-pmu
+ 47:          0          0          0          0          0          0          0          0     GICv3 247 Level     ehci_hcd:usb1
+ 48:       4494          0          0          0          0          0          0          0     GICv3 250 Level     ehci_hcd:usb3
+ 49:          0          0          0          0          0          0          0          0     GICv3 248 Level     ohci_hcd:usb2
+ 50:          0          0          0          0          0          0          0          0     GICv3 251 Level     ohci_hcd:usb4
+ 51:          5          0          0          0          0          0          0          0     GICv3 259 Level     eth0
+ 52:          0          0          0          0          0          0          0          0     GICv3 258 Level     eth0
+IPI0:       105        178         85        157        176        344        143         96       Rescheduling interrupts
+IPI1:      1140       2036       2321        929       1202       1147       1038       1038       Function call interrupts
 IPI2:         0          0          0          0          0          0          0          0       CPU stop interrupts
 IPI3:         0          0          0          0          0          0          0          0       CPU stop (for crash dump) interrupts
-IPI4:       165        399        287        392        338        322        336        389       Timer broadcast interrupts
+IPI4:       144        234        255        280        248        316        234        409       Timer broadcast interrupts
 IPI5:         0          0          0          0          0          0          0          0       IRQ work interrupts
 IPI6:         0          0          0          0          0          0          0          0       CPU wake-up interrupts
 Err:          0
