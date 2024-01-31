@@ -3,7 +3,6 @@ qemu-console.log
 test.its
 tests.itb
 CRT*
-capsule1.bin
 signed_capsule.bin
 unauth.bin
 tampered.bin
