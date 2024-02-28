@@ -19,7 +19,7 @@
 |   |-- ram7 -> ../devices/virtual/block/ram7
 |   |-- ram8 -> ../devices/virtual/block/ram8
 |   |-- ram9 -> ../devices/virtual/block/ram9
-|   `-- sda -> ../devices/platform/fc880000.usb/usb3/3-1/3-1:1.0/host0/target0:0:0/0:0:0:0/block/sda
+|   `-- sda -> ../devices/platform/fc880000.usb/usb2/2-1/2-1:1.0/host0/target0:0:0/0:0:0:0/block/sda
 |-- bus
 |   |-- amba
 |   |   |-- devices
@@ -498,7 +498,6 @@
 |   |   |   |-- fe1b0000.ethernet -> ../../../devices/platform/fe1b0000.ethernet
 |   |   |   |-- fe210000.sata -> ../../../devices/platform/fe210000.sata
 |   |   |   |-- fe2e0000.mmc -> ../../../devices/platform/fe2e0000.mmc
-|   |   |   |-- fe378000.rng -> ../../../devices/platform/fe378000.rng
 |   |   |   |-- feaa0000.i2c -> ../../../devices/platform/feaa0000.i2c
 |   |   |   |-- feae0000.timer -> ../../../devices/platform/feae0000.timer
 |   |   |   |-- feaf0000.watchdog -> ../../../devices/platform/feaf0000.watchdog
@@ -1102,7 +1101,6 @@
 |   |       |-- omap_rng
 |   |       |-- omap_timer
 |   |       |-- optee
-|   |       |   `-- firmware:optee -> ../../../../devices/platform/firmware:optee
 |   |       |-- orion-ehci
 |   |       |-- orion-mdio
 |   |       |-- orion_spi
@@ -1529,12 +1527,12 @@
 |   |           `-- scmi_dev.3 -> ../../../../devices/platform/firmware:scmi/scmi_dev.3
 |   |-- scsi
 |   |   |-- devices
-|   |   |   |-- 0:0:0:0 -> ../../../devices/platform/fc880000.usb/usb3/3-1/3-1:1.0/host0/target0:0:0/0:0:0:0
-|   |   |   |-- host0 -> ../../../devices/platform/fc880000.usb/usb3/3-1/3-1:1.0/host0
-|   |   |   `-- target0:0:0 -> ../../../devices/platform/fc880000.usb/usb3/3-1/3-1:1.0/host0/target0:0:0
+|   |   |   |-- 0:0:0:0 -> ../../../devices/platform/fc880000.usb/usb2/2-1/2-1:1.0/host0/target0:0:0/0:0:0:0
+|   |   |   |-- host0 -> ../../../devices/platform/fc880000.usb/usb2/2-1/2-1:1.0/host0
+|   |   |   `-- target0:0:0 -> ../../../devices/platform/fc880000.usb/usb2/2-1/2-1:1.0/host0/target0:0:0
 |   |   `-- drivers
 |   |       |-- sd
-|   |       |   `-- 0:0:0:0 -> ../../../../devices/platform/fc880000.usb/usb3/3-1/3-1:1.0/host0/target0:0:0/0:0:0:0
+|   |       |   `-- 0:0:0:0 -> ../../../../devices/platform/fc880000.usb/usb2/2-1/2-1:1.0/host0/target0:0:0/0:0:0:0
 |   |       `-- ufs_device_wlun
 |   |-- sdio
 |   |   |-- devices
@@ -1581,29 +1579,29 @@
 |   |-- usb
 |   |   |-- devices
 |   |   |   |-- 1-0:1.0 -> ../../../devices/platform/fc800000.usb/usb1/1-0:1.0
-|   |   |   |-- 2-0:1.0 -> ../../../devices/platform/fc840000.usb/usb2/2-0:1.0
-|   |   |   |-- 3-0:1.0 -> ../../../devices/platform/fc880000.usb/usb3/3-0:1.0
-|   |   |   |-- 3-1 -> ../../../devices/platform/fc880000.usb/usb3/3-1
-|   |   |   |-- 3-1:1.0 -> ../../../devices/platform/fc880000.usb/usb3/3-1/3-1:1.0
+|   |   |   |-- 2-0:1.0 -> ../../../devices/platform/fc880000.usb/usb2/2-0:1.0
+|   |   |   |-- 2-1 -> ../../../devices/platform/fc880000.usb/usb2/2-1
+|   |   |   |-- 2-1:1.0 -> ../../../devices/platform/fc880000.usb/usb2/2-1/2-1:1.0
+|   |   |   |-- 3-0:1.0 -> ../../../devices/platform/fc840000.usb/usb3/3-0:1.0
 |   |   |   |-- 4-0:1.0 -> ../../../devices/platform/fc8c0000.usb/usb4/4-0:1.0
 |   |   |   |-- usb1 -> ../../../devices/platform/fc800000.usb/usb1
-|   |   |   |-- usb2 -> ../../../devices/platform/fc840000.usb/usb2
-|   |   |   |-- usb3 -> ../../../devices/platform/fc880000.usb/usb3
+|   |   |   |-- usb2 -> ../../../devices/platform/fc880000.usb/usb2
+|   |   |   |-- usb3 -> ../../../devices/platform/fc840000.usb/usb3
 |   |   |   `-- usb4 -> ../../../devices/platform/fc8c0000.usb/usb4
 |   |   `-- drivers
 |   |       |-- hub
 |   |       |   |-- 1-0:1.0 -> ../../../../devices/platform/fc800000.usb/usb1/1-0:1.0
-|   |       |   |-- 2-0:1.0 -> ../../../../devices/platform/fc840000.usb/usb2/2-0:1.0
-|   |       |   |-- 3-0:1.0 -> ../../../../devices/platform/fc880000.usb/usb3/3-0:1.0
+|   |       |   |-- 2-0:1.0 -> ../../../../devices/platform/fc880000.usb/usb2/2-0:1.0
+|   |       |   |-- 3-0:1.0 -> ../../../../devices/platform/fc840000.usb/usb3/3-0:1.0
 |   |       |   `-- 4-0:1.0 -> ../../../../devices/platform/fc8c0000.usb/usb4/4-0:1.0
 |   |       |-- usb
-|   |       |   |-- 3-1 -> ../../../../devices/platform/fc880000.usb/usb3/3-1
+|   |       |   |-- 2-1 -> ../../../../devices/platform/fc880000.usb/usb2/2-1
 |   |       |   |-- usb1 -> ../../../../devices/platform/fc800000.usb/usb1
-|   |       |   |-- usb2 -> ../../../../devices/platform/fc840000.usb/usb2
-|   |       |   |-- usb3 -> ../../../../devices/platform/fc880000.usb/usb3
+|   |       |   |-- usb2 -> ../../../../devices/platform/fc880000.usb/usb2
+|   |       |   |-- usb3 -> ../../../../devices/platform/fc840000.usb/usb3
 |   |       |   `-- usb4 -> ../../../../devices/platform/fc8c0000.usb/usb4
 |   |       |-- usb-storage
-|   |       |   `-- 3-1:1.0 -> ../../../../devices/platform/fc880000.usb/usb3/3-1/3-1:1.0
+|   |       |   `-- 2-1:1.0 -> ../../../../devices/platform/fc880000.usb/usb2/2-1/2-1:1.0
 |   |       |-- usbfs
 |   |       `-- usbhid
 |   |-- virtio
@@ -1685,12 +1683,12 @@
 |   |   |-- ram7 -> ../../devices/virtual/block/ram7
 |   |   |-- ram8 -> ../../devices/virtual/block/ram8
 |   |   |-- ram9 -> ../../devices/virtual/block/ram9
-|   |   |-- sda -> ../../devices/platform/fc880000.usb/usb3/3-1/3-1:1.0/host0/target0:0:0/0:0:0:0/block/sda
-|   |   |-- sda1 -> ../../devices/platform/fc880000.usb/usb3/3-1/3-1:1.0/host0/target0:0:0/0:0:0:0/block/sda/sda1
-|   |   `-- sda2 -> ../../devices/platform/fc880000.usb/usb3/3-1/3-1:1.0/host0/target0:0:0/0:0:0:0/block/sda/sda2
+|   |   |-- sda -> ../../devices/platform/fc880000.usb/usb2/2-1/2-1:1.0/host0/target0:0:0/0:0:0:0/block/sda
+|   |   |-- sda1 -> ../../devices/platform/fc880000.usb/usb2/2-1/2-1:1.0/host0/target0:0:0/0:0:0:0/block/sda/sda1
+|   |   `-- sda2 -> ../../devices/platform/fc880000.usb/usb2/2-1/2-1:1.0/host0/target0:0:0/0:0:0:0/block/sda/sda2
 |   |-- bluetooth
 |   |-- bsg
-|   |   `-- 0:0:0:0 -> ../../devices/platform/fc880000.usb/usb3/3-1/3-1:1.0/host0/target0:0:0/0:0:0:0/bsg/0:0:0:0
+|   |   `-- 0:0:0:0 -> ../../devices/platform/fc880000.usb/usb2/2-1/2-1:1.0/host0/target0:0:0/0:0:0:0/bsg/0:0:0:0
 |   |-- chromeos
 |   |-- devcoredump
 |   |-- devfreq
@@ -1748,8 +1746,8 @@
 |   |   |-- platform:vcc5v0-usb-regulator--platform:vcc5v0-host-regulator -> ../../devices/virtual/devlink/platform:vcc5v0-usb-regulator--platform:vcc5v0-host-regulator
 |   |   |-- platform:vcc5v0-usbdcin-regulator--platform:vcc5v0-usb-regulator -> ../../devices/virtual/devlink/platform:vcc5v0-usbdcin-regulator--platform:vcc5v0-usb-regulator
 |   |   |-- regulator:regulator.0--platform:fe1b0000.ethernet -> ../../devices/virtual/devlink/regulator:regulator.0--platform:fe1b0000.ethernet
-|   |   |-- regulator:regulator.8--phy:phy-fd5d8000.syscon:usb2-phy@8000.0 -> ../../devices/virtual/devlink/regulator:regulator.8--phy:phy-fd5d8000.syscon:usb2-phy@8000.0
-|   |   `-- regulator:regulator.8--phy:phy-fd5dc000.syscon:usb2-phy@c000.1 -> ../../devices/virtual/devlink/regulator:regulator.8--phy:phy-fd5dc000.syscon:usb2-phy@c000.1
+|   |   |-- regulator:regulator.9--phy:phy-fd5d8000.syscon:usb2-phy@8000.0 -> ../../devices/virtual/devlink/regulator:regulator.9--phy:phy-fd5d8000.syscon:usb2-phy@8000.0
+|   |   `-- regulator:regulator.9--phy:phy-fd5dc000.syscon:usb2-phy@c000.1 -> ../../devices/virtual/devlink/regulator:regulator.9--phy:phy-fd5dc000.syscon:usb2-phy@c000.1
 |   |-- dma
 |   |   |-- dma0chan0 -> ../../devices/platform/fea10000.dma-controller/dma/dma0chan0
 |   |   |-- dma0chan1 -> ../../devices/platform/fea10000.dma-controller/dma/dma0chan1
@@ -1922,9 +1920,9 @@
 |   |   |-- regulator.4 -> ../../devices/platform/vcc5v0-usbdcin-regulator/regulator/regulator.4
 |   |   |-- regulator.5 -> ../../devices/platform/vcc5v0-usb-regulator/regulator/regulator.5
 |   |   |-- regulator.6 -> ../../devices/platform/vcc-1v1-nldo-s3-regulator/regulator/regulator.6
-|   |   |-- regulator.7 -> ../../devices/platform/fd880000.i2c/i2c-0/0-0042/regulator/regulator.7
-|   |   |-- regulator.8 -> ../../devices/platform/vcc5v0-host-regulator/regulator/regulator.8
-|   |   `-- regulator.9 -> ../../devices/platform/fd880000.i2c/i2c-0/0-0043/regulator/regulator.9
+|   |   |-- regulator.7 -> ../../devices/platform/fd880000.i2c/i2c-0/0-0043/regulator/regulator.7
+|   |   |-- regulator.8 -> ../../devices/platform/fd880000.i2c/i2c-0/0-0042/regulator/regulator.8
+|   |   `-- regulator.9 -> ../../devices/platform/vcc5v0-host-regulator/regulator/regulator.9
 |   |-- remoteproc
 |   |-- rfkill
 |   |-- rpmsg
@@ -1936,18 +1934,16 @@
 |   |-- sas_phy
 |   |-- sas_port
 |   |-- scsi_device
-|   |   `-- 0:0:0:0 -> ../../devices/platform/fc880000.usb/usb3/3-1/3-1:1.0/host0/target0:0:0/0:0:0:0/scsi_device/0:0:0:0
+|   |   `-- 0:0:0:0 -> ../../devices/platform/fc880000.usb/usb2/2-1/2-1:1.0/host0/target0:0:0/0:0:0:0/scsi_device/0:0:0:0
 |   |-- scsi_disk
-|   |   `-- 0:0:0:0 -> ../../devices/platform/fc880000.usb/usb3/3-1/3-1:1.0/host0/target0:0:0/0:0:0:0/scsi_disk/0:0:0:0
+|   |   `-- 0:0:0:0 -> ../../devices/platform/fc880000.usb/usb2/2-1/2-1:1.0/host0/target0:0:0/0:0:0:0/scsi_disk/0:0:0:0
 |   |-- scsi_host
-|   |   `-- host0 -> ../../devices/platform/fc880000.usb/usb3/3-1/3-1:1.0/host0/scsi_host/host0
+|   |   `-- host0 -> ../../devices/platform/fc880000.usb/usb2/2-1/2-1:1.0/host0/scsi_host/host0
 |   |-- sound
 |   |   `-- timer -> ../../devices/virtual/sound/timer
 |   |-- spi_master
 |   |   `-- spi2 -> ../../devices/platform/feb20000.spi/spi_master/spi2
 |   |-- tee
-|   |   |-- tee0 -> ../../devices/virtual/tee/tee0
-|   |   `-- teepriv0 -> ../../devices/virtual/tee/teepriv0
 |   |-- thermal
 |   |-- tpm
 |   |-- tpmrm
@@ -2097,9 +2093,9 @@
 |   |   |-- 1:7 -> ../../devices/virtual/block/ram7
 |   |   |-- 1:8 -> ../../devices/virtual/block/ram8
 |   |   |-- 1:9 -> ../../devices/virtual/block/ram9
-|   |   |-- 8:0 -> ../../devices/platform/fc880000.usb/usb3/3-1/3-1:1.0/host0/target0:0:0/0:0:0:0/block/sda
-|   |   |-- 8:1 -> ../../devices/platform/fc880000.usb/usb3/3-1/3-1:1.0/host0/target0:0:0/0:0:0:0/block/sda/sda1
-|   |   `-- 8:2 -> ../../devices/platform/fc880000.usb/usb3/3-1/3-1:1.0/host0/target0:0:0/0:0:0:0/block/sda/sda2
+|   |   |-- 8:0 -> ../../devices/platform/fc880000.usb/usb2/2-1/2-1:1.0/host0/target0:0:0/0:0:0:0/block/sda
+|   |   |-- 8:1 -> ../../devices/platform/fc880000.usb/usb2/2-1/2-1:1.0/host0/target0:0:0/0:0:0:0/block/sda/sda1
+|   |   `-- 8:2 -> ../../devices/platform/fc880000.usb/usb2/2-1/2-1:1.0/host0/target0:0:0/0:0:0:0/block/sda/sda2
 |   `-- char
 |       |-- 10:124 -> ../../devices/virtual/misc/cpu_dma_latency
 |       |-- 10:125 -> ../../devices/virtual/misc/efi_capsule_loader
@@ -2116,9 +2112,9 @@
 |       |-- 10:242 -> ../../devices/virtual/misc/rfkill
 |       |-- 116:33 -> ../../devices/virtual/sound/timer
 |       |-- 189:0 -> ../../devices/platform/fc800000.usb/usb1
-|       |-- 189:128 -> ../../devices/platform/fc840000.usb/usb2
-|       |-- 189:256 -> ../../devices/platform/fc880000.usb/usb3
-|       |-- 189:257 -> ../../devices/platform/fc880000.usb/usb3/3-1
+|       |-- 189:128 -> ../../devices/platform/fc880000.usb/usb2
+|       |-- 189:129 -> ../../devices/platform/fc880000.usb/usb2/2-1
+|       |-- 189:256 -> ../../devices/platform/fc840000.usb/usb3
 |       |-- 189:384 -> ../../devices/platform/fc8c0000.usb/usb4
 |       |-- 1:1 -> ../../devices/virtual/mem/mem
 |       |-- 1:11 -> ../../devices/virtual/mem/kmsg
@@ -2129,10 +2125,8 @@
 |       |-- 1:8 -> ../../devices/virtual/mem/random
 |       |-- 1:9 -> ../../devices/virtual/mem/urandom
 |       |-- 234:0 -> ../../devices/platform/fe2e0000.mmc/mmc_host/mmc0/mmc0:0001/mmcblk0rpmb
-|       |-- 245:0 -> ../../devices/platform/fc880000.usb/usb3/3-1/3-1:1.0/host0/target0:0:0/0:0:0:0/bsg/0:0:0:0
+|       |-- 245:0 -> ../../devices/platform/fc880000.usb/usb2/2-1/2-1:1.0/host0/target0:0:0/0:0:0:0/bsg/0:0:0:0
 |       |-- 246:0 -> ../../devices/platform/feaf0000.watchdog/watchdog/watchdog0
-|       |-- 247:0 -> ../../devices/virtual/tee/tee0
-|       |-- 247:16 -> ../../devices/virtual/tee/teepriv0
 |       |-- 249:0 -> ../../devices/platform/fe1b0000.ethernet/ptp/ptp0
 |       |-- 254:0 -> ../../devices/platform/pinctrl/fd8a0000.gpio/gpiochip0
 |       |-- 254:1 -> ../../devices/platform/pinctrl/fec20000.gpio/gpiochip1
@@ -2337,15 +2331,15 @@
 |   |   |   |-- supplier:phy:phy-fd5d8000.syscon:usb2-phy@8000.0 -> ../../virtual/devlink/phy:phy-fd5d8000.syscon:usb2-phy@8000.0--platform:fc840000.usb
 |   |   |   |-- supplier:platform:fd5d8000.syscon:usb2-phy@8000 -> ../../virtual/devlink/platform:fd5d8000.syscon:usb2-phy@8000--platform:fc840000.usb
 |   |   |   |-- supplier:platform:fd8d8000.power-management:power-controller -> ../../virtual/devlink/platform:fd8d8000.power-management:power-controller--platform:fc840000.usb
-|   |   |   `-- usb2
-|   |   |       |-- 2-0:1.0
+|   |   |   `-- usb3
+|   |   |       |-- 3-0:1.0
 |   |   |       |   |-- driver -> ../../../../../bus/usb/drivers/hub
 |   |   |       |   |-- ep_81
 |   |   |       |   |   `-- power
 |   |   |       |   |-- of_node -> ../../../../../firmware/devicetree/base/usb@fc840000
 |   |   |       |   |-- power
 |   |   |       |   |-- subsystem -> ../../../../../bus/usb
-|   |   |       |   `-- usb2-port1
+|   |   |       |   `-- usb3-port1
 |   |   |       |       `-- power
 |   |   |       |-- driver -> ../../../../bus/usb/drivers/usb
 |   |   |       |-- ep_00
@@ -2361,19 +2355,19 @@
 |   |   |   |-- supplier:phy:phy-fd5dc000.syscon:usb2-phy@c000.1 -> ../../virtual/devlink/phy:phy-fd5dc000.syscon:usb2-phy@c000.1--platform:fc880000.usb
 |   |   |   |-- supplier:platform:fd5dc000.syscon:usb2-phy@c000 -> ../../virtual/devlink/platform:fd5dc000.syscon:usb2-phy@c000--platform:fc880000.usb
 |   |   |   |-- supplier:platform:fd8d8000.power-management:power-controller -> ../../virtual/devlink/platform:fd8d8000.power-management:power-controller--platform:fc880000.usb
-|   |   |   `-- usb3
-|   |   |       |-- 3-0:1.0
+|   |   |   `-- usb2
+|   |   |       |-- 2-0:1.0
 |   |   |       |   |-- driver -> ../../../../../bus/usb/drivers/hub
 |   |   |       |   |-- ep_81
 |   |   |       |   |   `-- power
 |   |   |       |   |-- of_node -> ../../../../../firmware/devicetree/base/usb@fc880000
 |   |   |       |   |-- power
 |   |   |       |   |-- subsystem -> ../../../../../bus/usb
-|   |   |       |   `-- usb3-port1
-|   |   |       |       |-- device -> ../../3-1
+|   |   |       |   `-- usb2-port1
+|   |   |       |       |-- device -> ../../2-1
 |   |   |       |       `-- power
-|   |   |       |-- 3-1
-|   |   |       |   |-- 3-1:1.0
+|   |   |       |-- 2-1
+|   |   |       |   |-- 2-1:1.0
 |   |   |       |   |   |-- driver -> ../../../../../../bus/usb/drivers/usb-storage
 |   |   |       |   |   |-- ep_01
 |   |   |       |   |   |   `-- power
@@ -2446,7 +2440,7 @@
 |   |   |       |   |-- driver -> ../../../../../bus/usb/drivers/usb
 |   |   |       |   |-- ep_00
 |   |   |       |   |   `-- power
-|   |   |       |   |-- port -> ../3-0:1.0/usb3-port1
+|   |   |       |   |-- port -> ../2-0:1.0/usb2-port1
 |   |   |       |   |-- power
 |   |   |       |   `-- subsystem -> ../../../../../bus/usb
 |   |   |       |-- driver -> ../../../../bus/usb/drivers/usb
@@ -2608,7 +2602,7 @@
 |   |   |   |   |   |-- of_node -> ../../../../../firmware/devicetree/base/i2c@fd880000/regulator@42
 |   |   |   |   |   |-- power
 |   |   |   |   |   |-- regulator
-|   |   |   |   |   |   `-- regulator.7
+|   |   |   |   |   |   `-- regulator.8
 |   |   |   |   |   |       |-- device -> ../../../0-0042
 |   |   |   |   |   |       |-- of_node -> ../../../../../../../firmware/devicetree/base/i2c@fd880000/regulator@42
 |   |   |   |   |   |       |-- power
@@ -2620,7 +2614,7 @@
 |   |   |   |   |   |-- of_node -> ../../../../../firmware/devicetree/base/i2c@fd880000/regulator@43
 |   |   |   |   |   |-- power
 |   |   |   |   |   |-- regulator
-|   |   |   |   |   |   `-- regulator.9
+|   |   |   |   |   |   `-- regulator.7
 |   |   |   |   |   |       |-- device -> ../../../0-0043
 |   |   |   |   |   |       |-- of_node -> ../../../../../../../firmware/devicetree/base/i2c@fd880000/regulator@43
 |   |   |   |   |   |       |-- power
@@ -3042,10 +3036,6 @@
 |   |   |   |-- power
 |   |   |   |-- subsystem -> ../../../bus/platform
 |   |   |   `-- supplier:platform:pinctrl -> ../../virtual/devlink/platform:pinctrl--platform:fe2e0000.mmc
-|   |   |-- fe378000.rng
-|   |   |   |-- of_node -> ../../../firmware/devicetree/base/rng@fe378000
-|   |   |   |-- power
-|   |   |   `-- subsystem -> ../../../bus/platform
 |   |   |-- fea10000.dma-controller
 |   |   |   |-- dma
 |   |   |   |   |-- dma0chan0
@@ -3554,7 +3544,6 @@
 |   |   |   |-- power
 |   |   |   `-- subsystem -> ../../../bus/platform
 |   |   |-- firmware:optee
-|   |   |   |-- driver -> ../../../bus/platform/drivers/optee
 |   |   |   |-- of_node -> ../../../firmware/devicetree/base/firmware/optee
 |   |   |   |-- power
 |   |   |   `-- subsystem -> ../../../bus/platform
@@ -3823,7 +3812,7 @@
 |   |   |   |-- of_node -> ../../../firmware/devicetree/base/vcc5v0-host-regulator
 |   |   |   |-- power
 |   |   |   |-- regulator
-|   |   |   |   `-- regulator.8
+|   |   |   |   `-- regulator.9
 |   |   |   |       |-- device -> ../../../vcc5v0-host-regulator
 |   |   |   |       |-- of_node -> ../../../../../firmware/devicetree/base/vcc5v0-host-regulator
 |   |   |   |       |-- power
@@ -4839,9 +4828,9 @@
 |       |   |   |-- consumer -> ../../../platform/fe1b0000.ethernet
 |       |   |   |-- subsystem -> ../../../../class/devlink
 |       |   |   `-- supplier -> ../../../platform/reg-dummy/regulator/regulator.0
-|       |   |-- regulator:regulator.8--phy:phy-fd5d8000.syscon:usb2-phy@8000.0
+|       |   |-- regulator:regulator.9--phy:phy-fd5d8000.syscon:usb2-phy@8000.0
 |       |   |   `-- subsystem -> ../../../../class/devlink
-|       |   `-- regulator:regulator.8--phy:phy-fd5dc000.syscon:usb2-phy@c000.1
+|       |   `-- regulator:regulator.9--phy:phy-fd5dc000.syscon:usb2-phy@c000.1
 |       |       `-- subsystem -> ../../../../class/devlink
 |       |-- dmi
 |       |   `-- id
@@ -4939,13 +4928,6 @@
 |       |   `-- timer
 |       |       |-- power
 |       |       `-- subsystem -> ../../../../class/sound
-|       |-- tee
-|       |   |-- tee0
-|       |   |   |-- power
-|       |   |   `-- subsystem -> ../../../../class/tee
-|       |   `-- teepriv0
-|       |       |-- power
-|       |       `-- subsystem -> ../../../../class/tee
 |       |-- tty
 |       |   |-- console
 |       |   |   |-- power
@@ -5346,7 +5328,6 @@
 |   |       |       `-- protocol@16
 |   |       |-- fit-images
 |   |       |   |-- atf-2
-|   |       |   |-- atf-3
 |   |       |   |-- tee-1
 |   |       |   `-- u-boot
 |   |       |-- i2c@fd880000
@@ -7010,9 +6991,9 @@
 |   |   |   |-- vcc5v0_sys
 |   |   |   |   |-- regulator.6-SUPPLY
 |   |   |   |   |-- regulator.7-SUPPLY
-|   |   |   |   `-- regulator.9-SUPPLY
-|   |   |   |-- vcc5v0_usb
 |   |   |   |   `-- regulator.8-SUPPLY
+|   |   |   |-- vcc5v0_usb
+|   |   |   |   `-- regulator.9-SUPPLY
 |   |   |   |-- vcc5v0_usbdcin
 |   |   |   |   `-- regulator.5-SUPPLY
 |   |   |   |-- vcc_1v1_nldo_s3
@@ -12329,4 +12310,4 @@
 `-- power
     `-- suspend_stats
 
-12330 directories
+12311 directories

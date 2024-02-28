@@ -1,1 +1,2 @@
-No BootOrder is set; firmware will attempt recovery
+BootOrder: 0000
+Boot0000* Fedora	HD(1,GPT,3b197136-a730-4dd8-9c77-e12d5bc9cf9a,0x800,0x12c000)/File(\EFI\fedora\shimaa64.efi)

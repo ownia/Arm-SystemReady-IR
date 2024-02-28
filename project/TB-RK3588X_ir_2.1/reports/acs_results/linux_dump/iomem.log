@@ -1,17 +1,16 @@
 0010f000-0010f0ff : 10f000.sram sram@10f000
-00200000-00b06fff : System RAM
-00b07000-00b21fff : reserved
-00b22000-083fffff : System RAM
+00200000-00b05fff : System RAM
+00b06000-00b20fff : reserved
+00b21000-083fffff : System RAM
 08400000-093fffff : reserved
 09400000-ece75fff : System RAM
-  62e40000-64d8ffff : Kernel code
-  64d90000-659dffff : reserved
-  659e0000-6604ffff : Kernel data
-  ab930000-ab948fff : reserved
-  aed56000-aed56fff : reserved
-  aed57000-aed57fff : reserved
-  aed58000-aed72fff : reserved
-  e8e4a000-ece67fff : reserved
+  aab60000-acaaffff : Kernel code
+  acab0000-ad6fffff : reserved
+  ad700000-add6ffff : Kernel data
+  b0c80000-b0c98fff : reserved
+  b0e89000-b0e89fff : reserved
+  b0e8a000-b0e8afff : reserved
+  e8e54000-ece71fff : reserved
   ece74000-ece74fff : reserved
 ece76000-ece76fff : reserved
 ece77000-ece79fff : System RAM
@@ -50,7 +49,7 @@ fed10000-fed13fff : dma-controller@fed10000
   fed10000-fed13fff : fed10000.dma-controller dma-controller@fed10000
 ff001000-ff0effff : ff001000.sram sram@ff001000
 100000000-1ffffffff : System RAM
-  100237000-100237fff : reserved
+  100235000-100235fff : reserved
   1002a0000-1002affff : reserved
   1002b0000-1002bffff : reserved
   1002c0000-1002cffff : reserved
@@ -61,10 +60,10 @@ ff001000-ff0effff : ff001000.sram sram@ff001000
   100310000-10031ffff : reserved
   100320000-10032ffff : reserved
   1f6400000-1febfffff : reserved
-  1fec36000-1fecf5fff : reserved
-  1fecf6000-1fecf6fff : reserved
-  1fecf7000-1fedeefff : reserved
-  1fedf0000-1fedf1fff : reserved
-  1fedf2000-1fedf4fff : reserved
-  1fedf5000-1fee08fff : reserved
-  1fee09000-1ffffffff : reserved
+  1fec38000-1fecf7fff : reserved
+  1fecf8000-1fecf8fff : reserved
+  1fecf9000-1fedf0fff : reserved
+  1fedf3000-1fedf3fff : reserved
+  1fedf4000-1fedf6fff : reserved
+  1fedf7000-1fee0afff : reserved
+  1fee0b000-1ffffffff : reserved

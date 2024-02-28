@@ -55,8 +55,8 @@ INFO: Ethernet interface eth0 doesn't supports ethtool self test
 INFO: Link detected on eth0
 INFO: Running ip address show dev eth0 :
 3: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq qlen 1000
-    link/ether 7a:1e:c3:64:54:af brd ff:ff:ff:ff:ff:ff
-    inet6 fe80::781e:c3ff:fe64:54af/64 scope link 
+    link/ether 52:58:51:4b:d9:11 brd ff:ff:ff:ff:ff:ff
+    inet6 fe80::5058:51ff:fe4b:d911/64 scope link 
        valid_lft forever preferred_lft forever
 
 

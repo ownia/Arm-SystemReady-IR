@@ -1593,7 +1593,7 @@
 
 	dmc {
 		bootph-all;
-		compatible = "rockchip,rk3588-dmc";
+		compatible = "u-boot,rockchip,rk3588-dmc";
 		status = "okay";
 	};
 
@@ -2357,7 +2357,7 @@
 		interrupts = <0x00 0xdc 0x04 0x00>;
 		clocks = <0x1b 0x194 0x1b 0x193 0x1b 0x192>;
 		snps,dis-u2-entry-quirk;
-		compatible = "rockchip,rk3588-dwc3\0rockchip,rk3568-dwc3\0snps,dwc3";
+		compatible = "rockchip,rk3588-dwc3\0snps,dwc3";
 		snps,dis-del-phy-power-chg-quirk;
 		status = "disabled";
 		phys = <0xed 0xee>;
@@ -2513,8 +2513,8 @@
 		atf-2 {
 			os = "arm-trusted-firmware";
 			type = "firmware";
-			size = <0x6000>;
-			load-addr = <0xf0000>;
+			size = <0x2000>;
+			load-addr = <0xff100000>;
 		};
 
 		tee-1 {
@@ -2529,15 +2529,8 @@
 			entry-point = <0xa00000>;
 			os = "U-Boot";
 			type = "standalone";
-			size = <0x1074e8>;
+			size = <0x1061d8>;
 			load-addr = <0xa00000>;
-		};
-
-		atf-3 {
-			os = "arm-trusted-firmware";
-			type = "firmware";
-			size = <0x6000>;
-			load-addr = <0xff100000>;
 		};
 	};
 
@@ -2925,7 +2918,7 @@
 
 	rng@fe378000 {
 		compatible = "rockchip,trngv1";
-		status = "okay";
+		status = "disabled";
 		reg = <0x00 0xfe378000 0x00 0x200>;
 		phandle = <0x178>;
 	};
@@ -3670,7 +3663,7 @@
 		resets = <0x1b 0x153>;
 		interrupts = <0x00 0xdd 0x04 0x00>;
 		clocks = <0x1b 0x197 0x1b 0x196 0x1b 0x195>;
-		compatible = "rockchip,rk3588-dwc3\0rockchip,rk3568-dwc3\0snps,dwc3";
+		compatible = "rockchip,rk3588-dwc3\0snps,dwc3";
 		snps,dis-del-phy-power-chg-quirk;
 		status = "disabled";
 		phys = <0xf4 0xf5>;
@@ -3697,15 +3690,14 @@
 	};
 
 	chosen {
-		linux,uefi-mmap-size = <0x500>;
-		u-boot,version = "2024.01-rc5-g0d61caad65-dirty";
-		bootargs = "BOOT_IMAGE=/Image root=PARTUUID=044b5400-c708-4e5b-9409-af07f4fdb753 rootwait rootfstype=ext4";
-		linux,uefi-mmap-start = <0x00 0xaed56068>;
-		kaslr-seed = <0x00 0x00>;
+		linux,uefi-mmap-size = <0x550>;
+		u-boot,version = "2024.01-rc5-gd8778e3592-dirty";
+		bootargs = "Image root=PARTUUID=044b5400-c708-4e5b-9409-af07f4fdb753 rootwait rootfstype=ext4";
+		linux,uefi-mmap-start = <0x00 0xb0e89068>;
 		linux,uefi-mmap-desc-size = <0x28>;
 		u-boot,spl-boot-order = "same-as-spl\0/mmc@fe2e0000";
 		linux,uefi-mmap-desc-ver = <0x01>;
-		linux,uefi-system-table = <0x00 0xefed6c10>;
+		linux,uefi-system-table = <0x00 0xefed7c10>;
 		stdout-path = "serial2:1500000n8";
 	};
 
@@ -3719,7 +3711,7 @@
 		interrupts = <0x00 0xde 0x04 0x00>;
 		clocks = <0x1b 0x16a 0x1b 0x169 0x1b 0x168 0x1b 0x16b 0x1b 0x172>;
 		snps,dis_rxdet_inp3_quirk;
-		compatible = "rockchip,rk3588-dwc3\0rockchip,rk3568-dwc3\0snps,dwc3";
+		compatible = "rockchip,rk3588-dwc3\0snps,dwc3";
 		snps,dis-del-phy-power-chg-quirk;
 		status = "disabled";
 		phys = <0x5d 0x04>;

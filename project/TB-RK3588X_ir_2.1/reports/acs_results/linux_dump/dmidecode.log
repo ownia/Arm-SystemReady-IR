@@ -7,7 +7,7 @@ Table at 0xECE9D020.
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: U-Boot
-	Version: 2024.01-rc5-g0d61caad65-dirty
+	Version: 2024.01-rc5-gd8778e3592-dirty
 	Release Date: 01/01/2024
 	ROM Size: 64 kB
 	Characteristics:

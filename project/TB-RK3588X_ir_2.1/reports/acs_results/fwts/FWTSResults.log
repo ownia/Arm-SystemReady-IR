@@ -7,7 +7,7 @@ Some of this work - Copyright (c) 2010 - 2021, Canonical.
 Some of this work - Copyright (c) 2016 - 2021, IBM.
 Some of this work - Copyright (c) 2017 - 2021, ARM Ltd.
 
-This test run on 03/03/23 at 09:49:57 on host Linux generic-arm64
+This test run on 03/03/23 at 11:11:46 on host Linux generic-arm64
 6.4.0-yocto-standard+ #1 SMP PREEMPT Sun Jun 25 23:29:58 UTC 2023 aarch64.
 
 Command: "fwts --ebbr -r /mnt/acs_results/fwts/FWTSResults.log uefivarinfo esrt
@@ -41,9 +41,12 @@ PASSED: Test 2, The fw_class in the ESRT are not default u-boot guids 1
 uefibootpath: Sanity check for UEFI Boot Path Boot####.
 --------------------------------------------------------------------------------
 Test 1 of 1: Test UEFI Boot Path Boot####.
+Name: Boot0000
+Info: Fedora
+PASSED: Test 1, Check bootpath Boot0000 test passed.
 
 ================================================================================
-0 passed, 0 failed, 0 warning, 0 aborted, 0 skipped, 0 info only.
+1 passed, 0 failed, 0 warning, 0 aborted, 0 skipped, 0 info only.
 ================================================================================
 
 dt_base: Base device tree validity check
@@ -111,9 +114,12 @@ PASSED: Test 2, The fw_class in the ESRT are not default u-boot guids 1
 uefibootpath: Sanity check for UEFI Boot Path Boot####.
 --------------------------------------------------------------------------------
 Test 1 of 1: Test UEFI Boot Path Boot####.
+Name: Boot0000
+Info: Fedora
+PASSED: Test 1, Check bootpath Boot0000 test passed.
 
 ================================================================================
-0 passed, 0 failed, 0 warning, 0 aborted, 0 skipped, 0 info only.
+1 passed, 0 failed, 0 warning, 0 aborted, 0 skipped, 0 info only.
 ================================================================================
 
 uefivarinfo: UEFI variable info query.
@@ -380,7 +386,7 @@ passed.
 ================================================================================
 
 
-15 passed, 0 failed, 2 warnings, 0 aborted, 55 skipped, 0 info only.
+17 passed, 0 failed, 2 warnings, 0 aborted, 55 skipped, 0 info only.
 
 Test Failure Summary
 ================================================================================
@@ -399,11 +405,11 @@ Test           |Pass |Fail |Abort|Warn |Skip |Info |
 ---------------+-----+-----+-----+-----+-----+-----+
 dt_base        |    2|     |     |    1|     |     |
 esrt           |    2|     |     |     |     |     |
-uefibootpath   |     |     |     |     |     |     |
+uefibootpath   |    1|     |     |     |     |     |
 uefirtmisc     |    1|     |     |     |    8|     |
 uefirttime     |    4|     |     |     |   35|     |
 uefirtvariable |    2|     |     |     |   10|     |
 uefivarinfo    |     |     |     |     |    1|     |
 ---------------+-----+-----+-----+-----+-----+-----+
-Total:         |   15|    0|    0|    2|   55|    0|
+Total:         |   17|    0|    0|    2|   55|    0|
 ---------------+-----+-----+-----+-----+-----+-----+
