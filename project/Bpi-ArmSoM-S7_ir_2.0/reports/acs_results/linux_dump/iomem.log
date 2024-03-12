@@ -1,0 +1,68 @@
+0010f000-0010f0ff : 10f000.sram sram@10f000
+00200000-00b05fff : System RAM
+00b06000-00b1ffff : reserved
+00b20000-ece78fff : System RAM
+  abf80000-ad95ffff : Kernel code
+  ad960000-ae1affff : reserved
+  ae1b0000-ae65ffff : Kernel data
+  b0ab0000-b0ac7fff : reserved
+  b0e15000-b0e15fff : reserved
+  b0e16000-b0e16fff : reserved
+  e8e51000-ece6dfff : reserved
+  ece77000-ece77fff : reserved
+ece79000-ece79fff : reserved
+ece7a000-ece7cfff : System RAM
+ece7d000-ece7efff : reserved
+ece7f000-ece7ffff : System RAM
+ece80000-ecea0fff : reserved
+ecea1000-efecffff : System RAM
+  ede00000-efdfffff : reserved
+efed0000-efedffff : reserved
+efee0000-efffffff : System RAM
+fc800000-fc83ffff : fc800000.usb usb@fc800000
+fc840000-fc87ffff : fc840000.usb usb@fc840000
+fc880000-fc8bffff : fc880000.usb usb@fc880000
+fc8c0000-fc8fffff : fc8c0000.usb usb@fc8c0000
+fd600000-fd6fffff : fd600000.sram sram@fd600000
+fd880000-fd880fff : fd880000.i2c i2c@fd880000
+fd8a0000-fd8a00ff : fd8a0000.gpio gpio@fd8a0000
+fd8b0010-fd8b001f : fd8b0010.pwm pwm@fd8b0010
+fe2e0000-fe2effff : fe2e0000.mmc mmc@fe2e0000
+fe600000-fe60ffff : GICD
+fe680000-fe77ffff : GICR
+fea10000-fea13fff : dma-controller@fea10000
+  fea10000-fea13fff : fea10000.dma-controller dma-controller@fea10000
+fea30000-fea33fff : dma-controller@fea30000
+  fea30000-fea33fff : fea30000.dma-controller dma-controller@fea30000
+feaf0000-feaf00ff : feaf0000.watchdog watchdog@feaf0000
+feb20000-feb20fff : feb20000.spi spi@feb20000
+feb50000-feb5001f : serial
+feb90000-feb9001f : serial
+fec20000-fec200ff : fec20000.gpio gpio@fec20000
+fec30000-fec300ff : fec30000.gpio gpio@fec30000
+fec40000-fec400ff : fec40000.gpio gpio@fec40000
+fec50000-fec500ff : fec50000.gpio gpio@fec50000
+fec80000-fec80fff : fec80000.i2c i2c@fec80000
+fec90000-fec90fff : fec90000.i2c i2c@fec90000
+fed10000-fed13fff : dma-controller@fed10000
+  fed10000-fed13fff : fed10000.dma-controller dma-controller@fed10000
+ff001000-ff0effff : ff001000.sram sram@ff001000
+100000000-1ffffffff : System RAM
+  10003b000-10003bfff : reserved
+  1000a0000-1000affff : reserved
+  1000b0000-1000bffff : reserved
+  1000c0000-1000cffff : reserved
+  1000d0000-1000dffff : reserved
+  1000e0000-1000effff : reserved
+  1000f0000-1000fffff : reserved
+  100100000-10010ffff : reserved
+  100110000-10011ffff : reserved
+  100120000-10012ffff : reserved
+  1f6600000-1fedfffff : reserved
+  1fee76000-1fef35fff : reserved
+  1fef36000-1fef36fff : reserved
+  1fef37000-1fefe6fff : reserved
+  1fefe8000-1fefeafff : reserved
+  1fefeb000-1fefebfff : reserved
+  1fefec000-1feffffff : reserved
+  1ff000000-1ffffffff : reserved
