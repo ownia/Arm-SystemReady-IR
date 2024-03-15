@@ -1,0 +1,32 @@
+General information
+-------------------
+- Arm SystemReady Band: IR
+- System name:
+- Prepared by:
+- E-mail:
+- Date:
+
+System information
+------------------
+- Company:
+- System:
+- SoC:
+- FW version:
+- Memory:
+- Storage devices / disks:
+- Network controllers:
+- Other Hardware information:
+
+Test logs and results
+---------------------
+- ACS version used:
+- ACS URL (if pre-built binary):
+- Changes to ACS (if built from source):
+
+- Test logs and results collected
+[ ] ACS automated tests (SCT, UEFI BSA, Linux BSA, Linux FWTS, Linux DT)
+[ ] ACS SIE automated tests (SIE SCT, Linux SIE FWTS; if applicable)
+[ ] U-Boot sniff tests (if applicable)
+[ ] ACS UEFI Shell sniff tests
+[ ] ACS capsule update (direct and "on disk")
+[ ] OS installs and sniff tests
