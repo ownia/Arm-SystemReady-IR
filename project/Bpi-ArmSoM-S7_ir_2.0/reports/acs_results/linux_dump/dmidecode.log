@@ -2,7 +2,7 @@
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0 present.
 7 structures occupying 287 bytes.
-Table at 0xECEA0020.
+Table at 0xECE93020.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information

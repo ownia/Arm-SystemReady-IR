@@ -3,30 +3,12 @@ LPDDR4X, 2112MHz
 channel[0] BW=16 Col=10 Bk=8 CS0 Row=16 CS1 Row=16 CS=2 Die BW=16 Size=2048MB
 channel[1] BW=16 Col=10 Bk=8 CS0 Row=16 CS1 Row=16 CS=2 Die BW=16 Size=2048MB
 channel[2] BW=16 Col=10 Bk=8 CS0 Row=16 CS1 Row=16 CS=2 Die BW=16 Size=2048MB
-channel[3] BW=16 Col=10 Bk=8 CS0 Row=16 CS1 Row=16 CS=2 Die BW=16 Size=2048MB
+channel[3] BW=16 Col=10 Bk=8 CS0 Row=16 CS=1 Die BW=16 Size=1024MB
 Manufacturer ID:0x13
-ch:0 dq0 fail,write:0xfffffffe,read:0xfffffdfe
-ch:0 dq1 fail,write:0xfffffffd,read:0xfffffcfd
-ch:0 dq3 fail,write:0xfffffff7,read:0xfffffcf7
-ch:0 dq5 fail,write:0xffffffdf,read:0xfffffcdf
-ch:0 dq7 fail,write:0xffffff7f,read:0xfffffc7f
-ch:0 dq9 fail,write:0xfffffdff,read:0xfffffcff
-ch:0 dq11 fail,write:0xfffff7ff,read:0xfffff4ff
-ch:0 dq13 fail,write:0xffffdfff,read:0xffffdcff
-ch:0 dq15 fail,write:0xffff7fff,read:0xffff7eff
-error
-ERR
-DDR d5483af87d cym 23/11/23-16:15:24,fwver: v1.15
-LPDDR4X, 2112MHz
-channel[0] BW=16 Col=10 Bk=8 CS0 Row=16 CS1 Row=16 CS=2 Die BW=16 Size=2048MB
-channel[1] BW=16 Col=10 Bk=8 CS0 Row=16 CS1 Row=16 CS=2 Die BW=16 Size=2048MB
-channel[2] BW=16 Col=10 Bk=8 CS0 Row=16 CS1 Row=16 CS=2 Die BW=16 Size=2048MB
-channel[3] BW=16 Col=10 Bk=8 CS0 Row=16 CS1 Row=16 CS=2 Die BW=16 Size=2048MB
-Manufacturer ID:0x13
-CH0 RX Vref:31.0%, TX Vref:19.8%,18.8%
-CH1 RX Vref:33.9%, TX Vref:18.8%,18.8%
+CH0 RX Vref:30.5%, TX Vref:19.8%,18.8%
+CH1 RX Vref:33.4%, TX Vref:18.8%,18.8%
 CH2 RX Vref:38.5%, TX Vref:18.8%,18.8%
-CH3 RX Vref:39.4%, TX Vref:18.8%,18.8%
+CH3 RX Vref:38.5%, TX Vref:18.8%,0.0%
 change to F1: 528MHz
 change to F2: 1068MHz
 change to F3: 1560MHz
@@ -51,7 +33,7 @@ Trying fit image at 0x4000 sector
 ## Checking atf-3 0xff100000 ... sha256(4b2065349b...) + OK
 ## Checking tee-1 0x08400000 ... sha256(617eb0ee15...) + OK
 Jumping to U-Boot(0x00a00000) via ARM Trusted Firmware(0x00040000)
-Total: 96.997/267.687 ms
+Total: 96.962/258.934 ms
 
 INFO:    Preloader serial: 2
 NOTICE:  BL31: v2.3():v2.3-682-g4ca8a8422:derrick.huang, fwver: v1.45
@@ -59,7 +41,7 @@ NOTICE:  BL31: Built : 10:11:21, Dec 27 2023
 INFO:    spec: 0x1
 INFO:    code: 0x88
 INFO:    ext 32k is not valid
-INFO:    ddr: stride-en 4CH
+INFO:    ddr: stride-dis 2048Mb, 4CH
 INFO:    GICv3 without legacy support detected.
 INFO:    ARM GICv3 driver initialized in EL3
 INFO:    valid_cpu_msk=0xff bcore0_rst = 0x0, bcore1_rst = 0x0
@@ -87,7 +69,7 @@ INFO:    SPSR = 0x3c9
 U-Boot 2024.01-rc5-gd85cb6714d-dirty (Mar 13 2024 - 13:35:43 +0800)
 
 Model: ArmSoM Sige7 Board
-DRAM:  8 GiB (effective 7.7 GiB)
+DRAM:  7 GiB (effective 6.7 GiB)
 pcie_dw_rockchip pcie@fe180000: failed to get pcie phy (ret=-19)
 pcie_dw_rockchip pcie@fe150000: PCIe-3 Link Fail
 Core:  339 devices, 28 uclasses, devicetree: separate
@@ -124,7 +106,7 @@ error: serial port `com0' isn't found.
 GNU GRUB  version 2.06
 
 вввввввввввввв”Ђвввввввввввввввввввввввввввввввввввввввввв”Ђвввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв”‚ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв”Ђввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв”Ђвввввввввввввввввввввввввв     Use the в and в keys to select which entry is highlighted.                                                              
-      Press enter to boot the selected OS, `e' to edit the commands before booting or `c' for a command-line.                   Linux Boot                                                                                                                     *bbr/bsa                                                                                                                         SCT for Security Interface Extension (optional)                                                                                 Linux Boot for Security Interface Extension (optional)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             The highlighted entry will be executed automatically in 10s.                                                                                                                                                                                                                                                                                                                                          /EndEntire
+      Press enter to boot the selected OS, `e' to edit the commands before booting or `c' for a command-line.                   Linux Boot                                                                                                                     *bbr/bsa                                                                                                                         SCT for Security Interface Extension (optional)                                                                                 Linux Boot for Security Interface Extension (optional)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             The highlighted entry will be executed automatically in 10s.                                                                       The highlighted entry will be executed automatically in 9s.                                                                                                                                                                                                                                                                                                                                           /EndEntire
 file path: /HardwareVendor(e61d73b9-a384-4acc-aeab-82e828f3628b)[8: 00 00 00 00 00 00 00 00 ]
 /HardwareVendor(e61d73b9-a384-4acc-aeab-82e828f3628b)[8: 7d 00 00 00 02 00 00 00 ]/USB(0,0)/USB(1,0)/Ctrl(0)
 /HD(1,800,4b000,1165d81c99a4fa49,2,2)/File(\EFI\BOOT)/File(Shell.efi)/EndEntire
@@ -155,6 +137,29 @@ Mapping table
      BLK8: Alias(s):
           /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b,0000000000000000)/VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b,7d00000002000000)/USB(0x0,0x0)/USB(0x1,0x0)/Ctrl(0x0)
 Press ESC in 5 seconds to skip startup.nsh or any other key to continue.
+Shell> FS1   
+Shell> dmem
+Memory Address 00000000EFECAC10 78 Bytes
+  EFECAC10: 49 42 49 20 53 59 53 54-64 00 02 00 78 00 00 00  *IBI SYSTd...x...*
+  EFECAC20: 5D A6 6E 09 00 00 00 00-88 AC EC EF 00 00 00 00  *].n.............*
+  EFECAC30: 00 01 24 20 00 00 00 00-20 E4 EF ED 00 00 00 00  *..$ .... .......*
+  EFECAC40: 28 98 FA EF 00 00 00 00-B0 C9 F3 ED 00 00 00 00  *(...............*
+  EFECAC50: 48 40 9E B1 00 00 00 00-20 E4 EF ED 00 00 00 00  *H@...... .......*
+  EFECAC60: 88 98 FA EF 00 00 00 00-B8 AC EC EF 00 00 00 00  *................*
+  EFECAC70: 60 96 FA EF 00 00 00 00-05 00 00 00 00 00 00 00  *`...............*
+  EFECAC80: 40 00 E7 EC 00 00 00 00-                         *@.......*
+
+Valid EFI Header at Address 00000000EFECAC10
+---------------------------------------------
+System: Table Structure size 00000078 revision 00020064
+ConIn (00000000EFFA9828) ConOut (00000000B19E4048) StdErr (00000000EFFA9888)
+Runtime Services 00000000EFECACB8
+Boot Services    00000000EFFA9660
+SAL System Table 0000000000000000
+ACPI Table       0000000000000000
+ACPI 2.0 Table   0000000000000000
+MPS Table        0000000000000000
+SMBIOS Table     00000000ECE93000
 Shell> pci
 pci: Protocol - PciRootBridgeIo not found.
 Shell> drivers
@@ -266,8 +271,8 @@ Shell> memmap
 Type       Start            End              # Pages          Attributes
 Available  0000000000200000-0000000000B0DFFF 000000000000090E 0000000000000008
 Reserved   0000000000B0E000-0000000000B28FFF 000000000000001B 0000000000000008
-Available  0000000000B29000-00000000B1871FFF 00000000000B0D49 0000000000000008
-BS_Data    00000000B1872000-00000000B18D5FFF 0000000000000064 0000000000000008
+Available  0000000000B29000-00000000B186FFFF 00000000000B0D47 0000000000000008
+BS_Data    00000000B1870000-00000000B18D5FFF 0000000000000066 0000000000000008
 LoaderCode 00000000B18D6000-00000000B19AEFFF 00000000000000D9 0000000000000008
 BS_Data    00000000B19AF000-00000000B1A88FFF 00000000000000DA 0000000000000008
 LoaderData 00000000B1A89000-00000000B1A89FFF 0000000000000001 0000000000000008
@@ -286,13 +291,13 @@ BS_Data    00000000ECE94000-00000000ECEA6FFF 0000000000000013 0000000000000008
 BS_Code    00000000ECEA7000-00000000EFEBFFFF 0000000000003019 0000000000000008
 RT_Code    00000000EFEC0000-00000000EFECFFFF 0000000000000010 8000000000000008
 BS_Code    00000000EFED0000-00000000EFFFFFFF 0000000000000130 0000000000000008
-BS_Data    0000000100000000-00000001FFFFFFFF 0000000000100000 0000000000000008
+BS_Data    0000000100000000-00000001BFFFFFFF 00000000000C0000 0000000000000008
  
   Reserved  :             27 Pages (110,592 Bytes)
   LoaderCode:        242,821 Pages (994,594,816 Bytes)
   LoaderData:              1 Pages (4,096 Bytes)
   BS_Code   :         12,617 Pages (51,679,232 Bytes)
-  BS_Data   :      1,048,941 Pages (4,296,462,336 Bytes)
+  BS_Data   :        786,799 Pages (3,222,728,704 Bytes)
   RT_Code   :             16 Pages (65,536 Bytes)
   RT_Data   :             36 Pages (147,456 Bytes)
   ACPI_Recl :             30 Pages (122,880 Bytes)
@@ -301,10 +306,10 @@ BS_Data    0000000100000000-00000001FFFFFFFF 0000000000100000 0000000000000008
   MMIO_Port :              0 Pages (0 Bytes)
   PalCode   :              0 Pages (0 Bytes)
   Unaccepted:              0 Pages (0 Bytes)
-  Available :        726,615 Pages (2,976,215,040 Bytes)
+  Available :        726,613 Pages (2,976,206,848 Bytes)
   Persistent:              0 Pages (0 Bytes)
               -------------- 
-Total Memory:          7,933 MB (8,319,291,392 Bytes)
+Total Memory:          6,909 MB (7,245,549,568 Bytes)
 Shell> smbiosview
 SMBIOS Entry Point Structure:
 Anchor String:        _SM_
@@ -503,5 +508,4 @@ This structure indicates the End-of-table!
 
 
 =========================================================
-Shell> 
 Shell> 

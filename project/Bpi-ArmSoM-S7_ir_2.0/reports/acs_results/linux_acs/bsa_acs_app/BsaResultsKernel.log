@@ -1,30 +1,30 @@
-[   35.569118]  PE_INFO: Number of PE detected       :    8
-[   35.569913]  PCIE_INFO: Number of ECAM regions    :    0
-[   35.570741]  Peripheral: Num of USB controllers   :    0
-[   35.571689]  Peripheral: Num of SATA controllers  :    0
-[   35.572615]  Peripheral: Num of UART controllers  :    0
-[   35.573564]  DMA_INFO: Number of DMA CTRL in PCIe :    0
-[   35.574766]  SMMU_INFO: Number of SMMU CTRL       :    0
-[   35.575525] 
+[  103.437818]  PE_INFO: Number of PE detected       :    8
+[  103.438610]  PCIE_INFO: Number of ECAM regions    :    0
+[  103.439463]  Peripheral: Num of USB controllers   :    0
+[  103.440377]  Peripheral: Num of SATA controllers  :    0
+[  103.441318]  Peripheral: Num of UART controllers  :    0
+[  103.442266]  DMA_INFO: Number of DMA CTRL in PCIe :    0
+[  103.443472]  SMMU_INFO: Number of SMMU CTRL       :    0
+[  103.444217] 
                      *** Starting Memory Map tests ***
-[   35.576472] 
+[  103.445175] 
                Operating System View:
-[   35.577375]  104 : Addressability                        
+[  103.446078]  104 : Addressability                        
                       Checkpoint --  1                           : Result:  SKIPPED
-[   35.578964] 
+[  103.447736] 
                      One or more Memory tests failed or were skipped.
-[   35.580162] 
+[  103.448856] 
                      *** Starting Peripheral tests ***
-[   35.581139] 
+[  103.449839] 
                Operating System View:
-[   35.582044]  605 : Memory Attribute of DMA               
+[  103.450744]  605 : Memory Attribute of DMA               
                       No DMA controllers detected...    
                       Checkpoint --  3                           : Result:  SKIPPED
-[   35.584083] 
+[  103.452779] 
                      One or more Peripheral tests failed or were skipped.
-[   35.585290] 
+[  103.453986] 
                      *** No ECAM region found, Skipping PCIE tests ***
-[   35.586396] 
+[  103.455092] 
                     ------------------------------------------------------------
                      Total Tests Run =  2, Tests Passed =  0, Tests Failed =  0 
                     ------------------------------------------------------------

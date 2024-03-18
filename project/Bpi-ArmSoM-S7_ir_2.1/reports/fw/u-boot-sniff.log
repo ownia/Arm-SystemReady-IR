@@ -1,14 +1,32 @@
 DDR d5483af87d cym 23/11/23-16:15:24,fwver: v1.15
+LPDDR4X: may be ch3 soldering abnormality
+unknown device
+If no 'may be ch* soldering abnormality' is printed, it may be ch0 soldering abnormality
+error
+ERR
+DDR d5483af87d cym 23/11/23-16:15:24,fwver: v1.15
+LPDDR4X: may be ch3 soldering abnormality
+unknown device
+If no 'may be ch* soldering abnormality' is printed, it may be ch0 soldering abnormality
+error
+ERR
+DDR d5483af87d cym 23/11/23-16:15:24,fwver: v1.15
+LPDDR4X: may be ch3 soldering abnormality
+unknown device
+If no 'may be ch* soldering abnormality' is printed, it may be ch0 soldering abnormality
+error
+ERR
+DDR d5483af87d cym 23/11/23-16:15:24,fwver: v1.15
 LPDDR4X, 2112MHz
 channel[0] BW=16 Col=10 Bk=8 CS0 Row=16 CS1 Row=16 CS=2 Die BW=16 Size=2048MB
 channel[1] BW=16 Col=10 Bk=8 CS0 Row=16 CS1 Row=16 CS=2 Die BW=16 Size=2048MB
 channel[2] BW=16 Col=10 Bk=8 CS0 Row=16 CS1 Row=16 CS=2 Die BW=16 Size=2048MB
-channel[3] BW=16 Col=10 Bk=8 CS0 Row=16 CS=1 Die BW=16 Size=1024MB
+channel[3] BW=16 Col=10 Bk=8 CS0 Row=16 CS1 Row=16 CS=2 Die BW=16 Size=2048MB
 Manufacturer ID:0x13
 CH0 RX Vref:30.5%, TX Vref:19.8%,18.8%
-CH1 RX Vref:33.4%, TX Vref:18.8%,18.8%
-CH2 RX Vref:38.1%, TX Vref:18.8%,18.8%
-CH3 RX Vref:38.5%, TX Vref:18.8%,0.0%
+CH1 RX Vref:33.0%, TX Vref:18.8%,18.8%
+CH2 RX Vref:38.9%, TX Vref:18.8%,18.8%
+CH3 RX Vref:38.5%, TX Vref:18.8%,18.8%
 change to F1: 528MHz
 change to F2: 1068MHz
 change to F3: 1560MHz
@@ -33,7 +51,7 @@ Trying fit image at 0x4000 sector
 ## Checking atf-3 0xff100000 ... sha256(4b2065349b...) + OK
 ## Checking tee-1 0x08400000 ... sha256(617eb0ee15...) + OK
 Jumping to U-Boot(0x00a00000) via ARM Trusted Firmware(0x00040000)
-Total: 96.903/258.817 ms
+Total: 97.45/269.437 ms
 
 INFO:    Preloader serial: 2
 NOTICE:  BL31: v2.3():v2.3-682-g4ca8a8422:derrick.huang, fwver: v1.45
@@ -41,7 +59,7 @@ NOTICE:  BL31: Built : 10:11:21, Dec 27 2023
 INFO:    spec: 0x1
 INFO:    code: 0x88
 INFO:    ext 32k is not valid
-INFO:    ddr: stride-dis 2048Mb, 4CH
+INFO:    ddr: stride-en 4CH
 INFO:    GICv3 without legacy support detected.
 INFO:    ARM GICv3 driver initialized in EL3
 INFO:    valid_cpu_msk=0xff bcore0_rst = 0x0, bcore1_rst = 0x0
@@ -69,7 +87,7 @@ INFO:    SPSR = 0x3c9
 U-Boot 2024.01-rc5-gd85cb6714d-dirty (Mar 13 2024 - 13:35:43 +0800)
 
 Model: ArmSoM Sige7 Board
-DRAM:  7 GiB (effective 6.7 GiB)
+DRAM:  8 GiB (effective 7.7 GiB)
 pcie_dw_rockchip pcie@fe180000: failed to get pcie phy (ret=-19)
 pcie_dw_rockchip pcie@fe150000: PCIe-3 Link Fail
 Core:  339 devices, 28 uclasses, devicetree: separate
@@ -81,6 +99,20 @@ Err:   serial@feb50000
 Model: ArmSoM Sige7 Board
 Net:   eth0: eth_rtl8169, eth1: eth_rtl8169
 Hit any key to stop autoboot:  2  0
+=> 
+=> 
+=> 
+=> 
+=> 
+=> 
+=> 
+=> 
+=> 
+=> 
+=> 
+=> 
+=> 
+=> 
 => 
 => 
 => 
@@ -292,7 +324,7 @@ DRAM bank   = 0x0000000000000000
 -> size     = 0x00000000efe00000
 DRAM bank   = 0x0000000000000001
 -> start    = 0x0000000100000000
--> size     = 0x00000000c0000000
+-> size     = 0x0000000100000000
 flashstart  = 0x0000000000000000
 flashsize   = 0x0000000000000000
 flashoffset = 0x0000000000000000
@@ -309,11 +341,11 @@ fdt_size    = 0x000000000001a220
 lmb_dump_all:
  memory.cnt = 0x2 / max = 0x10
  memory[0]	[0x200000-0xefffffff], 0xefe00000 bytes flags: 0
- memory[1]	[0x100000000-0x1bfffffff], 0xc0000000 bytes flags: 0
+ memory[1]	[0x100000000-0x1ffffffff], 0x100000000 bytes flags: 0
  reserved.cnt = 0x3 / max = 0x10
  reserved[0]	[0xb0ede0-0xb28fff], 0x0001a220 bytes flags: 0
  reserved[1]	[0xece67000-0xefffffff], 0x03199000 bytes flags: 0
- reserved[2]	[0x100000000-0x1bfffffff], 0xc0000000 bytes flags: 0
+ reserved[2]	[0x100000000-0x1ffffffff], 0x100000000 bytes flags: 0
 devicetree  = separate
 serial addr = 0x00000000feb50000
  width      = 0x0000000000000004
@@ -567,12 +599,14 @@ BOOT DATA        00000000ece94000-00000000ecea7000 WB
 BOOT CODE        00000000ecea7000-00000000efec0000 WB
 RUNTIME CODE     00000000efec0000-00000000efed0000 WB|RT
 BOOT CODE        00000000efed0000-00000000f0000000 WB
-BOOT DATA        0000000100000000-00000001c0000000 WB
+BOOT DATA        0000000100000000-0000000200000000 WB
 => efidebug tables
 00000000ece6f040  36122546-f7ef-4c8f-bd9b-eb8525b50c0b  EFI Conformance Profiles Table
 00000000ece6a040  b122a263-3661-4f68-9929-78f8b0d62180  EFI System Resource Table
 00000000ece6c040  eb66918a-7eef-402a-842e-931d21c38ae9  Runtime properties
 00000000ece93000  eb9d2d31-2d88-11d3-9a16-0090273fc14d  SMBIOS table
+=> efidebug query
+Error: Cannot query UEFI variables, r = 2
 => efidebug boot dump
 => efidebug capsule esrt
 ========================================
@@ -937,15 +971,110 @@ LPDDR4X, 2112MHz
 channel[0] BW=16 Col=10 Bk=8 CS0 Row=16 CS1 Row=16 CS=2 Die BW=16 Size=2048MB
 channel[1] BW=16 Col=10 Bk=8 CS0 Row=16 CS1 Row=16 CS=2 Die BW=16 Size=2048MB
 channel[2] BW=16 Col=10 Bk=8 CS0 Row=16 CS1 Row=16 CS=2 Die BW=16 Size=2048MB
-channel[3] BW=16 Col=10 Bk=8 CS0 Row=16 CS1 Row=16 CS=2 Die BW=16 Size=2048MB
+channel[3] BW=16 Col=10 Bk=8 CS0 Row=16 CS=1 Die BW=16 Size=1024MB
 Manufacturer ID:0x13
-ch:0 dq0 fail,write:0xfffffffe,read:0xfffffdfe
-ch:0 dq1 fail,write:0xfffffffd,read:0xfffffcfd
-ch:0 dq3 fail,write:0xfffffff7,read:0xfffffcf7
-ch:0 dq5 fail,write:0xffffffdf,read:0xfffffcdf
-ch:0 dq7 fail,write:0xffffff7f,read:0xfffffc7f
-ch:0 dq11 fail,write:0xfffff7ff,read:0xfffff6ff
-ch:0 dq13 fail,write:0xffffdfff,read:0xffffdcff
-ch:0 dq15 fail,write:0xffff7fff,read:0xffff7eff
-error
-ERR
+CH0 RX Vref:31.0%, TX Vref:19.8%,18.8%
+CH1 RX Vref:33.9%, TX Vref:18.8%,18.8%
+CH2 RX Vref:37.7%, TX Vref:18.8%,18.8%
+CH3 RX Vref:38.9%, TX Vref:18.8%,0.0%
+change to F1: 528MHz
+change to F2: 1068MHz
+change to F3: 1560MHz
+change to F0: 2112MHz
+out
+U-Boot SPL board init
+U-Boot SPL 2017.09-g82435751526-231214-dirty #zhangzj (Dec 14 2023 - 09:16:28)
+unknown raw ID 0 0 0
+unrecognized JEDEC id bytes: 00, 00, 00
+Trying to boot from MMC2
+MMC: no card present
+mmc_init: -123, time 1
+spl: mmc init failed with error: -123
+Trying to boot from MMC1
+SPL: A/B-slot: _a, successful: 0, tries-remain: 7
+Trying fit image at 0x4000 sector
+## Verified-boot: 0
+## Checking atf-1 0x00040000 ... sha256(a7d1d8d191...) + OK
+## Checking u-boot 0x00a00000 ... sha256(6ad826714e...) + OK
+## Checking fdt-1 0x00b0ede0 ... sha256(4a562fd569...) + OK
+## Checking atf-2 0x000f0000 ... sha256(aa71013e72...) + OK
+## Checking atf-3 0xff100000 ... sha256(4b2065349b...) + OK
+## Checking tee-1 0x08400000 ... sha256(617eb0ee15...) + OK
+Jumping to U-Boot(0x00a00000) via ARM Trusted Firmware(0x00040000)
+Total: 96.976/259.253 ms
+
+INFO:    Preloader serial: 2
+NOTICE:  BL31: v2.3():v2.3-682-g4ca8a8422:derrick.huang, fwver: v1.45
+NOTICE:  BL31: Built : 10:11:21, Dec 27 2023
+INFO:    spec: 0x1
+INFO:    code: 0x88
+INFO:    ext 32k is not valid
+INFO:    ddr: stride-dis 2048Mb, 4CH
+INFO:    GICv3 without legacy support detected.
+INFO:    ARM GICv3 driver initialized in EL3
+INFO:    valid_cpu_msk=0xff bcore0_rst = 0x0, bcore1_rst = 0x0
+INFO:    l3 cache partition cfg-0
+INFO:    system boots from cpu-hwid-0
+INFO:    disable memory repair
+INFO:    idle_st=0x21fff, pd_st=0x11fff9, repair_st=0xfff70001
+INFO:    dfs DDR fsp_params[0].freq_mhz= 2112MHz
+INFO:    dfs DDR fsp_params[1].freq_mhz= 528MHz
+INFO:    dfs DDR fsp_params[2].freq_mhz= 1068MHz
+INFO:    dfs DDR fsp_params[3].freq_mhz= 1560MHz
+INFO:    BL31: Initialising Exception Handling Framework
+INFO:    BL31: Initializing runtime services
+INFO:    BL31: Initializing BL32
+I/TC: 
+I/TC: OP-TEE version: 3.13.0-760-g540ade275 #zhangzj (gcc version 10.2.1 20201103 (GNU Toolchain for the A-profile Architecture 10.2-2020.11 (arm-10.16))) #3 Tue Dec  5 14:36:05 CST 2023 aarch64, fwver: null 
+I/TC: OP-TEE memory: TEEOS 0x200000 TA 0xc00000 SHM 0x200000
+I/TC: Primary CPU initializing
+I/TC: Primary CPU switching to normal world boot
+INFO:    BL31: Preparing for EL3 exit to normal world
+INFO:    Entry point address = 0xa00000
+INFO:    SPSR = 0x3c9
+
+
+U-Boot 2024.01-rc5-gd85cb6714d-dirty (Mar 13 2024 - 13:35:43 +0800)
+
+Model: ArmSoM Sige7 Board
+DRAM:  7 GiB (effective 6.7 GiB)
+pcie_dw_rockchip pcie@fe180000: failed to get pcie phy (ret=-19)
+pcie_dw_rockchip pcie@fe150000: PCIe-3 Link Fail
+Core:  339 devices, 28 uclasses, devicetree: separate
+MMC:   mmc@fe2c0000: 1, mmc@fe2d0000: 2, mmc@fe2e0000: 0
+Loading Environment from MMC... OK
+In:    serial@feb50000
+Out:   serial@feb50000
+Err:   serial@feb50000
+Model: ArmSoM Sige7 Board
+Net:   eth0: eth_rtl8169, eth1: eth_rtl8169
+Hit any key to stop autoboot:  2  0
+=> 
+=> 
+=> 
+=> 
+=> 
+=> 
+=> 
+=> 
+=> 
+=> 
+=> 
+=> 
+=> 
+=> 
+=> 
+=> 
+=> 
+=> 
+=> 
+=> 
+=> 
+=> 
+=> 
+=> 
+=> 
+=> 
+=> 
+=> 
+=> 

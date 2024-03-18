@@ -1,24 +1,24 @@
 0010f000-0010f0ff : 10f000.sram sram@10f000
-00200000-00b05fff : System RAM
-00b06000-00b1ffff : reserved
-00b20000-ece78fff : System RAM
+00200000-00b0dfff : System RAM
+00b0e000-00b28fff : reserved
+00b29000-ece6bfff : System RAM
   abf80000-ad95ffff : Kernel code
   ad960000-ae1affff : reserved
   ae1b0000-ae65ffff : Kernel data
   b0ab0000-b0ac7fff : reserved
-  b0e15000-b0e15fff : reserved
-  b0e16000-b0e16fff : reserved
-  e8e51000-ece6dfff : reserved
-  ece77000-ece77fff : reserved
-ece79000-ece79fff : reserved
-ece7a000-ece7cfff : System RAM
-ece7d000-ece7efff : reserved
-ece7f000-ece7ffff : System RAM
-ece80000-ecea0fff : reserved
-ecea1000-efecffff : System RAM
+  b0e09000-b0e09fff : reserved
+  b0e0a000-b0e0afff : reserved
+  e8e40000-ece5dfff : reserved
+  ece6a000-ece6afff : reserved
+ece6c000-ece6cfff : reserved
+ece6d000-ece6ffff : System RAM
+ece70000-ece71fff : reserved
+ece72000-ece72fff : System RAM
+ece73000-ece93fff : reserved
+ece94000-efebffff : System RAM
   ede00000-efdfffff : reserved
-efed0000-efedffff : reserved
-efee0000-efffffff : System RAM
+efec0000-efecffff : reserved
+efed0000-efffffff : System RAM
 fc800000-fc83ffff : fc800000.usb usb@fc800000
 fc840000-fc87ffff : fc840000.usb usb@fc840000
 fc880000-fc8bffff : fc880000.usb usb@fc880000
