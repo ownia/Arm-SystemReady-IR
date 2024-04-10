@@ -195,7 +195,7 @@
 	from schema $id: http://devicetree.org/schemas/arm/rockchip.yaml#
 /home/weiouy01/code/Arm-SystemReady-IoT/project/Bpi-ArmSoM-S7_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: /: memory: False schema does not allow {'reg': [[0, 2097152, 0, 4024434688], [1, 0, 1, 0]], 'device_type': ['memory']}
 	from schema $id: http://devicetree.org/schemas/root-node.yaml#
-/home/weiouy01/code/Arm-SystemReady-IoT/project/Bpi-ArmSoM-S7_ir_2.0/reports//acs_results/uefi/BsaDevTree.dtb: /: failed to match any schema with compatible: ['armsom,rk3588-armsom-sige7', 'rockchip,rk3588']
+/home/weiouy01/code/Arm-SystemReady-IoT/project/Bpi-ArmSoM-S7_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: /: failed to match any schema with compatible: ['armsom,rk3588-armsom-sige7', 'rockchip,rk3588']
 /home/weiouy01/code/Arm-SystemReady-IoT/project/Bpi-ArmSoM-S7_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: mmc@fe2c0000: Unevaluated properties are not allowed ('u-boot,spl-fifo-mode' was unexpected)
 	from schema $id: http://devicetree.org/schemas/mmc/rockchip-dw-mshc.yaml#
 /home/weiouy01/code/Arm-SystemReady-IoT/project/Bpi-ArmSoM-S7_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: mmc@fe2e0000: Unevaluated properties are not allowed ('u-boot,spl-fifo-mode' was unexpected)
@@ -226,28 +226,154 @@
 	from schema $id: http://devicetree.org/schemas/vendor-prefixes.yaml#
 /home/weiouy01/code/Arm-SystemReady-IoT/project/Bpi-ArmSoM-S7_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: @config-SEQ: fit,firmware: b'atf-1\x00u-boot\x00' is not of type 'object', 'array', 'boolean', 'null'
 	from schema $id: http://devicetree.org/schemas/dt-core.yaml#
-/home/weiouy01/code/Arm-SystemReady-IoT/project/Bpi-ArmSoM-S7_ir_2.0/reports//acs_results/uefi/BsaDevTree.dtb: /dmc: failed to match any schema with compatible: ['u-boot,rockchip,rk3588-dmc']
-/home/weiouy01/code/Arm-SystemReady-IoT/project/Bpi-ArmSoM-S7_ir_2.0/reports//acs_results/uefi/BsaDevTree.dtb: /usb@fc000000: failed to match any schema with compatible: ['rockchip,rk3588-dwc3', 'snps,dwc3']
-/home/weiouy01/code/Arm-SystemReady-IoT/project/Bpi-ArmSoM-S7_ir_2.0/reports//acs_results/uefi/BsaDevTree.dtb: /usb@fcd00000: failed to match any schema with compatible: ['rockchip,rk3588-dwc3', 'snps,dwc3']
-/home/weiouy01/code/Arm-SystemReady-IoT/project/Bpi-ArmSoM-S7_ir_2.0/reports//acs_results/uefi/BsaDevTree.dtb: /syscon@fd58a000: failed to match any schema with compatible: ['rockchip,rk3588-pmugrf', 'syscon']
-/home/weiouy01/code/Arm-SystemReady-IoT/project/Bpi-ArmSoM-S7_ir_2.0/reports//acs_results/uefi/BsaDevTree.dtb: /syscon@fd5c8000: failed to match any schema with compatible: ['rockchip,rk3588-usbdpphy-grf', 'syscon']
-/home/weiouy01/code/Arm-SystemReady-IoT/project/Bpi-ArmSoM-S7_ir_2.0/reports//acs_results/uefi/BsaDevTree.dtb: /syscon@fd5a6000: failed to match any schema with compatible: ['rockchip,rk3588-vo-grf', 'syscon']
-/home/weiouy01/code/Arm-SystemReady-IoT/project/Bpi-ArmSoM-S7_ir_2.0/reports//acs_results/uefi/BsaDevTree.dtb: /syscon@fd5ac000: failed to match any schema with compatible: ['rockchip,rk3588-usb-grf', 'syscon']
-/home/weiouy01/code/Arm-SystemReady-IoT/project/Bpi-ArmSoM-S7_ir_2.0/reports//acs_results/uefi/BsaDevTree.dtb: /rng@fe378000: failed to match any schema with compatible: ['rockchip,trngv1']
-/home/weiouy01/code/Arm-SystemReady-IoT/project/Bpi-ArmSoM-S7_ir_2.0/reports//acs_results/uefi/BsaDevTree.dtb: /phy@fed80000: failed to match any schema with compatible: ['rockchip,rk3588-usbdp-phy']
-/home/weiouy01/code/Arm-SystemReady-IoT/project/Bpi-ArmSoM-S7_ir_2.0/reports//acs_results/uefi/BsaDevTree.dtb: /usb@fc400000: failed to match any schema with compatible: ['rockchip,rk3588-dwc3', 'snps,dwc3']
-/home/weiouy01/code/Arm-SystemReady-IoT/project/Bpi-ArmSoM-S7_ir_2.0/reports//acs_results/uefi/BsaDevTree.dtb: /syscon@fd5cc000: failed to match any schema with compatible: ['rockchip,rk3588-usbdpphy-grf', 'syscon']
-/home/weiouy01/code/Arm-SystemReady-IoT/project/Bpi-ArmSoM-S7_ir_2.0/reports//acs_results/uefi/BsaDevTree.dtb: /phy@fed90000: failed to match any schema with compatible: ['rockchip,rk3588-usbdp-phy']
+/home/weiouy01/code/Arm-SystemReady-IoT/project/Bpi-ArmSoM-S7_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: dmc: $nodename:0: '/' was expected
+	from schema $id: http://devicetree.org/schemas/arm/rockchip.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/Bpi-ArmSoM-S7_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: dmc: compatible: 'oneOf' conditional failed, one must be fixed:
+	['rockchip,rk3588'] is too short
+	'vamrs,ficus' was expected
+	'vamrs,rock960' was expected
+	'amarula,vyasa-rk3288' was expected
+	'anbernic,rg351m' was expected
+	'anbernic,rg353p' was expected
+	'anbernic,rg353ps' was expected
+	'anbernic,rg353v' was expected
+	'anbernic,rg353vs' was expected
+	'anbernic,rg503' was expected
+	'asus,rk3288-tinker' was expected
+	'asus,rk3288-tinker-s' was expected
+	'azw,beelink-a1' was expected
+	'mundoreader,bq-curie2' was expected
+	'mundoreader,bq-edison2qc' was expected
+	'chipspark,popmetal-rk3288' was expected
+	'chipspark,rayeager-px2' was expected
+	'edgeble,neural-compute-module-2-io' was expected
+	'edgeble,neural-compute-module-6a-io' was expected
+	'edgeble,neural-compute-module-6b-io' was expected
+	'elgin,rv1108-r1' was expected
+	'embedfire,lubancat-1' was expected
+	'embedfire,lubancat-2' was expected
+	'engicam,px30-core-ctouch2' was expected
+	'engicam,px30-core-ctouch2-of10' was expected
+	'engicam,px30-core-edimm2.2' was expected
+	'rockchip,rk3588' is not one of ['firefly,firefly-rk3288', 'firefly,firefly-rk3288-beta']
+	'firefly,firefly-rk3288-reload' was expected
+	'firefly,firefly-rk3399' was expected
+	'firefly,roc-rk3308-cc' was expected
+	'firefly,roc-rk3328-cc' was expected
+	'firefly,roc-rk3328-pc' was expected
+	'rockchip,rk3588' is not one of ['firefly,roc-rk3399-pc', 'firefly,roc-rk3399-pc-mezzanine']
+	'rockchip,rk3588' is not one of ['firefly,roc-rk3399-pc-plus']
+	'firefly,rk3566-roc-pc' was expected
+	'firefly,rk3568-roc-pc' was expected
+	'rockchip,rk3588' is not one of ['friendlyarm,nanopi-r2c', 'friendlyarm,nanopi-r2c-plus', 'friendlyarm,nanopi-r2s']
+	'rockchip,rk3588' is not one of ['friendlyarm,nanopc-t4', 'friendlyarm,nanopi-m4', 'friendlyarm,nanopi-m4b', 'friendlyarm,nanopi-neo4', 'friendlyarm,nanopi-r4s', 'friendlyarm,nanopi-r4s-enterprise']
+	'rockchip,rk3588' is not one of ['friendlyarm,nanopi-r5c', 'friendlyarm,nanopi-r5s']
+	'friendlyarm,nanopc-t6' was expected
+	'geekbuying,geekbox' was expected
+	'google,bob-rev13' was expected
+	'google,veyron-brain-rev0' was expected
+	'google,veyron-fievel-rev8' was expected
+	'google,gru-rev15' was expected
+	'google,veyron-jaq-rev5' was expected
+	'google,veyron-jerry-rev15' was expected
+	'google,kevin-rev15' was expected
+	'google,veyron-mickey-rev8' was expected
+	'google,veyron-mighty-rev5' was expected
+	'google,veyron-minnie-rev4' was expected
+	'google,veyron-pinky-rev2' was expected
+	'google,scarlet-rev15-sku0' was expected
+	'google,scarlet-rev15-sku7' was expected
+	'google,scarlet-rev15-sku2' was expected
+	'google,veyron-speedy-rev9' was expected
+	'google,veyron-tiger-rev8' was expected
+	'haoyu,marsboard-rk3066' was expected
+	'hardkernel,rk3326-odroid-go2' was expected
+	'hardkernel,rk3326-odroid-go2-v11' was expected
+	'hardkernel,rk3326-odroid-go3' was expected
+	'rockchip,rk3568-odroid-m1' was expected
+	'hugsun,x99' was expected
+	'indiedroid,nova' was expected
+	'rockchip,rk3588' is not one of ['khadas,edge', 'khadas,edge-captain', 'khadas,edge-v']
+	'khadas,edge2' was expected
+	'kobol,helios64' was expected
+	'mecer,xms6' was expected
+	'leez,p710' was expected
+	'rockchip,rk3588' is not one of ['lunzn,fastrhino-r66s', 'lunzn,fastrhino-r68s']
+	'mqmaker,miqi' was expected
+	'netxeon,r89' was expected
+	'openailab,eaidk-610' was expected
+	'rockchip,rk3399-orangepi' was expected
+	'phytec,rk3288-pcm-947' was expected
+	'pine64,pinebook-pro' was expected
+	'rockchip,rk3588' is not one of ['pine64,pinenote-v1.1', 'pine64,pinenote-v1.2']
+	'pine64,pinephone-pro' was expected
+	'pine64,rock64' was expected
+	'rockchip,rk3588' is not one of ['pine64,rockpro64-v2.1', 'pine64,rockpro64-v2.0']
+	'rockchip,rk3588' is not one of ['pine64,quartz64-a', 'pine64,quartz64-b']
+	'rockchip,rk3588' is not one of ['pine64,soquartz-blade', 'pine64,soquartz-cm4io', 'pine64,soquartz-model-a']
+	'rockchip,rk3588' is not one of ['radxa,cm3-io']
+	'rockchip,rk3588' is not one of ['radxa,e25']
+	'radxa,rock' was expected
+	'rockchip,rk3588' is not one of ['radxa,rockpi4a', 'radxa,rockpi4a-plus', 'radxa,rockpi4b', 'radxa,rockpi4b-plus', 'radxa,rockpi4c']
+	'radxa,rock-4c-plus' was expected
+	'radxa,rock-4se' was expected
+	'radxa,rockpi-e' was expected
+	'radxa,rockpi-n8' was expected
+	'radxa,rockpi-n10' was expected
+	'radxa,rockpis' was expected
+	'radxa,rock2-square' was expected
+	'radxa,rock3a' was expected
+	'radxa,rock-5a' was expected
+	'radxa,rock-5b' was expected
+	'rikomagic,mk808' was expected
+	'rockchip,rk3036-kylin' was expected
+	'rockchip,px3-evb' was expected
+	'rockchip,px30-evb' was expected
+	'rockchip,px5-evb' was expected
+	'rockchip,r88' was expected
+	'rockchip,rk3036-evb' was expected
+	'rockchip,rk3128-evb' was expected
+	'rockchip,rk3228-evb' was expected
+	'rockchip,rk3229-evb' was expected
+	'rockchip,rk3588' is not one of ['rockchip,rk3288-evb-act8846', 'rockchip,rk3288-evb-rk808']
+	'rockchip,rk3308-evb' was expected
+	'rockchip,rk3328-evb' was expected
+	'rockchip,rk3368-evb-act8846' was expected
+	'rockchip,rk3399-evb' was expected
+	'rockchip,rk3399-sapphire' was expected
+	'rockchip,rk3399-sapphire-excavator' was expected
+	'rockchip,rk3588-evb1-v10' was expected
+	'rockchip,rv1108-evb' was expected
+	'tsd,px30-ringneck-haikou' was expected
+	'tsd,rk3368-lion-haikou' was expected
+	'tsd,rk3399-puma-haikou' was expected
+	'tronsmart,orion-r68-meta' was expected
+	'rockchip,rk3588' is not one of ['xunlong,orangepi-r1-plus', 'xunlong,orangepi-r1-plus-lts']
+	'zkmagic,a95x-z2' was expected
+	'rockchip,rk3566-box-demo' was expected
+	'rockchip,rk3568-evb1-v10' was expected
+	'rockchip,rk3568-bpi-r2pro' was expected
+	from schema $id: http://devicetree.org/schemas/arm/rockchip.yaml#
+/home/weiouy01/code/Arm-SystemReady-IoT/project/Bpi-ArmSoM-S7_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: /usb@fc000000: failed to match any schema with compatible: ['rockchip,rk3588-dwc3', 'snps,dwc3']
+/home/weiouy01/code/Arm-SystemReady-IoT/project/Bpi-ArmSoM-S7_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: /usb@fcd00000: failed to match any schema with compatible: ['rockchip,rk3588-dwc3', 'snps,dwc3']
+/home/weiouy01/code/Arm-SystemReady-IoT/project/Bpi-ArmSoM-S7_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: /syscon@fd58a000: failed to match any schema with compatible: ['rockchip,rk3588-pmugrf', 'syscon']
+/home/weiouy01/code/Arm-SystemReady-IoT/project/Bpi-ArmSoM-S7_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: /syscon@fd5c8000: failed to match any schema with compatible: ['rockchip,rk3588-usbdpphy-grf', 'syscon']
+/home/weiouy01/code/Arm-SystemReady-IoT/project/Bpi-ArmSoM-S7_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: /syscon@fd5a6000: failed to match any schema with compatible: ['rockchip,rk3588-vo-grf', 'syscon']
+/home/weiouy01/code/Arm-SystemReady-IoT/project/Bpi-ArmSoM-S7_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: /syscon@fd5ac000: failed to match any schema with compatible: ['rockchip,rk3588-usb-grf', 'syscon']
+/home/weiouy01/code/Arm-SystemReady-IoT/project/Bpi-ArmSoM-S7_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: /phy@fed80000: failed to match any schema with compatible: ['rockchip,rk3588-usbdp-phy']
+/home/weiouy01/code/Arm-SystemReady-IoT/project/Bpi-ArmSoM-S7_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: /usb@fc400000: failed to match any schema with compatible: ['rockchip,rk3588-dwc3', 'snps,dwc3']
+/home/weiouy01/code/Arm-SystemReady-IoT/project/Bpi-ArmSoM-S7_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: /syscon@fd5cc000: failed to match any schema with compatible: ['rockchip,rk3588-usbdpphy-grf', 'syscon']
+/home/weiouy01/code/Arm-SystemReady-IoT/project/Bpi-ArmSoM-S7_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: /phy@fed90000: failed to match any schema with compatible: ['rockchip,rk3588-usbdp-phy']
 /home/weiouy01/code/Arm-SystemReady-IoT/project/Bpi-ArmSoM-S7_ir_2.0/reports/acs_results/uefi/BsaDevTree.dtb: signature: capsule-key: b'\xa1Y\xc0\xa5\xe4\x94\xa7J\x87\xb5\xab\x15\\+\xf0r-\x03\x00\x00\x00\x00\x00\x00\x11\x03\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x000\x82\x02\xfd0\x82\x01\xe5\xa0\x03\x02\x01\x02\x02\x14.\x9c\x8d\x88\x87K\x1bjU\xca\xdeC\xf7\xf9\xf2m\x979\xa3]0\r\x06\t*\x86H\x86\xf7\r\x01\x01\x0b\x05\x000\x0e1\x0c0\n\x06\x03U\x04\x03\x0c\x03CRT0\x1e\x17\r231213045833Z\x17\r241212045833Z0\x0e1\x0c0\n\x06\x03U\x04\x03\x0c\x03CRT0\x82\x01"0\r\x06\t*\x86H\x86\xf7\r\x01\x01\x01\x05\x00\x03\x82\x01\x0f\x000\x82\x01\n\x02\x82\x01\x01\x00\x99\x02\xa2\xc0\xc5\x83\x1a\x1bv\xea\xae\xbf\x1c\x1d\xfb\xf9\xcf\x92\x86\x98D\x96\x13\xe0\x89\xe5s\xb8\xc0]\xe0\xbb1\xdf\x0fU\xfc\x9c\xe8#w\xcbR\xfa\x01\xae\xe7{\x0b\'\xac\xceR\x85\xd1\xeaQ\x0f\xda\x87\x93\x99Ew\x98\xfd\xd0\x8a\xb9?G\xfe\xe2\x1d\xee\xdd\r\x075\xca\xe6\x87O\xed\xa3\x0e#\xff\xe5\xc2m\xca\\\x92\xe6\x02\xbb\x12c\xb7\xbc\x07A\x88)gk\xe5\xb9\xc44HxP\xdfS\xd7\xbb\x92Q\xaa\xfe\xe8i\xc5\xd1\x83k\r<\x83\x0bs\x1dQ\xc1\xbb1\xed\xb5\xfc\x99\xb6\x84\x83n\xb7.\xb3\x08!\x89i\x87\x97\x91m"\x8fn\xa9\xa8\x89\x8e\xbc\x9d\x92\x99\xecr\x186\x00o1\xb3A\xa1\xb7v\xf9\xe0Z\xcc\xfa\x83*]aM\x08\x9c\xce4[\x0c\xc0\xfc\x80\x06\xc2+\x88\xa8\x96\xb1\x14>\x8f\xb4\xf4(\x05\xeb\x9fE\xf0\xe7\x91\x00\x1e\xbc0\xfc\xa3\x15H!\x14,d\x9e8W\xc0\x10\xcd\xf5Vn\xb9\xf0A\x17b\xa9\xc4A\t2*\xc9\xc9}\xb7\t\x02\x03\x01\x00\x01\xa3S0Q0\x1d\x06\x03U\x1d\x0e\x04\x16\x04\x14\xe5\xbf\x95Y\x08$\x1f\xba\xb3\x81\xaa\x8d\x8f\xca \xd2\x0c\x15\xc6$0\x1f\x06\x03U\x1d#\x04\x180\x16\x80\x14\xe5\xbf\x95Y\x08$\x1f\xba\xb3\x81\xaa\x8d\x8f\xca \xd2\x0c\x15\xc6$0\x0f\x06\x03U\x1d\x13\x01\x01\xff\x04\x050\x03\x01\x01\xff0\r\x06\t*\x86H\x86\xf7\r\x01\x01\x0b\x05\x00\x03\x82\x01\x01\x00\x85\x8f\x8c\xaa-\xc2\xdf:\x8f\x05\xc9dzXW0\x8b\xd8)\xc9\x17\xec\xec\x0fK\xfeh\x16\xa0\xbeO\x83\xbfC3\xaf\xa4\xfcd\xad3\xe8;\x18;\x82\x9a\x8a\xb4`T\x1c\xbb\x81\xe2C,@\xd2e\xb0\xaa\xbf\xb8\xba\x01\xda7P\x19\xe6,D\xcd \xb4\xaf[\x91\x1eW\x19\xe9-n*\xc3l\xbec\x12\xe5\x8c\xb9n)\xe0&\xb3O\x99\x10\xd9\x1d\x91\xd6_.\xc4B\xc3\xe8\x91\x95\xd1\x91q\x08\x81\x91\xbc\xd5\xc1\x13\x90\xe5x(\xd5\xf7D\x02\xcc\xe4=<#\xc8\xf0\xf9\xa6\xf5\x85j\xa6\x19\xc4Q4\x03a\x05f\xce\xb1<\x029R\x1c:\x8c\x8alg\xa2\xea\xff\x92P\x1d2\xa3\xf3|\xd9h\xf9\x11\xa3!\x8c?\xab\xe2\xc1\xd5\xba\x8d\x06\x99K>BtS\xe6\x19\xa6\xf6\xf3\x80~g\x98\xd1S\x9fOw\xdf\x0et`\xb4\xb7A\x1e\xc3\xa3\xa6\x95\x80\xa1 \x8a.\xde\x1c<:\\O\xeb\xcd \xd8\xa9\xcdU\x9aI\xaa\xbb\xc1M+\xfe\xa8\x1bPt?L\x82\x1c' is not of type 'object', 'array', 'boolean', 'null'
 	from schema $id: http://devicetree.org/schemas/dt-core.yaml#
 + END
 + meta-data
 + ---------
-+ command-line: check-sr-results.py --identify sh -c 'echo SystemReady IR v2.0 with SIE' --dir /home/weiouy01/code/Arm-SystemReady-IoT/project/Bpi-ArmSoM-S7_ir_2.0/reports/
-+ date: Mon Mar 18 02:10:23 2024 UTC
++ command-line: check-sr-results.py --identify sh -c 'echo SystemReady IR v2.0 with SIE' --dir /home/weiouy01/code/Arm-SystemReady-IoT/project/Bpi-ArmSoM-S7_ir_2.0/reports
++ date: Mon Apr  8 03:18:36 2024 UTC
 + dt-validate-version: 2023.11
 + dtc-version: DTC 1.6.1
-+ git-commit: v2023.04-67-gca8a265ac954-dirty
++ git-commit: v2023.04-67-gca8a265ac954
 + linux-version: linux-6.6.12
 + python-version: 3.10.12 (main, Nov 20 2023, 15:14:05) [GCC 11.4.0]
 + tar-version: tar (GNU tar) 1.34
