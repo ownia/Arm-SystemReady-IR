@@ -1,0 +1,68 @@
+0010f000-0010f0ff : 10f000.sram sram@10f000
+00200000-00b05fff : System RAM
+00b06000-00b20fff : reserved
+00b21000-083fffff : System RAM
+08400000-093fffff : reserved
+09400000-ece77fff : System RAM
+  aaa00000-ac94ffff : Kernel code
+  ac950000-ad59ffff : reserved
+  ad5a0000-adc0ffff : Kernel data
+  b0b20000-b0b38fff : reserved
+  b0d21000-b0d21fff : reserved
+  b0d22000-b0d22fff : reserved
+  e8e4a000-ece67fff : reserved
+  ece76000-ece76fff : reserved
+ece78000-ece78fff : reserved
+ece79000-ece7bfff : System RAM
+ece7c000-ece7dfff : reserved
+ece7e000-ece7efff : System RAM
+ece7f000-ece9ffff : reserved
+ecea0000-efecffff : System RAM
+  ede00000-efdfffff : reserved
+efed0000-efedffff : reserved
+efee0000-efffffff : System RAM
+fc800000-fc83ffff : fc800000.usb usb@fc800000
+fc840000-fc87ffff : fc840000.usb usb@fc840000
+fc880000-fc8bffff : fc880000.usb usb@fc880000
+fc8c0000-fc8fffff : fc8c0000.usb usb@fc8c0000
+fd600000-fd6fffff : fd600000.sram sram@fd600000
+fd880000-fd880fff : fd880000.i2c i2c@fd880000
+fd8a0000-fd8a00ff : fd8a0000.gpio gpio@fd8a0000
+fd8b0020-fd8b002f : fd8b0020.pwm pwm@fd8b0020
+fe2e0000-fe2effff : fe2e0000.mmc mmc@fe2e0000
+fe600000-fe60ffff : GICD
+fe680000-fe77ffff : GICR
+fea10000-fea13fff : dma-controller@fea10000
+  fea10000-fea13fff : fea10000.dma-controller dma-controller@fea10000
+fea30000-fea33fff : dma-controller@fea30000
+  fea30000-fea33fff : fea30000.dma-controller dma-controller@fea30000
+feaa0000-feaa0fff : feaa0000.i2c i2c@feaa0000
+feaf0000-feaf00ff : feaf0000.watchdog watchdog@feaf0000
+feb20000-feb20fff : feb20000.spi spi@feb20000
+feb50000-feb5001f : serial
+fec20000-fec200ff : fec20000.gpio gpio@fec20000
+fec30000-fec300ff : fec30000.gpio gpio@fec30000
+fec40000-fec400ff : fec40000.gpio gpio@fec40000
+fec50000-fec500ff : fec50000.gpio gpio@fec50000
+fed10000-fed13fff : dma-controller@fed10000
+  fed10000-fed13fff : fed10000.dma-controller dma-controller@fed10000
+ff001000-ff0effff : ff001000.sram sram@ff001000
+100000000-1ffffffff : System RAM
+  100234000-100234fff : reserved
+  1002a0000-1002affff : reserved
+  1002b0000-1002bffff : reserved
+  1002c0000-1002cffff : reserved
+  1002d0000-1002dffff : reserved
+  1002e0000-1002effff : reserved
+  1002f0000-1002fffff : reserved
+  100300000-10030ffff : reserved
+  100310000-10031ffff : reserved
+  100320000-10032ffff : reserved
+  1f6400000-1febfffff : reserved
+  1fec38000-1fecf7fff : reserved
+  1fecf8000-1fecf8fff : reserved
+  1fecf9000-1fedf0fff : reserved
+  1fedf3000-1fedf3fff : reserved
+  1fedf4000-1fedf6fff : reserved
+  1fedf7000-1fee0afff : reserved
+  1fee0b000-1ffffffff : reserved
