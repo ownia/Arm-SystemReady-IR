@@ -1,0 +1,481 @@
+DDR d5483af87d cym 23/11/23-16:15:24,fwver: v1.15
+LPDDR4X, 2112MHz
+channel[0] BW=16 Col=10 Bk=8 CS0 Row=16 CS1 Row=16 CS=2 Die BW=16 Size=2048MB
+channel[1] BW=16 Col=10 Bk=8 CS0 Row=16 CS1 Row=16 CS=2 Die BW=16 Size=2048MB
+channel[2] BW=16 Col=10 Bk=8 CS0 Row=16 CS1 Row=16 CS=2 Die BW=16 Size=2048MB
+channel[3] BW=16 Col=10 Bk=8 CS0 Row=16 CS1 Row=16 CS=2 Die BW=16 Size=2048MB
+Manufacturer ID:0x13
+CH0 RX Vref:31.0%, TX Vref:19.8%,18.8%
+CH1 RX Vref:33.9%, TX Vref:18.8%,18.8%
+CH2 RX Vref:38.5%, TX Vref:18.8%,18.8%
+CH3 RX Vref:39.4%, TX Vref:18.8%,18.8%
+change to F1: 528MHz
+change to F2: 1068MHz
+change to F3: 1560MHz
+change to F0: 2112MHz
+out
+U-Boot SPL board init
+U-Boot SPL 2017.09-g82435751526-231214-dirty #zhangzj (Dec 14 2023 - 09:16:28)
+unknown raw ID 0 0 0
+unrecognized JEDEC id bytes: 00, 00, 00
+Trying to boot from MMC2
+MMC: no card present
+mmc_init: -123, time 0
+spl: mmc init failed with error: -123
+Trying to boot from MMC1
+SPL: A/B-slot: _a, successful: 0, tries-remain: 7
+Trying fit image at 0x4000 sector
+## Verified-boot: 0
+## Checking atf-1 0x00040000 ... sha256(b40ce543bb...) + OK
+## Checking u-boot 0x00a00000 ... sha256(228cb2903a...) + OK
+## Checking fdt-1 0x00b0edc8 ... sha256(810b0c6968...) + OK
+## Checking atf-2 0x000f0000 ... sha256(f202de33d9...) + OK
+## Checking atf-3 0xff100000 ... sha256(af08976afd...) + OK
+## Checking tee-1 0x08400000 ... sha256(617eb0ee15...) + OK
+Jumping to U-Boot(0x00a00000) via ARM Trusted Firmware(0x00040000)
+Total: 96.972/267.866 ms
+
+INFO:    Preloader serial: 2
+NOTICE:  BL31: v2.3():v2.3-616-gdc1125f48:finley.xiao
+NOTICE:  BL31: Built : 16:41:17, Jul 13 2023
+INFO:    spec: 0x1
+INFO:    ext 32k is not valid
+INFO:    ddr: stride-en 4CH
+INFO:    GICv3 without legacy support detected.
+INFO:    ARM GICv3 driver initialized in EL3
+INFO:    valid_cpu_msk=0xff bcore0_rst = 0x0, bcore1_rst = 0x0
+INFO:    system boots from cpu-hwid-0
+INFO:    idle_st=0x21fff, pd_st=0x11fff9, repair_st=0xfff70001
+ERROR:   dfs get fsp_params[0] error, 0xfead0004 != 0xfead0003
+ERROR:   dfs get fsp_params[1] error, 0x1111 != 0xfead0003
+ERROR:   dfs get fsp_params[2] error, 0x0 != 0xfead0003
+ERROR:   dfs get fsp_params[3] error, 0x60241520 != 0xfead0003
+ERROR:   loader&trust unmatch!!! Please update trust if need enable dmc
+INFO:    BL31: Initialising Exception Handling Framework
+INFO:    BL31: Initializing runtime services
+INFO:    BL31: Initializing BL32
+I/TC: 
+I/TC: OP-TEE version: 3.13.0-760-g540ade275 #zhangzj (gcc version 10.2.1 20201103 (GNU Toolchain for the A-profile Architecture 10.2-2020.11 (arm-10.16))) #3 Tue Dec  5 14:36:05 CST 2023 aarch64, fwver: null 
+I/TC: OP-TEE memory: TEEOS 0x200000 TA 0xc00000 SHM 0x200000
+I/TC: Primary CPU initializing
+I/TC: Primary CPU switching to normal world boot
+INFO:    BL31: Preparing for EL3 exit to normal world
+INFO:    Entry point address = 0xa00000
+INFO:    SPSR = 0x3c9
+
+
+U-Boot 2024.01-rc5-g7c533e13f5 (Apr 11 2024 - 11:11:43 +0800)
+
+Model: ArmSoM Sige7 Board
+DRAM:  8 GiB (effective 7.7 GiB)
+pcie_dw_rockchip pcie@fe180000: failed to get pcie phy (ret=-19)
+pcie_dw_rockchip pcie@fe150000: PCIe-3 Link Fail
+Core:  339 devices, 28 uclasses, devicetree: separate
+MMC:   mmc@fe2c0000: 1, mmc@fe2d0000: 2, mmc@fe2e0000: 0
+Loading Environment from MMC... OK
+In:    serial@feb50000
+Out:   serial@feb50000
+Err:   serial@feb50000
+Model: ArmSoM Sige7 Board
+Net:   eth0: eth_rtl8169, eth1: eth_rtl8169
+Hit any key to stop autoboot:  2  1  0 
+Scanning for bootflows in all bootdevs
+Seq  Method       State   Uclass    Part  Name                      Filename
+---  -----------  ------  --------  ----  ------------------------  ----------------
+Scanning global bootmeth 'efi_mgr':
+Card did not respond to voltage select! : -110
+Card did not respond to voltage select! : -110
+Bus usb@fc800000: USB EHCI 1.00
+Bus usb@fc840000: USB OHCI 1.0
+Bus usb@fc880000: USB EHCI 1.00
+Bus usb@fc8c0000: USB OHCI 1.0
+scanning bus usb@fc800000 for devices... 1 USB Device(s) found
+scanning bus usb@fc840000 for devices... 1 USB Device(s) found
+scanning bus usb@fc880000 for devices... 2 USB Device(s) found
+scanning bus usb@fc8c0000 for devices... 1 USB Device(s) found
+Scanning bootdev 'usb_mass_storage.lun0.bootdev':
+  0  efi          ready   usb_mass_    1  usb_mass_storage.lun0.boo efi/boot/bootaa64.efi
+** Booting bootflow 'usb_mass_storage.lun0.bootdev.part_1' with efi
+Booting /efi\boot\bootaa64.efi
+Welcome to GRUB!
+
+error: no such device: ((hd1,gpt1)/efi/boot)/EFI/BOOT/grub.cfg.
+error: serial port `com0' isn't found.
+GNU GRUB  version 2.06
+
+вввввввввввввв”Ђвввввввввввввввввввввввввввввввввввввввввв”Ђввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв”Ђввввввввввввввввввввввввввввввввввввввввввввввввввввввввв”‚ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв”Ђвввввввввввввввввввввввввввввввввввввввввв”Ђввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв     Use the в and в keys to select which entry is highlighted.                                                                                                    
+      Press enter to boot the selected OS, `e' to edit the commands before booting or `c' for a command-line.                                                         Linux Boot                                                                                                                                                           *bbr/bsa                                                                                                                                                               SCT for Security Interface Extension (optional)                                                                                                                       Linux Boot for Security Interface Extension (optional)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   The highlighted entry will be executed automatically in 10s.                                                                                                             The highlighted entry will be executed automatically in 9s.                                                                                                              The highlighted entry will be executed automatically in 8s.                                                                                                                                                                                                                                                                                                                                                                                                                                                             /EndEntire
+file path: /HardwareVendor(e61d73b9-a384-4acc-aeab-82e828f3628b)[8: 00 00 00 00 00 00 00 00 ]/HardwareVendor(e61d73b9-a384-4acc-aeab-82e828f3628b)[8: 7d 00 00 00 02 00 
+00 00 ]/USB(0,0)/USB(1,0)/Ctrl(0)/HD(1,800,32000,231585d5875dae44,2,2)/File(\EFI\BOOT)/File(Shell.efi)/EndEntire
+UEFI Interactive Shell v2.2
+EDK II
+UEFI v2.100 (Das U-Boot, 0x20240100)
+Mapping table
+      FS0: Alias(s):HD0h:;BLK7:
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b,0000000000000000)/eMMC(0)/eMMC(2)/HD(7,GPT,a26ad83c-802b-4321-ac9b-b7d356d112af,0x1c78000,0x40000)
+      FS1: Alias(s):BLK9:
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b,0000000000000000)/VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b,7d00000002000000)/USB(0x0,0x0)/USB(0x1,0x0)/Ctrl(0x0)/HD(1,GPT,d5851523-5d87-44ae-b086-b80051057eaa,0x800,0x32000)
+      FS2: Alias(s):BLK10:
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b,0000000000000000)/VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b,7d00000002000000)/USB(0x0,0x0)/USB(0x1,0x0)/Ctrl(0x0)/HD(2,GPT,6515099d-b474-4a4f-a9c4-8b50fc9696fd,0x32800,0xd7152)
+      FS3: Alias(s):BLK11:
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b,0000000000000000)/VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b,7d00000002000000)/USB(0x0,0x0)/USB(0x1,0x0)/Ctrl(0x0)/HD(3,GPT,d41905db-56e2-45ce-91ea-05058a117142,0x10a000,0x19000)
+     BLK0: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b,0000000000000000)/eMMC(0)/eMMC(2)
+     BLK1: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b,0000000000000000)/eMMC(0)/eMMC(2)/HD(1,GPT,5a30833f-8c43-47b1-a41d-84d40883d0c6,0x4000,0x2000)
+     BLK2: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b,0000000000000000)/eMMC(0)/eMMC(2)/HD(2,GPT,67ad7741-4638-47c6-a488-d396583e582a,0x6000,0x2000)
+     BLK3: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b,0000000000000000)/eMMC(0)/eMMC(2)/HD(3,GPT,7a3f0000-0000-446a-8000-702f00006273,0x8000,0x20000)
+     BLK4: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b,0000000000000000)/eMMC(0)/eMMC(2)/HD(4,GPT,e582484a-9010-404a-899d-47bd16ba3fa8,0x28000,0x40000)
+     BLK5: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b,0000000000000000)/eMMC(0)/eMMC(2)/HD(5,GPT,dc11277f-eb7f-42d9-8027-a83b14220e50,0x68000,0x10000)
+     BLK6: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b,0000000000000000)/eMMC(0)/eMMC(2)/HD(6,GPT,614e0000-0000-4b53-8000-1d28000054a9,0x78000,0x1c00000)
+     BLK8: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b,0000000000000000)/VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b,7d00000002000000)/USB(0x0,0x0)/USB(0x1,0x0)/Ctrl(0x0)
+Press ESC in 5 seconds to skip startup.nsh or any other key to continue.
+Shell> FS1:
+FS1:\> ls
+Directory of: FS1:\
+08/12/2024  02:39           1,930,481  capsule1.bin
+08/05/2011  23:00 <DIR>             0  EFI
+08/05/2011  23:00          51,499,008  Image
+08/05/2011  23:00 <DIR>             0  security-interface-extension-keys
+08/05/2011  23:00               3,717  startup.nsh
+08/12/2024  02:39           1,930,481  tampered.bin
+08/12/2024  02:39           1,929,176  unauth.bin
+08/05/2011  23:00                   0  yocto_image.flag
+          6 File(s)  57,292,863 bytes
+          2 Dir(s)
+FS1:\> EFI/BOOT/app/CapsuleApp.efi -D unauth.bin
+
+ASSERT_EFI_ERROR (Status = Not Found)
+ASSERT [CapsuleApp] /data_sda/rk3588/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdeModulePkg/Library/UefiHiiServicesLib/UefiHiiServicesLib.c(94): !(((INTN)(RETURN_STATUS)(Status)) < 0)
+
+ASSERT_EFI_ERROR (Status = Not Found)
+ASSERT [CapsuleApp] /data_sda/rk3588/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeServicesTableLib/DxeServicesTableLib.c(58): !(((INTN)(RETURN_STATUS)(Status)) < 0)
+ASSERT [CapsuleApp] /data_sda/rk3588/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeServicesTableLib/DxeServicesTableLib.c(59): gDS != ((void *) 0)
+
+ASSERT_EFI_ERROR (Status = Not Found)
+ASSERT [CapsuleApp] /data_sda/rk3588/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/build/Build/MdeModule/RELEASE_GCC5/AARCH64/MdeModulePkg/Application/CapsuleApp/CapsuleApp/DEBUG/AutoGen.c(416): !(((INTN)(RETUR
+ASSERT_EFI_ERROR (Status = Not Found)
+ASSERT [CapsuleApp] /data_sda/rk3588/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeHobLib/HobLib.c(48): !(((INTN)(RETURN_STATUS)(Status)) < 0)
+ASSERT [CapsuleApp] /data_sda/rk3588/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeHobLib/HobLib.c(49): mHobList != ((void *) 0)
+[FmpCapsule]
+CapsuleHeader:
+  CapsuleGuid      - 6DCBD5ED-E82D-4C44-BDA1-7194199AD92A
+  HeaderSize       - 0x1C
+  Flags            - 0x10000
+  CapsuleImageSize - 0x1D6FD8
+FmpHeader:
+  Version             - 0x1
+  EmbeddedDriverCount - 0x0
+  PayloadItemCount    - 0x1
+  Offset[0]           - 0x10
+FmpPayload[0] ImageHeader:
+  Version                - 0x3
+  UpdateImageTypeId      - 5452A04A-462D-4433-9778-2B5259277BB3
+  UpdateImageIndex       - 0x1
+  UpdateImageSize        - 0x1D6F7C
+  UpdateVendorCodeSize   - 0x0
+  UpdateHardwareInstance - 0x0
+  ImageCapsuleSupport    - 0x0
+FS1:\> EFI/BOOT/app/CapsuleApp.efi unauth.bin
+
+ASSERT_EFI_ERROR (Status = Not Found)
+ASSERT [CapsuleApp] /data_sda/rk3588/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdeModulePkg/Library/UefiHiiServicesLib/UefiHiiServicesLib.c(94): !(((INTN)(RETURN_STATUS)(Status)) < 0)
+
+ASSERT_EFI_ERROR (Status = Not Found)
+ASSERT [CapsuleApp] /data_sda/rk3588/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeServicesTableLib/DxeServicesTableLib.c(58): !(((INTN)(RETURN_STATUS)(Status)) < 0)
+ASSERT [CapsuleApp] /data_sda/rk3588/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeServicesTableLib/DxeServicesTableLib.c(59): gDS != ((void *) 0)
+
+ASSERT_EFI_ERROR (Status = Not Found)
+ASSERT [CapsuleApp] /data_sda/rk3588/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/build/Build/MdeModule/RELEASE_GCC5/AARCH64/MdeModulePkg/Application/CapsuleApp/CapsuleApp/DEBUG/AutoGen.c(416): !(((INTN)(RETUR
+ASSERT_EFI_ERROR (Status = Not Found)
+ASSERT [CapsuleApp] /data_sda/rk3588/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeHobLib/HobLib.c(48): !(((INTN)(RETURN_STATUS)(Status)) < 0)
+ASSERT [CapsuleApp] /data_sda/rk3588/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeHobLib/HobLib.c(49): mHobList != ((void *) 0)
+CapsuleApp: creating capsule descriptors at 0xB1C10040
+CapsuleApp: capsule data starts          at 0xB1A15040 with size 0x1D6FD8
+CapsuleApp: capsule block/size              0xB1A15040/0x1D6FD8
+CapsuleApp: failed to update capsule - Security Violation
+FS1:\> EFI/BOOT/app/CapsuleApp.efi -D tampered.bin
+
+ASSERT_EFI_ERROR (Status = Not Found)
+ASSERT [CapsuleApp] /data_sda/rk3588/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdeModulePkg/Library/UefiHiiServicesLib/UefiHiiServicesLib.c(94): !(((INTN)(RETURN_STATUS)(Status)) < 0)
+
+ASSERT_EFI_ERROR (Status = Not Found)
+ASSERT [CapsuleApp] /data_sda/rk3588/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeServicesTableLib/DxeServicesTableLib.c(58): !(((INTN)(RETURN_STATUS)(Status)) < 0)
+ASSERT [CapsuleApp] /data_sda/rk3588/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeServicesTableLib/DxeServicesTableLib.c(59): gDS != ((void *) 0)
+
+ASSERT_EFI_ERROR (Status = Not Found)
+ASSERT [CapsuleApp] /data_sda/rk3588/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/build/Build/MdeModule/RELEASE_GCC5/AARCH64/MdeModulePkg/Application/CapsuleApp/CapsuleApp/DEBUG/AutoGen.c(416): !(((INTN)(RETUR
+ASSERT_EFI_ERROR (Status = Not Found)
+ASSERT [CapsuleApp] /data_sda/rk3588/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeHobLib/HobLib.c(48): !(((INTN)(RETURN_STATUS)(Status)) < 0)
+ASSERT [CapsuleApp] /data_sda/rk3588/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeHobLib/HobLib.c(49): mHobList != ((void *) 0)
+[FmpCapsule]
+CapsuleHeader:
+  CapsuleGuid      - 6DCBD5ED-E82D-4C44-BDA1-7194199AD92A
+  HeaderSize       - 0x1C
+  Flags            - 0x10000
+  CapsuleImageSize - 0x1D74F1
+FmpHeader:
+  Version             - 0x1
+  EmbeddedDriverCount - 0x0
+  PayloadItemCount    - 0x1
+  Offset[0]           - 0x10
+FmpPayload[0] ImageHeader:
+  Version                - 0x3
+  UpdateImageTypeId      - 5452A04A-462D-4433-9778-2B5259277BB3
+  UpdateImageIndex       - 0x1
+  UpdateImageSize        - 0x1D7495
+  UpdateVendorCodeSize   - 0x0
+  UpdateHardwareInstance - 0x0
+  ImageCapsuleSupport    - 0x1
+FS1:\> EFI/BOOT/app/CapsuleApp.efi tampered.bin
+
+ASSERT_EFI_ERROR (Status = Not Found)
+ASSERT [CapsuleApp] /data_sda/rk3588/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdeModulePkg/Library/UefiHiiServicesLib/UefiHiiServicesLib.c(94): !(((INTN)(RETURN_STATUS)(Status)) < 0)
+
+ASSERT_EFI_ERROR (Status = Not Found)
+ASSERT [CapsuleApp] /data_sda/rk3588/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeServicesTableLib/DxeServicesTableLib.c(58): !(((INTN)(RETURN_STATUS)(Status)) < 0)
+ASSERT [CapsuleApp] /data_sda/rk3588/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeServicesTableLib/DxeServicesTableLib.c(59): gDS != ((void *) 0)
+
+ASSERT_EFI_ERROR (Status = Not Found)
+ASSERT [CapsuleApp] /data_sda/rk3588/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/build/Build/MdeModule/RELEASE_GCC5/AARCH64/MdeModulePkg/Application/CapsuleApp/CapsuleApp/DEBUG/AutoGen.c(416): !(((INTN)(RETUR
+ASSERT_EFI_ERROR (Status = Not Found)
+ASSERT [CapsuleApp] /data_sda/rk3588/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeHobLib/HobLib.c(48): !(((INTN)(RETURN_STATUS)(Status)) < 0)
+ASSERT [CapsuleApp] /data_sda/rk3588/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeHobLib/HobLib.c(49): mHobList != ((void *) 0)
+CapsuleApp: creating capsule descriptors at 0xB1BD9040
+CapsuleApp: capsule data starts          at 0xB19E1040 with size 0x1D74F1
+CapsuleApp: capsule block/size              0xB19E1040/0x1D74F1
+Capsule authentication check failed. Aborting update
+Firmware update failed: <NULL>
+CapsuleApp: failed to update capsule - Security Violation
+FS1:\> 
+FS1:\> EFI/BOOT/app/CapsuleApp.efi -D capsule1.bin
+
+ASSERT_EFI_ERROR (Status = Not Found)
+ASSERT [CapsuleApp] /data_sda/rk3588/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdeModulePkg/Library/UefiHiiServicesLib/UefiHiiServicesLib.c(94): !(((INTN)(RETURN_STATUS)(Status)) < 0)
+
+ASSERT_EFI_ERROR (Status = Not Found)
+ASSERT [CapsuleApp] /data_sda/rk3588/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeServicesTableLib/DxeServicesTableLib.c(58): !(((INTN)(RETURN_STATUS)(Status)) < 0)
+ASSERT [CapsuleApp] /data_sda/rk3588/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeServicesTableLib/DxeServicesTableLib.c(59): gDS != ((void *) 0)
+
+ASSERT_EFI_ERROR (Status = Not Found)
+ASSERT [CapsuleApp] /data_sda/rk3588/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/build/Build/MdeModule/RELEASE_GCC5/AARCH64/MdeModulePkg/Application/CapsuleApp/CapsuleApp/DEBUG/AutoGen.c(416): !(((INTN)(RETUR
+ASSERT_EFI_ERROR (Status = Not Found)
+ASSERT [CapsuleApp] /data_sda/rk3588/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeHobLib/HobLib.c(48): !(((INTN)(RETURN_STATUS)(Status)) < 0)
+ASSERT [CapsuleApp] /data_sda/rk3588/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeHobLib/HobLib.c(49): mHobList != ((void *) 0)
+[FmpCapsule]
+CapsuleHeader:
+  CapsuleGuid      - 6DCBD5ED-E82D-4C44-BDA1-7194199AD92A
+  HeaderSize       - 0x1C
+  Flags            - 0x10000
+  CapsuleImageSize - 0x1D74F1
+FmpHeader:
+  Version             - 0x1
+  EmbeddedDriverCount - 0x0
+  PayloadItemCount    - 0x1
+  Offset[0]           - 0x10
+FmpPayload[0] ImageHeader:
+  Version                - 0x3
+  UpdateImageTypeId      - 5452A04A-462D-4433-9778-2B5259277BB3
+  UpdateImageIndex       - 0x1
+  UpdateImageSize        - 0x1D7495
+  UpdateVendorCodeSize   - 0x0
+  UpdateHardwareInstance - 0x0
+  ImageCapsuleSupport    - 0x1
+FS1:\> EFI/BOOT/app/CapsuleApp.efi capsule1.bin
+
+ASSERT_EFI_ERROR (Status = Not Found)
+ASSERT [CapsuleApp] /data_sda/rk3588/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdeModulePkg/Library/UefiHiiServicesLib/UefiHiiServicesLib.c(94): !(((INTN)(RETURN_STATUS)(Status)) < 0)
+
+ASSERT_EFI_ERROR (Status = Not Found)
+ASSERT [CapsuleApp] /data_sda/rk3588/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeServicesTableLib/DxeServicesTableLib.c(58): !(((INTN)(RETURN_STATUS)(Status)) < 0)
+ASSERT [CapsuleApp] /data_sda/rk3588/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeServicesTableLib/DxeServicesTableLib.c(59): gDS != ((void *) 0)
+
+ASSERT_EFI_ERROR (Status = Not Found)
+ASSERT [CapsuleApp] /data_sda/rk3588/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/build/Build/MdeModule/RELEASE_GCC5/AARCH64/MdeModulePkg/Application/CapsuleApp/CapsuleApp/DEBUG/AutoGen.c(416): !(((INTN)(RETUR
+ASSERT_EFI_ERROR (Status = Not Found)
+ASSERT [CapsuleApp] /data_sda/rk3588/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeHobLib/HobLib.c(48): !(((INTN)(RETURN_STATUS)(Status)) < 0)
+ASSERT [CapsuleApp] /data_sda/rk3588/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeHobLib/HobLib.c(49): mHobList != ((void *) 0)
+CapsuleApp: creating capsule descriptors at 0xB1BA2040
+CapsuleApp: capsule data starts          at 0xB19AA040 with size 0x1D74F1
+CapsuleApp: capsule block/size              0xB19AA040/0x1D74F1
+Processing update 'u-boot.itb' :sha1+ 
+#
+resetting ...
+DDR d5483af87d cym 23/11/23-16:15:24,fwver: v1.15
+LPDDR4X, 2112MHz
+channel[0] BW=16 Col=10 Bk=8 CS0 Row=16 CS1 Row=16 CS=2 Die BW=16 Size=2048MB
+channel[1] BW=16 Col=10 Bk=8 CS0 Row=16 CS1 Row=16 CS=2 Die BW=16 Size=2048MB
+channel[2] BW=16 Col=10 Bk=8 CS0 Row=16 CS1 Row=16 CS=2 Die BW=16 Size=2048MB
+channel[3] BW=16 Col=10 Bk=8 CS0 Row=16 CS1 Row=16 CS=2 Die BW=16 Size=2048MB
+Manufacturer ID:0x13
+CH0 RX Vref:30.1%, TX Vref:19.8%,18.8%
+CH1 RX Vref:33.0%, TX Vref:19.8%,19.8%
+CH2 RX Vref:37.7%, TX Vref:18.8%,18.8%
+CH3 RX Vref:36.1%, TX Vref:18.8%,18.8%
+change to F1: 528MHz
+change to F2: 1068MHz
+change to F3: 1560MHz
+change to F0: 2112MHz
+out
+U-Boot SPL board init
+U-Boot SPL 2017.09-g82435751526-231214-dirty #zhangzj (Dec 14 2023 - 09:16:28)
+unknown raw ID 0 0 0
+unrecognized JEDEC id bytes: 00, 00, 00
+Trying to boot from MMC2
+MMC: no card present
+mmc_init: -123, time 0
+spl: mmc init failed with error: -123
+Trying to boot from MMC1
+SPL: A/B-slot: _a, successful: 0, tries-remain: 7
+Trying fit image at 0x4000 sector
+## Verified-boot: 0
+## Checking atf-1 0x00040000 ... sha256(b40ce543bb...) + OK
+## Checking u-boot 0x00a00000 ... sha256(838280ca06...) + OK
+## Checking fdt-1 0x00b0edd8 ... sha256(810b0c6968...) + OK
+## Checking atf-2 0x000f0000 ... sha256(f202de33d9...) + OK
+## Checking atf-3 0xff100000 ... sha256(af08976afd...) + OK
+## Checking tee-1 0x08400000 ... sha256(617eb0ee15...) + OK
+Jumping to U-Boot(0x00a00000) via ARM Trusted Firmware(0x00040000)
+Total: 96.821/267.222 ms
+
+INFO:    Preloader serial: 2
+NOTICE:  BL31: v2.3():v2.3-616-gdc1125f48:finley.xiao
+NOTICE:  BL31: Built : 16:41:17, Jul 13 2023
+INFO:    spec: 0x1
+INFO:    ext 32k is not valid
+INFO:    ddr: stride-en 4CH
+INFO:    GICv3 without legacy support detected.
+INFO:    ARM GICv3 driver initialized in EL3
+INFO:    valid_cpu_msk=0xff bcore0_rst = 0x0, bcore1_rst = 0x0
+INFO:    system boots from cpu-hwid-0
+INFO:    idle_st=0x21fff, pd_st=0x11fff9, repair_st=0xfff70001
+ERROR:   dfs get fsp_params[0] error, 0xfead0004 != 0xfead0003
+ERROR:   dfs get fsp_params[1] error, 0x1111 != 0xfead0003
+ERROR:   dfs get fsp_params[2] error, 0x0 != 0xfead0003
+ERROR:   dfs get fsp_params[3] error, 0x60241520 != 0xfead0003
+ERROR:   loader&trust unmatch!!! Please update trust if need enable dmc
+INFO:    BL31: Initialising Exception Handling Framework
+INFO:    BL31: Initializing runtime services
+INFO:    BL31: Initializing BL32
+I/TC: 
+I/TC: OP-TEE version: 3.13.0-760-g540ade275 #zhangzj (gcc version 10.2.1 20201103 (GNU Toolchain for the A-profile Architecture 10.2-2020.11 (arm-10.16))) #3 Tue Dec  5 14:36:05 CST 2023 aarch64, fwver: null 
+I/TC: OP-TEE memory: TEEOS 0x200000 TA 0xc00000 SHM 0x200000
+I/TC: Primary CPU initializing
+I/TC: Primary CPU switching to normal world boot
+INFO:    BL31: Preparing for EL3 exit to normal world
+INFO:    Entry point address = 0xa00000
+INFO:    SPSR = 0x3c9
+
+
+U-Boot 2024.01-rc5-g7c533e13f5-dirty (Apr 12 2024 - 10:37:27 +0800) capsule
+
+Model: ArmSoM Sige7 Board
+DRAM:  8 GiB (effective 7.7 GiB)
+pcie_dw_rockchip pcie@fe180000: failed to get pcie phy (ret=-19)
+pcie_dw_rockchip pcie@fe150000: PCIe-3 Link Fail
+Core:  339 devices, 28 uclasses, devicetree: separate
+MMC:   mmc@fe2c0000: 1, mmc@fe2d0000: 2, mmc@fe2e0000: 0
+Loading Environment from MMC... OK
+In:    serial@feb50000
+Out:   serial@feb50000
+Err:   serial@feb50000
+Model: ArmSoM Sige7 Board
+Net:   eth0: eth_rtl8169, eth1: eth_rtl8169
+Hit any key to stop autoboot:  2  1  0 
+Scanning for bootflows in all bootdevs
+Seq  Method       State   Uclass    Part  Name                      Filename
+---  -----------  ------  --------  ----  ------------------------  ----------------
+Scanning global bootmeth 'efi_mgr':
+Card did not respond to voltage select! : -110
+Card did not respond to voltage select! : -110
+Bus usb@fc800000: USB EHCI 1.00
+Bus usb@fc840000: USB OHCI 1.0
+Bus usb@fc880000: USB EHCI 1.00
+Bus usb@fc8c0000: USB OHCI 1.0
+scanning bus usb@fc800000 for devices... 1 USB Device(s) found
+scanning bus usb@fc840000 for devices... 1 USB Device(s) found
+scanning bus usb@fc880000 for devices... 2 USB Device(s) found
+scanning bus usb@fc8c0000 for devices... 1 USB Device(s) found
+Scanning bootdev 'usb_mass_storage.lun0.bootdev':
+  0  efi          ready   usb_mass_    1  usb_mass_storage.lun0.boo efi/boot/bootaa64.efi
+** Booting bootflow 'usb_mass_storage.lun0.bootdev.part_1' with efi
+Booting /efi\boot\bootaa64.efi
+Welcome to GRUB!
+
+error: no such device: ((hd1,gpt1)/efi/boot)/EFI/BOOT/grub.cfg.
+error: serial port `com0' isn't found.
+GNU GRUB  version 2.06
+
+вввввввввввввв”Ђвввввввввввввввввввввввввввввввввввввввввв”Ђввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв”Ђввввввввввввввввввввввввввввввввввввввввввввввввввввввввв”‚ввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв”Ђвввввввввввввввввввввввввввввввввввввввввв”Ђввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввввв     Use the в and в keys to select which entry is highlighted.                                                                                                    
+      Press enter to boot the selected OS, `e' to edit the commands before booting or `c' for a command-line.                                                         Linux Boot                                                                                                                                                           *bbr/bsa                                                                                                                                                               SCT for Security Interface Extension (optional)                                                                                                                       Linux Boot for Security Interface Extension (optional)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   The highlighted entry will be executed automatically in 10s.                                                                                                             The highlighted entry will be executed automatically in 9s.                                                                                                                                                                                                                                                                                                                                                                                                                                                             /EndEntire
+file path: /HardwareVendor(e61d73b9-a384-4acc-aeab-82e828f3628b)[8: 00 00 00 00 00 00 00 00 ]/HardwareVendor(e61d73b9-a384-4acc-aeab-82e828f3628b)[8: 7d 00 00 00 02 00 
+00 00 ]/USB(0,0)/USB(1,0)/Ctrl(0)/HD(1,800,32000,231585d5875dae44,2,2)/File(\EFI\BOOT)/File(Shell.efi)/EndEntire
+UEFI Interactive Shell v2.2
+EDK II
+UEFI v2.100 (Das U-Boot, 0x20240100)
+Mapping table
+      FS0: Alias(s):HD0h:;BLK7:
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b,0000000000000000)/eMMC(0)/eMMC(2)/HD(7,GPT,a26ad83c-802b-4321-ac9b-b7d356d112af,0x1c78000,0x40000)
+      FS1: Alias(s):BLK9:
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b,0000000000000000)/VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b,7d00000002000000)/USB(0x0,0x0)/USB(0x1,0x0)/Ctrl(0x0)/HD(1,GPT,d5851523-5d87-44ae-b086-b80051057eaa,0x800,0x32000)
+      FS2: Alias(s):BLK10:
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b,0000000000000000)/VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b,7d00000002000000)/USB(0x0,0x0)/USB(0x1,0x0)/Ctrl(0x0)/HD(2,GPT,6515099d-b474-4a4f-a9c4-8b50fc9696fd,0x32800,0xd7152)
+      FS3: Alias(s):BLK11:
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b,0000000000000000)/VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b,7d00000002000000)/USB(0x0,0x0)/USB(0x1,0x0)/Ctrl(0x0)/HD(3,GPT,d41905db-56e2-45ce-91ea-05058a117142,0x10a000,0x19000)
+     BLK0: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b,0000000000000000)/eMMC(0)/eMMC(2)
+     BLK1: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b,0000000000000000)/eMMC(0)/eMMC(2)/HD(1,GPT,5a30833f-8c43-47b1-a41d-84d40883d0c6,0x4000,0x2000)
+     BLK2: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b,0000000000000000)/eMMC(0)/eMMC(2)/HD(2,GPT,67ad7741-4638-47c6-a488-d396583e582a,0x6000,0x2000)
+     BLK3: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b,0000000000000000)/eMMC(0)/eMMC(2)/HD(3,GPT,7a3f0000-0000-446a-8000-702f00006273,0x8000,0x20000)
+     BLK4: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b,0000000000000000)/eMMC(0)/eMMC(2)/HD(4,GPT,e582484a-9010-404a-899d-47bd16ba3fa8,0x28000,0x40000)
+     BLK5: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b,0000000000000000)/eMMC(0)/eMMC(2)/HD(5,GPT,dc11277f-eb7f-42d9-8027-a83b14220e50,0x68000,0x10000)
+     BLK6: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b,0000000000000000)/eMMC(0)/eMMC(2)/HD(6,GPT,614e0000-0000-4b53-8000-1d28000054a9,0x78000,0x1c00000)
+     BLK8: Alias(s):
+          /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b,0000000000000000)/VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b,7d00000002000000)/USB(0x0,0x0)/USB(0x1,0x0)/Ctrl(0x0)
+Press ESC in 5 seconds to skip startup.nsh or any other key to continue.
+Shell> FS1:
+FS1:\> 
+FS1:\> EFI/BOOT/app/CapsuleApp.efi -E
+
+ASSERT_EFI_ERROR (Status = Not Found)
+ASSERT [CapsuleApp] /data_sda/rk3588/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdeModulePkg/Library/UefiHiiServicesLib/UefiHiiServicesLib.c(94): !(((INTN)(RETURN_STATUS)(Status)) < 0)
+
+ASSERT_EFI_ERROR (Status = Not Found)
+ASSERT [CapsuleApp] /data_sda/rk3588/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeServicesTableLib/DxeServicesTableLib.c(58): !(((INTN)(RETURN_STATUS)(Status)) < 0)
+ASSERT [CapsuleApp] /data_sda/rk3588/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeServicesTableLib/DxeServicesTableLib.c(59): gDS != ((void *) 0)
+
+ASSERT_EFI_ERROR (Status = Not Found)
+ASSERT [CapsuleApp] /data_sda/rk3588/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/build/Build/MdeModule/RELEASE_GCC5/AARCH64/MdeModulePkg/Application/CapsuleApp/CapsuleApp/DEBUG/AutoGen.c(416): !(((INTN)(RETUR
+ASSERT_EFI_ERROR (Status = Not Found)
+ASSERT [CapsuleApp] /data_sda/rk3588/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeHobLib/HobLib.c(48): !(((INTN)(RETURN_STATUS)(Status)) < 0)
+ASSERT [CapsuleApp] /data_sda/rk3588/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeHobLib/HobLib.c(49): mHobList != ((void *) 0)
+##############
+# ESRT TABLE #
+##############
+EFI_SYSTEM_RESOURCE_TABLE:
+FwResourceCount    - 0x1
+FwResourceCountMax - 0x1
+FwResourceVersion  - 0x1
+EFI_SYSTEM_RESOURCE_ENTRY (0):
+  FwClass                  - 5452A04A-462D-4433-9778-2B5259277BB3
+  FwType                   - 0x0 (Unknown)
+  FwVersion                - 0x0
+  LowestSupportedFwVersion - 0x0
+  CapsuleFlags             - 0x0
+  LastAttemptVersion       - 0x0
+  LastAttemptStatus        - 0x0 (Success)
+
+FS1:\> 
+FS1:\> 
