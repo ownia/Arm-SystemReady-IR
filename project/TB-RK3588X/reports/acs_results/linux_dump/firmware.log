@@ -2,10 +2,10 @@
 drwxr-xr-x    3 root     root             0 Mar  3 09:49 devicetree
 drwxr-xr-x    4 root     root             0 Mar  3 09:49 dmi
 drwxr-xr-x    4 root     root             0 Mar  3 09:49 efi
--r--------    1 root     root         98925 Mar  3 09:50 fdt
+-r--------    1 root     root         98853 Mar  3 09:50 fdt
 
 /sys/firmware/devicetree:
-drwxr-xr-x  191 root     root             0 Mar  3 09:49 base
+drwxr-xr-x  190 root     root             0 Mar  3 09:49 base
 
 /sys/firmware/devicetree/base:
 -r--r--r--    1 root     root             4 Mar  3 09:50 #address-cells
@@ -26,7 +26,6 @@ drwxr-xr-x   21 root     root             0 Mar  3 09:50 cpus
 drwxr-xr-x    2 root     root             0 Mar  3 09:50 dma-controller@fea10000
 drwxr-xr-x    2 root     root             0 Mar  3 09:50 dma-controller@fea30000
 drwxr-xr-x    2 root     root             0 Mar  3 09:50 dma-controller@fed10000
-drwxr-xr-x    2 root     root             0 Mar  3 09:50 dmc
 drwxr-xr-x   12 root     root             0 Mar  3 09:50 efuse@fecc0000
 drwxr-xr-x    6 root     root             0 Mar  3 09:50 ethernet@fe1b0000
 drwxr-xr-x    6 root     root             0 Mar  3 09:50 ethernet@fe1c0000
@@ -1240,12 +1239,6 @@ drwxr-xr-x    2 root     root             0 Mar  3 09:50 cpu-sleep
 -r--r--r--    1 root     root            15 Mar  3 09:50 name
 -r--r--r--    1 root     root             4 Mar  3 09:50 phandle
 -r--r--r--    1 root     root            16 Mar  3 09:50 reg
-
-/sys/firmware/devicetree/base/dmc:
--r--r--r--    1 root     root             0 Mar  3 09:50 bootph-all
--r--r--r--    1 root     root            16 Mar  3 09:50 compatible
--r--r--r--    1 root     root             4 Mar  3 09:50 name
--r--r--r--    1 root     root             5 Mar  3 09:50 status
 
 /sys/firmware/devicetree/base/efuse@fecc0000:
 -r--r--r--    1 root     root             4 Mar  3 09:50 #address-cells
@@ -5596,23 +5589,23 @@ drwxr-xr-x    2 root     root             0 Mar  3 09:50 4-0
 -r--------    1 root     root            31 Mar  3 09:49 smbios_entry_point
 
 /sys/firmware/efi:
-drwxr-xr-x    2 root     root             0 Mar  3 09:50 efivars
+drwxr-xr-x    2 root     root             0 Mar  3 09:49 efivars
 drwxr-xr-x    3 root     root             0 Mar  3 09:50 esrt
 -r--r--r--    1 root     root          4096 Mar  3 09:50 fw_platform_size
 -r--------    1 root     root          4096 Mar  3 09:50 systab
 
 /sys/firmware/efi/efivars:
--rw-r--r--    1 root     root             5 Mar  3 09:50 AuditMode-8be4df61-93ca-11d2-aa0d-00e098032b8c
--rw-r--r--    1 root     root            26 Mar  3 09:50 CapsuleMax-39b68c46-f7fb-441b-b6ec-16b0f69821f3
--rw-r--r--    1 root     root             5 Mar  3 09:50 DeployedMode-8be4df61-93ca-11d2-aa0d-00e098032b8c
--rw-r--r--    1 root     root            12 Mar  3 09:50 ExitBootServicesTestVariable-f6fab04f-acaf-4af3-b9fa-dcf97fb4426f
--rw-r--r--    1 root     root            12 Mar  3 09:50 OsIndicationsSupported-8be4df61-93ca-11d2-aa0d-00e098032b8c
--rw-r--r--    1 root     root            10 Mar  3 09:50 PlatformLang-8be4df61-93ca-11d2-aa0d-00e098032b8c
--rw-r--r--    1 root     root            10 Mar  3 09:50 PlatformLangCodes-8be4df61-93ca-11d2-aa0d-00e098032b8c
--rw-r--r--    1 root     root             5 Mar  3 09:50 SecureBoot-8be4df61-93ca-11d2-aa0d-00e098032b8c
--rw-r--r--    1 root     root             5 Mar  3 09:50 SetupMode-8be4df61-93ca-11d2-aa0d-00e098032b8c
--rw-r--r--    1 root     root            36 Mar  3 09:50 SignatureSupport-8be4df61-93ca-11d2-aa0d-00e098032b8c
--rw-r--r--    1 root     root             5 Mar  3 09:50 VendorKeys-8be4df61-93ca-11d2-aa0d-00e098032b8c
+-rw-r--r--    1 root     root             5 Mar  3 09:49 AuditMode-8be4df61-93ca-11d2-aa0d-00e098032b8c
+-rw-r--r--    1 root     root            26 Mar  3 09:49 CapsuleMax-39b68c46-f7fb-441b-b6ec-16b0f69821f3
+-rw-r--r--    1 root     root             5 Mar  3 09:49 DeployedMode-8be4df61-93ca-11d2-aa0d-00e098032b8c
+-rw-r--r--    1 root     root            12 Mar  3 09:49 ExitBootServicesTestVariable-f6fab04f-acaf-4af3-b9fa-dcf97fb4426f
+-rw-r--r--    1 root     root            12 Mar  3 09:49 OsIndicationsSupported-8be4df61-93ca-11d2-aa0d-00e098032b8c
+-rw-r--r--    1 root     root            10 Mar  3 09:49 PlatformLang-8be4df61-93ca-11d2-aa0d-00e098032b8c
+-rw-r--r--    1 root     root            10 Mar  3 09:49 PlatformLangCodes-8be4df61-93ca-11d2-aa0d-00e098032b8c
+-rw-r--r--    1 root     root             5 Mar  3 09:49 SecureBoot-8be4df61-93ca-11d2-aa0d-00e098032b8c
+-rw-r--r--    1 root     root             5 Mar  3 09:49 SetupMode-8be4df61-93ca-11d2-aa0d-00e098032b8c
+-rw-r--r--    1 root     root            36 Mar  3 09:49 SignatureSupport-8be4df61-93ca-11d2-aa0d-00e098032b8c
+-rw-r--r--    1 root     root             5 Mar  3 09:49 VendorKeys-8be4df61-93ca-11d2-aa0d-00e098032b8c
 
 /sys/firmware/efi/esrt:
 drwxr-xr-x    3 root     root             0 Mar  3 09:50 entries

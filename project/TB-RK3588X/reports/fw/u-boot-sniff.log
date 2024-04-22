@@ -5,9 +5,9 @@ channel[1] BW=16 Col=10 Bk=8 CS0 Row=16 CS1 Row=16 CS=2 Die BW=16 Size=2048MB
 channel[2] BW=16 Col=10 Bk=8 CS0 Row=16 CS1 Row=16 CS=2 Die BW=16 Size=2048MB
 channel[3] BW=16 Col=10 Bk=8 CS0 Row=16 CS1 Row=16 CS=2 Die BW=16 Size=2048MB
 Manufacturer ID:0x1
-CH0 RX Vref:27.9%, TX Vref:20.8%,20.8%
-CH1 RX Vref:28.9%, TX Vref:20.8%,20.8%
-CH2 RX Vref:28.5%, TX Vref:21.8%,21.8%
+CH0 RX Vref:27.9%, TX Vref:19.8%,20.8%
+CH1 RX Vref:28.5%, TX Vref:21.8%,21.8%
+CH2 RX Vref:28.5%, TX Vref:20.8%,20.8%
 CH3 RX Vref:28.9%, TX Vref:21.8%,21.8%
 change to F1: 528MHz
 change to F2: 1068MHz
@@ -20,20 +20,20 @@ unknown raw ID 0 0 0
 unrecognized JEDEC id bytes: 00, 00, 00
 Trying to boot from MMC2
 MMC: no card present
-mmc_init: -123, time 1
+mmc_init: -123, time 0
 spl: mmc init failed with error: -123
 Trying to boot from MMC1
 SPL: A/B-slot: _a, successful: 0, tries-remain: 7
 Trying fit image at 0x4000 sector
 ## Verified-boot: 0
 ## Checking atf-1 0x00040000 ... sha256(b40ce543bb...) + OK
-## Checking u-boot 0x00a00000 ... sha256(41a7b03b59...) + OK
-## Checking fdt-1 0x00b061c0 ... sha256(e59102dfe2...) + OK
+## Checking u-boot 0x00a00000 ... sha256(7b97a8a68e...) + OK
+## Checking fdt-1 0x00b062f0 ... sha256(a29cfc9d82...) + OK
 ## Checking atf-2 0x000f0000 ... sha256(f202de33d9...) + OK
 ## Checking atf-3 0xff100000 ... sha256(af08976afd...) + OK
 ## Checking tee-1 0x08400000 ... sha256(617eb0ee15...) + OK
 Jumping to U-Boot(0x00a00000) via ARM Trusted Firmware(0x00040000)
-Total: 94.795/255.91 ms
+Total: 94.896/254.530 ms
 
 INFO:    Preloader serial: 2
 NOTICE:  BL31: v2.3():v2.3-616-gdc1125f48:finley.xiao
@@ -64,7 +64,7 @@ INFO:    Entry point address = 0xa00000
 INFO:    SPSR = 0x3c9
 
 
-U-Boot 2024.01-rc5-gd38d07929a (Apr 10 2024 - 12:21:57 +0800)
+U-Boot 2024.01-rc5-g19b365eb3a (Apr 22 2024 - 11:18:55 +0800)
 
 Model: Rockchip Toybrick RK3588 X0 Board
 DRAM:  8 GiB (effective 7.7 GiB)
@@ -77,17 +77,6 @@ Err:   serial@feb50000
 Model: Rockchip Toybrick RK3588 X0 Board
 Net:   eth0: ethernet@fe1b0000
 Hit any key to stop autoboot:  2  0
-=> 
-=> 
-=> 
-=> 
-=> 
-=> 
-=> 
-=> 
-=> 
-=> 
-=> 
 => 
 => 
 => help
@@ -192,25 +181,26 @@ usbboot   - boot from USB device
 vbe       - Verified Boot for Embedded
 version   - print monitor, compiler and linker version
 => version
-U-Boot 2024.01-rc5-gd38d07929a (Apr 10 2024 - 12:21:57 +0800)
+U-Boot 2024.01-rc5-g19b365eb3a (Apr 22 2024 - 11:18:55 +0800)
 
 aarch64-linux-gnu-gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0
 GNU ld (GNU Binutils for Ubuntu) 2.38
 => printenv
 arch=arm
 baudrate=1500000
-board=evb_rk3588
-board_name=evb_rk3588
-boot_targets=usb0
+board=toybrick_rk3588
+board_name=toybrick_rk3588
+boot_targets=mmc1 mmc0 nvme scsi usb pxe dhcp spi
 bootcmd=bootflow scan -lb
 bootdelay=2
+bootmeths=efi
 cpu=armv8
 cpuid#=41325041440000000000000000160f16
 eth1addr=aa:b3:c9:36:ca:51
 ethaddr=aa:b3:c9:36:ca:50
 fdt_addr_r=0x0a100000
-fdtcontroladdr=edeb3f60
-fdtfile=rockchip/rk3588-evb1-v10.dtb
+fdtcontroladdr=edeb4080
+fdtfile=rockchip/rk3588-toybrick-x0.dtb
 fdtoverlay_addr_r=0x02000000
 kernel_addr_r=0x02080000
 kernel_comp_addr_r=0x08000000
@@ -229,16 +219,9 @@ stdin=serial@feb50000
 stdout=serial@feb50000
 vendor=rockchip
 
-Environment size: 984/32764 bytes
+Environment size: 1043/32764 bytes
 => printenv -e
-PlatformLang:
-    8be4df61-93ca-11d2-aa0d-00e098032b8c (EFI_GLOBAL_VARIABLE_GUID)
-    NV|BS|RT, DataSize = 0x6
-    00000000: 65 6e 2d 55 53 00                                en-US.
-ExitBootServicesTestVariable:
-    f6fab04f-acaf-4af3-b9fa-dcf97fb4426f (f6fab04f-acaf-4af3-b9fa-dcf97fb4426f)
-    NV|BS|RT, DataSize = 0x8
-    00000000: 02 00 00 00 00 00 00 80                          ........
+Failed to load EFI variables
 SecureBoot:
     8be4df61-93ca-11d2-aa0d-00e098032b8c (EFI_GLOBAL_VARIABLE_GUID)
     BS|RT|RO, DataSize = 0x1
@@ -262,6 +245,10 @@ VendorKeys:
 PlatformLangCodes:
     8be4df61-93ca-11d2-aa0d-00e098032b8c (EFI_GLOBAL_VARIABLE_GUID)
     BS|RT|RO, DataSize = 0x6
+    00000000: 65 6e 2d 55 53 00                                en-US.
+PlatformLang:
+    8be4df61-93ca-11d2-aa0d-00e098032b8c (EFI_GLOBAL_VARIABLE_GUID)
+    NV|BS|RT, DataSize = 0x6
     00000000: 65 6e 2d 55 53 00                                en-US.
 OsIndicationsSupported:
     8be4df61-93ca-11d2-aa0d-00e098032b8c (EFI_GLOBAL_VARIABLE_GUID)
@@ -295,17 +282,17 @@ Build       = 64-bit
 current eth = ethernet@fe1b0000
 ethaddr     = aa:b3:c9:36:ca:50
 IP addr     = <NULL>
-fdt_blob    = 0x00000000edeb3f60
-new_fdt     = 0x00000000edeb3f60
-fdt_size    = 0x000000000001ae40
+fdt_blob    = 0x00000000edeb4080
+new_fdt     = 0x00000000edeb4080
+fdt_size    = 0x000000000001ad20
 lmb_dump_all:
  memory.cnt = 0x2 / max = 0x10
  memory[0]	[0x200000-0xefffffff], 0xefe00000 bytes flags: 0
  memory[1]	[0x100000000-0x1ffffffff], 0x100000000 bytes flags: 0
  reserved.cnt = 0x4 / max = 0x10
- reserved[0]	[0xb061c0-0xb20fff], 0x0001ae40 bytes flags: 0
+ reserved[0]	[0xb062f0-0xb20fff], 0x0001ad10 bytes flags: 0
  reserved[1]	[0x8400000-0x93fffff], 0x01000000 bytes flags: 4
- reserved[2]	[0xece73000-0xefffffff], 0x0318d000 bytes flags: 0
+ reserved[2]	[0xece74000-0xefffffff], 0x0318c000 bytes flags: 0
  reserved[3]	[0x100000000-0x1ffffffff], 0x100000000 bytes flags: 0
 devicetree  = separate
 serial addr = 0x00000000feb50000
@@ -315,8 +302,8 @@ serial addr = 0x00000000feb50000
  clock      = 0x00000000016e3600
 arch_number = 0x0000000000000000
 TLB addr    = 0x00000000efff0000
-irq_sp      = 0x00000000edeb3f50
-sp start    = 0x00000000edeb3f50
+irq_sp      = 0x00000000edeb4070
+sp start    = 0x00000000edeb4070
 Early malloc usage: ac8 / 80000
 => rtc list
 RTC #0 - rtc_emul
@@ -482,7 +469,7 @@ Driver           Name                 Image Path
   Simple Text Input
   Simple Text Input Ex
 
-00000000effe4df8
+00000000effe4f38
   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b,0000000000000000)/Uart(0,0,D,D)
 
 00000000edf0a3f0
@@ -525,52 +512,52 @@ Driver           Name                 Image Path
   system
   Simple File System
 
-00000000edf12870
+00000000edf10ee0
   Firmware Management
 
-00000000edf12a10
+00000000edf11080
   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b,0000000000000000)/MAC(aab3c936ca50,1)
   Simple Network
   PXE Base Code
 
-00000000edf46540 (usb_mass_storage.lun0)
+00000000edf45470 (usb_mass_storage.lun0)
   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b,0000000000000000)/VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b,7d00000002000000)/USB(0x0,0x0)/USB(0x1,0x0)/Ctrl(0x0)
   Block IO
 
-00000000edf46600 (usb_mass_storage.lun0:1)
+00000000edf45530 (usb_mass_storage.lun0:1)
   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b,0000000000000000)/VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b,7d00000002000000)/USB(0x0,0x0)/USB(0x1,0x0)/Ctrl(0x0)/HD(1,GPT,d5851523-5d87-44ae-b086-b80051057eaa,0x800,0x32000)
   Block IO
   Simple File System
 
-00000000edf46910 (usb_mass_storage.lun0:2)
+00000000edf45880 (usb_mass_storage.lun0:2)
   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b,0000000000000000)/VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b,7d00000002000000)/USB(0x0,0x0)/USB(0x1,0x0)/Ctrl(0x0)/HD(2,GPT,6515099d-b474-4a4f-a9c4-8b50fc9696fd,0x32800,0xd7152)
   Block IO
   Simple File System
 
-00000000edf46ce0 (usb_mass_storage.lun0:3)
+00000000edf45c50 (usb_mass_storage.lun0:3)
   /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b,0000000000000000)/VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b,7d00000002000000)/USB(0x0,0x0)/USB(0x1,0x0)/Ctrl(0x0)/HD(3,GPT,d41905db-56e2-45ce-91ea-05058a117142,0x10a000,0x19000)
   Block IO
   Simple File System
 => efidebug memmap
 Type             Start            End              Attributes
 ================ ================ ================ ==========
-CONVENTIONAL     0000000000200000-00000000ece6b000 WB
-BOOT DATA        00000000ece6b000-00000000ece78000 WB
-RUNTIME DATA     00000000ece78000-00000000ece79000 WB|RT
-BOOT DATA        00000000ece79000-00000000ece7c000 WB
-RUNTIME DATA     00000000ece7c000-00000000ece7e000 WB|RT
-BOOT DATA        00000000ece7e000-00000000ece7f000 WB
-RUNTIME DATA     00000000ece7f000-00000000ecea0000 WB|RT
-BOOT DATA        00000000ecea0000-00000000eceb3000 WB
-BOOT CODE        00000000eceb3000-00000000efed0000 WB
+CONVENTIONAL     0000000000200000-00000000ece6c000 WB
+BOOT DATA        00000000ece6c000-00000000ece79000 WB
+RUNTIME DATA     00000000ece79000-00000000ece7a000 WB|RT
+BOOT DATA        00000000ece7a000-00000000ece7d000 WB
+RUNTIME DATA     00000000ece7d000-00000000ece7f000 WB|RT
+BOOT DATA        00000000ece7f000-00000000ece80000 WB
+RUNTIME DATA     00000000ece80000-00000000ecea1000 WB|RT
+BOOT DATA        00000000ecea1000-00000000eceb4000 WB
+BOOT CODE        00000000eceb4000-00000000efed0000 WB
 RUNTIME CODE     00000000efed0000-00000000efee0000 WB|RT
 BOOT CODE        00000000efee0000-00000000f0000000 WB
 BOOT DATA        0000000100000000-0000000200000000 WB
 => efidebug tables
-00000000ece7b040  36122546-f7ef-4c8f-bd9b-eb8525b50c0b  EFI Conformance Profiles Table
-00000000ece76040  b122a263-3661-4f68-9929-78f8b0d62180  EFI System Resource Table
-00000000ece78040  eb66918a-7eef-402a-842e-931d21c38ae9  Runtime properties
-00000000ece9f000  eb9d2d31-2d88-11d3-9a16-0090273fc14d  SMBIOS table
+00000000ece7c040  36122546-f7ef-4c8f-bd9b-eb8525b50c0b  EFI Conformance Profiles Table
+00000000ece77040  b122a263-3661-4f68-9929-78f8b0d62180  EFI System Resource Table
+00000000ece79040  eb66918a-7eef-402a-842e-931d21c38ae9  Runtime properties
+00000000ecea0000  eb9d2d31-2d88-11d3-9a16-0090273fc14d  SMBIOS table
 => efidebug query
 Error: Cannot query UEFI variables, r = 2
 => efidebug boot dump
@@ -589,14 +576,14 @@ ESRT: last_attempt_version=0
 ESRT: last_attempt_status=success
 ========================================
 => bootefi hello ${fdtcontroladdr}
-Booting /MemoryMapped(0x0,0xeff744c0,0x31b0)
+Booting /MemoryMapped(0x0,0xeff745b0,0x31b0)
 Hello, world!
 Running on UEFI 2.10
 Have SMBIOS table
 Have device tree
 Load options: <none>
 File path: <none>
-Boot device: /MemoryMapped(0x0,0xeff744c0,0x31b0)
+Boot device: /MemoryMapped(0x0,0xeff745b0,0x31b0)
 => bootefi selftest ${fdtcontroladdr}
 
 Testing EFI API implementation
@@ -803,7 +790,7 @@ Setting up 'real time clock'
 Setting up 'real time clock' succeeded
 
 Executing 'real time clock'
-Time according to real time clock: 2024-04-10 04:21:57
+Time according to real time clock: 2024-04-22 03:18:55
 Executing 'real time clock' succeeded
 
 Setting up 'simple network protocol'
@@ -935,9 +922,9 @@ channel[2] BW=16 Col=10 Bk=8 CS0 Row=16 CS1 Row=16 CS=2 Die BW=16 Size=2048MB
 channel[3] BW=16 Col=10 Bk=8 CS0 Row=16 CS1 Row=16 CS=2 Die BW=16 Size=2048MB
 Manufacturer ID:0x1
 CH0 RX Vref:27.9%, TX Vref:19.8%,19.8%
-CH1 RX Vref:28.9%, TX Vref:20.8%,20.8%
-CH2 RX Vref:28.9%, TX Vref:20.8%,20.8%
-CH3 RX Vref:29.3%, TX Vref:21.8%,21.8%
+CH1 RX Vref:28.9%, TX Vref:21.8%,21.8%
+CH2 RX Vref:28.5%, TX Vref:20.8%,20.8%
+CH3 RX Vref:28.9%, TX Vref:21.8%,21.8%
 change to F1: 528MHz
 change to F2: 1068MHz
 change to F3: 1560MHz
@@ -945,6 +932,7 @@ change to F0: 2112MHz
 out
 U-Boot SPL board init
 U-Boot SPL 2017.09-g82435751526-231214-dirty #zhangzj (Dec 14 2023 - 09:16:28)
+SPL Hotkey: ctrl+m
 unknown raw ID 0 0 0
 unrecognized JEDEC id bytes: 00, 00, 00
 Trying to boot from MMC2
@@ -956,13 +944,13 @@ SPL: A/B-slot: _a, successful: 0, tries-remain: 7
 Trying fit image at 0x4000 sector
 ## Verified-boot: 0
 ## Checking atf-1 0x00040000 ... sha256(b40ce543bb...) + OK
-## Checking u-boot 0x00a00000 ... sha256(41a7b03b59...) + OK
-## Checking fdt-1 0x00b061c0 ... sha256(e59102dfe2...) + OK
+## Checking u-boot 0x00a00000 ... sha256(7b97a8a68e...) + OK
+## Checking fdt-1 0x00b062f0 ... sha256(a29cfc9d82...) + OK
 ## Checking atf-2 0x000f0000 ... sha256(f202de33d9...) + OK
 ## Checking atf-3 0xff100000 ... sha256(af08976afd...) + OK
 ## Checking tee-1 0x08400000 ... sha256(617eb0ee15...) + OK
 Jumping to U-Boot(0x00a00000) via ARM Trusted Firmware(0x00040000)
-Total: 94.776/254.546 ms
+Total: 95.48/255.302 ms
 
 INFO:    Preloader serial: 2
 NOTICE:  BL31: v2.3():v2.3-616-gdc1125f48:finley.xiao
@@ -993,7 +981,7 @@ INFO:    Entry point address = 0xa00000
 INFO:    SPSR = 0x3c9
 
 
-U-Boot 2024.01-rc5-gd38d07929a (Apr 10 2024 - 12:21:57 +0800)
+U-Boot 2024.01-rc5-g19b365eb3a (Apr 22 2024 - 11:18:55 +0800)
 
 Model: Rockchip Toybrick RK3588 X0 Board
 DRAM:  8 GiB (effective 7.7 GiB)
@@ -1006,8 +994,6 @@ Err:   serial@feb50000
 Model: Rockchip Toybrick RK3588 X0 Board
 Net:   eth0: ethernet@fe1b0000
 Hit any key to stop autoboot:  2  0
-=> 
-=> 
 => 
 => 
 => 

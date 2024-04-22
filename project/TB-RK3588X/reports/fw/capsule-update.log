@@ -5,10 +5,10 @@ channel[1] BW=16 Col=10 Bk=8 CS0 Row=16 CS1 Row=16 CS=2 Die BW=16 Size=2048MB
 channel[2] BW=16 Col=10 Bk=8 CS0 Row=16 CS1 Row=16 CS=2 Die BW=16 Size=2048MB
 channel[3] BW=16 Col=10 Bk=8 CS0 Row=16 CS1 Row=16 CS=2 Die BW=16 Size=2048MB
 Manufacturer ID:0x1
-CH0 RX Vref:27.9%, TX Vref:20.8%,19.8%
+CH0 RX Vref:27.9%, TX Vref:19.8%,19.8%
 CH1 RX Vref:28.5%, TX Vref:21.8%,21.8%
-CH2 RX Vref:28.9%, TX Vref:20.8%,21.8%
-CH3 RX Vref:29.3%, TX Vref:21.8%,21.8%
+CH2 RX Vref:28.5%, TX Vref:20.8%,21.8%
+CH3 RX Vref:28.9%, TX Vref:21.8%,21.8%
 change to F1: 528MHz
 change to F2: 1068MHz
 change to F3: 1560MHz
@@ -20,20 +20,20 @@ unknown raw ID 0 0 0
 unrecognized JEDEC id bytes: 00, 00, 00
 Trying to boot from MMC2
 MMC: no card present
-mmc_init: -123, time 0
+mmc_init: -123, time 1
 spl: mmc init failed with error: -123
 Trying to boot from MMC1
 SPL: A/B-slot: _a, successful: 0, tries-remain: 7
 Trying fit image at 0x4000 sector
 ## Verified-boot: 0
 ## Checking atf-1 0x00040000 ... sha256(b40ce543bb...) + OK
-## Checking u-boot 0x00a00000 ... sha256(41a7b03b59...) + OK
-## Checking fdt-1 0x00b061c0 ... sha256(e59102dfe2...) + OK
+## Checking u-boot 0x00a00000 ... sha256(7b97a8a68e...) + OK
+## Checking fdt-1 0x00b062f0 ... sha256(a29cfc9d82...) + OK
 ## Checking atf-2 0x000f0000 ... sha256(f202de33d9...) + OK
 ## Checking atf-3 0xff100000 ... sha256(af08976afd...) + OK
 ## Checking tee-1 0x08400000 ... sha256(617eb0ee15...) + OK
 Jumping to U-Boot(0x00a00000) via ARM Trusted Firmware(0x00040000)
-Total: 94.857/255.333 ms
+Total: 94.949/254.996 ms
 
 INFO:    Preloader serial: 2
 NOTICE:  BL31: v2.3():v2.3-616-gdc1125f48:finley.xiao
@@ -64,7 +64,7 @@ INFO:    Entry point address = 0xa00000
 INFO:    SPSR = 0x3c9
 
 
-U-Boot 2024.01-rc5-gd38d07929a (Apr 10 2024 - 12:21:57 +0800)
+U-Boot 2024.01-rc5-g19b365eb3a (Apr 22 2024 - 11:18:55 +0800)
 
 Model: Rockchip Toybrick RK3588 X0 Board
 DRAM:  8 GiB (effective 7.7 GiB)
@@ -80,7 +80,9 @@ Hit any key to stop autoboot:  2  1  0
 Scanning for bootflows in all bootdevs
 Seq  Method       State   Uclass    Part  Name                      Filename
 ---  -----------  ------  --------  ----  ------------------------  ----------------
-Scanning global bootmeth 'efi_mgr':
+Scanning bootdev 'mmc@fe2e0000.bootdev':
+Unknown uclass 'nvme' in label
+Unknown uclass 'scsi' in label
 Bus usb@fc800000: USB EHCI 1.00
 Bus usb@fc840000: USB OHCI 1.0
 Bus usb@fc880000: USB EHCI 1.00
@@ -100,11 +102,10 @@ error: no such device: ((hd1,gpt1)/efi/boot)/EFI/BOOT/grub.cfg.
 error: serial port `com0' isn't found.
 GNU GRUB  version 2.06
 
-тттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттт     Use the т and т keys to select which entry is highlighted.                                                              
-      Press enter to boot the selected OS, `e' to edit the commands before booting or `c' for a command-line.                   Linux Boot                                                                                                                     *bbr/bsa                                                                                                                         SCT for Security Interface Extension (optional)                                                                                 Linux Boot for Security Interface Extension (optional)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             The highlighted entry will be executed automatically in 10s.                                                                                                                                                                                                                                                                                                                                          /EndEntire
-file path: /HardwareVendor(e61d73b9-a384-4acc-aeab-82e828f3628b)[8: 00 00 00 00 00 00 00 00 ]
-/HardwareVendor(e61d73b9-a384-4acc-aeab-82e828f3628b)[8: 7d 00 00 00 02 00 00 00 ]/USB(0,0)/USB(1,0)/Ctrl(0)
-/HD(1,800,32000,231585d5875dae44,2,2)/File(\EFI\BOOT)/File(Shell.efi)/EndEntire
+тттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттт     Use the т and т keys to select which entry is highlighted.                                                                                                    
+      Press enter to boot the selected OS, `e' to edit the commands before booting or `c' for a command-line.                                                         Linux Boot                                                                                                                                                           *bbr/bsa                                                                                                                                                               SCT for Security Interface Extension (optional)                                                                                                                       Linux Boot for Security Interface Extension (optional)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   The highlighted entry will be executed automatically in 10s.                                                                                                                                                                                                                                                                                                                                                                                                                                                            /EndEntire
+file path: /HardwareVendor(e61d73b9-a384-4acc-aeab-82e828f3628b)[8: 00 00 00 00 00 00 00 00 ]/HardwareVendor(e61d73b9-a384-4acc-aeab-82e828f3628b)[8: 7d 00 00 00 02 00 
+00 00 ]/USB(0,0)/USB(1,0)/Ctrl(0)/HD(1,800,32000,231585d5875dae44,2,2)/File(\EFI\BOOT)/File(Shell.efi)/EndEntire
 UEFI Interactive Shell v2.2
 EDK II
 UEFI v2.100 (Das U-Boot, 0x20240100)
@@ -134,19 +135,9 @@ Mapping table
      BLK8: Alias(s):
           /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b,0000000000000000)/VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b,7d00000002000000)/USB(0x0,0x0)/USB(0x1,0x0)/Ctrl(0x0)
 Press ESC in 5 seconds to skip startup.nsh or any other key to continue.
+Shell> 
 Shell> FS4:
-FS4:\> ls
-Directory of: FS4:\
-08/10/2024  07:58           1,896,177  capsule1.bin
-08/05/2011  23:00 <DIR>             0  EFI
-08/05/2011  23:00          51,499,008  Image
-08/05/2011  23:00 <DIR>             0  security-interface-extension-keys
-08/05/2011  23:00               3,717  startup.nsh
-08/10/2024  07:58           1,896,177  tampered.bin
-08/10/2024  07:58           1,894,872  unauth.bin
-08/05/2011  23:00                   0  yocto_image.flag
-          6 File(s)  57,189,951 bytes
-          2 Dir(s)
+FS4:\> 
 FS4:\> EFI/BOOT/app/CapsuleApp.efi -D unauth.bin
 
 ASSERT_EFI_ERROR (Status = Not Found)
@@ -166,7 +157,7 @@ CapsuleHeader:
   CapsuleGuid      - 6DCBD5ED-E82D-4C44-BDA1-7194199AD92A
   HeaderSize       - 0x1C
   Flags            - 0x10000
-  CapsuleImageSize - 0x1CE9D8
+  CapsuleImageSize - 0x1CEBD8
 FmpHeader:
   Version             - 0x1
   EmbeddedDriverCount - 0x0
@@ -176,7 +167,7 @@ FmpPayload[0] ImageHeader:
   Version                - 0x3
   UpdateImageTypeId      - 5452A04A-462D-4433-9778-2B5259277BB3
   UpdateImageIndex       - 0x1
-  UpdateImageSize        - 0x1CE97C
+  UpdateImageSize        - 0x1CEB7C
   UpdateVendorCodeSize   - 0x0
   UpdateHardwareInstance - 0x0
   ImageCapsuleSupport    - 0x0
@@ -194,9 +185,9 @@ ASSERT [CapsuleApp] /data_sda/rk3588/arm-systemready/IR/Yocto/meta-woden/build/t
 ASSERT_EFI_ERROR (Status = Not Found)
 ASSERT [CapsuleApp] /data_sda/rk3588/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeHobLib/HobLib.c(48): !(((INTN)(RETURN_STATUS)(Status)) < 0)
 ASSERT [CapsuleApp] /data_sda/rk3588/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeHobLib/HobLib.c(49): mHobList != ((void *) 0)
-CapsuleApp: creating capsule descriptors at 0xB1C06040
-CapsuleApp: capsule data starts          at 0xB1A1C040 with size 0x1CE9D8
-CapsuleApp: capsule block/size              0xB1A1C040/0x1CE9D8
+CapsuleApp: creating capsule descriptors at 0xB1C1D040
+CapsuleApp: capsule data starts          at 0xB1A24040 with size 0x1CEBD8
+CapsuleApp: capsule block/size              0xB1A24040/0x1CEBD8
 CapsuleApp: failed to update capsule - Security Violation
 FS4:\> EFI/BOOT/app/CapsuleApp.efi -D tampered.bin
 
@@ -217,7 +208,7 @@ CapsuleHeader:
   CapsuleGuid      - 6DCBD5ED-E82D-4C44-BDA1-7194199AD92A
   HeaderSize       - 0x1C
   Flags            - 0x10000
-  CapsuleImageSize - 0x1CEEF1
+  CapsuleImageSize - 0x1CF0F1
 FmpHeader:
   Version             - 0x1
   EmbeddedDriverCount - 0x0
@@ -227,7 +218,7 @@ FmpPayload[0] ImageHeader:
   Version                - 0x3
   UpdateImageTypeId      - 5452A04A-462D-4433-9778-2B5259277BB3
   UpdateImageIndex       - 0x1
-  UpdateImageSize        - 0x1CEE95
+  UpdateImageSize        - 0x1CF095
   UpdateVendorCodeSize   - 0x0
   UpdateHardwareInstance - 0x0
   ImageCapsuleSupport    - 0x1
@@ -245,12 +236,13 @@ ASSERT [CapsuleApp] /data_sda/rk3588/arm-systemready/IR/Yocto/meta-woden/build/t
 ASSERT_EFI_ERROR (Status = Not Found)
 ASSERT [CapsuleApp] /data_sda/rk3588/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeHobLib/HobLib.c(48): !(((INTN)(RETURN_STATUS)(Status)) < 0)
 ASSERT [CapsuleApp] /data_sda/rk3588/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeHobLib/HobLib.c(49): mHobList != ((void *) 0)
-CapsuleApp: creating capsule descriptors at 0xB1BC3040
-CapsuleApp: capsule data starts          at 0xB19D9040 with size 0x1CEEF1
-CapsuleApp: capsule block/size              0xB19D9040/0x1CEEF1
+CapsuleApp: creating capsule descriptors at 0xB1BDA040
+CapsuleApp: capsule data starts          at 0xB19E0040 with size 0x1CF0F1
+CapsuleApp: capsule block/size              0xB19E0040/0x1CF0F1
 Capsule authentication check failed. Aborting update
 Firmware update failed: <NULL>
 CapsuleApp: failed to update capsule - Security Violation
+FS4:\> 
 FS4:\> EFI/BOOT/app/CapsuleApp.efi -D capsule1.bin
 
 ASSERT_EFI_ERROR (Status = Not Found)
@@ -270,7 +262,7 @@ CapsuleHeader:
   CapsuleGuid      - 6DCBD5ED-E82D-4C44-BDA1-7194199AD92A
   HeaderSize       - 0x1C
   Flags            - 0x10000
-  CapsuleImageSize - 0x1CEEF1
+  CapsuleImageSize - 0x1CF0F1
 FmpHeader:
   Version             - 0x1
   EmbeddedDriverCount - 0x0
@@ -280,7 +272,7 @@ FmpPayload[0] ImageHeader:
   Version                - 0x3
   UpdateImageTypeId      - 5452A04A-462D-4433-9778-2B5259277BB3
   UpdateImageIndex       - 0x1
-  UpdateImageSize        - 0x1CEE95
+  UpdateImageSize        - 0x1CF095
   UpdateVendorCodeSize   - 0x0
   UpdateHardwareInstance - 0x0
   ImageCapsuleSupport    - 0x1
@@ -298,9 +290,9 @@ ASSERT [CapsuleApp] /data_sda/rk3588/arm-systemready/IR/Yocto/meta-woden/build/t
 ASSERT_EFI_ERROR (Status = Not Found)
 ASSERT [CapsuleApp] /data_sda/rk3588/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeHobLib/HobLib.c(48): !(((INTN)(RETURN_STATUS)(Status)) < 0)
 ASSERT [CapsuleApp] /data_sda/rk3588/arm-systemready/IR/Yocto/meta-woden/build/tmp/work/generic_arm64-oe-linux/uefi-apps/1.0-r0/edk2/MdePkg/Library/DxeHobLib/HobLib.c(49): mHobList != ((void *) 0)
-CapsuleApp: creating capsule descriptors at 0xB1B80040
-CapsuleApp: capsule data starts          at 0xB1996040 with size 0x1CEEF1
-CapsuleApp: capsule block/size              0xB1996040/0x1CEEF1
+CapsuleApp: creating capsule descriptors at 0xB1B97040
+CapsuleApp: capsule data starts          at 0xB199D040 with size 0x1CF0F1
+CapsuleApp: capsule block/size              0xB199D040/0x1CF0F1
 Processing update 'u-boot.itb' :sha1+ 
 #
 resetting ...
@@ -312,9 +304,9 @@ channel[2] BW=16 Col=10 Bk=8 CS0 Row=16 CS1 Row=16 CS=2 Die BW=16 Size=2048MB
 channel[3] BW=16 Col=10 Bk=8 CS0 Row=16 CS1 Row=16 CS=2 Die BW=16 Size=2048MB
 Manufacturer ID:0x1
 CH0 RX Vref:27.9%, TX Vref:19.8%,19.8%
-CH1 RX Vref:28.9%, TX Vref:20.8%,20.8%
-CH2 RX Vref:28.5%, TX Vref:20.8%,21.8%
-CH3 RX Vref:29.7%, TX Vref:20.8%,21.8%
+CH1 RX Vref:28.5%, TX Vref:21.8%,21.8%
+CH2 RX Vref:28.9%, TX Vref:20.8%,21.8%
+CH3 RX Vref:28.9%, TX Vref:21.8%,22.8%
 change to F1: 528MHz
 change to F2: 1068MHz
 change to F3: 1560MHz
@@ -326,20 +318,20 @@ unknown raw ID 0 0 0
 unrecognized JEDEC id bytes: 00, 00, 00
 Trying to boot from MMC2
 MMC: no card present
-mmc_init: -123, time 0
+mmc_init: -123, time 1
 spl: mmc init failed with error: -123
 Trying to boot from MMC1
 SPL: A/B-slot: _a, successful: 0, tries-remain: 7
 Trying fit image at 0x4000 sector
 ## Verified-boot: 0
 ## Checking atf-1 0x00040000 ... sha256(b40ce543bb...) + OK
-## Checking u-boot 0x00a00000 ... sha256(99694fdad9...) + OK
-## Checking fdt-1 0x00b061d8 ... sha256(e59102dfe2...) + OK
+## Checking u-boot 0x00a00000 ... sha256(6bebb0ed9a...) + OK
+## Checking fdt-1 0x00b06300 ... sha256(a29cfc9d82...) + OK
 ## Checking atf-2 0x000f0000 ... sha256(f202de33d9...) + OK
 ## Checking atf-3 0xff100000 ... sha256(af08976afd...) + OK
 ## Checking tee-1 0x08400000 ... sha256(617eb0ee15...) + OK
 Jumping to U-Boot(0x00a00000) via ARM Trusted Firmware(0x00040000)
-Total: 94.850/255.217 ms
+Total: 94.951/255.180 ms
 
 INFO:    Preloader serial: 2
 NOTICE:  BL31: v2.3():v2.3-616-gdc1125f48:finley.xiao
@@ -370,7 +362,7 @@ INFO:    Entry point address = 0xa00000
 INFO:    SPSR = 0x3c9
 
 
-U-Boot 2024.01-rc5-gd38d07929a-dirty (Apr 10 2024 - 15:53:34 +0800) capsule
+U-Boot 2024.01-rc5-g19b365eb3a-dirty (Apr 22 2024 - 14:41:10 +0800) capsule
 
 Model: Rockchip Toybrick RK3588 X0 Board
 DRAM:  8 GiB (effective 7.7 GiB)
@@ -386,7 +378,9 @@ Hit any key to stop autoboot:  2  1  0
 Scanning for bootflows in all bootdevs
 Seq  Method       State   Uclass    Part  Name                      Filename
 ---  -----------  ------  --------  ----  ------------------------  ----------------
-Scanning global bootmeth 'efi_mgr':
+Scanning bootdev 'mmc@fe2e0000.bootdev':
+Unknown uclass 'nvme' in label
+Unknown uclass 'scsi' in label
 Bus usb@fc800000: USB EHCI 1.00
 Bus usb@fc840000: USB OHCI 1.0
 Bus usb@fc880000: USB EHCI 1.00
@@ -406,11 +400,10 @@ error: no such device: ((hd1,gpt1)/efi/boot)/EFI/BOOT/grub.cfg.
 error: serial port `com0' isn't found.
 GNU GRUB  version 2.06
 
-тттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттт     Use the т and т keys to select which entry is highlighted.                                                              
-      Press enter to boot the selected OS, `e' to edit the commands before booting or `c' for a command-line.                   Linux Boot                                                                                                                     *bbr/bsa                                                                                                                         SCT for Security Interface Extension (optional)                                                                                 Linux Boot for Security Interface Extension (optional)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             The highlighted entry will be executed automatically in 10s.                                                                                                                                                                                                                                                                                                                                          /EndEntire
-file path: /HardwareVendor(e61d73b9-a384-4acc-aeab-82e828f3628b)[8: 00 00 00 00 00 00 00 00 ]
-/HardwareVendor(e61d73b9-a384-4acc-aeab-82e828f3628b)[8: 7d 00 00 00 02 00 00 00 ]/USB(0,0)/USB(1,0)/Ctrl(0)
-/HD(1,800,32000,231585d5875dae44,2,2)/File(\EFI\BOOT)/File(Shell.efi)/EndEntire
+тттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттттт     Use the т and т keys to select which entry is highlighted.                                                                                                    
+      Press enter to boot the selected OS, `e' to edit the commands before booting or `c' for a command-line.                                                         Linux Boot                                                                                                                                                           *bbr/bsa                                                                                                                                                               SCT for Security Interface Extension (optional)                                                                                                                       Linux Boot for Security Interface Extension (optional)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   The highlighted entry will be executed automatically in 10s.                                                                                                                                                                                                                                                                                                                                                                                                                                                            /EndEntire
+file path: /HardwareVendor(e61d73b9-a384-4acc-aeab-82e828f3628b)[8: 00 00 00 00 00 00 00 00 ]/HardwareVendor(e61d73b9-a384-4acc-aeab-82e828f3628b)[8: 7d 00 00 00 02 00 
+00 00 ]/USB(0,0)/USB(1,0)/Ctrl(0)/HD(1,800,32000,231585d5875dae44,2,2)/File(\EFI\BOOT)/File(Shell.efi)/EndEntire
 UEFI Interactive Shell v2.2
 EDK II
 UEFI v2.100 (Das U-Boot, 0x20240100)
@@ -440,6 +433,7 @@ Mapping table
      BLK8: Alias(s):
           /VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b,0000000000000000)/VenHw(e61d73b9-a384-4acc-aeab-82e828f3628b,7d00000002000000)/USB(0x0,0x0)/USB(0x1,0x0)/Ctrl(0x0)
 Press ESC in 5 seconds to skip startup.nsh or any other key to continue.
+Shell> 
 Shell> FS4:
 FS4:\> 
 FS4:\> EFI/BOOT/app/CapsuleApp.efi -E

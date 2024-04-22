@@ -2,12 +2,12 @@
 Getting SMBIOS data from sysfs.
 SMBIOS 3.0 present.
 7 structures occupying 281 bytes.
-Table at 0xECE9F020.
+Table at 0xECEA0020.
 
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: U-Boot
-	Version: 2024.01-rc5-gd38d07929a
+	Version: 2024.01-rc5-g19b365eb3a
 	Release Date: 01/01/2024
 	ROM Size: 64 kB
 	Characteristics:
