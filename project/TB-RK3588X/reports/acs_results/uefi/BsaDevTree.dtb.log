@@ -53,7 +53,7 @@
 + meta-data
 + ---------
 + command-line: check-sr-results.py --dir /home/weiouy01/code/Arm-SystemReady-IoT/project/TB-RK3588X/reports/ --linux-url https://git.kernel.org/pub/scm/linux/kernel/git/next/linux-next.git/snapshot/linux-next-next-20240422.tar.gz
-+ date: Mon Apr 22 08:20:16 2024 UTC
++ date: Tue Apr 23 02:10:38 2024 UTC
 + dt-validate-version: 2024.2
 + dtc-version: DTC 1.6.1
 + git-commit: ir2.0-2024.04-2-g2b3ea3a5158a

@@ -8,8 +8,8 @@
   ac940000-ad58ffff : reserved
   ad590000-adbfffff : Kernel data
   b0b10000-b0b28fff : reserved
-  b0d18000-b0d18fff : reserved
-  b0d19000-b0d19fff : reserved
+  b0d16000-b0d16fff : reserved
+  b0d17000-b0d17fff : reserved
   e8e4c000-ece69fff : reserved
   ece6c000-ece6cfff : reserved
 ece6e000-ece6efff : reserved
