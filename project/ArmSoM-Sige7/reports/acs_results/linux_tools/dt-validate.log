@@ -1,0 +1,13 @@
+DeviceTree bindings of Linux kernel version: 6.1.2 
+dtschema version: 2022.9 
+
+Traceback (most recent call last):
+  File "/usr/bin/dt-validate", line 19, in <module>
+    import dtschema
+  File "/usr/lib/python3.11/site-packages/dtschema/__init__.py", line 1, in <module>
+    from dtschema.lib import (
+  File "/usr/lib/python3.11/site-packages/dtschema/lib.py", line 18, in <module>
+    import dtschema.dtb
+  File "/usr/lib/python3.11/site-packages/dtschema/dtb.py", line 9, in <module>
+    import libfdt
+ModuleNotFoundError: No module named 'libfdt'
