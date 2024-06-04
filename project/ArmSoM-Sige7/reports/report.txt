@@ -1,32 +1,32 @@
 General information
 -------------------
 - Arm SystemReady Band: IR
-- System name:
-- Prepared by:
-- E-mail:
-- Date:
+- System name: IR v2.0
+- Prepared by: Weizhao Ouyang
+- E-mail: weizhao.ouyang@arm.com
+- Date: 2024.05.13
 
 System information
 ------------------
-- Company:
-- System:
-- SoC:
-- FW version:
-- Memory:
-- Storage devices / disks:
+- Company: ArmSoM
+- System: ArmSoM Sige7
+- SoC: RK3588
+- FW version: U-Boot 2024.01-rc5
+- Memory: 8GB
+- Storage devices / disks: 64GB eMMC
 - Network controllers:
 - Other Hardware information:
 
 Test logs and results
 ---------------------
-- ACS version used:
-- ACS URL (if pre-built binary):
-- Changes to ACS (if built from source):
+- ACS version used: v23.03_2.0.0_RK3588
+- ACS URL (if pre-built binary): https://gitlab.arm.com/systemready/acs/arm-systemready/-/raw/RK3588-IR2.0-v2/IR/prebuilt_images/v23.03_2.0.0_RK3588/ir-acs-live-image-generic-arm64.wic.xz
+- Changes to ACS (if built from source): upgrade kernel version to 6.4 and add Rockchip USB driver
 
 - Test logs and results collected
-[ ] ACS automated tests (SCT, UEFI BSA, Linux BSA, Linux FWTS, Linux DT)
+[-] ACS automated tests (SCT, UEFI BSA, Linux BSA, Linux FWTS, Linux DT)
 [ ] ACS SIE automated tests (SIE SCT, Linux SIE FWTS; if applicable)
-[ ] U-Boot sniff tests (if applicable)
-[ ] ACS UEFI Shell sniff tests
-[ ] ACS capsule update (direct and "on disk")
-[ ] OS installs and sniff tests
+[-] U-Boot sniff tests (if applicable)
+[-] ACS UEFI Shell sniff tests
+[-] ACS capsule update (direct and "on disk")
+[-] OS installs and sniff tests

@@ -7,9 +7,9 @@
   aaef0000-ace3ffff : Kernel code
   ace40000-ada8ffff : reserved
   ada90000-ae0fffff : Kernel data
-  b1010000-b1027fff : reserved
-  b123a000-b123afff : reserved
-  b123b000-b123bfff : reserved
+  b1020000-b1037fff : reserved
+  b123c000-b123cfff : reserved
+  b123d000-b123dfff : reserved
   e8e3f000-ece5cfff : reserved
   ece5f000-ece5ffff : reserved
 ece61000-ece61fff : reserved

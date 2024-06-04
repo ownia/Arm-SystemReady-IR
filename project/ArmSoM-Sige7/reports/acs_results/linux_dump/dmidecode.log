@@ -7,7 +7,7 @@ Table at 0xECE93020.
 Handle 0x0000, DMI type 0, 24 bytes
 BIOS Information
 	Vendor: U-Boot
-	Version: 2024.01-rc5-ge76b31e32d
+	Version: 2024.01-rc5-g26b92662c4
 	Release Date: 01/01/2024
 	ROM Size: 64 kB
 	Characteristics:
