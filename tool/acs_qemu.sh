@@ -40,7 +40,7 @@ Specific information for this Buildroot configuration is available in board/qemu
 EOF
 
 # QEMU
-QEMU=/home/weiouy01/code/buildroot/output/host/bin/qemu-system-aarch64
+QEMU=/home/weiouy01/code/qemu-system-aarch64
 # U-Boot, TF-A, OP-TEE
 BIOS=/home/weiouy01/code/flash.bin
 # GPT, ESP, rootfs
@@ -85,8 +85,8 @@ $QEMU \
 	-device tpm-tis-device,tpmdev=tpm0 \
 	-device virtio-blk-pci,drive=hd0 \
 	-drive file=$IMAGE,if=none,format=raw,id=hd0 \
-	-drive file=$TRANS,format=raw \
 	-nographic
+	-drive file=$TRANS,format=raw \
 	#-chardev stdio,id=char0,logfile=qemu-console.log,signal=on \
 	#-serial chardev:char0 \
 	# -display none
