@@ -1,3 +1,5 @@
+#!/bin/sh
+
 << EOF
 - Deprecated QEMU Build
 
@@ -39,22 +41,24 @@ A QEMU executable is also generated at output/host/bin/qemu-system-aarch64
 Specific information for this Buildroot configuration is available in board/qemu/aarch64-ebbr/readme.txt
 EOF
 
+ACS_PATH=/data_sda/acs
+
 # QEMU
-QEMU=/home/weiouy01/code/qemu-system-aarch64
+QEMU=$ACS_PATH/qemu-system-aarch64
 # U-Boot, TF-A, OP-TEE
-BIOS=/home/weiouy01/code/flash.bin
+BIOS=$ACS_PATH/flash.bin
 # GPT, ESP, rootfs
-DISK=/home/weiouy01/code/disk.img
+DISK=$ACS_PATH/disk.img
 # IR ACS image
-IMAGE=/home/weiouy01/code/ir-acs-live-image-generic-arm64.wic
+IMAGE=$ACS_PATH/ir-acs-live-image-generic-arm64.wic
 # flash0 for QEMU_EFI.fd
-FLASH0=/home/weiouy01/code/flash0.img
+FLASH0=$ACS_PATH/flash0.img
 # flash1 for efi var install
-FLASH1=/home/weiouy01/code/flash1.img
+FLASH1=$ACS_PATH/flash1.img
 # An Ext4 partition for file transfer
-TRANS=/home/weiouy01/code/trans.img
+TRANS=$ACS_PATH/trans.img
 # A simulated raw partition
-MMCBLK0=/home/weiouy01/code/mmcblk0.bin
+MMCBLK0=$ACS_PATH/mmcblk0.bin
 PWD=`pwd`
 TPMSOCK=/tmp/swtpm-sock$$
 
@@ -69,8 +73,8 @@ fi
 if [ "$1" = "sie" ];
 then
 echo "Creating TPM Emulator socket"
-[ -e $PWD/tpm ] || mkdir $PWD/tpm
-swtpm socket --tpm2 -t -d --tpmstate dir=$PWD/tpm --ctrl type=unixio,path=$TPMSOCK
+[ -e /tmp/tpm ] || mkdir /tmp/tpm
+swtpm socket --tpm2 -t -d --tpmstate dir=/tmp/tpm --ctrl type=unixio,path=$TPMSOCK --log level=20
 echo $TPMSOCK
 echo "Running QEMU on SIE"
 $QEMU \
@@ -85,7 +89,7 @@ $QEMU \
 	-device tpm-tis-device,tpmdev=tpm0 \
 	-device virtio-blk-pci,drive=hd0 \
 	-drive file=$IMAGE,if=none,format=raw,id=hd0 \
-	-nographic
+	-nographic \
 	-drive file=$TRANS,format=raw \
 	#-chardev stdio,id=char0,logfile=qemu-console.log,signal=on \
 	#-serial chardev:char0 \
@@ -93,8 +97,8 @@ $QEMU \
 elif [ "$1" = "sie_new" ];
 then
 echo "Creating TPM Emulator socket"
-[ -e $PWD/tpm ] || mkdir $PWD/tpm
-swtpm socket --tpm2 -t -d --tpmstate dir=$PWD/tpm --ctrl type=unixio,path=$TPMSOCK
+[ -e /tmp/tpm ] || mkdir /tmp/tpm
+swtpm socket --tpm2 -t -d --tpmstate dir=/tmp/tpm --ctrl type=unixio,path=$TPMSOCK --log level=20
 echo $TPMSOCK
 echo "Running QEMU on SIE"
 $QEMU \
@@ -123,8 +127,8 @@ $QEMU \
 	#-serial chardev:char0 \
 else
 echo "Creating TPM Emulator socket"
-[ -e $PWD/tpm ] || mkdir $PWD/tpm
-swtpm socket --tpm2 -t -d --tpmstate dir=$PWD/tpm --ctrl type=unixio,path=$TPMSOCK
+[ -e /tmp/tpm ] || mkdir /tmp/tpm
+swtpm socket --tpm2 -t -d --tpmstate dir=/tmp/tpm --ctrl type=unixio,path=$TPMSOCK --log level=20
 echo $TPMSOCK
 echo "Running QEMU"
 $QEMU \
