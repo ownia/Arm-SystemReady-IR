@@ -41,7 +41,7 @@ A QEMU executable is also generated at output/host/bin/qemu-system-aarch64
 Specific information for this Buildroot configuration is available in board/qemu/aarch64-ebbr/readme.txt
 EOF
 
-ACS_PATH=/data_sda/acs
+ACS_PATH=/data_nvme0n1/acs
 
 # QEMU
 QEMU=$ACS_PATH/qemu-system-aarch64
@@ -50,7 +50,7 @@ BIOS=$ACS_PATH/flash.bin
 # GPT, ESP, rootfs
 DISK=$ACS_PATH/disk.img
 # IR ACS image
-IMAGE=$ACS_PATH/ir-acs-live-image-generic-arm64.wic
+IMAGE=$ACS_PATH/ir-acs-live-image-genericarm64.wic
 # flash0 for QEMU_EFI.fd
 FLASH0=$ACS_PATH/flash0.img
 # flash1 for efi var install
