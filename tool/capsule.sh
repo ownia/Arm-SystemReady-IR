@@ -1,6 +1,6 @@
 #!/bin/sh
 
-DPATH=/data_sda
+DPATH=/data_nvme0n1
 
 # Clear files
 rm -rf CRT.crt CRT.esl CRT.key test.its tests.itb \
@@ -51,8 +51,8 @@ mkeficapsule \
 	"signed_capsule.bin"
 
 # Generate unsigned capsule.bin and tampered capsule.bin
-python3 $DPATH/systemready-scripts/capsule-tool.py --de-authenticate --output unauth.bin signed_capsule.bin
-python3 $DPATH/systemready-scripts/capsule-tool.py --tamper --output tampered.bin signed_capsule.bin
+python3 $DPATH/systemready/systemready-scripts/capsule-tool.py --de-authenticate --output unauth.bin signed_capsule.bin
+python3 $DPATH/systemready/systemready-scripts/capsule-tool.py --tamper --output tampered.bin signed_capsule.bin
 
 # Overlay signature to qemu.dtb
 cat << EOF > signature.dts

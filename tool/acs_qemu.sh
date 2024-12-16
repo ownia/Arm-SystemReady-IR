@@ -50,7 +50,7 @@ BIOS=$ACS_PATH/flash.bin
 # GPT, ESP, rootfs
 DISK=$ACS_PATH/disk.img
 # IR ACS image
-IMAGE=$ACS_PATH/ir-acs-live-image-genericarm64.wic
+IMAGE=$ACS_PATH/systemready-dt_acs_live_image.wic
 # flash0 for QEMU_EFI.fd
 FLASH0=$ACS_PATH/flash0.img
 # flash1 for efi var install
@@ -87,7 +87,7 @@ $QEMU \
 	-chardev socket,id=chrtpm,path=$TPMSOCK \
 	-tpmdev emulator,id=tpm0,chardev=chrtpm \
 	-device tpm-tis-device,tpmdev=tpm0 \
-	-device virtio-blk-pci,drive=hd0 \
+	-device virtio-blk-device,drive=hd0 \
 	-drive file=$IMAGE,if=none,format=raw,id=hd0 \
 	-nographic \
 	-drive file=$TRANS,format=raw \
@@ -148,7 +148,6 @@ $QEMU \
 	-chardev socket,id=chrtpm,path=$TPMSOCK \
 	-tpmdev emulator,id=tpm0,chardev=chrtpm \
 	-device tpm-tis-device,tpmdev=tpm0 \
-	-monitor null \
 	-netdev user,id=eth0 \
 	-nodefaults \
 	-nographic \
